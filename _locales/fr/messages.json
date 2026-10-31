@@ -1,0 +1,2202 @@
+{
+  "locale": {
+    "message": "fr"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "Favoris"
+  },
+  "ext_description": {
+    "message": "Vos favoris dans le panneau latéral via un raccourci, prêts pour la navigation avec les flèches"
+  },
+  "command_toggle": {
+    "message": "Ouvrir / activer / fermer le panneau des favoris"
+  },
+  "all_bookmarks": {
+    "message": "Tous les favoris"
+  },
+  "untitled": {
+    "message": "Sans titre"
+  },
+  "bookmarklet": {
+    "message": "bookmarklet"
+  },
+  "folder_empty": {
+    "message": "vide"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "open": {
+    "message": "Ouvrir"
+  },
+  "delete": {
+    "message": "Supprimer"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "nothing_found": {
+    "message": "Aucun résultat"
+  },
+  "more_results": {
+    "message": "$COUNT$ de plus — affinez la recherche",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "Espace"
+  },
+  "group_nav": {
+    "message": "Navigation"
+  },
+  "group_open": {
+    "message": "Ouverture"
+  },
+  "group_marks": {
+    "message": "Sélection"
+  },
+  "group_edit": {
+    "message": "Modification"
+  },
+  "group_panel": {
+    "message": "Panneau"
+  },
+  "cmd_search": {
+    "message": "Rechercher des favoris"
+  },
+  "cmd_search_note": {
+    "message": "par titre, adresse et dossier"
+  },
+  "cmd_search_words": {
+    "message": "rechercher recherche chercher trouver filtrer"
+  },
+  "cmd_cursor_down": {
+    "message": "Curseur vers le bas"
+  },
+  "cmd_cursor_down_words": {
+    "message": "bas descendre suivant"
+  },
+  "cmd_cursor_up": {
+    "message": "Curseur vers le haut"
+  },
+  "cmd_cursor_up_words": {
+    "message": "haut monter précédent"
+  },
+  "cmd_cursor_first": {
+    "message": "Début de la liste"
+  },
+  "cmd_cursor_first_words": {
+    "message": "début haut premier commencement"
+  },
+  "cmd_cursor_last": {
+    "message": "Fin de la liste"
+  },
+  "cmd_cursor_last_words": {
+    "message": "fin bas dernier"
+  },
+  "cmd_folder_expand": {
+    "message": "Développer le dossier"
+  },
+  "cmd_folder_expand_words": {
+    "message": "développer déplier ouvrir dossier"
+  },
+  "cmd_folder_collapse": {
+    "message": "Réduire le dossier"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "sur un favori — aller à son dossier"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "réduire replier fermer dossier parent"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "Réduire tous les dossiers"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "réduire replier tous dossiers"
+  },
+  "cmd_open": {
+    "message": "Ouvrir"
+  },
+  "cmd_open_note": {
+    "message": "avec une sélection — tout ce qui est sélectionné"
+  },
+  "cmd_open_words": {
+    "message": "ouvrir aller visiter"
+  },
+  "cmd_open_alt": {
+    "message": "Ouvrir dans un autre onglet"
+  },
+  "cmd_open_alt_note": {
+    "message": "sur un dossier — tous ses favoris"
+  },
+  "cmd_open_alt_words": {
+    "message": "ouvrir autre onglet dossier"
+  },
+  "cmd_open_newTab": {
+    "message": "Ouvrir dans un nouvel onglet"
+  },
+  "cmd_open_newTab_words": {
+    "message": "ouvrir nouvel onglet"
+  },
+  "cmd_open_currentTab": {
+    "message": "Ouvrir dans l’onglet actuel"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "ouvrir onglet actuel courant"
+  },
+  "cmd_open_group": {
+    "message": "Ouvrir en groupe d’onglets…"
+  },
+  "cmd_open_group_words": {
+    "message": "ouvrir groupe onglets ensemble"
+  },
+  "cmd_open_reset": {
+    "message": "Remettre l’onglet à l’adresse du favori"
+  },
+  "cmd_open_reset_words": {
+    "message": "remettre réinitialiser revenir onglet adresse d’origine"
+  },
+  "cmd_mark_toggle": {
+    "message": "Sélectionner"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "encore une fois — désélectionner"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "sélectionner marquer cocher basculer"
+  },
+  "cmd_mark_down": {
+    "message": "Sélectionner et descendre"
+  },
+  "cmd_mark_down_words": {
+    "message": "sélectionner marquer bas descendre"
+  },
+  "cmd_mark_up": {
+    "message": "Sélectionner et monter"
+  },
+  "cmd_mark_up_words": {
+    "message": "sélectionner marquer haut monter"
+  },
+  "cmd_mark_all": {
+    "message": "Tout sélectionner dans le dossier"
+  },
+  "cmd_mark_all_note": {
+    "message": "encore une fois — désélectionner"
+  },
+  "cmd_mark_all_words": {
+    "message": "tout sélectionner marquer tous"
+  },
+  "cmd_mark_clear": {
+    "message": "Désélectionner"
+  },
+  "cmd_mark_clear_words": {
+    "message": "désélectionner effacer retirer sélection"
+  },
+  "cmd_folder_new": {
+    "message": "Nouveau dossier"
+  },
+  "cmd_folder_new_note": {
+    "message": "avec une sélection — y place les éléments sélectionnés"
+  },
+  "cmd_folder_new_words": {
+    "message": "dossier nouveau créer ajouter"
+  },
+  "cmd_rename": {
+    "message": "Renommer"
+  },
+  "cmd_rename_words": {
+    "message": "renommer nom titre modifier"
+  },
+  "cmd_edit": {
+    "message": "Modifier le nom et l’adresse…"
+  },
+  "cmd_edit_note": {
+    "message": "dans une fenêtre, comme dans le navigateur"
+  },
+  "cmd_edit_words": {
+    "message": "modifier nom adresse",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "Déplacer vers le dossier…"
+  },
+  "cmd_move_to_note": {
+    "message": "choisir un dossier par son nom"
+  },
+  "cmd_move_to_words": {
+    "message": "déplacer dossier ranger classer trier"
+  },
+  "cmd_url_update": {
+    "message": "Enregistrer l’adresse de l’onglet"
+  },
+  "cmd_url_update_note": {
+    "message": "le favori reçoit l’adresse de l’onglet actuel"
+  },
+  "cmd_url_update_words": {
+    "message": "enregistrer mettre à jour adresse url onglet"
+  },
+  "cmd_delete": {
+    "message": "Supprimer…"
+  },
+  "cmd_delete_words": {
+    "message": "supprimer effacer retirer enlever"
+  },
+  "cmd_copy_url": {
+    "message": "Copier l’adresse"
+  },
+  "cmd_copy_url_note": {
+    "message": "pour un dossier ou une sélection — toutes les adresses"
+  },
+  "cmd_copy_url_words": {
+    "message": "copier adresse url lien presse-papiers"
+  },
+  "cmd_cut": {
+    "message": "Couper"
+  },
+  "cmd_cut_note": {
+    "message": "coller déplace les favoris à cet endroit"
+  },
+  "cmd_copy": {
+    "message": "Copier"
+  },
+  "cmd_copy_note": {
+    "message": "coller crée une copie ; les adresses vont aussi dans le presse-papiers"
+  },
+  "cmd_paste": {
+    "message": "Coller"
+  },
+  "cmd_paste_note": {
+    "message": "après le curseur ou dans un dossier développé"
+  },
+  "cmd_cut_words": {
+    "message": "couper déplacer presse-papiers",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "copier copie dupliquer presse-papiers",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "coller insérer presse-papiers",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "Fermer l’onglet du favori"
+  },
+  "cmd_tab_close_note": {
+    "message": "pour un dossier ou une sélection — tous leurs onglets"
+  },
+  "cmd_tab_close_words": {
+    "message": "fermer onglet"
+  },
+  "cmd_move_up": {
+    "message": "Déplacer vers le haut"
+  },
+  "cmd_move_up_words": {
+    "message": "déplacer haut monter"
+  },
+  "cmd_move_down": {
+    "message": "Déplacer vers le bas"
+  },
+  "cmd_move_down_words": {
+    "message": "déplacer bas descendre"
+  },
+  "cmd_undo": {
+    "message": "Annuler la modification"
+  },
+  "cmd_undo_words": {
+    "message": "annuler défaire"
+  },
+  "cmd_redo": {
+    "message": "Rétablir"
+  },
+  "cmd_redo_words": {
+    "message": "rétablir refaire"
+  },
+  "cmd_palette": {
+    "message": "Palette de commandes"
+  },
+  "cmd_palette_words": {
+    "message": "palette commandes actions"
+  },
+  "cmd_menu": {
+    "message": "Ouvrir le menu"
+  },
+  "cmd_menu_note": {
+    "message": "comme le clic droit"
+  },
+  "cmd_menu_words": {
+    "message": "menu contextuel clic droit",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "Changer l’affichage"
+  },
+  "cmd_view_cycle_note": {
+    "message": "normal, avec adresse, compact"
+  },
+  "cmd_view_cycle_words": {
+    "message": "affichage vue changer mode compact"
+  },
+  "cmd_help": {
+    "message": "Aide"
+  },
+  "cmd_help_note": {
+    "message": "toutes les fonctions et touches"
+  },
+  "cmd_help_words": {
+    "message": "aide manuel guide raccourcis touches"
+  },
+  "cmd_settings": {
+    "message": "Paramètres"
+  },
+  "cmd_settings_words": {
+    "message": "paramètres réglages options préférences configuration"
+  },
+  "cmd_escape": {
+    "message": "Annuler ou fermer"
+  },
+  "cmd_escape_note": {
+    "message": "désélectionne, quitte la recherche, sinon ferme le panneau"
+  },
+  "cmd_escape_words": {
+    "message": "annuler quitter fermer échap"
+  },
+  "cmd_panel_close": {
+    "message": "Fermer le panneau"
+  },
+  "cmd_panel_close_words": {
+    "message": "fermer panneau masquer"
+  },
+  "panel_tree": {
+    "message": "Favoris"
+  },
+  "menu_open_new_tab": {
+    "message": "Ouvrir dans un nouvel onglet"
+  },
+  "menu_open_new_window": {
+    "message": "Ouvrir dans une nouvelle fenêtre"
+  },
+  "menu_open_split": {
+    "message": "Ouvrir en vue fractionnée"
+  },
+  "menu_open_incognito": {
+    "message": "Ouvrir dans une fenêtre de navigation privée"
+  },
+  "menu_open_all": {
+    "message": "Tout ouvrir ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "Tout ouvrir dans une nouvelle fenêtre"
+  },
+  "menu_open_all_incognito": {
+    "message": "Tout ouvrir dans une fenêtre de navigation privée"
+  },
+  "menu_edit": {
+    "message": "Modifier…"
+  },
+  "menu_rename": {
+    "message": "Renommer…"
+  },
+  "menu_delete": {
+    "message": "Supprimer"
+  },
+  "menu_add_page": {
+    "message": "Ajouter une page…"
+  },
+  "menu_add_folder": {
+    "message": "Ajouter un dossier…"
+  },
+  "menu_manager": {
+    "message": "Ouvrir le gestionnaire de favoris"
+  },
+  "menu_incognito_off": {
+    "message": "Autorisez l’extension en navigation privée : chrome://extensions → « Détails » → « Autoriser en mode navigation privée »"
+  },
+  "menu_bookmarklet": {
+    "message": "Un bookmarklet ne fonctionne que sur la page ouverte : cliquez dessus"
+  },
+  "menu_edit_single": {
+    "message": "Un seul élément peut être modifié à la fois"
+  },
+  "search_placeholder": {
+    "message": "Titre, adresse ou dossier"
+  },
+  "search_found": {
+    "message": "Résultats : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "Aucun résultat · $KEY$ — retour à la liste",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "Aucun favori pour le moment."
+  },
+  "empty_folder": {
+    "message": "Ce dossier est vide pour l’instant."
+  },
+  "empty_add_hint": {
+    "message": "$KEY$ dans le navigateur ajoute une page.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — nouveau dossier.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "Nom du groupe"
+  },
+  "tab_group_placeholder": {
+    "message": "Nom du groupe — facultatif"
+  },
+  "tab_group_hint": {
+    "message": "Avec un nom, les onglets sont placés dans un groupe ; sans nom, ils s’ouvrent comme des onglets ordinaires."
+  },
+  "palette_placeholder": {
+    "message": "Commande…"
+  },
+  "close_tab": {
+    "message": "Fermer l’onglet"
+  },
+  "rename_label": {
+    "message": "Titre"
+  },
+  "new_folder_title": {
+    "message": "Nouveau dossier"
+  },
+  "no_bookmarks_here": {
+    "message": "Aucun favori ici"
+  },
+  "copied_addresses": {
+    "message": "Adresses copiées : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "Adresse copiée"
+  },
+  "copy_failed": {
+    "message": "Impossible de copier"
+  },
+  "view_changed": {
+    "message": "Affichage : $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "normal"
+  },
+  "view_detailed": {
+    "message": "avec adresse"
+  },
+  "view_dense": {
+    "message": "compact"
+  },
+  "marked": {
+    "message": "Sélection : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "Sélection : $COUNT$ · $KEY$ — effacer",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "Les dossiers système ne peuvent pas être sélectionnés"
+  },
+  "locked_system_edit": {
+    "message": "Les dossiers système ne peuvent pas être modifiés"
+  },
+  "locked_managed": {
+    "message": "Ces favoris ne peuvent pas être modifiés"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — toutes les commandes",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "Clic droit — menu"
+  },
+  "updated": {
+    "message": "Mis à jour vers la version $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "Nouveautés — appuyez sur $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "Impossible de créer le dossier"
+  },
+  "move_failed": {
+    "message": "Impossible de déplacer"
+  },
+  "delete_bookmark": {
+    "message": "Supprimer le favori « $TITLE$ » ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "Supprimer le favori sans titre ?"
+  },
+  "delete_folder": {
+    "message": "Supprimer le dossier « $TITLE$ » ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "Total des favoris, contenu des dossiers compris : $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "Il ne contient que des dossiers vides."
+  },
+  "delete_folder_empty": {
+    "message": "Le dossier est vide."
+  },
+  "url_only_bookmarks": {
+    "message": "Seuls les favoris ont une adresse"
+  },
+  "url_locked": {
+    "message": "Ce favori ne peut pas être modifié"
+  },
+  "url_loading": {
+    "message": "La page est encore en cours de chargement"
+  },
+  "url_blank_tab": {
+    "message": "L’onglet actuel n’a pas d’adresse"
+  },
+  "url_same": {
+    "message": "L’adresse est déjà la même"
+  },
+  "url_replace_title": {
+    "message": "Remplacer l’adresse de « $TITLE$ » ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "Remplacer"
+  },
+  "url_failed": {
+    "message": "Impossible de modifier l’adresse"
+  },
+  "url_updated": {
+    "message": "Adresse mise à jour"
+  },
+  "undo_button": {
+    "message": "Annuler"
+  },
+  "undo_button_label": {
+    "message": "Annuler : $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "Rétablir : $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "Annulé : $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "Rétabli : $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "Rien à annuler"
+  },
+  "redo_nothing": {
+    "message": "Rien à rétablir"
+  },
+  "undo_partial": {
+    "message": "Annulé en partie : certains favoris ont été modifiés ailleurs"
+  },
+  "redo_partial": {
+    "message": "Rétabli en partie : certains favoris ont été modifiés ailleurs"
+  },
+  "undo_failed": {
+    "message": "Impossible d’annuler : les favoris ont été modifiés ailleurs"
+  },
+  "redo_failed": {
+    "message": "Impossible de rétablir : les favoris ont été modifiés ailleurs"
+  },
+  "history_fallback": {
+    "message": "Le dossier d’origine n’existe plus — placé dans « $FOLDER$ »",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "« $TITLE$ » supprimé",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "$COUNT$ élément supprimé",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_many": {
+    "message": "$COUNT$ d’éléments supprimés",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "$COUNT$ éléments supprimés",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "Renommé en « $TITLE$ »",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "« $TITLE$ » déplacé",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "$COUNT$ élément déplacé",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_many": {
+    "message": "$COUNT$ d’éléments déplacés",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "$COUNT$ éléments déplacés",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ élément",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_many": {
+    "message": "$COUNT$ d’éléments",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ éléments",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "Dossier « $TITLE$ » créé",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "Coupé : $COUNT$ — collez pour déplacer",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "Copié : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "Rien à coller — coupez ou copiez d’abord des favoris"
+  },
+  "paste_inside": {
+    "message": "Impossible de coller un dossier dans lui-même"
+  },
+  "paste_failed": {
+    "message": "Impossible de coller"
+  },
+  "undo_pasted": {
+    "message": "Collé : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "« $TITLE$ » ajouté",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "« $TITLE$ » modifié",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "Impossible d’ajouter le favori"
+  },
+  "open_failed": {
+    "message": "Impossible d’ouvrir"
+  },
+  "edit_failed": {
+    "message": "Impossible d’enregistrer — vérifiez l’adresse"
+  },
+  "edit_bookmark": {
+    "message": "Modifier le favori"
+  },
+  "edit_folder": {
+    "message": "Renommer le dossier"
+  },
+  "edit_name": {
+    "message": "Nom"
+  },
+  "edit_url": {
+    "message": "Adresse"
+  },
+  "save": {
+    "message": "Enregistrer"
+  },
+  "tab_not_open": {
+    "message": "L’onglet n’est pas ouvert"
+  },
+  "tab_not_open_delete": {
+    "message": "supprimer le favori — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "Activez « Favoris en onglets épinglés » dans les paramètres"
+  },
+  "picker_label": {
+    "message": "Déplacer vers le dossier"
+  },
+  "picker_heading": {
+    "message": "Déplacer « $TITLE$ » vers un dossier",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "Nom du dossier…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — déplacer · $SHIFT_ENTER$ — déplacer et y aller",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "Récents"
+  },
+  "picker_all": {
+    "message": "Tous les dossiers"
+  },
+  "picker_start_folder": {
+    "message": "dossier de départ"
+  },
+  "picker_here": {
+    "message": "emplacement actuel"
+  },
+  "picker_create": {
+    "message": "Créer le dossier « $NAME$ »",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "dans « $FOLDER$ »",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "Ce dossier n’existe plus"
+  },
+  "move_nothing": {
+    "message": "Il ne reste plus rien à déplacer"
+  },
+  "move_already_there": {
+    "message": "Déjà dans ce dossier"
+  },
+  "moved": {
+    "message": "Déplacé vers « $FOLDER$ »",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "Favoris — aide"
+  },
+  "help_via_palette": {
+    "message": "palette → « $COMMAND$ »",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "menu du clic droit sur un espace vide"
+  },
+  "help_table_from_palette": {
+    "message": "depuis la palette"
+  },
+  "help_table_menu": {
+    "message": "menu du clic droit"
+  },
+  "help_global_not_set": {
+    "message": "raccourci non défini"
+  },
+  "options_title": {
+    "message": "Paramètres des favoris"
+  },
+  "options_intro": {
+    "message": "Toutes les fonctions, usages et touches sont décrits dans l’$HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "aide"
+  },
+  "options_root": {
+    "message": "Dossier de départ"
+  },
+  "options_root_hint": {
+    "message": "Le panneau affiche le contenu de ce dossier."
+  },
+  "options_view": {
+    "message": "Affichage de la liste"
+  },
+  "options_view_normal": {
+    "message": "Normal"
+  },
+  "options_view_detailed": {
+    "message": "Avec adresse — le site sous le titre"
+  },
+  "options_view_dense": {
+    "message": "Compact"
+  },
+  "options_view_hint": {
+    "message": "Dans le panneau, $KEY$ passe d’un affichage à l’autre.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "depuis la palette"
+  },
+  "options_new_tab": {
+    "message": "Ouvrir les favoris dans un nouvel onglet"
+  },
+  "options_new_tab_hint": {
+    "message": "Désactivé : « Ouvrir » utilise l’onglet actuel, « Ouvrir dans un autre onglet » un nouvel onglet. Activé — c’est l’inverse."
+  },
+  "options_pinned": {
+    "message": "Favoris en onglets épinglés"
+  },
+  "options_pinned_hint": {
+    "message": "Comme dans Arc : si l’onglet d’un favori est déjà ouvert, « Ouvrir » bascule vers lui au lieu de l’ouvrir de nouveau. Les favoris ouverts sont signalés par un point."
+  },
+  "options_auto_hide": {
+    "message": "Fermer le panneau quand le focus passe à la page"
+  },
+  "options_auto_hide_hint": {
+    "message": "Un clic sur la page ou sur l’interface du navigateur ferme le panneau. Passer à une autre application le laisse ouvert."
+  },
+  "options_keys": {
+    "message": "Touches du panneau"
+  },
+  "options_preset_standard": {
+    "message": "Standard"
+  },
+  "options_preset_standard_title": {
+    "message": "Remplacer tous les raccourcis par ceux par défaut"
+  },
+  "options_preset_vim_title": {
+    "message": "Standard plus touches Vim : j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "« + » enregistre un raccourci : une touche, avec modificateurs, une séquence ($SEQUENCE$) ou un double appui ($DOUBLE$) — appuyez tout de suite sur la seconde touche. $ENTER$ après une touche — terminé, $ESC$ — annuler l’enregistrement, « × » — retirer. Si le raccourci est déjà pris, on vous demandera si vous voulez le reprendre. Toutes les commandes sont aussi dans la palette de commandes du panneau.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "Ouvrir et fermer le panneau : $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "modifier dans les paramètres du navigateur"
+  },
+  "options_global_not_set": {
+    "message": "non défini"
+  },
+  "options_saved": {
+    "message": "Enregistré"
+  },
+  "options_saved_notes": {
+    "message": "Enregistré : $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "retiré de « $COMMAND$ »",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "la palette s’ouvre désormais uniquement avec le bouton du panneau"
+  },
+  "options_delayed": {
+    "message": "un appui simple agira avec un léger délai"
+  },
+  "options_remove_binding": {
+    "message": "Retirer $KEY$ de « $COMMAND$ »",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "Ajouter un raccourci pour « $COMMAND$ »",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "réinitialiser"
+  },
+  "options_reset_title": {
+    "message": "Rétablir les raccourcis par défaut de « $COMMAND$ »",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "uniquement avec le bouton du panneau"
+  },
+  "options_only_palette": {
+    "message": "uniquement depuis la palette"
+  },
+  "options_press_keys": {
+    "message": "Appuyez sur un raccourci…"
+  },
+  "options_taken": {
+    "message": "déjà utilisé par « $COMMAND$ » — Enter : le reprendre, Esc : annuler",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "raccourcis personnalisés"
+  },
+  "options_replace_preset": {
+    "message": "Remplacer vos raccourcis par le jeu « $PRESET$ » ?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "Vos raccourcis modifiés seront perdus."
+  },
+  "options_replace_ok": {
+    "message": "Remplacer"
+  },
+  "options_preset_applied": {
+    "message": "Le jeu « $PRESET$ » est appliqué",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ favori",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_many": {
+    "message": "$COUNT$ de favoris",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ favoris",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "Ouvrir $COUNT$ onglet",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_many": {
+    "message": "Ouvrir $COUNT$ d’onglets",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "Ouvrir $COUNT$ onglets",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ déjà ouvert)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_many": {
+    "message": "($COUNT$ d’onglets déjà ouverts)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ déjà ouverts)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "Fermer $COUNT$ onglet ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_many": {
+    "message": "Fermer $COUNT$ d’onglets ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "Fermer $COUNT$ onglets ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "Ce sont les onglets de $COUNT$ favori dans cette fenêtre.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_many": {
+    "message": "Ce sont les onglets de $COUNT$ de favoris dans cette fenêtre.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "Ce sont les onglets de $COUNT$ favoris dans cette fenêtre.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "Supprimer $COUNT$ élément sélectionné ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_many": {
+    "message": "Supprimer $COUNT$ d’éléments sélectionnés ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "Supprimer $COUNT$ éléments sélectionnés ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "Tout ce qu’il contient sera aussi supprimé : $COUNT$ favori.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_many": {
+    "message": "Tout ce qu’il contient sera aussi supprimé : $COUNT$ de favoris.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "Tout ce qu’il contient sera aussi supprimé : $COUNT$ favoris.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "Déplacer $COUNT$ élément vers un dossier",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_many": {
+    "message": "Déplacer $COUNT$ d’éléments vers un dossier",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "Déplacer $COUNT$ éléments vers un dossier",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "$COUNT$ élément déplacé vers « $FOLDER$ »",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_many": {
+    "message": "$COUNT$ d’éléments déplacés vers « $FOLDER$ »",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "$COUNT$ éléments déplacés vers « $FOLDER$ »",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "Aide"
+  },
+  "help_heading": {
+    "message": "Favoris dans le panneau latéral"
+  },
+  "help_lead": {
+    "message": "Vos favoris à côté de la page, tout au clavier : rechercher, ouvrir, classer dans des dossiers, garder en onglets épinglés. Créé lors du passage d’Arc à un navigateur Chromium."
+  },
+  "help_settings_button": {
+    "message": "Paramètres"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · Les touches ci-dessous sont les vôtres, réattributions comprises.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "Ouvrir le panneau"
+  },
+  "help_nav_label": {
+    "message": "Sections"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — ouvrir le panneau. Appuyez de nouveau pour le fermer ; si le focus est passé à la page, le même raccourci le ramène dans le panneau. L’icône de l’extension ouvre aussi le panneau — épinglez-la dans le menu des extensions du navigateur.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — parcourir la liste, $EXPAND$ $COLLAPSE$ — développer et réduire un dossier, $OPEN$ — ouvrir.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — rechercher : commencez à saisir un titre, un site ou un dossier.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — sélectionner plusieurs favoris, $MOVE$ — les déplacer vers un dossier par son nom.",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — la palette : toutes les commandes avec leurs touches, au cas où vous oublieriez quelque chose.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "Clic droit sur un favori, un dossier ou un espace vide — un menu comme celui du navigateur : ouvrir dans une nouvelle fenêtre, modifier, couper, copier, coller. $MENU$ — la même chose au clavier.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — cette aide. Les nouveaux favoris s’ajoutent comme d’habitude dans le navigateur — $CHORD$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "Dans les langues qui s’écrivent de droite à gauche, les flèches ← et → échangent leur rôle : ← développe un dossier, → le réduit."
+  },
+  "help_pinned_why": {
+    "message": "Comme dans Arc : un favori a son onglet « à lui ». Ouvrez-le et le favori retient l’onglet, même si vous vous éloignez de lien en lien. Ce mode est activé par défaut et peut être désactivé dans les paramètres."
+  },
+  "help_pinned_1": {
+    "message": "Un point à droite signifie que le favori a un onglet ouvert ; un point bleu, que c’est l’onglet actuel. Un anneau sur un dossier réduit signifie que quelque chose à l’intérieur est ouvert."
+  },
+  "help_pinned_2": {
+    "message": "$OPEN$ sur un favori déjà ouvert bascule vers son onglet au lieu d’en ouvrir un second. Si le favori a plusieurs onglets, on va à celui que vous avez utilisé en dernier.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — remettre l’onglet à l’adresse du favori (vous êtes allé loin de lien en lien).",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — l’inverse : enregistrer dans le favori l’adresse où vous êtes. Sur l’onglet du favori lui-même, c’est immédiat ; sinon, le panneau demande d’abord.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ ou la croix au survol — fermer l’onglet du favori. Pour un dossier ou des éléments sélectionnés — tous leurs onglets (demande d’abord).",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "Un favori ne s’approprie pas l’onglet d’un autre : si l’onglet actuel a un autre favori ouvert, le nouveau s’ouvre à côté."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — la zone de recherche dans l’en-tête. Elle cherche par titre, adresse et dossier ; les résultats dans le titre passent en premier.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "travail lin"
+  },
+  "help_find_2": {
+    "message": "Vous pouvez restreindre par dossier : $QUERY$ trouve Linear dans le dossier « Travail ».",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — choisir, $ENTER$ — ouvrir, $MODENTER$ — dans un autre onglet, $TAB$ — afficher le résultat à sa place dans l’arborescence, $ESC$ — revenir là où vous étiez.",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ sur un dossier — y entrer dans l’arborescence.",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "Les commandes de la palette ($PALETTE$) fonctionnent aussi sur les résultats : « Déplacer vers le dossier… », « Renommer », « Supprimer… ». $SHIFT$+clic sélectionne un résultat — après $ESC$, vous pouvez travailler sur les éléments sélectionnés dans l’arborescence.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "Avec beaucoup de favoris, taper quelques lettres est plus rapide que parcourir l’arborescence."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — sélectionner une ligne, $DOWN$ $UP$ — sélectionner à la suite.",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — tout ce qui est dans ce dossier (encore une fois — désélectionner). $ESC$ — désélectionner.",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "L’en-tête indique combien d’éléments sont sélectionnés. Les éléments sélectionnés s’ouvrent, se déplacent, se copient et se suppriment ensemble ; le renommage ne fonctionne que sur la ligne sous le curseur."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — vers un dossier par son nom : commencez à taper. Les dossiers vers lesquels vous avez déplacé des éléments récemment passent en premier. $ENTER$ — déplacer et rester en place (pratique pour trier un élément après l’autre), $SHIFTENTER$ — déplacer et y aller. Si ce dossier n’existe pas, $ENTER2$ sur « Créer le dossier » le crée et y déplace aussitôt.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — parcourir la liste. Une ligne entre dans un dossier développé et en sort au bord du dossier.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — nouveau dossier ; vous pouvez saisir le nom tout de suite. Si des éléments sont sélectionnés, ils se retrouvent dedans.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — renommer : $ENTER$ — enregistrer, $ESC$ — annuler.",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — supprimer avec confirmation. Un dossier non vide ou plusieurs éléments ne peuvent pas être supprimés d’un seul Enter — « Annuler » est sélectionné par défaut.",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — copier l’adresse (pour un dossier ou des éléments sélectionnés — toutes les adresses, une par ligne).",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — annuler la dernière modification faite dans le panneau : suppression, renommage, déplacement, nouveau dossier, adresse de l’onglet ; $REDO$ — la rétablir. Après une modification, le message en bas comporte un bouton « Annuler ». L’historique est commun à toutes les fenêtres et conservé jusqu’à la fermeture du navigateur (jusqu’à 50 étapes) ; les modifications faites dans le Gestionnaire de favoris ou par la synchronisation ne sont pas annulées.",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "Un tas dans « Boîte de réception » ? Vous pouvez le trier sans toucher à la souris."
+  },
+  "help_sort_mark_title": {
+    "message": "Sélectionner"
+  },
+  "help_sort_move_title": {
+    "message": "Déplacer"
+  },
+  "help_sort_edit_title": {
+    "message": "Modifier"
+  },
+  "help_sets_1": {
+    "message": "Sélectionnez des favoris et appuyez sur $OPEN$, ou appuyez sur $ALT$ sur un dossier.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "Le panneau demande un nom de groupe : saisissez-en un et les onglets sont réunis dans un groupe de ce nom (pour un dossier, il est déjà rempli) ; laissez vide et ils s’ouvrent comme des onglets ordinaires."
+  },
+  "help_sets_3": {
+    "message": "Les favoris déjà ouverts ne sont pas ouverts une seconde fois : leurs onglets rejoignent simplement le groupe."
+  },
+  "help_sets_why": {
+    "message": "L’ensemble d’onglets du matin, un projet, une recherche — en une seule commande."
+  },
+  "help_own_settings_link": {
+    "message": "paramètres"
+  },
+  "help_own_1": {
+    "message": "Dans $SETTINGS$ : « + » enregistre un raccourci, « × » le retire, « réinitialiser » rétablit celui par défaut. Si un raccourci appartient déjà à une autre commande, les paramètres demandent si vous voulez le reprendre.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "Les séquences sont possibles — $SEQ$ — ainsi que les doubles appuis — $SEQ2$.",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "Le préréglage $VIM$ en un bouton : $JKHL$, $SEQ$ et $SHIFTG$, $SEQ2$ — supprimer, $SEQ3$ — copier, $COLON$ — palette.",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "Les touches fonctionnent avec n’importe quelle disposition : elles sont reconnues par leur position, donc avec la disposition russe $R$ reste la même touche, et $SLASH$ et $QUESTION$ sont les mêmes touches qu’avec la disposition anglaise.",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "paramètres des raccourcis des extensions"
+  },
+  "help_own_5": {
+    "message": "Le raccourci propre au panneau ($GLOBAL$) se modifie dans le navigateur : $LINK$.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "Chaque action est une commande, et toute commande peut avoir ses propres touches."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — changer l’affichage : normal → avec adresse (le site sous le titre ; pour un dossier, le nombre de favoris qu’il contient) → compact.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — le panneau n’affiche que ce dossier. La recherche et le déplacement fonctionnent aussi à l’intérieur.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — échange $OPEN$ et $ALT$.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — un clic sur la page ou sur l’interface du navigateur le ferme ; passer à une autre application ne le ferme pas.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "Chaque fenêtre a son propre panneau. Les dossiers développés et la position du curseur sont mémorisés."
+  },
+  "help_view_6": {
+    "message": "Pas d’en-tête : la ligne de recherche n’apparaît en haut que pendant la recherche, et la barre « Sélection » en bas, que tant que quelque chose est marqué."
+  },
+  "help_view_private": {
+    "message": "Tout est stocké dans le navigateur : l’extension n’envoie ni vos favoris ni votre historique nulle part."
+  },
+  "help_all_intro": {
+    "message": "Vos raccourcis actuels. Les commandes sans touches sont disponibles dans la palette ($PALETTE$).",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "Dans la zone de recherche"
+  },
+  "help_all_pick": {
+    "message": "Choisir un résultat"
+  },
+  "help_all_open": {
+    "message": "Ouvrir / dans un autre onglet / remettre l’onglet à l’adresse"
+  },
+  "help_all_show": {
+    "message": "Afficher le résultat dans l’arborescence"
+  },
+  "help_all_leave": {
+    "message": "Quitter la recherche"
+  },
+  "help_all_palette": {
+    "message": "Dans la palette et le sélecteur de dossier"
+  },
+  "help_all_run": {
+    "message": "Choisir / exécuter"
+  },
+  "help_all_move_go": {
+    "message": "Déplacer et aller au dossier"
+  },
+  "help_all_close": {
+    "message": "Fermer"
+  },
+  "help_mouse_open": {
+    "message": "Ouvrir un favori, développer ou réduire un dossier"
+  },
+  "help_mouse_open_keys": {
+    "message": "clic"
+  },
+  "help_mouse_other": {
+    "message": "Ouvrir dans un autre onglet"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+clic",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "Ouvrir dans un nouvel onglet ; pour un dossier — ouvrir ses favoris"
+  },
+  "help_mouse_new_keys": {
+    "message": "bouton central"
+  },
+  "help_mouse_folder": {
+    "message": "Ouvrir les favoris du dossier"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+clic sur le dossier",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "Sélectionner"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+clic",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "Fermer l’onglet du favori"
+  },
+  "help_mouse_close_keys": {
+    "message": "croix au survol"
+  },
+  "help_mouse_menu": {
+    "message": "Menu : ouvrir dans une nouvelle fenêtre, modifier, couper, copier, coller, supprimer"
+  },
+  "help_mouse_menu_keys": {
+    "message": "clic droit"
+  },
+  "help_mouse_empty": {
+    "message": "Recherche, palette, paramètres, annulation"
+  },
+  "help_mouse_empty_keys": {
+    "message": "clic droit sur un espace vide"
+  },
+  "help_news_25_1": {
+    "message": "L’interface et l’aide existent en 10 langues : English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية, selon la langue du navigateur. L’écriture de droite à gauche est prise en charge ; les traductions de la communauté passent par le dépôt."
+  },
+  "help_news_25_2": {
+    "message": "Dans les langues de droite à gauche, ← déplie un dossier et → le réduit."
+  },
+  "help_news_25_3": {
+    "message": "La recherche de texte saisi avec la mauvaise disposition de clavier a été supprimée. Le champ de recherche affiche le nombre de résultats trouvés."
+  },
+  "help_news_25_4": {
+    "message": "Les lignes sélectionnées affichent une coche ; les messages sont plus visibles dans le thème sombre ; nouvelle icône de la palette."
+  },
+  "help_news_25_5": {
+    "message": "Les dossiers système et les favoris gérés expliquent pourquoi on ne peut pas les sélectionner, les modifier, les déplacer ni les supprimer."
+  },
+  "help_news_25_6": {
+    "message": "Paramètres : les modifications faites dans d’autres onglets apparaissent aussitôt, la liste des dossiers se met à jour après une importation, et le changement de préréglage de touches se confirme dans sa propre fenêtre."
+  },
+  "help_news_25_7": {
+    "message": "Corrigé : un double V rapide sautait une vue ; Alt+B après la fermeture d’une autre fenêtre pouvait fermer le panneau au lieu de l’ouvrir dans la fenêtre actuelle ; « Enregistrer l’adresse de l’onglet » sur un nouvel onglet d’Edge, Brave, Vivaldi et Opera enregistrait dans le favori l’adresse de la page de démarrage."
+  },
+  "help_news_26_1": {
+    "message": "Annuler et rétablir les modifications faites dans le panneau : ⌘Z / ⌘⇧Z sur Mac, Ctrl+Z et Ctrl+Maj+Z ou Ctrl+Y ailleurs, ou le bouton « Annuler » du message. Un dossier supprimé revient avec son contenu. L’historique garde 50 étapes et il est commun à toutes les fenêtres jusqu’à la fermeture du navigateur."
+  },
+  "help_news_26_2": {
+    "message": "Faites glisser à la souris des favoris, des dossiers et la sélection : au-dessus, en dessous ou dans un dossier. Le dossier s’ouvre quand on y maintient un élément, et la liste défile près du bord."
+  },
+  "help_news_26_3": {
+    "message": "Le menu du clic droit fonctionne comme le menu des favoris du navigateur : ouvrir dans un nouvel onglet, une nouvelle fenêtre, en vue fractionnée ou dans une fenêtre de navigation privée ; modifier ; couper, copier et coller ; supprimer ; ajouter une page ou un dossier ; ouvrir le gestionnaire de favoris. Au clavier, il s’ouvre avec Maj+F10."
+  },
+  "help_news_26_4": {
+    "message": "Le panneau n’a plus d’en-tête propre : le champ de recherche n’apparaît que pendant la recherche, et « Sélection : N » est une barre en bas."
+  },
+  "help_news_24_1": {
+    "message": "Plus rapide avec de grandes collections : l’arborescence est relue moins souvent, la recherche et le sélecteur de dossier se construisent plus vite."
+  },
+  "help_news_24_2": {
+    "message": "Sélecteur de dossier : dans l’ordre de l’arborescence, dossiers récents à part, « Créer le dossier » s’il n’existe pas."
+  },
+  "help_news_24_3": {
+    "message": "Vous pouvez saisir le nom du nouveau dossier juste après $NEW$.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "Le curseur est plus visible ; un dossier réduit indique qu’un onglet à l’intérieur est ouvert. Les nouveaux onglets s’ouvrent à côté de l’onglet actuel."
+  },
+  "help_news_24_5": {
+    "message": "Ouvrir un ensemble ne duplique pas les onglets ouverts. Fermer les onglets de plusieurs favoris et remplacer une adresse demandent confirmation."
+  },
+  "help_news_24_6": {
+    "message": "Avec la disposition russe, les symboles sont lus selon la position de la touche ($QUESTION$ ouvre la palette). Sur Mac, $CTRL$ n’équivaut plus à $CMD$.",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1 : la disposition russe est reconnue tout de suite, sans lettres saisies — $CHORD$ ouvre la palette, pas les paramètres.",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "L’éditeur de touches demande confirmation avant de reprendre un raccourci à une autre commande et affiche le préréglage choisi."
+  },
+  "help_news_24_9": {
+    "message": "Corrigé : les lettres saisies juste après $NEW$ agissaient comme des commandes ; Espace pouvait confirmer une suppression ; après un renommage depuis la recherche, le focus passait à la liste ; un $BS$ accidentel dans la recherche fermait un onglet.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "Déplacer vers un dossier par son nom : $MOVE$, les dossiers récents en tête.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "Enregistrer dans le favori l’adresse de l’onglet actuel : $UPDATE$.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "Affichage avec l’adresse sous le titre, et un affichage compact : $CYCLE$.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "Cette aide : $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "Recherche dans le panneau : par titre, adresse et dossier, avec surlignage et sur n’importe quelle disposition de clavier ; $TAB$ affiche le résultat à sa place.",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1 : $SLASH$ et d’autres symboles fonctionnent aussi avec la disposition russe.",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "Toutes les actions sont devenues des commandes : la palette de commandes et vos propres raccourcis dans les paramètres, le préréglage Vim, les séquences et les doubles appuis."
+  },
+  "help_news_21_2": {
+    "message": "Copier l’adresse, tout sélectionner dans un dossier, réduire tous les dossiers. Les paramètres s’ouvrent dans un onglet."
+  },
+  "help_news_20_1": {
+    "message": "Nouveaux dossiers, déplacement des lignes avec $OPTION$/$ALT$, sélection avec Espace.",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "Ouvrir un ensemble de favoris, y compris en groupe d’onglets portant le nom du dossier. Une option « ouvrir dans un nouvel onglet »."
+  },
+  "help_news_1_1": {
+    "message": "Le panneau avec un seul raccourci : ouvrir, rendre le focus, fermer. Dossier de départ."
+  },
+  "help_news_1_2": {
+    "message": "Favoris en onglets épinglés, comme dans Arc, renommer et supprimer, masquage automatique, travail dans plusieurs fenêtres, nouveau design."
+  },
+  "help_news_earlier": {
+    "message": "Versions précédentes"
+  },
+  "help_quick_title": {
+    "message": "Démarrage rapide"
+  },
+  "help_nav_pinned": {
+    "message": "En onglets épinglés"
+  },
+  "help_pinned_title": {
+    "message": "Favoris en onglets épinglés"
+  },
+  "help_find_title": {
+    "message": "Rechercher et ouvrir"
+  },
+  "help_sort_title": {
+    "message": "Trier les favoris"
+  },
+  "help_sets_title": {
+    "message": "Ouvrir en ensemble"
+  },
+  "help_own_title": {
+    "message": "Vos propres touches"
+  },
+  "help_view_title": {
+    "message": "Affichage et paramètres"
+  },
+  "help_all_title": {
+    "message": "Toutes les touches"
+  },
+  "help_mouse_title": {
+    "message": "Souris"
+  },
+  "help_news_title": {
+    "message": "Nouveautés"
+  }
+}

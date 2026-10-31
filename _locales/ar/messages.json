@@ -1,0 +1,2499 @@
+{
+  "locale": {
+    "message": "ar"
+  },
+  "dir": {
+    "message": "rtl"
+  },
+  "ext_name": {
+    "message": "الإشارات المرجعية"
+  },
+  "ext_description": {
+    "message": "الإشارات المرجعية في اللوحة الجانبية باختصار لوحة المفاتيح، مع التنقل بمفاتيح الأسهم"
+  },
+  "command_toggle": {
+    "message": "فتح لوحة الإشارات المرجعية / التركيز عليها / إغلاقها"
+  },
+  "all_bookmarks": {
+    "message": "كل الإشارات المرجعية"
+  },
+  "untitled": {
+    "message": "بلا عنوان"
+  },
+  "bookmarklet": {
+    "message": "إشارة برمجية"
+  },
+  "folder_empty": {
+    "message": "فارغ"
+  },
+  "cancel": {
+    "message": "إلغاء"
+  },
+  "open": {
+    "message": "فتح"
+  },
+  "delete": {
+    "message": "حذف"
+  },
+  "close": {
+    "message": "إغلاق"
+  },
+  "nothing_found": {
+    "message": "لم يُعثر على شيء"
+  },
+  "more_results": {
+    "message": "و$COUNT$ أخرى — حدِّد البحث أكثر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "المسافة"
+  },
+  "group_nav": {
+    "message": "التنقل"
+  },
+  "group_open": {
+    "message": "الفتح"
+  },
+  "group_marks": {
+    "message": "التحديد"
+  },
+  "group_edit": {
+    "message": "التعديل"
+  },
+  "group_panel": {
+    "message": "اللوحة"
+  },
+  "cmd_search": {
+    "message": "البحث في الإشارات المرجعية"
+  },
+  "cmd_search_note": {
+    "message": "حسب العنوان وعنوان URL والمجلد"
+  },
+  "cmd_search_words": {
+    "message": "بحث ابحث إيجاد تصفية فلتر"
+  },
+  "cmd_cursor_down": {
+    "message": "تحريك المؤشر لأسفل"
+  },
+  "cmd_cursor_down_words": {
+    "message": "أسفل تالي التالي"
+  },
+  "cmd_cursor_up": {
+    "message": "تحريك المؤشر لأعلى"
+  },
+  "cmd_cursor_up_words": {
+    "message": "أعلى سابق السابق"
+  },
+  "cmd_cursor_first": {
+    "message": "إلى بداية القائمة"
+  },
+  "cmd_cursor_first_words": {
+    "message": "بداية أول الأول أعلى"
+  },
+  "cmd_cursor_last": {
+    "message": "إلى نهاية القائمة"
+  },
+  "cmd_cursor_last_words": {
+    "message": "نهاية آخر الأخير أسفل"
+  },
+  "cmd_folder_expand": {
+    "message": "توسيع المجلد"
+  },
+  "cmd_folder_expand_words": {
+    "message": "توسيع افتح فتح مجلد"
+  },
+  "cmd_folder_collapse": {
+    "message": "طيّ المجلد"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "على إشارة مرجعية — الانتقال إلى مجلدها"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "طي إغلاق أصل أعلى"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "طيّ كل المجلدات"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "طي الكل إغلاق الكل"
+  },
+  "cmd_open": {
+    "message": "فتح"
+  },
+  "cmd_open_note": {
+    "message": "مع وجود تحديد — كل ما حُدِّد"
+  },
+  "cmd_open_words": {
+    "message": "فتح انتقال اذهب"
+  },
+  "cmd_open_alt": {
+    "message": "فتح في علامة تبويب أخرى"
+  },
+  "cmd_open_alt_note": {
+    "message": "على مجلد — كل الإشارات المرجعية فيه"
+  },
+  "cmd_open_alt_words": {
+    "message": "فتح بديل أخرى"
+  },
+  "cmd_open_newTab": {
+    "message": "فتح في علامة تبويب جديدة"
+  },
+  "cmd_open_newTab_words": {
+    "message": "علامة تبويب جديدة تبويب جديد"
+  },
+  "cmd_open_currentTab": {
+    "message": "فتح في علامة التبويب الحالية"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "علامة التبويب الحالية هنا"
+  },
+  "cmd_open_group": {
+    "message": "فتح كمجموعة علامات تبويب…"
+  },
+  "cmd_open_group_words": {
+    "message": "مجموعة علامات تبويب مجموعة"
+  },
+  "cmd_open_reset": {
+    "message": "إعادة علامة التبويب إلى عنوان URL للإشارة المرجعية"
+  },
+  "cmd_open_reset_words": {
+    "message": "إعادة تعيين إرجاع مثبّتة عنوان رابط"
+  },
+  "cmd_mark_toggle": {
+    "message": "تحديد"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "مرة أخرى — إلغاء التحديد"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "تحديد اختيار علامة"
+  },
+  "cmd_mark_down": {
+    "message": "تحديد والنزول"
+  },
+  "cmd_mark_down_words": {
+    "message": "تحديد لأسفل اختيار"
+  },
+  "cmd_mark_up": {
+    "message": "تحديد والصعود"
+  },
+  "cmd_mark_up_words": {
+    "message": "تحديد لأعلى اختيار"
+  },
+  "cmd_mark_all": {
+    "message": "تحديد كل ما في المجلد"
+  },
+  "cmd_mark_all_note": {
+    "message": "مرة أخرى — إلغاء التحديد"
+  },
+  "cmd_mark_all_words": {
+    "message": "تحديد الكل اختيار الكل"
+  },
+  "cmd_mark_clear": {
+    "message": "مسح التحديد"
+  },
+  "cmd_mark_clear_words": {
+    "message": "مسح إلغاء التحديد إزالة"
+  },
+  "cmd_folder_new": {
+    "message": "مجلد جديد"
+  },
+  "cmd_folder_new_note": {
+    "message": "مع وجود تحديد — ينقل المحدَّد إليه"
+  },
+  "cmd_folder_new_words": {
+    "message": "جديد إنشاء مجلد"
+  },
+  "cmd_rename": {
+    "message": "إعادة تسمية"
+  },
+  "cmd_rename_words": {
+    "message": "إعادة تسمية اسم تغيير الاسم عنوان تعديل"
+  },
+  "cmd_edit": {
+    "message": "تعديل الاسم والعنوان…"
+  },
+  "cmd_edit_note": {
+    "message": "في نافذة، كما في المتصفح"
+  },
+  "cmd_edit_words": {
+    "message": "تعديل اسم عنوان",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "نقل إلى مجلد…"
+  },
+  "cmd_move_to_note": {
+    "message": "اختر مجلدًا بالاسم"
+  },
+  "cmd_move_to_words": {
+    "message": "نقل تحريك مجلد"
+  },
+  "cmd_url_update": {
+    "message": "حفظ عنوان URL لعلامة التبويب"
+  },
+  "cmd_url_update_note": {
+    "message": "تأخذ الإشارة المرجعية عنوان URL لعلامة التبويب الحالية"
+  },
+  "cmd_url_update_words": {
+    "message": "تحديث عنوان استبدال رابط"
+  },
+  "cmd_delete": {
+    "message": "حذف…"
+  },
+  "cmd_delete_words": {
+    "message": "حذف إزالة مسح"
+  },
+  "cmd_copy_url": {
+    "message": "نسخ عنوان URL"
+  },
+  "cmd_copy_url_note": {
+    "message": "للمجلد والمحدَّد — كل عناوين URL"
+  },
+  "cmd_copy_url_words": {
+    "message": "نسخ عنوان رابط"
+  },
+  "cmd_cut": {
+    "message": "قص"
+  },
+  "cmd_cut_note": {
+    "message": "اللصق ينقل الإشارات المرجعية إلى هناك"
+  },
+  "cmd_copy": {
+    "message": "نسخ"
+  },
+  "cmd_copy_note": {
+    "message": "اللصق ينشئ نسخة؛ وتُنسخ العناوين إلى الحافظة أيضًا"
+  },
+  "cmd_paste": {
+    "message": "لصق"
+  },
+  "cmd_paste_note": {
+    "message": "بعد المؤشر أو داخل مجلد موسَّع"
+  },
+  "cmd_cut_words": {
+    "message": "قص نقل حافظة",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "نسخ نسخة تكرار حافظة",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "لصق إدراج حافظة",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "إغلاق علامة تبويب الإشارة المرجعية"
+  },
+  "cmd_tab_close_note": {
+    "message": "للمجلد والمحدَّد — كل علامات تبويبها"
+  },
+  "cmd_tab_close_words": {
+    "message": "إغلاق علامة تبويب"
+  },
+  "cmd_move_up": {
+    "message": "نقل لأعلى"
+  },
+  "cmd_move_up_words": {
+    "message": "نقل تحريك أعلى"
+  },
+  "cmd_move_down": {
+    "message": "نقل لأسفل"
+  },
+  "cmd_move_down_words": {
+    "message": "نقل تحريك أسفل"
+  },
+  "cmd_undo": {
+    "message": "تراجع"
+  },
+  "cmd_undo_words": {
+    "message": "تراجع إلغاء"
+  },
+  "cmd_redo": {
+    "message": "إعادة"
+  },
+  "cmd_redo_words": {
+    "message": "إعادة تكرار"
+  },
+  "cmd_palette": {
+    "message": "لوحة الأوامر"
+  },
+  "cmd_palette_words": {
+    "message": "أوامر لوحة مساعدة كل الأوامر"
+  },
+  "cmd_menu": {
+    "message": "فتح القائمة"
+  },
+  "cmd_menu_note": {
+    "message": "مثل زر الفأرة الأيمن"
+  },
+  "cmd_menu_words": {
+    "message": "قائمة سياق زر أيمن",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "تغيير العرض"
+  },
+  "cmd_view_cycle_note": {
+    "message": "عادي، مع عنوان URL، مضغوط"
+  },
+  "cmd_view_cycle_words": {
+    "message": "عرض وضع العنوان مضغوط"
+  },
+  "cmd_help": {
+    "message": "مساعدة"
+  },
+  "cmd_help_note": {
+    "message": "كل الميزات والمفاتيح"
+  },
+  "cmd_help_words": {
+    "message": "مساعدة تعليمات دليل شرح"
+  },
+  "cmd_settings": {
+    "message": "الإعدادات"
+  },
+  "cmd_settings_words": {
+    "message": "إعدادات خيارات تفضيلات"
+  },
+  "cmd_escape": {
+    "message": "إلغاء أو إغلاق"
+  },
+  "cmd_escape_note": {
+    "message": "مسح التحديد، الخروج من البحث، وإلا إغلاق اللوحة"
+  },
+  "cmd_escape_words": {
+    "message": "إلغاء خروج إغلاق Esc"
+  },
+  "cmd_panel_close": {
+    "message": "إغلاق اللوحة"
+  },
+  "cmd_panel_close_words": {
+    "message": "إغلاق إخفاء لوحة"
+  },
+  "panel_tree": {
+    "message": "الإشارات المرجعية"
+  },
+  "menu_open_new_tab": {
+    "message": "فتح في علامة تبويب جديدة"
+  },
+  "menu_open_new_window": {
+    "message": "فتح في نافذة جديدة"
+  },
+  "menu_open_split": {
+    "message": "فتح في وضع \"تقسيم العرض\""
+  },
+  "menu_open_incognito": {
+    "message": "فتح في نافذة التصفُّح المتخفي"
+  },
+  "menu_open_all": {
+    "message": "فتح كل الـ ($COUNT$) عنوان",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "فتح كل العناوين في نافذة جديدة"
+  },
+  "menu_open_all_incognito": {
+    "message": "فتح الكل في نافذة التصفُّح المتخفي"
+  },
+  "menu_edit": {
+    "message": "تعديل…"
+  },
+  "menu_rename": {
+    "message": "إعادة تسمية…"
+  },
+  "menu_delete": {
+    "message": "حذف"
+  },
+  "menu_add_page": {
+    "message": "إضافة صفحة…"
+  },
+  "menu_add_folder": {
+    "message": "إضافة مجلد…"
+  },
+  "menu_manager": {
+    "message": "فتح \"مدير الإشارات\""
+  },
+  "menu_incognito_off": {
+    "message": "اسمح للإضافة بوضع التصفح المتخفي: chrome://extensions ← “التفاصيل” ← “السماح في وضع التصفح المتخفي”"
+  },
+  "menu_bookmarklet": {
+    "message": "يعمل البوكماركلت في الصفحة المفتوحة فقط — انقر عليه"
+  },
+  "menu_edit_single": {
+    "message": "يمكن تعديل عنصر واحد فقط في كل مرة"
+  },
+  "search_placeholder": {
+    "message": "العنوان أو عنوان URL أو المجلد"
+  },
+  "search_found": {
+    "message": "تم العثور على: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "لم يُعثر على شيء · $KEY$ — للعودة إلى القائمة",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "لا توجد إشارات مرجعية بعد."
+  },
+  "empty_folder": {
+    "message": "هذا المجلد فارغ حاليًا."
+  },
+  "empty_add_hint": {
+    "message": "$KEY$ في المتصفّح يضيف صفحة.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — مجلد جديد.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "اسم المجموعة"
+  },
+  "tab_group_placeholder": {
+    "message": "اسم المجموعة — اختياري"
+  },
+  "tab_group_hint": {
+    "message": "عند إدخال اسم تُوضع علامات التبويب في مجموعة؛ وبدونه تُفتح كعلامات تبويب عادية."
+  },
+  "palette_placeholder": {
+    "message": "أمر…"
+  },
+  "close_tab": {
+    "message": "إغلاق علامة التبويب"
+  },
+  "rename_label": {
+    "message": "العنوان"
+  },
+  "new_folder_title": {
+    "message": "مجلد جديد"
+  },
+  "no_bookmarks_here": {
+    "message": "لا توجد إشارات مرجعية هنا"
+  },
+  "copied_addresses": {
+    "message": "تم نسخ عناوين URL: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "تم نسخ عنوان URL"
+  },
+  "copy_failed": {
+    "message": "تعذّر النسخ"
+  },
+  "view_changed": {
+    "message": "العرض: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "عادي"
+  },
+  "view_detailed": {
+    "message": "مع عنوان URL"
+  },
+  "view_dense": {
+    "message": "مضغوط"
+  },
+  "marked": {
+    "message": "المحدَّد: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "المحدَّد: $COUNT$ · $KEY$ — مسح",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "لا يمكن تحديد مجلدات النظام"
+  },
+  "locked_system_edit": {
+    "message": "لا يمكن تغيير مجلدات النظام"
+  },
+  "locked_managed": {
+    "message": "لا يمكن تغيير هذه الإشارات المرجعية"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — كل الأوامر",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "الزر الأيمن — القائمة"
+  },
+  "updated": {
+    "message": "تم التحديث إلى $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "الجديد — اضغط $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "تعذّر إنشاء المجلد"
+  },
+  "move_failed": {
+    "message": "تعذّر النقل"
+  },
+  "delete_bookmark": {
+    "message": "هل تريد حذف الإشارة المرجعية “$TITLE$”؟",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "هل تريد حذف الإشارة المرجعية بلا عنوان؟"
+  },
+  "delete_folder": {
+    "message": "هل تريد حذف المجلد “$TITLE$”؟",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "إجمالي الإشارات المرجعية، بما فيها محتويات المجلد: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "بداخله مجلدات فارغة فقط."
+  },
+  "delete_folder_empty": {
+    "message": "المجلد فارغ."
+  },
+  "url_only_bookmarks": {
+    "message": "عنوان URL موجود للإشارات المرجعية فقط"
+  },
+  "url_locked": {
+    "message": "لا يمكن تغيير هذه الإشارة المرجعية"
+  },
+  "url_loading": {
+    "message": "الصفحة لا تزال قيد التحميل"
+  },
+  "url_blank_tab": {
+    "message": "علامة التبويب الحالية بلا عنوان URL"
+  },
+  "url_same": {
+    "message": "عنوان URL هو نفسه بالفعل"
+  },
+  "url_replace_title": {
+    "message": "هل تريد استبدال عنوان URL للإشارة “$TITLE$”؟",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "استبدال"
+  },
+  "url_failed": {
+    "message": "تعذّر تغيير عنوان URL"
+  },
+  "url_updated": {
+    "message": "تم تحديث عنوان URL"
+  },
+  "undo_button": {
+    "message": "تراجع"
+  },
+  "undo_button_label": {
+    "message": "تراجع: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "إعادة: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "تم التراجع: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "تمت الإعادة: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "لا يوجد ما يمكن التراجع عنه"
+  },
+  "redo_nothing": {
+    "message": "لا يوجد ما يمكن إعادته"
+  },
+  "undo_partial": {
+    "message": "تم التراجع جزئيًا: تغيّرت بعض الإشارات المرجعية في مكان آخر"
+  },
+  "redo_partial": {
+    "message": "تمت الإعادة جزئيًا: تغيّرت بعض الإشارات المرجعية في مكان آخر"
+  },
+  "undo_failed": {
+    "message": "تعذّر التراجع: تغيّرت الإشارات المرجعية في مكان آخر"
+  },
+  "redo_failed": {
+    "message": "تعذّرت الإعادة: تغيّرت الإشارات المرجعية في مكان آخر"
+  },
+  "history_fallback": {
+    "message": "المجلد الأصلي لم يعد موجودًا — وُضع في “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "تم حذف “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_zero": {
+    "message": "لم يُحذف أي عنصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "تم حذف عنصر واحد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_two": {
+    "message": "تم حذف عنصرين",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_few": {
+    "message": "تم حذف $COUNT$ عناصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_many": {
+    "message": "تم حذف $COUNT$ عنصرًا",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "تم حذف $COUNT$ عنصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "تمت إعادة التسمية إلى “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "تم نقل “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_zero": {
+    "message": "لم يُنقل أي عنصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "تم نقل عنصر واحد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_two": {
+    "message": "تم نقل عنصرين",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_few": {
+    "message": "تم نقل $COUNT$ عناصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_many": {
+    "message": "تم نقل $COUNT$ عنصرًا",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "تم نقل $COUNT$ عنصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_zero": {
+    "message": "لا عناصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "عنصر واحد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_two": {
+    "message": "عنصران",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_few": {
+    "message": "$COUNT$ عناصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_many": {
+    "message": "$COUNT$ عنصرًا",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ عنصر",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "تم إنشاء المجلد “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "تم القص: $COUNT$ — الصق للنقل",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "تم النسخ: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "لا شيء للصق — قص إشارات مرجعية أو انسخها أولًا"
+  },
+  "paste_inside": {
+    "message": "لا يمكن لصق مجلد داخل نفسه"
+  },
+  "paste_failed": {
+    "message": "تعذّر اللصق"
+  },
+  "undo_pasted": {
+    "message": "تم اللصق: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "تمت إضافة “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "تم تعديل “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "تعذّرت إضافة الإشارة المرجعية"
+  },
+  "open_failed": {
+    "message": "تعذّر الفتح"
+  },
+  "edit_failed": {
+    "message": "تعذّر الحفظ — تحقّق من العنوان"
+  },
+  "edit_bookmark": {
+    "message": "تعديل الإشارة المرجعية"
+  },
+  "edit_folder": {
+    "message": "إعادة تسمية المجلد"
+  },
+  "edit_name": {
+    "message": "الاسم"
+  },
+  "edit_url": {
+    "message": "العنوان"
+  },
+  "save": {
+    "message": "حفظ"
+  },
+  "tab_not_open": {
+    "message": "علامة التبويب غير مفتوحة"
+  },
+  "tab_not_open_delete": {
+    "message": "لحذف الإشارة المرجعية — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "فعِّل “الإشارات المرجعية كعلامات تبويب مثبّتة” في الإعدادات"
+  },
+  "picker_label": {
+    "message": "نقل إلى مجلد"
+  },
+  "picker_heading": {
+    "message": "نقل “$TITLE$” إلى مجلد",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "اسم المجلد…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — نقل · $SHIFT_ENTER$ — نقل والانتقال إليه",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "الأخيرة"
+  },
+  "picker_all": {
+    "message": "كل المجلدات"
+  },
+  "picker_start_folder": {
+    "message": "مجلد البداية"
+  },
+  "picker_here": {
+    "message": "هنا الآن"
+  },
+  "picker_create": {
+    "message": "إنشاء المجلد “$NAME$”",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "في “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "هذا المجلد لم يعد موجودًا"
+  },
+  "move_nothing": {
+    "message": "لا يوجد ما يمكن نقله"
+  },
+  "move_already_there": {
+    "message": "موجود بالفعل في هذا المجلد"
+  },
+  "moved": {
+    "message": "تم النقل إلى “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "الإشارات المرجعية — مساعدة"
+  },
+  "help_via_palette": {
+    "message": "لوحة الأوامر ← “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "قائمة الزر الأيمن على مكان فارغ"
+  },
+  "help_table_from_palette": {
+    "message": "من لوحة الأوامر"
+  },
+  "help_table_menu": {
+    "message": "قائمة الزر الأيمن"
+  },
+  "help_global_not_set": {
+    "message": "لم يُعيَّن اختصار"
+  },
+  "options_title": {
+    "message": "إعدادات الإشارات المرجعية"
+  },
+  "options_intro": {
+    "message": "كل الميزات وطرق العمل والمفاتيح في $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "المساعدة"
+  },
+  "options_root": {
+    "message": "مجلد البداية"
+  },
+  "options_root_hint": {
+    "message": "تعرض اللوحة محتويات هذا المجلد."
+  },
+  "options_view": {
+    "message": "عرض القائمة"
+  },
+  "options_view_normal": {
+    "message": "عادي"
+  },
+  "options_view_detailed": {
+    "message": "مع عنوان URL — الموقع أسفل العنوان"
+  },
+  "options_view_dense": {
+    "message": "مضغوط"
+  },
+  "options_view_hint": {
+    "message": "في اللوحة، يتنقل $KEY$ بين أوضاع العرض.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "من لوحة الأوامر"
+  },
+  "options_new_tab": {
+    "message": "فتح الإشارات المرجعية في علامة تبويب جديدة"
+  },
+  "options_new_tab_hint": {
+    "message": "إيقاف: يستخدم “فتح” علامة التبويب الحالية، و“فتح في علامة تبويب أخرى” علامة تبويب جديدة. تشغيل — العكس."
+  },
+  "options_pinned": {
+    "message": "الإشارات المرجعية كعلامات تبويب مثبّتة"
+  },
+  "options_pinned_hint": {
+    "message": "كما في Arc: إذا كانت علامة تبويب الإشارة المرجعية مفتوحة بالفعل، ينتقل “فتح” إليها بدلًا من فتحها مرة أخرى. تُعلَّم الإشارات المرجعية المفتوحة بنقطة."
+  },
+  "options_auto_hide": {
+    "message": "إغلاق اللوحة عند انتقال التركيز إلى الصفحة"
+  },
+  "options_auto_hide_hint": {
+    "message": "النقر على الصفحة أو على واجهة المتصفّح يغلق اللوحة. أما التبديل إلى تطبيق آخر فيُبقيها مفتوحة."
+  },
+  "options_keys": {
+    "message": "مفاتيح اللوحة"
+  },
+  "options_preset_standard": {
+    "message": "قياسي"
+  },
+  "options_preset_standard_title": {
+    "message": "استبدال كل الاختصارات بالاختصارات القياسية"
+  },
+  "options_preset_vim_title": {
+    "message": "القياسي مع مفاتيح Vim: j k h l وg g وd d وy y…"
+  },
+  "options_keys_hint": {
+    "message": "يسجّل “+” اختصارًا: مفتاحًا (مع مفاتيح التعديل)، أو تسلسلًا ($SEQUENCE$)، أو ضغطة مزدوجة ($DOUBLE$) — اضغط المفتاح الثاني فورًا. $ENTER$ بعد المفتاح — تم، $ESC$ — إلغاء التسجيل، “×” — إزالة. إذا كان الاختصار مستخدمًا فستُسأل هل تريد الاستيلاء عليه. كل الأوامر موجودة أيضًا في لوحة أوامر اللوحة.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "فتح اللوحة وإغلاقها: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "التغيير في إعدادات المتصفّح"
+  },
+  "options_global_not_set": {
+    "message": "غير معيَّن"
+  },
+  "options_saved": {
+    "message": "تم الحفظ"
+  },
+  "options_saved_notes": {
+    "message": "تم الحفظ: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "أُزيل من “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "لوحة الأوامر تُفتح الآن بزر اللوحة فقط"
+  },
+  "options_delayed": {
+    "message": "الضغطة الواحدة ستنفَّذ بتأخير قصير"
+  },
+  "options_remove_binding": {
+    "message": "إزالة $KEY$ من “$COMMAND$”",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "إضافة اختصار لـ “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "إعادة تعيين"
+  },
+  "options_reset_title": {
+    "message": "استعادة الاختصارات القياسية لـ “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "بزر اللوحة فقط"
+  },
+  "options_only_palette": {
+    "message": "من لوحة الأوامر فقط"
+  },
+  "options_press_keys": {
+    "message": "اضغط اختصارًا…"
+  },
+  "options_taken": {
+    "message": "مستخدم بالفعل في “$COMMAND$” — Enter: الاستيلاء عليه، Esc: إلغاء",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "اختصارات مخصّصة"
+  },
+  "options_replace_preset": {
+    "message": "هل تريد استبدال اختصاراتك بمجموعة “$PRESET$”؟",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "ستُفقد الاختصارات التي غيّرتها."
+  },
+  "options_replace_ok": {
+    "message": "استبدال"
+  },
+  "options_preset_applied": {
+    "message": "تم تطبيق مجموعة “$PRESET$”",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_zero": {
+    "message": "لا توجد إشارات مرجعية",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "إشارة مرجعية واحدة",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_two": {
+    "message": "إشارتان مرجعيتان",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_few": {
+    "message": "$COUNT$ إشارات مرجعية",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_many": {
+    "message": "$COUNT$ إشارة مرجعية",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ إشارة مرجعية",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_zero": {
+    "message": "لا توجد علامات تبويب لفتحها",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "فتح علامة تبويب واحدة",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_two": {
+    "message": "فتح علامتَي تبويب",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_few": {
+    "message": "فتح $COUNT$ علامات تبويب",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_many": {
+    "message": "فتح $COUNT$ علامة تبويب",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "فتح $COUNT$ علامة تبويب",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_zero": {
+    "message": "(لا شيء مفتوح بالفعل)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "(واحدة مفتوحة بالفعل)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_two": {
+    "message": "(اثنتان مفتوحتان بالفعل)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_few": {
+    "message": "($COUNT$ مفتوحة بالفعل)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_many": {
+    "message": "($COUNT$ مفتوحة بالفعل)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ مفتوحة بالفعل)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_zero": {
+    "message": "لا توجد علامات تبويب لإغلاقها.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "هل تريد إغلاق علامة تبويب واحدة؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_two": {
+    "message": "هل تريد إغلاق علامتَي تبويب؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_few": {
+    "message": "هل تريد إغلاق $COUNT$ علامات تبويب؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_many": {
+    "message": "هل تريد إغلاق $COUNT$ علامة تبويب؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "هل تريد إغلاق $COUNT$ علامة تبويب؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_zero": {
+    "message": "لا توجد إشارات مرجعية لها علامات تبويب في هذه النافذة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "هذه علامات تبويب إشارة مرجعية واحدة في هذه النافذة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_two": {
+    "message": "هذه علامات تبويب إشارتين مرجعيتين في هذه النافذة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_few": {
+    "message": "هذه علامات تبويب $COUNT$ إشارات مرجعية في هذه النافذة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_many": {
+    "message": "هذه علامات تبويب $COUNT$ إشارة مرجعية في هذه النافذة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "هذه علامات تبويب $COUNT$ إشارة مرجعية في هذه النافذة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_zero": {
+    "message": "لا توجد عناصر محدَّدة لحذفها.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "هل تريد حذف العنصر المحدَّد؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_two": {
+    "message": "هل تريد حذف العنصرين المحدَّدين؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_few": {
+    "message": "هل تريد حذف العناصر المحدَّدة ($COUNT$)؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_many": {
+    "message": "هل تريد حذف العناصر المحدَّدة ($COUNT$)؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "هل تريد حذف العناصر المحدَّدة ($COUNT$)؟",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_zero": {
+    "message": "لا إشارات مرجعية بداخله.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "وسيُحذف كل ما بداخله أيضًا: إشارة مرجعية واحدة.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_two": {
+    "message": "وسيُحذف كل ما بداخله أيضًا: إشارتان مرجعيتان.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_few": {
+    "message": "وسيُحذف كل ما بداخله أيضًا: $COUNT$ إشارات مرجعية.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_many": {
+    "message": "وسيُحذف كل ما بداخله أيضًا: $COUNT$ إشارة مرجعية.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "وسيُحذف كل ما بداخله أيضًا: $COUNT$ إشارة مرجعية.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_zero": {
+    "message": "لا عناصر لنقلها إلى مجلد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "نقل عنصر واحد إلى مجلد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_two": {
+    "message": "نقل عنصرين إلى مجلد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_few": {
+    "message": "نقل $COUNT$ عناصر إلى مجلد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_many": {
+    "message": "نقل $COUNT$ عنصرًا إلى مجلد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "نقل $COUNT$ عنصر إلى مجلد",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_zero": {
+    "message": "لم يُنقل أي عنصر إلى “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "تم نقل عنصر واحد إلى “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_two": {
+    "message": "تم نقل عنصرين إلى “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_few": {
+    "message": "تم نقل $COUNT$ عناصر إلى “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_many": {
+    "message": "تم نقل $COUNT$ عنصرًا إلى “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "تم نقل $COUNT$ عنصر إلى “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "مساعدة"
+  },
+  "help_heading": {
+    "message": "الإشارات المرجعية في اللوحة الجانبية"
+  },
+  "help_lead": {
+    "message": "إشاراتك المرجعية بجانب الصفحة، وكل شيء من لوحة المفاتيح: البحث والفتح والفرز في مجلدات والإبقاء عليها كعلامات تبويب مثبّتة. صُنع عند الانتقال من Arc إلى متصفّح Chromium."
+  },
+  "help_settings_button": {
+    "message": "الإعدادات"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · المفاتيح أدناه هي مفاتيحك الحالية، بما فيها ما أعدت تعيينه.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "فتح اللوحة"
+  },
+  "help_nav_label": {
+    "message": "الأقسام"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — فتح اللوحة. اضغط مرة أخرى لإغلاقها؛ وإذا انتقل التركيز إلى الصفحة فإن الاختصار نفسه يعيده إلى اللوحة. تفتح أيقونة الإضافة اللوحة أيضًا — ثبّتها في قائمة إضافات المتصفّح.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — التنقل في القائمة، $EXPAND$ $COLLAPSE$ — توسيع المجلد وطيّه، $OPEN$ — فتح.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — بحث: ابدأ بكتابة عنوان أو موقع أو مجلد.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — تحديد عدة إشارات مرجعية، $MOVE$ — نقلها إلى مجلد بالاسم.",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — لوحة الأوامر: كل الأوامر مع مفاتيحها، إن نسيت شيئًا.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "الزر الأيمن على إشارة مرجعية أو مجلد أو مكان فارغ — قائمة مثل قائمة المتصفح: الفتح في نافذة جديدة، والتعديل، والقص، والنسخ، واللصق. $MENU$ — الشيء نفسه من لوحة المفاتيح.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — هذه المساعدة. تُضاف الإشارات المرجعية الجديدة بالطريقة المعتادة في المتصفّح — $CHORD$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "في اللغات التي تُكتب من اليمين إلى اليسار يتبادل السهمان ← و→ موضعيهما: ← يوسّع المجلد، و→ يطويه."
+  },
+  "help_pinned_why": {
+    "message": "كما في Arc: للإشارة المرجعية علامة تبويب “خاصة بها”. افتحها فتتذكر الإشارة المرجعية علامة التبويب، حتى لو تنقلت بعيدًا عبر الروابط. هذا الوضع مفعَّل افتراضيًا ويمكن إيقافه في الإعدادات."
+  },
+  "help_pinned_1": {
+    "message": "النقطة على الجانب تعني أن للإشارة المرجعية علامة تبويب مفتوحة؛ والنقطة الزرقاء هي علامة التبويب الحالية. الحلقة على مجلد مطويّ تعني أن شيئًا بداخله مفتوح."
+  },
+  "help_pinned_2": {
+    "message": "يؤدي $OPEN$ على إشارة مرجعية مفتوحة بالفعل إلى الانتقال إلى علامة تبويبها بدلًا من فتح علامة ثانية. وإذا كان لها عدة علامات تبويب فينتقل إلى آخر ما استخدمته.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — إعادة علامة التبويب إلى عنوان URL للإشارة المرجعية (بعد أن ابتعدت كثيرًا عبر الروابط).",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — العكس: حفظ عنوان URL الذي أنت عليه في الإشارة المرجعية. على علامة تبويب الإشارة نفسها يحدث ذلك فورًا، وإلا تسأل اللوحة أولًا.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ أو علامة × عند التمرير — إغلاق علامة تبويب الإشارة المرجعية. وللمجلد أو المحدَّد — كل علامات تبويبها (مع السؤال أولًا).",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "لا تستولي الإشارة المرجعية على علامة تبويب غيرها: إذا كانت علامة التبويب الحالية تعرض إشارة مرجعية أخرى، تُفتح الجديدة بجانبها."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — مربع البحث في الرأس. يبحث حسب العنوان وعنوان URL والمجلد؛ وتأتي المطابقات في العنوان أولًا.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "work lin"
+  },
+  "help_find_2": {
+    "message": "يمكنك التضييق حسب المجلد: يعثر $QUERY$ على Linear من المجلد “Work”.",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — اختيار، $ENTER$ — فتح، $MODENTER$ — في علامة تبويب أخرى، $TAB$ — إظهار المطابقة في مكانها بالشجرة، $ESC$ — العودة إلى حيث كنت.",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ على مجلد — الدخول إليه في الشجرة.",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "تعمل أوامر لوحة الأوامر ($PALETTE$) على المطابقات أيضًا: “نقل إلى مجلد…” و“إعادة تسمية” و“حذف…”. يحدّد $SHIFT$+نقرة مطابقةً — وبعد $ESC$ يمكنك العمل على المحدَّد في الشجرة.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "مع كثرة الإشارات المرجعية، كتابة بضعة أحرف أسرع من تمرير الشجرة."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — تحديد صف، $DOWN$ $UP$ — تحديد متتالٍ.",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — كل ما في هذا المجلد (مرة أخرى — إلغاء التحديد). $ESC$ — مسح التحديد.",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "يعرض الرأس عدد المحدَّد. يمكن فتح المحدَّد ونقله ونسخه وحذفه معًا؛ أما إعادة التسمية فتعمل على الصف الذي عليه المؤشر فقط."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — إلى مجلد بالاسم: ابدأ الكتابة. تأتي المجلدات التي نقلت إليها مؤخرًا أولًا. $ENTER$ — نقل والبقاء في المكان (مناسب للفرز واحدًا تلو الآخر)، $SHIFTENTER$ — نقل والانتقال إليه. وإذا لم يوجد مثل هذا المجلد فإن $ENTER2$ على “إنشاء مجلد” ينشئه وينقل إليه فورًا.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — النقل على طول القائمة. يدخل الصف إلى المجلد الموسَّع ويخرج منه عند حافته.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — مجلد جديد؛ ويمكنك كتابة الاسم فورًا. وإذا كان هناك محدَّد فسينتقل إلى المجلد.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — إعادة التسمية: $ENTER$ — حفظ، $ESC$ — إلغاء.",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — حذف مع تأكيد. لا يمكن حذف مجلد له محتويات أو عدة عناصر بضغطة Enter واحدة — “إلغاء” هو المحدَّد افتراضيًا.",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — نسخ عنوان URL (للمجلد أو المحدَّد — كل عناوين URL، كل عنوان في سطر).",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — التراجع عن آخر تعديل في اللوحة: الحذف، وإعادة التسمية، والنقل، والمجلد الجديد، وعنوان URL من علامة التبويب؛ $REDO$ — إعادته. بعد التعديل، تظهر في الرسالة أسفل اللوحة زر “تراجع”. السجل مشترك بين كل النوافذ ويبقى حتى إغلاق المتصفح (حتى 50 خطوة)؛ ولا يمكن التراجع عن التعديلات في مدير الإشارات المرجعية أو عبر المزامنة.",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "تراكمت أشياء في “الوارد”؟ يمكنك فرزها دون لمس الماوس."
+  },
+  "help_sort_mark_title": {
+    "message": "التحديد"
+  },
+  "help_sort_move_title": {
+    "message": "النقل"
+  },
+  "help_sort_edit_title": {
+    "message": "التعديل"
+  },
+  "help_sets_1": {
+    "message": "حدّد إشارات مرجعية واضغط $OPEN$، أو اضغط $ALT$ على مجلد.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "تسأل اللوحة عن اسم المجموعة: اكتب اسمًا فتُجمع علامات التبويب في مجموعة بهذا الاسم (وللمجلد يكون الاسم مكتوبًا مسبقًا)؛ واتركه فارغًا لتُفتح كعلامات تبويب عادية."
+  },
+  "help_sets_3": {
+    "message": "لا تُفتح الإشارات المرجعية المفتوحة بالفعل مرة ثانية: تنضم علامات تبويبها إلى المجموعة فقط."
+  },
+  "help_sets_why": {
+    "message": "مجموعة علامات تبويب الصباح، مشروع، بحث — بأمر واحد."
+  },
+  "help_own_settings_link": {
+    "message": "الإعدادات"
+  },
+  "help_own_1": {
+    "message": "في $SETTINGS$: يسجّل “+” اختصارًا، ويزيله “×”، ويستعيد “إعادة تعيين” الاختصار القياسي. وإذا كان الاختصار مستخدمًا في أمر آخر فتسألك الإعدادات هل تريد الاستيلاء عليه.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "التسلسلات ممكنة — $SEQ$ — وكذلك الضغطات المزدوجة — $SEQ2$.",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "مجموعة $VIM$ بزر واحد: $JKHL$ و$SEQ$ و$SHIFTG$، و$SEQ2$ — حذف، و$SEQ3$ — نسخ، و$COLON$ — لوحة الأوامر.",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "تعمل المفاتيح على أي تخطيط: تُطابَق بحسب موضعها، فعلى التخطيط الروسي يبقى $R$ المفتاح نفسه، ويبقى $SLASH$ و$QUESTION$ المفتاحين نفسيهما كما في التخطيط الإنجليزي.",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "إعدادات اختصارات الإضافات"
+  },
+  "help_own_5": {
+    "message": "يُغيَّر اختصار اللوحة نفسها ($GLOBAL$) في المتصفّح: $LINK$.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "كل إجراء أمر، ويمكن أن يكون لأي أمر مفاتيحه الخاصة."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — تغيير العرض: عادي ← مع عنوان URL (الموقع أسفل العنوان؛ وللمجلد عدد الإشارات المرجعية فيه) ← مضغوط.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — تعرض اللوحة هذا المجلد فقط. ويعمل البحث والنقل داخله أيضًا.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — يبدّل بين $OPEN$ و$ALT$.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — النقر على الصفحة أو واجهة المتصفّح يغلقها؛ أما التبديل إلى تطبيق آخر فلا.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "لكل نافذة لوحتها الخاصة. تُحفظ المجلدات الموسَّعة وموضع المؤشر."
+  },
+  "help_view_6": {
+    "message": "لا يوجد شريط علوي: يظهر سطر البحث في الأعلى أثناء البحث فقط، وشريط “المحدَّد” في الأسفل فقط ما دام هناك شيء محدَّد."
+  },
+  "help_view_private": {
+    "message": "كل شيء يُخزَّن في المتصفّح: لا ترسل الإضافة إشاراتك المرجعية ولا سجلّك إلى أي مكان."
+  },
+  "help_all_intro": {
+    "message": "اختصاراتك الحالية. الأوامر بلا مفاتيح متاحة من لوحة الأوامر ($PALETTE$).",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "في مربع البحث"
+  },
+  "help_all_pick": {
+    "message": "اختيار نتيجة"
+  },
+  "help_all_open": {
+    "message": "فتح / في علامة تبويب أخرى / إعادة علامة التبويب إلى عنوان URL"
+  },
+  "help_all_show": {
+    "message": "إظهار المطابقة في الشجرة"
+  },
+  "help_all_leave": {
+    "message": "الخروج من البحث"
+  },
+  "help_all_palette": {
+    "message": "في لوحة الأوامر ومحدّد المجلد"
+  },
+  "help_all_run": {
+    "message": "اختيار / تشغيل"
+  },
+  "help_all_move_go": {
+    "message": "نقل والانتقال إلى المجلد"
+  },
+  "help_all_close": {
+    "message": "إغلاق"
+  },
+  "help_mouse_open": {
+    "message": "فتح إشارة مرجعية، وتوسيع مجلد أو طيّه"
+  },
+  "help_mouse_open_keys": {
+    "message": "نقرة"
+  },
+  "help_mouse_other": {
+    "message": "فتح في علامة تبويب أخرى"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+نقرة",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "فتح في علامة تبويب جديدة؛ وللمجلد — فتح إشاراته المرجعية"
+  },
+  "help_mouse_new_keys": {
+    "message": "الزر الأوسط"
+  },
+  "help_mouse_folder": {
+    "message": "فتح الإشارات المرجعية في المجلد"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+نقرة على المجلد",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "تحديد"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+نقرة",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "إغلاق علامة تبويب الإشارة المرجعية"
+  },
+  "help_mouse_close_keys": {
+    "message": "علامة × عند التمرير"
+  },
+  "help_mouse_menu": {
+    "message": "القائمة: الفتح في نافذة جديدة، التعديل، القص، النسخ، اللصق، الحذف"
+  },
+  "help_mouse_menu_keys": {
+    "message": "الزر الأيمن"
+  },
+  "help_mouse_empty": {
+    "message": "البحث، لوحة الأوامر، الإعدادات، التراجع"
+  },
+  "help_mouse_empty_keys": {
+    "message": "الزر الأيمن على مكان فارغ"
+  },
+  "help_news_25_1": {
+    "message": "الواجهة والمساعدة بعشر لغات: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية — بحسب لغة المتصفح. الكتابة من اليمين إلى اليسار مدعومة، وترجمات المجتمع تصل عبر المستودع."
+  },
+  "help_news_25_2": {
+    "message": "في اللغات التي تُكتب من اليمين إلى اليسار، السهم ← يوسّع المجلد والسهم → يطويه."
+  },
+  "help_news_25_3": {
+    "message": "أُزيل البحث عن النص المكتوب بتخطيط لوحة مفاتيح خاطئ. ويعرض حقل البحث عدد النتائج التي عُثر عليها."
+  },
+  "help_news_25_4": {
+    "message": "تظهر علامة صح على الصفوف المحدَّدة، وصارت الرسائل أوضح في السمة الداكنة، وهناك رمز جديد للوحة الأوامر."
+  },
+  "help_news_25_5": {
+    "message": "المجلدات النظامية والإشارات المرجعية المُدارة توضّح سبب تعذّر تحديدها أو تعديلها أو نقلها أو حذفها."
+  },
+  "help_news_25_6": {
+    "message": "الإعدادات: تظهر التغييرات من علامات التبويب الأخرى فورًا، وتتحدّث قائمة المجلدات بعد الاستيراد، ويُطلب تأكيد تغيير مجموعة المفاتيح في نافذة خاصة."
+  },
+  "help_news_25_7": {
+    "message": "إصلاحات: ضغطتان سريعتان على V كانتا تتخطيان عرضًا؛ وقد يغلق Alt+B بعد إغلاق نافذة أخرى اللوحة بدل فتحها في النافذة الحالية؛ وكان «حفظ عنوان URL لعلامة التبويب» في علامة تبويب جديدة في Edge وBrave وVivaldi وOpera يحفظ عنوان صفحة البدء في الإشارة المرجعية."
+  },
+  "help_news_26_1": {
+    "message": "التراجع عن التعديلات التي أُجريت في اللوحة وإعادتها: ⌘Z / ⌘⇧Z على Mac، وCtrl+Z وCtrl+Shift+Z أو Ctrl+Y في بقية الأنظمة، أو زر «تراجع» في الرسالة. يعود المجلد المحذوف مع محتوياته. يحفظ السجل 50 خطوة ويُشارَك بين كل النوافذ حتى إغلاق المتصفح."
+  },
+  "help_news_26_2": {
+    "message": "اسحب بالماوس الإشارات المرجعية والمجلدات والعناصر المحدَّدة: فوق العنصر أو تحته أو داخل مجلد. يُفتح المجلد عند إبقاء عنصر فوقه، وتتمرّر القائمة قرب الحافة."
+  },
+  "help_news_26_3": {
+    "message": "تعمل قائمة النقر بزر الماوس الأيمن مثل قائمة الإشارات المرجعية في المتصفح: فتح في علامة تبويب جديدة أو نافذة جديدة أو وضع «تقسيم العرض» أو نافذة التصفُّح المتخفي؛ تعديل؛ قص ونسخ ولصق؛ حذف؛ إضافة صفحة أو مجلد؛ فتح «مدير الإشارات». تُفتح من لوحة المفاتيح بـ Shift+F10."
+  },
+  "help_news_26_4": {
+    "message": "لم يعد للوحة ترويسة خاصة بها: يظهر حقل البحث أثناء البحث فقط، و«المحدَّد: N» شريط في الأسفل."
+  },
+  "help_news_24_1": {
+    "message": "أسرع مع المجموعات الكبيرة: تُقرأ الشجرة أقل، ويُبنى البحث ومحدّد المجلد أسرع."
+  },
+  "help_news_24_2": {
+    "message": "محدّد المجلد: بترتيب الشجرة، والمجلدات الأخيرة منفصلة، و“إنشاء مجلد” إن لم يوجد مثله."
+  },
+  "help_news_24_3": {
+    "message": "يمكنك كتابة اسم المجلد الجديد مباشرة بعد $NEW$.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "صار المؤشر أسهل رؤية؛ ويُظهر المجلد المطويّ أن علامة تبويب بداخله مفتوحة. وتُفتح علامات التبويب الجديدة بجانب الحالية."
+  },
+  "help_news_24_5": {
+    "message": "فتح مجموعة لا يكرّر علامات التبويب المفتوحة. وإغلاق علامات تبويب عدة إشارات مرجعية واستبدال عنوان URL يطلبان تأكيدًا."
+  },
+  "help_news_24_6": {
+    "message": "على التخطيط الروسي تُقرأ الرموز بحسب موضع المفتاح ($QUESTION$ يفتح لوحة الأوامر). وعلى Mac لم يعد $CTRL$ يساوي $CMD$.",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: يُتعرَّف على التخطيط الروسي فورًا دون حاجة إلى حروف مكتوبة — $CHORD$ يفتح لوحة الأوامر لا الإعدادات.",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "يسأل محرّر المفاتيح قبل أخذ اختصار من أمر آخر، ويعرض المجموعة المحدَّدة."
+  },
+  "help_news_24_9": {
+    "message": "إصلاحات: الحروف المكتوبة مباشرة بعد $NEW$ كانت تعمل كأوامر؛ وكان بإمكان المسافة تأكيد الحذف؛ وبعد إعادة التسمية من البحث كان التركيز ينتقل إلى القائمة؛ وكان $BS$ العَرَضي في البحث يغلق علامة تبويب.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "النقل إلى مجلد بالاسم: $MOVE$، مع المجلدات الأخيرة في الأعلى.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "حفظ عنوان URL لعلامة التبويب الحالية في الإشارة المرجعية: $UPDATE$.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "عرض مع عنوان URL أسفل العنوان، وعرض مضغوط: $CYCLE$.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "هذه المساعدة: $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "البحث في اللوحة: حسب العنوان وعنوان URL والمجلد، مع تمييز المطابقة وعلى أي تخطيط؛ و$TAB$ يُظهر المطابقة في مكانها.",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: يعمل $SLASH$ وسائر الرموز على التخطيط الروسي أيضًا.",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "صارت كل الإجراءات أوامر: لوحة الأوامر واختصاراتك الخاصة في الإعدادات ومجموعة Vim والتسلسلات والضغطات المزدوجة."
+  },
+  "help_news_21_2": {
+    "message": "نسخ عنوان URL، وتحديد كل ما في المجلد، وطيّ كل المجلدات. وتُفتح الإعدادات في علامة تبويب."
+  },
+  "help_news_20_1": {
+    "message": "مجلدات جديدة، ونقل الصفوف بـ $OPTION$/$ALT$، والتحديد بالمسافة.",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "فتح مجموعة من الإشارات المرجعية، بما في ذلك كمجموعة علامات تبويب باسم المجلد. ومفتاح تبديل “فتح في علامة تبويب جديدة”."
+  },
+  "help_news_1_1": {
+    "message": "اللوحة باختصار واحد: فتح وإعادة التركيز وإغلاق. مجلد البداية."
+  },
+  "help_news_1_2": {
+    "message": "إشارات مرجعية كعلامات تبويب مثبّتة كما في Arc، وإعادة التسمية والحذف، والإخفاء التلقائي، والعمل في عدة نوافذ، وتصميم جديد."
+  },
+  "help_news_earlier": {
+    "message": "الإصدارات السابقة"
+  },
+  "help_quick_title": {
+    "message": "البدء السريع"
+  },
+  "help_nav_pinned": {
+    "message": "كعلامات تبويب مثبّتة"
+  },
+  "help_pinned_title": {
+    "message": "الإشارات المرجعية كعلامات تبويب مثبّتة"
+  },
+  "help_find_title": {
+    "message": "البحث والفتح"
+  },
+  "help_sort_title": {
+    "message": "فرز الإشارات المرجعية"
+  },
+  "help_sets_title": {
+    "message": "الفتح كمجموعة"
+  },
+  "help_own_title": {
+    "message": "مفاتيحك الخاصة"
+  },
+  "help_view_title": {
+    "message": "العرض والإعدادات"
+  },
+  "help_all_title": {
+    "message": "كل المفاتيح"
+  },
+  "help_mouse_title": {
+    "message": "الماوس"
+  },
+  "help_news_title": {
+    "message": "الجديد"
+  }
+}

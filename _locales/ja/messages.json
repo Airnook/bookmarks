@@ -1,0 +1,2004 @@
+{
+  "locale": {
+    "message": "ja"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "ブックマーク"
+  },
+  "ext_description": {
+    "message": "サイドパネルでショートカットキーからブックマークを開く、矢印キー操作に対応した拡張機能"
+  },
+  "command_toggle": {
+    "message": "ブックマークパネルを開く / フォーカス / 閉じる"
+  },
+  "all_bookmarks": {
+    "message": "すべてのブックマーク"
+  },
+  "untitled": {
+    "message": "無題"
+  },
+  "bookmarklet": {
+    "message": "ブックマークレット"
+  },
+  "folder_empty": {
+    "message": "空"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "open": {
+    "message": "開く"
+  },
+  "delete": {
+    "message": "削除"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "nothing_found": {
+    "message": "見つかりませんでした"
+  },
+  "more_results": {
+    "message": "ほか $COUNT$ 件 — 検索を絞り込んでください",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "スペース"
+  },
+  "group_nav": {
+    "message": "移動"
+  },
+  "group_open": {
+    "message": "開く"
+  },
+  "group_marks": {
+    "message": "マーク"
+  },
+  "group_edit": {
+    "message": "編集"
+  },
+  "group_panel": {
+    "message": "パネル"
+  },
+  "cmd_search": {
+    "message": "ブックマークを検索"
+  },
+  "cmd_search_note": {
+    "message": "タイトル、URL、フォルダで検索"
+  },
+  "cmd_search_words": {
+    "message": "さがす けんさく 検索 探す フィルタ 絞り込み"
+  },
+  "cmd_cursor_down": {
+    "message": "カーソルを下へ"
+  },
+  "cmd_cursor_down_words": {
+    "message": "した 下 つぎ 次"
+  },
+  "cmd_cursor_up": {
+    "message": "カーソルを上へ"
+  },
+  "cmd_cursor_up_words": {
+    "message": "うえ 上 まえ 前"
+  },
+  "cmd_cursor_first": {
+    "message": "リストの先頭へ"
+  },
+  "cmd_cursor_first_words": {
+    "message": "せんとう 先頭 最初 いちばん上"
+  },
+  "cmd_cursor_last": {
+    "message": "リストの末尾へ"
+  },
+  "cmd_cursor_last_words": {
+    "message": "まつび 末尾 最後 いちばん下"
+  },
+  "cmd_folder_expand": {
+    "message": "フォルダを展開"
+  },
+  "cmd_folder_expand_words": {
+    "message": "てんかい 展開 ひらく 開く"
+  },
+  "cmd_folder_collapse": {
+    "message": "フォルダを折りたたむ"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "ブックマーク上では、そのフォルダへ移動"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "おりたたむ 折りたたむ 閉じる 親"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "すべてのフォルダを折りたたむ"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "すべて折りたたむ 全部閉じる"
+  },
+  "cmd_open": {
+    "message": "開く"
+  },
+  "cmd_open_note": {
+    "message": "マークがあるときは、マークしたものすべて"
+  },
+  "cmd_open_words": {
+    "message": "ひらく 開く 移動 いく"
+  },
+  "cmd_open_alt": {
+    "message": "もう一方のタブで開く"
+  },
+  "cmd_open_alt_note": {
+    "message": "フォルダ上では、中のブックマークすべて"
+  },
+  "cmd_open_alt_words": {
+    "message": "べつ 別 別のタブ もう一方"
+  },
+  "cmd_open_newTab": {
+    "message": "新しいタブで開く"
+  },
+  "cmd_open_newTab_words": {
+    "message": "あたらしいタブ 新しいタブ 新規タブ"
+  },
+  "cmd_open_currentTab": {
+    "message": "現在のタブで開く"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "げんざい 現在のタブ このタブ"
+  },
+  "cmd_open_group": {
+    "message": "タブグループとして開く…"
+  },
+  "cmd_open_group_words": {
+    "message": "タブグループ グループ まとめて"
+  },
+  "cmd_open_reset": {
+    "message": "タブをブックマークのURLに戻す"
+  },
+  "cmd_open_reset_words": {
+    "message": "もどす 戻す リセット 固定 URL"
+  },
+  "cmd_mark_toggle": {
+    "message": "マーク"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "もう一度で解除"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "マーク 選択 せんたく チェック"
+  },
+  "cmd_mark_down": {
+    "message": "マークして下へ"
+  },
+  "cmd_mark_down_words": {
+    "message": "下へマーク 選択 した"
+  },
+  "cmd_mark_up": {
+    "message": "マークして上へ"
+  },
+  "cmd_mark_up_words": {
+    "message": "上へマーク 選択 うえ"
+  },
+  "cmd_mark_all": {
+    "message": "フォルダ内をすべてマーク"
+  },
+  "cmd_mark_all_note": {
+    "message": "もう一度で解除"
+  },
+  "cmd_mark_all_words": {
+    "message": "すべて選択 全選択 ぜんぶ"
+  },
+  "cmd_mark_clear": {
+    "message": "マークをクリア"
+  },
+  "cmd_mark_clear_words": {
+    "message": "クリア 解除 かいじょ 選択解除"
+  },
+  "cmd_folder_new": {
+    "message": "新しいフォルダ"
+  },
+  "cmd_folder_new_note": {
+    "message": "マークがあるときは、マークしたものをその中へ"
+  },
+  "cmd_folder_new_words": {
+    "message": "新規 作成 さくせい 新しいフォルダ"
+  },
+  "cmd_rename": {
+    "message": "名前を変更"
+  },
+  "cmd_rename_words": {
+    "message": "なまえ 名前 リネーム 変更 へんこう タイトル"
+  },
+  "cmd_edit": {
+    "message": "名前とアドレスを編集…"
+  },
+  "cmd_edit_note": {
+    "message": "ブラウザと同じくウィンドウで"
+  },
+  "cmd_edit_words": {
+    "message": "編集 名前 アドレス",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "フォルダへ移動…"
+  },
+  "cmd_move_to_note": {
+    "message": "フォルダを名前で選択"
+  },
+  "cmd_move_to_words": {
+    "message": "いどう 移動 うつす 移す フォルダ"
+  },
+  "cmd_url_update": {
+    "message": "タブのURLを保存"
+  },
+  "cmd_url_update_note": {
+    "message": "現在のタブのURLをブックマークに反映"
+  },
+  "cmd_url_update_words": {
+    "message": "URL 更新 こうしん 置き換え アドレス"
+  },
+  "cmd_delete": {
+    "message": "削除…"
+  },
+  "cmd_delete_words": {
+    "message": "さくじょ 削除 消す けす 取り除く"
+  },
+  "cmd_copy_url": {
+    "message": "URLをコピー"
+  },
+  "cmd_copy_url_note": {
+    "message": "フォルダやマークしたものでは、すべてのURL"
+  },
+  "cmd_copy_url_words": {
+    "message": "コピー URL リンク アドレス"
+  },
+  "cmd_cut": {
+    "message": "切り取り"
+  },
+  "cmd_cut_note": {
+    "message": "貼り付けると、ブックマークがそこへ移動します"
+  },
+  "cmd_copy": {
+    "message": "コピー"
+  },
+  "cmd_copy_note": {
+    "message": "貼り付けるとコピーが作られます。アドレスもクリップボードに入ります"
+  },
+  "cmd_paste": {
+    "message": "貼り付け"
+  },
+  "cmd_paste_note": {
+    "message": "カーソルの後、または展開したフォルダの中に"
+  },
+  "cmd_cut_words": {
+    "message": "切り取り 移動 クリップボード",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "コピー 複製 クリップボード",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "貼り付け ペースト クリップボード",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "ブックマークのタブを閉じる"
+  },
+  "cmd_tab_close_note": {
+    "message": "フォルダやマークしたものでは、それらのタブすべて"
+  },
+  "cmd_tab_close_words": {
+    "message": "とじる 閉じる タブ"
+  },
+  "cmd_move_up": {
+    "message": "上へ移動"
+  },
+  "cmd_move_up_words": {
+    "message": "いどう 移動 うえ 上"
+  },
+  "cmd_move_down": {
+    "message": "下へ移動"
+  },
+  "cmd_move_down_words": {
+    "message": "いどう 移動 した 下"
+  },
+  "cmd_undo": {
+    "message": "元に戻す"
+  },
+  "cmd_undo_words": {
+    "message": "元に戻す 取り消し"
+  },
+  "cmd_redo": {
+    "message": "やり直す"
+  },
+  "cmd_redo_words": {
+    "message": "やり直す 再実行"
+  },
+  "cmd_palette": {
+    "message": "コマンドパレット"
+  },
+  "cmd_palette_words": {
+    "message": "コマンド パレット ヘルプ すべてのコマンド"
+  },
+  "cmd_menu": {
+    "message": "メニューを開く"
+  },
+  "cmd_menu_note": {
+    "message": "右クリックと同じ"
+  },
+  "cmd_menu_words": {
+    "message": "メニュー コンテキスト 右クリック",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "表示を切り替え"
+  },
+  "cmd_view_cycle_note": {
+    "message": "標準、URL付き、コンパクト"
+  },
+  "cmd_view_cycle_words": {
+    "message": "ひょうじ 表示 ビュー 切り替え URL コンパクト"
+  },
+  "cmd_help": {
+    "message": "ヘルプ"
+  },
+  "cmd_help_note": {
+    "message": "すべての機能とキー"
+  },
+  "cmd_help_words": {
+    "message": "へるぷ ヘルプ 使い方 説明 マニュアル"
+  },
+  "cmd_settings": {
+    "message": "設定"
+  },
+  "cmd_settings_words": {
+    "message": "せってい 設定 オプション 環境設定"
+  },
+  "cmd_escape": {
+    "message": "キャンセルまたは閉じる"
+  },
+  "cmd_escape_note": {
+    "message": "マークの解除、検索の終了、それ以外はパネルを閉じる"
+  },
+  "cmd_escape_words": {
+    "message": "キャンセル 取り消し とじる 閉じる Esc"
+  },
+  "cmd_panel_close": {
+    "message": "パネルを閉じる"
+  },
+  "cmd_panel_close_words": {
+    "message": "とじる 閉じる 非表示 パネル"
+  },
+  "panel_tree": {
+    "message": "ブックマーク"
+  },
+  "menu_open_new_tab": {
+    "message": "新しいタブで開く"
+  },
+  "menu_open_new_window": {
+    "message": "新しいウィンドウで開く"
+  },
+  "menu_open_split": {
+    "message": "分割ビューで開く"
+  },
+  "menu_open_incognito": {
+    "message": "シークレット ウィンドウで開く"
+  },
+  "menu_open_all": {
+    "message": "すべて（$COUNT$ 個）を開く",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "すべてを新しいウィンドウで開く"
+  },
+  "menu_open_all_incognito": {
+    "message": "すべてをシークレット ウィンドウで開く"
+  },
+  "menu_edit": {
+    "message": "編集…"
+  },
+  "menu_rename": {
+    "message": "名前を変更…"
+  },
+  "menu_delete": {
+    "message": "削除"
+  },
+  "menu_add_page": {
+    "message": "ページを追加…"
+  },
+  "menu_add_folder": {
+    "message": "フォルダを追加…"
+  },
+  "menu_manager": {
+    "message": "ブックマーク マネージャーを開く"
+  },
+  "menu_incognito_off": {
+    "message": "拡張機能にシークレット モードを許可してください: chrome://extensions →「詳細」→「シークレット モードでの実行を許可する」"
+  },
+  "menu_bookmarklet": {
+    "message": "ブックマークレットは開いているページでのみ動作します。クリックしてください"
+  },
+  "menu_edit_single": {
+    "message": "一度に編集できるのは 1 つだけです"
+  },
+  "search_placeholder": {
+    "message": "タイトル、URL、フォルダ"
+  },
+  "search_found": {
+    "message": "検索結果: $COUNT$ 件",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "見つかりませんでした · $KEY$ — リストに戻る",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "ブックマークはまだありません。"
+  },
+  "empty_folder": {
+    "message": "このフォルダはまだ空です。"
+  },
+  "empty_add_hint": {
+    "message": "ブラウザで $KEY$ を押すとページを追加できます。",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — 新しいフォルダ。",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "グループ名"
+  },
+  "tab_group_placeholder": {
+    "message": "グループ名 — 任意"
+  },
+  "tab_group_hint": {
+    "message": "名前を入力するとタブがグループにまとめられ、空欄の場合は通常のタブとして開きます。"
+  },
+  "palette_placeholder": {
+    "message": "コマンド…"
+  },
+  "close_tab": {
+    "message": "タブを閉じる"
+  },
+  "rename_label": {
+    "message": "タイトル"
+  },
+  "new_folder_title": {
+    "message": "新しいフォルダ"
+  },
+  "no_bookmarks_here": {
+    "message": "ここにブックマークはありません"
+  },
+  "copied_addresses": {
+    "message": "$COUNT$ 件のURLをコピーしました",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "URLをコピーしました"
+  },
+  "copy_failed": {
+    "message": "コピーできませんでした"
+  },
+  "view_changed": {
+    "message": "表示: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "標準"
+  },
+  "view_detailed": {
+    "message": "URL付き"
+  },
+  "view_dense": {
+    "message": "コンパクト"
+  },
+  "marked": {
+    "message": "マーク済み: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "マーク済み: $COUNT$ · $KEY$ — 解除",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "システムフォルダはマークできません"
+  },
+  "locked_system_edit": {
+    "message": "システムフォルダは変更できません"
+  },
+  "locked_managed": {
+    "message": "これらのブックマークは変更できません"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — すべてのコマンド",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "右クリック — メニュー"
+  },
+  "updated": {
+    "message": "$VERSION$ に更新しました。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "新機能 — $KEY$ を押す",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "フォルダを作成できませんでした"
+  },
+  "move_failed": {
+    "message": "移動できませんでした"
+  },
+  "delete_bookmark": {
+    "message": "ブックマーク「$TITLE$」を削除しますか？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "無題のブックマークを削除しますか？"
+  },
+  "delete_folder": {
+    "message": "フォルダ「$TITLE$」を削除しますか？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "フォルダ内を含むブックマークの合計: $COUNT$ 件。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "中身は空のフォルダだけです。"
+  },
+  "delete_folder_empty": {
+    "message": "フォルダは空です。"
+  },
+  "url_only_bookmarks": {
+    "message": "URLがあるのはブックマークだけです"
+  },
+  "url_locked": {
+    "message": "このブックマークは変更できません"
+  },
+  "url_loading": {
+    "message": "ページを読み込み中です"
+  },
+  "url_blank_tab": {
+    "message": "現在のタブにはURLがありません"
+  },
+  "url_same": {
+    "message": "URLはすでに同じです"
+  },
+  "url_replace_title": {
+    "message": "「$TITLE$」のURLを置き換えますか？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "置き換える"
+  },
+  "url_failed": {
+    "message": "URLを変更できませんでした"
+  },
+  "url_updated": {
+    "message": "URLを更新しました"
+  },
+  "undo_button": {
+    "message": "元に戻す"
+  },
+  "undo_button_label": {
+    "message": "元に戻す: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "やり直す: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "元に戻しました: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "やり直しました: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "元に戻せる操作はありません"
+  },
+  "redo_nothing": {
+    "message": "やり直せる操作はありません"
+  },
+  "undo_partial": {
+    "message": "一部だけ元に戻しました: 一部のブックマークが別の場所で変更されています"
+  },
+  "redo_partial": {
+    "message": "一部だけやり直しました: 一部のブックマークが別の場所で変更されています"
+  },
+  "undo_failed": {
+    "message": "元に戻せませんでした: ブックマークが別の場所で変更されています"
+  },
+  "redo_failed": {
+    "message": "やり直せませんでした: ブックマークが別の場所で変更されています"
+  },
+  "history_fallback": {
+    "message": "元のフォルダがなくなっているため「$FOLDER$」に入れました",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "「$TITLE$」を削除しました",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "$COUNT$ 件を削除しました",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "名前を「$TITLE$」に変更しました",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "「$TITLE$」を移動しました",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "$COUNT$ 件を移動しました",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ 件",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "フォルダ「$TITLE$」を作成しました",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "切り取り: $COUNT$ — 貼り付けると移動します",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "コピー: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "貼り付けるものがありません。先にブックマークを切り取るかコピーしてください"
+  },
+  "paste_inside": {
+    "message": "フォルダをそれ自体の中に貼り付けることはできません"
+  },
+  "paste_failed": {
+    "message": "貼り付けできませんでした"
+  },
+  "undo_pasted": {
+    "message": "貼り付け: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "「$TITLE$」を追加しました",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "「$TITLE$」を変更しました",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "ブックマークを追加できませんでした"
+  },
+  "open_failed": {
+    "message": "開けませんでした"
+  },
+  "edit_failed": {
+    "message": "保存できませんでした。アドレスを確認してください"
+  },
+  "edit_bookmark": {
+    "message": "ブックマークを編集"
+  },
+  "edit_folder": {
+    "message": "フォルダ名を変更"
+  },
+  "edit_name": {
+    "message": "名前"
+  },
+  "edit_url": {
+    "message": "アドレス"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "tab_not_open": {
+    "message": "タブが開いていません"
+  },
+  "tab_not_open_delete": {
+    "message": "ブックマークを削除 — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "設定で「ブックマークを固定タブにする」をオンにしてください"
+  },
+  "picker_label": {
+    "message": "フォルダへ移動"
+  },
+  "picker_heading": {
+    "message": "「$TITLE$」の移動先フォルダ",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "フォルダ名…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — 移動 · $SHIFT_ENTER$ — 移動してそのフォルダへ",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "最近使用"
+  },
+  "picker_all": {
+    "message": "すべてのフォルダ"
+  },
+  "picker_start_folder": {
+    "message": "開始フォルダ"
+  },
+  "picker_here": {
+    "message": "現在の場所"
+  },
+  "picker_create": {
+    "message": "フォルダ「$NAME$」を作成",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "「$FOLDER$」内",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "このフォルダはなくなりました"
+  },
+  "move_nothing": {
+    "message": "移動するものがありません"
+  },
+  "move_already_there": {
+    "message": "すでにこのフォルダにあります"
+  },
+  "moved": {
+    "message": "「$FOLDER$」に移動しました",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "ブックマーク — ヘルプ"
+  },
+  "help_via_palette": {
+    "message": "パレット →「$COMMAND$」",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "空いている場所の右クリック メニュー"
+  },
+  "help_table_from_palette": {
+    "message": "パレットから"
+  },
+  "help_table_menu": {
+    "message": "右クリック メニュー"
+  },
+  "help_global_not_set": {
+    "message": "ショートカット未設定"
+  },
+  "options_title": {
+    "message": "ブックマークの設定"
+  },
+  "options_intro": {
+    "message": "すべての機能、使い方、キーは$HELP$にあります。",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "ヘルプ"
+  },
+  "options_root": {
+    "message": "開始フォルダ"
+  },
+  "options_root_hint": {
+    "message": "パネルにはこのフォルダの中身が表示されます。"
+  },
+  "options_view": {
+    "message": "リスト表示"
+  },
+  "options_view_normal": {
+    "message": "標準"
+  },
+  "options_view_detailed": {
+    "message": "URL付き — タイトルの下にサイト名"
+  },
+  "options_view_dense": {
+    "message": "コンパクト"
+  },
+  "options_view_hint": {
+    "message": "パネルでは $KEY$ で表示を順に切り替えられます。",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "パレットから"
+  },
+  "options_new_tab": {
+    "message": "ブックマークを新しいタブで開く"
+  },
+  "options_new_tab_hint": {
+    "message": "オフ: 「開く」は現在のタブ、「もう一方のタブで開く」は新しいタブを使います。オンの場合は逆になります。"
+  },
+  "options_pinned": {
+    "message": "ブックマークを固定タブにする"
+  },
+  "options_pinned_hint": {
+    "message": "Arc と同じ方式: ブックマークのタブがすでに開いている場合、「開く」は新たに開かずそのタブに切り替えます。開いているブックマークにはドットが付きます。"
+  },
+  "options_auto_hide": {
+    "message": "フォーカスがページに移ったらパネルを閉じる"
+  },
+  "options_auto_hide_hint": {
+    "message": "ページやブラウザの UI をクリックするとパネルが閉じます。別のアプリに切り替えても開いたままです。"
+  },
+  "options_keys": {
+    "message": "パネルのキー"
+  },
+  "options_preset_standard": {
+    "message": "標準"
+  },
+  "options_preset_standard_title": {
+    "message": "すべてのショートカットを標準に置き換える"
+  },
+  "options_preset_vim_title": {
+    "message": "標準に Vim のキーを追加: j k h l、g g、d d、y y…"
+  },
+  "options_keys_hint": {
+    "message": "「+」でショートカットを記録します。キー（修飾キー付きも可）、シーケンス（$SEQUENCE$）、2回連続押し（$DOUBLE$）が使えます — 2回目はすぐに押してください。キーを押したあと $ENTER$ で確定、$ESC$ で記録を中止、「×」で削除します。そのショートカットがすでに使われている場合は、引き継ぐかどうか確認されます。すべてのコマンドはパネルのコマンドパレットにもあります。",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "パネルの開閉: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "ブラウザの設定で変更"
+  },
+  "options_global_not_set": {
+    "message": "未設定"
+  },
+  "options_saved": {
+    "message": "保存しました"
+  },
+  "options_saved_notes": {
+    "message": "保存しました: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "「$COMMAND$」から削除しました",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "パレットはパネルのボタンからのみ開きます"
+  },
+  "options_delayed": {
+    "message": "1回押しは少し遅れて実行されます"
+  },
+  "options_remove_binding": {
+    "message": "「$COMMAND$」から $KEY$ を削除",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "「$COMMAND$」にショートカットを追加",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "リセット"
+  },
+  "options_reset_title": {
+    "message": "「$COMMAND$」のショートカットを標準に戻す",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "パネルのボタンのみ"
+  },
+  "options_only_palette": {
+    "message": "パレットのみ"
+  },
+  "options_press_keys": {
+    "message": "ショートカットを押してください…"
+  },
+  "options_taken": {
+    "message": "「$COMMAND$」ですでに使用中 — Enter: 引き継ぐ、Esc: キャンセル",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "カスタムショートカット"
+  },
+  "options_replace_preset": {
+    "message": "ショートカットを「$PRESET$」セットに置き換えますか？",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "変更したショートカットは失われます。"
+  },
+  "options_replace_ok": {
+    "message": "置き換える"
+  },
+  "options_preset_applied": {
+    "message": "「$PRESET$」セットを適用しました",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "ブックマーク $COUNT$ 件",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "$COUNT$ 個のタブを開く",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "（$COUNT$ 個はすでに開いています）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "$COUNT$ 個のタブを閉じますか？",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "このウィンドウにある $COUNT$ 件のブックマークのタブです。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "選択した $COUNT$ 件を削除しますか？",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "中身もすべて削除されます: ブックマーク $COUNT$ 件。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "$COUNT$ 件の移動先フォルダ",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "$COUNT$ 件を「$FOLDER$」に移動しました",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "ヘルプ"
+  },
+  "help_heading": {
+    "message": "サイドパネルのブックマーク"
+  },
+  "help_lead": {
+    "message": "ページの横にブックマークを置いて、すべてキーボードで操作: 探す、開く、フォルダに整理する、固定タブとして保つ。Arc から Chromium 系ブラウザへ移るときのために作りました。"
+  },
+  "help_settings_button": {
+    "message": "設定"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · 以下のキーは、割り当てを変更した分も含めた現在のものです。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "パネルを開く"
+  },
+  "help_nav_label": {
+    "message": "セクション"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — パネルを開きます。もう一度押すと閉じます。フォーカスがページに移っている場合は、同じショートカットでパネルに戻れます。拡張機能のアイコンからもパネルを開けます — ブラウザの拡張機能メニューでピン留めしてください。",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — リスト内を移動、$EXPAND$ $COLLAPSE$ — フォルダの展開と折りたたみ、$OPEN$ — 開く。",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — 検索: タイトル、サイト、フォルダを入力し始めます。",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — 複数のブックマークをマーク、$MOVE$ — 名前でフォルダへ移動。",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — パレット: 忘れたときのために、すべてのコマンドとそのキーを一覧できます。",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "ブックマーク、フォルダ、空いている場所を右クリック — ブラウザと同じようなメニュー: 新しいウィンドウで開く、編集、切り取り、コピー、貼り付け。$MENU$ — 同じメニューをキーボードで開きます。",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — このヘルプ。新しいブックマークはブラウザ標準の方法で追加します — $CHORD$。",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "右から左に書く言語では、矢印キーの ← と → の働きが入れ替わります: ← でフォルダを展開、→ で折りたたみます。"
+  },
+  "help_pinned_why": {
+    "message": "Arc と同じ: ブックマークに「専用の」タブがあります。開くとブックマークがそのタブを覚え、リンクをたどって別のページへ移っても残ります。このモードは初期状態でオンで、設定でオフにできます。"
+  },
+  "help_pinned_1": {
+    "message": "右側のドットは、そのブックマークのタブが開いていることを示します。青いドットは現在のタブです。折りたたんだフォルダのリングは、中に開いているものがあることを示します。"
+  },
+  "help_pinned_2": {
+    "message": "すでに開いているブックマークで $OPEN$ を押すと、2つ目を開かずにそのタブへ切り替わります。ブックマークのタブが複数ある場合は、最後に使ったものへ移動します。",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — タブをブックマークのURLに戻します（リンクをたどって遠くまで来たとき）。",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — 逆の操作: 今開いているURLをブックマークに保存します。ブックマーク専用のタブではすぐに反映され、それ以外ではパネルが先に確認します。",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ またはホバー時の×印 — ブックマークのタブを閉じます。フォルダやマークしたものでは、それらのタブすべて（先に確認します）。",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "ブックマークは他のタブを乗っ取りません。現在のタブで別のブックマークが開いている場合、新しいブックマークはその隣に開きます。"
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — ヘッダーの検索ボックス。タイトル、URL、フォルダで検索し、タイトルが一致するものが先に表示されます。",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "work lin"
+  },
+  "help_find_2": {
+    "message": "フォルダで絞り込めます: $QUERY$ で「Work」フォルダの Linear が見つかります。",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — 選択、$ENTER$ — 開く、$MODENTER$ — もう一方のタブで開く、$TAB$ — 一致したものをツリー内のその場所に表示、$ESC$ — 元の位置に戻る。",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "フォルダで $ENTER$ — ツリーでそのフォルダに入ります。",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "パレットのコマンド（$PALETTE$）は検索結果にも使えます:「フォルダへ移動…」、「名前を変更」、「削除…」。$SHIFT$+クリックで検索結果をマークでき、$ESC$ のあとツリーでマークしたものを操作できます。",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "ブックマークが多いときは、ツリーをスクロールするより数文字入力するほうが速く探せます。"
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — 行をマーク、$DOWN$ $UP$ — 連続してマーク。",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — このフォルダ内のすべて（もう一度で解除）。$ESC$ — マークをクリア。",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "マークした数はヘッダーに表示されます。マークしたものはまとめて開く・移動・コピー・削除できます。名前の変更はカーソルのある行だけが対象です。"
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — 名前でフォルダへ移動: 入力し始めます。最近移動先にしたフォルダが先頭に出ます。$ENTER$ — 移動してその場に残る（次々と整理するのに便利）、$SHIFTENTER$ — 移動してそのフォルダへ。該当するフォルダがない場合は、「フォルダを作成」で $ENTER2$ を押すと、作成してすぐに移動します。",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — リストに沿って移動。行は展開したフォルダに入り、フォルダの端で出ます。",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — 新しいフォルダ。そのまま名前を入力できます。マークしたものがあれば、その中に入ります。",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — 名前の変更: $ENTER$ — 保存、$ESC$ — キャンセル。",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — 確認つきで削除。中身のあるフォルダや複数の項目は Enter を1回押しただけでは削除されません — 初期状態で選択されているのは「キャンセル」です。",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — URLをコピー（フォルダやマークしたものでは、すべてのURLを1行に1つずつ）。",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — パネルで行った最後の変更（削除、名前の変更、移動、新しいフォルダ、タブのURLの保存）を元に戻します。$REDO$ — やり直します。変更のあと、下に出るメッセージに「元に戻す」ボタンがあります。履歴はすべてのウィンドウで共通で、ブラウザを閉じるまで保持されます（最大 50 ステップ）。ブックマーク マネージャや同期による変更は元に戻せません。",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "「受信トレイ」に溜まっていませんか？ マウスに触れずに整理できます。"
+  },
+  "help_sort_mark_title": {
+    "message": "マーク"
+  },
+  "help_sort_move_title": {
+    "message": "移動"
+  },
+  "help_sort_edit_title": {
+    "message": "編集"
+  },
+  "help_sets_1": {
+    "message": "ブックマークをマークして $OPEN$ を押すか、フォルダで $ALT$ を押します。",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "パネルがグループ名を尋ねます。入力するとその名前のグループにタブがまとめられ（フォルダの場合は名前が入力済み）、空欄なら通常のタブとして開きます。"
+  },
+  "help_sets_3": {
+    "message": "すでに開いているブックマークは重複して開きません。そのタブがグループに加わるだけです。"
+  },
+  "help_sets_why": {
+    "message": "朝のタブ一式、プロジェクト、調べもの — コマンド1つで。"
+  },
+  "help_own_settings_link": {
+    "message": "設定"
+  },
+  "help_own_1": {
+    "message": "$SETTINGS$では、「+」でショートカットを記録、「×」で削除、「リセット」で標準に戻します。ショートカットがすでに別のコマンドに割り当てられている場合は、引き継ぐかどうか確認されます。",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "シーケンス — $SEQ$ — や、2回連続押し — $SEQ2$ — も使えます。",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "ボタン1つで $VIM$ プリセット: $JKHL$、$SEQ$ と $SHIFTG$、$SEQ2$ — 削除、$SEQ3$ — コピー、$COLON$ — パレット。",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "キーはどの配列でも使えます。位置で照合されるので、ロシア語配列でも $R$ は同じキーのままで、$SLASH$ と $QUESTION$ も英語配列と同じキーです。",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "拡張機能のショートカット設定"
+  },
+  "help_own_5": {
+    "message": "パネル自体のショートカット（$GLOBAL$）はブラウザで変更します: $LINK$。",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "すべての操作がコマンドで、どのコマンドにも専用のキーを割り当てられます。"
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — 表示の切り替え: 標準 → URL付き（タイトルの下にサイト名、フォルダでは中のブックマークの数）→ コンパクト。",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — パネルにはこのフォルダだけが表示されます。検索と移動もこの中で行われます。",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — $OPEN$ と $ALT$ を入れ替えます。",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — ページやブラウザの UI をクリックすると閉じます。別のアプリに切り替えても閉じません。",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "パネルはウィンドウごとにあります。展開したフォルダとカーソルの位置は記憶されます。"
+  },
+  "help_view_6": {
+    "message": "ヘッダーはありません。検索欄は検索中だけ上に、「マーク済み」バーは何かをマークしている間だけ下に表示されます。"
+  },
+  "help_view_private": {
+    "message": "すべてブラウザ内に保存されます。この拡張機能がブックマークや履歴をどこかに送信することはありません。"
+  },
+  "help_all_intro": {
+    "message": "現在のショートカット一覧です。キーのないコマンドはパレット（$PALETTE$）から使えます。",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "検索ボックスで"
+  },
+  "help_all_pick": {
+    "message": "結果を選択"
+  },
+  "help_all_open": {
+    "message": "開く / もう一方のタブで開く / タブをURLに戻す"
+  },
+  "help_all_show": {
+    "message": "一致したものをツリーに表示"
+  },
+  "help_all_leave": {
+    "message": "検索を終了"
+  },
+  "help_all_palette": {
+    "message": "パレットとフォルダ選択で"
+  },
+  "help_all_run": {
+    "message": "選択 / 実行"
+  },
+  "help_all_move_go": {
+    "message": "移動してそのフォルダへ"
+  },
+  "help_all_close": {
+    "message": "閉じる"
+  },
+  "help_mouse_open": {
+    "message": "ブックマークを開く、フォルダを展開・折りたたむ"
+  },
+  "help_mouse_open_keys": {
+    "message": "クリック"
+  },
+  "help_mouse_other": {
+    "message": "もう一方のタブで開く"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+クリック",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "新しいタブで開く。フォルダでは中のブックマークを開く"
+  },
+  "help_mouse_new_keys": {
+    "message": "中ボタン"
+  },
+  "help_mouse_folder": {
+    "message": "フォルダのブックマークを開く"
+  },
+  "help_mouse_folder_keys": {
+    "message": "フォルダを $MOD$+クリック",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "マーク"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+クリック",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "ブックマークのタブを閉じる"
+  },
+  "help_mouse_close_keys": {
+    "message": "ホバー時の×印"
+  },
+  "help_mouse_menu": {
+    "message": "メニュー: 新しいウィンドウで開く、編集、切り取り、コピー、貼り付け、削除"
+  },
+  "help_mouse_menu_keys": {
+    "message": "右クリック"
+  },
+  "help_mouse_empty": {
+    "message": "検索、パレット、設定、元に戻す"
+  },
+  "help_mouse_empty_keys": {
+    "message": "空いている場所を右クリック"
+  },
+  "help_news_25_1": {
+    "message": "インターフェースとヘルプは10言語に対応しています：English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية。言語はブラウザの設定に従います。右から左への表記に対応し、コミュニティによる翻訳はリポジトリから受け付けます。"
+  },
+  "help_news_25_2": {
+    "message": "右から左の言語では、← でフォルダを展開し、→ で折りたたみます。"
+  },
+  "help_news_25_3": {
+    "message": "キー配列を間違えて入力した文字の検索を廃止しました。検索欄に見つかった件数を表示します。"
+  },
+  "help_news_25_4": {
+    "message": "マークした行にチェックを表示。ダークテーマでメッセージが見やすくなり、パレットのアイコンも新しくなりました。"
+  },
+  "help_news_25_5": {
+    "message": "システムフォルダと管理対象のブックマークは、マーク・編集・移動・削除できない理由を表示します。"
+  },
+  "help_news_25_6": {
+    "message": "設定：他のタブでの変更がすぐに反映され、インポート後はフォルダ一覧が更新され、キーのプリセットの切り替えは専用のウィンドウで確認します。"
+  },
+  "help_news_25_7": {
+    "message": "修正：Vを素早く2回押すと表示が飛ばされる問題、別のウィンドウを閉じた後のAlt+Bで現在のウィンドウでパネルが開かず閉じてしまうことがある問題、Edge・Brave・Vivaldi・Operaの新しいタブで「タブのURLを保存」を使うとスタートページのアドレスがブックマークに保存される問題。"
+  },
+  "help_news_26_1": {
+    "message": "パネルで行った変更の取り消しとやり直し: Mac は ⌘Z / ⌘⇧Z、それ以外は Ctrl+Z と Ctrl+Shift+Z または Ctrl+Y、またはメッセージ内の「元に戻す」ボタン。削除したフォルダは中身ごと復元されます。履歴は 50 ステップで、ブラウザーを閉じるまですべてのウィンドウで共通です。"
+  },
+  "help_news_26_2": {
+    "message": "ブックマーク、フォルダ、マークした項目をマウスでドラッグできます。上、下、またはフォルダの中へ移動します。項目をフォルダの上で止めるとフォルダが開き、端に近づくとリストがスクロールします。"
+  },
+  "help_news_26_3": {
+    "message": "右クリックメニューはブラウザーのブックマーク メニューと同じ使い方です。新しいタブ、新しいウィンドウ、分割ビュー、シークレット ウィンドウで開く、編集、切り取り・コピー・貼り付け、削除、ページやフォルダの追加、ブックマーク マネージャーを開く。キーボードでは Shift+F10 で開きます。"
+  },
+  "help_news_26_4": {
+    "message": "パネル独自のヘッダーはなくなりました。検索欄は検索中だけ表示され、「マーク済み: N」は下部のバーに表示されます。"
+  },
+  "help_news_24_1": {
+    "message": "大規模なコレクションで高速化: ツリーの再読み込みが減り、検索とフォルダ選択の構築が速くなりました。"
+  },
+  "help_news_24_2": {
+    "message": "フォルダ選択: ツリー順で表示、最近のフォルダは別枠、該当がなければ「フォルダを作成」。"
+  },
+  "help_news_24_3": {
+    "message": "$NEW$ のあと、すぐに新しいフォルダの名前を入力できます。",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "カーソルが見やすくなり、折りたたんだフォルダは中のタブが開いていることを表示します。新しいタブは現在のタブの隣に開きます。"
+  },
+  "help_news_24_5": {
+    "message": "セットを開くとき、開いているタブを重複して開きません。複数のブックマークのタブを閉じるときと、URLを置き換えるときは確認します。"
+  },
+  "help_news_24_6": {
+    "message": "ロシア語配列では、記号をキーの位置で判別します（$QUESTION$ でパレットが開きます）。Mac では $CTRL$ が $CMD$ と同じ扱いではなくなりました。",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: ロシア語配列を文字を入力しなくてもすぐに認識します — $CHORD$ で開くのは設定ではなくパレットです。",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "キーのエディタは、別のコマンドからショートカットを引き継ぐ前に確認し、選択中のプリセットを表示します。"
+  },
+  "help_news_24_9": {
+    "message": "修正: $NEW$ の直後に入力した文字がコマンドとして動作した問題、スペースキーで削除が確定されることがある問題、検索から名前を変更したあとフォーカスがリストに移る問題、検索中の誤った $BS$ でタブが閉じる問題。",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "名前でフォルダへ移動: $MOVE$、最近のフォルダが上に表示されます。",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "現在のタブのURLをブックマークに保存: $UPDATE$。",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "タイトルの下にURLを表示するビューとコンパクトなビュー: $CYCLE$。",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "このヘルプ: $HELP$。",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "パネル内の検索: タイトル、URL、フォルダで、ハイライト付き、どのキー配列でも使えます。$TAB$ で一致したものをその場に表示。",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ などの記号がロシア語配列でも使えます。",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "すべての操作がコマンドになりました: コマンドパレット、設定でのカスタムショートカット、Vim プリセット、シーケンス、2回連続押し。"
+  },
+  "help_news_21_2": {
+    "message": "URLのコピー、フォルダ内すべてをマーク、すべてのフォルダを折りたたむ。設定がタブで開きます。"
+  },
+  "help_news_20_1": {
+    "message": "新しいフォルダ、$OPTION$/$ALT$ による行の移動、スペースでのマーク。",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "ブックマークのセットを開く（フォルダ名のタブグループとして開くことも可能）。「新しいタブで開く」スイッチ。"
+  },
+  "help_news_1_1": {
+    "message": "1つのショートカットでパネルを操作: 開く、フォーカスを戻す、閉じる。開始フォルダ。"
+  },
+  "help_news_1_2": {
+    "message": "Arc のような固定タブのブックマーク、名前の変更と削除、自動で隠す機能、複数ウィンドウでの動作、新しいデザイン。"
+  },
+  "help_news_earlier": {
+    "message": "以前のバージョン"
+  },
+  "help_quick_title": {
+    "message": "クイックスタート"
+  },
+  "help_nav_pinned": {
+    "message": "固定タブとして"
+  },
+  "help_pinned_title": {
+    "message": "ブックマークを固定タブにする"
+  },
+  "help_find_title": {
+    "message": "探して開く"
+  },
+  "help_sort_title": {
+    "message": "ブックマークを整理する"
+  },
+  "help_sets_title": {
+    "message": "セットとして開く"
+  },
+  "help_own_title": {
+    "message": "カスタムキー"
+  },
+  "help_view_title": {
+    "message": "表示と設定"
+  },
+  "help_all_title": {
+    "message": "すべてのキー"
+  },
+  "help_mouse_title": {
+    "message": "マウス"
+  },
+  "help_news_title": {
+    "message": "新機能"
+  }
+}

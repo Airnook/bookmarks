@@ -1,0 +1,2202 @@
+{
+  "locale": {
+    "message": "pt-BR"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "Favoritos"
+  },
+  "ext_description": {
+    "message": "Favoritos no painel lateral por atalho de teclado, prontos para navegar com as setas"
+  },
+  "command_toggle": {
+    "message": "Abrir / focar / fechar o painel de favoritos"
+  },
+  "all_bookmarks": {
+    "message": "Todos os favoritos"
+  },
+  "untitled": {
+    "message": "Sem título"
+  },
+  "bookmarklet": {
+    "message": "bookmarklet"
+  },
+  "folder_empty": {
+    "message": "vazia"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "open": {
+    "message": "Abrir"
+  },
+  "delete": {
+    "message": "Excluir"
+  },
+  "close": {
+    "message": "Fechar"
+  },
+  "nothing_found": {
+    "message": "Nada encontrado"
+  },
+  "more_results": {
+    "message": "Mais $COUNT$ — refine a pesquisa",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "Espaço"
+  },
+  "group_nav": {
+    "message": "Navegação"
+  },
+  "group_open": {
+    "message": "Abertura"
+  },
+  "group_marks": {
+    "message": "Marcação"
+  },
+  "group_edit": {
+    "message": "Edição"
+  },
+  "group_panel": {
+    "message": "Painel"
+  },
+  "cmd_search": {
+    "message": "Pesquisar favoritos"
+  },
+  "cmd_search_note": {
+    "message": "por título, endereço e pasta"
+  },
+  "cmd_search_words": {
+    "message": "pesquisar busca buscar procurar filtrar achar"
+  },
+  "cmd_cursor_down": {
+    "message": "Cursor para baixo"
+  },
+  "cmd_cursor_down_words": {
+    "message": "baixo descer próximo"
+  },
+  "cmd_cursor_up": {
+    "message": "Cursor para cima"
+  },
+  "cmd_cursor_up_words": {
+    "message": "cima subir anterior"
+  },
+  "cmd_cursor_first": {
+    "message": "Para o início da lista"
+  },
+  "cmd_cursor_first_words": {
+    "message": "início começo topo primeiro"
+  },
+  "cmd_cursor_last": {
+    "message": "Para o fim da lista"
+  },
+  "cmd_cursor_last_words": {
+    "message": "fim final último"
+  },
+  "cmd_folder_expand": {
+    "message": "Expandir pasta"
+  },
+  "cmd_folder_expand_words": {
+    "message": "expandir abrir pasta"
+  },
+  "cmd_folder_collapse": {
+    "message": "Recolher pasta"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "em um favorito — ir para a pasta dele"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "recolher fechar pasta pai"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "Recolher todas as pastas"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "recolher todas pastas fechar"
+  },
+  "cmd_open": {
+    "message": "Abrir"
+  },
+  "cmd_open_note": {
+    "message": "com marcação — tudo o que está marcado"
+  },
+  "cmd_open_words": {
+    "message": "abrir ir visitar"
+  },
+  "cmd_open_alt": {
+    "message": "Abrir em outra guia"
+  },
+  "cmd_open_alt_note": {
+    "message": "em uma pasta — todos os favoritos dela"
+  },
+  "cmd_open_alt_words": {
+    "message": "abrir outra guia pasta"
+  },
+  "cmd_open_newTab": {
+    "message": "Abrir em uma nova guia"
+  },
+  "cmd_open_newTab_words": {
+    "message": "abrir nova guia"
+  },
+  "cmd_open_currentTab": {
+    "message": "Abrir na guia atual"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "abrir guia atual"
+  },
+  "cmd_open_group": {
+    "message": "Abrir como grupo de guias…"
+  },
+  "cmd_open_group_words": {
+    "message": "abrir grupo guias conjunto"
+  },
+  "cmd_open_reset": {
+    "message": "Devolver a guia ao endereço do favorito"
+  },
+  "cmd_open_reset_words": {
+    "message": "devolver redefinir voltar guia endereço original"
+  },
+  "cmd_mark_toggle": {
+    "message": "Marcar"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "de novo — desmarcar"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "marcar selecionar alternar"
+  },
+  "cmd_mark_down": {
+    "message": "Marcar e descer"
+  },
+  "cmd_mark_down_words": {
+    "message": "marcar selecionar baixo descer"
+  },
+  "cmd_mark_up": {
+    "message": "Marcar e subir"
+  },
+  "cmd_mark_up_words": {
+    "message": "marcar selecionar cima subir"
+  },
+  "cmd_mark_all": {
+    "message": "Marcar tudo na pasta"
+  },
+  "cmd_mark_all_note": {
+    "message": "de novo — desmarcar"
+  },
+  "cmd_mark_all_words": {
+    "message": "marcar tudo selecionar todos"
+  },
+  "cmd_mark_clear": {
+    "message": "Limpar marcação"
+  },
+  "cmd_mark_clear_words": {
+    "message": "limpar desmarcar remover marcação"
+  },
+  "cmd_folder_new": {
+    "message": "Nova pasta"
+  },
+  "cmd_folder_new_note": {
+    "message": "com marcação — coloca nela os itens marcados"
+  },
+  "cmd_folder_new_words": {
+    "message": "pasta nova criar adicionar"
+  },
+  "cmd_rename": {
+    "message": "Renomear"
+  },
+  "cmd_rename_words": {
+    "message": "renomear nome título editar"
+  },
+  "cmd_edit": {
+    "message": "Editar nome e endereço…"
+  },
+  "cmd_edit_note": {
+    "message": "em uma janela, como no navegador"
+  },
+  "cmd_edit_words": {
+    "message": "editar nome endereço",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "Mover para a pasta…"
+  },
+  "cmd_move_to_note": {
+    "message": "escolher uma pasta pelo nome"
+  },
+  "cmd_move_to_words": {
+    "message": "mover pasta transferir organizar classificar"
+  },
+  "cmd_url_update": {
+    "message": "Salvar o endereço da guia"
+  },
+  "cmd_url_update_note": {
+    "message": "o favorito recebe o endereço da guia atual"
+  },
+  "cmd_url_update_words": {
+    "message": "salvar atualizar endereço url guia"
+  },
+  "cmd_delete": {
+    "message": "Excluir…"
+  },
+  "cmd_delete_words": {
+    "message": "excluir apagar deletar remover"
+  },
+  "cmd_copy_url": {
+    "message": "Copiar endereço"
+  },
+  "cmd_copy_url_note": {
+    "message": "em uma pasta ou marcação — todos os endereços"
+  },
+  "cmd_copy_url_words": {
+    "message": "copiar endereço url link área transferência"
+  },
+  "cmd_cut": {
+    "message": "Recortar"
+  },
+  "cmd_cut_note": {
+    "message": "colar move os favoritos para lá"
+  },
+  "cmd_copy": {
+    "message": "Copiar"
+  },
+  "cmd_copy_note": {
+    "message": "colar cria uma cópia; os endereços também vão para a área de transferência"
+  },
+  "cmd_paste": {
+    "message": "Colar"
+  },
+  "cmd_paste_note": {
+    "message": "depois do cursor ou dentro de uma pasta expandida"
+  },
+  "cmd_cut_words": {
+    "message": "recortar mover transferência",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "copiar cópia duplicar transferência",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "colar inserir transferência",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "Fechar a guia do favorito"
+  },
+  "cmd_tab_close_note": {
+    "message": "em uma pasta ou marcação — todas as guias"
+  },
+  "cmd_tab_close_words": {
+    "message": "fechar guia"
+  },
+  "cmd_move_up": {
+    "message": "Mover para cima"
+  },
+  "cmd_move_up_words": {
+    "message": "mover cima subir"
+  },
+  "cmd_move_down": {
+    "message": "Mover para baixo"
+  },
+  "cmd_move_down_words": {
+    "message": "mover baixo descer"
+  },
+  "cmd_undo": {
+    "message": "Desfazer"
+  },
+  "cmd_undo_words": {
+    "message": "desfazer reverter"
+  },
+  "cmd_redo": {
+    "message": "Refazer"
+  },
+  "cmd_redo_words": {
+    "message": "refazer repetir"
+  },
+  "cmd_palette": {
+    "message": "Paleta de comandos"
+  },
+  "cmd_palette_words": {
+    "message": "paleta comandos ações"
+  },
+  "cmd_menu": {
+    "message": "Abrir menu"
+  },
+  "cmd_menu_note": {
+    "message": "como o botão direito do mouse"
+  },
+  "cmd_menu_words": {
+    "message": "menu contexto botão direito",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "Alterar visualização"
+  },
+  "cmd_view_cycle_note": {
+    "message": "normal, com endereço, compacta"
+  },
+  "cmd_view_cycle_words": {
+    "message": "visualização exibição alterar modo compacta"
+  },
+  "cmd_help": {
+    "message": "Ajuda"
+  },
+  "cmd_help_note": {
+    "message": "todos os recursos e teclas"
+  },
+  "cmd_help_words": {
+    "message": "ajuda manual guia atalhos teclas"
+  },
+  "cmd_settings": {
+    "message": "Configurações"
+  },
+  "cmd_settings_words": {
+    "message": "configurações ajustes opções preferências"
+  },
+  "cmd_escape": {
+    "message": "Cancelar ou fechar"
+  },
+  "cmd_escape_note": {
+    "message": "limpa a marcação, sai da pesquisa; senão, fecha o painel"
+  },
+  "cmd_escape_words": {
+    "message": "cancelar sair fechar escape"
+  },
+  "cmd_panel_close": {
+    "message": "Fechar painel"
+  },
+  "cmd_panel_close_words": {
+    "message": "fechar painel ocultar"
+  },
+  "panel_tree": {
+    "message": "Favoritos"
+  },
+  "menu_open_new_tab": {
+    "message": "Abrir em nova guia"
+  },
+  "menu_open_new_window": {
+    "message": "Abrir em nova janela"
+  },
+  "menu_open_split": {
+    "message": "Abrir na visualização dividida"
+  },
+  "menu_open_incognito": {
+    "message": "Abrir em uma janela anônima"
+  },
+  "menu_open_all": {
+    "message": "Abrir tudo ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "Abrir tudo em uma nova janela"
+  },
+  "menu_open_all_incognito": {
+    "message": "Abrir todos em uma janela anônima"
+  },
+  "menu_edit": {
+    "message": "Editar…"
+  },
+  "menu_rename": {
+    "message": "Renomear…"
+  },
+  "menu_delete": {
+    "message": "Excluir"
+  },
+  "menu_add_page": {
+    "message": "Adicionar página…"
+  },
+  "menu_add_folder": {
+    "message": "Adicionar pasta…"
+  },
+  "menu_manager": {
+    "message": "Abrir o gerenciador de favoritos"
+  },
+  "menu_incognito_off": {
+    "message": "Permita a extensão no modo anônimo: chrome://extensions → “Detalhes” → “Permitir no modo anônimo”"
+  },
+  "menu_bookmarklet": {
+    "message": "Um bookmarklet só funciona na página aberta — clique nele"
+  },
+  "menu_edit_single": {
+    "message": "Só é possível editar um item por vez"
+  },
+  "search_placeholder": {
+    "message": "Título, endereço ou pasta"
+  },
+  "search_found": {
+    "message": "Encontrados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "Nada encontrado · $KEY$ — voltar à lista",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "Ainda não há favoritos."
+  },
+  "empty_folder": {
+    "message": "Esta pasta está vazia por enquanto."
+  },
+  "empty_add_hint": {
+    "message": "$KEY$ no navegador adiciona uma página.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — nova pasta.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "Nome do grupo"
+  },
+  "tab_group_placeholder": {
+    "message": "Nome do grupo (opcional)"
+  },
+  "tab_group_hint": {
+    "message": "Com nome, as guias vão para um grupo; sem nome, abrem como guias comuns."
+  },
+  "palette_placeholder": {
+    "message": "Comando…"
+  },
+  "close_tab": {
+    "message": "Fechar guia"
+  },
+  "rename_label": {
+    "message": "Título"
+  },
+  "new_folder_title": {
+    "message": "Nova pasta"
+  },
+  "no_bookmarks_here": {
+    "message": "Não há favoritos aqui"
+  },
+  "copied_addresses": {
+    "message": "Endereços copiados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "Endereço copiado"
+  },
+  "copy_failed": {
+    "message": "Não foi possível copiar"
+  },
+  "view_changed": {
+    "message": "Visualização: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "normal"
+  },
+  "view_detailed": {
+    "message": "com endereço"
+  },
+  "view_dense": {
+    "message": "compacta"
+  },
+  "marked": {
+    "message": "Marcados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "Marcados: $COUNT$ · $KEY$ — limpar",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "Pastas do sistema não podem ser marcadas"
+  },
+  "locked_system_edit": {
+    "message": "Pastas do sistema não podem ser alteradas"
+  },
+  "locked_managed": {
+    "message": "Estes favoritos não podem ser alterados"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — todos os comandos",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "Botão direito — menu"
+  },
+  "updated": {
+    "message": "Atualizado para a versão $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "Novidades — pressione $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "Não foi possível criar a pasta"
+  },
+  "move_failed": {
+    "message": "Não foi possível mover"
+  },
+  "delete_bookmark": {
+    "message": "Excluir o favorito “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "Excluir o favorito sem título?"
+  },
+  "delete_folder": {
+    "message": "Excluir a pasta “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "Total de favoritos, incluindo o conteúdo das pastas: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "Dentro há apenas pastas vazias."
+  },
+  "delete_folder_empty": {
+    "message": "A pasta está vazia."
+  },
+  "url_only_bookmarks": {
+    "message": "Somente favoritos têm endereço"
+  },
+  "url_locked": {
+    "message": "Este favorito não pode ser alterado"
+  },
+  "url_loading": {
+    "message": "A página ainda está carregando"
+  },
+  "url_blank_tab": {
+    "message": "A guia atual não tem endereço"
+  },
+  "url_same": {
+    "message": "O endereço já é o mesmo"
+  },
+  "url_replace_title": {
+    "message": "Substituir o endereço de “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "Substituir"
+  },
+  "url_failed": {
+    "message": "Não foi possível alterar o endereço"
+  },
+  "url_updated": {
+    "message": "Endereço atualizado"
+  },
+  "undo_button": {
+    "message": "Desfazer"
+  },
+  "undo_button_label": {
+    "message": "Desfazer: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "Refazer: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "Desfeito: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "Refeito: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "Nada para desfazer"
+  },
+  "redo_nothing": {
+    "message": "Nada para refazer"
+  },
+  "undo_partial": {
+    "message": "Desfeito em parte: alguns favoritos foram alterados em outro lugar"
+  },
+  "redo_partial": {
+    "message": "Refeito em parte: alguns favoritos foram alterados em outro lugar"
+  },
+  "undo_failed": {
+    "message": "Não foi possível desfazer: os favoritos foram alterados em outro lugar"
+  },
+  "redo_failed": {
+    "message": "Não foi possível refazer: os favoritos foram alterados em outro lugar"
+  },
+  "history_fallback": {
+    "message": "A pasta original não existe mais — colocado em “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "“$TITLE$” excluído",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "$COUNT$ item excluído",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_many": {
+    "message": "$COUNT$ de itens excluídos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "$COUNT$ itens excluídos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "Renomeado para “$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "“$TITLE$” movido",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "$COUNT$ item movido",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_many": {
+    "message": "$COUNT$ de itens movidos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "$COUNT$ itens movidos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ item",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_many": {
+    "message": "$COUNT$ de itens",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ itens",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "Pasta “$TITLE$” criada",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "Recortados: $COUNT$ — cole para mover",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "Copiados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "Nada para colar — primeiro recorte ou copie favoritos"
+  },
+  "paste_inside": {
+    "message": "Não é possível colar uma pasta dentro dela mesma"
+  },
+  "paste_failed": {
+    "message": "Não foi possível colar"
+  },
+  "undo_pasted": {
+    "message": "Colados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "“$TITLE$” adicionado",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "“$TITLE$” alterado",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "Não foi possível adicionar o favorito"
+  },
+  "open_failed": {
+    "message": "Não foi possível abrir"
+  },
+  "edit_failed": {
+    "message": "Não foi possível salvar — verifique o endereço"
+  },
+  "edit_bookmark": {
+    "message": "Editar favorito"
+  },
+  "edit_folder": {
+    "message": "Renomear pasta"
+  },
+  "edit_name": {
+    "message": "Nome"
+  },
+  "edit_url": {
+    "message": "Endereço"
+  },
+  "save": {
+    "message": "Salvar"
+  },
+  "tab_not_open": {
+    "message": "A guia não está aberta"
+  },
+  "tab_not_open_delete": {
+    "message": "excluir o favorito — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "Ative “Favoritos como guias fixadas” nas configurações"
+  },
+  "picker_label": {
+    "message": "Mover para a pasta"
+  },
+  "picker_heading": {
+    "message": "Mover “$TITLE$” para uma pasta",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "Nome da pasta…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — mover · $SHIFT_ENTER$ — mover e ir para lá",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "Recentes"
+  },
+  "picker_all": {
+    "message": "Todas as pastas"
+  },
+  "picker_start_folder": {
+    "message": "pasta inicial"
+  },
+  "picker_here": {
+    "message": "está aqui"
+  },
+  "picker_create": {
+    "message": "Criar a pasta “$NAME$”",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "em “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "Esta pasta não existe mais"
+  },
+  "move_nothing": {
+    "message": "Não há mais nada para mover"
+  },
+  "move_already_there": {
+    "message": "Já está nesta pasta"
+  },
+  "moved": {
+    "message": "Movido para “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "Favoritos — ajuda"
+  },
+  "help_via_palette": {
+    "message": "paleta → “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "menu do botão direito em um espaço vazio"
+  },
+  "help_table_from_palette": {
+    "message": "pela paleta"
+  },
+  "help_table_menu": {
+    "message": "menu do botão direito"
+  },
+  "help_global_not_set": {
+    "message": "atalho não definido"
+  },
+  "options_title": {
+    "message": "Configurações de Favoritos"
+  },
+  "options_intro": {
+    "message": "Todos os recursos, fluxos de trabalho e teclas estão na $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "ajuda"
+  },
+  "options_root": {
+    "message": "Pasta inicial"
+  },
+  "options_root_hint": {
+    "message": "O painel mostra o conteúdo desta pasta."
+  },
+  "options_view": {
+    "message": "Visualização da lista"
+  },
+  "options_view_normal": {
+    "message": "Normal"
+  },
+  "options_view_detailed": {
+    "message": "Com endereço — o site abaixo do título"
+  },
+  "options_view_dense": {
+    "message": "Compacta"
+  },
+  "options_view_hint": {
+    "message": "No painel, $KEY$ alterna entre as visualizações.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "pela paleta"
+  },
+  "options_new_tab": {
+    "message": "Abrir favoritos em uma nova guia"
+  },
+  "options_new_tab_hint": {
+    "message": "Desativado: “Abrir” usa a guia atual e “Abrir em outra guia”, uma nova. Ativado — o contrário."
+  },
+  "options_pinned": {
+    "message": "Favoritos como guias fixadas"
+  },
+  "options_pinned_hint": {
+    "message": "Como no Arc: se a guia de um favorito já está aberta, “Abrir” muda para ela em vez de abri-la de novo. Os favoritos abertos são marcados com um ponto."
+  },
+  "options_auto_hide": {
+    "message": "Fechar o painel quando o foco for para a página"
+  },
+  "options_auto_hide_hint": {
+    "message": "Um clique na página ou na interface do navegador fecha o painel. Mudar para outro aplicativo o mantém aberto."
+  },
+  "options_keys": {
+    "message": "Teclas do painel"
+  },
+  "options_preset_standard": {
+    "message": "Padrão"
+  },
+  "options_preset_standard_title": {
+    "message": "Substituir todos os atalhos pelos padrão"
+  },
+  "options_preset_vim_title": {
+    "message": "Padrão mais teclas do Vim: j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "“+” grava um atalho: uma tecla, com modificadores, uma sequência ($SEQUENCE$) ou um pressionamento duplo ($DOUBLE$) — pressione a segunda tecla logo em seguida. $ENTER$ depois de uma tecla — pronto, $ESC$ — cancelar a gravação, “×” — remover. Se o atalho estiver em uso, será perguntado se você quer assumi-lo. Todos os comandos também estão na paleta de comandos do painel.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "Abrir e fechar o painel: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "alterar nas configurações do navegador"
+  },
+  "options_global_not_set": {
+    "message": "não definido"
+  },
+  "options_saved": {
+    "message": "Salvo"
+  },
+  "options_saved_notes": {
+    "message": "Salvo: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "removido de “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "agora a paleta abre somente com o botão do painel"
+  },
+  "options_delayed": {
+    "message": "um único pressionamento agirá com um pequeno atraso"
+  },
+  "options_remove_binding": {
+    "message": "Remover $KEY$ de “$COMMAND$”",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "Adicionar um atalho para “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "redefinir"
+  },
+  "options_reset_title": {
+    "message": "Restaurar os atalhos padrão de “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "somente com o botão do painel"
+  },
+  "options_only_palette": {
+    "message": "somente pela paleta"
+  },
+  "options_press_keys": {
+    "message": "Pressione um atalho…"
+  },
+  "options_taken": {
+    "message": "já usado por “$COMMAND$” — Enter: assumir, Esc: cancelar",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "atalhos personalizados"
+  },
+  "options_replace_preset": {
+    "message": "Substituir seus atalhos pelo conjunto “$PRESET$”?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "Os atalhos que você alterou serão perdidos."
+  },
+  "options_replace_ok": {
+    "message": "Substituir"
+  },
+  "options_preset_applied": {
+    "message": "O conjunto “$PRESET$” foi aplicado",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ favorito",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_many": {
+    "message": "$COUNT$ de favoritos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ favoritos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "Abrir $COUNT$ guia",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_many": {
+    "message": "Abrir $COUNT$ de guias",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "Abrir $COUNT$ guias",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ já aberta)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_many": {
+    "message": "($COUNT$ de guias já abertas)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ já abertas)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "Fechar $COUNT$ guia?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_many": {
+    "message": "Fechar $COUNT$ de guias?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "Fechar $COUNT$ guias?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "São as guias de $COUNT$ favorito nesta janela.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_many": {
+    "message": "São as guias de $COUNT$ de favoritos nesta janela.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "São as guias de $COUNT$ favoritos nesta janela.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "Excluir $COUNT$ item selecionado?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_many": {
+    "message": "Excluir $COUNT$ de itens selecionados?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "Excluir $COUNT$ itens selecionados?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "Tudo o que há dentro também será excluído: $COUNT$ favorito.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_many": {
+    "message": "Tudo o que há dentro também será excluído: $COUNT$ de favoritos.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "Tudo o que há dentro também será excluído: $COUNT$ favoritos.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "Mover $COUNT$ item para uma pasta",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_many": {
+    "message": "Mover $COUNT$ de itens para uma pasta",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "Mover $COUNT$ itens para uma pasta",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "$COUNT$ item movido para “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_many": {
+    "message": "$COUNT$ de itens movidos para “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "$COUNT$ itens movidos para “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "Ajuda"
+  },
+  "help_heading": {
+    "message": "Favoritos no painel lateral"
+  },
+  "help_lead": {
+    "message": "Seus favoritos ao lado da página, tudo pelo teclado: encontrar, abrir, organizar em pastas, manter como guias fixadas. Criado na mudança do Arc para um navegador Chromium."
+  },
+  "help_settings_button": {
+    "message": "Configurações"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · As teclas abaixo são as atuais, incluindo as que você redefiniu.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "Abrir o painel"
+  },
+  "help_nav_label": {
+    "message": "Seções"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — abrir o painel. Pressione de novo para fechá-lo; se o foco foi para a página, o mesmo atalho o traz de volta ao painel. O ícone da extensão também abre o painel — fixe-o no menu de extensões do navegador.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — percorrer a lista, $EXPAND$ $COLLAPSE$ — expandir e recolher uma pasta, $OPEN$ — abrir.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — pesquisar: comece a digitar um título, site ou pasta.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — marcar vários favoritos, $MOVE$ — movê-los para uma pasta pelo nome.",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — paleta: todos os comandos com suas teclas, caso você esqueça algo.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "Botão direito em um favorito, uma pasta ou um espaço vazio — um menu como o do navegador: abrir em uma nova janela, editar, recortar, copiar, colar. $MENU$ — o mesmo pelo teclado.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — esta ajuda. Novos favoritos são adicionados do jeito usual do navegador — $CHORD$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "Nos idiomas escritos da direita para a esquerda, as setas ← e → trocam de função: ← expande a pasta e → a recolhe."
+  },
+  "help_pinned_why": {
+    "message": "Como no Arc: um favorito tem a sua guia “própria”. Abra-o e o favorito lembra da guia, mesmo que você se afaste seguindo links. Este modo vem ativado e pode ser desativado nas configurações."
+  },
+  "help_pinned_1": {
+    "message": "Um ponto à direita significa que o favorito tem uma guia aberta; um ponto azul indica a guia atual. Um anel em uma pasta recolhida significa que algo dentro dela está aberto."
+  },
+  "help_pinned_2": {
+    "message": "$OPEN$ em um favorito já aberto muda para a guia dele em vez de abrir uma segunda. Se o favorito tiver várias guias, vai para a que você usou por último.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — devolver a guia ao endereço do favorito (você foi longe seguindo links).",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — o contrário: salvar no favorito o endereço em que você está. Na guia do próprio favorito isso acontece na hora; caso contrário, o painel pergunta antes.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ ou a cruz ao passar o mouse — fecha a guia do favorito. Para uma pasta ou itens marcados — todas as guias deles (pergunta antes).",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "Um favorito não toma a guia de outro: se a guia atual tem outro favorito aberto, o novo abre ao lado dela."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — a caixa de pesquisa no cabeçalho. Ela pesquisa por título, endereço e pasta; os resultados no título vêm primeiro.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "trabalho lin"
+  },
+  "help_find_2": {
+    "message": "Dá para restringir por pasta: $QUERY$ encontra o Linear na pasta “Trabalho”.",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — escolher, $ENTER$ — abrir, $MODENTER$ — em outra guia, $TAB$ — mostrar o resultado no lugar dele na árvore, $ESC$ — voltar para onde você estava.",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ em uma pasta — entrar nela na árvore.",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "Os comandos da paleta ($PALETTE$) também valem para os resultados: “Mover para a pasta…”, “Renomear”, “Excluir…”. $SHIFT$+clique marca um resultado — depois de $ESC$ você pode trabalhar com os itens marcados na árvore.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "Com muitos favoritos, digitar algumas letras é mais rápido do que percorrer a árvore."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — marcar uma linha, $DOWN$ $UP$ — marcar em sequência.",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — tudo nesta pasta (de novo — desmarcar). $ESC$ — limpar a marcação.",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "O cabeçalho mostra quantos estão marcados. Itens marcados são abertos, movidos, copiados e excluídos juntos; renomear funciona apenas na linha sob o cursor."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — para uma pasta pelo nome: comece a digitar. As pastas para onde você moveu itens recentemente vêm primeiro. $ENTER$ — mover e ficar onde está (útil para organizar um item após o outro), $SHIFTENTER$ — mover e ir para lá. Se a pasta não existir, $ENTER2$ em “Criar pasta” cria a pasta e move na hora.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — percorrer a lista. A linha entra em uma pasta expandida e sai dela na borda da pasta.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — nova pasta; dá para digitar o nome logo de cara. Se algo estiver marcado, os itens marcados vão parar nela.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — renomear: $ENTER$ — salvar, $ESC$ — cancelar.",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — excluir com confirmação. Uma pasta com conteúdo ou vários itens não podem ser excluídos com um único Enter — “Cancelar” vem selecionado por padrão.",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — copiar o endereço (para uma pasta ou itens marcados — todos os endereços, um por linha).",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — desfazer a última alteração feita no painel: excluir, renomear, mover, nova pasta, endereço da guia; $REDO$ — refazê-la. Depois de uma alteração, a mensagem embaixo tem o botão “Desfazer”. O histórico é comum a todas as janelas e fica guardado até o navegador ser fechado (até 50 passos); alterações feitas no Gerenciador de favoritos ou pela sincronização não são desfeitas.",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "Tem uma pilha na “Caixa de entrada”? Dá para organizar tudo sem encostar no mouse."
+  },
+  "help_sort_mark_title": {
+    "message": "Marcar"
+  },
+  "help_sort_move_title": {
+    "message": "Mover"
+  },
+  "help_sort_edit_title": {
+    "message": "Editar"
+  },
+  "help_sets_1": {
+    "message": "Marque favoritos e pressione $OPEN$, ou pressione $ALT$ em uma pasta.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "O painel pede um nome de grupo: digite um e as guias são reunidas em um grupo com esse nome (para uma pasta ele já vem preenchido); deixe vazio e elas abrem como guias comuns."
+  },
+  "help_sets_3": {
+    "message": "Favoritos que já estão abertos não são abertos uma segunda vez: as guias deles apenas entram no grupo."
+  },
+  "help_sets_why": {
+    "message": "O conjunto de guias da manhã, um projeto, uma pesquisa — com um único comando."
+  },
+  "help_own_settings_link": {
+    "message": "configurações"
+  },
+  "help_own_1": {
+    "message": "Em $SETTINGS$: “+” grava um atalho, “×” o remove, “redefinir” restaura o padrão. Se um atalho já pertence a outro comando, as configurações perguntam se você quer assumi-lo.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "São possíveis sequências — $SEQ$ — e pressionamentos duplos — $SEQ2$.",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "O preset do $VIM$ com um botão: $JKHL$, $SEQ$ e $SHIFTG$, $SEQ2$ — excluir, $SEQ3$ — copiar, $COLON$ — paleta.",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "As teclas funcionam em qualquer layout: são reconhecidas pela posição, então no layout russo $R$ continua sendo a mesma tecla, e $SLASH$ e $QUESTION$ são as mesmas teclas do layout inglês.",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "configurações de atalhos das extensões"
+  },
+  "help_own_5": {
+    "message": "O atalho próprio do painel ($GLOBAL$) é alterado no navegador: $LINK$.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "Cada ação é um comando, e qualquer comando pode ter suas próprias teclas."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — alterar a visualização: normal → com endereço (o site abaixo do título; para uma pasta, quantos favoritos ela contém) → compacta.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — o painel mostra apenas esta pasta. A pesquisa e a movimentação também funcionam dentro dela.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — troca $OPEN$ e $ALT$.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — um clique na página ou na interface do navegador fecha o painel; mudar para outro aplicativo não.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "Cada janela tem seu próprio painel. As pastas expandidas e a posição do cursor são lembradas."
+  },
+  "help_view_6": {
+    "message": "Não há cabeçalho: a linha de pesquisa aparece no topo só durante a pesquisa, e a barra “Marcados” embaixo, só enquanto algo estiver marcado."
+  },
+  "help_view_private": {
+    "message": "Tudo fica salvo no navegador: a extensão não envia seus favoritos nem seu histórico a lugar nenhum."
+  },
+  "help_all_intro": {
+    "message": "Seus atalhos atuais. Os comandos sem teclas ficam disponíveis na paleta ($PALETTE$).",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "Na caixa de pesquisa"
+  },
+  "help_all_pick": {
+    "message": "Escolher um resultado"
+  },
+  "help_all_open": {
+    "message": "Abrir / em outra guia / devolver a guia ao endereço"
+  },
+  "help_all_show": {
+    "message": "Mostrar o resultado na árvore"
+  },
+  "help_all_leave": {
+    "message": "Sair da pesquisa"
+  },
+  "help_all_palette": {
+    "message": "Na paleta e no seletor de pastas"
+  },
+  "help_all_run": {
+    "message": "Escolher / executar"
+  },
+  "help_all_move_go": {
+    "message": "Mover e ir para a pasta"
+  },
+  "help_all_close": {
+    "message": "Fechar"
+  },
+  "help_mouse_open": {
+    "message": "Abrir um favorito, expandir ou recolher uma pasta"
+  },
+  "help_mouse_open_keys": {
+    "message": "clique"
+  },
+  "help_mouse_other": {
+    "message": "Abrir em outra guia"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+clique",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "Abrir em uma nova guia; em uma pasta — abrir os favoritos dela"
+  },
+  "help_mouse_new_keys": {
+    "message": "botão do meio"
+  },
+  "help_mouse_folder": {
+    "message": "Abrir os favoritos da pasta"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+clique na pasta",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "Marcar"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+clique",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "Fechar a guia do favorito"
+  },
+  "help_mouse_close_keys": {
+    "message": "cruz ao passar o mouse"
+  },
+  "help_mouse_menu": {
+    "message": "Menu: abrir em uma nova janela, editar, recortar, copiar, colar, excluir"
+  },
+  "help_mouse_menu_keys": {
+    "message": "botão direito"
+  },
+  "help_mouse_empty": {
+    "message": "Pesquisa, paleta, configurações, desfazer"
+  },
+  "help_mouse_empty_keys": {
+    "message": "botão direito em um espaço vazio"
+  },
+  "help_news_25_1": {
+    "message": "A interface e a ajuda estão em 10 idiomas: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية, no idioma do navegador. Há suporte à escrita da direita para a esquerda; as traduções da comunidade chegam pelo repositório."
+  },
+  "help_news_25_2": {
+    "message": "Nos idiomas da direita para a esquerda, ← expande uma pasta e → a recolhe."
+  },
+  "help_news_25_3": {
+    "message": "Removida a busca de texto digitado no layout de teclado errado. O campo de busca mostra quantos resultados foram encontrados."
+  },
+  "help_news_25_4": {
+    "message": "As linhas marcadas têm uma marca de seleção; as mensagens aparecem melhor no tema escuro; há um novo ícone da paleta."
+  },
+  "help_news_25_5": {
+    "message": "Pastas do sistema e favoritos gerenciados explicam por que não podem ser marcados, editados, movidos ou excluídos."
+  },
+  "help_news_25_6": {
+    "message": "Configurações: as alterações feitas em outras guias aparecem na hora, a lista de pastas é atualizada após a importação e a troca do preset de teclas é confirmada em uma janela própria."
+  },
+  "help_news_25_7": {
+    "message": "Corrigido: pressionar V duas vezes rapidamente pulava uma visualização; Alt+B após fechar outra janela podia fechar o painel em vez de abri-lo na janela atual; “Salvar o endereço da guia” em uma nova guia do Edge, Brave, Vivaldi e Opera gravava no favorito o endereço da página inicial."
+  },
+  "help_news_26_1": {
+    "message": "Desfazer e refazer as alterações feitas no painel: ⌘Z / ⌘⇧Z no Mac, Ctrl+Z e Ctrl+Shift+Z ou Ctrl+Y nos demais sistemas, ou o botão “Desfazer” na mensagem. Uma pasta excluída volta com o conteúdo. O histórico guarda 50 passos e é compartilhado por todas as janelas até o navegador ser fechado."
+  },
+  "help_news_26_2": {
+    "message": "Arraste com o mouse favoritos, pastas e itens marcados: acima, abaixo ou dentro de uma pasta. A pasta se abre quando você mantém um item sobre ela, e a lista rola perto da borda."
+  },
+  "help_news_26_3": {
+    "message": "O menu do botão direito funciona como o menu de favoritos do navegador: abrir em nova guia, nova janela, visualização dividida ou janela anônima; editar; recortar, copiar e colar; excluir; adicionar página ou pasta; abrir o gerenciador de favoritos. Pelo teclado, abre com Shift+F10."
+  },
+  "help_news_26_4": {
+    "message": "O painel não tem mais cabeçalho próprio: o campo de busca aparece só durante a busca, e “Marcados: N” é uma barra na parte de baixo."
+  },
+  "help_news_24_1": {
+    "message": "Mais rápido em coleções grandes: a árvore é relida com menos frequência, a pesquisa e o seletor de pastas são montados mais depressa."
+  },
+  "help_news_24_2": {
+    "message": "Seletor de pastas: na ordem da árvore, pastas recentes separadas, “Criar pasta” se ela não existir."
+  },
+  "help_news_24_3": {
+    "message": "Você pode digitar o nome da nova pasta logo depois de $NEW$.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "O cursor ficou mais fácil de ver; uma pasta recolhida mostra que há uma guia aberta dentro dela. As novas guias abrem ao lado da atual."
+  },
+  "help_news_24_5": {
+    "message": "Abrir um conjunto não duplica as guias abertas. Fechar as guias de vários favoritos e substituir um endereço pedem confirmação."
+  },
+  "help_news_24_6": {
+    "message": "No layout russo, os símbolos são lidos pela posição da tecla ($QUESTION$ abre a paleta). No Mac, $CTRL$ deixou de equivaler a $CMD$.",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: o layout russo é reconhecido na hora, sem letras digitadas — $CHORD$ abre a paleta, não as configurações.",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "O editor de teclas pergunta antes de tirar um atalho de outro comando e mostra o preset selecionado."
+  },
+  "help_news_24_9": {
+    "message": "Corrigido: letras digitadas logo depois de $NEW$ agiam como comandos; Espaço podia confirmar uma exclusão; depois de renomear a partir da pesquisa, o foco ia para a lista; um $BS$ acidental na pesquisa fechava uma guia.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "Mover para uma pasta pelo nome: $MOVE$, com as pastas recentes no topo.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "Salvar no favorito o endereço da guia atual: $UPDATE$.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "Visualização com o endereço abaixo do título e uma compacta: $CYCLE$.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "Esta ajuda: $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "Pesquisa no painel: por título, endereço e pasta, com destaque e em qualquer layout de teclado; $TAB$ mostra o resultado no lugar dele.",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ e outros símbolos também funcionam no layout russo.",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "Todas as ações viraram comandos: a paleta de comandos e seus próprios atalhos nas configurações, o preset do Vim, sequências e pressionamentos duplos."
+  },
+  "help_news_21_2": {
+    "message": "Copiar endereço, marcar tudo em uma pasta, recolher todas as pastas. As configurações abrem em uma guia."
+  },
+  "help_news_20_1": {
+    "message": "Novas pastas, mover linhas com $OPTION$/$ALT$, marcação com Espaço.",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "Abrir um conjunto de favoritos, inclusive como grupo de guias com o nome da pasta. Uma opção “abrir em uma nova guia”."
+  },
+  "help_news_1_1": {
+    "message": "O painel com um único atalho: abrir, devolver o foco, fechar. Pasta inicial."
+  },
+  "help_news_1_2": {
+    "message": "Favoritos como guias fixadas, como no Arc, renomear e excluir, ocultação automática, trabalho em várias janelas, novo design."
+  },
+  "help_news_earlier": {
+    "message": "Versões anteriores"
+  },
+  "help_quick_title": {
+    "message": "Primeiros passos"
+  },
+  "help_nav_pinned": {
+    "message": "Como guias fixadas"
+  },
+  "help_pinned_title": {
+    "message": "Favoritos como guias fixadas"
+  },
+  "help_find_title": {
+    "message": "Encontrar e abrir"
+  },
+  "help_sort_title": {
+    "message": "Organizar favoritos"
+  },
+  "help_sets_title": {
+    "message": "Abrir como conjunto"
+  },
+  "help_own_title": {
+    "message": "Suas próprias teclas"
+  },
+  "help_view_title": {
+    "message": "Visualização e configurações"
+  },
+  "help_all_title": {
+    "message": "Todas as teclas"
+  },
+  "help_mouse_title": {
+    "message": "Mouse"
+  },
+  "help_news_title": {
+    "message": "Novidades"
+  }
+}

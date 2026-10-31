@@ -1,0 +1,50 @@
+name: Translation
+description: Add a language or fix an existing translation
+title: "[Translation] "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The fastest way is a pull request into `dev` that changes `_locales/<code>/messages.json`.
+        The guide is in [TRANSLATING.md](https://github.com/Airnook/bookmarks/blob/dev/TRANSLATING.md).
+        Use this form to propose a translation or to report a problem with one.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Language name in English and in its own script, for example "Portuguese (Brazil), português"
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Locale code
+      description: Folder name in `_locales`, with an underscore, for example `pt_BR`. Must be a Chrome-supported code.
+      placeholder: pt_BR
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of change
+      options:
+        - New translation
+        - Fix an existing translation
+        - Translation for new keys
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Pull request or changes
+      description: Link to the pull request into `dev`, or list the keys and the new text.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: "`npm test` passes locally"
+        - label: "`dir` and `locale` are set in the file"

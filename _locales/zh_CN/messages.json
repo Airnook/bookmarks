@@ -1,0 +1,2004 @@
+{
+  "locale": {
+    "message": "zh-CN"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "书签"
+  },
+  "ext_description": {
+    "message": "在侧边栏中通过快捷键使用书签，专为方向键导航而设计"
+  },
+  "command_toggle": {
+    "message": "打开 / 聚焦 / 关闭书签面板"
+  },
+  "all_bookmarks": {
+    "message": "所有书签"
+  },
+  "untitled": {
+    "message": "无标题"
+  },
+  "bookmarklet": {
+    "message": "小书签"
+  },
+  "folder_empty": {
+    "message": "空"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "open": {
+    "message": "打开"
+  },
+  "delete": {
+    "message": "删除"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "nothing_found": {
+    "message": "未找到任何内容"
+  },
+  "more_results": {
+    "message": "还有 $COUNT$ 项 — 请缩小搜索范围",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "空格"
+  },
+  "group_nav": {
+    "message": "导航"
+  },
+  "group_open": {
+    "message": "打开"
+  },
+  "group_marks": {
+    "message": "标记"
+  },
+  "group_edit": {
+    "message": "编辑"
+  },
+  "group_panel": {
+    "message": "面板"
+  },
+  "cmd_search": {
+    "message": "搜索书签"
+  },
+  "cmd_search_note": {
+    "message": "按标题、网址和文件夹"
+  },
+  "cmd_search_words": {
+    "message": "查找 查询 过滤 筛选 搜索"
+  },
+  "cmd_cursor_down": {
+    "message": "光标下移"
+  },
+  "cmd_cursor_down_words": {
+    "message": "向下 下一个 下移"
+  },
+  "cmd_cursor_up": {
+    "message": "光标上移"
+  },
+  "cmd_cursor_up_words": {
+    "message": "向上 上一个 上移"
+  },
+  "cmd_cursor_first": {
+    "message": "跳到列表开头"
+  },
+  "cmd_cursor_first_words": {
+    "message": "顶部 开头 第一个 首页"
+  },
+  "cmd_cursor_last": {
+    "message": "跳到列表末尾"
+  },
+  "cmd_cursor_last_words": {
+    "message": "底部 末尾 最后一个"
+  },
+  "cmd_folder_expand": {
+    "message": "展开文件夹"
+  },
+  "cmd_folder_expand_words": {
+    "message": "展开 打开文件夹"
+  },
+  "cmd_folder_collapse": {
+    "message": "折叠文件夹"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "在书签上 — 转到其所在文件夹"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "折叠 收起 父级 上级"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "折叠所有文件夹"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "全部折叠 全部收起"
+  },
+  "cmd_open": {
+    "message": "打开"
+  },
+  "cmd_open_note": {
+    "message": "有标记时 — 打开所有已标记项"
+  },
+  "cmd_open_words": {
+    "message": "打开 前往 访问"
+  },
+  "cmd_open_alt": {
+    "message": "在另一个标签页中打开"
+  },
+  "cmd_open_alt_note": {
+    "message": "在文件夹上 — 打开其中所有书签"
+  },
+  "cmd_open_alt_words": {
+    "message": "打开 另一个 备用"
+  },
+  "cmd_open_newTab": {
+    "message": "在新标签页中打开"
+  },
+  "cmd_open_newTab_words": {
+    "message": "新标签页 新建标签"
+  },
+  "cmd_open_currentTab": {
+    "message": "在当前标签页中打开"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "当前标签页 此处"
+  },
+  "cmd_open_group": {
+    "message": "作为标签页分组打开…"
+  },
+  "cmd_open_group_words": {
+    "message": "标签页分组 分组 标签组"
+  },
+  "cmd_open_reset": {
+    "message": "让标签页回到书签网址"
+  },
+  "cmd_open_reset_words": {
+    "message": "重置 还原 固定 网址 返回"
+  },
+  "cmd_mark_toggle": {
+    "message": "标记"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "再按一次 — 取消标记"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "标记 选择 选中 勾选"
+  },
+  "cmd_mark_down": {
+    "message": "标记并下移"
+  },
+  "cmd_mark_down_words": {
+    "message": "向下标记 选择 下移"
+  },
+  "cmd_mark_up": {
+    "message": "标记并上移"
+  },
+  "cmd_mark_up_words": {
+    "message": "向上标记 选择 上移"
+  },
+  "cmd_mark_all": {
+    "message": "标记文件夹中的全部"
+  },
+  "cmd_mark_all_note": {
+    "message": "再按一次 — 取消标记"
+  },
+  "cmd_mark_all_words": {
+    "message": "全选 全部标记 选择全部"
+  },
+  "cmd_mark_clear": {
+    "message": "清除标记"
+  },
+  "cmd_mark_clear_words": {
+    "message": "清除 取消选择 取消标记"
+  },
+  "cmd_folder_new": {
+    "message": "新建文件夹"
+  },
+  "cmd_folder_new_note": {
+    "message": "有标记时 — 将已标记项放入其中"
+  },
+  "cmd_folder_new_words": {
+    "message": "新建 创建 文件夹"
+  },
+  "cmd_rename": {
+    "message": "重命名"
+  },
+  "cmd_rename_words": {
+    "message": "重命名 改名 标题 编辑"
+  },
+  "cmd_edit": {
+    "message": "修改名称和网址…"
+  },
+  "cmd_edit_note": {
+    "message": "在窗口中修改，与浏览器相同"
+  },
+  "cmd_edit_words": {
+    "message": "修改 编辑 名称 网址",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "移动到文件夹…"
+  },
+  "cmd_move_to_note": {
+    "message": "按名称选择文件夹"
+  },
+  "cmd_move_to_words": {
+    "message": "移动 转移 文件夹"
+  },
+  "cmd_url_update": {
+    "message": "保存标签页网址"
+  },
+  "cmd_url_update_note": {
+    "message": "书签将使用当前标签页的网址"
+  },
+  "cmd_url_update_words": {
+    "message": "更新网址 替换 网址 地址"
+  },
+  "cmd_delete": {
+    "message": "删除…"
+  },
+  "cmd_delete_words": {
+    "message": "删除 移除"
+  },
+  "cmd_copy_url": {
+    "message": "复制网址"
+  },
+  "cmd_copy_url_note": {
+    "message": "对文件夹和已标记项 — 复制所有网址"
+  },
+  "cmd_copy_url_words": {
+    "message": "复制 网址 链接 地址"
+  },
+  "cmd_cut": {
+    "message": "剪切"
+  },
+  "cmd_cut_note": {
+    "message": "粘贴时书签会移到那里"
+  },
+  "cmd_copy": {
+    "message": "复制"
+  },
+  "cmd_copy_note": {
+    "message": "粘贴时会创建副本；网址也会复制到剪贴板"
+  },
+  "cmd_paste": {
+    "message": "粘贴"
+  },
+  "cmd_paste_note": {
+    "message": "粘贴到光标之后或已展开的文件夹中"
+  },
+  "cmd_cut_words": {
+    "message": "剪切 移动 剪贴板",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "复制 副本 剪贴板",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "粘贴 插入 剪贴板",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "关闭书签的标签页"
+  },
+  "cmd_tab_close_note": {
+    "message": "对文件夹和已标记项 — 关闭它们的所有标签页"
+  },
+  "cmd_tab_close_words": {
+    "message": "关闭 标签页"
+  },
+  "cmd_move_up": {
+    "message": "上移"
+  },
+  "cmd_move_up_words": {
+    "message": "移动 上移 向上"
+  },
+  "cmd_move_down": {
+    "message": "下移"
+  },
+  "cmd_move_down_words": {
+    "message": "移动 下移 向下"
+  },
+  "cmd_undo": {
+    "message": "撤消"
+  },
+  "cmd_undo_words": {
+    "message": "撤消 撤销 还原"
+  },
+  "cmd_redo": {
+    "message": "重做"
+  },
+  "cmd_redo_words": {
+    "message": "重做 恢复"
+  },
+  "cmd_palette": {
+    "message": "命令面板"
+  },
+  "cmd_palette_words": {
+    "message": "命令 面板 帮助 全部命令"
+  },
+  "cmd_menu": {
+    "message": "打开菜单"
+  },
+  "cmd_menu_note": {
+    "message": "与鼠标右键相同"
+  },
+  "cmd_menu_words": {
+    "message": "菜单 右键 上下文",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "切换视图"
+  },
+  "cmd_view_cycle_note": {
+    "message": "常规、显示网址、紧凑"
+  },
+  "cmd_view_cycle_words": {
+    "message": "视图 显示 网址 紧凑 模式"
+  },
+  "cmd_help": {
+    "message": "帮助"
+  },
+  "cmd_help_note": {
+    "message": "所有功能和快捷键"
+  },
+  "cmd_help_words": {
+    "message": "帮助 说明 文档 手册"
+  },
+  "cmd_settings": {
+    "message": "设置"
+  },
+  "cmd_settings_words": {
+    "message": "设置 选项 偏好"
+  },
+  "cmd_escape": {
+    "message": "取消或关闭"
+  },
+  "cmd_escape_note": {
+    "message": "清除标记、退出搜索，否则关闭面板"
+  },
+  "cmd_escape_words": {
+    "message": "取消 退出 关闭 Esc"
+  },
+  "cmd_panel_close": {
+    "message": "关闭面板"
+  },
+  "cmd_panel_close_words": {
+    "message": "关闭 隐藏 面板"
+  },
+  "panel_tree": {
+    "message": "书签"
+  },
+  "menu_open_new_tab": {
+    "message": "在新标签页中打开"
+  },
+  "menu_open_new_window": {
+    "message": "在新窗口中打开"
+  },
+  "menu_open_split": {
+    "message": "在拆分视图中打开"
+  },
+  "menu_open_incognito": {
+    "message": "在无痕式窗口中打开"
+  },
+  "menu_open_all": {
+    "message": "打开全部（$COUNT$ 个）书签",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "在新窗口中打开全部书签"
+  },
+  "menu_open_all_incognito": {
+    "message": "在无痕式窗口中打开全部网址"
+  },
+  "menu_edit": {
+    "message": "修改…"
+  },
+  "menu_rename": {
+    "message": "重命名…"
+  },
+  "menu_delete": {
+    "message": "删除"
+  },
+  "menu_add_page": {
+    "message": "添加网页…"
+  },
+  "menu_add_folder": {
+    "message": "添加文件夹…"
+  },
+  "menu_manager": {
+    "message": "打开书签管理器"
+  },
+  "menu_incognito_off": {
+    "message": "请允许扩展程序在无痕模式下运行：chrome://extensions → “详情” → “在无痕模式下启用”"
+  },
+  "menu_bookmarklet": {
+    "message": "书签小程序只能在打开的网页上运行——请直接点击它"
+  },
+  "menu_edit_single": {
+    "message": "一次只能修改一项"
+  },
+  "search_placeholder": {
+    "message": "标题、网址或文件夹"
+  },
+  "search_found": {
+    "message": "找到：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "未找到任何内容 · $KEY$ — 返回列表",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "还没有书签。"
+  },
+  "empty_folder": {
+    "message": "此文件夹暂时是空的。"
+  },
+  "empty_add_hint": {
+    "message": "在浏览器中按 $KEY$ 可添加网页。",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — 新建文件夹。",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "分组名称"
+  },
+  "tab_group_placeholder": {
+    "message": "分组名称 — 可选"
+  },
+  "tab_group_hint": {
+    "message": "填写名称后，标签页会放入一个分组；留空则作为普通标签页打开。"
+  },
+  "palette_placeholder": {
+    "message": "命令…"
+  },
+  "close_tab": {
+    "message": "关闭标签页"
+  },
+  "rename_label": {
+    "message": "标题"
+  },
+  "new_folder_title": {
+    "message": "新建文件夹"
+  },
+  "no_bookmarks_here": {
+    "message": "此处没有书签"
+  },
+  "copied_addresses": {
+    "message": "已复制网址：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "已复制网址"
+  },
+  "copy_failed": {
+    "message": "无法复制"
+  },
+  "view_changed": {
+    "message": "视图：$VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "常规"
+  },
+  "view_detailed": {
+    "message": "显示网址"
+  },
+  "view_dense": {
+    "message": "紧凑"
+  },
+  "marked": {
+    "message": "已标记：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "已标记：$COUNT$ · $KEY$ — 清除",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "无法标记系统文件夹"
+  },
+  "locked_system_edit": {
+    "message": "无法更改系统文件夹"
+  },
+  "locked_managed": {
+    "message": "无法更改这些书签"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — 所有命令",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "右键 — 菜单"
+  },
+  "updated": {
+    "message": "已更新至 $VERSION$。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "新功能 — 按 $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "无法创建文件夹"
+  },
+  "move_failed": {
+    "message": "无法移动"
+  },
+  "delete_bookmark": {
+    "message": "要删除书签“$TITLE$”吗？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "要删除无标题书签吗？"
+  },
+  "delete_folder": {
+    "message": "要删除文件夹“$TITLE$”吗？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "书签总数（含文件夹内的内容）：$COUNT$。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "里面只有空文件夹。"
+  },
+  "delete_folder_empty": {
+    "message": "文件夹为空。"
+  },
+  "url_only_bookmarks": {
+    "message": "只有书签才有网址"
+  },
+  "url_locked": {
+    "message": "无法更改此书签"
+  },
+  "url_loading": {
+    "message": "页面仍在加载"
+  },
+  "url_blank_tab": {
+    "message": "当前标签页没有网址"
+  },
+  "url_same": {
+    "message": "网址已经相同"
+  },
+  "url_replace_title": {
+    "message": "要替换“$TITLE$”的网址吗？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "替换"
+  },
+  "url_failed": {
+    "message": "无法更改网址"
+  },
+  "url_updated": {
+    "message": "网址已更新"
+  },
+  "undo_button": {
+    "message": "撤消"
+  },
+  "undo_button_label": {
+    "message": "撤消：$ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "重做：$ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "已撤消：$ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "已重做：$ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "没有可撤消的操作"
+  },
+  "redo_nothing": {
+    "message": "没有可重做的操作"
+  },
+  "undo_partial": {
+    "message": "已部分撤消：有些书签已在别处更改"
+  },
+  "redo_partial": {
+    "message": "已部分重做：有些书签已在别处更改"
+  },
+  "undo_failed": {
+    "message": "无法撤消：这些书签已在别处更改"
+  },
+  "redo_failed": {
+    "message": "无法重做：这些书签已在别处更改"
+  },
+  "history_fallback": {
+    "message": "原文件夹已不存在 — 已放入“$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "已删除“$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "已删除 $COUNT$ 项",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "已重命名为“$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "已移动“$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "已移动 $COUNT$ 项",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ 项",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "已创建文件夹“$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "已剪切：$COUNT$ — 粘贴即可移动",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "已复制：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "没有可粘贴的内容——请先剪切或复制书签"
+  },
+  "paste_inside": {
+    "message": "无法将文件夹粘贴到其自身中"
+  },
+  "paste_failed": {
+    "message": "无法粘贴"
+  },
+  "undo_pasted": {
+    "message": "已粘贴：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "已添加“$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "已修改“$TITLE$”",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "无法添加书签"
+  },
+  "open_failed": {
+    "message": "无法打开"
+  },
+  "edit_failed": {
+    "message": "无法保存——请检查网址"
+  },
+  "edit_bookmark": {
+    "message": "修改书签"
+  },
+  "edit_folder": {
+    "message": "重命名文件夹"
+  },
+  "edit_name": {
+    "message": "名称"
+  },
+  "edit_url": {
+    "message": "网址"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "tab_not_open": {
+    "message": "标签页未打开"
+  },
+  "tab_not_open_delete": {
+    "message": "删除书签 — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "请在设置中开启“将书签作为固定标签页”"
+  },
+  "picker_label": {
+    "message": "移动到文件夹"
+  },
+  "picker_heading": {
+    "message": "将“$TITLE$”移动到文件夹",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "文件夹名称…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — 移动 · $SHIFT_ENTER$ — 移动并转到该文件夹",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "最近使用"
+  },
+  "picker_all": {
+    "message": "所有文件夹"
+  },
+  "picker_start_folder": {
+    "message": "起始文件夹"
+  },
+  "picker_here": {
+    "message": "当前所在位置"
+  },
+  "picker_create": {
+    "message": "创建文件夹“$NAME$”",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "位于“$FOLDER$”中",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "该文件夹已不存在"
+  },
+  "move_nothing": {
+    "message": "没有可移动的内容"
+  },
+  "move_already_there": {
+    "message": "已在此文件夹中"
+  },
+  "moved": {
+    "message": "已移动到“$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "书签 — 帮助"
+  },
+  "help_via_palette": {
+    "message": "命令面板 → “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "空白处的右键菜单"
+  },
+  "help_table_from_palette": {
+    "message": "通过命令面板"
+  },
+  "help_table_menu": {
+    "message": "右键菜单"
+  },
+  "help_global_not_set": {
+    "message": "未设置快捷键"
+  },
+  "options_title": {
+    "message": "书签设置"
+  },
+  "options_intro": {
+    "message": "所有功能、使用方法和快捷键都在$HELP$中。",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "帮助"
+  },
+  "options_root": {
+    "message": "起始文件夹"
+  },
+  "options_root_hint": {
+    "message": "面板会显示此文件夹中的内容。"
+  },
+  "options_view": {
+    "message": "列表视图"
+  },
+  "options_view_normal": {
+    "message": "常规"
+  },
+  "options_view_detailed": {
+    "message": "显示网址 — 标题下方显示网站"
+  },
+  "options_view_dense": {
+    "message": "紧凑"
+  },
+  "options_view_hint": {
+    "message": "在面板中，按 $KEY$ 可循环切换视图。",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "通过命令面板"
+  },
+  "options_new_tab": {
+    "message": "在新标签页中打开书签"
+  },
+  "options_new_tab_hint": {
+    "message": "关闭时：“打开”使用当前标签页，“在另一个标签页中打开”使用新标签页；开启时则相反。"
+  },
+  "options_pinned": {
+    "message": "将书签作为固定标签页"
+  },
+  "options_pinned_hint": {
+    "message": "类似 Arc：如果书签的标签页已经打开，“打开”会切换到该标签页，而不是再打开一个。已打开的书签会以圆点标示。"
+  },
+  "options_auto_hide": {
+    "message": "焦点移到网页时关闭面板"
+  },
+  "options_auto_hide_hint": {
+    "message": "点击网页或浏览器界面会关闭面板；切换到其他应用则不会。"
+  },
+  "options_keys": {
+    "message": "面板快捷键"
+  },
+  "options_preset_standard": {
+    "message": "标准"
+  },
+  "options_preset_standard_title": {
+    "message": "将所有快捷键替换为标准设置"
+  },
+  "options_preset_vim_title": {
+    "message": "标准设置加上 Vim 按键：j k h l、g g、d d、y y…"
+  },
+  "options_keys_hint": {
+    "message": "点击“+”录制快捷键：可以是单个按键（可带修饰键）、按键序列（$SEQUENCE$）或连按两次（$DOUBLE$）— 请立即按第二次。按键后按 $ENTER$ 完成，按 $ESC$ 取消录制，点击“×”删除。如果该快捷键已被占用，系统会询问是否改用它。所有命令也都可以在面板的命令面板中找到。",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "打开和关闭面板：$KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "在浏览器设置中更改"
+  },
+  "options_global_not_set": {
+    "message": "未设置"
+  },
+  "options_saved": {
+    "message": "已保存"
+  },
+  "options_saved_notes": {
+    "message": "已保存：$NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "已从“$COMMAND$”中移除",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "命令面板现在只能通过面板按钮打开"
+  },
+  "options_delayed": {
+    "message": "单次按键将稍有延迟后才执行"
+  },
+  "options_remove_binding": {
+    "message": "从“$COMMAND$”中移除 $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "为“$COMMAND$”添加快捷键",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "重置"
+  },
+  "options_reset_title": {
+    "message": "恢复“$COMMAND$”的标准快捷键",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "仅限面板按钮"
+  },
+  "options_only_palette": {
+    "message": "仅限命令面板"
+  },
+  "options_press_keys": {
+    "message": "请按下快捷键…"
+  },
+  "options_taken": {
+    "message": "已被“$COMMAND$”使用 — 按 Enter：改用，按 Esc：取消",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "自定义快捷键"
+  },
+  "options_replace_preset": {
+    "message": "要用“$PRESET$”预设替换您的快捷键吗？",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "您修改过的快捷键将会丢失。"
+  },
+  "options_replace_ok": {
+    "message": "替换"
+  },
+  "options_preset_applied": {
+    "message": "已应用“$PRESET$”预设",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ 个书签",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "打开 $COUNT$ 个标签页",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "（已打开 $COUNT$ 个）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "要关闭 $COUNT$ 个标签页吗？",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "这些是此窗口中 $COUNT$ 个书签的标签页。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "要删除所选的 $COUNT$ 项吗？",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "里面的内容也会一并删除：$COUNT$ 个书签。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "将 $COUNT$ 项移动到文件夹",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "已将 $COUNT$ 项移动到“$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "帮助"
+  },
+  "help_heading": {
+    "message": "侧边栏中的书签"
+  },
+  "help_lead": {
+    "message": "书签就在网页旁边，全程键盘操作：查找、打开、分类到文件夹、保持为固定标签页。为从 Arc 迁移到 Chromium 浏览器的用户而做。"
+  },
+  "help_settings_button": {
+    "message": "设置"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · 下面列出的是您当前使用的快捷键，包括重新分配的。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "打开面板"
+  },
+  "help_nav_label": {
+    "message": "章节"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — 打开面板。再按一次即可关闭；如果焦点已移到网页上，同一快捷键会把焦点带回面板。点击扩展程序图标也能打开面板 — 请在浏览器的扩展程序菜单中将其固定。",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — 在列表中移动，$EXPAND$ $COLLAPSE$ — 展开和折叠文件夹，$OPEN$ — 打开。",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — 搜索：直接输入标题、网站或文件夹。",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — 标记多个书签，$MOVE$ — 按名称将它们移动到某个文件夹。",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — 命令面板：列出所有命令及其按键，忘了就看这里。",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "在书签、文件夹或空白处点击右键——打开与浏览器类似的菜单：在新窗口中打开、修改、剪切、复制、粘贴。$MENU$ — 用键盘打开同一菜单。",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — 本帮助。添加新书签的方式与浏览器通常的方式一样 — $CHORD$。",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "在从右到左书写的语言中，← 和 → 方向键的作用会互换：← 展开文件夹，→ 折叠文件夹。"
+  },
+  "help_pinned_why": {
+    "message": "类似 Arc：书签拥有“自己的”标签页。打开后，即使您通过链接跳转到别处，书签也会记住这个标签页。此模式默认开启，可在设置中关闭。"
+  },
+  "help_pinned_1": {
+    "message": "右侧的圆点表示该书签有已打开的标签页；蓝色圆点表示当前标签页。已折叠文件夹上的圆环表示其中有已打开的内容。"
+  },
+  "help_pinned_2": {
+    "message": "对已打开的书签按 $OPEN$ 会切换到它的标签页，而不会再打开第二个。如果书签有多个标签页，则会转到您最近使用的那个。",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — 让标签页回到书签的网址（您通过链接已经走得很远了）。",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — 反过来：把您当前所在的网址保存到书签中。在书签自己的标签页上会立即保存，否则面板会先询问。",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ 或悬停时的叉号 — 关闭书签的标签页。对文件夹或已标记项 — 关闭它们的所有标签页（会先询问）。",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "书签不会占用其他书签的标签页：如果当前标签页已打开另一个书签，新书签会在它旁边打开。"
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — 标题栏中的搜索框。可按标题、网址和文件夹搜索；标题匹配的结果排在前面。",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "work lin"
+  },
+  "help_find_2": {
+    "message": "您可以按文件夹缩小范围：$QUERY$ 能从“Work”文件夹中找到 Linear。",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — 选择，$ENTER$ — 打开，$MODENTER$ — 在另一个标签页中打开，$TAB$ — 在树中原位显示匹配项，$ESC$ — 回到原来的位置。",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "在文件夹上按 $ENTER$ — 在树中进入该文件夹。",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "命令面板（$PALETTE$）中的命令同样适用于匹配项：“移动到文件夹…”、“重命名”、“删除…”。$SHIFT$+点击可标记匹配项 — 按 $ESC$ 后，即可在树中处理已标记的项目。",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "书签很多时，输入几个字母比滚动浏览树更快。"
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — 标记一行，$DOWN$ $UP$ — 连续标记。",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — 此文件夹中的全部（再按一次 — 取消标记）。$ESC$ — 清除标记。",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "标题栏会显示已标记的数量。已标记的项目可以一起打开、移动、复制和删除；重命名只对光标所在的行有效。"
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — 按名称移动到文件夹：直接开始输入。最近移动过的文件夹排在前面。$ENTER$ — 移动并留在原位（便于逐个分类），$SHIFTENTER$ — 移动并转到该文件夹。如果没有这样的文件夹，在“创建文件夹”上按 $ENTER2$ 会创建并立即移动。",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — 沿列表移动。一行会进入已展开的文件夹，并在文件夹边缘离开。",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — 新建文件夹；可以直接输入名称。如果有已标记项，它们会被放入新文件夹。",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — 重命名：$ENTER$ — 保存，$ESC$ — 取消。",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — 删除，需确认。包含内容的文件夹或多个项目不能只按一次 Enter 就删除 — 默认选中的是“取消”。",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — 复制网址（对文件夹或已标记项 — 复制所有网址，每行一个）。",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — 撤消在面板中所做的最后一次更改：删除、重命名、移动、新建文件夹、使用标签页网址；$REDO$ — 重做。更改后，底部的提示中有“撤消”按钮。所有窗口共用同一份历史记录，保留到浏览器关闭（最多 50 步）；在书签管理器中或通过同步所做的更改不会被撤消。",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "“收件箱”里堆了一堆？无需碰鼠标就能整理好。"
+  },
+  "help_sort_mark_title": {
+    "message": "标记"
+  },
+  "help_sort_move_title": {
+    "message": "移动"
+  },
+  "help_sort_edit_title": {
+    "message": "编辑"
+  },
+  "help_sets_1": {
+    "message": "标记书签后按 $OPEN$，或在文件夹上按 $ALT$。",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "面板会询问分组名称：输入后，标签页会被收集到同名分组中（文件夹会自动填入名称）；留空则作为普通标签页打开。"
+  },
+  "help_sets_3": {
+    "message": "已经打开的书签不会重复打开：它们的标签页只会加入分组。"
+  },
+  "help_sets_why": {
+    "message": "早晨的一组标签页、一个项目、一次调研 — 一条命令搞定。"
+  },
+  "help_own_settings_link": {
+    "message": "设置"
+  },
+  "help_own_1": {
+    "message": "在$SETTINGS$中：“+”录制快捷键，“×”删除，“重置”恢复标准设置。如果某个快捷键已属于另一条命令，设置会询问是否改用。",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "可以使用按键序列 — $SEQ$ — 以及连按两次 — $SEQ2$。",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "一键启用 $VIM$ 预设：$JKHL$、$SEQ$ 和 $SHIFTG$，$SEQ2$ — 删除，$SEQ3$ — 复制，$COLON$ — 命令面板。",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "按键在任何键盘布局下都有效：它们按位置匹配，所以在俄语布局下 $R$ 仍是同一个键，$SLASH$ 和 $QUESTION$ 也与英语布局中的相同。",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "扩展程序快捷键设置"
+  },
+  "help_own_5": {
+    "message": "面板自身的快捷键（$GLOBAL$）要在浏览器中更改：$LINK$。",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "每个操作都是一条命令，每条命令都可以有自己的按键。"
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — 切换视图：常规 → 显示网址（标题下方显示网站；文件夹则显示其中的书签数量）→ 紧凑。",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — 面板只显示此文件夹。搜索和移动也只在其中进行。",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — 互换 $OPEN$ 和 $ALT$。",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — 点击网页或浏览器界面会将其关闭；切换到其他应用则不会。",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "每个窗口都有自己的面板。已展开的文件夹和光标位置会被记住。"
+  },
+  "help_view_6": {
+    "message": "面板没有标题栏：搜索栏只在搜索时出现在顶部，“已标记”栏只在有标记时出现在底部。"
+  },
+  "help_view_private": {
+    "message": "所有数据都保存在浏览器中：扩展程序不会把您的书签或历史记录发送到任何地方。"
+  },
+  "help_all_intro": {
+    "message": "您当前的快捷键。没有按键的命令可从命令面板（$PALETTE$）使用。",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "在搜索框中"
+  },
+  "help_all_pick": {
+    "message": "选择结果"
+  },
+  "help_all_open": {
+    "message": "打开 / 在另一个标签页中打开 / 让标签页回到网址"
+  },
+  "help_all_show": {
+    "message": "在树中显示匹配项"
+  },
+  "help_all_leave": {
+    "message": "退出搜索"
+  },
+  "help_all_palette": {
+    "message": "在命令面板和文件夹选择器中"
+  },
+  "help_all_run": {
+    "message": "选择 / 运行"
+  },
+  "help_all_move_go": {
+    "message": "移动并转到该文件夹"
+  },
+  "help_all_close": {
+    "message": "关闭"
+  },
+  "help_mouse_open": {
+    "message": "打开书签，展开或折叠文件夹"
+  },
+  "help_mouse_open_keys": {
+    "message": "点击"
+  },
+  "help_mouse_other": {
+    "message": "在另一个标签页中打开"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+点击",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "在新标签页中打开；对文件夹 — 打开其中的书签"
+  },
+  "help_mouse_new_keys": {
+    "message": "鼠标中键"
+  },
+  "help_mouse_folder": {
+    "message": "打开文件夹中的书签"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+点击文件夹",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "标记"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+点击",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "关闭书签的标签页"
+  },
+  "help_mouse_close_keys": {
+    "message": "悬停时的叉号"
+  },
+  "help_mouse_menu": {
+    "message": "菜单：在新窗口中打开、修改、剪切、复制、粘贴、删除"
+  },
+  "help_mouse_menu_keys": {
+    "message": "右键"
+  },
+  "help_mouse_empty": {
+    "message": "搜索、命令面板、设置、撤消"
+  },
+  "help_mouse_empty_keys": {
+    "message": "在空白处点击右键"
+  },
+  "help_news_25_1": {
+    "message": "界面和帮助提供 10 种语言：English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية，语言跟随浏览器。支持从右到左书写；社区翻译通过代码仓库提交。"
+  },
+  "help_news_25_2": {
+    "message": "在从右到左的语言中，← 展开文件夹，→ 折叠文件夹。"
+  },
+  "help_news_25_3": {
+    "message": "移除了“用错键盘布局输入”的搜索。搜索框中会显示找到的结果数。"
+  },
+  "help_news_25_4": {
+    "message": "已标记的行带有对勾；深色主题下消息更醒目；新的命令面板图标。"
+  },
+  "help_news_25_5": {
+    "message": "系统文件夹和受管理的书签会说明为何无法标记、编辑、移动或删除。"
+  },
+  "help_news_25_6": {
+    "message": "设置：其他标签页中的更改立即可见，导入后文件夹列表会刷新，更换快捷键预设时在专属对话框中确认。"
+  },
+  "help_news_25_7": {
+    "message": "已修复：快速连按两次 V 会跳过一种视图；关闭另一个窗口后按 Alt+B 可能会关闭侧边栏，而不是在当前窗口中打开；在 Edge、Brave、Vivaldi 和 Opera 的新标签页上使用“保存标签页网址”，会把起始页的网址存入书签。"
+  },
+  "help_news_26_1": {
+    "message": "撤消和重做在面板中所做的修改：Mac 上按 ⌘Z / ⌘⇧Z，其他系统按 Ctrl+Z 与 Ctrl+Shift+Z 或 Ctrl+Y，也可点击消息中的“撤消”按钮。删除的文件夹会连同内容一起恢复。历史记录保留 50 步，在关闭浏览器前所有窗口共用。"
+  },
+  "help_news_26_2": {
+    "message": "可用鼠标拖动书签、文件夹和已标记项：放到目标上方、下方或文件夹内。把项目悬停在文件夹上会将其展开，靠近边缘时列表会滚动。"
+  },
+  "help_news_26_3": {
+    "message": "右键菜单与浏览器的书签菜单一致：在新标签页、新窗口、拆分视图或无痕式窗口中打开；修改；剪切、复制和粘贴；删除；添加网页或文件夹；打开书签管理器。用键盘按 Shift+F10 打开。"
+  },
+  "help_news_26_4": {
+    "message": "面板不再有自己的标题栏：搜索栏只在搜索时显示，“已标记：N”是底部的一条栏。"
+  },
+  "help_news_24_1": {
+    "message": "大型书签库更快：书签树的重新读取更少，搜索和文件夹选择器的构建更快。"
+  },
+  "help_news_24_2": {
+    "message": "文件夹选择器：按树的顺序排列，最近使用的文件夹单独列出，没有对应文件夹时可“创建文件夹”。"
+  },
+  "help_news_24_3": {
+    "message": "在 $NEW$ 之后可以直接输入新文件夹的名称。",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "光标更容易看清；已折叠的文件夹会显示其中有标签页处于打开状态。新标签页会在当前标签页旁边打开。"
+  },
+  "help_news_24_5": {
+    "message": "打开一组书签时不会重复打开已有的标签页。关闭多个书签的标签页和替换网址前会先请求确认。"
+  },
+  "help_news_24_6": {
+    "message": "在俄语布局下，符号按按键位置识别（$QUESTION$ 打开命令面板）。在 Mac 上，$CTRL$ 不再等同于 $CMD$。",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1：无需输入字母即可立即识别俄语布局 — $CHORD$ 打开的是命令面板，而不是设置。",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "按键编辑器在从其他命令夺取快捷键前会先询问，并显示所选的预设。"
+  },
+  "help_news_24_9": {
+    "message": "已修复：紧接在 $NEW$ 之后输入的字母被当作命令；空格键可能确认删除；从搜索中重命名后，焦点跑到了列表；搜索中多按的 $BS$ 会关闭标签页。",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "按名称移动到文件夹：$MOVE$，最近使用的文件夹排在最前。",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "把当前标签页的网址保存到书签：$UPDATE$。",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "标题下方显示网址的视图，以及紧凑视图：$CYCLE$。",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "本帮助：$HELP$。",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "面板中的搜索：按标题、网址和文件夹，带高亮，适用于任何键盘布局；$TAB$ 可在原位显示匹配项。",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1：$SLASH$ 和其他符号在俄语布局下也能使用。",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "所有操作都变成了命令：命令面板和设置中的自定义快捷键、Vim 预设、按键序列和连按两次。"
+  },
+  "help_news_21_2": {
+    "message": "复制网址、标记文件夹中的全部内容、折叠所有文件夹。设置在标签页中打开。"
+  },
+  "help_news_20_1": {
+    "message": "新建文件夹，用 $OPTION$/$ALT$ 移动行，用空格键标记。",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "打开一组书签，包括作为以文件夹命名的标签页分组打开。新增“在新标签页中打开”开关。"
+  },
+  "help_news_1_1": {
+    "message": "用一个快捷键控制面板：打开、归还焦点、关闭。起始文件夹。"
+  },
+  "help_news_1_2": {
+    "message": "类似 Arc 的固定标签页书签、重命名和删除、自动隐藏、支持多个窗口、全新设计。"
+  },
+  "help_news_earlier": {
+    "message": "更早的版本"
+  },
+  "help_quick_title": {
+    "message": "快速入门"
+  },
+  "help_nav_pinned": {
+    "message": "固定标签页"
+  },
+  "help_pinned_title": {
+    "message": "将书签作为固定标签页"
+  },
+  "help_find_title": {
+    "message": "查找和打开"
+  },
+  "help_sort_title": {
+    "message": "整理书签"
+  },
+  "help_sets_title": {
+    "message": "成组打开"
+  },
+  "help_own_title": {
+    "message": "自定义按键"
+  },
+  "help_view_title": {
+    "message": "视图和设置"
+  },
+  "help_all_title": {
+    "message": "所有按键"
+  },
+  "help_mouse_title": {
+    "message": "鼠标"
+  },
+  "help_news_title": {
+    "message": "新功能"
+  }
+}

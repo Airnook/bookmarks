@@ -1,0 +1,2202 @@
+{
+  "locale": {
+    "message": "es"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "Marcadores"
+  },
+  "ext_description": {
+    "message": "Marcadores en el panel lateral con un atajo, listos para navegar con las flechas"
+  },
+  "command_toggle": {
+    "message": "Abrir / enfocar / cerrar el panel de marcadores"
+  },
+  "all_bookmarks": {
+    "message": "Todos los marcadores"
+  },
+  "untitled": {
+    "message": "Sin título"
+  },
+  "bookmarklet": {
+    "message": "bookmarklet"
+  },
+  "folder_empty": {
+    "message": "vacía"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "open": {
+    "message": "Abrir"
+  },
+  "delete": {
+    "message": "Eliminar"
+  },
+  "close": {
+    "message": "Cerrar"
+  },
+  "nothing_found": {
+    "message": "Sin resultados"
+  },
+  "more_results": {
+    "message": "$COUNT$ más: afina la búsqueda",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "Espacio"
+  },
+  "group_nav": {
+    "message": "Navegación"
+  },
+  "group_open": {
+    "message": "Apertura"
+  },
+  "group_marks": {
+    "message": "Selección"
+  },
+  "group_edit": {
+    "message": "Edición"
+  },
+  "group_panel": {
+    "message": "Panel"
+  },
+  "cmd_search": {
+    "message": "Buscar marcadores"
+  },
+  "cmd_search_note": {
+    "message": "por título, dirección y carpeta"
+  },
+  "cmd_search_words": {
+    "message": "buscar búsqueda filtrar encontrar"
+  },
+  "cmd_cursor_down": {
+    "message": "Cursor abajo"
+  },
+  "cmd_cursor_down_words": {
+    "message": "abajo siguiente bajar"
+  },
+  "cmd_cursor_up": {
+    "message": "Cursor arriba"
+  },
+  "cmd_cursor_up_words": {
+    "message": "arriba anterior subir"
+  },
+  "cmd_cursor_first": {
+    "message": "Al principio de la lista"
+  },
+  "cmd_cursor_first_words": {
+    "message": "principio inicio arriba primero"
+  },
+  "cmd_cursor_last": {
+    "message": "Al final de la lista"
+  },
+  "cmd_cursor_last_words": {
+    "message": "final fin abajo último"
+  },
+  "cmd_folder_expand": {
+    "message": "Expandir carpeta"
+  },
+  "cmd_folder_expand_words": {
+    "message": "expandir desplegar abrir carpeta"
+  },
+  "cmd_folder_collapse": {
+    "message": "Contraer carpeta"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "en un marcador: ir a su carpeta"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "contraer plegar cerrar carpeta padre"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "Contraer todas las carpetas"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "contraer plegar todas carpetas"
+  },
+  "cmd_open": {
+    "message": "Abrir"
+  },
+  "cmd_open_note": {
+    "message": "con selección: todo lo seleccionado"
+  },
+  "cmd_open_words": {
+    "message": "abrir ir visitar"
+  },
+  "cmd_open_alt": {
+    "message": "Abrir en otra pestaña"
+  },
+  "cmd_open_alt_note": {
+    "message": "en una carpeta: todos sus marcadores"
+  },
+  "cmd_open_alt_words": {
+    "message": "abrir otra pestaña carpeta"
+  },
+  "cmd_open_newTab": {
+    "message": "Abrir en una pestaña nueva"
+  },
+  "cmd_open_newTab_words": {
+    "message": "abrir pestaña nueva"
+  },
+  "cmd_open_currentTab": {
+    "message": "Abrir en la pestaña actual"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "abrir pestaña actual"
+  },
+  "cmd_open_group": {
+    "message": "Abrir como grupo de pestañas…"
+  },
+  "cmd_open_group_words": {
+    "message": "abrir grupo pestañas conjunto"
+  },
+  "cmd_open_reset": {
+    "message": "Devolver la pestaña a la dirección del marcador"
+  },
+  "cmd_open_reset_words": {
+    "message": "devolver restablecer volver pestaña dirección original"
+  },
+  "cmd_mark_toggle": {
+    "message": "Seleccionar"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "otra vez: deseleccionar"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "seleccionar marcar alternar"
+  },
+  "cmd_mark_down": {
+    "message": "Seleccionar y bajar"
+  },
+  "cmd_mark_down_words": {
+    "message": "seleccionar marcar abajo bajar"
+  },
+  "cmd_mark_up": {
+    "message": "Seleccionar y subir"
+  },
+  "cmd_mark_up_words": {
+    "message": "seleccionar marcar arriba subir"
+  },
+  "cmd_mark_all": {
+    "message": "Seleccionar todo en la carpeta"
+  },
+  "cmd_mark_all_note": {
+    "message": "otra vez: deseleccionar"
+  },
+  "cmd_mark_all_words": {
+    "message": "seleccionar todo marcar todos"
+  },
+  "cmd_mark_clear": {
+    "message": "Borrar selección"
+  },
+  "cmd_mark_clear_words": {
+    "message": "borrar quitar deseleccionar selección limpiar"
+  },
+  "cmd_folder_new": {
+    "message": "Carpeta nueva"
+  },
+  "cmd_folder_new_note": {
+    "message": "con selección: pone en ella los elementos seleccionados"
+  },
+  "cmd_folder_new_words": {
+    "message": "carpeta nueva crear añadir"
+  },
+  "cmd_rename": {
+    "message": "Cambiar nombre"
+  },
+  "cmd_rename_words": {
+    "message": "renombrar nombre título editar"
+  },
+  "cmd_edit": {
+    "message": "Editar nombre y dirección…"
+  },
+  "cmd_edit_note": {
+    "message": "en una ventana, como en el navegador"
+  },
+  "cmd_edit_words": {
+    "message": "editar nombre dirección",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "Mover a la carpeta…"
+  },
+  "cmd_move_to_note": {
+    "message": "elegir una carpeta por nombre"
+  },
+  "cmd_move_to_words": {
+    "message": "mover carpeta trasladar clasificar ordenar"
+  },
+  "cmd_url_update": {
+    "message": "Guardar la dirección de la pestaña"
+  },
+  "cmd_url_update_note": {
+    "message": "el marcador toma la dirección de la pestaña actual"
+  },
+  "cmd_url_update_words": {
+    "message": "guardar actualizar dirección url pestaña"
+  },
+  "cmd_delete": {
+    "message": "Eliminar…"
+  },
+  "cmd_delete_words": {
+    "message": "eliminar borrar suprimir quitar"
+  },
+  "cmd_copy_url": {
+    "message": "Copiar dirección"
+  },
+  "cmd_copy_url_note": {
+    "message": "en una carpeta o una selección: todas las direcciones"
+  },
+  "cmd_copy_url_words": {
+    "message": "copiar dirección url enlace portapapeles"
+  },
+  "cmd_cut": {
+    "message": "Cortar"
+  },
+  "cmd_cut_note": {
+    "message": "al pegar, los marcadores se mueven allí"
+  },
+  "cmd_copy": {
+    "message": "Copiar"
+  },
+  "cmd_copy_note": {
+    "message": "al pegar se crea una copia; las direcciones también van al portapapeles"
+  },
+  "cmd_paste": {
+    "message": "Pegar"
+  },
+  "cmd_paste_note": {
+    "message": "tras el cursor o dentro de una carpeta expandida"
+  },
+  "cmd_cut_words": {
+    "message": "cortar mover portapapeles",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "copiar copia duplicar portapapeles",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "pegar insertar portapapeles",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "Cerrar la pestaña del marcador"
+  },
+  "cmd_tab_close_note": {
+    "message": "en una carpeta o una selección: todas sus pestañas"
+  },
+  "cmd_tab_close_words": {
+    "message": "cerrar pestaña"
+  },
+  "cmd_move_up": {
+    "message": "Mover arriba"
+  },
+  "cmd_move_up_words": {
+    "message": "mover arriba subir"
+  },
+  "cmd_move_down": {
+    "message": "Mover abajo"
+  },
+  "cmd_move_down_words": {
+    "message": "mover abajo bajar"
+  },
+  "cmd_undo": {
+    "message": "Deshacer"
+  },
+  "cmd_undo_words": {
+    "message": "deshacer revertir"
+  },
+  "cmd_redo": {
+    "message": "Rehacer"
+  },
+  "cmd_redo_words": {
+    "message": "rehacer repetir"
+  },
+  "cmd_palette": {
+    "message": "Paleta de comandos"
+  },
+  "cmd_palette_words": {
+    "message": "paleta comandos acciones"
+  },
+  "cmd_menu": {
+    "message": "Abrir menú"
+  },
+  "cmd_menu_note": {
+    "message": "como el botón derecho del ratón"
+  },
+  "cmd_menu_words": {
+    "message": "menú contextual botón derecho",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "Cambiar vista"
+  },
+  "cmd_view_cycle_note": {
+    "message": "normal, con dirección, compacta"
+  },
+  "cmd_view_cycle_words": {
+    "message": "vista cambiar diseño compacta"
+  },
+  "cmd_help": {
+    "message": "Ayuda"
+  },
+  "cmd_help_note": {
+    "message": "todas las funciones y teclas"
+  },
+  "cmd_help_words": {
+    "message": "ayuda manual guía atajos teclas"
+  },
+  "cmd_settings": {
+    "message": "Configuración"
+  },
+  "cmd_settings_words": {
+    "message": "ajustes configuración opciones preferencias"
+  },
+  "cmd_escape": {
+    "message": "Cancelar o cerrar"
+  },
+  "cmd_escape_note": {
+    "message": "borra la selección, sale de la búsqueda; si no, cierra el panel"
+  },
+  "cmd_escape_words": {
+    "message": "cancelar salir cerrar escape"
+  },
+  "cmd_panel_close": {
+    "message": "Cerrar panel"
+  },
+  "cmd_panel_close_words": {
+    "message": "cerrar panel ocultar"
+  },
+  "panel_tree": {
+    "message": "Marcadores"
+  },
+  "menu_open_new_tab": {
+    "message": "Abrir en una pestaña nueva"
+  },
+  "menu_open_new_window": {
+    "message": "Abrir en una ventana nueva"
+  },
+  "menu_open_split": {
+    "message": "Abrir en vista dividida"
+  },
+  "menu_open_incognito": {
+    "message": "Abrir en una ventana de incógnito"
+  },
+  "menu_open_all": {
+    "message": "Abrir todas ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "Abrir todas en una ventana nueva"
+  },
+  "menu_open_all_incognito": {
+    "message": "Abrir todas en una ventana de incógnito"
+  },
+  "menu_edit": {
+    "message": "Editar…"
+  },
+  "menu_rename": {
+    "message": "Cambiar nombre…"
+  },
+  "menu_delete": {
+    "message": "Suprimir"
+  },
+  "menu_add_page": {
+    "message": "Añadir página…"
+  },
+  "menu_add_folder": {
+    "message": "Añadir carpeta…"
+  },
+  "menu_manager": {
+    "message": "Abrir administrador de marcadores"
+  },
+  "menu_incognito_off": {
+    "message": "Permite la extensión en incógnito: chrome://extensions → «Detalles» → «Permitir en modo incógnito»"
+  },
+  "menu_bookmarklet": {
+    "message": "Un bookmarklet solo funciona en la página abierta: haz clic en él"
+  },
+  "menu_edit_single": {
+    "message": "Solo se puede editar un elemento a la vez"
+  },
+  "search_placeholder": {
+    "message": "Título, dirección o carpeta"
+  },
+  "search_found": {
+    "message": "Encontrados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "Sin resultados · $KEY$: volver a la lista",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "Aún no hay marcadores."
+  },
+  "empty_folder": {
+    "message": "Esta carpeta está vacía por ahora."
+  },
+  "empty_add_hint": {
+    "message": "$KEY$ en el navegador añade una página.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$: nueva carpeta.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "Nombre del grupo"
+  },
+  "tab_group_placeholder": {
+    "message": "Nombre del grupo (opcional)"
+  },
+  "tab_group_hint": {
+    "message": "Con nombre, las pestañas se agrupan; sin nombre, se abren como pestañas normales."
+  },
+  "palette_placeholder": {
+    "message": "Comando…"
+  },
+  "close_tab": {
+    "message": "Cerrar pestaña"
+  },
+  "rename_label": {
+    "message": "Título"
+  },
+  "new_folder_title": {
+    "message": "Carpeta nueva"
+  },
+  "no_bookmarks_here": {
+    "message": "No hay marcadores aquí"
+  },
+  "copied_addresses": {
+    "message": "Direcciones copiadas: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "Dirección copiada"
+  },
+  "copy_failed": {
+    "message": "No se pudo copiar"
+  },
+  "view_changed": {
+    "message": "Vista: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "normal"
+  },
+  "view_detailed": {
+    "message": "con dirección"
+  },
+  "view_dense": {
+    "message": "compacta"
+  },
+  "marked": {
+    "message": "Selección: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "Selección: $COUNT$ · $KEY$: borrar",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "Las carpetas del sistema no se pueden seleccionar"
+  },
+  "locked_system_edit": {
+    "message": "Las carpetas del sistema no se pueden modificar"
+  },
+  "locked_managed": {
+    "message": "Estos marcadores no se pueden modificar"
+  },
+  "first_run_commands": {
+    "message": "$KEY$: todos los comandos",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "Botón derecho: menú"
+  },
+  "updated": {
+    "message": "Actualizado a la versión $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "Novedades: pulsa $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "No se pudo crear la carpeta"
+  },
+  "move_failed": {
+    "message": "No se pudo mover"
+  },
+  "delete_bookmark": {
+    "message": "¿Eliminar el marcador «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "¿Eliminar el marcador sin título?"
+  },
+  "delete_folder": {
+    "message": "¿Eliminar la carpeta «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "Marcadores en total, con el contenido de las carpetas: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "Solo hay carpetas vacías."
+  },
+  "delete_folder_empty": {
+    "message": "La carpeta está vacía."
+  },
+  "url_only_bookmarks": {
+    "message": "Solo los marcadores tienen dirección"
+  },
+  "url_locked": {
+    "message": "Este marcador no se puede modificar"
+  },
+  "url_loading": {
+    "message": "La página aún se está cargando"
+  },
+  "url_blank_tab": {
+    "message": "La pestaña actual no tiene dirección"
+  },
+  "url_same": {
+    "message": "La dirección ya es la misma"
+  },
+  "url_replace_title": {
+    "message": "¿Reemplazar la dirección de «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "Reemplazar"
+  },
+  "url_failed": {
+    "message": "No se pudo cambiar la dirección"
+  },
+  "url_updated": {
+    "message": "Dirección actualizada"
+  },
+  "undo_button": {
+    "message": "Deshacer"
+  },
+  "undo_button_label": {
+    "message": "Deshacer: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "Rehacer: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "Deshecho: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "Rehecho: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "No hay nada que deshacer"
+  },
+  "redo_nothing": {
+    "message": "No hay nada que rehacer"
+  },
+  "undo_partial": {
+    "message": "Deshecho en parte: algunos marcadores se cambiaron en otro sitio"
+  },
+  "redo_partial": {
+    "message": "Rehecho en parte: algunos marcadores se cambiaron en otro sitio"
+  },
+  "undo_failed": {
+    "message": "No se pudo deshacer: los marcadores se cambiaron en otro sitio"
+  },
+  "redo_failed": {
+    "message": "No se pudo rehacer: los marcadores se cambiaron en otro sitio"
+  },
+  "history_fallback": {
+    "message": "La carpeta original ya no existe: se colocó en «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "Eliminado «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "$COUNT$ elemento eliminado",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_many": {
+    "message": "$COUNT$ de elementos eliminados",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "$COUNT$ elementos eliminados",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "Nombre cambiado a «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "Movido «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "$COUNT$ elemento movido",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_many": {
+    "message": "$COUNT$ de elementos movidos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "$COUNT$ elementos movidos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ elemento",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_many": {
+    "message": "$COUNT$ de elementos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ elementos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "Carpeta «$TITLE$» creada",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "Cortados: $COUNT$. Pega donde quieras moverlos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "Copiados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "No hay nada que pegar: primero corta o copia marcadores"
+  },
+  "paste_inside": {
+    "message": "No se puede pegar una carpeta dentro de sí misma"
+  },
+  "paste_failed": {
+    "message": "No se pudo pegar"
+  },
+  "undo_pasted": {
+    "message": "Pegados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "Añadido «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "Modificado «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "No se pudo añadir el marcador"
+  },
+  "open_failed": {
+    "message": "No se pudo abrir"
+  },
+  "edit_failed": {
+    "message": "No se pudo guardar: revisa la dirección"
+  },
+  "edit_bookmark": {
+    "message": "Editar marcador"
+  },
+  "edit_folder": {
+    "message": "Cambiar nombre de la carpeta"
+  },
+  "edit_name": {
+    "message": "Nombre"
+  },
+  "edit_url": {
+    "message": "Dirección"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "tab_not_open": {
+    "message": "La pestaña no está abierta"
+  },
+  "tab_not_open_delete": {
+    "message": "eliminar el marcador: $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "Activa «Marcadores como pestañas fijas» en la configuración"
+  },
+  "picker_label": {
+    "message": "Mover a la carpeta"
+  },
+  "picker_heading": {
+    "message": "Mover «$TITLE$» a una carpeta",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "Nombre de la carpeta…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$: mover · $SHIFT_ENTER$: mover e ir allí",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "Recientes"
+  },
+  "picker_all": {
+    "message": "Todas las carpetas"
+  },
+  "picker_start_folder": {
+    "message": "carpeta inicial"
+  },
+  "picker_here": {
+    "message": "está aquí"
+  },
+  "picker_create": {
+    "message": "Crear la carpeta «$NAME$»",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "en «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "Esta carpeta ya no existe"
+  },
+  "move_nothing": {
+    "message": "No queda nada que mover"
+  },
+  "move_already_there": {
+    "message": "Ya está en esta carpeta"
+  },
+  "moved": {
+    "message": "Movido a «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "Marcadores: ayuda"
+  },
+  "help_via_palette": {
+    "message": "paleta → «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "menú del botón derecho en un espacio vacío"
+  },
+  "help_table_from_palette": {
+    "message": "desde la paleta"
+  },
+  "help_table_menu": {
+    "message": "menú del botón derecho"
+  },
+  "help_global_not_set": {
+    "message": "atajo sin asignar"
+  },
+  "options_title": {
+    "message": "Configuración de Marcadores"
+  },
+  "options_intro": {
+    "message": "Todas las funciones, flujos de trabajo y teclas están en la $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "ayuda"
+  },
+  "options_root": {
+    "message": "Carpeta inicial"
+  },
+  "options_root_hint": {
+    "message": "El panel muestra el contenido de esta carpeta."
+  },
+  "options_view": {
+    "message": "Vista de la lista"
+  },
+  "options_view_normal": {
+    "message": "Normal"
+  },
+  "options_view_detailed": {
+    "message": "Con dirección: el sitio bajo el título"
+  },
+  "options_view_dense": {
+    "message": "Compacta"
+  },
+  "options_view_hint": {
+    "message": "En el panel, $KEY$ recorre las vistas.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "desde la paleta"
+  },
+  "options_new_tab": {
+    "message": "Abrir los marcadores en una pestaña nueva"
+  },
+  "options_new_tab_hint": {
+    "message": "Desactivado: «Abrir» usa la pestaña actual y «Abrir en otra pestaña», una nueva. Activado: al revés."
+  },
+  "options_pinned": {
+    "message": "Marcadores como pestañas fijas"
+  },
+  "options_pinned_hint": {
+    "message": "Como en Arc: si la pestaña de un marcador ya está abierta, «Abrir» cambia a ella en lugar de abrirla otra vez. Los marcadores abiertos se señalan con un punto."
+  },
+  "options_auto_hide": {
+    "message": "Cerrar el panel cuando el foco pasa a la página"
+  },
+  "options_auto_hide_hint": {
+    "message": "Un clic en la página o en la interfaz del navegador cierra el panel. Cambiar a otra aplicación lo mantiene abierto."
+  },
+  "options_keys": {
+    "message": "Teclas del panel"
+  },
+  "options_preset_standard": {
+    "message": "Estándar"
+  },
+  "options_preset_standard_title": {
+    "message": "Reemplazar todos los atajos por los estándar"
+  },
+  "options_preset_vim_title": {
+    "message": "Estándar más teclas de Vim: j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "«+» graba un atajo: una tecla, con modificadores, una secuencia ($SEQUENCE$) o una pulsación doble ($DOUBLE$); pulsa la segunda tecla enseguida. $ENTER$ tras una tecla: listo, $ESC$: cancelar la grabación, «×»: quitar. Si el atajo está ocupado, se te preguntará si quieres quedártelo. Todos los comandos también están en la paleta de comandos del panel.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "Abrir y cerrar el panel: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "cambiar en la configuración del navegador"
+  },
+  "options_global_not_set": {
+    "message": "sin asignar"
+  },
+  "options_saved": {
+    "message": "Guardado"
+  },
+  "options_saved_notes": {
+    "message": "Guardado: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "quitado de «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "ahora la paleta solo se abre con el botón del panel"
+  },
+  "options_delayed": {
+    "message": "una sola pulsación actuará con un pequeño retraso"
+  },
+  "options_remove_binding": {
+    "message": "Quitar $KEY$ de «$COMMAND$»",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "Añadir un atajo para «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "restablecer"
+  },
+  "options_reset_title": {
+    "message": "Restablecer los atajos estándar de «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "solo con el botón del panel"
+  },
+  "options_only_palette": {
+    "message": "solo desde la paleta"
+  },
+  "options_press_keys": {
+    "message": "Pulsa un atajo…"
+  },
+  "options_taken": {
+    "message": "ya lo usa «$COMMAND$»: Enter para quedártelo, Esc para cancelar",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "atajos personalizados"
+  },
+  "options_replace_preset": {
+    "message": "¿Reemplazar tus atajos por el conjunto «$PRESET$»?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "Se perderán los atajos que hayas cambiado."
+  },
+  "options_replace_ok": {
+    "message": "Reemplazar"
+  },
+  "options_preset_applied": {
+    "message": "Se aplicó el conjunto «$PRESET$»",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ marcador",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_many": {
+    "message": "$COUNT$ de marcadores",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ marcadores",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "Abrir $COUNT$ pestaña",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_many": {
+    "message": "Abrir $COUNT$ de pestañas",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "Abrir $COUNT$ pestañas",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ ya abierta)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_many": {
+    "message": "($COUNT$ de ellas ya abiertas)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ ya abiertas)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "¿Cerrar $COUNT$ pestaña?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_many": {
+    "message": "¿Cerrar $COUNT$ de pestañas?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "¿Cerrar $COUNT$ pestañas?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "Son las pestañas de $COUNT$ marcador de esta ventana.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_many": {
+    "message": "Son las pestañas de $COUNT$ de marcadores de esta ventana.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "Son las pestañas de $COUNT$ marcadores de esta ventana.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "¿Eliminar $COUNT$ elemento seleccionado?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_many": {
+    "message": "¿Eliminar $COUNT$ de elementos seleccionados?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "¿Eliminar $COUNT$ elementos seleccionados?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "Todo lo que contiene también se elimina: $COUNT$ marcador.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_many": {
+    "message": "Todo lo que contiene también se elimina: $COUNT$ de marcadores.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "Todo lo que contiene también se elimina: $COUNT$ marcadores.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "Mover $COUNT$ elemento a una carpeta",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_many": {
+    "message": "Mover $COUNT$ de elementos a una carpeta",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "Mover $COUNT$ elementos a una carpeta",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "$COUNT$ elemento movido a «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_many": {
+    "message": "$COUNT$ de elementos movidos a «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "$COUNT$ elementos movidos a «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "Ayuda"
+  },
+  "help_heading": {
+    "message": "Marcadores en el panel lateral"
+  },
+  "help_lead": {
+    "message": "Tus marcadores junto a la página, todo con el teclado: buscar, abrir, clasificar en carpetas, mantener como pestañas fijas. Nació al pasar de Arc a un navegador Chromium."
+  },
+  "help_settings_button": {
+    "message": "Configuración"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · Las teclas de abajo son las actuales, incluidos los cambios que hayas hecho.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "Abrir el panel"
+  },
+  "help_nav_label": {
+    "message": "Secciones"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$: abre el panel. Púlsalo otra vez para cerrarlo; si el foco pasó a la página, el mismo atajo lo devuelve al panel. El icono de la extensión también abre el panel: fíjalo en el menú de extensiones del navegador.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$: moverse por la lista, $EXPAND$ $COLLAPSE$: expandir y contraer una carpeta, $OPEN$: abrir.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$: buscar; empieza a escribir un título, un sitio o una carpeta.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$: seleccionar varios marcadores, $MOVE$: moverlos a una carpeta por nombre.",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$: la paleta, con todos los comandos y sus teclas, por si olvidas algo.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "Botón derecho sobre un marcador, una carpeta o un espacio vacío: un menú como el del navegador para abrir en una ventana nueva, editar, cortar, copiar y pegar. $MENU$: lo mismo desde el teclado.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$: esta ayuda. Los marcadores nuevos se añaden como siempre en el navegador: $CHORD$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "En los idiomas que se escriben de derecha a izquierda, las flechas ← y → intercambian su función: ← expande una carpeta y → la contrae."
+  },
+  "help_pinned_why": {
+    "message": "Como en Arc: un marcador tiene su pestaña «propia». Ábrelo y el marcador recuerda la pestaña, aunque te alejes siguiendo enlaces. Este modo viene activado y se puede desactivar en la configuración."
+  },
+  "help_pinned_1": {
+    "message": "Un punto a la derecha indica que el marcador tiene una pestaña abierta; uno azul, que es la pestaña actual. Un anillo en una carpeta contraída indica que hay algo abierto dentro."
+  },
+  "help_pinned_2": {
+    "message": "$OPEN$ en un marcador ya abierto cambia a su pestaña en lugar de abrir otra. Si el marcador tiene varias pestañas, va a la que usaste por última vez.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$: devolver la pestaña a la dirección del marcador (si te has alejado siguiendo enlaces).",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$: al revés, guarda en el marcador la dirección en la que estás. En la pestaña del propio marcador ocurre al instante; en otro caso, el panel pregunta antes.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ o la cruz al pasar el ratón: cierra la pestaña del marcador. En una carpeta o una selección, todas sus pestañas (pregunta antes).",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "Un marcador no se apropia de la pestaña de otro: si la pestaña actual tiene abierto otro marcador, el nuevo se abre a su lado."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$: el cuadro de búsqueda del encabezado. Busca por título, dirección y carpeta; primero aparecen las coincidencias en el título.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "trabajo lin"
+  },
+  "help_find_2": {
+    "message": "Puedes acotar por carpeta: $QUERY$ encuentra Linear en la carpeta «Trabajo».",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$: elegir, $ENTER$: abrir, $MODENTER$: en otra pestaña, $TAB$: mostrar la coincidencia en su sitio del árbol, $ESC$: volver adonde estabas.",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ en una carpeta: entrar en ella en el árbol.",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "Los comandos de la paleta ($PALETTE$) también sirven con las coincidencias: «Mover a la carpeta…», «Cambiar nombre», «Eliminar…». $SHIFT$+clic selecciona una coincidencia; tras $ESC$ puedes trabajar con lo seleccionado en el árbol.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "Con muchos marcadores, escribir unas letras es más rápido que recorrer el árbol."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$: seleccionar una fila, $DOWN$ $UP$: seleccionar en serie.",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$: todo lo de esta carpeta (otra vez: deseleccionar). $ESC$: borrar la selección.",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "El encabezado muestra cuántos hay seleccionados. Lo seleccionado se abre, se mueve, se copia y se elimina en conjunto; cambiar el nombre solo funciona en la fila bajo el cursor."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$: a una carpeta por nombre; empieza a escribir. Las carpetas a las que has movido hace poco van primero. $ENTER$: mover y quedarse donde estás (útil para clasificar uno tras otro), $SHIFTENTER$: mover e ir allí. Si no existe la carpeta, $ENTER2$ en «Crear carpeta» la crea y mueve allí al instante.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$: moverse por la lista. Una fila entra en una carpeta expandida y sale de ella en su borde.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$: carpeta nueva; puedes escribir el nombre enseguida. Si hay algo seleccionado, los elementos seleccionados acaban en ella.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$: cambiar nombre; $ENTER$: guardar, $ESC$: cancelar.",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$: eliminar con confirmación. Una carpeta con contenido o varios elementos no se pueden eliminar con un solo Enter: «Cancelar» está elegido por defecto.",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$: copiar la dirección (en una carpeta o una selección, todas las direcciones, una por línea).",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$: deshacer el último cambio hecho en el panel (eliminar, cambiar nombre, mover, carpeta nueva, dirección de la pestaña); $REDO$: rehacerlo. Tras un cambio, el mensaje de abajo tiene el botón «Deshacer». El historial es común a todas las ventanas y se guarda hasta que se cierra el navegador (hasta 50 pasos); los cambios hechos en el Administrador de marcadores o por la sincronización no se deshacen.",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "¿Tienes un montón en «Bandeja de entrada»? Puedes ordenarlo sin tocar el ratón."
+  },
+  "help_sort_mark_title": {
+    "message": "Seleccionar"
+  },
+  "help_sort_move_title": {
+    "message": "Mover"
+  },
+  "help_sort_edit_title": {
+    "message": "Editar"
+  },
+  "help_sets_1": {
+    "message": "Selecciona marcadores y pulsa $OPEN$, o pulsa $ALT$ en una carpeta.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "El panel pide un nombre de grupo: escríbelo y las pestañas se reúnen en un grupo con ese nombre (en una carpeta ya viene rellenado); déjalo vacío y se abren como pestañas normales."
+  },
+  "help_sets_3": {
+    "message": "Los marcadores que ya están abiertos no se abren por segunda vez: sus pestañas simplemente se unen al grupo."
+  },
+  "help_sets_why": {
+    "message": "El conjunto de pestañas de la mañana, un proyecto, una investigación: con un solo comando."
+  },
+  "help_own_settings_link": {
+    "message": "configuración"
+  },
+  "help_own_1": {
+    "message": "En la $SETTINGS$: «+» graba un atajo, «×» lo quita, «restablecer» recupera el estándar. Si un atajo ya pertenece a otro comando, la configuración pregunta si quieres quedártelo.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "Se admiten secuencias ($SEQ$) y pulsaciones dobles ($SEQ2$).",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "El preajuste de $VIM$ con un botón: $JKHL$, $SEQ$ y $SHIFTG$, $SEQ2$ para eliminar, $SEQ3$ para copiar, $COLON$ para la paleta.",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "Las teclas funcionan con cualquier distribución: se identifican por posición, así que con la distribución rusa $R$ sigue siendo la misma tecla, y $SLASH$ y $QUESTION$ son las mismas teclas que en la inglesa.",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "configuración de atajos de las extensiones"
+  },
+  "help_own_5": {
+    "message": "El atajo propio del panel ($GLOBAL$) se cambia en el navegador: $LINK$.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "Cada acción es un comando, y cualquier comando puede tener sus propias teclas."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$: cambiar la vista: normal → con dirección (el sitio bajo el título; en una carpeta, cuántos marcadores contiene) → compacta.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$: el panel muestra solo esta carpeta. La búsqueda y el movimiento también funcionan dentro de ella.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$: intercambia $OPEN$ y $ALT$.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$: un clic en la página o en la interfaz del navegador lo cierra; cambiar a otra aplicación no.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "Cada ventana tiene su propio panel. Se recuerdan las carpetas expandidas y la posición del cursor."
+  },
+  "help_view_6": {
+    "message": "No hay cabecera: la línea de búsqueda aparece arriba solo mientras buscas, y la barra «Selección» abajo, solo mientras hay algo marcado."
+  },
+  "help_view_private": {
+    "message": "Todo se guarda en el navegador: la extensión no envía a ningún sitio ni tus marcadores ni tu historial."
+  },
+  "help_all_intro": {
+    "message": "Tus atajos actuales. Los comandos sin tecla están disponibles en la paleta ($PALETTE$).",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "En el cuadro de búsqueda"
+  },
+  "help_all_pick": {
+    "message": "Elegir un resultado"
+  },
+  "help_all_open": {
+    "message": "Abrir / en otra pestaña / devolver la pestaña a la dirección"
+  },
+  "help_all_show": {
+    "message": "Mostrar la coincidencia en el árbol"
+  },
+  "help_all_leave": {
+    "message": "Salir de la búsqueda"
+  },
+  "help_all_palette": {
+    "message": "En la paleta y el selector de carpetas"
+  },
+  "help_all_run": {
+    "message": "Elegir / ejecutar"
+  },
+  "help_all_move_go": {
+    "message": "Mover e ir a la carpeta"
+  },
+  "help_all_close": {
+    "message": "Cerrar"
+  },
+  "help_mouse_open": {
+    "message": "Abrir un marcador, expandir o contraer una carpeta"
+  },
+  "help_mouse_open_keys": {
+    "message": "clic"
+  },
+  "help_mouse_other": {
+    "message": "Abrir en otra pestaña"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+clic",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "Abrir en una pestaña nueva; en una carpeta, abrir sus marcadores"
+  },
+  "help_mouse_new_keys": {
+    "message": "botón central"
+  },
+  "help_mouse_folder": {
+    "message": "Abrir los marcadores de la carpeta"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+clic en la carpeta",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "Seleccionar"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+clic",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "Cerrar la pestaña del marcador"
+  },
+  "help_mouse_close_keys": {
+    "message": "cruz al pasar el ratón"
+  },
+  "help_mouse_menu": {
+    "message": "Menú: abrir en una ventana nueva, editar, cortar, copiar, pegar, eliminar"
+  },
+  "help_mouse_menu_keys": {
+    "message": "botón derecho"
+  },
+  "help_mouse_empty": {
+    "message": "Búsqueda, paleta, configuración, deshacer"
+  },
+  "help_mouse_empty_keys": {
+    "message": "botón derecho en un espacio vacío"
+  },
+  "help_news_25_1": {
+    "message": "La interfaz y la ayuda están en 10 idiomas: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية, según el idioma del navegador. Se admite la escritura de derecha a izquierda; las traducciones de la comunidad llegan a través del repositorio."
+  },
+  "help_news_25_2": {
+    "message": "En los idiomas de derecha a izquierda, ← despliega una carpeta y → la contrae."
+  },
+  "help_news_25_3": {
+    "message": "Se eliminó la búsqueda de texto escrito con una distribución de teclado equivocada. El campo de búsqueda muestra cuántos resultados se encontraron."
+  },
+  "help_news_25_4": {
+    "message": "Las filas seleccionadas llevan una marca de verificación; los mensajes se ven mejor en el tema oscuro; hay un nuevo icono de la paleta."
+  },
+  "help_news_25_5": {
+    "message": "Las carpetas del sistema y los marcadores administrados explican por qué no se pueden seleccionar, editar, mover ni eliminar."
+  },
+  "help_news_25_6": {
+    "message": "Configuración: los cambios hechos en otras pestañas se ven al instante, la lista de carpetas se actualiza tras una importación y el cambio del preajuste de teclas se confirma en una ventana propia."
+  },
+  "help_news_25_7": {
+    "message": "Corregido: pulsar V dos veces rápido se saltaba una vista; Alt+B tras cerrar otra ventana podía cerrar el panel en lugar de abrirlo en la ventana actual; «Guardar la dirección de la pestaña» en una pestaña nueva de Edge, Brave, Vivaldi y Opera guardaba en el marcador la dirección de la página de inicio."
+  },
+  "help_news_26_1": {
+    "message": "Deshacer y rehacer los cambios hechos en el panel: ⌘Z / ⌘⇧Z en Mac, Ctrl+Z y Ctrl+Shift+Z o Ctrl+Y en el resto, o el botón «Deshacer» del mensaje. Una carpeta suprimida vuelve con su contenido. El historial guarda 50 pasos y es común a todas las ventanas hasta que se cierra el navegador."
+  },
+  "help_news_26_2": {
+    "message": "Arrastra con el ratón marcadores, carpetas y la selección: encima, debajo o dentro de una carpeta. La carpeta se abre si mantienes un elemento sobre ella, y la lista se desplaza cerca del borde."
+  },
+  "help_news_26_3": {
+    "message": "El menú del botón derecho funciona como el de marcadores del navegador: abrir en una pestaña nueva, una ventana nueva, vista dividida o una ventana de incógnito; editar; cortar, copiar y pegar; suprimir; añadir página o carpeta; abrir el administrador de marcadores. Con el teclado se abre con Shift+F10."
+  },
+  "help_news_26_4": {
+    "message": "El panel ya no tiene cabecera propia: el campo de búsqueda aparece solo mientras buscas y «Selección: N» es una barra en la parte inferior."
+  },
+  "help_news_24_1": {
+    "message": "Más rápido con colecciones grandes: el árbol se lee con menos frecuencia, la búsqueda y el selector de carpetas se construyen antes."
+  },
+  "help_news_24_2": {
+    "message": "Selector de carpetas: en el orden del árbol, carpetas recientes aparte, «Crear carpeta» si no existe."
+  },
+  "help_news_24_3": {
+    "message": "Puedes escribir el nombre de la carpeta nueva justo después de $NEW$.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "El cursor se ve mejor; una carpeta contraída indica que hay una pestaña abierta dentro. Las pestañas nuevas se abren junto a la actual."
+  },
+  "help_news_24_5": {
+    "message": "Abrir un conjunto no duplica las pestañas abiertas. Cerrar las pestañas de varios marcadores y reemplazar una dirección piden confirmación."
+  },
+  "help_news_24_6": {
+    "message": "Con la distribución rusa, los símbolos se leen por posición de tecla ($QUESTION$ abre la paleta). En Mac, $CTRL$ ya no equivale a $CMD$.",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: la distribución rusa se reconoce de inmediato, sin letras escritas: $CHORD$ abre la paleta, no la configuración.",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "El editor de teclas pregunta antes de quitar un atajo a otro comando y muestra el preajuste elegido."
+  },
+  "help_news_24_9": {
+    "message": "Corregido: las letras escritas justo después de $NEW$ actuaban como comandos; Espacio podía confirmar una eliminación; tras renombrar desde la búsqueda, el foco pasaba a la lista; un $BS$ accidental en la búsqueda cerraba una pestaña.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "Mover a una carpeta por nombre: $MOVE$, con las carpetas recientes arriba.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "Guardar en el marcador la dirección de la pestaña actual: $UPDATE$.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "Vista con la dirección bajo el título y una vista compacta: $CYCLE$.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "Esta ayuda: $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "Búsqueda en el panel: por título, dirección y carpeta, con resaltado y con cualquier distribución del teclado; $TAB$ muestra la coincidencia en su sitio.",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ y otros símbolos también funcionan con la distribución rusa.",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "Todas las acciones son comandos: la paleta de comandos y tus propios atajos en la configuración, el preajuste de Vim, secuencias y pulsaciones dobles."
+  },
+  "help_news_21_2": {
+    "message": "Copiar dirección, seleccionar todo en una carpeta, contraer todas las carpetas. La configuración se abre en una pestaña."
+  },
+  "help_news_20_1": {
+    "message": "Carpetas nuevas, mover filas con $OPTION$/$ALT$, selección con Espacio.",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "Abrir un conjunto de marcadores, también como grupo de pestañas con el nombre de la carpeta. Un interruptor «abrir en una pestaña nueva»."
+  },
+  "help_news_1_1": {
+    "message": "El panel con un solo atajo: abrir, devolver el foco, cerrar. Carpeta inicial."
+  },
+  "help_news_1_2": {
+    "message": "Marcadores como pestañas fijas, como en Arc, cambiar nombre y eliminar, ocultación automática, varias ventanas, nuevo diseño."
+  },
+  "help_news_earlier": {
+    "message": "Versiones anteriores"
+  },
+  "help_quick_title": {
+    "message": "Inicio rápido"
+  },
+  "help_nav_pinned": {
+    "message": "Como pestañas fijas"
+  },
+  "help_pinned_title": {
+    "message": "Marcadores como pestañas fijas"
+  },
+  "help_find_title": {
+    "message": "Buscar y abrir"
+  },
+  "help_sort_title": {
+    "message": "Clasificar marcadores"
+  },
+  "help_sets_title": {
+    "message": "Abrir como conjunto"
+  },
+  "help_own_title": {
+    "message": "Tus propias teclas"
+  },
+  "help_view_title": {
+    "message": "Vista y configuración"
+  },
+  "help_all_title": {
+    "message": "Todas las teclas"
+  },
+  "help_mouse_title": {
+    "message": "Ratón"
+  },
+  "help_news_title": {
+    "message": "Novedades"
+  }
+}

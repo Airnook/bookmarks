@@ -1,0 +1,2354 @@
+{
+  "locale": {
+    "message": "ru"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "Закладки"
+  },
+  "ext_description": {
+    "message": "Закладки в боковой панели по горячей клавише, с фокусом для навигации стрелками"
+  },
+  "command_toggle": {
+    "message": "Открыть / сфокусировать / закрыть панель закладок"
+  },
+  "all_bookmarks": {
+    "message": "Все закладки"
+  },
+  "untitled": {
+    "message": "Без названия"
+  },
+  "bookmarklet": {
+    "message": "букмарклет"
+  },
+  "folder_empty": {
+    "message": "пусто"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "open": {
+    "message": "Открыть"
+  },
+  "delete": {
+    "message": "Удалить"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "nothing_found": {
+    "message": "Ничего не найдено"
+  },
+  "more_results": {
+    "message": "И ещё $COUNT$ — уточните запрос",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "Пробел"
+  },
+  "group_nav": {
+    "message": "Навигация"
+  },
+  "group_open": {
+    "message": "Открытие"
+  },
+  "group_marks": {
+    "message": "Отметки"
+  },
+  "group_edit": {
+    "message": "Правка"
+  },
+  "group_panel": {
+    "message": "Панель"
+  },
+  "cmd_search": {
+    "message": "Поиск закладок"
+  },
+  "cmd_search_note": {
+    "message": "по названию, адресу и папке"
+  },
+  "cmd_search_words": {
+    "message": "поиск найти"
+  },
+  "cmd_cursor_down": {
+    "message": "Курсор вниз"
+  },
+  "cmd_cursor_down_words": {
+    "message": "вниз"
+  },
+  "cmd_cursor_up": {
+    "message": "Курсор вверх"
+  },
+  "cmd_cursor_up_words": {
+    "message": "вверх"
+  },
+  "cmd_cursor_first": {
+    "message": "В начало списка"
+  },
+  "cmd_cursor_first_words": {
+    "message": "начало"
+  },
+  "cmd_cursor_last": {
+    "message": "В конец списка"
+  },
+  "cmd_cursor_last_words": {
+    "message": "конец"
+  },
+  "cmd_folder_expand": {
+    "message": "Раскрыть папку"
+  },
+  "cmd_folder_expand_words": {
+    "message": "раскрыть"
+  },
+  "cmd_folder_collapse": {
+    "message": "Свернуть папку"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "на закладке — перейти к её папке"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "свернуть родитель"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "Свернуть все папки"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "свернуть все"
+  },
+  "cmd_open": {
+    "message": "Открыть"
+  },
+  "cmd_open_note": {
+    "message": "с отметками — всё отмеченное"
+  },
+  "cmd_open_words": {
+    "message": "открыть"
+  },
+  "cmd_open_alt": {
+    "message": "Открыть в другой вкладке"
+  },
+  "cmd_open_alt_note": {
+    "message": "у папки — все её закладки"
+  },
+  "cmd_open_alt_words": {
+    "message": "другая вкладка папку"
+  },
+  "cmd_open_newTab": {
+    "message": "Открыть в новой вкладке"
+  },
+  "cmd_open_newTab_words": {
+    "message": "новая вкладка"
+  },
+  "cmd_open_currentTab": {
+    "message": "Открыть в текущей вкладке"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "текущая вкладка"
+  },
+  "cmd_open_group": {
+    "message": "Открыть группой вкладок…"
+  },
+  "cmd_open_group_words": {
+    "message": "группа набор"
+  },
+  "cmd_open_reset": {
+    "message": "Вернуть вкладку на адрес закладки"
+  },
+  "cmd_open_reset_words": {
+    "message": "вернуть адрес"
+  },
+  "cmd_mark_toggle": {
+    "message": "Отметить"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "ещё раз — снять отметку"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "отметить выбрать снять"
+  },
+  "cmd_mark_down": {
+    "message": "Отметить и вниз"
+  },
+  "cmd_mark_down_words": {
+    "message": "отметить"
+  },
+  "cmd_mark_up": {
+    "message": "Отметить и вверх"
+  },
+  "cmd_mark_up_words": {
+    "message": "отметить"
+  },
+  "cmd_mark_all": {
+    "message": "Отметить всё в папке"
+  },
+  "cmd_mark_all_note": {
+    "message": "ещё раз — снять"
+  },
+  "cmd_mark_all_words": {
+    "message": "отметить все"
+  },
+  "cmd_mark_clear": {
+    "message": "Снять отметки"
+  },
+  "cmd_mark_clear_words": {
+    "message": "снять"
+  },
+  "cmd_folder_new": {
+    "message": "Новая папка"
+  },
+  "cmd_folder_new_note": {
+    "message": "с отметками — сложит отмеченное в неё"
+  },
+  "cmd_folder_new_words": {
+    "message": "создать папку"
+  },
+  "cmd_rename": {
+    "message": "Переименовать"
+  },
+  "cmd_rename_words": {
+    "message": "переименовать название"
+  },
+  "cmd_edit": {
+    "message": "Изменить название и адрес…"
+  },
+  "cmd_edit_note": {
+    "message": "в окне, как в браузере"
+  },
+  "cmd_edit_words": {
+    "message": "изменить правка название адрес",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "Переместить в папку…"
+  },
+  "cmd_move_to_note": {
+    "message": "выбор папки по названию"
+  },
+  "cmd_move_to_words": {
+    "message": "переместить в папку перенести"
+  },
+  "cmd_url_update": {
+    "message": "Запомнить адрес вкладки"
+  },
+  "cmd_url_update_note": {
+    "message": "закладка получит адрес текущей вкладки"
+  },
+  "cmd_url_update_words": {
+    "message": "обновить заменить адрес"
+  },
+  "cmd_delete": {
+    "message": "Удалить…"
+  },
+  "cmd_delete_words": {
+    "message": "удалить"
+  },
+  "cmd_copy_url": {
+    "message": "Копировать адрес"
+  },
+  "cmd_copy_url_note": {
+    "message": "у папки и отмеченного — все адреса"
+  },
+  "cmd_copy_url_words": {
+    "message": "копировать ссылку"
+  },
+  "cmd_cut": {
+    "message": "Вырезать"
+  },
+  "cmd_cut_note": {
+    "message": "вставка перенесёт закладки туда"
+  },
+  "cmd_copy": {
+    "message": "Копировать"
+  },
+  "cmd_copy_note": {
+    "message": "вставка сделает копию; адреса — и в системный буфер"
+  },
+  "cmd_paste": {
+    "message": "Вставить"
+  },
+  "cmd_paste_note": {
+    "message": "после курсора или в раскрытую папку"
+  },
+  "cmd_cut_words": {
+    "message": "вырезать перенести буфер",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "копировать копия дублировать буфер",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "вставить буфер",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "Закрыть вкладку закладки"
+  },
+  "cmd_tab_close_note": {
+    "message": "у папки и отмеченного — все их вкладки"
+  },
+  "cmd_tab_close_words": {
+    "message": "закрыть вкладку"
+  },
+  "cmd_move_up": {
+    "message": "Переместить вверх"
+  },
+  "cmd_move_up_words": {
+    "message": "переместить"
+  },
+  "cmd_move_down": {
+    "message": "Переместить вниз"
+  },
+  "cmd_move_down_words": {
+    "message": "переместить"
+  },
+  "cmd_undo": {
+    "message": "Отменить"
+  },
+  "cmd_undo_words": {
+    "message": "отменить отмена назад вернуть"
+  },
+  "cmd_redo": {
+    "message": "Повторить"
+  },
+  "cmd_redo_words": {
+    "message": "повторить вернуть"
+  },
+  "cmd_palette": {
+    "message": "Палитра команд"
+  },
+  "cmd_palette_words": {
+    "message": "команды справка"
+  },
+  "cmd_menu": {
+    "message": "Открыть меню"
+  },
+  "cmd_menu_note": {
+    "message": "как правая кнопка мыши"
+  },
+  "cmd_menu_words": {
+    "message": "меню контекстное правая кнопка",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "Сменить вид"
+  },
+  "cmd_view_cycle_note": {
+    "message": "обычный, с адресом, компактный"
+  },
+  "cmd_view_cycle_words": {
+    "message": "вид режим адрес компактный"
+  },
+  "cmd_help": {
+    "message": "Справка"
+  },
+  "cmd_help_note": {
+    "message": "все возможности и клавиши"
+  },
+  "cmd_help_words": {
+    "message": "справка помощь возможности"
+  },
+  "cmd_settings": {
+    "message": "Настройки"
+  },
+  "cmd_settings_words": {
+    "message": "настройки"
+  },
+  "cmd_escape": {
+    "message": "Отменить или закрыть"
+  },
+  "cmd_escape_note": {
+    "message": "снять отметки, выйти из поиска, иначе закрыть панель"
+  },
+  "cmd_escape_words": {
+    "message": "отмена"
+  },
+  "cmd_panel_close": {
+    "message": "Закрыть панель"
+  },
+  "cmd_panel_close_words": {
+    "message": "закрыть"
+  },
+  "panel_tree": {
+    "message": "Закладки"
+  },
+  "menu_open_new_tab": {
+    "message": "Открыть в новой вкладке"
+  },
+  "menu_open_new_window": {
+    "message": "Открыть в новом окне"
+  },
+  "menu_open_split": {
+    "message": "Открыть в режиме разделения экрана"
+  },
+  "menu_open_incognito": {
+    "message": "Открыть в режиме инкогнито"
+  },
+  "menu_open_all": {
+    "message": "Открыть все ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "Открыть все URL в новом окне"
+  },
+  "menu_open_all_incognito": {
+    "message": "Открыть все URL в окне в режиме инкогнито"
+  },
+  "menu_edit": {
+    "message": "Изменить"
+  },
+  "menu_rename": {
+    "message": "Переименовать"
+  },
+  "menu_delete": {
+    "message": "Удалить"
+  },
+  "menu_add_page": {
+    "message": "Добавить страницу"
+  },
+  "menu_add_folder": {
+    "message": "Добавить папку"
+  },
+  "menu_manager": {
+    "message": "Открыть менеджер закладок"
+  },
+  "menu_incognito_off": {
+    "message": "Разрешите расширению режим инкогнито: chrome://extensions → «Сведения» → «Разрешить использование в режиме инкогнито»"
+  },
+  "menu_bookmarklet": {
+    "message": "Букмарклет работает только на открытой странице — щёлкните по нему"
+  },
+  "menu_edit_single": {
+    "message": "Изменить можно только что-то одно"
+  },
+  "search_placeholder": {
+    "message": "Название, адрес или папка"
+  },
+  "search_found": {
+    "message": "Найдено: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "Ничего не найдено · $KEY$ — назад к списку",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "Закладок пока нет."
+  },
+  "empty_folder": {
+    "message": "В этой папке пока пусто."
+  },
+  "empty_add_hint": {
+    "message": "$KEY$ в браузере добавит страницу.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — новая папка.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "Название группы"
+  },
+  "tab_group_placeholder": {
+    "message": "Название группы — необязательно"
+  },
+  "tab_group_hint": {
+    "message": "С названием вкладки соберутся в группу, без названия — откроются обычными вкладками."
+  },
+  "palette_placeholder": {
+    "message": "Команда…"
+  },
+  "close_tab": {
+    "message": "Закрыть вкладку"
+  },
+  "rename_label": {
+    "message": "Название"
+  },
+  "new_folder_title": {
+    "message": "Новая папка"
+  },
+  "no_bookmarks_here": {
+    "message": "Здесь нет закладок"
+  },
+  "copied_addresses": {
+    "message": "Скопировано адресов: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "Адрес скопирован"
+  },
+  "copy_failed": {
+    "message": "Не удалось скопировать"
+  },
+  "view_changed": {
+    "message": "Вид: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "обычный"
+  },
+  "view_detailed": {
+    "message": "с адресом"
+  },
+  "view_dense": {
+    "message": "компактный"
+  },
+  "marked": {
+    "message": "Выбрано: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "Выбрано: $COUNT$ · $KEY$ — снять",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "Системные папки отметить нельзя",
+    "description": "Shown when the user tries to mark a system folder (Space, Shift+click)"
+  },
+  "locked_system_edit": {
+    "message": "Системные папки менять нельзя",
+    "description": "Shown when the user tries to rename, move or delete a system folder"
+  },
+  "locked_managed": {
+    "message": "Эти закладки менять нельзя"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — все команды",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "Правая кнопка — меню"
+  },
+  "updated": {
+    "message": "Обновлено до $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "Что нового — клавиша $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "Не удалось создать папку"
+  },
+  "move_failed": {
+    "message": "Не удалось переместить"
+  },
+  "delete_bookmark": {
+    "message": "Удалить закладку «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "Удалить закладку без названия?"
+  },
+  "delete_folder": {
+    "message": "Удалить папку «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "Всего закладок, включая содержимое папок: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "Внутри только пустые папки."
+  },
+  "delete_folder_empty": {
+    "message": "Папка пустая."
+  },
+  "url_only_bookmarks": {
+    "message": "Адрес есть только у закладок"
+  },
+  "url_locked": {
+    "message": "Эту закладку менять нельзя"
+  },
+  "url_loading": {
+    "message": "Страница ещё загружается"
+  },
+  "url_blank_tab": {
+    "message": "В текущей вкладке нет адреса"
+  },
+  "url_same": {
+    "message": "Адрес уже такой"
+  },
+  "url_replace_title": {
+    "message": "Заменить адрес закладки «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "Заменить"
+  },
+  "url_failed": {
+    "message": "Не удалось изменить адрес"
+  },
+  "url_updated": {
+    "message": "Адрес обновлён"
+  },
+  "undo_button": {
+    "message": "Отменить"
+  },
+  "undo_button_label": {
+    "message": "Отменить: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "Повторить: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "Отменено: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "Повторено: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "Нечего отменять"
+  },
+  "redo_nothing": {
+    "message": "Нечего повторять"
+  },
+  "undo_partial": {
+    "message": "Отменено не всё: часть закладок изменили в другом месте"
+  },
+  "redo_partial": {
+    "message": "Повторено не всё: часть закладок изменили в другом месте"
+  },
+  "undo_failed": {
+    "message": "Не удалось отменить: закладки изменили в другом месте"
+  },
+  "redo_failed": {
+    "message": "Не удалось повторить: закладки изменили в другом месте"
+  },
+  "history_fallback": {
+    "message": "Исходной папки больше нет — помещено в «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "Удалено «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "Удалено $COUNT$ элемент",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_few": {
+    "message": "Удалено $COUNT$ элемента",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_many": {
+    "message": "Удалено $COUNT$ элементов",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "Удалено $COUNT$ элемента",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "Переименовано в «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "Перемещено «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "Перемещено $COUNT$ элемент",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_few": {
+    "message": "Перемещено $COUNT$ элемента",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_many": {
+    "message": "Перемещено $COUNT$ элементов",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "Перемещено $COUNT$ элемента",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ элемент",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_few": {
+    "message": "$COUNT$ элемента",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_many": {
+    "message": "$COUNT$ элементов",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ элемента",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "Создана папка «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "Вырезано: $COUNT$ — вставьте, куда перенести",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "Скопировано: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "Вставлять нечего — сначала вырежьте или скопируйте закладки"
+  },
+  "paste_inside": {
+    "message": "Папку нельзя вставить в неё саму"
+  },
+  "paste_failed": {
+    "message": "Не удалось вставить"
+  },
+  "undo_pasted": {
+    "message": "Вставлено: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "Добавлена закладка «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "Изменено «$TITLE$»",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "Не удалось добавить закладку"
+  },
+  "open_failed": {
+    "message": "Не удалось открыть"
+  },
+  "edit_failed": {
+    "message": "Не удалось сохранить — проверьте адрес"
+  },
+  "edit_bookmark": {
+    "message": "Изменить закладку"
+  },
+  "edit_folder": {
+    "message": "Переименовать папку"
+  },
+  "edit_name": {
+    "message": "Название"
+  },
+  "edit_url": {
+    "message": "Адрес"
+  },
+  "save": {
+    "message": "Сохранить"
+  },
+  "tab_not_open": {
+    "message": "Вкладка не открыта"
+  },
+  "tab_not_open_delete": {
+    "message": "удалить закладку — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "Включите в настройках «Закладки как закреплённые вкладки»"
+  },
+  "picker_label": {
+    "message": "Переместить в папку"
+  },
+  "picker_heading": {
+    "message": "Переместить «$TITLE$» в папку",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "Название папки…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — переместить · $SHIFT_ENTER$ — и перейти туда",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "Недавние"
+  },
+  "picker_all": {
+    "message": "Все папки"
+  },
+  "picker_start_folder": {
+    "message": "стартовая папка"
+  },
+  "picker_here": {
+    "message": "сейчас здесь"
+  },
+  "picker_create": {
+    "message": "Создать папку «$NAME$»",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "в «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "Этой папки уже нет"
+  },
+  "move_nothing": {
+    "message": "Перемещать уже нечего"
+  },
+  "move_already_there": {
+    "message": "Уже в этой папке"
+  },
+  "moved": {
+    "message": "Перемещено в «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "Закладки — справка"
+  },
+  "help_via_palette": {
+    "message": "палитра → «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "меню правой кнопкой по пустому месту"
+  },
+  "help_table_from_palette": {
+    "message": "из палитры"
+  },
+  "help_table_menu": {
+    "message": "меню правой кнопкой"
+  },
+  "help_global_not_set": {
+    "message": "сочетание не назначено"
+  },
+  "options_title": {
+    "message": "Настройки закладок"
+  },
+  "options_intro": {
+    "message": "Все возможности, сценарии и клавиши — в $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "справке"
+  },
+  "options_root": {
+    "message": "Стартовая папка"
+  },
+  "options_root_hint": {
+    "message": "Панель покажет содержимое этой папки."
+  },
+  "options_view": {
+    "message": "Вид списка"
+  },
+  "options_view_normal": {
+    "message": "Обычный"
+  },
+  "options_view_detailed": {
+    "message": "С адресом — под названием сайт"
+  },
+  "options_view_dense": {
+    "message": "Компактный"
+  },
+  "options_view_hint": {
+    "message": "В панели вид переключается по кругу: $KEY$.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "из палитры"
+  },
+  "options_new_tab": {
+    "message": "Открывать закладки в новой вкладке"
+  },
+  "options_new_tab_hint": {
+    "message": "Выключено: «Открыть» — в текущей вкладке, «Открыть в другой вкладке» — в новой. Включено — наоборот."
+  },
+  "options_pinned": {
+    "message": "Закладки как закреплённые вкладки"
+  },
+  "options_pinned_hint": {
+    "message": "Как в Arc: если вкладка закладки уже открыта, «Открыть» переключает на неё, а не открывает заново. Открытые закладки отмечены точкой."
+  },
+  "options_auto_hide": {
+    "message": "Закрывать панель, когда фокус уходит на страницу"
+  },
+  "options_auto_hide_hint": {
+    "message": "Клик по странице или по интерфейсу браузера закрывает панель. При переключении в другое приложение она остаётся открытой."
+  },
+  "options_keys": {
+    "message": "Клавиши в панели"
+  },
+  "options_preset_standard": {
+    "message": "Стандартные"
+  },
+  "options_preset_standard_title": {
+    "message": "Заменить все сочетания стандартными"
+  },
+  "options_preset_vim_title": {
+    "message": "Стандартные плюс клавиши Vim: j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "«+» — записать сочетание: клавишу, с модификаторами, последовательность ($SEQUENCE$) или двойное нажатие ($DOUBLE$) — вторую клавишу жмите сразу. $ENTER$ после клавиши — готово, $ESC$ — отменить запись, «×» — убрать. Если сочетание уже занято, спросим, забрать ли его. Все команды есть и в палитре команд панели.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "Открыть и закрыть панель: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "изменить в настройках браузера"
+  },
+  "options_global_not_set": {
+    "message": "не назначено"
+  },
+  "options_saved": {
+    "message": "Сохранено"
+  },
+  "options_saved_notes": {
+    "message": "Сохранено: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "снято с «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "палитра теперь открывается только кнопкой в панели"
+  },
+  "options_delayed": {
+    "message": "одиночное нажатие будет срабатывать с небольшой задержкой"
+  },
+  "options_remove_binding": {
+    "message": "Убрать $KEY$ у «$COMMAND$»",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "Добавить сочетание для «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "сбросить"
+  },
+  "options_reset_title": {
+    "message": "Вернуть стандартные сочетания «$COMMAND$»",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "только кнопкой в панели"
+  },
+  "options_only_palette": {
+    "message": "только из палитры"
+  },
+  "options_press_keys": {
+    "message": "Нажмите сочетание…"
+  },
+  "options_taken": {
+    "message": "уже у «$COMMAND$» — Enter: забрать, Esc: отмена",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "свои сочетания"
+  },
+  "options_replace_preset": {
+    "message": "Заменить ваши сочетания набором «$PRESET$»?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "Изменённые вами сочетания пропадут.",
+    "description": "Text under options_replace_preset in the dialog that replaces the shortcut set"
+  },
+  "options_replace_ok": {
+    "message": "Заменить",
+    "description": "Confirm button of the dialog that replaces the shortcut set"
+  },
+  "options_preset_applied": {
+    "message": "Набор «$PRESET$» применён",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ закладка",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_few": {
+    "message": "$COUNT$ закладки",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_many": {
+    "message": "$COUNT$ закладок",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ закладки",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "Открыть $COUNT$ вкладку",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_few": {
+    "message": "Открыть $COUNT$ вкладки",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_many": {
+    "message": "Открыть $COUNT$ вкладок",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "Открыть $COUNT$ вкладки",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ уже открыта)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_few": {
+    "message": "($COUNT$ уже открыты)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_many": {
+    "message": "($COUNT$ уже открыты)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ уже открыты)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "Закрыть $COUNT$ вкладку?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_few": {
+    "message": "Закрыть $COUNT$ вкладки?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_many": {
+    "message": "Закрыть $COUNT$ вкладок?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "Закрыть $COUNT$ вкладки?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "Это вкладки $COUNT$ закладки в этом окне.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_few": {
+    "message": "Это вкладки $COUNT$ закладок в этом окне.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_many": {
+    "message": "Это вкладки $COUNT$ закладок в этом окне.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "Это вкладки $COUNT$ закладки в этом окне.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "Удалить выбранное: $COUNT$ элемент?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_few": {
+    "message": "Удалить выбранное: $COUNT$ элемента?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_many": {
+    "message": "Удалить выбранное: $COUNT$ элементов?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "Удалить выбранное: $COUNT$ элемента?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "Вместе с папкой удалится всё, что в ней: $COUNT$ закладка.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_few": {
+    "message": "Вместе с папкой удалится всё, что в ней: $COUNT$ закладки.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_many": {
+    "message": "Вместе с папкой удалится всё, что в ней: $COUNT$ закладок.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "Вместе с папкой удалится всё, что в ней: $COUNT$ закладки.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "Переместить $COUNT$ элемент в папку",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_few": {
+    "message": "Переместить $COUNT$ элемента в папку",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_many": {
+    "message": "Переместить $COUNT$ элементов в папку",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "Переместить $COUNT$ элемента в папку",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "Перемещено $COUNT$ элемент в «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_few": {
+    "message": "Перемещено $COUNT$ элемента в «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_many": {
+    "message": "Перемещено $COUNT$ элементов в «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "Перемещено $COUNT$ элемента в «$FOLDER$»",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "Справка"
+  },
+  "help_heading": {
+    "message": "Закладки в боковой панели"
+  },
+  "help_lead": {
+    "message": "Ваши закладки сбоку от страницы, и всё — с клавиатуры: найти, открыть, разложить по папкам, держать как закреплённые вкладки. Сделано при переезде с Arc на Chromium‑браузер."
+  },
+  "help_settings_button": {
+    "message": "Настройки"
+  },
+  "help_meta": {
+    "message": "Версия $VERSION$ · $SETTINGS$ · Клавиши ниже — ваши текущие, с учётом переназначений.",
+    "description": "Substituted in order: $VERSION$ = extension version number; $SETTINGS$ = button that opens the settings page",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "Открыть панель"
+  },
+  "help_nav_label": {
+    "message": "Разделы"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — открыть панель. Нажмите ещё раз — она закроется; если фокус ушёл на страницу, то же сочетание вернёт его в панель. Ещё панель открывает значок расширения — закрепите его в меню расширений браузера.",
+    "description": "Substituted in order: $GLOBAL$ = panel shortcut (key caps)",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — по списку, $EXPAND$ $COLLAPSE$ — раскрыть и свернуть папку, $OPEN$ — открыть.",
+    "description": "Substituted in order: $UP$ = key cap(s) or shortcut, keep in place; $DOWN$ = key cap(s) or shortcut, keep in place; $EXPAND$ = key cap(s) or shortcut, keep in place; $COLLAPSE$ = key cap(s) or shortcut, keep in place; $OPEN$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — поиск: начните печатать название, сайт или папку.",
+    "description": "Substituted in order: $SEARCH$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — отметить несколько закладок, $MOVE$ — переместить их в папку по названию.",
+    "description": "Substituted in order: $MARK$ = key cap(s) or shortcut, keep in place; $MOVE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — палитра: все команды с их клавишами, если что‑то забылось.",
+    "description": "Substituted in order: $PALETTE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "Правая кнопка по закладке, папке или пустому месту — меню, как в браузере: открыть в новом окне, изменить, вырезать, скопировать, вставить. $MENU$ — то же с клавиатуры.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — эта справка. Новые закладки добавляются как обычно в браузере — $CHORD$.",
+    "description": "Substituted in order: $HELP$ = key cap(s) or shortcut, keep in place; $CHORD$ = key caps of a shortcut",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "В языках с письмом справа налево стрелки ← и → меняются местами: ← раскрывает папку, → сворачивает."
+  },
+  "help_pinned_why": {
+    "message": "Как в Arc: у закладки есть «своя» вкладка. Открыли — и закладка помнит её, даже если вы ушли по ссылкам дальше. Режим включён по умолчанию, выключается в настройках."
+  },
+  "help_pinned_1": {
+    "message": "Точка справа — у закладки открыта вкладка; синяя — это текущая вкладка. Кольцо у свёрнутой папки — открыто что‑то внутри."
+  },
+  "help_pinned_2": {
+    "message": "$OPEN$ по уже открытой закладке переключает на её вкладку, а не открывает вторую. Если вкладок у закладки несколько — на ту, где вы были последним.",
+    "description": "Substituted in order: $OPEN$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — вернуть вкладку на адрес закладки (вы ушли далеко по ссылкам).",
+    "description": "Substituted in order: $RESET$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — наоборот, запомнить в закладке адрес, где вы сейчас. На вкладке самой закладки — сразу, иначе панель переспросит.",
+    "description": "Substituted in order: $UPDATE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ или крестик при наведении — закрыть вкладку закладки. У папки и отмеченного — все их вкладки (сначала спросит).",
+    "description": "Substituted in order: $CLOSE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "Закладка не забирает чужую вкладку: если в текущей открыта другая закладка, новая откроется рядом с ней."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — строка поиска в шапке. Ищет по названию, адресу и папке; совпадения в названии — выше.",
+    "description": "Substituted in order: $SEARCH$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "работа lin"
+  },
+  "help_find_2": {
+    "message": "Можно уточнять папкой: $QUERY$ найдёт Linear из папки «Работа».",
+    "description": "Substituted in order: $QUERY$ = example search query shown as a key cap",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — выбрать, $ENTER$ — открыть, $MODENTER$ — в другой вкладке, $TAB$ — показать найденное на его месте в дереве, $ESC$ — вернуться туда, где были.",
+    "description": "Substituted in order: $ARROWS$ = arrow keys ↑ ↓; $ENTER$ = key cap(s) or shortcut, keep in place; $MODENTER$ = key cap(s) or shortcut, keep in place; $TAB$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ на папке — перейти в неё в дереве.",
+    "description": "Substituted in order: $ENTER$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "С найденным работают и команды палитры ($PALETTE$): «Переместить в папку…», «Переименовать», «Удалить…». $SHIFT$+клик отмечает найденное — после $ESC$ с отмеченным можно работать в дереве.",
+    "description": "Substituted in order: $PALETTE$ = key cap(s) or shortcut, keep in place; $SHIFT$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "Когда закладок много, быстрее напечатать пару букв, чем листать дерево."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — отметить строку, $DOWN$ $UP$ — отмечать подряд.",
+    "description": "Substituted in order: $TOGGLE$ = key cap(s) or shortcut, keep in place; $DOWN$ = key cap(s) or shortcut, keep in place; $UP$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — всё в этой папке (ещё раз — снять). $ESC$ — снять отметки.",
+    "description": "Substituted in order: $ALL$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "В шапке видно, сколько отмечено. Отмеченное открывается, перемещается, копируется и удаляется вместе; переименование — только строка под курсором."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — в папку по названию: начните печатать. Сверху — папки, куда перемещали недавно. $ENTER$ — переместить и остаться на месте (удобно разбирать подряд), $SHIFTENTER$ — переместить и перейти туда. Такой папки нет — $ENTER2$ на «Создать папку» создаст её и сразу переместит.",
+    "description": "Substituted in order: $MOVE$ = key cap(s) or shortcut, keep in place; $ENTER$ = key cap(s) or shortcut, keep in place; $SHIFTENTER$ = key cap(s) or shortcut, keep in place; $ENTER2$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — двигать по списку. В раскрытую папку строка заходит, на краю папки — выходит наружу.",
+    "description": "Substituted in order: $UP$ = key cap(s) or shortcut, keep in place; $DOWN$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — новая папка; название можно печатать сразу. Если что‑то отмечено, отмеченное окажется в ней.",
+    "description": "Substituted in order: $NEW$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — переименовать: $ENTER$ — сохранить, $ESC$ — отменить.",
+    "description": "Substituted in order: $RENAME$ = key cap(s) or shortcut, keep in place; $ENTER$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — удалить с подтверждением. Папку с содержимым и несколько элементов одним Enter не удалить — по умолчанию выбрана «Отмена».",
+    "description": "Substituted in order: $DELETE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — скопировать адрес (у папки и отмеченного — все адреса, по строке на каждый).",
+    "description": "Substituted in order: $COPY$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — отменить последнюю правку из панели: удаление, переименование, перемещение, новую папку, адрес из вкладки; $REDO$ — повторить. После правки в сообщении внизу есть кнопка «Отменить». История общая для всех окон и хранится до закрытия браузера (до 50 шагов); правки в диспетчере закладок и через синхронизацию не отменяются.",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "Накопилась свалка во «Входящих» — разложить её можно, не трогая мышь."
+  },
+  "help_sort_mark_title": {
+    "message": "Отметить"
+  },
+  "help_sort_move_title": {
+    "message": "Переместить"
+  },
+  "help_sort_edit_title": {
+    "message": "Поправить"
+  },
+  "help_sets_1": {
+    "message": "Отметьте закладки и нажмите $OPEN$, или нажмите $ALT$ на папке.",
+    "description": "Substituted in order: $OPEN$ = key cap(s) or shortcut, keep in place; $ALT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "Панель спросит название группы: впишите — вкладки соберутся в группу с этим именем (у папки оно уже подставлено), оставьте пустым — откроются обычными вкладками."
+  },
+  "help_sets_3": {
+    "message": "Уже открытые закладки не откроются второй раз: их вкладки просто попадут в группу."
+  },
+  "help_sets_why": {
+    "message": "Утренний набор вкладок, проект, исследование — одной командой."
+  },
+  "help_own_settings_link": {
+    "message": "настройках"
+  },
+  "help_own_1": {
+    "message": "В $SETTINGS$: «+» записывает сочетание, «×» убирает, «сбросить» возвращает стандартное. Если сочетание уже у другой команды, настройки спросят, забрать ли его.",
+    "description": "Substituted in order: $SETTINGS$ = button that opens the settings page",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "Можно последовательности — $SEQ$ — и двойные нажатия — $SEQ2$.",
+    "description": "Substituted in order: $SEQ$ = key sequence (pressed one after another); $SEQ2$ = key sequence (pressed one after another)",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "Набор $VIM$ одной кнопкой: $JKHL$, $SEQ$ и $SHIFTG$, $SEQ2$ — удалить, $SEQ3$ — копировать, $COLON$ — палитра.",
+    "description": "Substituted in order: $VIM$ = the name \"Vim\" (do not translate); $JKHL$ = four key caps j k h l; $SEQ$ = key sequence (pressed one after another); $SHIFTG$ = key cap(s) or shortcut, keep in place; $SEQ2$ = key sequence (pressed one after another); $SEQ3$ = key sequence (pressed one after another); $COLON$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "Клавиши работают на любой раскладке: на русской $R$ — это К, а $SLASH$ и $QUESTION$ — те же клавиши, что и на английской.",
+    "description": "Substituted in order: $R$ = key cap(s) or shortcut, keep in place; $SLASH$ = key cap(s) or shortcut, keep in place; $QUESTION$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "настройки сочетаний расширений"
+  },
+  "help_own_5": {
+    "message": "Сочетание самой панели ($GLOBAL$) меняется в браузере: $LINK$.",
+    "description": "Substituted in order: $GLOBAL$ = panel shortcut (key caps); $LINK$ = button that opens the browser shortcut settings",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "Любое действие — это команда, и у любой команды могут быть свои клавиши."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — сменить вид: обычный → с адресом (под названием сайт, у папки — сколько в ней закладок) → компактный.",
+    "description": "Substituted in order: $CYCLE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — панель покажет только её. Поиск и перемещение тоже работают внутри неё.",
+    "description": "Substituted in order: $B$ = setting name in bold, as on the settings page",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — меняет местами $OPEN$ и $ALT$.",
+    "description": "Substituted in order: $B$ = setting name in bold, as on the settings page; $OPEN$ = key cap(s) or shortcut, keep in place; $ALT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — клик по странице или по интерфейсу браузера её закрывает, а переход в другое приложение — нет.",
+    "description": "Substituted in order: $B$ = setting name in bold, as on the settings page",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "В каждом окне своя панель. Раскрытые папки и место курсора запоминаются."
+  },
+  "help_view_6": {
+    "message": "Шапки нет: строка поиска появляется сверху только во время поиска, а полоса «Выбрано» внизу — только пока что‑то отмечено."
+  },
+  "help_view_private": {
+    "message": "Всё хранится в браузере: расширение никуда не отправляет ни закладки, ни историю."
+  },
+  "help_all_intro": {
+    "message": "Ваши текущие сочетания. Команды без клавиш доступны из палитры ($PALETTE$).",
+    "description": "Substituted in order: $PALETTE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "В строке поиска"
+  },
+  "help_all_pick": {
+    "message": "Выбрать результат"
+  },
+  "help_all_open": {
+    "message": "Открыть / в другой вкладке / вернуть вкладку на адрес"
+  },
+  "help_all_show": {
+    "message": "Показать найденное в дереве"
+  },
+  "help_all_leave": {
+    "message": "Выйти из поиска"
+  },
+  "help_all_palette": {
+    "message": "В палитре и выборе папки"
+  },
+  "help_all_run": {
+    "message": "Выбрать / выполнить"
+  },
+  "help_all_move_go": {
+    "message": "Переместить и перейти в папку"
+  },
+  "help_all_close": {
+    "message": "Закрыть"
+  },
+  "help_mouse_open": {
+    "message": "Открыть закладку, раскрыть или свернуть папку"
+  },
+  "help_mouse_open_keys": {
+    "message": "клик"
+  },
+  "help_mouse_other": {
+    "message": "Открыть в другой вкладке"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+клик",
+    "description": "Substituted in order: $MOD$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "Открыть в новой вкладке; у папки — открыть её закладки"
+  },
+  "help_mouse_new_keys": {
+    "message": "средняя кнопка"
+  },
+  "help_mouse_folder": {
+    "message": "Открыть закладки папки"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+клик по папке",
+    "description": "Substituted in order: $MOD$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "Отметить"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+клик",
+    "description": "Substituted in order: $SHIFT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "Закрыть вкладку закладки"
+  },
+  "help_mouse_close_keys": {
+    "message": "крестик при наведении"
+  },
+  "help_mouse_menu": {
+    "message": "Меню: открыть в новом окне, изменить, вырезать, копировать, вставить, удалить"
+  },
+  "help_mouse_menu_keys": {
+    "message": "правая кнопка"
+  },
+  "help_mouse_empty": {
+    "message": "Поиск, палитра, настройки, отмена"
+  },
+  "help_mouse_empty_keys": {
+    "message": "правая кнопка по пустому месту"
+  },
+  "help_news_25_1": {
+    "message": "Интерфейс и справка на 10 языках: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية — язык берётся из браузера. Поддержано письмо справа налево; переводы сообщества принимаются через репозиторий."
+  },
+  "help_news_25_2": {
+    "message": "В языках с письмом справа налево ← раскрывает папку, → сворачивает."
+  },
+  "help_news_25_3": {
+    "message": "Убран поиск «набрано не в той раскладке». В строке поиска виден счётчик найденного."
+  },
+  "help_news_25_4": {
+    "message": "Отмеченные строки с галочкой; сообщения заметны в тёмной теме; новый значок палитры."
+  },
+  "help_news_25_5": {
+    "message": "Системные папки и управляемые закладки объясняют, почему их нельзя отметить, изменить, переместить или удалить."
+  },
+  "help_news_25_6": {
+    "message": "Настройки: изменения из других вкладок видны сразу, список папок обновляется после импорта, смена набора клавиш подтверждается в своём окне."
+  },
+  "help_news_25_7": {
+    "message": "Исправлено: быстрое двойное V перескакивало через вид; Alt+B после закрытия другого окна мог закрыть панель вместо того, чтобы открыть её в текущем окне; «Запомнить адрес вкладки» на новой вкладке Edge, Brave, Vivaldi и Opera записывал в закладку адрес стартовой страницы."
+  },
+  "help_news_26_1": {
+    "message": "Отмена и повтор правок, сделанных в панели: ⌘Z / ⌘⇧Z на Mac, Ctrl+Z и Ctrl+Shift+Z или Ctrl+Y в остальных системах, либо кнопка «Отменить» в сообщении. Удалённая папка возвращается вместе с содержимым. В истории 50 шагов, она общая для всех окон до закрытия браузера."
+  },
+  "help_news_26_2": {
+    "message": "Закладки, папки и отмеченное можно перетаскивать мышью: выше, ниже или внутрь папки. Папка раскрывается, если задержать над ней элемент, а список прокручивается у края."
+  },
+  "help_news_26_3": {
+    "message": "Меню правой кнопкой устроено как меню закладок браузера: открыть в новой вкладке, новом окне, режиме разделения экрана или режиме инкогнито; изменить; вырезать, копировать и вставить; удалить; добавить страницу или папку; открыть менеджер закладок. С клавиатуры оно открывается по Shift+F10."
+  },
+  "help_news_26_4": {
+    "message": "Своей шапки у панели больше нет: строка поиска показывается только во время поиска, а «Выбрано: N» — полоса внизу."
+  },
+  "help_news_24_1": {
+    "message": "Быстрее на больших коллекциях: дерево перечитывается реже, поиск и выбор папки строятся быстрее."
+  },
+  "help_news_24_2": {
+    "message": "Выбор папки: по порядку дерева, недавние отдельно, «Создать папку», если такой нет."
+  },
+  "help_news_24_3": {
+    "message": "Название новой папки можно печатать сразу после $NEW$.",
+    "description": "Substituted in order: $NEW$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "Курсор заметнее; у свёрнутой папки видно, что внутри открыта вкладка. Новые вкладки открываются рядом с текущей."
+  },
+  "help_news_24_5": {
+    "message": "Открытие набора не дублирует открытые вкладки. Закрытие вкладок нескольких закладок и замена адреса спрашивают подтверждение."
+  },
+  "help_news_24_6": {
+    "message": "На русской раскладке знаки — по месту клавиши ($QUESTION$ открывает палитру). На Mac $CTRL$ больше не равен $CMD$.",
+    "description": "Substituted in order: $QUESTION$ = key cap(s) or shortcut, keep in place; $CTRL$ = key cap(s) or shortcut, keep in place; $CMD$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: русская раскладка распознаётся сразу, без набранных букв — $CHORD$ открывает палитру, а не настройки.",
+    "description": "Substituted in order: $CHORD$ = key caps of a shortcut",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "Редактор клавиш спрашивает, прежде чем забрать сочетание у другой команды, и показывает выбранный набор."
+  },
+  "help_news_24_9": {
+    "message": "Исправлено: буквы, набранные сразу после $NEW$, срабатывали как команды; пробел мог подтвердить удаление; после переименования из поиска фокус уходил в список; лишний $BS$ в поиске закрывал вкладку.",
+    "description": "Substituted in order: $NEW$ = key cap(s) or shortcut, keep in place; $BS$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "Переместить в папку по имени: $MOVE$, недавние папки сверху.",
+    "description": "Substituted in order: $MOVE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "Запомнить в закладке адрес текущей вкладки: $UPDATE$.",
+    "description": "Substituted in order: $UPDATE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "Вид с адресом под названием и компактный: $CYCLE$.",
+    "description": "Substituted in order: $CYCLE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "Эта справка: $HELP$.",
+    "description": "Substituted in order: $HELP$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "Поиск в панели: по названию, адресу и папке, с подсветкой и в любой раскладке; $TAB$ показывает найденное на месте.",
+    "description": "Substituted in order: $TAB$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ и другие знаки работают и на русской раскладке.",
+    "description": "Substituted in order: $SLASH$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "Все действия стали командами: палитра команд и свои сочетания клавиш в настройках, набор Vim, последовательности и двойные нажатия."
+  },
+  "help_news_21_2": {
+    "message": "Копировать адрес, отметить всё в папке, свернуть все папки. Настройки открываются во вкладке."
+  },
+  "help_news_20_1": {
+    "message": "Новые папки, перемещение строк с $OPTION$/$ALT$, отметки пробелом.",
+    "description": "Substituted in order: $OPTION$ = key cap(s) or shortcut, keep in place; $ALT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "Открыть набор закладок, в том числе группой вкладок с названием папки. Переключатель «открывать в новой вкладке»."
+  },
+  "help_news_1_1": {
+    "message": "Панель по одному сочетанию: открыть, вернуть фокус, закрыть. Стартовая папка."
+  },
+  "help_news_1_2": {
+    "message": "Закладки как закреплённые вкладки Arc, переименование и удаление, автоскрытие, работа в нескольких окнах, новый дизайн."
+  },
+  "help_news_earlier": {
+    "message": "Ранние версии"
+  },
+  "help_quick_title": {
+    "message": "Быстрый старт"
+  },
+  "help_nav_pinned": {
+    "message": "Как закреплённые вкладки"
+  },
+  "help_pinned_title": {
+    "message": "Закладки как закреплённые вкладки"
+  },
+  "help_find_title": {
+    "message": "Найти и открыть"
+  },
+  "help_sort_title": {
+    "message": "Разобрать закладки"
+  },
+  "help_sets_title": {
+    "message": "Открыть набором"
+  },
+  "help_own_title": {
+    "message": "Свои клавиши"
+  },
+  "help_view_title": {
+    "message": "Вид и настройки"
+  },
+  "help_all_title": {
+    "message": "Все клавиши"
+  },
+  "help_mouse_title": {
+    "message": "Мышь"
+  },
+  "help_news_title": {
+    "message": "Что нового"
+  }
+}

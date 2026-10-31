@@ -1,0 +1,2306 @@
+{
+  "locale": {
+    "message": "en",
+    "description": "Language code of this file (BCP 47): plural rules and <html lang> follow it"
+  },
+  "dir": {
+    "message": "ltr",
+    "description": "Text direction of this language: ltr or rtl (Arabic, Hebrew…); pages follow it"
+  },
+  "ext_name": {
+    "message": "Bookmarks",
+    "description": "Extension name; also the panel title"
+  },
+  "ext_description": {
+    "message": "Bookmarks in the side panel on a hotkey, focused for arrow-key navigation"
+  },
+  "command_toggle": {
+    "message": "Open / focus / close the bookmarks panel",
+    "description": "Browser shortcut description (chrome://extensions/shortcuts)"
+  },
+  "all_bookmarks": {
+    "message": "All bookmarks"
+  },
+  "untitled": {
+    "message": "Untitled"
+  },
+  "bookmarklet": {
+    "message": "bookmarklet",
+    "description": "Shown instead of the address of a javascript: bookmark"
+  },
+  "folder_empty": {
+    "message": "empty",
+    "description": "Folder without bookmarks"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "open": {
+    "message": "Open"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "nothing_found": {
+    "message": "Nothing found"
+  },
+  "more_results": {
+    "message": "$COUNT$ more — refine the search",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Last line of the panel search results and of the command palette, when some matches are not shown. $COUNT$ — how many matches are hidden."
+  },
+  "key_space": {
+    "message": "Space",
+    "description": "Space key label"
+  },
+  "group_nav": {
+    "message": "Navigation"
+  },
+  "group_open": {
+    "message": "Opening"
+  },
+  "group_marks": {
+    "message": "Marks"
+  },
+  "group_edit": {
+    "message": "Editing"
+  },
+  "group_panel": {
+    "message": "Panel"
+  },
+  "cmd_search": {
+    "message": "Search bookmarks"
+  },
+  "cmd_search_note": {
+    "message": "by title, address and folder"
+  },
+  "cmd_search_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_cursor_down": {
+    "message": "Cursor down"
+  },
+  "cmd_cursor_down_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_cursor_up": {
+    "message": "Cursor up"
+  },
+  "cmd_cursor_up_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_cursor_first": {
+    "message": "To the top of the list"
+  },
+  "cmd_cursor_first_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_cursor_last": {
+    "message": "To the end of the list"
+  },
+  "cmd_cursor_last_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_folder_expand": {
+    "message": "Expand folder"
+  },
+  "cmd_folder_expand_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_folder_collapse": {
+    "message": "Collapse folder"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "on a bookmark — go to its folder"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "Collapse all folders"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_open": {
+    "message": "Open"
+  },
+  "cmd_open_note": {
+    "message": "with marks — everything marked"
+  },
+  "cmd_open_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_open_alt": {
+    "message": "Open in other tab"
+  },
+  "cmd_open_alt_note": {
+    "message": "on a folder — all its bookmarks"
+  },
+  "cmd_open_alt_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_open_newTab": {
+    "message": "Open in new tab"
+  },
+  "cmd_open_newTab_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_open_currentTab": {
+    "message": "Open in current tab"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_open_group": {
+    "message": "Open as tab group…"
+  },
+  "cmd_open_group_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_open_reset": {
+    "message": "Return tab to bookmark address"
+  },
+  "cmd_open_reset_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_mark_toggle": {
+    "message": "Mark"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "again — unmark"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_mark_down": {
+    "message": "Mark and move down"
+  },
+  "cmd_mark_down_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_mark_up": {
+    "message": "Mark and move up"
+  },
+  "cmd_mark_up_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_mark_all": {
+    "message": "Mark all in folder"
+  },
+  "cmd_mark_all_note": {
+    "message": "again — unmark"
+  },
+  "cmd_mark_all_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_mark_clear": {
+    "message": "Clear marks"
+  },
+  "cmd_mark_clear_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_folder_new": {
+    "message": "New folder"
+  },
+  "cmd_folder_new_note": {
+    "message": "with marks — puts the marked items in it"
+  },
+  "cmd_folder_new_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_rename": {
+    "message": "Rename"
+  },
+  "cmd_rename_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_edit": {
+    "message": "Edit title and address…"
+  },
+  "cmd_edit_note": {
+    "message": "in a window, like in the browser"
+  },
+  "cmd_edit_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "Move to folder…"
+  },
+  "cmd_move_to_note": {
+    "message": "pick a folder by name"
+  },
+  "cmd_move_to_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_url_update": {
+    "message": "Save tab address"
+  },
+  "cmd_url_update_note": {
+    "message": "the bookmark gets the current tab’s address"
+  },
+  "cmd_url_update_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_delete": {
+    "message": "Delete…"
+  },
+  "cmd_delete_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_url": {
+    "message": "Copy address"
+  },
+  "cmd_copy_url_note": {
+    "message": "for a folder and marks — all addresses"
+  },
+  "cmd_copy_url_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_cut": {
+    "message": "Cut"
+  },
+  "cmd_cut_note": {
+    "message": "paste moves the bookmarks there"
+  },
+  "cmd_copy": {
+    "message": "Copy"
+  },
+  "cmd_copy_note": {
+    "message": "paste makes a copy; the addresses go to the clipboard too"
+  },
+  "cmd_paste": {
+    "message": "Paste"
+  },
+  "cmd_paste_note": {
+    "message": "after the cursor or into an expanded folder"
+  },
+  "cmd_cut_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "Close bookmark’s tab"
+  },
+  "cmd_tab_close_note": {
+    "message": "for a folder and marks — all their tabs"
+  },
+  "cmd_tab_close_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_up": {
+    "message": "Move up"
+  },
+  "cmd_move_up_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_down": {
+    "message": "Move down"
+  },
+  "cmd_move_down_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_undo": {
+    "message": "Undo"
+  },
+  "cmd_undo_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_redo": {
+    "message": "Redo"
+  },
+  "cmd_redo_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_palette": {
+    "message": "Command palette"
+  },
+  "cmd_palette_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_menu": {
+    "message": "Open menu"
+  },
+  "cmd_menu_note": {
+    "message": "like the right mouse button"
+  },
+  "cmd_menu_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "Change view"
+  },
+  "cmd_view_cycle_note": {
+    "message": "normal, with address, compact"
+  },
+  "cmd_view_cycle_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_help": {
+    "message": "Help"
+  },
+  "cmd_help_note": {
+    "message": "all features and keys"
+  },
+  "cmd_help_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_settings": {
+    "message": "Settings"
+  },
+  "cmd_settings_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_escape": {
+    "message": "Cancel or close"
+  },
+  "cmd_escape_note": {
+    "message": "clear marks, leave search, otherwise close the panel"
+  },
+  "cmd_escape_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_panel_close": {
+    "message": "Close panel"
+  },
+  "cmd_panel_close_words": {
+    "message": "",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "panel_tree": {
+    "message": "Bookmarks",
+    "description": "Accessible name of the bookmark tree"
+  },
+  "menu_open_new_tab": {
+    "message": "Open in new tab",
+    "description": "Context menu of a bookmark, as in the browser’s bookmark menu"
+  },
+  "menu_open_new_window": {
+    "message": "Open in new window",
+    "description": "Context menu of a bookmark"
+  },
+  "menu_open_split": {
+    "message": "Open in split view",
+    "description": "Context menu of a bookmark: open next to the current tab in split view"
+  },
+  "menu_open_incognito": {
+    "message": "Open in Incognito window",
+    "description": "Context menu of a bookmark"
+  },
+  "menu_open_all": {
+    "message": "Open all ($COUNT$)",
+    "description": "Context menu of a folder or of several marked items. $COUNT$ — how many bookmarks open.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "Open all in new window",
+    "description": "Context menu of a folder or of several marked items"
+  },
+  "menu_open_all_incognito": {
+    "message": "Open all in Incognito window",
+    "description": "Context menu of a folder or of several marked items"
+  },
+  "menu_edit": {
+    "message": "Edit…",
+    "description": "Context menu of a bookmark: opens a window with its title and address"
+  },
+  "menu_rename": {
+    "message": "Rename…",
+    "description": "Context menu of a folder: opens a window with its title"
+  },
+  "menu_delete": {
+    "message": "Delete",
+    "description": "Context menu"
+  },
+  "menu_add_page": {
+    "message": "Add page…",
+    "description": "Context menu: a bookmark for the current tab"
+  },
+  "menu_add_folder": {
+    "message": "Add folder…",
+    "description": "Context menu"
+  },
+  "menu_manager": {
+    "message": "Open bookmarks manager",
+    "description": "Context menu: opens the browser’s bookmark manager"
+  },
+  "menu_incognito_off": {
+    "message": "Allow the extension in Incognito: chrome://extensions → its Details → “Allow in Incognito”",
+    "description": "Tooltip of the disabled “Open in Incognito” menu item: where to allow the extension in Incognito"
+  },
+  "menu_bookmarklet": {
+    "message": "A bookmarklet works only on the open page — click it instead",
+    "description": "Tooltip of disabled “Open in…” items for a javascript: bookmark"
+  },
+  "menu_edit_single": {
+    "message": "Only one item can be edited at a time",
+    "description": "Tooltip of the disabled “Edit” item when several items are marked"
+  },
+  "search_placeholder": {
+    "message": "Title, address or folder"
+  },
+  "search_found": {
+    "message": "Found: $COUNT$",
+    "description": "For screen readers",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "Nothing found · $KEY$ — back to the list",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Panel empty state when a search finds nothing. $KEY$ — the Escape key name (for example Esc)."
+  },
+  "empty_all": {
+    "message": "No bookmarks yet."
+  },
+  "empty_folder": {
+    "message": "This folder is empty for now."
+  },
+  "empty_add_hint": {
+    "message": "$KEY$ in the browser adds a page.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Panel empty state in the all-bookmarks view when there are no bookmarks. $KEY$ — the add-bookmark shortcut (for example Ctrl+D)."
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — new folder.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Panel empty state inside an empty folder. $KEY$ — the new-folder shortcut."
+  },
+  "tab_group_label": {
+    "message": "Group name"
+  },
+  "tab_group_placeholder": {
+    "message": "Group name — optional"
+  },
+  "tab_group_hint": {
+    "message": "With a name, the tabs go into a group; without one, they open as regular tabs."
+  },
+  "palette_placeholder": {
+    "message": "Command…"
+  },
+  "close_tab": {
+    "message": "Close tab"
+  },
+  "rename_label": {
+    "message": "Title"
+  },
+  "new_folder_title": {
+    "message": "New folder",
+    "description": "Title of a just created folder"
+  },
+  "no_bookmarks_here": {
+    "message": "No bookmarks here"
+  },
+  "copied_addresses": {
+    "message": "Addresses copied: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast after the copy command copies several addresses. $COUNT$ — how many addresses were copied."
+  },
+  "copied_address": {
+    "message": "Address copied"
+  },
+  "copy_failed": {
+    "message": "Couldn’t copy"
+  },
+  "view_changed": {
+    "message": "View: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast after the view is switched with the V key or from the palette. $VIEW$ — the view name (Normal, Detailed or Dense)."
+  },
+  "view_normal": {
+    "message": "normal"
+  },
+  "view_detailed": {
+    "message": "with address"
+  },
+  "view_dense": {
+    "message": "compact"
+  },
+  "marked": {
+    "message": "Marked: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Bar at the bottom of the panel while items are marked, when no shortcut to clear the marks is shown. $COUNT$ — how many items are marked."
+  },
+  "marked_clear": {
+    "message": "Marked: $COUNT$ · $KEY$ — clear",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    },
+    "description": "Bar at the bottom of the panel while items are marked, with a hint how to clear the marks. $COUNT$ — how many items are marked; $KEY$ — the clear-marks shortcut (for example Esc)."
+  },
+  "locked_system_mark": {
+    "message": "System folders can’t be marked",
+    "description": "Shown when the user tries to mark a system folder (Space, Shift+click)"
+  },
+  "locked_system_edit": {
+    "message": "System folders can’t be changed",
+    "description": "Shown when the user tries to rename, move or delete a system folder"
+  },
+  "locked_managed": {
+    "message": "These bookmarks can’t be changed"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — all commands",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast on the first run, pointing to the command palette. $KEY$ — the shortcut that opens all commands (for example Ctrl+K)."
+  },
+  "first_run_menu": {
+    "message": "Right-click — menu",
+    "description": "Toast on the first run: where the menu is"
+  },
+  "updated": {
+    "message": "Updated to $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast after the extension was updated. $VERSION$ — the new version number."
+  },
+  "whats_new_key": {
+    "message": "What’s new — press $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast after the extension was updated, pointing to the what’s-new page in help. $KEY$ — the shortcut that opens help."
+  },
+  "create_folder_failed": {
+    "message": "Couldn’t create the folder"
+  },
+  "move_failed": {
+    "message": "Couldn’t move"
+  },
+  "delete_bookmark": {
+    "message": "Delete bookmark “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the confirmation for deleting one bookmark. $TITLE$ — the bookmark’s title."
+  },
+  "delete_untitled": {
+    "message": "Delete the untitled bookmark?"
+  },
+  "delete_folder": {
+    "message": "Delete folder “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the confirmation for deleting one folder. $TITLE$ — the folder’s name."
+  },
+  "delete_items_total": {
+    "message": "Bookmarks in total, including folder contents: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Text of the confirmation for deleting several selected items. $COUNT$ — how many bookmarks are affected in total, including bookmarks inside the selected folders."
+  },
+  "delete_only_empty_folders": {
+    "message": "Only empty folders inside."
+  },
+  "delete_folder_empty": {
+    "message": "The folder is empty."
+  },
+  "url_only_bookmarks": {
+    "message": "Only bookmarks have an address"
+  },
+  "url_locked": {
+    "message": "This bookmark can’t be changed"
+  },
+  "url_loading": {
+    "message": "The page is still loading"
+  },
+  "url_blank_tab": {
+    "message": "The current tab has no address"
+  },
+  "url_same": {
+    "message": "The address is already the same"
+  },
+  "url_replace_title": {
+    "message": "Replace the address of “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the dialog that replaces the address of a bookmark. $TITLE$ — the bookmark’s title."
+  },
+  "url_replace": {
+    "message": "Replace"
+  },
+  "url_failed": {
+    "message": "Couldn’t change the address"
+  },
+  "url_updated": {
+    "message": "Address updated"
+  },
+  "undo_button": {
+    "message": "Undo",
+    "description": "Button in the message at the bottom of the panel after a change; undoes the change"
+  },
+  "undo_button_label": {
+    "message": "Undo: $ACTION$",
+    "description": "Screen reader label of the “Undo” button in the message, and the Undo item of the right-click menu. $ACTION$ — what was done, for example “Deleted “Work””.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "Redo: $ACTION$",
+    "description": "Context menu item. $ACTION$ — the step to redo, for example Deleted “Work”.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "Undone: $ACTION$",
+    "description": "Message after undo. $ACTION$ — what was undone, for example “Deleted “Work””.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "Redone: $ACTION$",
+    "description": "Message after redo. $ACTION$ — what was redone, for example “Deleted “Work””.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "Nothing to undo"
+  },
+  "redo_nothing": {
+    "message": "Nothing to redo"
+  },
+  "undo_partial": {
+    "message": "Partly undone: some bookmarks were changed elsewhere",
+    "description": "Message after undo when part of the change could not be undone: those bookmarks were changed or deleted outside this undo (another window, Bookmark manager, sync)"
+  },
+  "redo_partial": {
+    "message": "Partly redone: some bookmarks were changed elsewhere",
+    "description": "Message after redo when part of the change could not be redone (bookmarks changed elsewhere)"
+  },
+  "undo_failed": {
+    "message": "Couldn’t undo: the bookmarks were changed elsewhere",
+    "description": "Message when nothing could be undone (bookmarks changed elsewhere); the step is dropped"
+  },
+  "redo_failed": {
+    "message": "Couldn’t redo: the bookmarks were changed elsewhere",
+    "description": "Message when nothing could be redone (bookmarks changed elsewhere); the step is dropped"
+  },
+  "history_fallback": {
+    "message": "The original folder is gone — put in “$FOLDER$”",
+    "description": "Message after undo or redo when the original folder no longer exists. $FOLDER$ — the folder the item was put into instead.",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "Deleted “$TITLE$”",
+    "description": "Message after deleting one item, with an “Undo” button; also the step name in undo messages. $TITLE$ — the item’s name.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "Deleted $COUNT$ item",
+    "description": "Message after deleting several items (plural form), with an “Undo” button. $COUNT$ — how many items.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "Deleted $COUNT$ items",
+    "description": "Message after deleting several items (plural form), with an “Undo” button. $COUNT$ — how many items.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "Renamed to “$TITLE$”",
+    "description": "Message after renaming, with an “Undo” button. $TITLE$ — the new name.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "Moved “$TITLE$”",
+    "description": "Message after moving one item with Alt+↑↓ or by dragging, with an “Undo” button. $TITLE$ — the item’s name.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "Moved $COUNT$ item",
+    "description": "Message after moving several items with Alt+↑↓ or by dragging (plural form), with an “Undo” button. $COUNT$ — how many items.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "Moved $COUNT$ items",
+    "description": "Message after moving several items with Alt+↑↓ or by dragging (plural form), with an “Undo” button. $COUNT$ — how many items.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ item",
+    "description": "Label next to the mouse pointer while dragging several items in the list (plural form). $COUNT$ — how many items.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ items",
+    "description": "Label next to the mouse pointer while dragging several items in the list (plural form). $COUNT$ — how many items.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "Created folder “$TITLE$”",
+    "description": "Message after creating a folder, with an “Undo” button. $TITLE$ — the folder’s name.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "Cut: $COUNT$ — paste to move",
+    "description": "Toast after Cut. $COUNT$ — how many items were cut.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "Copied: $COUNT$",
+    "description": "Toast after Copy. $COUNT$ — how many items were copied.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "Nothing to paste — cut or copy bookmarks first"
+  },
+  "paste_inside": {
+    "message": "Can’t paste a folder into itself"
+  },
+  "paste_failed": {
+    "message": "Couldn’t paste"
+  },
+  "undo_pasted": {
+    "message": "Pasted: $COUNT$",
+    "description": "Toast and undo label after pasting copies. $COUNT$ — how many items were pasted.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "Added “$TITLE$”",
+    "description": "Toast and undo label after “Add page”. $TITLE$ — the new bookmark’s title.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "Changed “$TITLE$”",
+    "description": "Toast and undo label after “Edit” changed the address. $TITLE$ — the bookmark’s title.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "Couldn’t add the bookmark"
+  },
+  "open_failed": {
+    "message": "Couldn’t open"
+  },
+  "edit_failed": {
+    "message": "Couldn’t save — check the address"
+  },
+  "edit_bookmark": {
+    "message": "Edit bookmark",
+    "description": "Heading of the Edit window for a bookmark"
+  },
+  "edit_folder": {
+    "message": "Rename folder",
+    "description": "Heading of the Edit window for a folder"
+  },
+  "edit_name": {
+    "message": "Name",
+    "description": "Field label in the Edit window"
+  },
+  "edit_url": {
+    "message": "Address",
+    "description": "Field label in the Edit window"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "tab_not_open": {
+    "message": "The tab isn’t open"
+  },
+  "tab_not_open_delete": {
+    "message": "delete the bookmark — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast when a close-tabs command finds no open tabs and pinned tabs are enabled; hint about deleting. $KEY$ — the delete shortcut (for example D)."
+  },
+  "tab_enable_pinned": {
+    "message": "Turn on “Bookmarks as pinned tabs” in settings"
+  },
+  "picker_label": {
+    "message": "Move to folder"
+  },
+  "picker_heading": {
+    "message": "Move “$TITLE$” to folder",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the Move to folder dialog for one item. $TITLE$ — the item’s title."
+  },
+  "picker_placeholder": {
+    "message": "Folder name…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — move · $SHIFT_ENTER$ — move and go there",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    },
+    "description": "Footer hint of the Move to folder dialog. $ENTER$ — the shortcut text for Enter (move); $SHIFT_ENTER$ — the shortcut text for Shift+Enter (move and open that folder)."
+  },
+  "picker_recent": {
+    "message": "Recent"
+  },
+  "picker_all": {
+    "message": "All folders"
+  },
+  "picker_start_folder": {
+    "message": "start folder"
+  },
+  "picker_here": {
+    "message": "here now"
+  },
+  "picker_create": {
+    "message": "Create folder “$NAME$”",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    },
+    "description": "Item in the Move to folder dialog that creates a new folder. $NAME$ — the name typed in the search field."
+  },
+  "picker_create_in": {
+    "message": "in “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    },
+    "description": "Subtitle of the create-folder item in the Move to folder dialog. $FOLDER$ — the name of the parent folder."
+  },
+  "move_folder_gone": {
+    "message": "This folder is gone"
+  },
+  "move_nothing": {
+    "message": "Nothing left to move"
+  },
+  "move_already_there": {
+    "message": "Already in this folder"
+  },
+  "moved": {
+    "message": "Moved to “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    },
+    "description": "Toast after one item is moved to a folder. $FOLDER$ — the name of the target folder."
+  },
+  "help_title": {
+    "message": "Bookmarks — help"
+  },
+  "help_via_palette": {
+    "message": "palette → “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    },
+    "description": "Help page: how to run a command from the command palette. $COMMAND$ — the command’s name."
+  },
+  "help_via_menu": {
+    "message": "right-click menu on an empty spot",
+    "description": "Shown instead of a shortcut when the palette has no keys: where to find it"
+  },
+  "help_table_from_palette": {
+    "message": "from the palette"
+  },
+  "help_table_menu": {
+    "message": "right-click menu",
+    "description": "Keys table: the palette has no keys — it is in the right-click menu"
+  },
+  "help_global_not_set": {
+    "message": "shortcut not set"
+  },
+  "options_title": {
+    "message": "Bookmarks settings"
+  },
+  "options_intro": {
+    "message": "All features, workflows and keys are in the $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    },
+    "description": "Intro line of the settings page. $HELP$ — a link button to the help page; it is an element, not text, so only its place in the sentence matters."
+  },
+  "options_intro_help": {
+    "message": "help",
+    "description": "Link text inside options_intro"
+  },
+  "options_root": {
+    "message": "Start folder"
+  },
+  "options_root_hint": {
+    "message": "The panel shows the contents of this folder."
+  },
+  "options_view": {
+    "message": "List view"
+  },
+  "options_view_normal": {
+    "message": "Normal"
+  },
+  "options_view_detailed": {
+    "message": "With address — site under the title"
+  },
+  "options_view_dense": {
+    "message": "Compact"
+  },
+  "options_view_hint": {
+    "message": "In the panel, $KEY$ cycles through the views.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    },
+    "description": "Hint under the view setting on the settings page. $KEY$ — the key that cycles the views (V), as a key element."
+  },
+  "options_from_palette": {
+    "message": "from the palette"
+  },
+  "options_new_tab": {
+    "message": "Open bookmarks in a new tab"
+  },
+  "options_new_tab_hint": {
+    "message": "Off: “Open” uses the current tab, “Open in other tab” a new one. On — the other way round."
+  },
+  "options_pinned": {
+    "message": "Bookmarks as pinned tabs"
+  },
+  "options_pinned_hint": {
+    "message": "Like in Arc: if a bookmark’s tab is already open, “Open” switches to it instead of opening it again. Open bookmarks are marked with a dot."
+  },
+  "options_auto_hide": {
+    "message": "Close the panel when focus moves to the page"
+  },
+  "options_auto_hide_hint": {
+    "message": "A click on the page or on the browser interface closes the panel. Switching to another app keeps it open."
+  },
+  "options_keys": {
+    "message": "Panel keys"
+  },
+  "options_preset_standard": {
+    "message": "Standard"
+  },
+  "options_preset_standard_title": {
+    "message": "Replace all shortcuts with the standard ones"
+  },
+  "options_preset_vim_title": {
+    "message": "Standard plus Vim keys: j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "“+” records a shortcut: a key, with modifiers, a sequence ($SEQUENCE$) or a double press ($DOUBLE$) — press the second key right away. $ENTER$ after a key — done, $ESC$ — cancel recording, “×” — remove. If the shortcut is taken, you’ll be asked whether to take it over. All commands are also in the panel’s command palette.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    },
+    "description": "Hint about recording a shortcut on the settings page. $SEQUENCE$ — an example key sequence (G G); $DOUBLE$ — an example double press (Enter Enter); $ENTER$ — the Enter key; $ESC$ — the Esc key. The placeholders are key elements, not text."
+  },
+  "options_global": {
+    "message": "Open and close the panel: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    },
+    "description": "Settings page line with the shortcut that opens and closes the panel. $KEY$ — that shortcut (or a dash if none is set); $CHANGE$ — a button that changes it (the button has its own label)."
+  },
+  "options_global_change": {
+    "message": "change in browser settings",
+    "description": "Link text inside options_global"
+  },
+  "options_global_not_set": {
+    "message": "not set"
+  },
+  "options_saved": {
+    "message": "Saved"
+  },
+  "options_saved_notes": {
+    "message": "Saved: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    },
+    "description": "Message after saving shortcuts when some of them were taken away from other commands. $NOTES$ — the notes about each change, joined with “; ”."
+  },
+  "options_removed_from": {
+    "message": "removed from “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    },
+    "description": "Note in the saved message: a shortcut was taken away from a command. $COMMAND$ — the command’s name."
+  },
+  "options_palette_button_only": {
+    "message": "the palette now opens only with the panel button"
+  },
+  "options_delayed": {
+    "message": "a single press will act with a short delay"
+  },
+  "options_remove_binding": {
+    "message": "Remove $KEY$ from “$COMMAND$”",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    },
+    "description": "Label of the × button that removes one shortcut from a command. $KEY$ — the shortcut text; $COMMAND$ — the command’s name."
+  },
+  "options_add_binding": {
+    "message": "Add a shortcut for “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    },
+    "description": "Label of the + button that adds a shortcut to a command. $COMMAND$ — the command’s name."
+  },
+  "options_reset": {
+    "message": "reset"
+  },
+  "options_reset_title": {
+    "message": "Restore the standard shortcuts of “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    },
+    "description": "Label of the reset button that restores a command’s standard shortcuts. $COMMAND$ — the command’s name."
+  },
+  "options_only_button": {
+    "message": "only with the panel button"
+  },
+  "options_only_palette": {
+    "message": "only from the palette"
+  },
+  "options_press_keys": {
+    "message": "Press a shortcut…"
+  },
+  "options_taken": {
+    "message": "already used by “$COMMAND$” — Enter: take it, Esc: cancel",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    },
+    "description": "Hint while recording a shortcut that another command already uses. $COMMAND$ — the name of that other command."
+  },
+  "options_custom": {
+    "message": "custom shortcuts"
+  },
+  "options_replace_preset": {
+    "message": "Replace your shortcuts with the “$PRESET$” set?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the dialog that asks to replace the user’s shortcuts with a preset set. $PRESET$ — the preset’s name (for example Vim)."
+  },
+  "options_replace_text": {
+    "message": "Your changed shortcuts will be lost.",
+    "description": "Text under options_replace_preset in the dialog that replaces the shortcut set"
+  },
+  "options_replace_ok": {
+    "message": "Replace",
+    "description": "Confirm button of the dialog that replaces the shortcut set"
+  },
+  "options_preset_applied": {
+    "message": "The “$PRESET$” set is applied",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    },
+    "description": "Message after a preset set of shortcuts was applied. $PRESET$ — the preset’s name."
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ bookmark",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Count of bookmarks in a folder, shown in the folder row (plural form). $COUNT$ — how many bookmarks are in the folder."
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ bookmarks",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Count of bookmarks in a folder, shown in the folder row (plural form). $COUNT$ — how many bookmarks are in the folder."
+  },
+  "open_tabs_one": {
+    "message": "Open $COUNT$ tab",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the dialog that opens bookmarks in tabs (plural form). $COUNT$ — how many bookmarks will be opened."
+  },
+  "open_tabs_other": {
+    "message": "Open $COUNT$ tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the dialog that opens bookmarks in tabs (plural form). $COUNT$ — how many bookmarks will be opened."
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ already open)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Note in brackets after the open-tabs title (plural form): how many of those bookmarks are already open. $COUNT$ — how many are already open."
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ already open)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Note in brackets after the open-tabs title (plural form): how many of those bookmarks are already open. $COUNT$ — how many are already open."
+  },
+  "close_tabs_one": {
+    "message": "Close $COUNT$ tab?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the confirmation for closing tabs (plural form). $COUNT$ — how many tabs will be closed."
+  },
+  "close_tabs_other": {
+    "message": "Close $COUNT$ tabs?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the confirmation for closing tabs (plural form). $COUNT$ — how many tabs will be closed."
+  },
+  "close_tabs_text_one": {
+    "message": "These are the tabs of $COUNT$ bookmark in this window.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Text of the confirmation for closing tabs (plural form). $COUNT$ — how many bookmarks have the tabs that will be closed."
+  },
+  "close_tabs_text_other": {
+    "message": "These are the tabs of $COUNT$ bookmarks in this window.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Text of the confirmation for closing tabs (plural form). $COUNT$ — how many bookmarks have the tabs that will be closed."
+  },
+  "delete_items_one": {
+    "message": "Delete $COUNT$ selected item?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the confirmation for deleting several selected items (plural form). $COUNT$ — how many items are selected."
+  },
+  "delete_items_other": {
+    "message": "Delete $COUNT$ selected items?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the confirmation for deleting several selected items (plural form). $COUNT$ — how many items are selected."
+  },
+  "delete_folder_contents_one": {
+    "message": "Everything inside goes too: $COUNT$ bookmark.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Text of the confirmation for deleting a folder that has bookmarks inside (plural form). $COUNT$ — how many bookmarks are inside the folders to delete."
+  },
+  "delete_folder_contents_other": {
+    "message": "Everything inside goes too: $COUNT$ bookmarks.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Text of the confirmation for deleting a folder that has bookmarks inside (plural form). $COUNT$ — how many bookmarks are inside the folders to delete."
+  },
+  "picker_heading_items_one": {
+    "message": "Move $COUNT$ item to folder",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the Move to folder dialog for several items (plural form). $COUNT$ — how many items will be moved."
+  },
+  "picker_heading_items_other": {
+    "message": "Move $COUNT$ items to folder",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the Move to folder dialog for several items (plural form). $COUNT$ — how many items will be moved."
+  },
+  "moved_items_one": {
+    "message": "Moved $COUNT$ item to “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    },
+    "description": "Toast after several items are moved to a folder (plural form). $COUNT$ — how many items were moved; $FOLDER$ — the name of the target folder."
+  },
+  "moved_items_other": {
+    "message": "Moved $COUNT$ items to “$FOLDER$”",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    },
+    "description": "Toast after several items are moved to a folder (plural form). $COUNT$ — how many items were moved; $FOLDER$ — the name of the target folder."
+  },
+  "help_eyebrow": {
+    "message": "Help"
+  },
+  "help_heading": {
+    "message": "Bookmarks in the side panel"
+  },
+  "help_lead": {
+    "message": "Your bookmarks next to the page, all from the keyboard: find, open, sort into folders, keep as pinned tabs. Made when moving from Arc to a Chromium browser."
+  },
+  "help_settings_button": {
+    "message": "Settings"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · The keys below are your current ones, including remaps.",
+    "description": "Substituted in order: $VERSION$ = extension version number; $SETTINGS$ = button that opens the settings page",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "Open the panel"
+  },
+  "help_nav_label": {
+    "message": "Sections"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — open the panel. Press again to close it; if focus moved to the page, the same shortcut brings it back to the panel. The extension icon also opens the panel — pin it in the browser’s extensions menu.",
+    "description": "Substituted in order: $GLOBAL$ = panel shortcut (key caps)",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — move through the list, $EXPAND$ $COLLAPSE$ — expand and collapse a folder, $OPEN$ — open.",
+    "description": "Substituted in order: $UP$ = key cap(s) or shortcut, keep in place; $DOWN$ = key cap(s) or shortcut, keep in place; $EXPAND$ = key cap(s) or shortcut, keep in place; $COLLAPSE$ = key cap(s) or shortcut, keep in place; $OPEN$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — search: start typing a title, site or folder.",
+    "description": "Substituted in order: $SEARCH$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — mark several bookmarks, $MOVE$ — move them to a folder by name.",
+    "description": "Substituted in order: $MARK$ = key cap(s) or shortcut, keep in place; $MOVE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — palette: all commands with their keys, in case you forget something.",
+    "description": "Substituted in order: $PALETTE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "Right-click a bookmark, a folder or an empty spot — a menu like the browser’s: open in a new window, edit, cut, copy, paste. $MENU$ — the same from the keyboard.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — this help. New bookmarks are added the usual browser way — $CHORD$.",
+    "description": "Substituted in order: $HELP$ = key cap(s) or shortcut, keep in place; $CHORD$ = key caps of a shortcut",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "In right-to-left languages the ← and → arrows swap places: ← expands a folder, → collapses it.",
+    "description": "A note under the quick-start steps in the help page: in right-to-left interface languages the left and right arrow keys swap their meaning, as in the WAI-ARIA tree pattern"
+  },
+  "help_pinned_why": {
+    "message": "Like in Arc: a bookmark has its “own” tab. Open it and the bookmark remembers the tab, even if you wander off by links. This mode is on by default and can be turned off in settings."
+  },
+  "help_pinned_1": {
+    "message": "A dot on the right means the bookmark has an open tab; a blue one is the current tab. A ring on a collapsed folder means something inside is open."
+  },
+  "help_pinned_2": {
+    "message": "$OPEN$ on an already open bookmark switches to its tab instead of opening a second one. If the bookmark has several tabs, it goes to the one you used last.",
+    "description": "Substituted in order: $OPEN$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — return the tab to the bookmark’s address (you’ve gone far along the links).",
+    "description": "Substituted in order: $RESET$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — the other way round: save the address you’re on in the bookmark. On the bookmark’s own tab it happens at once, otherwise the panel asks first.",
+    "description": "Substituted in order: $UPDATE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ or the cross on hover — close the bookmark’s tab. For a folder or marked items — all their tabs (asks first).",
+    "description": "Substituted in order: $CLOSE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "A bookmark doesn’t take over someone else’s tab: if the current tab has another bookmark open, the new one opens next to it."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — the search box in the header. It searches by title, address and folder; title matches come first.",
+    "description": "Substituted in order: $SEARCH$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "work lin"
+  },
+  "help_find_2": {
+    "message": "You can narrow by folder: $QUERY$ finds Linear from the “Work” folder.",
+    "description": "Substituted in order: $QUERY$ = example search query shown as a key cap",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — select, $ENTER$ — open, $MODENTER$ — in another tab, $TAB$ — show the match in place in the tree, $ESC$ — go back to where you were.",
+    "description": "Substituted in order: $ARROWS$ = arrow keys ↑ ↓; $ENTER$ = key cap(s) or shortcut, keep in place; $MODENTER$ = key cap(s) or shortcut, keep in place; $TAB$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ on a folder — go into it in the tree.",
+    "description": "Substituted in order: $ENTER$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "Palette commands ($PALETTE$) work on matches too: “Move to folder…”, “Rename”, “Delete…”. $SHIFT$+click marks a match — after $ESC$ you can work with the marked items in the tree.",
+    "description": "Substituted in order: $PALETTE$ = key cap(s) or shortcut, keep in place; $SHIFT$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "With lots of bookmarks, typing a few letters is faster than scrolling the tree."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — mark a row, $DOWN$ $UP$ — mark in a run.",
+    "description": "Substituted in order: $TOGGLE$ = key cap(s) or shortcut, keep in place; $DOWN$ = key cap(s) or shortcut, keep in place; $UP$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — everything in this folder (again — unmark). $ESC$ — clear the marks.",
+    "description": "Substituted in order: $ALL$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "The header shows how many are marked. Marked items open, move, copy and delete together; renaming works only on the row under the cursor."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — to a folder by name: start typing. Folders you moved to recently come first. $ENTER$ — move and stay in place (handy for sorting one after another), $SHIFTENTER$ — move and go there. If there’s no such folder, $ENTER2$ on “Create folder” creates it and moves right away.",
+    "description": "Substituted in order: $MOVE$ = key cap(s) or shortcut, keep in place; $ENTER$ = key cap(s) or shortcut, keep in place; $SHIFTENTER$ = key cap(s) or shortcut, keep in place; $ENTER2$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — move along the list. A row enters an expanded folder and leaves it at the folder’s edge.",
+    "description": "Substituted in order: $UP$ = key cap(s) or shortcut, keep in place; $DOWN$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — new folder; you can type the name right away. If anything is marked, the marked items end up in it.",
+    "description": "Substituted in order: $NEW$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — rename: $ENTER$ — save, $ESC$ — cancel.",
+    "description": "Substituted in order: $RENAME$ = key cap(s) or shortcut, keep in place; $ENTER$ = key cap(s) or shortcut, keep in place; $ESC$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — delete with confirmation. A folder with contents or several items can’t be deleted with a single Enter — “Cancel” is selected by default.",
+    "description": "Substituted in order: $DELETE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — copy the address (for a folder or marked items — all addresses, one per line).",
+    "description": "Substituted in order: $COPY$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — undo the last change made in the panel: delete, rename, move, new folder, address from the tab; $REDO$ — redo it. After a change, the message at the bottom has an “Undo” button. The history is shared by all windows and kept until the browser closes (up to 50 steps); changes made in the Bookmark manager or by sync aren’t undone.",
+    "description": "Help, “Edit” section. Substituted in order: $UNDO$ = key cap(s) or shortcut, keep in place; $REDO$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "Got a pile in “Inbox”? You can sort it out without touching the mouse."
+  },
+  "help_sort_mark_title": {
+    "message": "Mark"
+  },
+  "help_sort_move_title": {
+    "message": "Move"
+  },
+  "help_sort_edit_title": {
+    "message": "Edit"
+  },
+  "help_sets_1": {
+    "message": "Mark bookmarks and press $OPEN$, or press $ALT$ on a folder.",
+    "description": "Substituted in order: $OPEN$ = key cap(s) or shortcut, keep in place; $ALT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "The panel asks for a group name: type one and the tabs are gathered into a group with that name (for a folder it’s filled in already); leave it empty and they open as regular tabs."
+  },
+  "help_sets_3": {
+    "message": "Bookmarks that are already open aren’t opened a second time: their tabs just join the group."
+  },
+  "help_sets_why": {
+    "message": "A morning set of tabs, a project, research — with one command."
+  },
+  "help_own_settings_link": {
+    "message": "settings"
+  },
+  "help_own_1": {
+    "message": "In $SETTINGS$: “+” records a shortcut, “×” removes it, “reset” restores the standard one. If a shortcut already belongs to another command, settings ask whether to take it over.",
+    "description": "Substituted in order: $SETTINGS$ = button that opens the settings page",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "Sequences are possible — $SEQ$ — and double presses — $SEQ2$.",
+    "description": "Substituted in order: $SEQ$ = key sequence (pressed one after another); $SEQ2$ = key sequence (pressed one after another)",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "The $VIM$ preset in one button: $JKHL$, $SEQ$ and $SHIFTG$, $SEQ2$ — delete, $SEQ3$ — copy, $COLON$ — palette.",
+    "description": "Substituted in order: $VIM$ = the name \"Vim\" (do not translate); $JKHL$ = four key caps j k h l; $SEQ$ = key sequence (pressed one after another); $SHIFTG$ = key cap(s) or shortcut, keep in place; $SEQ2$ = key sequence (pressed one after another); $SEQ3$ = key sequence (pressed one after another); $COLON$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "Keys work on any layout: they are matched by position, so on a Russian layout $R$ is still the same key, and $SLASH$ and $QUESTION$ are the same keys as on the English one.",
+    "description": "Substituted in order: $R$ = key cap(s) or shortcut, keep in place; $SLASH$ = key cap(s) or shortcut, keep in place; $QUESTION$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "extension shortcut settings"
+  },
+  "help_own_5": {
+    "message": "The panel’s own shortcut ($GLOBAL$) is changed in the browser: $LINK$.",
+    "description": "Substituted in order: $GLOBAL$ = panel shortcut (key caps); $LINK$ = button that opens the browser shortcut settings",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "Every action is a command, and any command can have its own keys."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — change the view: normal → with address (site under the title; for a folder, how many bookmarks it holds) → compact.",
+    "description": "Substituted in order: $CYCLE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — the panel shows only this folder. Search and moving work inside it too.",
+    "description": "Substituted in order: $B$ = setting name in bold, as on the settings page",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — swaps $OPEN$ and $ALT$.",
+    "description": "Substituted in order: $B$ = setting name in bold, as on the settings page; $OPEN$ = key cap(s) or shortcut, keep in place; $ALT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — a click on the page or on the browser interface closes it; switching to another app doesn’t.",
+    "description": "Substituted in order: $B$ = setting name in bold, as on the settings page",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "Each window has its own panel. Expanded folders and the cursor position are remembered."
+  },
+  "help_view_6": {
+    "message": "There is no header: the search line appears at the top only while you search, and the “Marked” bar at the bottom only while something is marked."
+  },
+  "help_view_private": {
+    "message": "Everything is stored in the browser: the extension sends neither your bookmarks nor your history anywhere."
+  },
+  "help_all_intro": {
+    "message": "Your current shortcuts. Commands without keys are available from the palette ($PALETTE$).",
+    "description": "Substituted in order: $PALETTE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "In the search box"
+  },
+  "help_all_pick": {
+    "message": "Select a result"
+  },
+  "help_all_open": {
+    "message": "Open / in another tab / return the tab to the address"
+  },
+  "help_all_show": {
+    "message": "Show the match in the tree"
+  },
+  "help_all_leave": {
+    "message": "Leave search"
+  },
+  "help_all_palette": {
+    "message": "In the palette and folder picker"
+  },
+  "help_all_run": {
+    "message": "Select / run"
+  },
+  "help_all_move_go": {
+    "message": "Move and go to the folder"
+  },
+  "help_all_close": {
+    "message": "Close"
+  },
+  "help_mouse_open": {
+    "message": "Open a bookmark, expand or collapse a folder"
+  },
+  "help_mouse_open_keys": {
+    "message": "click"
+  },
+  "help_mouse_other": {
+    "message": "Open in another tab"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+click",
+    "description": "Substituted in order: $MOD$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "Open in a new tab; for a folder — open its bookmarks"
+  },
+  "help_mouse_new_keys": {
+    "message": "middle button"
+  },
+  "help_mouse_folder": {
+    "message": "Open the folder’s bookmarks"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+click on the folder",
+    "description": "Substituted in order: $MOD$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "Mark"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+click",
+    "description": "Substituted in order: $SHIFT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "Close the bookmark’s tab"
+  },
+  "help_mouse_close_keys": {
+    "message": "cross on hover"
+  },
+  "help_mouse_menu": {
+    "message": "Menu: open in a new window, edit, cut, copy, paste, delete"
+  },
+  "help_mouse_menu_keys": {
+    "message": "right button"
+  },
+  "help_mouse_empty": {
+    "message": "Search, palette, settings, undo"
+  },
+  "help_mouse_empty_keys": {
+    "message": "right button on an empty spot"
+  },
+  "help_news_25_1": {
+    "message": "The interface and help come in 10 languages: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية — in the browser’s language. Right-to-left writing is supported; community translations come through the repository."
+  },
+  "help_news_25_2": {
+    "message": "In right-to-left languages ← expands a folder and → collapses it."
+  },
+  "help_news_25_3": {
+    "message": "Removed the search for text typed on the wrong keyboard layout. The search field shows how many matches were found."
+  },
+  "help_news_25_4": {
+    "message": "Marked rows have a check mark; messages are easier to see in the dark theme; new palette icon."
+  },
+  "help_news_25_5": {
+    "message": "System folders and managed bookmarks explain why they can’t be marked, edited, moved or deleted."
+  },
+  "help_news_25_6": {
+    "message": "Settings: changes from other tabs show up at once, the folder list refreshes after an import, and changing the key preset is confirmed in a dialog of its own."
+  },
+  "help_news_25_7": {
+    "message": "Fixed: a quick double V skipped a view; Alt+B after closing another window could close the panel instead of opening it in the current window; “Save tab address” on a new tab in Edge, Brave, Vivaldi and Opera saved the start page address into the bookmark."
+  },
+  "help_news_26_1": {
+    "message": "Undo and redo edits made in the panel: ⌘Z / ⌘⇧Z on Mac, Ctrl+Z and Ctrl+Shift+Z or Ctrl+Y elsewhere, or the “Undo” button in the message. A deleted folder comes back with its contents. The history keeps 50 steps and is shared by all windows until the browser is closed."
+  },
+  "help_news_26_2": {
+    "message": "Drag bookmarks, folders and marked items with the mouse: above, below or into a folder. A folder opens when you hold an item over it, and the list scrolls near the edge."
+  },
+  "help_news_26_3": {
+    "message": "The right-click menu works like the browser’s bookmark menu: open in a new tab, new window, split view or Incognito window; edit; cut, copy and paste; delete; add a page or folder; open the bookmarks manager. Shift+F10 opens it from the keyboard."
+  },
+  "help_news_26_4": {
+    "message": "The panel’s own header is gone: the search field shows only while you search, and “Marked: N” is a bar at the bottom."
+  },
+  "help_news_24_1": {
+    "message": "Faster on large collections: the tree is re-read less often, search and the folder picker build faster."
+  },
+  "help_news_24_2": {
+    "message": "Folder picker: in tree order, recent folders separately, “Create folder” if there’s no such one."
+  },
+  "help_news_24_3": {
+    "message": "You can type the new folder’s name right after $NEW$.",
+    "description": "Substituted in order: $NEW$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "The cursor is easier to see; a collapsed folder shows that a tab inside is open. New tabs open next to the current one."
+  },
+  "help_news_24_5": {
+    "message": "Opening a set doesn’t duplicate open tabs. Closing the tabs of several bookmarks and replacing an address ask for confirmation."
+  },
+  "help_news_24_6": {
+    "message": "On a Russian layout, symbols are read by key position ($QUESTION$ opens the palette). On Mac $CTRL$ no longer equals $CMD$.",
+    "description": "Substituted in order: $QUESTION$ = key cap(s) or shortcut, keep in place; $CTRL$ = key cap(s) or shortcut, keep in place; $CMD$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: the Russian layout is recognized at once, without typed letters — $CHORD$ opens the palette, not settings.",
+    "description": "Substituted in order: $CHORD$ = key caps of a shortcut",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "The key editor asks before taking a shortcut from another command and shows the selected preset."
+  },
+  "help_news_24_9": {
+    "message": "Fixed: letters typed right after $NEW$ acted as commands; Space could confirm a deletion; after renaming from search, focus went to the list; a stray $BS$ in search closed a tab.",
+    "description": "Substituted in order: $NEW$ = key cap(s) or shortcut, keep in place; $BS$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "Move to a folder by name: $MOVE$, recent folders on top.",
+    "description": "Substituted in order: $MOVE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "Save the current tab’s address in the bookmark: $UPDATE$.",
+    "description": "Substituted in order: $UPDATE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "View with the address under the title, and a compact one: $CYCLE$.",
+    "description": "Substituted in order: $CYCLE$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "This help: $HELP$.",
+    "description": "Substituted in order: $HELP$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "Search in the panel: by title, address and folder, with highlighting and on any layout; $TAB$ shows the match in place.",
+    "description": "Substituted in order: $TAB$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ and other symbols work on the Russian layout too.",
+    "description": "Substituted in order: $SLASH$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "All actions became commands: the command palette and your own shortcuts in settings, the Vim preset, sequences and double presses."
+  },
+  "help_news_21_2": {
+    "message": "Copy address, mark everything in a folder, collapse all folders. Settings open in a tab."
+  },
+  "help_news_20_1": {
+    "message": "New folders, moving rows with $OPTION$/$ALT$, marks with Space.",
+    "description": "Substituted in order: $OPTION$ = key cap(s) or shortcut, keep in place; $ALT$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "Open a set of bookmarks, including as a tab group named after the folder. An “open in a new tab” switch."
+  },
+  "help_news_1_1": {
+    "message": "The panel on a single shortcut: open, return focus, close. Start folder."
+  },
+  "help_news_1_2": {
+    "message": "Bookmarks as pinned tabs, like in Arc, rename and delete, auto-hide, working in several windows, a new design."
+  },
+  "help_news_earlier": {
+    "message": "Earlier versions"
+  },
+  "help_quick_title": {
+    "message": "Quick start"
+  },
+  "help_nav_pinned": {
+    "message": "As pinned tabs"
+  },
+  "help_pinned_title": {
+    "message": "Bookmarks as pinned tabs"
+  },
+  "help_find_title": {
+    "message": "Find and open"
+  },
+  "help_sort_title": {
+    "message": "Sort out bookmarks"
+  },
+  "help_sets_title": {
+    "message": "Open as a set"
+  },
+  "help_own_title": {
+    "message": "Your own keys"
+  },
+  "help_view_title": {
+    "message": "View and settings"
+  },
+  "help_all_title": {
+    "message": "All keys"
+  },
+  "help_mouse_title": {
+    "message": "Mouse"
+  },
+  "help_news_title": {
+    "message": "What’s new"
+  }
+}

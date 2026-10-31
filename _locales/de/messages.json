@@ -1,0 +1,2103 @@
+{
+  "locale": {
+    "message": "de"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "Lesezeichen"
+  },
+  "ext_description": {
+    "message": "Lesezeichen in der Seitenleiste per Tastenkürzel, mit Fokus für die Navigation mit den Pfeiltasten"
+  },
+  "command_toggle": {
+    "message": "Lesezeichen-Seitenleiste öffnen / fokussieren / schließen"
+  },
+  "all_bookmarks": {
+    "message": "Alle Lesezeichen"
+  },
+  "untitled": {
+    "message": "Ohne Titel"
+  },
+  "bookmarklet": {
+    "message": "Bookmarklet"
+  },
+  "folder_empty": {
+    "message": "leer"
+  },
+  "cancel": {
+    "message": "Abbrechen"
+  },
+  "open": {
+    "message": "Öffnen"
+  },
+  "delete": {
+    "message": "Löschen"
+  },
+  "close": {
+    "message": "Schließen"
+  },
+  "nothing_found": {
+    "message": "Keine Treffer"
+  },
+  "more_results": {
+    "message": "$COUNT$ weitere – Suche eingrenzen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "Leertaste"
+  },
+  "group_nav": {
+    "message": "Navigation"
+  },
+  "group_open": {
+    "message": "Öffnen"
+  },
+  "group_marks": {
+    "message": "Markierung"
+  },
+  "group_edit": {
+    "message": "Bearbeiten"
+  },
+  "group_panel": {
+    "message": "Seitenleiste"
+  },
+  "cmd_search": {
+    "message": "Lesezeichen durchsuchen"
+  },
+  "cmd_search_note": {
+    "message": "nach Titel, Adresse und Ordner"
+  },
+  "cmd_search_words": {
+    "message": "suchen suche durchsuchen finden filtern"
+  },
+  "cmd_cursor_down": {
+    "message": "Cursor nach unten"
+  },
+  "cmd_cursor_down_words": {
+    "message": "unten runter abwärts nächster"
+  },
+  "cmd_cursor_up": {
+    "message": "Cursor nach oben"
+  },
+  "cmd_cursor_up_words": {
+    "message": "oben hoch aufwärts vorheriger"
+  },
+  "cmd_cursor_first": {
+    "message": "Zum Listenanfang"
+  },
+  "cmd_cursor_first_words": {
+    "message": "anfang beginn oben erster"
+  },
+  "cmd_cursor_last": {
+    "message": "Zum Listenende"
+  },
+  "cmd_cursor_last_words": {
+    "message": "ende unten letzter"
+  },
+  "cmd_folder_expand": {
+    "message": "Ordner aufklappen"
+  },
+  "cmd_folder_expand_words": {
+    "message": "aufklappen ausklappen öffnen ordner"
+  },
+  "cmd_folder_collapse": {
+    "message": "Ordner zuklappen"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "bei einem Lesezeichen – zu seinem Ordner"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "zuklappen einklappen schließen ordner übergeordneter"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "Alle Ordner zuklappen"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "alle ordner zuklappen einklappen"
+  },
+  "cmd_open": {
+    "message": "Öffnen"
+  },
+  "cmd_open_note": {
+    "message": "mit Markierung – alles Markierte"
+  },
+  "cmd_open_words": {
+    "message": "öffnen aufrufen gehen besuchen"
+  },
+  "cmd_open_alt": {
+    "message": "In anderem Tab öffnen"
+  },
+  "cmd_open_alt_note": {
+    "message": "bei einem Ordner – alle seine Lesezeichen"
+  },
+  "cmd_open_alt_words": {
+    "message": "öffnen anderer tab ordner"
+  },
+  "cmd_open_newTab": {
+    "message": "In neuem Tab öffnen"
+  },
+  "cmd_open_newTab_words": {
+    "message": "öffnen neuer tab"
+  },
+  "cmd_open_currentTab": {
+    "message": "Im aktuellen Tab öffnen"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "öffnen aktueller tab"
+  },
+  "cmd_open_group": {
+    "message": "Als Tabgruppe öffnen…"
+  },
+  "cmd_open_group_words": {
+    "message": "öffnen tabgruppe gruppe satz"
+  },
+  "cmd_open_reset": {
+    "message": "Tab auf Adresse des Lesezeichens zurücksetzen"
+  },
+  "cmd_open_reset_words": {
+    "message": "zurücksetzen zurück tab adresse ursprüngliche"
+  },
+  "cmd_mark_toggle": {
+    "message": "Markieren"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "erneut – Markierung aufheben"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "markieren auswählen umschalten"
+  },
+  "cmd_mark_down": {
+    "message": "Markieren und nach unten"
+  },
+  "cmd_mark_down_words": {
+    "message": "markieren auswählen unten runter"
+  },
+  "cmd_mark_up": {
+    "message": "Markieren und nach oben"
+  },
+  "cmd_mark_up_words": {
+    "message": "markieren auswählen oben hoch"
+  },
+  "cmd_mark_all": {
+    "message": "Alles im Ordner markieren"
+  },
+  "cmd_mark_all_note": {
+    "message": "erneut – Markierung aufheben"
+  },
+  "cmd_mark_all_words": {
+    "message": "alles markieren auswählen alle"
+  },
+  "cmd_mark_clear": {
+    "message": "Markierung aufheben"
+  },
+  "cmd_mark_clear_words": {
+    "message": "markierung aufheben entfernen löschen"
+  },
+  "cmd_folder_new": {
+    "message": "Neuer Ordner"
+  },
+  "cmd_folder_new_note": {
+    "message": "mit Markierung – legt die markierten Elemente darin ab"
+  },
+  "cmd_folder_new_words": {
+    "message": "ordner neu erstellen anlegen hinzufügen"
+  },
+  "cmd_rename": {
+    "message": "Umbenennen"
+  },
+  "cmd_rename_words": {
+    "message": "umbenennen name titel bearbeiten"
+  },
+  "cmd_edit": {
+    "message": "Titel und Adresse bearbeiten…"
+  },
+  "cmd_edit_note": {
+    "message": "in einem Fenster, wie im Browser"
+  },
+  "cmd_edit_words": {
+    "message": "bearbeiten titel adresse",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "In Ordner verschieben…"
+  },
+  "cmd_move_to_note": {
+    "message": "Ordner nach Namen auswählen"
+  },
+  "cmd_move_to_words": {
+    "message": "verschieben ordner sortieren einordnen ablegen"
+  },
+  "cmd_url_update": {
+    "message": "Adresse des Tabs speichern"
+  },
+  "cmd_url_update_note": {
+    "message": "das Lesezeichen erhält die Adresse des aktuellen Tabs"
+  },
+  "cmd_url_update_words": {
+    "message": "speichern aktualisieren adresse url tab"
+  },
+  "cmd_delete": {
+    "message": "Löschen…"
+  },
+  "cmd_delete_words": {
+    "message": "löschen entfernen"
+  },
+  "cmd_copy_url": {
+    "message": "Adresse kopieren"
+  },
+  "cmd_copy_url_note": {
+    "message": "bei Ordner und Markierung – alle Adressen"
+  },
+  "cmd_copy_url_words": {
+    "message": "kopieren adresse url link zwischenablage"
+  },
+  "cmd_cut": {
+    "message": "Ausschneiden"
+  },
+  "cmd_cut_note": {
+    "message": "Einfügen verschiebt die Lesezeichen dorthin"
+  },
+  "cmd_copy": {
+    "message": "Kopieren"
+  },
+  "cmd_copy_note": {
+    "message": "Einfügen erstellt eine Kopie; die Adressen landen auch in der Zwischenablage"
+  },
+  "cmd_paste": {
+    "message": "Einfügen"
+  },
+  "cmd_paste_note": {
+    "message": "nach dem Cursor oder in einen aufgeklappten Ordner"
+  },
+  "cmd_cut_words": {
+    "message": "ausschneiden verschieben zwischenablage",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "kopieren kopie duplizieren zwischenablage",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "einfügen zwischenablage",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "Tab des Lesezeichens schließen"
+  },
+  "cmd_tab_close_note": {
+    "message": "bei Ordner und Markierung – alle ihre Tabs"
+  },
+  "cmd_tab_close_words": {
+    "message": "schließen tab"
+  },
+  "cmd_move_up": {
+    "message": "Nach oben verschieben"
+  },
+  "cmd_move_up_words": {
+    "message": "verschieben oben hoch"
+  },
+  "cmd_move_down": {
+    "message": "Nach unten verschieben"
+  },
+  "cmd_move_down_words": {
+    "message": "verschieben unten runter"
+  },
+  "cmd_undo": {
+    "message": "Rückgängig machen"
+  },
+  "cmd_undo_words": {
+    "message": "rückgängig zurück"
+  },
+  "cmd_redo": {
+    "message": "Wiederholen"
+  },
+  "cmd_redo_words": {
+    "message": "wiederholen erneut"
+  },
+  "cmd_palette": {
+    "message": "Befehlspalette"
+  },
+  "cmd_palette_words": {
+    "message": "palette befehle aktionen"
+  },
+  "cmd_menu": {
+    "message": "Menü öffnen"
+  },
+  "cmd_menu_note": {
+    "message": "wie die rechte Maustaste"
+  },
+  "cmd_menu_words": {
+    "message": "menü kontextmenü rechtsklick",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "Ansicht wechseln"
+  },
+  "cmd_view_cycle_note": {
+    "message": "normal, mit Adresse, kompakt"
+  },
+  "cmd_view_cycle_words": {
+    "message": "ansicht wechseln darstellung modus kompakt"
+  },
+  "cmd_help": {
+    "message": "Hilfe"
+  },
+  "cmd_help_note": {
+    "message": "alle Funktionen und Tasten"
+  },
+  "cmd_help_words": {
+    "message": "hilfe anleitung handbuch tastenkürzel tasten"
+  },
+  "cmd_settings": {
+    "message": "Einstellungen"
+  },
+  "cmd_settings_words": {
+    "message": "einstellungen optionen konfiguration präferenzen"
+  },
+  "cmd_escape": {
+    "message": "Abbrechen oder schließen"
+  },
+  "cmd_escape_note": {
+    "message": "hebt Markierung auf, beendet die Suche, sonst schließt die Seitenleiste"
+  },
+  "cmd_escape_words": {
+    "message": "abbrechen beenden schließen escape"
+  },
+  "cmd_panel_close": {
+    "message": "Seitenleiste schließen"
+  },
+  "cmd_panel_close_words": {
+    "message": "schließen seitenleiste panel ausblenden"
+  },
+  "panel_tree": {
+    "message": "Lesezeichen"
+  },
+  "menu_open_new_tab": {
+    "message": "In neuem Tab öffnen"
+  },
+  "menu_open_new_window": {
+    "message": "In neuem Fenster öffnen"
+  },
+  "menu_open_split": {
+    "message": "In geteilter Ansicht öffnen"
+  },
+  "menu_open_incognito": {
+    "message": "In Inkognitofenster öffnen"
+  },
+  "menu_open_all": {
+    "message": "Alle ($COUNT$) öffnen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "Alle in neuem Fenster öffnen"
+  },
+  "menu_open_all_incognito": {
+    "message": "Alle in Inkognitofenster öffnen"
+  },
+  "menu_edit": {
+    "message": "Bearbeiten…"
+  },
+  "menu_rename": {
+    "message": "Umbenennen…"
+  },
+  "menu_delete": {
+    "message": "Löschen"
+  },
+  "menu_add_page": {
+    "message": "Seite hinzufügen…"
+  },
+  "menu_add_folder": {
+    "message": "Ordner hinzufügen…"
+  },
+  "menu_manager": {
+    "message": "Lesezeichenmanager öffnen"
+  },
+  "menu_incognito_off": {
+    "message": "Erlauben Sie der Erweiterung den Inkognitomodus: chrome://extensions → „Details“ → „Im Inkognitomodus zulassen“"
+  },
+  "menu_bookmarklet": {
+    "message": "Ein Bookmarklet funktioniert nur auf der geöffneten Seite – klicken Sie darauf"
+  },
+  "menu_edit_single": {
+    "message": "Es lässt sich nur ein Element auf einmal bearbeiten"
+  },
+  "search_placeholder": {
+    "message": "Titel, Adresse oder Ordner"
+  },
+  "search_found": {
+    "message": "Treffer: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "Keine Treffer · $KEY$ – zurück zur Liste",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "Noch keine Lesezeichen."
+  },
+  "empty_folder": {
+    "message": "Dieser Ordner ist noch leer."
+  },
+  "empty_add_hint": {
+    "message": "Mit $KEY$ im Browser fügen Sie eine Seite hinzu.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ – neuer Ordner.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "Gruppenname"
+  },
+  "tab_group_placeholder": {
+    "message": "Gruppenname – optional"
+  },
+  "tab_group_hint": {
+    "message": "Mit Namen kommen die Tabs in eine Gruppe, ohne Namen werden sie als normale Tabs geöffnet."
+  },
+  "palette_placeholder": {
+    "message": "Befehl…"
+  },
+  "close_tab": {
+    "message": "Tab schließen"
+  },
+  "rename_label": {
+    "message": "Titel"
+  },
+  "new_folder_title": {
+    "message": "Neuer Ordner"
+  },
+  "no_bookmarks_here": {
+    "message": "Hier gibt es keine Lesezeichen"
+  },
+  "copied_addresses": {
+    "message": "Adressen kopiert: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "Adresse kopiert"
+  },
+  "copy_failed": {
+    "message": "Kopieren nicht möglich"
+  },
+  "view_changed": {
+    "message": "Ansicht: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "normal"
+  },
+  "view_detailed": {
+    "message": "mit Adresse"
+  },
+  "view_dense": {
+    "message": "kompakt"
+  },
+  "marked": {
+    "message": "Markiert: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "Markiert: $COUNT$ · $KEY$ – aufheben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "Systemordner können nicht markiert werden"
+  },
+  "locked_system_edit": {
+    "message": "Systemordner können nicht geändert werden"
+  },
+  "locked_managed": {
+    "message": "Diese Lesezeichen können nicht geändert werden"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ – alle Befehle",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "Rechtsklick – Menü"
+  },
+  "updated": {
+    "message": "Aktualisiert auf Version $VERSION$.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "Neuigkeiten – $KEY$ drücken",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "Ordner konnte nicht erstellt werden"
+  },
+  "move_failed": {
+    "message": "Verschieben nicht möglich"
+  },
+  "delete_bookmark": {
+    "message": "Lesezeichen „$TITLE$“ löschen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "Lesezeichen ohne Titel löschen?"
+  },
+  "delete_folder": {
+    "message": "Ordner „$TITLE$“ löschen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "Lesezeichen insgesamt, einschließlich Ordnerinhalt: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "Darin sind nur leere Ordner."
+  },
+  "delete_folder_empty": {
+    "message": "Der Ordner ist leer."
+  },
+  "url_only_bookmarks": {
+    "message": "Nur Lesezeichen haben eine Adresse"
+  },
+  "url_locked": {
+    "message": "Dieses Lesezeichen kann nicht geändert werden"
+  },
+  "url_loading": {
+    "message": "Die Seite wird noch geladen"
+  },
+  "url_blank_tab": {
+    "message": "Der aktuelle Tab hat keine Adresse"
+  },
+  "url_same": {
+    "message": "Die Adresse ist bereits dieselbe"
+  },
+  "url_replace_title": {
+    "message": "Adresse von „$TITLE$“ ersetzen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "Ersetzen"
+  },
+  "url_failed": {
+    "message": "Adresse konnte nicht geändert werden"
+  },
+  "url_updated": {
+    "message": "Adresse aktualisiert"
+  },
+  "undo_button": {
+    "message": "Rückgängig"
+  },
+  "undo_button_label": {
+    "message": "Rückgängig: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "Wiederholen: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "Rückgängig gemacht: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "Wiederholt: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "Nichts rückgängig zu machen"
+  },
+  "redo_nothing": {
+    "message": "Nichts zu wiederholen"
+  },
+  "undo_partial": {
+    "message": "Nur teilweise rückgängig gemacht: Einige Lesezeichen wurden anderswo geändert"
+  },
+  "redo_partial": {
+    "message": "Nur teilweise wiederholt: Einige Lesezeichen wurden anderswo geändert"
+  },
+  "undo_failed": {
+    "message": "Rückgängig machen nicht möglich: Die Lesezeichen wurden anderswo geändert"
+  },
+  "redo_failed": {
+    "message": "Wiederholen nicht möglich: Die Lesezeichen wurden anderswo geändert"
+  },
+  "history_fallback": {
+    "message": "Der ursprüngliche Ordner existiert nicht mehr – in „$FOLDER$“ abgelegt",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "„$TITLE$“ gelöscht",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "$COUNT$ Element gelöscht",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "$COUNT$ Elemente gelöscht",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "In „$TITLE$“ umbenannt",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "„$TITLE$“ verschoben",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "$COUNT$ Element verschoben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "$COUNT$ Elemente verschoben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ Element",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ Elemente",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "Ordner „$TITLE$“ erstellt",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "Ausgeschnitten: $COUNT$ – zum Verschieben einfügen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "Kopiert: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "Nichts zum Einfügen – zuerst Lesezeichen ausschneiden oder kopieren"
+  },
+  "paste_inside": {
+    "message": "Ein Ordner lässt sich nicht in sich selbst einfügen"
+  },
+  "paste_failed": {
+    "message": "Einfügen nicht möglich"
+  },
+  "undo_pasted": {
+    "message": "Eingefügt: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "„$TITLE$“ hinzugefügt",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "„$TITLE$“ geändert",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "Lesezeichen konnte nicht hinzugefügt werden"
+  },
+  "open_failed": {
+    "message": "Öffnen nicht möglich"
+  },
+  "edit_failed": {
+    "message": "Speichern nicht möglich – prüfen Sie die Adresse"
+  },
+  "edit_bookmark": {
+    "message": "Lesezeichen bearbeiten"
+  },
+  "edit_folder": {
+    "message": "Ordner umbenennen"
+  },
+  "edit_name": {
+    "message": "Name"
+  },
+  "edit_url": {
+    "message": "Adresse"
+  },
+  "save": {
+    "message": "Speichern"
+  },
+  "tab_not_open": {
+    "message": "Der Tab ist nicht geöffnet"
+  },
+  "tab_not_open_delete": {
+    "message": "Lesezeichen löschen – $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "Aktivieren Sie in den Einstellungen „Lesezeichen als angepinnte Tabs“"
+  },
+  "picker_label": {
+    "message": "In Ordner verschieben"
+  },
+  "picker_heading": {
+    "message": "„$TITLE$“ in Ordner verschieben",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "Ordnername…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ – verschieben · $SHIFT_ENTER$ – verschieben und dorthin wechseln",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "Zuletzt verwendet"
+  },
+  "picker_all": {
+    "message": "Alle Ordner"
+  },
+  "picker_start_folder": {
+    "message": "Startordner"
+  },
+  "picker_here": {
+    "message": "derzeit hier"
+  },
+  "picker_create": {
+    "message": "Ordner „$NAME$“ erstellen",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "in „$FOLDER$“",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "Dieser Ordner existiert nicht mehr"
+  },
+  "move_nothing": {
+    "message": "Es gibt nichts mehr zu verschieben"
+  },
+  "move_already_there": {
+    "message": "Bereits in diesem Ordner"
+  },
+  "moved": {
+    "message": "Nach „$FOLDER$“ verschoben",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "Lesezeichen – Hilfe"
+  },
+  "help_via_palette": {
+    "message": "Palette → „$COMMAND$“",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "Rechtsklick-Menü auf einer freien Stelle"
+  },
+  "help_table_from_palette": {
+    "message": "aus der Palette"
+  },
+  "help_table_menu": {
+    "message": "Rechtsklick-Menü"
+  },
+  "help_global_not_set": {
+    "message": "Tastenkürzel nicht festgelegt"
+  },
+  "options_title": {
+    "message": "Lesezeichen-Einstellungen"
+  },
+  "options_intro": {
+    "message": "Alle Funktionen, Abläufe und Tasten finden Sie in der $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "Hilfe"
+  },
+  "options_root": {
+    "message": "Startordner"
+  },
+  "options_root_hint": {
+    "message": "Die Seitenleiste zeigt den Inhalt dieses Ordners."
+  },
+  "options_view": {
+    "message": "Listenansicht"
+  },
+  "options_view_normal": {
+    "message": "Normal"
+  },
+  "options_view_detailed": {
+    "message": "Mit Adresse – Website unter dem Titel"
+  },
+  "options_view_dense": {
+    "message": "Kompakt"
+  },
+  "options_view_hint": {
+    "message": "In der Seitenleiste wechselt $KEY$ zwischen den Ansichten.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "aus der Palette"
+  },
+  "options_new_tab": {
+    "message": "Lesezeichen in neuem Tab öffnen"
+  },
+  "options_new_tab_hint": {
+    "message": "Aus: „Öffnen“ nutzt den aktuellen Tab, „In anderem Tab öffnen“ einen neuen. An – umgekehrt."
+  },
+  "options_pinned": {
+    "message": "Lesezeichen als angepinnte Tabs"
+  },
+  "options_pinned_hint": {
+    "message": "Wie in Arc: Ist der Tab eines Lesezeichens schon geöffnet, wechselt „Öffnen“ zu ihm, statt ihn erneut zu öffnen. Geöffnete Lesezeichen sind mit einem Punkt markiert."
+  },
+  "options_auto_hide": {
+    "message": "Seitenleiste schließen, wenn der Fokus auf die Seite wechselt"
+  },
+  "options_auto_hide_hint": {
+    "message": "Ein Klick auf die Seite oder die Browseroberfläche schließt die Seitenleiste. Beim Wechsel zu einer anderen App bleibt sie geöffnet."
+  },
+  "options_keys": {
+    "message": "Tasten der Seitenleiste"
+  },
+  "options_preset_standard": {
+    "message": "Standard"
+  },
+  "options_preset_standard_title": {
+    "message": "Alle Tastenkürzel durch die Standardkürzel ersetzen"
+  },
+  "options_preset_vim_title": {
+    "message": "Standard plus Vim-Tasten: j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "„+“ zeichnet ein Tastenkürzel auf: eine Taste, mit Zusatztasten, eine Tastenfolge ($SEQUENCE$) oder einen Doppeldruck ($DOUBLE$) – drücken Sie die zweite Taste sofort. $ENTER$ nach einer Taste – fertig, $ESC$ – Aufzeichnung abbrechen, „×“ – entfernen. Ist das Tastenkürzel schon vergeben, werden Sie gefragt, ob Sie es übernehmen möchten. Alle Befehle finden Sie auch in der Befehlspalette der Seitenleiste.",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "Seitenleiste öffnen und schließen: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "in den Browsereinstellungen ändern"
+  },
+  "options_global_not_set": {
+    "message": "nicht festgelegt"
+  },
+  "options_saved": {
+    "message": "Gespeichert"
+  },
+  "options_saved_notes": {
+    "message": "Gespeichert: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "von „$COMMAND$“ entfernt",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "die Palette öffnet sich jetzt nur mit der Schaltfläche der Seitenleiste"
+  },
+  "options_delayed": {
+    "message": "ein einzelner Tastendruck wirkt mit kurzer Verzögerung"
+  },
+  "options_remove_binding": {
+    "message": "$KEY$ von „$COMMAND$“ entfernen",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "Tastenkürzel für „$COMMAND$“ hinzufügen",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "zurücksetzen"
+  },
+  "options_reset_title": {
+    "message": "Standardkürzel von „$COMMAND$“ wiederherstellen",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "nur mit der Schaltfläche der Seitenleiste"
+  },
+  "options_only_palette": {
+    "message": "nur aus der Palette"
+  },
+  "options_press_keys": {
+    "message": "Tastenkürzel drücken…"
+  },
+  "options_taken": {
+    "message": "bereits von „$COMMAND$“ belegt – Enter: übernehmen, Esc: abbrechen",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "eigene Tastenkürzel"
+  },
+  "options_replace_preset": {
+    "message": "Ihre Tastenkürzel durch die Vorlage „$PRESET$“ ersetzen?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "Ihre geänderten Tastenkürzel gehen verloren."
+  },
+  "options_replace_ok": {
+    "message": "Ersetzen"
+  },
+  "options_preset_applied": {
+    "message": "Die Vorlage „$PRESET$“ wurde angewendet",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ Lesezeichen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ Lesezeichen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "$COUNT$ Tab öffnen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "$COUNT$ Tabs öffnen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ bereits geöffnet)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ bereits geöffnet)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "$COUNT$ Tab schließen?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "$COUNT$ Tabs schließen?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "Das sind die Tabs von $COUNT$ Lesezeichen in diesem Fenster.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "Das sind die Tabs von $COUNT$ Lesezeichen in diesem Fenster.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "$COUNT$ ausgewähltes Element löschen?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "$COUNT$ ausgewählte Elemente löschen?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "Der gesamte Inhalt wird ebenfalls gelöscht: $COUNT$ Lesezeichen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "Der gesamte Inhalt wird ebenfalls gelöscht: $COUNT$ Lesezeichen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "$COUNT$ Element in Ordner verschieben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "$COUNT$ Elemente in Ordner verschieben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "$COUNT$ Element nach „$FOLDER$“ verschoben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "$COUNT$ Elemente nach „$FOLDER$“ verschoben",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "Hilfe"
+  },
+  "help_heading": {
+    "message": "Lesezeichen in der Seitenleiste"
+  },
+  "help_lead": {
+    "message": "Ihre Lesezeichen neben der Seite, alles per Tastatur: finden, öffnen, in Ordnern sortieren, als angepinnte Tabs behalten. Entstanden beim Umstieg von Arc auf einen Chromium-Browser."
+  },
+  "help_settings_button": {
+    "message": "Einstellungen"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · Die Tasten unten sind Ihre aktuellen, einschließlich Ihrer Änderungen.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "Seitenleiste öffnen"
+  },
+  "help_nav_label": {
+    "message": "Abschnitte"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ – die Seitenleiste öffnen. Erneut drücken schließt sie; ist der Fokus auf die Seite gewechselt, holt dasselbe Tastenkürzel ihn zurück in die Seitenleiste. Das Erweiterungssymbol öffnet die Seitenleiste ebenfalls – pinnen Sie es im Erweiterungsmenü des Browsers an.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ – durch die Liste gehen, $EXPAND$ $COLLAPSE$ – einen Ordner auf- und zuklappen, $OPEN$ – öffnen.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ – Suche: Tippen Sie einen Titel, eine Website oder einen Ordner.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ – mehrere Lesezeichen markieren, $MOVE$ – sie nach Namen in einen Ordner verschieben.",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ – Palette: alle Befehle mit ihren Tasten, falls Sie etwas vergessen.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "Rechtsklick auf ein Lesezeichen, einen Ordner oder eine freie Stelle – ein Menü wie im Browser: in neuem Fenster öffnen, bearbeiten, ausschneiden, kopieren, einfügen. $MENU$ – dasselbe über die Tastatur.",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ – diese Hilfe. Neue Lesezeichen fügen Sie wie im Browser üblich hinzu – $CHORD$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "In Sprachen, die von rechts nach links geschrieben werden, vertauschen die Pfeiltasten ← und → ihre Funktion: ← klappt einen Ordner auf, → klappt ihn zu."
+  },
+  "help_pinned_why": {
+    "message": "Wie in Arc: Ein Lesezeichen hat seinen „eigenen“ Tab. Öffnen Sie es, und das Lesezeichen merkt sich den Tab, auch wenn Sie sich über Links davon entfernen. Dieser Modus ist standardmäßig aktiviert und lässt sich in den Einstellungen ausschalten."
+  },
+  "help_pinned_1": {
+    "message": "Ein Punkt rechts bedeutet, dass das Lesezeichen einen geöffneten Tab hat; ein blauer steht für den aktuellen Tab. Ein Ring an einem zugeklappten Ordner bedeutet, dass darin etwas geöffnet ist."
+  },
+  "help_pinned_2": {
+    "message": "$OPEN$ bei einem bereits geöffneten Lesezeichen wechselt zu dessen Tab, statt einen zweiten zu öffnen. Hat das Lesezeichen mehrere Tabs, geht es zu dem, den Sie zuletzt verwendet haben.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ – den Tab auf die Adresse des Lesezeichens zurücksetzen (Sie sind den Links weit gefolgt).",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ – umgekehrt: die Adresse, auf der Sie sind, im Lesezeichen speichern. Im eigenen Tab des Lesezeichens geschieht das sofort, sonst fragt die Seitenleiste vorher nach.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ oder das Kreuz beim Darüberfahren – den Tab des Lesezeichens schließen. Bei einem Ordner oder markierten Elementen – alle ihre Tabs (mit Rückfrage).",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "Ein Lesezeichen übernimmt keinen fremden Tab: Hat der aktuelle Tab ein anderes Lesezeichen geöffnet, öffnet sich das neue daneben."
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ – das Suchfeld in der Kopfzeile. Es sucht nach Titel, Adresse und Ordner; Treffer im Titel stehen zuerst.",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "arbeit lin"
+  },
+  "help_find_2": {
+    "message": "Sie können nach Ordner eingrenzen: $QUERY$ findet Linear im Ordner „Arbeit“.",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ – auswählen, $ENTER$ – öffnen, $MODENTER$ – in anderem Tab, $TAB$ – Treffer an seiner Stelle in der Baumansicht zeigen, $ESC$ – zurück dorthin, wo Sie waren.",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "$ENTER$ auf einem Ordner – in der Baumansicht in den Ordner wechseln.",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "Befehle der Palette ($PALETTE$) funktionieren auch bei Treffern: „In Ordner verschieben…“, „Umbenennen“, „Löschen…“. $SHIFT$+Klick markiert einen Treffer – nach $ESC$ können Sie mit den markierten Elementen in der Baumansicht arbeiten.",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "Bei vielen Lesezeichen geht das Tippen weniger Buchstaben schneller als das Durchblättern der Baumansicht."
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ – eine Zeile markieren, $DOWN$ $UP$ – der Reihe nach markieren.",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ – alles in diesem Ordner (erneut – Markierung aufheben). $ESC$ – Markierung aufheben.",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "Die Kopfzeile zeigt, wie viele markiert sind. Markierte Elemente werden zusammen geöffnet, verschoben, kopiert und gelöscht; Umbenennen funktioniert nur bei der Zeile unter dem Cursor."
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ – in einen Ordner nach Namen: Fangen Sie an zu tippen. Ordner, in die Sie zuletzt verschoben haben, stehen zuerst. $ENTER$ – verschieben und an Ort und Stelle bleiben (praktisch zum Sortieren eines nach dem anderen), $SHIFTENTER$ – verschieben und dorthin wechseln. Gibt es keinen solchen Ordner, erstellt $ENTER2$ auf „Ordner erstellen“ ihn und verschiebt sofort.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ – durch die Liste gehen. Eine Zeile geht in einen aufgeklappten Ordner hinein und am Rand des Ordners wieder heraus.",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ – neuer Ordner; den Namen können Sie gleich eingeben. Ist etwas markiert, landen die markierten Elemente darin.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ – umbenennen: $ENTER$ – speichern, $ESC$ – abbrechen.",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ – mit Bestätigung löschen. Ein Ordner mit Inhalt oder mehrere Elemente lassen sich nicht mit einem einzigen Enter löschen – „Abbrechen“ ist standardmäßig ausgewählt.",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ – die Adresse kopieren (bei einem Ordner oder markierten Elementen – alle Adressen, eine pro Zeile).",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ – die letzte Änderung aus der Seitenleiste rückgängig machen: Löschen, Umbenennen, Verschieben, neuer Ordner, Adresse des Tabs; $REDO$ – wiederholen. Nach einer Änderung hat die Meldung unten die Schaltfläche „Rückgängig“. Der Verlauf gilt für alle Fenster und bleibt bis zum Schließen des Browsers erhalten (bis zu 50 Schritte); Änderungen im Lesezeichen-Manager oder durch die Synchronisierung werden nicht rückgängig gemacht.",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "Ein Haufen im „Posteingang“? Sie können ihn sortieren, ohne die Maus anzufassen."
+  },
+  "help_sort_mark_title": {
+    "message": "Markieren"
+  },
+  "help_sort_move_title": {
+    "message": "Verschieben"
+  },
+  "help_sort_edit_title": {
+    "message": "Bearbeiten"
+  },
+  "help_sets_1": {
+    "message": "Lesezeichen markieren und $OPEN$ drücken, oder $ALT$ auf einem Ordner drücken.",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "Die Seitenleiste fragt nach einem Gruppennamen: Geben Sie einen ein, und die Tabs werden in einer Gruppe mit diesem Namen gesammelt (bei einem Ordner ist er schon eingetragen); lassen Sie das Feld leer, werden sie als normale Tabs geöffnet."
+  },
+  "help_sets_3": {
+    "message": "Bereits geöffnete Lesezeichen werden nicht ein zweites Mal geöffnet: Ihre Tabs kommen einfach in die Gruppe."
+  },
+  "help_sets_why": {
+    "message": "Der Tab-Satz für den Morgen, ein Projekt, eine Recherche – mit einem Befehl."
+  },
+  "help_own_settings_link": {
+    "message": "Einstellungen"
+  },
+  "help_own_1": {
+    "message": "In $SETTINGS$: „+“ zeichnet ein Tastenkürzel auf, „×“ entfernt es, „zurücksetzen“ stellt das Standardkürzel wieder her. Gehört ein Tastenkürzel schon einem anderen Befehl, fragen die Einstellungen, ob Sie es übernehmen möchten.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "Möglich sind Tastenfolgen – $SEQ$ – und Doppeldrücke – $SEQ2$.",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "Die $VIM$-Vorlage mit einer Schaltfläche: $JKHL$, $SEQ$ und $SHIFTG$, $SEQ2$ – löschen, $SEQ3$ – kopieren, $COLON$ – Palette.",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "Die Tasten funktionieren bei jedem Layout: Sie werden nach ihrer Position erkannt, beim russischen Layout ist $R$ also dieselbe Taste, und $SLASH$ und $QUESTION$ sind dieselben Tasten wie beim englischen.",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "Tastenkürzel für Erweiterungen"
+  },
+  "help_own_5": {
+    "message": "Das eigene Tastenkürzel der Seitenleiste ($GLOBAL$) ändern Sie im Browser: $LINK$.",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "Jede Aktion ist ein Befehl, und jeder Befehl kann eigene Tasten haben."
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ – Ansicht wechseln: normal → mit Adresse (Website unter dem Titel; bei einem Ordner, wie viele Lesezeichen er enthält) → kompakt.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ – die Seitenleiste zeigt nur diesen Ordner. Suche und Verschieben funktionieren ebenfalls darin.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ – vertauscht $OPEN$ und $ALT$.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ – ein Klick auf die Seite oder die Browseroberfläche schließt sie; der Wechsel zu einer anderen App nicht.",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "Jedes Fenster hat seine eigene Seitenleiste. Aufgeklappte Ordner und die Cursorposition bleiben gespeichert."
+  },
+  "help_view_6": {
+    "message": "Es gibt keine Kopfzeile: Die Suchzeile erscheint oben nur während der Suche, die Leiste „Markiert“ unten nur, solange etwas markiert ist."
+  },
+  "help_view_private": {
+    "message": "Alles wird im Browser gespeichert: Die Erweiterung sendet weder Ihre Lesezeichen noch Ihren Verlauf irgendwohin."
+  },
+  "help_all_intro": {
+    "message": "Ihre aktuellen Tastenkürzel. Befehle ohne Tasten finden Sie in der Palette ($PALETTE$).",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "Im Suchfeld"
+  },
+  "help_all_pick": {
+    "message": "Treffer auswählen"
+  },
+  "help_all_open": {
+    "message": "Öffnen / in anderem Tab / Tab auf die Adresse zurücksetzen"
+  },
+  "help_all_show": {
+    "message": "Treffer in der Baumansicht zeigen"
+  },
+  "help_all_leave": {
+    "message": "Suche beenden"
+  },
+  "help_all_palette": {
+    "message": "In der Palette und der Ordnerauswahl"
+  },
+  "help_all_run": {
+    "message": "Auswählen / ausführen"
+  },
+  "help_all_move_go": {
+    "message": "Verschieben und zum Ordner wechseln"
+  },
+  "help_all_close": {
+    "message": "Schließen"
+  },
+  "help_mouse_open": {
+    "message": "Lesezeichen öffnen, Ordner auf- oder zuklappen"
+  },
+  "help_mouse_open_keys": {
+    "message": "Klick"
+  },
+  "help_mouse_other": {
+    "message": "In anderem Tab öffnen"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+Klick",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "In neuem Tab öffnen; bei einem Ordner – seine Lesezeichen öffnen"
+  },
+  "help_mouse_new_keys": {
+    "message": "mittlere Maustaste"
+  },
+  "help_mouse_folder": {
+    "message": "Lesezeichen des Ordners öffnen"
+  },
+  "help_mouse_folder_keys": {
+    "message": "$MOD$+Klick auf den Ordner",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "Markieren"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+Klick",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "Tab des Lesezeichens schließen"
+  },
+  "help_mouse_close_keys": {
+    "message": "Kreuz beim Darüberfahren"
+  },
+  "help_mouse_menu": {
+    "message": "Menü: in neuem Fenster öffnen, bearbeiten, ausschneiden, kopieren, einfügen, löschen"
+  },
+  "help_mouse_menu_keys": {
+    "message": "rechte Maustaste"
+  },
+  "help_mouse_empty": {
+    "message": "Suche, Palette, Einstellungen, Rückgängig"
+  },
+  "help_mouse_empty_keys": {
+    "message": "rechte Maustaste auf eine freie Stelle"
+  },
+  "help_news_25_1": {
+    "message": "Oberfläche und Hilfe gibt es in 10 Sprachen: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية — in der Sprache des Browsers. Schrift von rechts nach links wird unterstützt; Übersetzungen der Community kommen über das Repository."
+  },
+  "help_news_25_2": {
+    "message": "In Sprachen mit Schrift von rechts nach links klappt ← einen Ordner auf und → klappt ihn zu."
+  },
+  "help_news_25_3": {
+    "message": "Die Suche nach Text, der mit dem falschen Tastaturlayout getippt wurde, ist entfallen. Das Suchfeld zeigt, wie viele Treffer gefunden wurden."
+  },
+  "help_news_25_4": {
+    "message": "Markierte Zeilen haben ein Häkchen; Meldungen sind im dunklen Design besser zu sehen; neues Symbol für die Palette."
+  },
+  "help_news_25_5": {
+    "message": "Systemordner und verwaltete Lesezeichen erklären, warum man sie nicht markieren, bearbeiten, verschieben oder löschen kann."
+  },
+  "help_news_25_6": {
+    "message": "Einstellungen: Änderungen aus anderen Tabs sind sofort sichtbar, die Ordnerliste wird nach einem Import aktualisiert, und der Wechsel der Tastenvorlage wird in einem eigenen Dialog bestätigt."
+  },
+  "help_news_25_7": {
+    "message": "Behoben: ein schnelles doppeltes V übersprang eine Ansicht; Alt+B nach dem Schließen eines anderen Fensters konnte das Panel schließen, statt es im aktuellen Fenster zu öffnen; „Adresse des Tabs speichern“ speicherte in einem neuen Tab von Edge, Brave, Vivaldi und Opera die Adresse der Startseite im Lesezeichen."
+  },
+  "help_news_26_1": {
+    "message": "Änderungen im Bereich rückgängig machen und wiederholen: ⌘Z / ⌘⇧Z auf dem Mac, sonst Strg+Z und Strg+Umschalt+Z oder Strg+Y, oder mit der Schaltfläche „Rückgängig“ in der Meldung. Ein gelöschter Ordner kommt mit seinem Inhalt zurück. Der Verlauf umfasst 50 Schritte und gilt für alle Fenster, bis der Browser geschlossen wird."
+  },
+  "help_news_26_2": {
+    "message": "Lesezeichen, Ordner und Markiertes lassen sich mit der Maus ziehen: darüber, darunter oder in einen Ordner. Ein Ordner öffnet sich, wenn man ein Element darüber hält, und die Liste scrollt am Rand."
+  },
+  "help_news_26_3": {
+    "message": "Das Rechtsklickmenü funktioniert wie das Lesezeichenmenü des Browsers: in neuem Tab, neuem Fenster, geteilter Ansicht oder Inkognitofenster öffnen; bearbeiten; ausschneiden, kopieren und einfügen; löschen; Seite oder Ordner hinzufügen; Lesezeichenmanager öffnen. Per Tastatur öffnet es sich mit Umschalt+F10."
+  },
+  "help_news_26_4": {
+    "message": "Der Bereich hat keine eigene Kopfzeile mehr: Das Suchfeld erscheint nur während der Suche, und „Markiert: N“ ist eine Leiste unten."
+  },
+  "help_news_24_1": {
+    "message": "Schneller bei großen Sammlungen: Die Baumansicht wird seltener neu gelesen, Suche und Ordnerauswahl werden schneller aufgebaut."
+  },
+  "help_news_24_2": {
+    "message": "Ordnerauswahl: in der Reihenfolge der Baumansicht, zuletzt verwendete Ordner separat, „Ordner erstellen“, falls es keinen solchen gibt."
+  },
+  "help_news_24_3": {
+    "message": "Den Namen des neuen Ordners können Sie gleich nach $NEW$ eingeben.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "Der Cursor ist besser zu sehen; ein zugeklappter Ordner zeigt, dass darin ein Tab geöffnet ist. Neue Tabs öffnen sich neben dem aktuellen."
+  },
+  "help_news_24_5": {
+    "message": "Beim Öffnen einer Gruppe werden geöffnete Tabs nicht doppelt geöffnet. Das Schließen der Tabs mehrerer Lesezeichen und das Ersetzen einer Adresse erfordern eine Bestätigung."
+  },
+  "help_news_24_6": {
+    "message": "Beim russischen Layout werden Zeichen nach der Tastenposition erkannt ($QUESTION$ öffnet die Palette). Auf dem Mac entspricht $CTRL$ nicht mehr $CMD$.",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: Das russische Layout wird sofort erkannt, ohne eingegebene Buchstaben – $CHORD$ öffnet die Palette, nicht die Einstellungen.",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "Der Tasteneditor fragt nach, bevor er einem anderen Befehl ein Tastenkürzel wegnimmt, und zeigt die ausgewählte Vorlage an."
+  },
+  "help_news_24_9": {
+    "message": "Behoben: Direkt nach $NEW$ eingegebene Buchstaben wirkten als Befehle; die Leertaste konnte ein Löschen bestätigen; nach dem Umbenennen aus der Suche sprang der Fokus in die Liste; ein versehentliches $BS$ in der Suche schloss einen Tab.",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "Nach Namen in einen Ordner verschieben: $MOVE$, zuletzt verwendete Ordner oben.",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "Adresse des aktuellen Tabs im Lesezeichen speichern: $UPDATE$.",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "Ansicht mit der Adresse unter dem Titel und eine kompakte Ansicht: $CYCLE$.",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "Diese Hilfe: $HELP$.",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "Suche in der Seitenleiste: nach Titel, Adresse und Ordner, mit Hervorhebung und bei jedem Tastaturlayout; $TAB$ zeigt den Treffer an seiner Stelle.",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ und andere Zeichen funktionieren auch beim russischen Layout.",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "Alle Aktionen sind jetzt Befehle: die Befehlspalette und eigene Tastenkürzel in den Einstellungen, die Vim-Vorlage, Tastenfolgen und Doppeldrücke."
+  },
+  "help_news_21_2": {
+    "message": "Adresse kopieren, alles in einem Ordner markieren, alle Ordner zuklappen. Die Einstellungen öffnen sich in einem Tab."
+  },
+  "help_news_20_1": {
+    "message": "Neue Ordner, Zeilen verschieben mit $OPTION$/$ALT$, Markieren mit der Leertaste.",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "Eine Gruppe von Lesezeichen öffnen, auch als Tabgruppe mit dem Namen des Ordners. Ein Schalter „in neuem Tab öffnen“."
+  },
+  "help_news_1_1": {
+    "message": "Die Seitenleiste mit einem einzigen Tastenkürzel: öffnen, Fokus zurückgeben, schließen. Startordner."
+  },
+  "help_news_1_2": {
+    "message": "Lesezeichen als angepinnte Tabs wie in Arc, Umbenennen und Löschen, automatisches Ausblenden, Arbeit in mehreren Fenstern, neues Design."
+  },
+  "help_news_earlier": {
+    "message": "Frühere Versionen"
+  },
+  "help_quick_title": {
+    "message": "Schnellstart"
+  },
+  "help_nav_pinned": {
+    "message": "Als angepinnte Tabs"
+  },
+  "help_pinned_title": {
+    "message": "Lesezeichen als angepinnte Tabs"
+  },
+  "help_find_title": {
+    "message": "Finden und öffnen"
+  },
+  "help_sort_title": {
+    "message": "Lesezeichen sortieren"
+  },
+  "help_sets_title": {
+    "message": "Als Gruppe öffnen"
+  },
+  "help_own_title": {
+    "message": "Eigene Tasten"
+  },
+  "help_view_title": {
+    "message": "Ansicht und Einstellungen"
+  },
+  "help_all_title": {
+    "message": "Alle Tasten"
+  },
+  "help_mouse_title": {
+    "message": "Maus"
+  },
+  "help_news_title": {
+    "message": "Neuigkeiten"
+  }
+}

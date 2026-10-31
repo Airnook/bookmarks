@@ -1,0 +1,2103 @@
+{
+  "locale": {
+    "message": "hi"
+  },
+  "dir": {
+    "message": "ltr"
+  },
+  "ext_name": {
+    "message": "बुकमार्क"
+  },
+  "ext_description": {
+    "message": "साइड पैनल में हॉटकी से बुकमार्क, एरो कुंजियों से नेविगेशन के लिए"
+  },
+  "command_toggle": {
+    "message": "बुकमार्क पैनल खोलें / फ़ोकस करें / बंद करें"
+  },
+  "all_bookmarks": {
+    "message": "सभी बुकमार्क"
+  },
+  "untitled": {
+    "message": "बिना शीर्षक"
+  },
+  "bookmarklet": {
+    "message": "बुकमार्कलेट"
+  },
+  "folder_empty": {
+    "message": "खाली"
+  },
+  "cancel": {
+    "message": "रद्द करें"
+  },
+  "open": {
+    "message": "खोलें"
+  },
+  "delete": {
+    "message": "हटाएँ"
+  },
+  "close": {
+    "message": "बंद करें"
+  },
+  "nothing_found": {
+    "message": "कुछ नहीं मिला"
+  },
+  "more_results": {
+    "message": "$COUNT$ और — खोज को सीमित करें",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "key_space": {
+    "message": "स्पेस"
+  },
+  "group_nav": {
+    "message": "नेविगेशन"
+  },
+  "group_open": {
+    "message": "खोलना"
+  },
+  "group_marks": {
+    "message": "निशान"
+  },
+  "group_edit": {
+    "message": "संपादन"
+  },
+  "group_panel": {
+    "message": "पैनल"
+  },
+  "cmd_search": {
+    "message": "बुकमार्क खोजें"
+  },
+  "cmd_search_note": {
+    "message": "शीर्षक, पते और फ़ोल्डर के अनुसार"
+  },
+  "cmd_search_words": {
+    "message": "खोज खोजें ढूँढें फ़िल्टर छाँटें"
+  },
+  "cmd_cursor_down": {
+    "message": "कर्सर नीचे"
+  },
+  "cmd_cursor_down_words": {
+    "message": "नीचे अगला"
+  },
+  "cmd_cursor_up": {
+    "message": "कर्सर ऊपर"
+  },
+  "cmd_cursor_up_words": {
+    "message": "ऊपर पिछला"
+  },
+  "cmd_cursor_first": {
+    "message": "सूची के शुरू में"
+  },
+  "cmd_cursor_first_words": {
+    "message": "शुरू पहला सबसे ऊपर"
+  },
+  "cmd_cursor_last": {
+    "message": "सूची के अंत में"
+  },
+  "cmd_cursor_last_words": {
+    "message": "अंत आख़िरी सबसे नीचे"
+  },
+  "cmd_folder_expand": {
+    "message": "फ़ोल्डर फैलाएँ"
+  },
+  "cmd_folder_expand_words": {
+    "message": "फैलाएँ खोलें फ़ोल्डर"
+  },
+  "cmd_folder_collapse": {
+    "message": "फ़ोल्डर समेटें"
+  },
+  "cmd_folder_collapse_note": {
+    "message": "बुकमार्क पर — उसके फ़ोल्डर में जाएँ"
+  },
+  "cmd_folder_collapse_words": {
+    "message": "समेटें बंद करें पैरेंट ऊपरी"
+  },
+  "cmd_folders_collapseAll": {
+    "message": "सभी फ़ोल्डर समेटें"
+  },
+  "cmd_folders_collapseAll_words": {
+    "message": "सब समेटें सभी बंद करें"
+  },
+  "cmd_open": {
+    "message": "खोलें"
+  },
+  "cmd_open_note": {
+    "message": "निशान लगे हों तो — निशान लगे सभी"
+  },
+  "cmd_open_words": {
+    "message": "खोलें जाएँ चलें"
+  },
+  "cmd_open_alt": {
+    "message": "दूसरे टैब में खोलें"
+  },
+  "cmd_open_alt_note": {
+    "message": "फ़ोल्डर पर — उसके सभी बुकमार्क"
+  },
+  "cmd_open_alt_words": {
+    "message": "दूसरा वैकल्पिक अलग"
+  },
+  "cmd_open_newTab": {
+    "message": "नए टैब में खोलें"
+  },
+  "cmd_open_newTab_words": {
+    "message": "नया टैब नया"
+  },
+  "cmd_open_currentTab": {
+    "message": "मौजूदा टैब में खोलें"
+  },
+  "cmd_open_currentTab_words": {
+    "message": "मौजूदा टैब यहीं"
+  },
+  "cmd_open_group": {
+    "message": "टैब ग्रुप के रूप में खोलें…"
+  },
+  "cmd_open_group_words": {
+    "message": "टैब ग्रुप समूह ग्रुप"
+  },
+  "cmd_open_reset": {
+    "message": "टैब को बुकमार्क के पते पर लौटाएँ"
+  },
+  "cmd_open_reset_words": {
+    "message": "रीसेट लौटाएँ पिन पता यूआरएल"
+  },
+  "cmd_mark_toggle": {
+    "message": "निशान लगाएँ"
+  },
+  "cmd_mark_toggle_note": {
+    "message": "दोबारा — निशान हटाएँ"
+  },
+  "cmd_mark_toggle_words": {
+    "message": "निशान चुनें चयन मार्क"
+  },
+  "cmd_mark_down": {
+    "message": "निशान लगाकर नीचे जाएँ"
+  },
+  "cmd_mark_down_words": {
+    "message": "नीचे निशान चुनें"
+  },
+  "cmd_mark_up": {
+    "message": "निशान लगाकर ऊपर जाएँ"
+  },
+  "cmd_mark_up_words": {
+    "message": "ऊपर निशान चुनें"
+  },
+  "cmd_mark_all": {
+    "message": "फ़ोल्डर में सब पर निशान लगाएँ"
+  },
+  "cmd_mark_all_note": {
+    "message": "दोबारा — निशान हटाएँ"
+  },
+  "cmd_mark_all_words": {
+    "message": "सब चुनें सभी निशान"
+  },
+  "cmd_mark_clear": {
+    "message": "निशान साफ़ करें"
+  },
+  "cmd_mark_clear_words": {
+    "message": "साफ़ चयन हटाएँ निशान हटाएँ"
+  },
+  "cmd_folder_new": {
+    "message": "नया फ़ोल्डर"
+  },
+  "cmd_folder_new_note": {
+    "message": "निशान लगे हों तो — उन्हें उसमें डाल देता है"
+  },
+  "cmd_folder_new_words": {
+    "message": "नया बनाएँ फ़ोल्डर"
+  },
+  "cmd_rename": {
+    "message": "नाम बदलें"
+  },
+  "cmd_rename_words": {
+    "message": "नाम बदलें शीर्षक संपादित"
+  },
+  "cmd_edit": {
+    "message": "नाम और पता बदलें…"
+  },
+  "cmd_edit_note": {
+    "message": "एक विंडो में, ब्राउज़र की तरह"
+  },
+  "cmd_edit_words": {
+    "message": "बदलें संपादित नाम पता",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_move_to": {
+    "message": "फ़ोल्डर में ले जाएँ…"
+  },
+  "cmd_move_to_note": {
+    "message": "नाम से फ़ोल्डर चुनें"
+  },
+  "cmd_move_to_words": {
+    "message": "ले जाएँ स्थानांतरित फ़ोल्डर"
+  },
+  "cmd_url_update": {
+    "message": "टैब का पता सहेजें"
+  },
+  "cmd_url_update_note": {
+    "message": "बुकमार्क को मौजूदा टैब का पता मिल जाता है"
+  },
+  "cmd_url_update_words": {
+    "message": "पता अपडेट बदलें यूआरएल लिंक"
+  },
+  "cmd_delete": {
+    "message": "हटाएँ…"
+  },
+  "cmd_delete_words": {
+    "message": "हटाएँ मिटाएँ डिलीट"
+  },
+  "cmd_copy_url": {
+    "message": "पता कॉपी करें"
+  },
+  "cmd_copy_url_note": {
+    "message": "फ़ोल्डर और निशान लगे आइटम के लिए — सभी पते"
+  },
+  "cmd_copy_url_words": {
+    "message": "कॉपी पता लिंक यूआरएल"
+  },
+  "cmd_cut": {
+    "message": "काटें"
+  },
+  "cmd_cut_note": {
+    "message": "चिपकाने पर बुकमार्क वहाँ चले जाएँगे"
+  },
+  "cmd_copy": {
+    "message": "प्रतिलिपि बनाएं"
+  },
+  "cmd_copy_note": {
+    "message": "चिपकाने पर प्रतिलिपि बनेगी; पते क्लिपबोर्ड में भी जाएँगे"
+  },
+  "cmd_paste": {
+    "message": "चिपकाएं"
+  },
+  "cmd_paste_note": {
+    "message": "कर्सर के बाद या फैले हुए फ़ोल्डर के अंदर"
+  },
+  "cmd_cut_words": {
+    "message": "काटें क्लिपबोर्ड",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_copy_words": {
+    "message": "कॉपी प्रतिलिपि क्लिपबोर्ड",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_paste_words": {
+    "message": "चिपकाएं पेस्ट क्लिपबोर्ड",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_tab_close": {
+    "message": "बुकमार्क का टैब बंद करें"
+  },
+  "cmd_tab_close_note": {
+    "message": "फ़ोल्डर और निशान लगे आइटम के लिए — उन सबके टैब"
+  },
+  "cmd_tab_close_words": {
+    "message": "बंद करें टैब"
+  },
+  "cmd_move_up": {
+    "message": "ऊपर ले जाएँ"
+  },
+  "cmd_move_up_words": {
+    "message": "खिसकाएँ ऊपर ले जाएँ"
+  },
+  "cmd_move_down": {
+    "message": "नीचे ले जाएँ"
+  },
+  "cmd_move_down_words": {
+    "message": "खिसकाएँ नीचे ले जाएँ"
+  },
+  "cmd_undo": {
+    "message": "पहले जैसा करें"
+  },
+  "cmd_undo_words": {
+    "message": "पहले जैसा वापस पूर्ववत"
+  },
+  "cmd_redo": {
+    "message": "फिर से करें"
+  },
+  "cmd_redo_words": {
+    "message": "फिर दोबारा"
+  },
+  "cmd_palette": {
+    "message": "कमांड पैलेट"
+  },
+  "cmd_palette_words": {
+    "message": "कमांड पैलेट सहायता सभी कमांड"
+  },
+  "cmd_menu": {
+    "message": "मेन्यू खोलें"
+  },
+  "cmd_menu_note": {
+    "message": "माउस के दाएँ बटन की तरह"
+  },
+  "cmd_menu_words": {
+    "message": "मेन्यू मेनू दायाँ बटन",
+    "description": "Extra words to find the command in the palette, in your language; the English words always work"
+  },
+  "cmd_view_cycle": {
+    "message": "दृश्य बदलें"
+  },
+  "cmd_view_cycle_note": {
+    "message": "सामान्य, पते के साथ, सघन"
+  },
+  "cmd_view_cycle_words": {
+    "message": "दृश्य व्यू मोड पता सघन"
+  },
+  "cmd_help": {
+    "message": "सहायता"
+  },
+  "cmd_help_note": {
+    "message": "सभी सुविधाएँ और कुंजियाँ"
+  },
+  "cmd_help_words": {
+    "message": "सहायता मदद जानकारी निर्देश"
+  },
+  "cmd_settings": {
+    "message": "सेटिंग"
+  },
+  "cmd_settings_words": {
+    "message": "सेटिंग विकल्प प्राथमिकताएँ"
+  },
+  "cmd_escape": {
+    "message": "रद्द करें या बंद करें"
+  },
+  "cmd_escape_note": {
+    "message": "निशान साफ़ करें, खोज से निकलें, वरना पैनल बंद करें"
+  },
+  "cmd_escape_words": {
+    "message": "रद्द बंद करें बाहर Esc"
+  },
+  "cmd_panel_close": {
+    "message": "पैनल बंद करें"
+  },
+  "cmd_panel_close_words": {
+    "message": "बंद छिपाएँ पैनल"
+  },
+  "panel_tree": {
+    "message": "बुकमार्क"
+  },
+  "menu_open_new_tab": {
+    "message": "नए टैब में खोलें"
+  },
+  "menu_open_new_window": {
+    "message": "नई विंडो में खोलें"
+  },
+  "menu_open_split": {
+    "message": "स्प्लिट व्यू में खोलें"
+  },
+  "menu_open_incognito": {
+    "message": "यूआरएल को गुप्त विंडो में खोलें"
+  },
+  "menu_open_all": {
+    "message": "सभी ($COUNT$) यूआरएल खोलें",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_open_all_new_window": {
+    "message": "सभी यूआरएल को नई विंडो में खोलें"
+  },
+  "menu_open_all_incognito": {
+    "message": "सभी यूआरएल गुप्त विंडो में खोलें"
+  },
+  "menu_edit": {
+    "message": "संपादित करें…"
+  },
+  "menu_rename": {
+    "message": "नाम बदलें…"
+  },
+  "menu_delete": {
+    "message": "हटाएं"
+  },
+  "menu_add_page": {
+    "message": "पृष्ठ जोड़ें…"
+  },
+  "menu_add_folder": {
+    "message": "फ़ोल्डर जोड़ें…"
+  },
+  "menu_manager": {
+    "message": "बुकमार्क मैनेजर खोलें"
+  },
+  "menu_incognito_off": {
+    "message": "एक्सटेंशन को गुप्त मोड की अनुमति दें: chrome://extensions → “विवरण” → “गुप्त मोड में अनुमति दें”"
+  },
+  "menu_bookmarklet": {
+    "message": "बुकमार्कलेट सिर्फ़ खुले पेज पर काम करता है — उस पर क्लिक करें"
+  },
+  "menu_edit_single": {
+    "message": "एक बार में सिर्फ़ एक चीज़ बदली जा सकती है"
+  },
+  "search_placeholder": {
+    "message": "शीर्षक, पता या फ़ोल्डर"
+  },
+  "search_found": {
+    "message": "मिले: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "search_nothing": {
+    "message": "कुछ नहीं मिला · $KEY$ — सूची पर लौटें",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_all": {
+    "message": "अभी कोई बुकमार्क नहीं है।"
+  },
+  "empty_folder": {
+    "message": "यह फ़ोल्डर अभी खाली है।"
+  },
+  "empty_add_hint": {
+    "message": "ब्राउज़र में $KEY$ से पेज जोड़ा जाता है।",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "empty_new_folder_hint": {
+    "message": "$KEY$ — नया फ़ोल्डर।",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_group_label": {
+    "message": "ग्रुप का नाम"
+  },
+  "tab_group_placeholder": {
+    "message": "ग्रुप का नाम — वैकल्पिक"
+  },
+  "tab_group_hint": {
+    "message": "नाम देने पर टैब एक ग्रुप में चले जाते हैं; नाम न देने पर वे सामान्य टैब की तरह खुलते हैं।"
+  },
+  "palette_placeholder": {
+    "message": "कमांड…"
+  },
+  "close_tab": {
+    "message": "टैब बंद करें"
+  },
+  "rename_label": {
+    "message": "शीर्षक"
+  },
+  "new_folder_title": {
+    "message": "नया फ़ोल्डर"
+  },
+  "no_bookmarks_here": {
+    "message": "यहाँ कोई बुकमार्क नहीं है"
+  },
+  "copied_addresses": {
+    "message": "पते कॉपी किए गए: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "copied_address": {
+    "message": "पता कॉपी किया गया"
+  },
+  "copy_failed": {
+    "message": "कॉपी नहीं हो सका"
+  },
+  "view_changed": {
+    "message": "दृश्य: $VIEW$",
+    "placeholders": {
+      "view": {
+        "content": "$1"
+      }
+    }
+  },
+  "view_normal": {
+    "message": "सामान्य"
+  },
+  "view_detailed": {
+    "message": "पते के साथ"
+  },
+  "view_dense": {
+    "message": "सघन"
+  },
+  "marked": {
+    "message": "निशान लगे: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "marked_clear": {
+    "message": "निशान लगे: $COUNT$ · $KEY$ — साफ़ करें",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "locked_system_mark": {
+    "message": "सिस्टम फ़ोल्डर पर निशान नहीं लगाया जा सकता"
+  },
+  "locked_system_edit": {
+    "message": "सिस्टम फ़ोल्डर बदले नहीं जा सकते"
+  },
+  "locked_managed": {
+    "message": "इन बुकमार्क को बदला नहीं जा सकता"
+  },
+  "first_run_commands": {
+    "message": "$KEY$ — सभी कमांड",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "first_run_menu": {
+    "message": "दायाँ बटन — मेन्यू"
+  },
+  "updated": {
+    "message": "$VERSION$ पर अपडेट हो गया।",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whats_new_key": {
+    "message": "नया क्या है — $KEY$ दबाएँ",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "create_folder_failed": {
+    "message": "फ़ोल्डर नहीं बनाया जा सका"
+  },
+  "move_failed": {
+    "message": "ले जाया नहीं जा सका"
+  },
+  "delete_bookmark": {
+    "message": "बुकमार्क “$TITLE$” हटाएँ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_untitled": {
+    "message": "बिना शीर्षक वाला बुकमार्क हटाएँ?"
+  },
+  "delete_folder": {
+    "message": "फ़ोल्डर “$TITLE$” हटाएँ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_total": {
+    "message": "कुल बुकमार्क, फ़ोल्डर की सामग्री सहित: $COUNT$।",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_only_empty_folders": {
+    "message": "अंदर केवल खाली फ़ोल्डर हैं।"
+  },
+  "delete_folder_empty": {
+    "message": "फ़ोल्डर खाली है।"
+  },
+  "url_only_bookmarks": {
+    "message": "केवल बुकमार्क का पता होता है"
+  },
+  "url_locked": {
+    "message": "इस बुकमार्क को बदला नहीं जा सकता"
+  },
+  "url_loading": {
+    "message": "पेज अभी लोड हो रहा है"
+  },
+  "url_blank_tab": {
+    "message": "मौजूदा टैब का कोई पता नहीं है"
+  },
+  "url_same": {
+    "message": "पता पहले से वही है"
+  },
+  "url_replace_title": {
+    "message": "“$TITLE$” का पता बदलें?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "url_replace": {
+    "message": "बदलें"
+  },
+  "url_failed": {
+    "message": "पता नहीं बदला जा सका"
+  },
+  "url_updated": {
+    "message": "पता अपडेट हो गया"
+  },
+  "undo_button": {
+    "message": "पहले जैसा करें"
+  },
+  "undo_button_label": {
+    "message": "पहले जैसा करें: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redo_label": {
+    "message": "फिर से करें: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undone": {
+    "message": "पहले जैसा किया गया: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "redone": {
+    "message": "फिर से किया गया: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_nothing": {
+    "message": "पहले जैसा करने के लिए कुछ नहीं है"
+  },
+  "redo_nothing": {
+    "message": "फिर से करने के लिए कुछ नहीं है"
+  },
+  "undo_partial": {
+    "message": "कुछ ही बदलाव पहले जैसे हुए: कुछ बुकमार्क कहीं और बदले गए"
+  },
+  "redo_partial": {
+    "message": "कुछ ही बदलाव फिर से हुए: कुछ बुकमार्क कहीं और बदले गए"
+  },
+  "undo_failed": {
+    "message": "पहले जैसा नहीं किया जा सका: बुकमार्क कहीं और बदले गए"
+  },
+  "redo_failed": {
+    "message": "फिर से नहीं किया जा सका: बुकमार्क कहीं और बदले गए"
+  },
+  "history_fallback": {
+    "message": "मूल फ़ोल्डर अब नहीं है — “$FOLDER$” में रखा गया",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted": {
+    "message": "“$TITLE$” हटाया गया",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_one": {
+    "message": "$COUNT$ आइटम हटाया गया",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_deleted_items_other": {
+    "message": "$COUNT$ आइटम हटाए गए",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_renamed": {
+    "message": "नाम बदलकर “$TITLE$” किया गया",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved": {
+    "message": "“$TITLE$” को ले जाया गया",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_one": {
+    "message": "$COUNT$ आइटम को ले जाया गया",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_moved_items_other": {
+    "message": "$COUNT$ आइटम को ले जाया गया",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_one": {
+    "message": "$COUNT$ आइटम",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "drag_items_other": {
+    "message": "$COUNT$ आइटम",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_folder_created": {
+    "message": "फ़ोल्डर “$TITLE$” बनाया गया",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_cut": {
+    "message": "काटा गया: $COUNT$ — ले जाने के लिए चिपकाएं",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "clip_copied": {
+    "message": "कॉपी किया गया: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "paste_empty": {
+    "message": "चिपकाने के लिए कुछ नहीं — पहले बुकमार्क काटें या कॉपी करें"
+  },
+  "paste_inside": {
+    "message": "फ़ोल्डर को उसके अंदर ही नहीं चिपकाया जा सकता"
+  },
+  "paste_failed": {
+    "message": "चिपकाया नहीं जा सका"
+  },
+  "undo_pasted": {
+    "message": "चिपकाया गया: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_added": {
+    "message": "“$TITLE$” जोड़ा गया",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "undo_edited": {
+    "message": "“$TITLE$” बदला गया",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "add_failed": {
+    "message": "बुकमार्क नहीं जोड़ा जा सका"
+  },
+  "open_failed": {
+    "message": "खोला नहीं जा सका"
+  },
+  "edit_failed": {
+    "message": "सहेजा नहीं जा सका — पता जाँचें"
+  },
+  "edit_bookmark": {
+    "message": "बुकमार्क बदलें"
+  },
+  "edit_folder": {
+    "message": "फ़ोल्डर का नाम बदलें"
+  },
+  "edit_name": {
+    "message": "नाम"
+  },
+  "edit_url": {
+    "message": "पता"
+  },
+  "save": {
+    "message": "सहेजें"
+  },
+  "tab_not_open": {
+    "message": "टैब खुला नहीं है"
+  },
+  "tab_not_open_delete": {
+    "message": "बुकमार्क हटाएँ — $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "tab_enable_pinned": {
+    "message": "सेटिंग में “बुकमार्क को पिन किए गए टैब की तरह” चालू करें"
+  },
+  "picker_label": {
+    "message": "फ़ोल्डर में ले जाएँ"
+  },
+  "picker_heading": {
+    "message": "“$TITLE$” को फ़ोल्डर में ले जाएँ",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_placeholder": {
+    "message": "फ़ोल्डर का नाम…"
+  },
+  "picker_foot": {
+    "message": "$ENTER$ — ले जाएँ · $SHIFT_ENTER$ — ले जाएँ और वहाँ जाएँ",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      },
+      "shift_enter": {
+        "content": "$2"
+      }
+    }
+  },
+  "picker_recent": {
+    "message": "हाल के"
+  },
+  "picker_all": {
+    "message": "सभी फ़ोल्डर"
+  },
+  "picker_start_folder": {
+    "message": "शुरुआती फ़ोल्डर"
+  },
+  "picker_here": {
+    "message": "अभी यहीं"
+  },
+  "picker_create": {
+    "message": "फ़ोल्डर “$NAME$” बनाएँ",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_create_in": {
+    "message": "“$FOLDER$” में",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "move_folder_gone": {
+    "message": "यह फ़ोल्डर अब नहीं है"
+  },
+  "move_nothing": {
+    "message": "ले जाने के लिए कुछ नहीं बचा"
+  },
+  "move_already_there": {
+    "message": "पहले से इसी फ़ोल्डर में है"
+  },
+  "moved": {
+    "message": "“$FOLDER$” में ले जाया गया",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_title": {
+    "message": "बुकमार्क — सहायता"
+  },
+  "help_via_palette": {
+    "message": "पैलेट → “$COMMAND$”",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_via_menu": {
+    "message": "खाली जगह पर दाएँ बटन का मेन्यू"
+  },
+  "help_table_from_palette": {
+    "message": "पैलेट से"
+  },
+  "help_table_menu": {
+    "message": "दाएँ बटन का मेन्यू"
+  },
+  "help_global_not_set": {
+    "message": "शॉर्टकट सेट नहीं है"
+  },
+  "options_title": {
+    "message": "बुकमार्क की सेटिंग"
+  },
+  "options_intro": {
+    "message": "सभी सुविधाएँ, काम करने के तरीके और कुंजियाँ $HELP$ में हैं।",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_intro_help": {
+    "message": "सहायता"
+  },
+  "options_root": {
+    "message": "शुरुआती फ़ोल्डर"
+  },
+  "options_root_hint": {
+    "message": "पैनल में इसी फ़ोल्डर की सामग्री दिखती है।"
+  },
+  "options_view": {
+    "message": "सूची का दृश्य"
+  },
+  "options_view_normal": {
+    "message": "सामान्य"
+  },
+  "options_view_detailed": {
+    "message": "पते के साथ — शीर्षक के नीचे साइट"
+  },
+  "options_view_dense": {
+    "message": "सघन"
+  },
+  "options_view_hint": {
+    "message": "पैनल में $KEY$ से दृश्य बारी-बारी से बदलते हैं।",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_from_palette": {
+    "message": "पैलेट से"
+  },
+  "options_new_tab": {
+    "message": "बुकमार्क नए टैब में खोलें"
+  },
+  "options_new_tab_hint": {
+    "message": "बंद: “खोलें” मौजूदा टैब का उपयोग करता है, “दूसरे टैब में खोलें” नए टैब का। चालू होने पर इसका उलटा होता है।"
+  },
+  "options_pinned": {
+    "message": "बुकमार्क को पिन किए गए टैब की तरह"
+  },
+  "options_pinned_hint": {
+    "message": "Arc की तरह: यदि बुकमार्क का टैब पहले से खुला है, तो “खोलें” उसे दोबारा खोलने के बजाय उसी पर चला जाता है। खुले बुकमार्क पर बिंदु दिखता है।"
+  },
+  "options_auto_hide": {
+    "message": "फ़ोकस पेज पर जाने पर पैनल बंद करें"
+  },
+  "options_auto_hide_hint": {
+    "message": "पेज या ब्राउज़र इंटरफ़ेस पर क्लिक करने से पैनल बंद हो जाता है। दूसरे ऐप पर जाने से वह खुला रहता है।"
+  },
+  "options_keys": {
+    "message": "पैनल की कुंजियाँ"
+  },
+  "options_preset_standard": {
+    "message": "मानक"
+  },
+  "options_preset_standard_title": {
+    "message": "सभी शॉर्टकट को मानक शॉर्टकट से बदलें"
+  },
+  "options_preset_vim_title": {
+    "message": "मानक के साथ Vim कुंजियाँ: j k h l, g g, d d, y y…"
+  },
+  "options_keys_hint": {
+    "message": "“+” से शॉर्टकट रिकॉर्ड होता है: एक कुंजी (मॉडिफ़ायर के साथ भी), अनुक्रम ($SEQUENCE$) या दो बार दबाना ($DOUBLE$) — दूसरी कुंजी तुरंत दबाएँ। कुंजी के बाद $ENTER$ — पूरा, $ESC$ — रिकॉर्डिंग रद्द, “×” — हटाएँ। यदि शॉर्टकट पहले से किसी और कमांड के पास है, तो पूछा जाएगा कि उसे अपने नाम करना है या नहीं। सभी कमांड पैनल के कमांड पैलेट में भी हैं।",
+    "placeholders": {
+      "sequence": {
+        "content": "$1"
+      },
+      "double": {
+        "content": "$2"
+      },
+      "enter": {
+        "content": "$3"
+      },
+      "esc": {
+        "content": "$4"
+      }
+    }
+  },
+  "options_global": {
+    "message": "पैनल खोलना और बंद करना: $KEY$ · $CHANGE$",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "change": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_global_change": {
+    "message": "ब्राउज़र की सेटिंग में बदलें"
+  },
+  "options_global_not_set": {
+    "message": "सेट नहीं है"
+  },
+  "options_saved": {
+    "message": "सहेजा गया"
+  },
+  "options_saved_notes": {
+    "message": "सहेजा गया: $NOTES$",
+    "placeholders": {
+      "notes": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_removed_from": {
+    "message": "“$COMMAND$” से हटाया गया",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_palette_button_only": {
+    "message": "पैलेट अब केवल पैनल के बटन से खुलेगा"
+  },
+  "options_delayed": {
+    "message": "एक बार दबाने पर कमांड थोड़ी देर से चलेगी"
+  },
+  "options_remove_binding": {
+    "message": "“$COMMAND$” से $KEY$ हटाएँ",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "command": {
+        "content": "$2"
+      }
+    }
+  },
+  "options_add_binding": {
+    "message": "“$COMMAND$” के लिए शॉर्टकट जोड़ें",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_reset": {
+    "message": "रीसेट"
+  },
+  "options_reset_title": {
+    "message": "“$COMMAND$” के मानक शॉर्टकट बहाल करें",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_only_button": {
+    "message": "केवल पैनल के बटन से"
+  },
+  "options_only_palette": {
+    "message": "केवल पैलेट से"
+  },
+  "options_press_keys": {
+    "message": "शॉर्टकट दबाएँ…"
+  },
+  "options_taken": {
+    "message": "“$COMMAND$” पहले से उपयोग कर रहा है — Enter: अपने नाम करें, Esc: रद्द करें",
+    "placeholders": {
+      "command": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_custom": {
+    "message": "कस्टम शॉर्टकट"
+  },
+  "options_replace_preset": {
+    "message": "आपके शॉर्टकट को “$PRESET$” सेट से बदलें?",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_text": {
+    "message": "आपके बदले हुए शॉर्टकट खो जाएँगे।"
+  },
+  "options_replace_ok": {
+    "message": "बदलें"
+  },
+  "options_preset_applied": {
+    "message": "“$PRESET$” सेट लागू हो गया",
+    "placeholders": {
+      "preset": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_one": {
+    "message": "$COUNT$ बुकमार्क",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "bookmarks_other": {
+    "message": "$COUNT$ बुकमार्क",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_one": {
+    "message": "$COUNT$ टैब खोलें",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_other": {
+    "message": "$COUNT$ टैब खोलें",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_one": {
+    "message": "($COUNT$ पहले से खुला)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "open_tabs_already_other": {
+    "message": "($COUNT$ पहले से खुले)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_one": {
+    "message": "$COUNT$ टैब बंद करें?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_other": {
+    "message": "$COUNT$ टैब बंद करें?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_one": {
+    "message": "ये इस विंडो में $COUNT$ बुकमार्क के टैब हैं।",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "close_tabs_text_other": {
+    "message": "ये इस विंडो में $COUNT$ बुकमार्क के टैब हैं।",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_one": {
+    "message": "चुना हुआ $COUNT$ आइटम हटाएँ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_items_other": {
+    "message": "चुने हुए $COUNT$ आइटम हटाएँ?",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_one": {
+    "message": "अंदर की हर चीज़ भी हट जाएगी: $COUNT$ बुकमार्क।",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "delete_folder_contents_other": {
+    "message": "अंदर की हर चीज़ भी हट जाएगी: $COUNT$ बुकमार्क।",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_one": {
+    "message": "$COUNT$ आइटम को फ़ोल्डर में ले जाएँ",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "picker_heading_items_other": {
+    "message": "$COUNT$ आइटम को फ़ोल्डर में ले जाएँ",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "moved_items_one": {
+    "message": "$COUNT$ आइटम को “$FOLDER$” में ले जाया गया",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "moved_items_other": {
+    "message": "$COUNT$ आइटम को “$FOLDER$” में ले जाया गया",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "folder": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_eyebrow": {
+    "message": "सहायता"
+  },
+  "help_heading": {
+    "message": "साइड पैनल में बुकमार्क"
+  },
+  "help_lead": {
+    "message": "आपके बुकमार्क पेज के बगल में, सब कुछ कीबोर्ड से: खोजें, खोलें, फ़ोल्डर में छाँटें, पिन किए गए टैब की तरह रखें। Arc से Chromium ब्राउज़र पर आते समय के लिए बनाया गया।"
+  },
+  "help_settings_button": {
+    "message": "सेटिंग"
+  },
+  "help_meta": {
+    "message": "$VERSION$ · $SETTINGS$ · नीचे दी गई कुंजियाँ आपकी मौजूदा कुंजियाँ हैं, बदलावों सहित।",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "settings": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_open_panel": {
+    "message": "पैनल खोलें"
+  },
+  "help_nav_label": {
+    "message": "अनुभाग"
+  },
+  "help_quick_1": {
+    "message": "$GLOBAL$ — पैनल खोलें। बंद करने के लिए दोबारा दबाएँ; यदि फ़ोकस पेज पर चला गया हो, तो वही शॉर्टकट उसे वापस पैनल पर ले आता है। एक्सटेंशन आइकन से भी पैनल खुलता है — उसे ब्राउज़र के एक्सटेंशन मेन्यू में पिन कर लें।",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_2": {
+    "message": "$UP$ $DOWN$ — सूची में चलें, $EXPAND$ $COLLAPSE$ — फ़ोल्डर फैलाएँ और समेटें, $OPEN$ — खोलें।",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "expand": {
+        "content": "$3"
+      },
+      "collapse": {
+        "content": "$4"
+      },
+      "open": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_quick_3": {
+    "message": "$SEARCH$ — खोज: शीर्षक, साइट या फ़ोल्डर टाइप करना शुरू करें।",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_4": {
+    "message": "$MARK$ — कई बुकमार्क पर निशान लगाएँ, $MOVE$ — उन्हें नाम से किसी फ़ोल्डर में ले जाएँ।",
+    "placeholders": {
+      "mark": {
+        "content": "$1"
+      },
+      "move": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_5": {
+    "message": "$PALETTE$ — पैलेट: सभी कमांड उनकी कुंजियों के साथ, यदि कुछ भूल जाएँ।",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_menu": {
+    "message": "बुकमार्क, फ़ोल्डर या खाली जगह पर दायाँ बटन — ब्राउज़र जैसा मेन्यू: नई विंडो में खोलें, बदलें, काटें, कॉपी करें, चिपकाएं। $MENU$ — यही कीबोर्ड से।",
+    "description": "Substituted in order: $MENU$ = key cap(s) or shortcut, keep in place",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_quick_6": {
+    "message": "$HELP$ — यह सहायता। नए बुकमार्क ब्राउज़र के सामान्य तरीके से जुड़ते हैं — $CHORD$।",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      },
+      "chord": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_quick_rtl": {
+    "message": "दाएँ से बाएँ लिखी जाने वाली भाषाओं में ← और → तीर की भूमिकाएँ आपस में बदल जाती हैं: ← फ़ोल्डर फैलाता है, → उसे समेटता है।"
+  },
+  "help_pinned_why": {
+    "message": "Arc की तरह: बुकमार्क का अपना “निजी” टैब होता है। उसे खोलने पर बुकमार्क उस टैब को याद रखता है, भले ही आप लिंक के सहारे कहीं और चले जाएँ। यह मोड डिफ़ॉल्ट रूप से चालू है और सेटिंग में बंद किया जा सकता है।"
+  },
+  "help_pinned_1": {
+    "message": "दाईं ओर का बिंदु बताता है कि बुकमार्क का टैब खुला है; नीला बिंदु मौजूदा टैब है। समेटे गए फ़ोल्डर पर घेरा बताता है कि उसके अंदर कुछ खुला है।"
+  },
+  "help_pinned_2": {
+    "message": "पहले से खुले बुकमार्क पर $OPEN$ दूसरा टैब खोलने के बजाय उसके टैब पर चला जाता है। यदि बुकमार्क के कई टैब हैं, तो आप जिस पर सबसे हाल में थे, वहाँ जाता है।",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_3": {
+    "message": "$RESET$ — टैब को बुकमार्क के पते पर लौटाएँ (आप लिंक के सहारे बहुत आगे निकल गए हैं)।",
+    "placeholders": {
+      "reset": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_4": {
+    "message": "$UPDATE$ — इसका उलटा: जिस पते पर हैं, उसे बुकमार्क में सहेजें। बुकमार्क के अपने टैब पर यह तुरंत हो जाता है, वरना पैनल पहले पूछता है।",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_5": {
+    "message": "$CLOSE$ या होवर करने पर दिखने वाला क्रॉस — बुकमार्क का टैब बंद करें। फ़ोल्डर या निशान लगे आइटम के लिए — उन सबके टैब (पहले पूछा जाता है)।",
+    "placeholders": {
+      "close": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_pinned_6": {
+    "message": "बुकमार्क किसी दूसरे बुकमार्क के टैब पर कब्ज़ा नहीं करता: यदि मौजूदा टैब में कोई दूसरा बुकमार्क खुला है, तो नया बुकमार्क उसके बगल में खुलता है।"
+  },
+  "help_find_1": {
+    "message": "$SEARCH$ — हेडर में खोज बॉक्स। यह शीर्षक, पते और फ़ोल्डर के अनुसार खोजता है; शीर्षक से मिलने वाले पहले आते हैं।",
+    "placeholders": {
+      "search": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_example": {
+    "message": "work lin"
+  },
+  "help_find_2": {
+    "message": "आप फ़ोल्डर से दायरा घटा सकते हैं: $QUERY$ “Work” फ़ोल्डर में से Linear ढूँढ लेता है।",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_3": {
+    "message": "$ARROWS$ — चुनें, $ENTER$ — खोलें, $MODENTER$ — दूसरे टैब में, $TAB$ — मिले आइटम को ट्री में उसकी जगह पर दिखाएँ, $ESC$ — जहाँ थे वहाँ लौटें।",
+    "placeholders": {
+      "arrows": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "modenter": {
+        "content": "$3"
+      },
+      "tab": {
+        "content": "$4"
+      },
+      "esc": {
+        "content": "$5"
+      }
+    }
+  },
+  "help_find_4": {
+    "message": "फ़ोल्डर पर $ENTER$ — ट्री में उसके अंदर जाएँ।",
+    "placeholders": {
+      "enter": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_find_5": {
+    "message": "पैलेट के कमांड ($PALETTE$) खोज के नतीजों पर भी चलते हैं: “फ़ोल्डर में ले जाएँ…”, “नाम बदलें”, “हटाएँ…”। $SHIFT$+क्लिक से नतीजे पर निशान लगता है — $ESC$ के बाद आप ट्री में निशान लगे आइटम पर काम कर सकते हैं।",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      },
+      "shift": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_find_why": {
+    "message": "बहुत सारे बुकमार्क हों तो ट्री में स्क्रॉल करने से कुछ अक्षर टाइप करना तेज़ है।"
+  },
+  "help_sort_mark_1": {
+    "message": "$TOGGLE$ — पंक्ति पर निशान लगाएँ, $DOWN$ $UP$ — लगातार निशान लगाएँ।",
+    "placeholders": {
+      "toggle": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      },
+      "up": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_mark_2": {
+    "message": "$ALL$ — इस फ़ोल्डर में सब कुछ (दोबारा — निशान हटाएँ)। $ESC$ — निशान साफ़ करें।",
+    "placeholders": {
+      "all": {
+        "content": "$1"
+      },
+      "esc": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_mark_3": {
+    "message": "हेडर में दिखता है कि कितनों पर निशान है। निशान लगे आइटम एक साथ खोले, ले जाए, कॉपी किए और हटाए जाते हैं; नाम बदलना केवल कर्सर वाली पंक्ति पर काम करता है।"
+  },
+  "help_sort_move_1": {
+    "message": "$MOVE$ — नाम से फ़ोल्डर में: टाइप करना शुरू करें। हाल में चुने गए फ़ोल्डर पहले आते हैं। $ENTER$ — ले जाएँ और वहीं रहें (एक के बाद एक छाँटने के लिए सुविधाजनक), $SHIFTENTER$ — ले जाएँ और वहाँ जाएँ। यदि ऐसा फ़ोल्डर नहीं है, तो “फ़ोल्डर बनाएँ” पर $ENTER2$ दबाने से वह बन जाता है और तुरंत उसमें ले जाया जाता है।",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "shiftenter": {
+        "content": "$3"
+      },
+      "enter2": {
+        "content": "$4"
+      }
+    }
+  },
+  "help_sort_move_2": {
+    "message": "$UP$ $DOWN$ — सूची में खिसकाएँ। पंक्ति फैले हुए फ़ोल्डर के अंदर जाती है और उसके किनारे पर बाहर आ जाती है।",
+    "placeholders": {
+      "up": {
+        "content": "$1"
+      },
+      "down": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_move_3": {
+    "message": "$NEW$ — नया फ़ोल्डर; नाम तुरंत टाइप कर सकते हैं। यदि कुछ पर निशान है, तो वे उसी में चले जाते हैं।",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_1": {
+    "message": "$RENAME$ — नाम बदलें: $ENTER$ — सहेजें, $ESC$ — रद्द करें।",
+    "placeholders": {
+      "rename": {
+        "content": "$1"
+      },
+      "enter": {
+        "content": "$2"
+      },
+      "esc": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_sort_edit_2": {
+    "message": "$DELETE$ — पुष्टि के साथ हटाएँ। सामग्री वाला फ़ोल्डर या कई आइटम केवल एक Enter से नहीं हटाए जा सकते — डिफ़ॉल्ट रूप से “रद्द करें” चुना होता है।",
+    "placeholders": {
+      "delete": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_3": {
+    "message": "$COPY$ — पता कॉपी करें (फ़ोल्डर या निशान लगे आइटम के लिए — सभी पते, हर पंक्ति में एक)।",
+    "placeholders": {
+      "copy": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_sort_edit_4": {
+    "message": "$UNDO$ — पैनल में किया गया आख़िरी बदलाव पहले जैसा करें: हटाना, नाम बदलना, ले जाना, नया फ़ोल्डर, टैब का पता; $REDO$ — उसे फिर से करें। बदलाव के बाद नीचे के संदेश में “पहले जैसा करें” बटन होता है। इतिहास सभी विंडो के लिए एक ही है और ब्राउज़र बंद होने तक रहता है (50 चरण तक); बुकमार्क मैनेजर में या सिंक से हुए बदलाव पहले जैसे नहीं होते।",
+    "placeholders": {
+      "undo": {
+        "content": "$1"
+      },
+      "redo": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sort_why": {
+    "message": "“इनबॉक्स” में ढेर लग गया है? माउस छुए बिना उसे छाँट सकते हैं।"
+  },
+  "help_sort_mark_title": {
+    "message": "निशान"
+  },
+  "help_sort_move_title": {
+    "message": "ले जाना"
+  },
+  "help_sort_edit_title": {
+    "message": "संपादन"
+  },
+  "help_sets_1": {
+    "message": "बुकमार्क पर निशान लगाकर $OPEN$ दबाएँ, या फ़ोल्डर पर $ALT$ दबाएँ।",
+    "placeholders": {
+      "open": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_sets_2": {
+    "message": "पैनल ग्रुप का नाम पूछता है: नाम लिखने पर टैब उसी नाम के ग्रुप में इकट्ठे हो जाते हैं (फ़ोल्डर के लिए नाम पहले से भरा होता है); खाली छोड़ने पर वे सामान्य टैब की तरह खुलते हैं।"
+  },
+  "help_sets_3": {
+    "message": "पहले से खुले बुकमार्क दोबारा नहीं खुलते: उनके टैब बस ग्रुप में जुड़ जाते हैं।"
+  },
+  "help_sets_why": {
+    "message": "सुबह के टैब का सेट, कोई प्रोजेक्ट, रिसर्च — एक कमांड से।"
+  },
+  "help_own_settings_link": {
+    "message": "सेटिंग"
+  },
+  "help_own_1": {
+    "message": "$SETTINGS$ में: “+” से शॉर्टकट रिकॉर्ड होता है, “×” से हटता है, “रीसेट” से मानक वापस आता है। यदि शॉर्टकट पहले से किसी दूसरी कमांड का है, तो सेटिंग पूछती हैं कि उसे अपने नाम करना है या नहीं।",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_own_2": {
+    "message": "अनुक्रम भी संभव हैं — $SEQ$ — और दो बार दबाना भी — $SEQ2$।",
+    "placeholders": {
+      "seq": {
+        "content": "$1"
+      },
+      "seq2": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_3": {
+    "message": "एक बटन में $VIM$ प्रीसेट: $JKHL$, $SEQ$ और $SHIFTG$, $SEQ2$ — हटाएँ, $SEQ3$ — कॉपी, $COLON$ — पैलेट।",
+    "placeholders": {
+      "vim": {
+        "content": "$1"
+      },
+      "jkhl": {
+        "content": "$2"
+      },
+      "seq": {
+        "content": "$3"
+      },
+      "shiftg": {
+        "content": "$4"
+      },
+      "seq2": {
+        "content": "$5"
+      },
+      "seq3": {
+        "content": "$6"
+      },
+      "colon": {
+        "content": "$7"
+      }
+    }
+  },
+  "help_own_4": {
+    "message": "कुंजियाँ किसी भी लेआउट पर काम करती हैं: वे स्थिति से मिलाई जाती हैं, इसलिए रूसी लेआउट पर भी $R$ वही कुंजी है, और $SLASH$ व $QUESTION$ वही कुंजियाँ हैं जो अंग्रेज़ी लेआउट पर होती हैं।",
+    "placeholders": {
+      "r": {
+        "content": "$1"
+      },
+      "slash": {
+        "content": "$2"
+      },
+      "question": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_own_shortcuts_link": {
+    "message": "एक्सटेंशन शॉर्टकट सेटिंग"
+  },
+  "help_own_5": {
+    "message": "पैनल का अपना शॉर्टकट ($GLOBAL$) ब्राउज़र में बदला जाता है: $LINK$।",
+    "placeholders": {
+      "global": {
+        "content": "$1"
+      },
+      "link": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_own_why": {
+    "message": "हर क्रिया एक कमांड है, और हर कमांड की अपनी कुंजियाँ हो सकती हैं।"
+  },
+  "help_view_1": {
+    "message": "$CYCLE$ — दृश्य बदलें: सामान्य → पते के साथ (शीर्षक के नीचे साइट; फ़ोल्डर के लिए, उसमें कितने बुकमार्क हैं) → सघन।",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_2": {
+    "message": "$B$ — पैनल केवल यही फ़ोल्डर दिखाता है। खोज और ले जाना भी इसी के अंदर चलते हैं।",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_3": {
+    "message": "$B$ — $OPEN$ और $ALT$ की अदला-बदली करता है।",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      },
+      "open": {
+        "content": "$2"
+      },
+      "alt": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_view_4": {
+    "message": "$B$ — पेज या ब्राउज़र इंटरफ़ेस पर क्लिक करने से पैनल बंद हो जाता है; दूसरे ऐप पर जाने से नहीं होता।",
+    "placeholders": {
+      "b": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_view_5": {
+    "message": "हर विंडो का अपना पैनल होता है। फैले हुए फ़ोल्डर और कर्सर की जगह याद रखी जाती है।"
+  },
+  "help_view_6": {
+    "message": "ऊपर कोई हेडर नहीं है: खोज की पंक्ति सिर्फ़ खोज के दौरान ऊपर दिखती है, और नीचे “निशान लगे” पट्टी सिर्फ़ तब, जब कुछ चिह्नित हो।"
+  },
+  "help_view_private": {
+    "message": "सब कुछ ब्राउज़र में ही रहता है: एक्सटेंशन आपके बुकमार्क या इतिहास को कहीं नहीं भेजता।"
+  },
+  "help_all_intro": {
+    "message": "आपके मौजूदा शॉर्टकट। जिन कमांड की कुंजी नहीं है, वे पैलेट ($PALETTE$) से उपलब्ध हैं।",
+    "placeholders": {
+      "palette": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_all_search": {
+    "message": "खोज बॉक्स में"
+  },
+  "help_all_pick": {
+    "message": "नतीजा चुनें"
+  },
+  "help_all_open": {
+    "message": "खोलें / दूसरे टैब में / टैब को पते पर लौटाएँ"
+  },
+  "help_all_show": {
+    "message": "मिले आइटम को ट्री में दिखाएँ"
+  },
+  "help_all_leave": {
+    "message": "खोज से निकलें"
+  },
+  "help_all_palette": {
+    "message": "पैलेट और फ़ोल्डर चयन में"
+  },
+  "help_all_run": {
+    "message": "चुनें / चलाएँ"
+  },
+  "help_all_move_go": {
+    "message": "ले जाएँ और फ़ोल्डर में जाएँ"
+  },
+  "help_all_close": {
+    "message": "बंद करें"
+  },
+  "help_mouse_open": {
+    "message": "बुकमार्क खोलें, फ़ोल्डर फैलाएँ या समेटें"
+  },
+  "help_mouse_open_keys": {
+    "message": "क्लिक"
+  },
+  "help_mouse_other": {
+    "message": "दूसरे टैब में खोलें"
+  },
+  "help_mouse_other_keys": {
+    "message": "$MOD$+क्लिक",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_new": {
+    "message": "नए टैब में खोलें; फ़ोल्डर के लिए — उसके बुकमार्क खोलें"
+  },
+  "help_mouse_new_keys": {
+    "message": "बीच का बटन"
+  },
+  "help_mouse_folder": {
+    "message": "फ़ोल्डर के बुकमार्क खोलें"
+  },
+  "help_mouse_folder_keys": {
+    "message": "फ़ोल्डर पर $MOD$+क्लिक",
+    "placeholders": {
+      "mod": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_mark": {
+    "message": "निशान लगाएँ"
+  },
+  "help_mouse_mark_keys": {
+    "message": "$SHIFT$+क्लिक",
+    "placeholders": {
+      "shift": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_mouse_close": {
+    "message": "बुकमार्क का टैब बंद करें"
+  },
+  "help_mouse_close_keys": {
+    "message": "होवर करने पर क्रॉस"
+  },
+  "help_mouse_menu": {
+    "message": "मेन्यू: नई विंडो में खोलें, बदलें, काटें, कॉपी करें, चिपकाएं, हटाएं"
+  },
+  "help_mouse_menu_keys": {
+    "message": "दायाँ बटन"
+  },
+  "help_mouse_empty": {
+    "message": "खोज, पैलेट, सेटिंग, पहले जैसा करें"
+  },
+  "help_mouse_empty_keys": {
+    "message": "खाली जगह पर दायाँ बटन"
+  },
+  "help_news_25_1": {
+    "message": "इंटरफ़ेस और सहायता 10 भाषाओं में उपलब्ध हैं: English, Русский, Español, Português (Brasil), Français, Deutsch, 中文（简体）, 日本語, हिन्दी, العربية — भाषा ब्राउज़र की भाषा के अनुसार चुनी जाती है। दाएँ से बाएँ लिखी जाने वाली भाषाएँ समर्थित हैं; समुदाय के अनुवाद रिपॉज़िटरी के ज़रिए जुड़ते हैं।"
+  },
+  "help_news_25_2": {
+    "message": "दाएँ से बाएँ लिखी जाने वाली भाषाओं में ← फ़ोल्डर को खोलता है और → समेटता है।"
+  },
+  "help_news_25_3": {
+    "message": "गलत कीबोर्ड लेआउट में टाइप किए गए पाठ की खोज हटा दी गई है। खोज पंक्ति में मिले परिणामों की संख्या दिखती है।"
+  },
+  "help_news_25_4": {
+    "message": "निशान लगी पंक्तियों पर सही का निशान दिखता है; गहरी थीम में संदेश अधिक साफ़ दिखते हैं; पैलेट का नया आइकन है।"
+  },
+  "help_news_25_5": {
+    "message": "सिस्टम फ़ोल्डर और प्रबंधित बुकमार्क बताते हैं कि उन पर निशान क्यों नहीं लगाया जा सकता और उन्हें बदला, हिलाया या हटाया क्यों नहीं जा सकता।"
+  },
+  "help_news_25_6": {
+    "message": "सेटिंग: दूसरे टैब के बदलाव तुरंत दिखते हैं, आयात के बाद फ़ोल्डर सूची अपडेट होती है, और कुंजी प्रीसेट बदलने की पुष्टि अपनी अलग विंडो में माँगी जाती है।"
+  },
+  "help_news_25_7": {
+    "message": "ठीक किया गया: V को जल्दी-जल्दी दो बार दबाने पर एक दृश्य छूट जाता था; दूसरी विंडो बंद करने के बाद Alt+B मौजूदा विंडो में पैनल खोलने के बजाय उसे बंद कर सकता था; Edge, Brave, Vivaldi और Opera के नए टैब पर “टैब का पता सहेजें” बुकमार्क में स्टार्ट पेज का पता सहेज देता था।"
+  },
+  "help_news_26_1": {
+    "message": "पैनल में किए बदलावों को पहले जैसा करना और फिर से करना: Mac पर ⌘Z / ⌘⇧Z, बाकी में Ctrl+Z और Ctrl+Shift+Z या Ctrl+Y, या संदेश में “पहले जैसा करें” बटन। हटाया गया फ़ोल्डर अपनी सामग्री के साथ लौट आता है। इतिहास में 50 चरण रहते हैं और ब्राउज़र बंद होने तक वह सभी विंडो में साझा रहता है।"
+  },
+  "help_news_26_2": {
+    "message": "बुकमार्क, फ़ोल्डर और निशान लगे आइटम को माउस से खींचा जा सकता है: ऊपर, नीचे या फ़ोल्डर के अंदर। आइटम को फ़ोल्डर पर रोकने से फ़ोल्डर खुल जाता है, और किनारे के पास सूची स्क्रोल होती है।"
+  },
+  "help_news_26_3": {
+    "message": "दायाँ-क्लिक मेनू ब्राउज़र के बुकमार्क मेनू जैसा है: नए टैब, नई विंडो, स्प्लिट व्यू या गुप्त विंडो में खोलें; संपादित करें; काटें, कॉपी करें और चिपकाएँ; हटाएं; पृष्ठ या फ़ोल्डर जोड़ें; बुकमार्क मैनेजर खोलें। कीबोर्ड से यह Shift+F10 से खुलता है।"
+  },
+  "help_news_26_4": {
+    "message": "पैनल का अपना हेडर हट गया है: खोज की पंक्ति केवल खोजते समय दिखती है, और “निशान लगे: N” नीचे की पट्टी है।"
+  },
+  "help_news_24_1": {
+    "message": "बड़े संग्रहों पर तेज़: ट्री कम बार दोबारा पढ़ा जाता है, खोज और फ़ोल्डर चयन जल्दी बनते हैं।"
+  },
+  "help_news_24_2": {
+    "message": "फ़ोल्डर चयन: ट्री के क्रम में, हाल के फ़ोल्डर अलग, और ऐसा फ़ोल्डर न हो तो “फ़ोल्डर बनाएँ”।"
+  },
+  "help_news_24_3": {
+    "message": "$NEW$ के तुरंत बाद नए फ़ोल्डर का नाम टाइप किया जा सकता है।",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_4": {
+    "message": "कर्सर अब आसानी से दिखता है; समेटा गया फ़ोल्डर दिखाता है कि उसके अंदर कोई टैब खुला है। नए टैब मौजूदा टैब के बगल में खुलते हैं।"
+  },
+  "help_news_24_5": {
+    "message": "सेट खोलने पर खुले हुए टैब दोहराए नहीं जाते। कई बुकमार्क के टैब बंद करने और पता बदलने से पहले पुष्टि पूछी जाती है।"
+  },
+  "help_news_24_6": {
+    "message": "रूसी लेआउट पर चिह्न कुंजी की स्थिति से पढ़े जाते हैं ($QUESTION$ पैलेट खोलता है)। Mac पर $CTRL$ अब $CMD$ के बराबर नहीं है।",
+    "placeholders": {
+      "question": {
+        "content": "$1"
+      },
+      "ctrl": {
+        "content": "$2"
+      },
+      "cmd": {
+        "content": "$3"
+      }
+    }
+  },
+  "help_news_24_7": {
+    "message": "2.4.1: रूसी लेआउट अब अक्षर टाइप किए बिना ही तुरंत पहचान लिया जाता है — $CHORD$ सेटिंग नहीं, पैलेट खोलता है।",
+    "placeholders": {
+      "chord": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_24_8": {
+    "message": "कुंजी संपादक किसी दूसरी कमांड से शॉर्टकट लेने से पहले पूछता है और चुना हुआ प्रीसेट दिखाता है।"
+  },
+  "help_news_24_9": {
+    "message": "ठीक किया गया: $NEW$ के तुरंत बाद टाइप किए अक्षर कमांड की तरह चल जाते थे; स्पेस से हटाने की पुष्टि हो सकती थी; खोज से नाम बदलने के बाद फ़ोकस सूची पर चला जाता था; खोज में अनजाने में दबा $BS$ टैब बंद कर देता था।",
+    "placeholders": {
+      "new": {
+        "content": "$1"
+      },
+      "bs": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_23_1": {
+    "message": "नाम से फ़ोल्डर में ले जाएँ: $MOVE$, हाल के फ़ोल्डर ऊपर।",
+    "placeholders": {
+      "move": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_2": {
+    "message": "मौजूदा टैब का पता बुकमार्क में सहेजें: $UPDATE$।",
+    "placeholders": {
+      "update": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_3": {
+    "message": "शीर्षक के नीचे पते वाला दृश्य और सघन दृश्य: $CYCLE$।",
+    "placeholders": {
+      "cycle": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_23_4": {
+    "message": "यह सहायता: $HELP$।",
+    "placeholders": {
+      "help": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_1": {
+    "message": "पैनल में खोज: शीर्षक, पते और फ़ोल्डर के अनुसार, हाइलाइट के साथ और किसी भी लेआउट पर; $TAB$ मिले आइटम को उसकी जगह पर दिखाता है।",
+    "placeholders": {
+      "tab": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_22_2": {
+    "message": "2.2.1: $SLASH$ और अन्य चिह्न रूसी लेआउट पर भी काम करते हैं।",
+    "placeholders": {
+      "slash": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_news_21_1": {
+    "message": "सभी क्रियाएँ कमांड बन गईं: कमांड पैलेट और सेटिंग में आपके अपने शॉर्टकट, Vim प्रीसेट, अनुक्रम और दो बार दबाना।"
+  },
+  "help_news_21_2": {
+    "message": "पता कॉपी करना, फ़ोल्डर में सब पर निशान लगाना, सभी फ़ोल्डर समेटना। सेटिंग टैब में खुलती हैं।"
+  },
+  "help_news_20_1": {
+    "message": "नए फ़ोल्डर, $OPTION$/$ALT$ से पंक्तियाँ खिसकाना, स्पेस से निशान लगाना।",
+    "placeholders": {
+      "option": {
+        "content": "$1"
+      },
+      "alt": {
+        "content": "$2"
+      }
+    }
+  },
+  "help_news_20_2": {
+    "message": "बुकमार्क का सेट खोलना, फ़ोल्डर के नाम वाले टैब ग्रुप के रूप में भी। “नए टैब में खोलें” स्विच।"
+  },
+  "help_news_1_1": {
+    "message": "एक ही शॉर्टकट से पैनल: खोलना, फ़ोकस लौटाना, बंद करना। शुरुआती फ़ोल्डर।"
+  },
+  "help_news_1_2": {
+    "message": "Arc की तरह पिन किए गए टैब के रूप में बुकमार्क, नाम बदलना और हटाना, अपने-आप छिपना, कई विंडो में काम, नया डिज़ाइन।"
+  },
+  "help_news_earlier": {
+    "message": "पिछले संस्करण"
+  },
+  "help_quick_title": {
+    "message": "शुरुआत कैसे करें"
+  },
+  "help_nav_pinned": {
+    "message": "पिन किए गए टैब की तरह"
+  },
+  "help_pinned_title": {
+    "message": "बुकमार्क पिन किए गए टैब की तरह"
+  },
+  "help_find_title": {
+    "message": "खोजें और खोलें"
+  },
+  "help_sort_title": {
+    "message": "बुकमार्क छाँटें"
+  },
+  "help_sets_title": {
+    "message": "सेट के रूप में खोलें"
+  },
+  "help_own_title": {
+    "message": "आपकी अपनी कुंजियाँ"
+  },
+  "help_view_title": {
+    "message": "दृश्य और सेटिंग"
+  },
+  "help_all_title": {
+    "message": "सभी कुंजियाँ"
+  },
+  "help_mouse_title": {
+    "message": "माउस"
+  },
+  "help_news_title": {
+    "message": "नया क्या है"
+  }
+}

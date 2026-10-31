@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="help_title"></title>
+  <link rel="stylesheet" href="base.css">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 16px; }
+    body { font-size: 14px; line-height: 1.55; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 96px; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    button.link { padding: 0; border: 0; background: none; font: inherit; color: var(--accent); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+
+    header { margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+    h1 { margin: 0 0 10px; font-size: 30px; line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
+    .lead { margin: 0; max-width: 60ch; font-size: 16px; color: var(--muted); }
+    .meta { margin: 14px 0 0; font-size: 13px; color: var(--muted); }
+
+    nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 36px; }
+    nav a {
+      padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px;
+      font-size: 13px; color: var(--text); text-decoration: none;
+    }
+    nav a:hover { background: var(--soft); }
+
+    section { margin-top: 44px; }
+    h2 { margin: 0 0 14px; font-size: 21px; line-height: 1.25; font-weight: 650; }
+    h3 { margin: 22px 0 6px; font-size: 15px; font-weight: 650; }
+    p { margin: 0 0 10px; }
+    ul, ol { margin: 0 0 10px; padding-inline-start: 22px; }
+    li + li { margin-top: 5px; }
+    .muted { color: var(--muted); }
+    /* примечание только для RTL-языков: в остальных не показываем */
+    html:not([dir=rtl]) .rtl-only { display: none; }
+    .steps + .rtl-only { margin-top: 14px; }
+
+    /* быстрый старт */
+    .steps { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; counter-reset: step; }
+    .steps li {
+      display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: baseline; margin: 0;
+      padding: 12px 14px; border-radius: 10px; background: var(--soft); counter-increment: step;
+    }
+    .steps li::before {
+      content: counter(step); display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%;
+      font-size: 12px; font-weight: 650; color: var(--accent); background: var(--tint);
+    }
+
+    /* сценарии */
+    .card { margin: 0 0 14px; padding: 18px 20px 12px; border: 1px solid var(--line); border-radius: 12px; }
+    .card h3 { margin-top: 0; font-size: 16px; }
+    .card .why { margin-bottom: 10px; color: var(--muted); }
+
+    kbd { margin: 0 1px; font-size: 11.5px; vertical-align: 1px; }
+    .keys { white-space: nowrap; }
+    /* сочетание — слева направо и в RTL: Ctrl K, а не K Ctrl */
+    span.keys, td.keys > span { direction: ltr; unicode-bidi: isolate; }
+    .via { font-size: 13px; color: var(--muted); }
+    .note-line { display: block; font-size: 12.5px; }
+
+    /* таблицы клавиш */
+    table { width: 100%; border-collapse: collapse; margin: 0 0 8px; }
+    th { padding: 16px 0 6px; text-align: start; font-size: 11.5px; font-weight: 650; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+    td { padding: 7px 0; border-top: 1px solid var(--line); vertical-align: top; }
+    td:last-child { padding-inline-start: 16px; text-align: end; }
+    td .alt { margin-inline-start: 8px; }
+
+    /* что нового */
+    .release { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 12px 0; border-top: 1px solid var(--line); }
+    .release:first-of-type { border-top: 0; }
+    .version { font-weight: 650; font-variant-numeric: tabular-nums; }
+    .release ul { margin: 0; }
+
+    .note { padding: 12px 14px; border-radius: 10px; background: var(--tint); }
+    details { margin-top: 4px; border-top: 1px solid var(--line); }
+    summary { padding: 12px 0; cursor: pointer; color: var(--muted); font-weight: 600; }
+    .actions { margin: 18px 0 0; }
+    button.primary {
+      height: 34px; padding: 0 16px; border: 0; border-radius: 8px; cursor: pointer;
+      font: inherit; font-weight: 600; color: #fff; background: #2563eb;
+    }
+    button.primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    @media (max-width: 560px) {
+      h1 { font-size: 25px; }
+      .release { grid-template-columns: 1fr; gap: 4px; }
+      td:last-child { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p data-i18n="help_eyebrow" class="eyebrow"></p>
+    <h1 data-i18n="help_heading"></h1>
+    <p data-i18n="help_lead" class="lead"></p>
+    <p data-i18n="help_meta" class="meta"><span id="version">—</span><button data-i18n="help_settings_button" class="link" id="open-settings"></button></p>
+    <p class="actions"><button data-i18n="help_open_panel" class="primary" id="open-panel"></button></p>
+  </header>
+
+  <nav data-i18n-aria-label="help_nav_label">
+    <a href="#start" data-i18n="help_quick_title"></a>
+    <a href="#pinned" data-i18n="help_nav_pinned"></a>
+    <a href="#find" data-i18n="help_find_title"></a>
+    <a href="#sort" data-i18n="help_sort_title"></a>
+    <a href="#sets" data-i18n="help_sets_title"></a>
+    <a href="#keys-own" data-i18n="help_own_title"></a>
+    <a href="#view" data-i18n="help_view_title"></a>
+    <a href="#all-keys" data-i18n="help_all_title"></a>
+    <a href="#mouse" data-i18n="help_mouse_title"></a>
+    <a href="#news" data-i18n="help_news_title"></a>
+  </nav>
+
+  <section id="start">
+    <h2 data-i18n="help_quick_title"></h2>
+    <ol class="steps">
+      <li><span data-i18n="help_quick_1"><span data-global></span></span></li>
+      <li><span data-i18n="help_quick_2"><span data-key="cursor.up"></span><span data-key="cursor.down"></span><span data-key="folder.expand"></span><span data-key="folder.collapse"></span><span data-key="open"></span></span></li>
+      <li><span data-i18n="help_quick_3"><span data-key="search"></span></span></li>
+      <li><span data-i18n="help_quick_4"><span data-key="mark.toggle"></span><span data-key="move.to"></span></span></li>
+      <li><span data-i18n="help_quick_5"><span data-key="palette"></span></span></li>
+      <li><span data-i18n="help_quick_menu"><span data-key="menu"></span></span></li>
+      <li><span data-i18n="help_quick_6"><span data-key="help"></span><span data-chord="Mod+d"></span></span></li>
+    </ol>
+    <p data-i18n="help_quick_rtl" class="muted rtl-only"></p>
+  </section>
+
+  <section id="pinned">
+    <h2 data-i18n="help_pinned_title"></h2>
+    <div class="card">
+      <p data-i18n="help_pinned_why" class="why"></p>
+      <ul>
+        <li data-i18n="help_pinned_1"></li>
+        <li data-i18n="help_pinned_2"><span data-key="open"></span></li>
+        <li data-i18n="help_pinned_3"><span data-key="open.reset"></span></li>
+        <li data-i18n="help_pinned_4"><span data-key="url.update"></span></li>
+        <li data-i18n="help_pinned_5"><span data-key="tab.close"></span></li>
+        <li data-i18n="help_pinned_6"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="find">
+    <h2 data-i18n="help_find_title"></h2>
+    <div class="card">
+      <p data-i18n="help_find_why" class="why"></p>
+      <ul>
+        <li data-i18n="help_find_1"><span data-key="search"></span></li>
+        <li data-i18n="help_find_2"><kbd data-i18n="help_find_example"></kbd></li>
+        <li data-i18n="help_find_3"><span><kbd>↑</kbd><kbd>↓</kbd></span><kbd>Enter</kbd><span data-chord="Mod+Enter"></span><kbd>Tab</kbd><kbd>Esc</kbd></li>
+        <li data-i18n="help_find_4"><kbd>Enter</kbd></li>
+        <li data-i18n="help_find_5"><span data-key="palette"></span><kbd>Shift</kbd><kbd>Esc</kbd></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sort">
+    <h2 data-i18n="help_sort_title"></h2>
+    <div class="card">
+      <p data-i18n="help_sort_why" class="why"></p>
+      <h3 data-i18n="help_sort_mark_title"></h3>
+      <ul>
+        <li data-i18n="help_sort_mark_1"><span data-key="mark.toggle"></span><span data-key="mark.down"></span><span data-key="mark.up"></span></li>
+        <li data-i18n="help_sort_mark_2"><span data-key="mark.all"></span><span data-key="escape"></span></li>
+        <li data-i18n="help_sort_mark_3"></li>
+      </ul>
+      <h3 data-i18n="help_sort_move_title"></h3>
+      <ul>
+        <li data-i18n="help_sort_move_1"><span data-key="move.to"></span><kbd>Enter</kbd><span data-chord="Shift+Enter"></span><kbd>Enter</kbd></li>
+        <li data-i18n="help_sort_move_2"><span data-key="move.up"></span><span data-key="move.down"></span></li>
+        <li data-i18n="help_sort_move_3"><span data-key="folder.new"></span></li>
+      </ul>
+      <h3 data-i18n="help_sort_edit_title"></h3>
+      <ul>
+        <li data-i18n="help_sort_edit_1"><span data-key="rename"></span><kbd>Enter</kbd><kbd>Esc</kbd></li>
+        <li data-i18n="help_sort_edit_2"><span data-key="delete"></span></li>
+        <li data-i18n="help_sort_edit_3"><span data-key="copy.url"></span></li>
+        <li data-i18n="help_sort_edit_4"><span data-key="undo"></span><span data-key="redo"></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sets">
+    <h2 data-i18n="help_sets_title"></h2>
+    <div class="card">
+      <p data-i18n="help_sets_why" class="why"></p>
+      <ul>
+        <li data-i18n="help_sets_1"><span data-key="open"></span><span data-key="open.alt"></span></li>
+        <li data-i18n="help_sets_2"></li>
+        <li data-i18n="help_sets_3"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="keys-own">
+    <h2 data-i18n="help_own_title"></h2>
+    <div class="card">
+      <p data-i18n="help_own_why" class="why"></p>
+      <ul>
+        <li data-i18n="help_own_1"><button data-i18n="help_own_settings_link" class="link" data-settings></button></li>
+        <li data-i18n="help_own_2"><span><kbd>G</kbd><span class="then"></span><kbd>G</kbd></span><span><kbd>Enter</kbd><span class="then"></span><kbd>Enter</kbd></span></li>
+        <li data-i18n="help_own_3"><b>Vim</b><span><kbd>J</kbd> <kbd>K</kbd> <kbd>H</kbd> <kbd>L</kbd></span><span><kbd>G</kbd><span class="then"></span><kbd>G</kbd></span><span data-chord="Shift+g"></span><span><kbd>D</kbd><span class="then"></span><kbd>D</kbd></span><span><kbd>Y</kbd><span class="then"></span><kbd>Y</kbd></span><kbd>:</kbd></li>
+        <li data-i18n="help_own_4"><kbd>R</kbd><kbd>/</kbd><kbd>?</kbd></li>
+        <li data-i18n="help_own_5"><span data-global></span><button data-i18n="help_own_shortcuts_link" class="link" id="open-shortcuts"></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="view">
+    <h2 data-i18n="help_view_title"></h2>
+    <div class="card">
+      <ul>
+        <li data-i18n="help_view_1"><span data-key="view.cycle"></span></li>
+        <li data-i18n="help_view_2"><b data-i18n="options_root"></b></li>
+        <li data-i18n="help_view_3"><b data-i18n="options_new_tab"></b><span data-key="open"></span><span data-key="open.alt"></span></li>
+        <li data-i18n="help_view_4"><b data-i18n="options_auto_hide"></b></li>
+        <li data-i18n="help_view_5"></li>
+        <li data-i18n="help_view_6"></li>
+      </ul>
+      <p data-i18n="help_view_private" class="muted"></p>
+    </div>
+  </section>
+
+  <section id="all-keys">
+    <h2 data-i18n="help_all_title"></h2>
+    <p data-i18n="help_all_intro" class="muted"><span data-key="palette"></span></p>
+    <table id="keys-table"></table>
+    <table>
+      <tr><th data-i18n="help_all_search" colspan="2"></th></tr>
+      <tr><td data-i18n="help_all_pick"></td><td class="keys"><kbd>↑</kbd><kbd>↓</kbd></td></tr>
+      <tr><td data-i18n="help_all_open"></td><td class="keys"><kbd>Enter</kbd> <span data-chord="Mod+Enter"></span> <span data-chord="Shift+Enter"></span></td></tr>
+      <tr><td data-i18n="help_all_show"></td><td class="keys"><kbd>Tab</kbd></td></tr>
+      <tr><td data-i18n="help_all_leave"></td><td class="keys"><kbd>Esc</kbd></td></tr>
+      <tr><th data-i18n="help_all_palette" colspan="2"></th></tr>
+      <tr><td data-i18n="help_all_run"></td><td class="keys"><kbd>↑</kbd><kbd>↓</kbd> <kbd>Enter</kbd></td></tr>
+      <tr><td data-i18n="help_all_move_go"></td><td class="keys"><span data-chord="Shift+Enter"></span></td></tr>
+      <tr><td data-i18n="help_all_close"></td><td class="keys"><kbd>Esc</kbd></td></tr>
+    </table>
+  </section>
+
+  <section id="mouse">
+    <h2 data-i18n="help_mouse_title"></h2>
+    <table>
+      <tr><td data-i18n="help_mouse_open"></td><td data-i18n="help_mouse_open_keys" class="keys"></td></tr>
+      <tr><td data-i18n="help_mouse_other"></td><td data-i18n="help_mouse_other_keys" class="keys"><span data-chord="Mod"></span></td></tr>
+      <tr><td data-i18n="help_mouse_new"></td><td data-i18n="help_mouse_new_keys" class="keys"></td></tr>
+      <tr><td data-i18n="help_mouse_folder"></td><td data-i18n="help_mouse_folder_keys" class="keys"><span data-chord="Mod"></span></td></tr>
+      <tr><td data-i18n="help_mouse_mark"></td><td data-i18n="help_mouse_mark_keys" class="keys"><kbd>Shift</kbd></td></tr>
+      <tr><td data-i18n="help_mouse_close"></td><td data-i18n="help_mouse_close_keys" class="keys"></td></tr>
+      <tr><td data-i18n="help_mouse_menu"></td><td data-i18n="help_mouse_menu_keys" class="keys"></td></tr>
+      <tr><td data-i18n="help_mouse_empty"></td><td data-i18n="help_mouse_empty_keys" class="keys"></td></tr>
+    </table>
+  </section>
+
+  <section id="news">
+    <h2 data-i18n="help_news_title"></h2>
+    <div class="release">
+      <div class="version">2.6</div>
+      <ul>
+        <li data-i18n="help_news_26_1"></li>
+        <li data-i18n="help_news_26_2"></li>
+        <li data-i18n="help_news_26_3"></li>
+        <li data-i18n="help_news_26_4"></li>
+      </ul>
+    </div>
+    <div class="release">
+      <div class="version">2.5</div>
+      <ul>
+        <li data-i18n="help_news_25_1"></li>
+        <li data-i18n="help_news_25_2"></li>
+        <li data-i18n="help_news_25_3"></li>
+        <li data-i18n="help_news_25_4"></li>
+        <li data-i18n="help_news_25_5"></li>
+        <li data-i18n="help_news_25_6"></li>
+        <li data-i18n="help_news_25_7"></li>
+      </ul>
+    </div>
+    <div class="release">
+      <div class="version">2.4</div>
+      <ul>
+        <li data-i18n="help_news_24_1"></li>
+        <li data-i18n="help_news_24_2"></li>
+        <li data-i18n="help_news_24_3"><span data-key="folder.new"></span></li>
+        <li data-i18n="help_news_24_4"></li>
+        <li data-i18n="help_news_24_5"></li>
+        <li data-i18n="help_news_24_6"><kbd>?</kbd><kbd>⌃</kbd><kbd>⌘</kbd></li>
+        <li data-i18n="help_news_24_7"><span data-chord="Shift+/"></span></li>
+        <li data-i18n="help_news_24_8"></li>
+        <li data-i18n="help_news_24_9"><span data-key="folder.new"></span><kbd>⌫</kbd></li>
+      </ul>
+    </div>
+    <details>
+      <summary data-i18n="help_news_earlier"></summary>
+      <div class="release">
+        <div class="version">2.3</div>
+        <ul>
+          <li data-i18n="help_news_23_1"><span data-key="move.to"></span></li>
+          <li data-i18n="help_news_23_2"><span data-key="url.update"></span></li>
+          <li data-i18n="help_news_23_3"><span data-key="view.cycle"></span></li>
+          <li data-i18n="help_news_23_4"><span data-key="help"></span></li>
+        </ul>
+      </div>
+      <div class="release">
+        <div class="version">2.2</div>
+        <ul>
+          <li data-i18n="help_news_22_1"><kbd>Tab</kbd></li>
+          <li data-i18n="help_news_22_2"><kbd>/</kbd></li>
+        </ul>
+      </div>
+      <div class="release">
+        <div class="version">2.1</div>
+        <ul>
+          <li data-i18n="help_news_21_1"></li>
+          <li data-i18n="help_news_21_2"></li>
+        </ul>
+      </div>
+      <div class="release">
+        <div class="version">2.0</div>
+        <ul>
+          <li data-i18n="help_news_20_1"><kbd>Option</kbd><kbd>Alt</kbd></li>
+          <li data-i18n="help_news_20_2"></li>
+        </ul>
+      </div>
+      <div class="release">
+        <div class="version">1.x</div>
+        <ul>
+          <li data-i18n="help_news_1_1"></li>
+          <li data-i18n="help_news_1_2"></li>
+        </ul>
+      </div>
+    </details>
+  </section>
+</main>
+<script type="module" src="help.js"></script>
+</body>
+</html>
