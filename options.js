@@ -150,14 +150,20 @@ function showTheme() {
   field('css-on').checked = theme.customCssOn;
   typedValue('css', theme.customCss);
   field('css-warning').hidden = !EXTERNAL.test(theme.customCss);
+  previewTheme(theme);
 }
 
+// Превью — панель в iframe в демо-режиме (panel/demo.js); тему получает сообщением, а не из хранилища
+const preview = document.getElementById('theme-preview');
+const previewTheme = (value) => preview.contentWindow?.postMessage({ type: 'demo-theme', theme: value }, location.origin);
+preview.addEventListener('load', () => previewTheme(theme));
+
 // Поменять тему (change меняет theme), сохранить и показать уже проверенное значение
-function setTheme(change) {
+function setTheme(change, message) {
   change();
   theme = cleanTheme(theme);
   showTheme();
-  save({ theme });
+  save({ theme }, message);
 }
 
 field('mode').onchange = () => setTheme(() => { theme.mode = field('mode').value; });
@@ -169,7 +175,7 @@ for (const [mode, key, input, reset] of colorFields) {
 const typed = (id, apply) => {
   let timer;
   const commit = () => { clearTimeout(timer); setTheme(apply); };
-  field(id).oninput = () => { clearTimeout(timer); timer = setTimeout(commit, 400); };
+  field(id).oninput = () => { clearTimeout(timer); timer = setTimeout(commit, 400); apply(); previewTheme(cleanTheme(theme)); }; // превью — сразу, сохранение — с паузой
   field(id).onchange = commit;
 };
 typed('font', () => { theme.font = field('font').value; });
@@ -433,8 +439,9 @@ function commitRecording(confirmed = false) {
 // Окно замены набора (вместо confirm(): его кнопки на языке браузера). Enter — заменить,
 // Esc — отмена; фокус — обратно на кнопку набора
 const presetDialog = document.getElementById('preset-dialog');
-function askReplace(button, name = button.textContent) {
-  document.getElementById('preset-title').textContent = t('options_replace_preset', name);
+function askReplace(button, name = button.textContent, [title, text] = ['options_replace_preset', 'options_replace_text']) {
+  document.getElementById('preset-title').textContent = t(title, name);
+  document.getElementById('preset-text').textContent = t(text);
   presetDialog.returnValue = '';
   presetDialog.showModal();
   presetDialog.querySelector('[value=ok]').focus();
@@ -469,15 +476,16 @@ const HOTKEYS_FILE = 'bookmarks-hotkeys.json';
 const IMPORT_ERRORS = { broken: 'options_import_broken', wrong_type: 'options_import_wrong_type', newer: 'options_import_newer' };
 const importFile = document.getElementById('import-file');
 
-document.getElementById('export').onclick = () => {
-  const file = envelope('hotkeys', HOTKEYS_FORMAT, { preset, keymap }, chrome.runtime.getManifest().version);
+function download(name, file) {
   const a = Object.assign(document.createElement('a'), {
     href: URL.createObjectURL(new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' })),
-    download: HOTKEYS_FILE,
+    download: name,
   });
   a.click();
   URL.revokeObjectURL(a.href);
-};
+}
+
+document.getElementById('export').onclick = () => download(HOTKEYS_FILE, envelope('hotkeys', HOTKEYS_FORMAT, { preset, keymap }, chrome.runtime.getManifest().version));
 
 document.getElementById('import').onclick = () => importFile.click();
 
@@ -495,6 +503,26 @@ importFile.onchange = async () => {
     await save({ keymap, preset }, clean.dropped ? t('options_imported_skipped', String(clean.dropped)) : t('options_imported'));
     rerender();
   });
+};
+
+// ---------- файл с темой ----------
+
+const THEME_FORMAT = 1;
+const THEME_FILE = 'bookmarks-theme.json';
+const themeImportFile = document.getElementById('theme-import-file');
+
+document.getElementById('theme-export').onclick = () => download(THEME_FILE, envelope('theme', THEME_FORMAT, theme, chrome.runtime.getManifest().version));
+
+document.getElementById('theme-import').onclick = () => themeImportFile.click();
+
+themeImportFile.onchange = async () => {
+  const [file] = themeImportFile.files;
+  themeImportFile.value = '';
+  if (!file) return;
+  const read = readSettingsFile(await file.text(), 'theme', THEME_FORMAT);
+  if (!read.data) return notify(t(read.error === 'wrong_type' ? 'options_theme_import_wrong_type' : IMPORT_ERRORS[read.error ?? 'broken']));
+  if (!(await askReplace(document.getElementById('theme-import'), file.name, ['options_replace_theme', 'options_replace_theme_text']))) return;
+  setTheme(() => { theme = cleanTheme(read.data); }, t('options_theme_imported'));
 };
 
 // изменения из другой вкладки настроек или из панели (вид переключают клавишей)

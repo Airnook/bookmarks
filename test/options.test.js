@@ -241,3 +241,77 @@ test('импорт: битый файл, чужой тип и новый фор�
   assert.ok(!dlg.shown);
   assert.deepEqual(env.storageSets, []);
 });
+
+// ---------- тема: файл и превью ----------
+
+const pickTheme = async (env, text, name = 'bookmarks-theme.json') => {
+  env.el('theme-import-file').files = [{ name, text: async () => text }];
+  await env.el('theme-import-file').onchange();
+  await sleep(20);
+};
+const MY_THEME = { mode: 'dark', colors: { light: { background: '', text: '', accent: '#ff0000' }, dark: { background: '', text: '', accent: '' } }, font: 'Georgia', fontSize: 16, radius: 'full', favicons: false, folderCounts: true, indentGuides: true, customCss: 'body{}', customCssOn: true };
+
+test('тема, экспорт: bookmarks-theme.json с конвертом type=theme', async () => {
+  const env = await start({ theme: MY_THEME });
+  env.el('theme-export').onclick();
+  const [file] = env.downloads;
+  assert.equal(file.name, 'bookmarks-theme.json');
+  assert.deepEqual(JSON.parse(file.text), { app: 'airnook-bookmarks', type: 'theme', format: 1, extensionVersion: '2.6.0', data: MY_THEME });
+});
+
+test('тема, импорт: экспортированный файл возвращает ту же тему (после подтверждения)', async () => {
+  const env = await start({ theme: MY_THEME });
+  env.el('theme-export').onclick();
+  const other = await start({});
+  const dlg = stubDialog(other, 'ok');
+  await pickTheme(other, env.downloads[0].text);
+  assert.ok(dlg.shown);
+  assert.deepEqual(other.store.theme, MY_THEME);
+  assert.equal(other.el('status').textContent, 'Оформление загружено');
+  assert.match(other.el('preset-title').textContent, /bookmarks-theme\.json/);
+});
+
+test('тема, импорт: негодные значения чистятся как у сохранённой темы', async () => {
+  const env = await start({});
+  stubDialog(env, 'ok');
+  const file = { app: 'airnook-bookmarks', type: 'theme', format: 1, data: { mode: 'neon', fontSize: 999, font: 'A"; x' } };
+  await pickTheme(env, JSON.stringify(file));
+  assert.equal(env.store.theme.mode, 'system');
+  assert.equal(env.store.theme.fontSize, 24);
+  assert.ok(!/["';]/.test(env.store.theme.font));
+});
+
+test('тема, импорт: отмена, файл клавиш, битый и новый формат — тема в хранилище не тронута', async () => {
+  const env = await start({ theme: MY_THEME });
+  const dlg = stubDialog(env, 'cancel');
+  env.el('theme-export').onclick();
+  await pickTheme(env, env.downloads[0].text);
+  assert.ok(dlg.shown);
+  dlg.shown = false;
+  const base = { app: 'airnook-bookmarks', type: 'theme', format: 1, data: { mode: 'light' } };
+  const messages = new Set();
+  for (const text of ['{', JSON.stringify({ ...base, type: 'hotkeys' }), JSON.stringify({ ...base, format: 2 })]) {
+    await pickTheme(env, text);
+    messages.add(env.el('status').textContent);
+  }
+  assert.equal(messages.size, 3);
+  assert.ok(messages.has('В этом файле другие настройки, а не оформление панели.'));
+  assert.ok(!dlg.shown);
+  assert.deepEqual(env.storageSets, []);
+});
+
+test('превью: тема уходит в iframe сразу при каждом изменении, в том числе при печати', async () => {
+  const env = await start({ theme: MY_THEME });
+  const last = () => env.previews.at(-1);
+  assert.equal(last().type, 'demo-theme');
+  assert.equal(last().origin, 'chrome-extension://test');
+  assert.deepEqual(JSON.parse(JSON.stringify(last().theme)), MY_THEME); // объект из vm — через JSON
+  env.el('theme-mode')._value = 'light'; // у стаба select нет options
+  env.el('theme-mode').onchange();
+  assert.equal(last().theme.mode, 'light');
+  env.el('theme-font')._value = 'Verdana';
+  env.el('theme-font').oninput();
+  assert.equal(last().theme.font, 'Verdana');
+  env.el('theme-reset').onclick();
+  assert.equal(last().theme.mode, 'system');
+});

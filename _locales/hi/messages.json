@@ -2209,5 +2209,25 @@
   },
   "help_news_title": {
     "message": "नया क्या है"
+  },
+  "options_preview": {
+    "message": "नमूना बुकमार्क पर पैनल का पूर्वावलोकन"
+  },
+  "options_replace_theme": {
+    "message": "पैनल का रूप “$FILE$” से बदलें?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "आपकी मौजूदा रूप-सेटिंग खो जाएँगी।"
+  },
+  "options_theme_imported": {
+    "message": "रूप आयात हो गया"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "इस फ़ाइल में पैनल का रूप नहीं, दूसरी सेटिंग हैं।"
   }
 }

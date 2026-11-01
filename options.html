@@ -47,6 +47,7 @@
       background: transparent; border: 1px solid var(--line); border-radius: 7px;
     }
     #theme-font { width: 100%; }
+    #theme-preview { display: block; width: 100%; max-width: 340px; height: 320px; margin: 8px 0; border: 1px solid light-dark(rgb(0 0 0 / .2), rgb(255 255 255 / .25)); border-radius: 8px; }
     .inline .text { width: 72px; }
     textarea.text { display: block; width: 100%; height: auto; padding: 6px 8px; font: 12px/1.4 ui-monospace, monospace; resize: vertical; }
     .text:focus-visible, .check input:focus-visible, .color input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
@@ -159,6 +160,7 @@
   </section>
   <section id="appearance">
     <h2 class="group" data-i18n="options_appearance"></h2>
+    <iframe id="theme-preview" src="panel.html?demo" data-i18n-title="options_preview"></iframe>
     <div class="row">
       <label class="title" for="theme-mode" data-i18n="options_theme_mode"></label>
       <select id="theme-mode">
@@ -244,7 +246,12 @@
     <textarea id="theme-css" class="text" rows="6" spellcheck="false" dir="ltr" data-i18n-aria-label="options_custom_css"></textarea>
     <p class="hint" data-i18n="options_custom_css_hint"></p>
     <p class="hint warn" id="theme-css-warning" data-i18n="options_custom_css_external" hidden></p>
-    <p class="row"><button class="btn" id="theme-reset" data-i18n="options_theme_reset"></button></p>
+    <p class="row">
+      <button class="btn" id="theme-reset" data-i18n="options_theme_reset"></button>
+      <button class="btn" id="theme-export" data-i18n="options_export"></button>
+      <button class="btn" id="theme-import" data-i18n="options_import"></button>
+      <input type="file" id="theme-import-file" accept=".json,application/json" hidden>
+    </p>
   </section>
   <section>
     <div class="head">

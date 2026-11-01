@@ -2308,5 +2308,25 @@
   },
   "help_news_title": {
     "message": "Nouveautés"
+  },
+  "options_preview": {
+    "message": "Aperçu du panneau avec des favoris d’exemple"
+  },
+  "options_replace_theme": {
+    "message": "Remplacer l’apparence du panneau par « $FILE$ » ?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Vos réglages d’apparence actuels seront perdus."
+  },
+  "options_theme_imported": {
+    "message": "Apparence importée"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Ce fichier contient d’autres réglages, pas l’apparence du panneau."
   }
 }

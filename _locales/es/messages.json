@@ -2308,5 +2308,25 @@
   },
   "help_news_title": {
     "message": "Novedades"
+  },
+  "options_preview": {
+    "message": "Vista previa del panel con marcadores de ejemplo"
+  },
+  "options_replace_theme": {
+    "message": "¿Reemplazar la apariencia del panel por «$FILE$»?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Se perderán los ajustes de apariencia actuales."
+  },
+  "options_theme_imported": {
+    "message": "Apariencia importada"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Este archivo contiene otros ajustes, no la apariencia del panel."
   }
 }

@@ -2460,5 +2460,25 @@
   },
   "help_news_title": {
     "message": "Что нового"
+  },
+  "options_preview": {
+    "message": "Предпросмотр панели на примере закладок"
+  },
+  "options_replace_theme": {
+    "message": "Заменить оформление панели файлом «$FILE$»?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Текущие настройки оформления пропадут."
+  },
+  "options_theme_imported": {
+    "message": "Оформление загружено"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "В этом файле другие настройки, а не оформление панели."
   }
 }

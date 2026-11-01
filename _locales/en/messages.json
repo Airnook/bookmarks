@@ -2419,5 +2419,30 @@
   },
   "help_news_title": {
     "message": "What’s new"
+  },
+  "options_preview": {
+    "message": "Preview of the panel on sample bookmarks",
+    "description": "Title of the preview frame in the appearance settings: the panel shown on demo bookmarks"
+  },
+  "options_replace_theme": {
+    "message": "Replace your panel appearance with “$FILE$”?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the dialog that asks to replace the panel appearance with an imported file. $FILE$ — the file name."
+  },
+  "options_replace_theme_text": {
+    "message": "Your current appearance settings will be lost.",
+    "description": "Text under options_replace_theme in the dialog"
+  },
+  "options_theme_imported": {
+    "message": "Appearance imported",
+    "description": "Message after the panel appearance was imported from a file"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "This file contains a different kind of settings, not panel appearance.",
+    "description": "Error: the chosen settings file is of another kind (for example shortcuts)"
   }
 }

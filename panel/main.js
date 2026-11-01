@@ -1,4 +1,5 @@
 // Панель закладок: запуск.
+import './demo.js'; // первым: в демо-режиме (превью настроек) подменяет chrome до остальных модулей
 import { SETTINGS_DEFAULTS, storedKeymap } from '../commands.js';
 import { localizePage, t } from '../i18n.js';
 import { themeCss } from '../theme.js';
