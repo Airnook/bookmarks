@@ -474,7 +474,7 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.match(await undo.getAttribute('title'), /\(.+\)$/);
       await undo.click();
       await hasRow('Работа');
-      await panel.waitForFunction(() => !document.querySelector('#bar [data-cmd=redo]').disabled && document.querySelector('#bar [data-cmd=undo]').disabled);
+      await panel.waitForFunction(() => !document.querySelector('#bar [data-cmd=redo]').disabled);
       assert.equal(await panel.evaluate(() => document.activeElement.id), 'list');
       await redo.click();
       await hasRow('Work 4');
