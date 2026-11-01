@@ -189,6 +189,42 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await options.close();
     });
 
+    await check('настройки: экспорт клавиш в файл, импорт с подтверждением, чужой тип отклоняется', async () => {
+      const mine = { 'view.cycle': ['x'] };
+      await setup.evaluate((keymap) => chrome.storage.local.set({ preset: 'vim', keymap }), mine);
+      const options = await open('options.html');
+      await options.waitForFunction(() => document.querySelectorAll('#root option').length > 1);
+
+      const [download] = await Promise.all([options.waitForEvent('download'), options.locator('#export').click()]);
+      assert.equal(download.suggestedFilename(), 'bookmarks-hotkeys.json');
+      const text = fs.readFileSync(await download.path(), 'utf8');
+      const file = JSON.parse(text);
+      assert.deepEqual({ ...file, extensionVersion: typeof file.extensionVersion }, {
+        app: 'airnook-bookmarks', type: 'hotkeys', format: 1, extensionVersion: 'string', data: { preset: 'vim', keymap: mine },
+      });
+
+      // другие клавиши в хранилище; импорт спрашивает и возвращает сохранённые
+      await setup.evaluate(() => chrome.storage.local.set({ preset: 'arc-legacy', keymap: {} }));
+      const input = options.locator('#import-file');
+      await input.setInputFiles({ name: 'bookmarks-hotkeys.json', mimeType: 'application/json', buffer: Buffer.from(text) });
+      await options.waitForSelector('#preset-dialog[open]');
+      assert.equal(await options.locator('#preset-title').textContent(), t('options_replace_preset', 'bookmarks-hotkeys.json'));
+      await options.keyboard.press('Enter');
+      await options.waitForFunction(() => !document.getElementById('preset-dialog').open);
+      await options.waitForFunction((msg) => document.getElementById('status').textContent === msg, t('options_imported'));
+      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'vim', keymap: mine });
+
+      // файл темы отклоняется, окна нет, хранилище прежнее
+      const theme = { ...file, type: 'theme' };
+      await input.setInputFiles({ name: 'bookmarks-theme.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(theme)) });
+      await options.waitForFunction((msg) => document.getElementById('status').textContent === msg, t('options_import_wrong_type'));
+      assert.equal(await options.evaluate(() => document.getElementById('preset-dialog').open), false);
+      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'vim', keymap: mine });
+
+      await setup.evaluate(() => chrome.storage.local.set({ keymap: {} })); // как после прошлой проверки
+      await options.close();
+    });
+
     const panel = await open('panel.html', { width: 360, height: 560 });
     const rowTexts = () => panel.locator('#list li').allTextContents();
     const cur = () => panel.locator('#list li.cur').textContent();
