@@ -29,6 +29,21 @@ Details: [Supplying images](https://developer.chrome.com/docs/webstore/images).
 | Marquee promo tile | 1400×560, optional (only for being featured) |
 | Name, summary (≤132 chars), description, category | from `_locales`; category e.g. Productivity |
 
+### Store images
+Files in `docs/store/` (generated: real screenshots of the extension framed in an HTML browser mockup; regenerate with `node scripts/store-images/capture.mjs . /tmp/shots && node scripts/store-images/compose.mjs /tmp/shots docs/store`; needs `npx playwright install chromium`). They are not part of the release zip.
+
+| File | Store field |
+| --- | --- |
+| `screenshot-1-panel.png` | Screenshots, 1st (panel beside a page, light) |
+| `screenshot-2-dark.png` | Screenshots, 2nd (dark theme) |
+| `screenshot-3-custom-theme.png` | Screenshots, 3rd (custom colors) |
+| `screenshot-4-theme-settings.png` | Screenshots, 4th (theme settings with live preview) |
+| `screenshot-5-hotkeys.png` | Screenshots, 5th (hotkey presets) |
+| `promo-small-440x280.png` | Small promo tile |
+| `promo-marquee-1400x560.png` | Marquee promo tile |
+
+`docs/panel-light.png` and `docs/panel-dark.png` are for the READMEs, not the store.
+
 ### Privacy practices
 Details: [Fill out the privacy fields](https://developer.chrome.com/docs/webstore/cws-dashboard-privacy).
 
