@@ -1182,6 +1182,32 @@
   "options_replace_ok": {
     "message": "बदलें"
   },
+  "options_export": {
+    "message": "निर्यात"
+  },
+  "options_import": {
+    "message": "आयात"
+  },
+  "options_imported": {
+    "message": "शॉर्टकट आयात हो गए"
+  },
+  "options_imported_skipped": {
+    "message": "शॉर्टकट आयात हो गए; छोड़ी गई अमान्य प्रविष्टियाँ: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "यह Bookmarks की मान्य सेटिंग फ़ाइल नहीं है।"
+  },
+  "options_import_wrong_type": {
+    "message": "इस फ़ाइल में शॉर्टकट नहीं, दूसरी सेटिंग हैं।"
+  },
+  "options_import_newer": {
+    "message": "यह फ़ाइल एक्सटेंशन के नए संस्करण की है। इसे आयात करने के लिए एक्सटेंशन अपडेट करें।"
+  },
   "options_preset_applied": {
     "message": "“$PRESET$” सेट लागू हो गया",
     "placeholders": {

@@ -43,6 +43,7 @@ class FakeElement {
   querySelector() { return null; }
   querySelectorAll() { return []; }
   closest() { return null; }
+  click() {}
 }
 
 // Открывает страницу настроек. tree — дерево закладок (можно менять по ходу теста), saved — хранилище,
@@ -54,6 +55,7 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
   const bookmarkListeners = {};
   const counters = { getTree: 0 };
   const docListeners = {};
+  const downloads = [];          // файлы, которые страница дала скачать: { name, text }
   const opened = [];             // адреса вкладок, которые страница открыла
   const els = new Map();
   const byId = (id) => {
@@ -93,12 +95,17 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
       },
     },
     commands: { getAll: async () => commands },
+    runtime: { getManifest: () => ({ version: '2.6.0' }) },
     tabs: { create: async ({ url }) => { opened.push(url); return {}; } },
     i18n: { getMessage: getMessageFor(lang) },
   };
   const document = {
     getElementById: byId,
-    createElement: (tag) => new FakeElement(tag),
+    createElement: (tag) => {
+      const el = new FakeElement(tag);
+      if (tag === 'a') el.click = () => downloads.push({ name: el.download, text: el.href.text });
+      return el;
+    },
     querySelectorAll: () => [],
     querySelector: () => null,
     addEventListener: (type, fn) => { (docListeners[type] ??= []).push(fn); },
@@ -109,9 +116,11 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
   const ctx = vm.createContext({
     console, setTimeout, clearTimeout, Promise, Option, chrome, document, structuredClone, performance,
     window: { addEventListener() {} },
+    Blob: class { constructor(parts) { this.text = parts.join(''); } },
+    URL: { createObjectURL: (blob) => blob, revokeObjectURL() {} },
     navigator: { platform: 'Linux x86_64' },
   });
-  for (const file of ['i18n.js', 'commands.js', 'options.js']) {
+  for (const file of ['i18n.js', 'commands.js', 'settings-file.js', 'options.js']) {
     vm.runInContext(asScript(fs.readFileSync(path.join(root, file), 'utf8')), ctx, { filename: file });
   }
 
@@ -122,6 +131,7 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
     storageSets,
     counters,
     opened,
+    downloads,
     // нажатие клавиши на странице: { key, code, ctrlKey… }
     keydown: (e) => docListeners.keydown?.forEach(fn => fn({
       key: '', code: '', shiftKey: false, ctrlKey: false, altKey: false, metaKey: false, repeat: false,

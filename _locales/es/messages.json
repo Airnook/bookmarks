@@ -1206,6 +1206,32 @@
   "options_replace_ok": {
     "message": "Reemplazar"
   },
+  "options_export": {
+    "message": "Exportar"
+  },
+  "options_import": {
+    "message": "Importar"
+  },
+  "options_imported": {
+    "message": "Atajos importados"
+  },
+  "options_imported_skipped": {
+    "message": "Atajos importados; entradas no válidas omitidas: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "No es un archivo de ajustes de Bookmarks válido."
+  },
+  "options_import_wrong_type": {
+    "message": "Este archivo contiene otros ajustes, no atajos de teclado."
+  },
+  "options_import_newer": {
+    "message": "Este archivo es de una versión más reciente de la extensión. Actualiza la extensión para importarlo."
+  },
   "options_preset_applied": {
     "message": "Se aplicó el conjunto «$PRESET$»",
     "placeholders": {

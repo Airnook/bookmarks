@@ -1158,6 +1158,32 @@
   "options_replace_ok": {
     "message": "置き換える"
   },
+  "options_export": {
+    "message": "エクスポート"
+  },
+  "options_import": {
+    "message": "インポート"
+  },
+  "options_imported": {
+    "message": "ショートカットをインポートしました"
+  },
+  "options_imported_skipped": {
+    "message": "ショートカットをインポートしました。無効な項目をスキップ: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Bookmarks の有効な設定ファイルではありません。"
+  },
+  "options_import_wrong_type": {
+    "message": "このファイルにはショートカットではなく別の設定が入っています。"
+  },
+  "options_import_newer": {
+    "message": "このファイルは拡張機能の新しいバージョンのものです。インポートするには拡張機能を更新してください。"
+  },
   "options_preset_applied": {
     "message": "「$PRESET$」セットを適用しました",
     "placeholders": {
