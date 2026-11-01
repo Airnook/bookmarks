@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Neu: Tastenkürzel-Vorlagen in den Einstellungen. Ihre Tasten bleiben gleich – das ist die Vorlage „Arc legacy“."
+  },
   "create_folder_failed": {
     "message": "Ordner konnte nicht erstellt werden"
   },
@@ -1038,14 +1041,34 @@
   "options_keys": {
     "message": "Tasten der Seitenleiste"
   },
-  "options_preset_standard": {
+  "options_global_title": {
+    "message": "Seitenleiste öffnen und schließen"
+  },
+  "options_reserved": {
+    "message": "$KEY$ wird vom Browser oder System abgefangen und erreicht die Seitenleiste nie – wählen Sie ein anderes Tastenkürzel",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
     "message": "Standard"
   },
-  "options_preset_standard_title": {
-    "message": "Alle Tastenkürzel durch die Standardkürzel ersetzen"
+  "options_preset_default_title": {
+    "message": "Vertraute Tastenkürzel aus Browser und Dateimanager: Kopieren, Einfügen, Rückgängig, F2 zum Umbenennen"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy plus Tastenkürzel des Arc-Browsers: Link kopieren, Befehlsleiste, Einstellungen, Seitenleiste ausblenden"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Tastenkürzel früherer Versionen: einzelne Buchstaben n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Standard plus Vim-Tasten: j k h l, g g, d d, y y…"
+    "message": "Arc legacy plus Vim-Tasten: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "„+“ zeichnet ein Tastenkürzel auf: eine Taste, mit Zusatztasten, eine Tastenfolge ($SEQUENCE$) oder einen Doppeldruck ($DOUBLE$) – drücken Sie die zweite Taste sofort. $ENTER$ nach einer Taste – fertig, $ESC$ – Aufzeichnung abbrechen, „×“ – entfernen. Ist das Tastenkürzel schon vergeben, werden Sie gefragt, ob Sie es übernehmen möchten. Alle Befehle finden Sie auch in der Befehlspalette der Seitenleiste.",
@@ -1061,17 +1084,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Seitenleiste öffnen und schließen: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },

@@ -2,7 +2,7 @@ import './locale-ru.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  COMMANDS, mirrorKey, keymapOf, bindingsOf, resolveKeymap, chordOf, physicalChordOf, splitChord,
+  COMMANDS, PRESETS, isReserved, mirrorKey, keymapOf, bindingsOf, resolveKeymap, chordOf, physicalChordOf, splitChord,
   formatChord, shortcutText, isMacPlatform, modLabels, keyLabels,
 } from '../commands.js';
 
@@ -128,4 +128,115 @@ test('RTL: ← и → меняются местами при разборе на
   }
   // нажатое и показанное совпадают: нажатие, запускающее ArrowRight, показано как та же стрелка
   assert.equal(formatChord(press('ArrowLeft', true), PC, true)[0], '←');
+});
+
+// Клавиши 2.6.0 (набор «Стандартный») — дословно: пользователи, закреплённые на arc-legacy, не замечают обновления
+const KEYS_2_6_0 = {
+  'search': ['/', 'Mod+f'],
+  'cursor.down': ['ArrowDown'],
+  'cursor.up': ['ArrowUp'],
+  'cursor.first': ['Home'],
+  'cursor.last': ['End'],
+  'folder.expand': ['ArrowRight'],
+  'folder.collapse': ['ArrowLeft'],
+  'folders.collapseAll': [],
+  'open': ['Enter'],
+  'open.alt': ['Mod+Enter'],
+  'open.newTab': [],
+  'open.currentTab': [],
+  'open.group': [],
+  'open.reset': ['Shift+Enter'],
+  'mark.toggle': ['Space'],
+  'mark.down': ['Shift+ArrowDown'],
+  'mark.up': ['Shift+ArrowUp'],
+  'mark.all': ['Mod+a'],
+  'mark.clear': [],
+  'folder.new': ['n'],
+  'rename': ['r', 'F2'],
+  'edit': [],
+  'move.to': ['m'],
+  'url.update': ['u'],
+  'delete': ['d'],
+  'copy.url': ['c'],
+  'cut': ['Mod+x'],
+  'copy': ['Mod+c'],
+  'paste': ['Mod+v'],
+  'tab.close': ['Backspace', 'Delete'],
+  'move.up': ['Alt+ArrowUp'],
+  'move.down': ['Alt+ArrowDown'],
+  'undo': ['Mod+z'],
+  'redo': ['Mod+Shift+z', 'Mod+y'],
+  'palette': ['Mod+k', '?'],
+  'menu': ['Shift+F10', 'ContextMenu'],
+  'view.cycle': ['v'],
+  'help': ['i', 'F1'],
+  'settings': [','],
+  'escape': ['Escape'],
+  'panel.close': [],
+};
+
+test('наборы: arc-legacy — в точности клавиши 2.6.0', () => {
+  assert.ok(Object.hasOwn(PRESETS, 'arc-legacy'));
+  assert.deepEqual(Object.fromEntries(resolveKeymap(PRESETS['arc-legacy'])), KEYS_2_6_0);
+});
+
+// Таблицы из спецификации (#3, «Presets»); порядок внутри команды не важен
+const sorted = (map) => Object.fromEntries([...map].map(([id, keys]) => [id, [...keys].sort()]));
+
+test('наборы: default — таблица спецификации', () => {
+  const changed = {
+    'folder.new': ['Mod+Alt+n'],
+    'rename': ['F2'],
+    'edit': ['Mod+i'],
+    'delete': ['Mod+Backspace', 'Delete'],
+    'copy.url': ['Mod+Shift+c'],
+    'redo': ['Mod+Shift+z'],
+    'palette': ['Mod+k'],
+    'help': ['F1', 'Mod+/'],
+    'settings': ['Mod+,'],
+    'move.to': [], 'url.update': [], 'tab.close': [], 'view.cycle': [], 'panel.close': [],
+  };
+  assert.deepEqual(sorted(resolveKeymap(PRESETS.default)), sorted(Object.entries({ ...KEYS_2_6_0, ...changed })));
+});
+
+test('наборы: arc — arc-legacy плюс клавиши Arc', () => {
+  const added = {
+    'copy.url': ['c', 'Mod+Shift+c'],
+    'palette': ['Mod+k', '?', 'Mod+l'],
+    'delete': ['d', 'Mod+Backspace'],
+    'cursor.up': ['ArrowUp', 'Mod+Alt+ArrowUp'],
+    'cursor.down': ['ArrowDown', 'Mod+Alt+ArrowDown'],
+    'settings': [',', 'Mod+,'],
+    'panel.close': ['Mod+s'],
+  };
+  assert.deepEqual(sorted(resolveKeymap(PRESETS.arc)), sorted(Object.entries({ ...KEYS_2_6_0, ...added })));
+});
+
+test('наборы: внутри каждого набора сочетания не конфликтуют', () => {
+  for (const [name, preset] of Object.entries(PRESETS)) {
+    const own = COMMANDS.flatMap(c => preset[c.id] ?? c.keys);
+    assert.equal(new Set(own).size, own.length, name);
+  }
+});
+
+test('isReserved: сочетания, которые Chrome или система забирают до страницы', () => {
+  for (const mac of [MAC, PC]) {
+    for (const b of ['Mod+t', 'Mod+w', 'Mod+n', 'Mod+Shift+n', 'Mod+Shift+t', 'Mod+Shift+w', 'g Mod+t']) {
+      assert.equal(isReserved(b, mac), true, `${b} ${mac}`);
+    }
+    for (const b of ['Mod+k', 'Mod+Shift+c', 'Mod+Alt+ArrowUp', 'd d', 'Mod+s']) assert.equal(isReserved(b, mac), false, `${b} ${mac}`);
+  }
+  // Ctrl+Tab: на Mac Ctrl отдельный, на остальных это Mod
+  assert.equal(isReserved('Ctrl+Tab', MAC), true);
+  assert.equal(isReserved('Mod+Tab', PC), true);
+  for (const b of ['Mod+h', 'Mod+m', 'Mod+q', 'Mod+Space', 'Ctrl+ArrowUp', 'Ctrl+ArrowLeft']) assert.equal(isReserved(b, MAC), true, b);
+  assert.equal(isReserved('Mod+h', PC), false); // Ctrl+H — история, странице доступна
+});
+
+test('наборы: ни один не использует зарезервированное сочетание ни на одной платформе', () => {
+  for (const [name, preset] of Object.entries(PRESETS)) {
+    for (const [id, keys] of resolveKeymap(preset)) {
+      for (const b of keys) for (const mac of [MAC, PC]) assert.equal(isReserved(b, mac), false, `${name}: ${id} ${b}`);
+    }
+  }
 });

@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Nouveau : des jeux de raccourcis dans les paramètres. Vos touches n’ont pas changé — c’est le jeu « Arc legacy »."
+  },
   "create_folder_failed": {
     "message": "Impossible de créer le dossier"
   },
@@ -1062,14 +1065,34 @@
   "options_keys": {
     "message": "Touches du panneau"
   },
-  "options_preset_standard": {
-    "message": "Standard"
+  "options_global_title": {
+    "message": "Ouvrir et fermer le panneau"
   },
-  "options_preset_standard_title": {
-    "message": "Remplacer tous les raccourcis par ceux par défaut"
+  "options_reserved": {
+    "message": "$KEY$ est intercepté par le navigateur ou le système et n’atteint jamais le panneau — choisissez un autre raccourci",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "Par défaut"
+  },
+  "options_preset_default_title": {
+    "message": "Raccourcis familiers du navigateur et du gestionnaire de fichiers : copier, coller, annuler, F2 pour renommer"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy plus les raccourcis du navigateur Arc : copier le lien, barre de commandes, paramètres, masquer le panneau"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Raccourcis des versions précédentes : lettres seules n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Standard plus touches Vim : j k h l, g g, d d, y y…"
+    "message": "Arc legacy plus touches Vim : j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "« + » enregistre un raccourci : une touche, avec modificateurs, une séquence ($SEQUENCE$) ou un double appui ($DOUBLE$) — appuyez tout de suite sur la seconde touche. $ENTER$ après une touche — terminé, $ESC$ — annuler l’enregistrement, « × » — retirer. Si le raccourci est déjà pris, on vous demandera si vous voulez le reprendre. Toutes les commandes sont aussi dans la palette de commandes du panneau.",
@@ -1085,17 +1108,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Ouvrir et fermer le panneau : $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },

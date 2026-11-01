@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "جديد: مجموعات اختصارات في الإعدادات. لم تتغيّر مفاتيحك — إنها مجموعة “Arc legacy”."
+  },
   "create_folder_failed": {
     "message": "تعذّر إنشاء المجلد"
   },
@@ -1134,14 +1137,34 @@
   "options_keys": {
     "message": "مفاتيح اللوحة"
   },
-  "options_preset_standard": {
-    "message": "قياسي"
+  "options_global_title": {
+    "message": "فتح اللوحة وإغلاقها"
   },
-  "options_preset_standard_title": {
-    "message": "استبدال كل الاختصارات بالاختصارات القياسية"
+  "options_reserved": {
+    "message": "يستحوذ المتصفّح أو النظام على $KEY$ ولن يصل إلى اللوحة أبدًا — اختر اختصارًا آخر",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "الافتراضي"
+  },
+  "options_preset_default_title": {
+    "message": "اختصارات مألوفة من المتصفّح ومدير الملفات: النسخ واللصق والتراجع وF2 لإعادة التسمية"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy مع اختصارات متصفّح Arc: نسخ الرابط وشريط الأوامر والإعدادات وإخفاء اللوحة"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "اختصارات الإصدارات السابقة: حروف مفردة n وr وd وc…"
   },
   "options_preset_vim_title": {
-    "message": "القياسي مع مفاتيح Vim: j k h l وg g وd d وy y…"
+    "message": "Arc legacy مع مفاتيح Vim: j k h l وg g وd d وy y…"
   },
   "options_keys_hint": {
     "message": "يسجّل “+” اختصارًا: مفتاحًا (مع مفاتيح التعديل)، أو تسلسلًا ($SEQUENCE$)، أو ضغطة مزدوجة ($DOUBLE$) — اضغط المفتاح الثاني فورًا. $ENTER$ بعد المفتاح — تم، $ESC$ — إلغاء التسجيل، “×” — إزالة. إذا كان الاختصار مستخدمًا فستُسأل هل تريد الاستيلاء عليه. كل الأوامر موجودة أيضًا في لوحة أوامر اللوحة.",
@@ -1157,17 +1180,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "فتح اللوحة وإغلاقها: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },

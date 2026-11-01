@@ -211,3 +211,46 @@ test('openSet: вкладка из другого окна не берётся, 
   await bg.get('openSet')({ windowId: 1, items: [] });
   assert.deepEqual(calls, []);
 });
+
+// Установка и обновление: какие клавиши получит пользователь
+const installed = async (env, reason, previousVersion) => {
+  env.listeners.onInstalled.forEach(fn => fn({ reason, previousVersion }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+};
+
+test('установка: набор default', async () => {
+  const env = setup();
+  await installed(env, 'install');
+  assert.equal(env.local.preset, 'default');
+  assert.equal('keymap' in env.local, false); // нет keymap — значит набор default
+  assert.equal(env.local.keysNotice, undefined);
+});
+
+test('обновление с 2.6.0 без своих клавиш: прежние клавиши (arc-legacy) и одна подсказка', async () => {
+  for (const keymap of [undefined, {}]) {
+    const env = setup();
+    if (keymap) env.local.keymap = keymap;
+    await installed(env, 'update', '2.6.0');
+    assert.deepEqual(env.local.keymap, {});
+    assert.equal(env.local.preset, 'arc-legacy');
+    assert.equal(env.local.keysNotice, true);
+  }
+});
+
+test('обновление с 2.6.0 со своими клавишами: клавиши не трогаем, подсказки нет', async () => {
+  const env = setup();
+  env.local.keymap = { delete: ['x'] };
+  await installed(env, 'update', '2.6.0');
+  assert.deepEqual(env.local.keymap, { delete: ['x'] });
+  assert.equal(env.local.preset, 'arc-legacy');
+  assert.equal(env.local.keysNotice, undefined);
+});
+
+test('обновление, когда набор уже выбран: ничего не меняем', async () => {
+  const env = setup();
+  env.local.preset = 'default';
+  await installed(env, 'update', '2.7.0');
+  assert.equal(env.local.preset, 'default');
+  assert.equal('keymap' in env.local, false);
+  assert.equal(env.local.keysNotice, undefined);
+});

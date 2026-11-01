@@ -1,6 +1,6 @@
 import {
   COMMANDS, COMMAND, PRESETS, SETTINGS_DEFAULTS, DOUBLE_WAIT, SEQUENCE_WAIT,
-  groupTitle, keymapOf, resolveKeymap, chordOf, physicalChordOf, preferPhysical, shortcutText, bindingNodes,
+  groupTitle, keymapOf, storedKeymap, bindingsOf, isReserved, resolveKeymap, chordOf, physicalChordOf, preferPhysical, shortcutText, bindingNodes,
 } from './commands.js';
 import { localizePage, t } from './i18n.js';
 
@@ -13,6 +13,8 @@ const keymapBox = document.getElementById('keymap');
 const status = document.getElementById('status');
 
 let keymap = {};      // изменённые сочетания: id команды → список
+let preset = 'default'; // последний выбранный набор: к его клавишам возвращает «сбросить»
+let globalKey = '';   // сочетание открытия панели — его задают в настройках Chrome
 let recording = null; // { id, parts, at, timer } — идёт запись сочетания
 
 function notify(text) {
@@ -81,7 +83,7 @@ function scheduleRoots() {
 
 async function init() {
   const [tree] = await chrome.bookmarks.getTree();
-  const saved = await chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: {} });
+  const saved = await chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: null, preset });
 
   rootId = saved.rootId;
   buildRoots(tree);
@@ -89,11 +91,11 @@ async function init() {
   for (const s of switches) s.checked = saved[s.id];
   viewSelect.value = saved.view;
   if (viewSelect.value !== saved.view) viewSelect.value = SETTINGS_DEFAULTS.view;
-  keymap = keymapOf(saved.keymap);
-  renderKeymap();
-
+  keymap = storedKeymap(saved.keymap);
+  preset = saved.preset;
   const toggle = (await chrome.commands.getAll()).find(c => c.name === 'open-bookmarks');
-  document.getElementById('global-key').textContent = toggle?.shortcut || t('options_global_not_set');
+  globalKey = toggle?.shortcut || t('options_global_not_set');
+  renderKeymap();
 }
 
 select.onchange = () => {
@@ -105,7 +107,6 @@ select.addEventListener('blur', flushRoots);
 viewSelect.onchange = () => save({ view: viewSelect.value });
 document.getElementById('help').onclick = () => chrome.tabs.create({ url: 'help.html' });
 for (const s of switches) s.onchange = () => save({ [s.id]: s.checked });
-document.getElementById('shortcuts').onclick = () => chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
 
 // ---------- список команд ----------
 
@@ -146,7 +147,14 @@ function renderKeymap(focusId) {
   const viewKey = shown.get('view.cycle')[0];
   document.getElementById('view-key').textContent = viewKey ? shortcutText(viewKey) : t('options_from_palette');
   focusId ??= keymapBox.contains(document.activeElement) ? document.activeElement.closest('.cmd')?.dataset.id : undefined;
-  const out = [];
+  // открытие панели — команда Chrome: здесь только показываем и ведём в его настройки
+  const global = document.createElement('div');
+  global.className = 'cmd cmd-global';
+  const globalKeys = Object.assign(document.createElement('span'), { className: 'cmd-keys' });
+  globalKeys.append(Object.assign(document.createElement('span'), { className: 'chip', textContent: globalKey }),
+    button('link', t('options_global_change'), '', () => chrome.tabs.create({ url: 'chrome://extensions/shortcuts' })));
+  global.append(Object.assign(document.createElement('span'), { className: 'cmd-title', textContent: t('options_global_title') }), globalKeys);
+  const out = [global];
   let group = '';
   for (const c of COMMANDS) {
     if (c.group !== group) {
@@ -186,8 +194,8 @@ function renderKeymap(focusId) {
     } else {
       keys.append(button('add', '+', t('options_add_binding', c.title), () => startRecording(c.id)));
     }
-    if (Object.hasOwn(keymap, c.id)) {
-      keys.append(button('reset', t('options_reset'), t('options_reset_title', c.title), () => assign(c.id, () => c.keys)));
+    if (!sameSet(bindingsOf(c.id, keymap), presetKeys(c.id))) {
+      keys.append(button('reset', t('options_reset'), t('options_reset_title', c.title), () => assign(c.id, () => presetKeys(c.id))));
     }
 
     row.append(name, keys);
@@ -215,6 +223,8 @@ function paintPresets() {
   document.getElementById('preset-state').textContent = match ? '' : t('options_custom');
 }
 
+// Клавиши команды в последнем выбранном наборе
+const presetKeys = (id) => (PRESETS[preset] ?? PRESETS.default)[id] ?? COMMAND[id].keys;
 const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
 
 // Изменения выполняются по очереди, и каждое берёт свежие настройки: два быстрых
@@ -227,7 +237,7 @@ const serial = (job) => (queue = queue.then(job).catch(console.error));
 // как «не менялось». note(keymap) — дополнительная пометка к сообщению.
 function assign(id, change, note) {
   return serial(async () => {
-    keymap = keymapOf((await chrome.storage.local.get('keymap')).keymap);
+    keymap = storedKeymap((await chrome.storage.local.get({ keymap: null })).keymap);
     const current = resolveKeymap(keymap);
     const list = change(current.get(id));
     const notes = [];
@@ -272,6 +282,8 @@ document.addEventListener('keydown', (e) => {
   e.preventDefault();
   e.stopPropagation();
   if (e.repeat) return;
+  // такое сочетание до панели не дойдёт; запись продолжается
+  if (isReserved(chord)) return notify(t('options_reserved', shortcutText(chord)));
   const id = recording.id;
   if (recording.taken) { // ответ на «уже занято»
     if (chord === 'Enter') return commitRecording(true);
@@ -361,10 +373,13 @@ for (const b of document.querySelectorAll('[data-preset]')) {
   b.onclick = async () => {
     stopRecording();
     if (b.classList.contains('on')) return rerender(); // уже он
-    if (Object.keys(keymap).length && !(await askReplace(b))) return rerender();
+    // свои сочетания (не совпадают ни с одним набором) пропадут — спросить
+    const custom = Object.values(PRESETS).every(p => canonical(p) !== canonical(keymap));
+    if (custom && !(await askReplace(b))) return rerender();
     serial(async () => {
       keymap = structuredClone(PRESETS[b.dataset.preset]);
-      await save({ keymap }, t('options_preset_applied', b.textContent));
+      preset = b.dataset.preset;
+      await save({ keymap, preset }, t('options_preset_applied', b.textContent));
       rerender();
     });
   };
@@ -373,7 +388,8 @@ for (const b of document.querySelectorAll('[data-preset]')) {
 // изменения из другой вкладки настроек или из панели (вид переключают клавишей)
 // Только отражаем: записи в хранилище здесь не делаем
 chrome.storage.local.onChanged.addListener((c) => {
-  if (c.keymap && !recording) { keymap = keymapOf(c.keymap.newValue); rerender(); }
+  if (c.preset) preset = c.preset.newValue ?? 'default';
+  if ((c.keymap || c.preset) && !recording) { if (c.keymap) keymap = storedKeymap(c.keymap.newValue); rerender(); }
   if (c.view) viewSelect.value = c.view.newValue ?? SETTINGS_DEFAULTS.view;
   if (c.rootId) { rootId = c.rootId.newValue ?? SETTINGS_DEFAULTS.rootId; showRoot(); }
   for (const s of switches) if (Object.hasOwn(c, s.id)) s.checked = c[s.id].newValue ?? SETTINGS_DEFAULTS[s.id];
