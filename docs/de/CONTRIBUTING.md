@@ -9,22 +9,24 @@ Stammverzeichnis des Repositorys unverändert. Die Seiten (`panel.html`, `option
 aufgeteilt; Start und Reihenfolge der Ereignisabonnements stehen in `panel/main.js`, der gemeinsame veränderliche Zustand
 in `panel/state.js`. Der Oberflächentext liegt in `_locales/<Sprache>/messages.json` (Standard-`chrome.i18n`) und wird von
 `i18n.js` angezeigt (`t`, Plurale, Seitenrichtung). Die Entwicklungswerkzeuge (`package.json`, `eslint.config.js`,
-`test/`, `scripts/`) gehören nicht zum Release.
+`test/`, `scripts/`) gehören nicht zum Release. Im Wurzelverzeichnis liegen außerdem das Thema (`theme.js`, von Seitenleiste und Einstellungen gemeinsam genutzt) und das Format der Einstellungsdateien (`settings-file.js`: Umschlag und Migrationskette nach `format`, für Import und Export von Tastenkürzeln und Thema).
 
 ### Module der Seitenleiste
 
 Die Module in `panel/` importieren einander nur von oben nach unten, ohne Zyklen — das prüft `test/panel-imports.test.js`
 (und gibt den Zyklus-Pfad aus, falls es einen gibt). Die Schichten, von unten nach oben:
 
-1. ohne Abhängigkeiten innerhalb der Seitenleiste: `util`, `dom`, `url`, `search`, `place` (wohin ein verschobenes Element
+1. ohne Abhängigkeiten innerhalb der Seitenleiste: `demo`, `util`, `dom`, `url`, `search`, `place` (wohin ein verschobenes Element
    gelangt), dann `state`, `nodes`, `history` (Bearbeitungsverlauf für Rückgängig und Wiederholen: Jede Änderung an
    Lesezeichen aus der Seitenleiste läuft über sein `begin()`);
 2. `ui` (Bestätigungsdialog, Meldungen, Fokus), `keymap` (Tastenhinweise), `tree` (Lesen des Baums, Knoten-Cache);
-3. `search-index` (Suchindex), `tabs`, `marks`;
+3. `search-index` (Suchindex), `tabs`, `marks`, `undo-buttons` (Schaltflächen Rückgängig und Wiederholen in der Kopfzeile);
 4. `render`, dann `find` (Suche betreten und verlassen), `open`, `edit`, `palette` (Auswahl aus einer Liste);
 5. `move-to`, `link`, `search-input`;
 6. `actions` (was jeder Befehl tut);
 7. `keys`, `mouse`, `drag` (Drag and Drop mit der Maus), dann `main`.
+
+`demo` hängt von keinem anderen Panel-Modul ab, muss aber der erste Import von `main.js` sein: Im Demo-Modus (`panel.html?demo`, die Themenvorschau in den Einstellungen) ersetzt es `chrome` durch feste Daten im Speicher, bevor ein anderes Modul es liest.
 
 Ein Modul importiert nur aus tieferen Schichten. Muss ein tieferes Modul ein höheres aufrufen, importiert es dieses nicht,
 sondern bekommt den Aufruf von außen: `tree` ruft nach jedem Lesen des Baums `onTreeApplied(callback)` auf (`main.js`

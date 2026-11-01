@@ -7,21 +7,23 @@
 后台脚本 `background.js` 是普通的 service worker，不是模块。侧边栏代码拆分为 `panel/` 中的模块；启动和事件订阅的顺序在
 `panel/main.js` 中，共享的可变状态在 `panel/state.js` 中。界面文本位于 `_locales/<语言>/messages.json`（标准的
 `chrome.i18n`），由 `i18n.js` 显示（`t`、复数、页面方向）。开发工具（`package.json`、`eslint.config.js`、`test/`、
-`scripts/`）不属于发布内容。
+`scripts/`）不属于发布内容。 根目录中还有主题（`theme.js`，侧边栏和设置共用）以及设置文件格式（`settings-file.js`：信封和按 `format` 的迁移链，用于快捷键和主题的导入导出）。
 
 ### 侧边栏模块
 
 `panel/` 中的模块之间只能自上而下地相互导入，不允许循环——`test/panel-imports.test.js` 会检查这一点（如有循环，会打印
 循环路径）。各层自下而上如下：
 
-1. 不依赖侧边栏的其他部分：`util`、`dom`、`url`、`search`、`place`（被移动的项目落在何处），然后是 `state`、`nodes`、
+1. 不依赖侧边栏的其他部分：`demo`、`util`、`dom`、`url`、`search`、`place`（被移动的项目落在何处），然后是 `state`、`nodes`、
    `history`（用于撤销和重做的编辑历史：从侧边栏对书签做的每一次更改都经过它的 `begin()`）；
 2. `ui`（确认对话框、消息、焦点）、`keymap`（按键提示）、`tree`（读取树、节点缓存）；
-3. `search-index`（搜索索引）、`tabs`、`marks`；
+3. `search-index`（搜索索引）、`tabs`、`marks`、`undo-buttons` （头部的撤销和重做按钮）；
 4. `render`，然后是 `find`（进入和退出搜索）、`open`、`edit`、`palette`（从列表中选择）；
 5. `move-to`、`link`、`search-input`；
 6. `actions`（每个命令的具体行为）；
 7. `keys`、`mouse`、`drag`（鼠标拖放），然后是 `main`。
+
+`demo` 不依赖侧边栏的其他模块，但必须是 `main.js` 的第一个导入：在演示模式（`panel.html?demo`，设置中的主题预览）下，它会在其他模块读取 `chrome` 之前，将其替换为内存中的固定数据。
 
 模块只从其下层导入。当下层模块需要调用上层模块时，不导入它，而是从外部接收这个调用：`tree` 在每次读取树之后调用
 `onTreeApplied(callback)`（`main.js` 设置重绘），`openPalette(run)` 通过传入的 `run` 运行所选命令。多个层都需要的状态放在

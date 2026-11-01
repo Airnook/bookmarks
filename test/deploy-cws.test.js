@@ -84,3 +84,13 @@ test('ошибка получения токена: сообщение серв�
   const { fn } = stub({ 'POST https://oauth2.example/token': () => reply({ error: 'invalid_grant', error_description: 'bad key' }, 400) });
   await assert.rejects(run(fn), /bad key/);
 });
+
+test('битый JSON секрета: фиксированное сообщение без содержимого секрета', async () => {
+  const { fn, calls } = stub({});
+  await assert.rejects(run(fn, { ...ENV, CWS_SERVICE_ACCOUNT_JSON: '{"private_key":"TOP-SECRET' }), (e) => {
+    assert.match(e.message, /CWS_SERVICE_ACCOUNT_JSON/);
+    assert.ok(!e.message.includes('TOP-SECRET'));
+    return true;
+  });
+  assert.equal(calls.length, 0);
+});

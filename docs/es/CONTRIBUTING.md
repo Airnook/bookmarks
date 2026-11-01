@@ -9,23 +9,25 @@ service worker normal, no un módulo. El código del panel está dividido en mó
 las suscripciones a eventos están en `panel/main.js`, y el estado mutable compartido en `panel/state.js`. El texto de la
 interfaz está en `_locales/<idioma>/messages.json` (`chrome.i18n` estándar) y lo muestra `i18n.js` (`t`, plurales,
 dirección de la página). Las herramientas de desarrollo (`package.json`, `eslint.config.js`, `test/`, `scripts/`) no
-forman parte de la versión publicada.
+forman parte de la versión publicada. En la raíz están también el tema (`theme.js`, compartido por el panel y los ajustes) y el formato de los archivos de ajustes (`settings-file.js`: sobre y cadena de migraciones por `format`, para importar y exportar atajos y tema).
 
 ### Módulos del panel
 
 Los módulos de `panel/` se importan entre sí solo de arriba abajo, sin ciclos — lo comprueba `test/panel-imports.test.js`
 (e imprime la ruta del ciclo si lo hay). Las capas, de abajo arriba:
 
-1. sin dependencias del panel: `util`, `dom`, `url`, `search`, `place` (dónde queda un elemento movido), luego `state`,
+1. sin dependencias del panel: `demo`, `util`, `dom`, `url`, `search`, `place` (dónde queda un elemento movido), luego `state`,
    `nodes`, `history` (historial de ediciones para deshacer y rehacer: todo cambio de marcadores hecho desde el panel
    pasa por su `begin()`);
 2. `ui` (diálogo de confirmación, mensajes, foco), `keymap` (indicaciones de teclas), `tree` (lectura del árbol, caché de
    nodos);
-3. `search-index` (índice de búsqueda), `tabs`, `marks`;
+3. `search-index` (índice de búsqueda), `tabs`, `marks`, `undo-buttons` (botones Deshacer y Rehacer del encabezado);
 4. `render`, luego `find` (entrar y salir de la búsqueda), `open`, `edit`, `palette` (elegir de una lista);
 5. `move-to`, `link`, `search-input`;
 6. `actions` (qué hace cada comando);
 7. `keys`, `mouse`, `drag` (arrastrar y soltar con el ratón), luego `main`.
+
+`demo` no depende de otros módulos del panel, pero debe ser la primera importación de `main.js`: en modo demo (`panel.html?demo`, la vista previa del tema en los ajustes) sustituye `chrome` por datos fijos en memoria antes de que cualquier otro módulo lo lea.
 
 Un módulo importa solo de las capas inferiores. Cuando un módulo inferior necesita llamar a uno superior, no lo importa,
 sino que recibe la llamada desde fuera: `tree` llama a `onTreeApplied(callback)` tras cada lectura del árbol (`main.js`

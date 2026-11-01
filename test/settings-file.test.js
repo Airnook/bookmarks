@@ -50,3 +50,12 @@ test('cleanHotkeys: зарезервированное и список из од
   const out = cleanHotkeys({ preset: 'vim', keymap: { open: [5], delete: ['Mod+t', 'x'], rename: [] } });
   assert.deepEqual(out, { preset: 'vim', keymap: { delete: ['x'], rename: [] }, dropped: 2 });
 });
+
+test('readSettingsFile: нет шага цепочки — broken, а не исключение', () => {
+  assert.deepEqual(readSettingsFile(file({ format: 1 }), 'hotkeys', 3, { 2: d => d }), { error: 'broken' });
+  assert.deepEqual(readSettingsFile(file({ format: 1 }), 'hotkeys', 2), { error: 'broken' });
+});
+
+test('cleanHotkeys: набор custom — свои сочетания, не отброшенное', () => {
+  assert.deepEqual(cleanHotkeys({ preset: 'custom', keymap: { open: ['x'] } }), { preset: 'default', keymap: { open: ['x'] }, dropped: 0 });
+});
