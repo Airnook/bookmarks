@@ -1134,6 +1134,78 @@
   "options_auto_hide_hint": {
     "message": "النقر على الصفحة أو على واجهة المتصفّح يغلق اللوحة. أما التبديل إلى تطبيق آخر فيُبقيها مفتوحة."
   },
+  "options_appearance": {
+    "message": "مظهر اللوحة"
+  },
+  "options_theme_mode": {
+    "message": "السمة"
+  },
+  "options_theme_system": {
+    "message": "حسب النظام"
+  },
+  "options_theme_light": {
+    "message": "فاتحة"
+  },
+  "options_theme_dark": {
+    "message": "داكنة"
+  },
+  "options_colors_light": {
+    "message": "ألوان السمة الفاتحة"
+  },
+  "options_colors_dark": {
+    "message": "ألوان السمة الداكنة"
+  },
+  "options_color_background": {
+    "message": "الخلفية"
+  },
+  "options_color_text": {
+    "message": "النص"
+  },
+  "options_color_accent": {
+    "message": "لون التمييز"
+  },
+  "options_color_reset": {
+    "message": "إعادة تعيين"
+  },
+  "options_font": {
+    "message": "الخط"
+  },
+  "options_font_system": {
+    "message": "خط النظام"
+  },
+  "options_font_size": {
+    "message": "حجم الخط، px"
+  },
+  "options_font_size_browser": {
+    "message": "الافتراضي في المتصفح"
+  },
+  "options_radius": {
+    "message": "استدارة الزوايا، px"
+  },
+  "options_radius_full": {
+    "message": "مستديرة بالكامل"
+  },
+  "options_favicons": {
+    "message": "أيقونات المواقع"
+  },
+  "options_folder_counts": {
+    "message": "عدد الإشارات بجانب المجلدات"
+  },
+  "options_indent_guides": {
+    "message": "خطوط المستويات"
+  },
+  "options_custom_css": {
+    "message": "CSS مخصص"
+  },
+  "options_custom_css_hint": {
+    "message": "يُطبَّق على اللوحة الجانبية فقط، فوق الإعدادات أعلاه. لا يغيّر صفحة الإعدادات ولا المساعدة."
+  },
+  "options_custom_css_external": {
+    "message": "العناوين الخارجية في url() أو @import تحمّل ملفات من الإنترنت عند كل فتح للوحة، ويعرف ذلك الموقع بالأمر."
+  },
+  "options_theme_reset": {
+    "message": "إعادة تعيين المظهر"
+  },
   "options_keys": {
     "message": "مفاتيح اللوحة"
   },

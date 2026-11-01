@@ -1159,6 +1159,78 @@
   "options_auto_hide_hint": {
     "message": "A click on the page or on the browser interface closes the panel. Switching to another app keeps it open."
   },
+  "options_appearance": {
+    "message": "Panel appearance"
+  },
+  "options_theme_mode": {
+    "message": "Theme"
+  },
+  "options_theme_system": {
+    "message": "As in the system"
+  },
+  "options_theme_light": {
+    "message": "Light"
+  },
+  "options_theme_dark": {
+    "message": "Dark"
+  },
+  "options_colors_light": {
+    "message": "Light theme colors"
+  },
+  "options_colors_dark": {
+    "message": "Dark theme colors"
+  },
+  "options_color_background": {
+    "message": "Background"
+  },
+  "options_color_text": {
+    "message": "Text"
+  },
+  "options_color_accent": {
+    "message": "Accent"
+  },
+  "options_color_reset": {
+    "message": "Reset"
+  },
+  "options_font": {
+    "message": "Font"
+  },
+  "options_font_system": {
+    "message": "System"
+  },
+  "options_font_size": {
+    "message": "Font size, px"
+  },
+  "options_font_size_browser": {
+    "message": "Browser default"
+  },
+  "options_radius": {
+    "message": "Corner radius, px"
+  },
+  "options_radius_full": {
+    "message": "Fully rounded"
+  },
+  "options_favicons": {
+    "message": "Site icons"
+  },
+  "options_folder_counts": {
+    "message": "Bookmark count next to folders"
+  },
+  "options_indent_guides": {
+    "message": "Indent guides"
+  },
+  "options_custom_css": {
+    "message": "Custom CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "Applies to the side panel only, on top of the settings above. The settings page and help are not affected."
+  },
+  "options_custom_css_external": {
+    "message": "External addresses in url() or @import load files from the internet every time the panel opens, and that site sees it."
+  },
+  "options_theme_reset": {
+    "message": "Reset appearance"
+  },
   "options_keys": {
     "message": "Panel keys"
   },

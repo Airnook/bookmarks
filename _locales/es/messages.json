@@ -1062,6 +1062,78 @@
   "options_auto_hide_hint": {
     "message": "Un clic en la página o en la interfaz del navegador cierra el panel. Cambiar a otra aplicación lo mantiene abierto."
   },
+  "options_appearance": {
+    "message": "Apariencia del panel"
+  },
+  "options_theme_mode": {
+    "message": "Tema"
+  },
+  "options_theme_system": {
+    "message": "Como el sistema"
+  },
+  "options_theme_light": {
+    "message": "Claro"
+  },
+  "options_theme_dark": {
+    "message": "Oscuro"
+  },
+  "options_colors_light": {
+    "message": "Colores del tema claro"
+  },
+  "options_colors_dark": {
+    "message": "Colores del tema oscuro"
+  },
+  "options_color_background": {
+    "message": "Fondo"
+  },
+  "options_color_text": {
+    "message": "Texto"
+  },
+  "options_color_accent": {
+    "message": "Acento"
+  },
+  "options_color_reset": {
+    "message": "Restablecer"
+  },
+  "options_font": {
+    "message": "Fuente"
+  },
+  "options_font_system": {
+    "message": "Del sistema"
+  },
+  "options_font_size": {
+    "message": "Tamaño de fuente, px"
+  },
+  "options_font_size_browser": {
+    "message": "Predeterminado del navegador"
+  },
+  "options_radius": {
+    "message": "Radio de las esquinas, px"
+  },
+  "options_radius_full": {
+    "message": "Totalmente redondeado"
+  },
+  "options_favicons": {
+    "message": "Iconos de sitios"
+  },
+  "options_folder_counts": {
+    "message": "Número de marcadores junto a las carpetas"
+  },
+  "options_indent_guides": {
+    "message": "Guías de sangría"
+  },
+  "options_custom_css": {
+    "message": "CSS propio"
+  },
+  "options_custom_css_hint": {
+    "message": "Solo se aplica al panel lateral, por encima de los ajustes anteriores. No afecta a la página de ajustes ni a la ayuda."
+  },
+  "options_custom_css_external": {
+    "message": "Las direcciones externas en url() o @import descargan archivos de internet cada vez que se abre el panel, y ese sitio lo ve."
+  },
+  "options_theme_reset": {
+    "message": "Restablecer apariencia"
+  },
   "options_keys": {
     "message": "Teclas del panel"
   },

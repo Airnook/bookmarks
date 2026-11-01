@@ -1014,6 +1014,78 @@
   "options_auto_hide_hint": {
     "message": "ページやブラウザの UI をクリックするとパネルが閉じます。別のアプリに切り替えても開いたままです。"
   },
+  "options_appearance": {
+    "message": "パネルの外観"
+  },
+  "options_theme_mode": {
+    "message": "テーマ"
+  },
+  "options_theme_system": {
+    "message": "システムに合わせる"
+  },
+  "options_theme_light": {
+    "message": "ライト"
+  },
+  "options_theme_dark": {
+    "message": "ダーク"
+  },
+  "options_colors_light": {
+    "message": "ライトテーマの色"
+  },
+  "options_colors_dark": {
+    "message": "ダークテーマの色"
+  },
+  "options_color_background": {
+    "message": "背景"
+  },
+  "options_color_text": {
+    "message": "文字"
+  },
+  "options_color_accent": {
+    "message": "アクセント"
+  },
+  "options_color_reset": {
+    "message": "リセット"
+  },
+  "options_font": {
+    "message": "フォント"
+  },
+  "options_font_system": {
+    "message": "システム"
+  },
+  "options_font_size": {
+    "message": "フォントサイズ (px)"
+  },
+  "options_font_size_browser": {
+    "message": "ブラウザの既定"
+  },
+  "options_radius": {
+    "message": "角の丸み (px)"
+  },
+  "options_radius_full": {
+    "message": "完全に丸く"
+  },
+  "options_favicons": {
+    "message": "サイトのアイコン"
+  },
+  "options_folder_counts": {
+    "message": "フォルダ横のブックマーク数"
+  },
+  "options_indent_guides": {
+    "message": "インデントのガイド線"
+  },
+  "options_custom_css": {
+    "message": "カスタム CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "サイドパネルにのみ、上の設定の後に適用されます。設定ページとヘルプには影響しません。"
+  },
+  "options_custom_css_external": {
+    "message": "url() や @import の外部アドレスは、パネルを開くたびにインターネットからファイルを読み込み、そのサイトに知られます。"
+  },
+  "options_theme_reset": {
+    "message": "外観をリセット"
+  },
   "options_keys": {
     "message": "パネルのキー"
   },

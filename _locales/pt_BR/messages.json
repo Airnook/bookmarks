@@ -1062,6 +1062,78 @@
   "options_auto_hide_hint": {
     "message": "Um clique na página ou na interface do navegador fecha o painel. Mudar para outro aplicativo o mantém aberto."
   },
+  "options_appearance": {
+    "message": "Aparência do painel"
+  },
+  "options_theme_mode": {
+    "message": "Tema"
+  },
+  "options_theme_system": {
+    "message": "Como no sistema"
+  },
+  "options_theme_light": {
+    "message": "Claro"
+  },
+  "options_theme_dark": {
+    "message": "Escuro"
+  },
+  "options_colors_light": {
+    "message": "Cores do tema claro"
+  },
+  "options_colors_dark": {
+    "message": "Cores do tema escuro"
+  },
+  "options_color_background": {
+    "message": "Fundo"
+  },
+  "options_color_text": {
+    "message": "Texto"
+  },
+  "options_color_accent": {
+    "message": "Destaque"
+  },
+  "options_color_reset": {
+    "message": "Redefinir"
+  },
+  "options_font": {
+    "message": "Fonte"
+  },
+  "options_font_system": {
+    "message": "Do sistema"
+  },
+  "options_font_size": {
+    "message": "Tamanho da fonte, px"
+  },
+  "options_font_size_browser": {
+    "message": "Padrão do navegador"
+  },
+  "options_radius": {
+    "message": "Arredondamento dos cantos, px"
+  },
+  "options_radius_full": {
+    "message": "Totalmente arredondado"
+  },
+  "options_favicons": {
+    "message": "Ícones dos sites"
+  },
+  "options_folder_counts": {
+    "message": "Número de favoritos ao lado das pastas"
+  },
+  "options_indent_guides": {
+    "message": "Guias de recuo"
+  },
+  "options_custom_css": {
+    "message": "CSS próprio"
+  },
+  "options_custom_css_hint": {
+    "message": "Vale apenas para o painel lateral, por cima das configurações acima. A página de configurações e a ajuda não mudam."
+  },
+  "options_custom_css_external": {
+    "message": "Endereços externos em url() ou @import baixam arquivos da internet sempre que o painel é aberto, e esse site fica sabendo."
+  },
+  "options_theme_reset": {
+    "message": "Redefinir aparência"
+  },
   "options_keys": {
     "message": "Teclas do painel"
   },

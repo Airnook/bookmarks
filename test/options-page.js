@@ -120,7 +120,7 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
     URL: { createObjectURL: (blob) => blob, revokeObjectURL() {} },
     navigator: { platform: 'Linux x86_64' },
   });
-  for (const file of ['i18n.js', 'commands.js', 'settings-file.js', 'options.js']) {
+  for (const file of ['i18n.js', 'commands.js', 'settings-file.js', 'theme.js', 'options.js']) {
     vm.runInContext(asScript(fs.readFileSync(path.join(root, file), 'utf8')), ctx, { filename: file });
   }
 

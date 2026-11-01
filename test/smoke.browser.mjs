@@ -918,6 +918,39 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await panel.keyboard.press(collapse);
     });
 
+    await check('оформление: настройки сразу меняют открытую панель, свой CSS — только в панели', async () => {
+      const style = (page, selector, prop) => page.evaluate(([s, p]) => getComputedStyle(document.querySelector(s))[p], [selector, prop]);
+      const until = (selector, prop, value) => panel.waitForFunction(([s, p, v]) => getComputedStyle(document.querySelector(s))[p] === v, [selector, prop, value]);
+      assert.equal(await panel.locator('#theme').textContent(), ''); // тема по умолчанию: вид 2.6.0
+      const options = await open('options.html');
+      await options.waitForFunction(() => document.getElementById('theme-light-accent').value === '#2563eb');
+      assert.equal(await options.locator('#appearance h2').textContent(), t('options_appearance'));
+      assert.equal(await options.locator('#theme-light-accent-reset').isVisible(), false);
+      // светлая тема со своим акцентом; затем тёмная — свой цвет у неё прежний
+      await options.locator('#theme-mode').selectOption('light');
+      await options.locator('#theme-light-accent').fill('#ff0000');
+      await until('#marks', 'color', 'rgb(255, 0, 0)');
+      assert.equal(await options.locator('#theme-light-accent-reset').isVisible(), true);
+      await options.locator('#theme-mode').selectOption('dark');
+      await until('#marks', 'color', 'rgb(126, 166, 255)');
+      // счётчик у папки: текст строки остаётся названием
+      await options.locator('#theme-counts').check();
+      await panel.waitForFunction(() => [...document.querySelectorAll('#list .count')].some(c => c.checkVisibility()));
+      assert.ok((await rowTexts()).includes('Работа'));
+      // свой CSS: действует только включённым и только в панели
+      await options.locator('#theme-css').fill('body { outline: 3px solid rgb(1, 2, 3); }');
+      await options.locator('#theme-css').blur();
+      await options.locator('#theme-css-on').check();
+      await until('body', 'outlineColor', 'rgb(1, 2, 3)');
+      assert.notEqual(await style(options, 'body', 'outlineColor'), 'rgb(1, 2, 3)');
+      await options.locator('#theme-css-on').uncheck();
+      await panel.waitForFunction(() => getComputedStyle(document.body).outlineStyle === 'none');
+      await options.locator('#theme-reset').click();
+      await panel.waitForFunction(() => document.getElementById('theme').textContent === '');
+      assert.equal(await options.locator('#theme-mode').inputValue(), 'system');
+      await options.close();
+    });
+
     await check('нет ошибок на страницах', async () => {
       await panel.waitForTimeout(300); // запоздалые ошибки обработчиков
       assert.deepEqual(errors, []);

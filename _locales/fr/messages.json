@@ -1062,6 +1062,78 @@
   "options_auto_hide_hint": {
     "message": "Un clic sur la page ou sur l’interface du navigateur ferme le panneau. Passer à une autre application le laisse ouvert."
   },
+  "options_appearance": {
+    "message": "Apparence du panneau"
+  },
+  "options_theme_mode": {
+    "message": "Thème"
+  },
+  "options_theme_system": {
+    "message": "Comme le système"
+  },
+  "options_theme_light": {
+    "message": "Clair"
+  },
+  "options_theme_dark": {
+    "message": "Sombre"
+  },
+  "options_colors_light": {
+    "message": "Couleurs du thème clair"
+  },
+  "options_colors_dark": {
+    "message": "Couleurs du thème sombre"
+  },
+  "options_color_background": {
+    "message": "Arrière-plan"
+  },
+  "options_color_text": {
+    "message": "Texte"
+  },
+  "options_color_accent": {
+    "message": "Accent"
+  },
+  "options_color_reset": {
+    "message": "Réinitialiser"
+  },
+  "options_font": {
+    "message": "Police"
+  },
+  "options_font_system": {
+    "message": "Système"
+  },
+  "options_font_size": {
+    "message": "Taille de police, px"
+  },
+  "options_font_size_browser": {
+    "message": "Par défaut du navigateur"
+  },
+  "options_radius": {
+    "message": "Arrondi des angles, px"
+  },
+  "options_radius_full": {
+    "message": "Arrondi complet"
+  },
+  "options_favicons": {
+    "message": "Icônes des sites"
+  },
+  "options_folder_counts": {
+    "message": "Nombre de favoris à côté des dossiers"
+  },
+  "options_indent_guides": {
+    "message": "Guides d’indentation"
+  },
+  "options_custom_css": {
+    "message": "CSS personnalisé"
+  },
+  "options_custom_css_hint": {
+    "message": "S’applique uniquement au panneau latéral, par-dessus les réglages ci-dessus. La page des paramètres et l’aide ne changent pas."
+  },
+  "options_custom_css_external": {
+    "message": "Les adresses externes dans url() ou @import téléchargent des fichiers depuis internet à chaque ouverture du panneau, et ce site le voit."
+  },
+  "options_theme_reset": {
+    "message": "Réinitialiser l’apparence"
+  },
   "options_keys": {
     "message": "Touches du panneau"
   },

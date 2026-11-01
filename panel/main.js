@@ -1,6 +1,7 @@
 // Панель закладок: запуск.
 import { SETTINGS_DEFAULTS, storedKeymap } from '../commands.js';
 import { localizePage, t } from '../i18n.js';
+import { themeCss } from '../theme.js';
 import { list, palette } from './dom.js';
 import { ignore } from './util.js';
 import { MARKS_SURVIVE, saveState, saved, state } from './state.js';
@@ -42,6 +43,11 @@ listenMenu((id) => actions[id]?.());
 listenUndoButtons((id) => { actions[id](); focusHome(); }); // фокус не остаётся на кнопке: клавиши списка работают
 connectBackground(); // узнаёт окно (state.winReady) — до чтения настроек ниже
 
+// Тема — сразу, не дожидаясь окна и дерева; дальше — из onChanged (настройки, другие окна)
+const themeStyle = document.getElementById('theme');
+const applyTheme = (theme) => { themeStyle.textContent = themeCss(theme); };
+chrome.storage.local.get('theme').then(({ theme }) => applyTheme(theme), ignore);
+
 onTreeApplied(() => {
   build();
   refreshTabs();
@@ -61,6 +67,7 @@ chrome.storage.local.onChanged.addListener((c) => {
   if (c.view) viewStored(c.view.newValue ?? SETTINGS_DEFAULTS.view, c.viewWrite?.newValue);
   if (c.recentFolders) state.recentFolders = Array.isArray(c.recentFolders.newValue) ? c.recentFolders.newValue : []; // из других окон
   if (c.pinnedTabs) refreshTabs();
+  if (c.theme) applyTheme(c.theme.newValue);
 });
 listenBookmarks();
 listenTabs();
