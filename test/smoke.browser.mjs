@@ -149,6 +149,11 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       const [before, after] = raw('options_intro', ['\0']).split('\0');
       assert.equal(await options.locator('.intro').textContent(), before + t('options_intro_help') + after);
       assert.equal(await options.locator('#keymap h3').first().textContent(), t('group_nav'));
+      // новая установка — набор default; открытие панели — своей строкой со ссылкой в настройки Chrome
+      assert.equal(await options.locator('[data-preset]').count(), 4);
+      assert.equal(await options.locator('[data-preset=default]').getAttribute('aria-pressed'), 'true');
+      assert.equal(await options.locator('#keymap .cmd-global .cmd-title').textContent(), t('options_global_title'));
+      assert.equal(await options.locator('#keymap .cmd-global .link').textContent(), t('options_global_change'));
       await shot(options, 'options');
       await options.close();
     });
@@ -179,7 +184,8 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.equal(await options.locator('[data-preset=vim]').getAttribute('aria-pressed'), 'true');
       assert.equal(await options.locator('#preset-state').textContent(), '');
 
-      await setup.evaluate(() => chrome.storage.local.remove('keymap')); // обычные сочетания — для следующих проверок
+      // клавиши arc-legacy — для следующих проверок; как после обновления с 2.6.0 — с подсказкой о наборах
+      await setup.evaluate(async () => { await chrome.storage.local.remove('firstRun'); await chrome.storage.local.set({ keymap: {}, keysNotice: true }); });
       await options.close();
     });
 
@@ -198,6 +204,11 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.equal(await panel.locator('header, #title, #find').count(), 0);
       assert.equal(await panel.locator('#search-bar').isVisible(), false);
       assert.ok((await panel.locator('#list li').first().boundingBox()).y < 12);
+    });
+
+    await check('панель: после обновления — один раз подсказка о наборах клавиш', async () => {
+      await toast(t('keys_notice'));
+      await panel.waitForFunction(async () => !('keysNotice' in await chrome.storage.local.get('keysNotice')));
     });
 
     // в RTL ← раскрывает папку, → сворачивает (стрелки зеркалятся)

@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "新功能：可在设置中选择快捷键预设。您的按键没有变化——这是“Arc legacy”预设。"
+  },
   "create_folder_failed": {
     "message": "无法创建文件夹"
   },
@@ -1014,14 +1017,34 @@
   "options_keys": {
     "message": "面板快捷键"
   },
-  "options_preset_standard": {
-    "message": "标准"
+  "options_global_title": {
+    "message": "打开和关闭面板"
   },
-  "options_preset_standard_title": {
-    "message": "将所有快捷键替换为标准设置"
+  "options_reserved": {
+    "message": "$KEY$ 会被浏览器或系统占用，无法到达面板——请选择其他快捷键",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "默认"
+  },
+  "options_preset_default_title": {
+    "message": "浏览器和文件管理器中熟悉的快捷键：复制、粘贴、撤销、F2 重命名"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy 加上 Arc 浏览器的快捷键：复制链接、命令栏、设置、隐藏面板"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "旧版本的快捷键：单个字母 n、r、d、c…"
   },
   "options_preset_vim_title": {
-    "message": "标准设置加上 Vim 按键：j k h l、g g、d d、y y…"
+    "message": "Arc legacy 加上 Vim 键：j k h l、g g、d d、y y…"
   },
   "options_keys_hint": {
     "message": "点击“+”录制快捷键：可以是单个按键（可带修饰键）、按键序列（$SEQUENCE$）或连按两次（$DOUBLE$）— 请立即按第二次。按键后按 $ENTER$ 完成，按 $ESC$ 取消录制，点击“×”删除。如果该快捷键已被占用，系统会询问是否改用它。所有命令也都可以在面板的命令面板中找到。",
@@ -1037,17 +1060,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "打开和关闭面板：$KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },

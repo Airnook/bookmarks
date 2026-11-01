@@ -658,6 +658,9 @@
     },
     "description": "Toast after the extension was updated, pointing to the what’s-new page in help. $KEY$ — the shortcut that opens help."
   },
+  "keys_notice": {
+    "message": "New: shortcut sets in settings. Your keys are unchanged — that’s the “Arc legacy” set."
+  },
   "create_folder_failed": {
     "message": "Couldn’t create the folder"
   },
@@ -1159,14 +1162,35 @@
   "options_keys": {
     "message": "Panel keys"
   },
-  "options_preset_standard": {
-    "message": "Standard"
+  "options_global_title": {
+    "message": "Open and close the panel"
   },
-  "options_preset_standard_title": {
-    "message": "Replace all shortcuts with the standard ones"
+  "options_reserved": {
+    "message": "$KEY$ is taken by the browser or the system and never reaches the panel — choose another shortcut",
+    "description": "Shown when recording a shortcut that the browser or OS intercepts. $KEY$ — the shortcut, e.g. Ctrl+T",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "Default"
+  },
+  "options_preset_default_title": {
+    "message": "Shortcuts familiar from the browser and the file manager: copy, paste, undo, F2 to rename"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy plus Arc browser shortcuts: copy link, command bar, settings, hide the panel"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Shortcuts of earlier versions: single letters n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Standard plus Vim keys: j k h l, g g, d d, y y…"
+    "message": "Arc legacy plus Vim keys: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "“+” records a shortcut: a key, with modifiers, a sequence ($SEQUENCE$) or a double press ($DOUBLE$) — press the second key right away. $ENTER$ after a key — done, $ESC$ — cancel recording, “×” — remove. If the shortcut is taken, you’ll be asked whether to take it over. All commands are also in the panel’s command palette.",
@@ -1186,21 +1210,9 @@
     },
     "description": "Hint about recording a shortcut on the settings page. $SEQUENCE$ — an example key sequence (G G); $DOUBLE$ — an example double press (Enter Enter); $ENTER$ — the Enter key; $ESC$ — the Esc key. The placeholders are key elements, not text."
   },
-  "options_global": {
-    "message": "Open and close the panel: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
-      }
-    },
-    "description": "Settings page line with the shortcut that opens and closes the panel. $KEY$ — that shortcut (or a dash if none is set); $CHANGE$ — a button that changes it (the button has its own label)."
-  },
   "options_global_change": {
     "message": "change in browser settings",
-    "description": "Link text inside options_global"
+    "description": "Button in the “open and close the panel” row of the shortcut list"
   },
   "options_global_not_set": {
     "message": "not set"
