@@ -12,8 +12,9 @@ import { build, render } from './render.js';
 import { paintMarks } from './marks.js';
 import { listenGroupName } from './open.js';
 import { listenEditDialog } from './edit.js';
-import { flash, listenConfirm, listenFocus } from './ui.js';
+import { flash, focusHome, listenConfirm, listenFocus } from './ui.js';
 import { actions, applyView, viewStored } from './actions.js';
+import { listenUndoButtons, paintUndoButtons } from './undo-buttons.js';
 import { listenMenu } from './context-menu.js';
 import { keyText } from './keymap.js';
 import { buildKeymap, listenKeys } from './keys.js';
@@ -38,6 +39,7 @@ listenPalette();
 listenMouse();
 listenDrag();
 listenMenu((id) => actions[id]?.());
+listenUndoButtons((id) => { actions[id](); focusHome(); }); // фокус не остаётся на кнопке: клавиши списка работают
 connectBackground(); // узнаёт окно (state.winReady) — до чтения настроек ниже
 
 onTreeApplied(() => {
@@ -51,6 +53,7 @@ chrome.storage.local.onChanged.addListener((c) => {
   if (c.keymap) { // подсказки и палитра — с новыми клавишами
     state.keymap = storedKeymap(c.keymap.newValue);
     buildKeymap();
+    paintUndoButtons();
     state.rows.length ? paintMarks() : render();
     if (palette.open) renderPicker({ keep: true });
   }
@@ -70,6 +73,7 @@ Promise.all([chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: null, rece
     if (!Array.isArray(state.recentFolders)) state.recentFolders = [];
     state.keymap = storedKeymap(state.keymap);
     buildKeymap();
+    paintUndoButtons();
     applyView();
     if (saved?.marked && saved.win === state.windowId && Date.now() - saved.at < MARKS_SURVIVE) state.marked = new Set(saved.marked);
     return fetchTree();

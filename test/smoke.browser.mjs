@@ -231,7 +231,7 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
     const toast = async (text) => panel.waitForFunction(
       (t) => document.getElementById('toast').textContent.includes(t), text);
 
-    await check('панель: дерево закладок, своей шапки нет — список сразу сверху', async () => {
+    await check('панель: дерево закладок, шапка с «Отменить»/«Повторить» (неактивны), список сразу под ней', async () => {
       await panel.waitForFunction(() => [...document.querySelectorAll('#list li')].some(li => li.textContent === 'Работа'));
       const rows = await rowTexts();
       for (const t of [bar, 'Работа', 'Новости']) assert.ok(rows.includes(t), `${t} в ${rows}`);
@@ -239,7 +239,15 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.equal(await panel.locator('#search').getAttribute('placeholder'), t('search_placeholder'));
       assert.equal(await panel.locator('header, #title, #find').count(), 0);
       assert.equal(await panel.locator('#search-bar').isVisible(), false);
-      assert.ok((await panel.locator('#list li').first().boundingBox()).y < 12);
+      const header = await panel.locator('#bar').boundingBox();
+      const first = await panel.locator('#list li').first().boundingBox();
+      assert.ok(header.y < 12 && first.y >= header.y + header.height && first.y < header.y + header.height + 12, `шапка ${JSON.stringify(header)}, список ${first.y}`);
+      for (const id of ['undo', 'redo']) {
+        const b = panel.locator(`#bar [data-cmd=${id}]`);
+        assert.equal(await b.isDisabled(), true, id);
+        assert.match(await b.getAttribute('title'), new RegExp(`^${literal(t('cmd_' + id))}`));
+        assert.equal(await b.getAttribute('aria-label'), await b.getAttribute('title'));
+      }
     });
 
     await check('панель: после обновления — один раз подсказка о наборах клавиш', async () => {
@@ -487,6 +495,27 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
         assert.equal(await cur(), shown, key);
       }
       await toast(t('undone', t('undo_renamed', 'Work 2')));
+    });
+
+    await check('панель: кнопки в шапке — после правки «Отменить» активна, клик отменяет, затем активна «Повторить»', async () => {
+      const undo = panel.locator('#bar [data-cmd=undo]');
+      const redo = panel.locator('#bar [data-cmd=redo]');
+      await goTo('Работа');
+      await panel.keyboard.press('r');
+      await panel.locator('#list input.rename').fill('Work 4');
+      await panel.keyboard.press('Enter');
+      await hasRow('Work 4');
+      await panel.waitForFunction(() => !document.querySelector('#bar [data-cmd=undo]').disabled);
+      assert.equal(await redo.isDisabled(), true);
+      assert.match(await undo.getAttribute('title'), /\(.+\)$/);
+      await undo.click();
+      await hasRow('Работа');
+      await panel.waitForFunction(() => !document.querySelector('#bar [data-cmd=redo]').disabled);
+      assert.equal(await panel.evaluate(() => document.activeElement.id), 'list');
+      await redo.click();
+      await hasRow('Work 4');
+      await panel.keyboard.press('Control+z');
+      await hasRow('Работа');
     });
 
     await check('панель: Alt+↓ → Ctrl+Z — порядок как был', async () => {

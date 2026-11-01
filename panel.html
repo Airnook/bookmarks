@@ -10,6 +10,7 @@
       --sel-idle: light-dark(rgb(0 0 0 / .075), rgb(255 255 255 / .09));
       --mark: color-mix(in srgb, var(--accent) 8%, transparent);
       --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4.5 2.5 8 6l-3.5 3.5' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6 3 2.5 6.5 6 10M3 6.5h6.5a3.5 3.5 0 0 1 0 7H6' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       --cross: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 2l6 6M8 2 2 8' stroke='black' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
       --folder: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 4.6c0-.9.7-1.6 1.6-1.6h2.6c.4 0 .8.2 1.1.5l.9 1h4.2c.9 0 1.6.7 1.6 1.6v5.3c0 .9-.7 1.6-1.6 1.6H3.6c-.9 0-1.6-.7-1.6-1.6z' fill='none' stroke='black' stroke-width='1.3' stroke-linejoin='round'/%3E%3C/svg%3E");
       --check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 5.2 4 7.2 8 3' fill='none' stroke='%232563eb' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -20,12 +21,26 @@
     html { scroll-padding: 8px 0; scrollbar-width: thin; }
     body { font-size: 13px; line-height: 1.3; }
 
-    /* Шапки нет: список начинается сверху. Строка поиска появляется над ним только во время поиска,
+    /* Шапка — две кнопки «Отменить» и «Повторить» (иконки зеркалятся справа налево). Строка поиска
+       появляется под ней только во время поиска,
        полоса «Выбрано» внизу — только пока есть отметки. Счётчик найденного — справа в строке поиска
        (в RTL — слева), поле обрезает запрос перед ним */
-    #search-bar { position: sticky; top: 0; z-index: 1; padding: 6px; background: Canvas; }
+    #bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 2px; height: 28px; padding: 4px 6px 0; box-sizing: content-box; background: Canvas; }
+    #bar button {
+      display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 6px;
+      color: var(--text); background: none; cursor: pointer;
+    }
+    #bar button::before { content: ""; width: 16px; height: 16px; background: currentColor; mask: var(--arrow) center / contain no-repeat; }
+    #bar button[data-cmd="redo"]::before { scale: -1 1; }
+    #bar:dir(rtl) button::before { scale: -1 1; }
+    #bar:dir(rtl) button[data-cmd="redo"]::before { scale: 1; }
+    #bar button:hover:not(:disabled) { background: var(--hover); }
+    #bar button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    #bar button:disabled { color: var(--muted); opacity: .45; cursor: default; }
+    #search-bar { position: sticky; top: 32px; z-index: 1; padding: 6px; background: Canvas; }
     #search-bar[hidden] { display: none; }
-    html:has(#search-bar:not([hidden])) { scroll-padding-top: 46px; }
+    html { scroll-padding-top: 32px; }
+    html:has(#search-bar:not([hidden])) { scroll-padding-top: 78px; }
     #field {
       display: flex; height: 28px; box-sizing: border-box;
       align-items: center; background: var(--sel-idle); border-radius: 6px;
@@ -255,6 +270,10 @@
   </style>
 </head>
 <body>
+  <div id="bar" role="toolbar" data-i18n-aria-label="group_edit">
+    <button type="button" data-cmd="undo"></button>
+    <button type="button" data-cmd="redo"></button>
+  </div>
   <div id="search-bar" hidden>
     <div id="field">
       <input id="search" type="text" data-i18n-placeholder="search_placeholder" autocomplete="off" spellcheck="false"
