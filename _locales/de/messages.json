@@ -1113,6 +1113,26 @@
   "options_keys": {
     "message": "Tasten der Seitenleiste"
   },
+  "options_panel_side": {
+    "message": "Position der Seitenleiste"
+  },
+  "options_panel_side_hint": {
+    "message": "Aktuelle Seite: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "in den Browsereinstellungen ändern"
+  },
+  "options_side_left": {
+    "message": "links"
+  },
+  "options_side_right": {
+    "message": "rechts"
+  },
   "options_global_title": {
     "message": "Seitenleiste öffnen und schließen"
   },

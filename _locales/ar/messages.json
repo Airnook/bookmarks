@@ -1209,6 +1209,26 @@
   "options_keys": {
     "message": "مفاتيح اللوحة"
   },
+  "options_panel_side": {
+    "message": "موضع اللوحة"
+  },
+  "options_panel_side_hint": {
+    "message": "الجانب الحالي: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "التغيير في إعدادات المتصفّح"
+  },
+  "options_side_left": {
+    "message": "يسار"
+  },
+  "options_side_right": {
+    "message": "يمين"
+  },
   "options_global_title": {
     "message": "فتح اللوحة وإغلاقها"
   },

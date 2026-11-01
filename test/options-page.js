@@ -48,7 +48,7 @@ class FakeElement {
 
 // Открывает страницу настроек. tree — дерево закладок (можно менять по ходу теста), saved — хранилище,
 // lang — язык браузера
-export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
+export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [], sidePanel }) {
   const store = structuredClone(saved);
   const storageSets = [];        // что страница записала в хранилище
   const storageListeners = [];
@@ -97,6 +97,7 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
       },
     },
     commands: { getAll: async () => commands },
+    ...(sidePanel && { sidePanel }), // Chrome 140+: без него — старый Chrome
     runtime: { getManifest: () => ({ version: '2.6.0' }) },
     tabs: { create: async ({ url }) => { opened.push(url); return {}; } },
     i18n: { getMessage: getMessageFor(lang) },

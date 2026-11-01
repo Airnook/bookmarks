@@ -1089,6 +1089,26 @@
   "options_keys": {
     "message": "パネルのキー"
   },
+  "options_panel_side": {
+    "message": "パネルの位置"
+  },
+  "options_panel_side_hint": {
+    "message": "現在の位置: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "ブラウザの設定で変更"
+  },
+  "options_side_left": {
+    "message": "左"
+  },
+  "options_side_right": {
+    "message": "右"
+  },
   "options_global_title": {
     "message": "パネルを開く／閉じる"
   },

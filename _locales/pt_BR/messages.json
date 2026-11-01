@@ -1137,6 +1137,26 @@
   "options_keys": {
     "message": "Teclas do painel"
   },
+  "options_panel_side": {
+    "message": "Posição do painel"
+  },
+  "options_panel_side_hint": {
+    "message": "Lado atual: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "alterar nas configurações do navegador"
+  },
+  "options_side_left": {
+    "message": "esquerda"
+  },
+  "options_side_right": {
+    "message": "direita"
+  },
   "options_global_title": {
     "message": "Abrir e fechar o painel"
   },
