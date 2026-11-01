@@ -1,0 +1,251 @@
+#!/usr/bin/env bash
+#
+# A wizard walks a human through a manual procedure, step by step.
+# Chrome Web Store deploy credentials: see docs/publishing.md.
+#
+# Everything above the "STAGES" marker is the wizard library: do not hand-edit
+# it. Author the per-step stages below the marker.
+
+set -euo pipefail
+
+# ──────────────────────────────────────────────────────────────────────────
+# Wizard library: delightful, consistent UX, identical across every wizard.
+# ──────────────────────────────────────────────────────────────────────────
+
+if [[ -t 1 ]] && command -v tput >/dev/null 2>&1 && [[ "$(tput colors 2>/dev/null || echo 0)" -ge 8 ]]; then
+  BOLD=$(tput bold); DIM=$(tput dim); RESET=$(tput sgr0)
+  BLUE=$(tput setaf 4); GREEN=$(tput setaf 2); YELLOW=$(tput setaf 3)
+else
+  BOLD=""; DIM=""; RESET=""; BLUE=""; GREEN=""; YELLOW=""
+fi
+
+# Author sets this at the top of the stages section.
+TOTAL_STAGES=0
+
+_STAGE_INDEX=0
+ENV_FILE="${ENV_FILE:-.env}"
+WRITTEN_ENV=()    # KEYs written to ENV_FILE this run
+WRITTEN_SECRET=() # secret NAMEs set this run
+SKIPPED=()        # things we couldn't do (e.g. gh missing)
+
+# _clear wipes the terminal so only the current step is on screen. No-op when
+# output isn't a terminal, so piped logs stay readable.
+_clear() {
+  [[ -t 1 ]] || return 0
+  if command -v tput >/dev/null 2>&1 && tput clear 2>/dev/null; then return 0; fi
+  printf '\033[2J\033[3J\033[H'
+}
+
+# banner "Title" shows the opening frame: what this wizard does.
+banner() {
+  _clear
+  printf '\n%s%s  %s%s\n' "$BOLD" "$BLUE" "$1" "$RESET"
+  printf '%s  %s stages%s\n\n' "$DIM" "$TOTAL_STAGES" "$RESET"
+  printf '%s  You drive the browser; this wizard tells you exactly what to do and\n' "$DIM"
+  printf '  captures the values you copy back. Stop any time with Ctrl-C and re-run\n'
+  printf '  later, since it remembers values already saved.%s\n' "$RESET"
+  pause "Ready to start?"
+}
+
+# stage "Name" clears the screen, then announces a stage and shows progress.
+# Clearing keeps only the current step on screen.
+stage() {
+  _clear
+  _STAGE_INDEX=$((_STAGE_INDEX + 1))
+  printf '\n%s%s▸ Stage %s/%s · %s%s\n' \
+    "$BOLD" "$BLUE" "$_STAGE_INDEX" "$TOTAL_STAGES" "$1" "$RESET"
+}
+
+# say "..." prints a plain instruction line.
+say()  { printf '  %s\n' "$1"; }
+# step "..." is a numbered-feeling action the human takes in the browser.
+step() { printf '  %s•%s %s\n' "$BLUE" "$RESET" "$1"; }
+note() { printf '  %s%s%s\n' "$DIM" "$1" "$RESET"; }
+warn() { printf '  %s⚠ %s%s\n' "$YELLOW" "$1" "$RESET"; }
+
+# open_url URL opens it in the human's browser, cross-platform incl. WSL.
+open_url() {
+  local url="$1"
+  printf '  %s↗ opening%s %s\n' "$GREEN" "$RESET" "$url"
+  { if   command -v wslview     >/dev/null 2>&1; then wslview "$url"
+    elif command -v explorer.exe >/dev/null 2>&1; then explorer.exe "$url"
+    elif command -v xdg-open    >/dev/null 2>&1; then xdg-open "$url"
+    elif command -v open        >/dev/null 2>&1; then open "$url"
+    else false; fi
+  } >/dev/null 2>&1 || warn "couldn't open a browser, so visit it manually: $url"
+}
+
+# pause "msg" waits for the human to confirm they've done the manual part.
+pause() {
+  printf '  %s%s%s ' "$DIM" "${1:-Press Enter to continue}" "$RESET"
+  read -r _ || true
+}
+
+# confirm "question" is a y/N gate; returns success on yes.
+confirm() {
+  local reply=""
+  printf '  %s? %s [y/N] ' "$YELLOW" "$1"
+  read -r reply || true
+  [[ "$reply" =~ ^[Yy] ]]
+}
+
+# _existing KEY: current value of KEY in ENV_FILE, if any, with write_env's single
+# quotes or a plain dotenv double-quoted value undone.
+_existing() {
+  [[ -f "$ENV_FILE" ]] || return 1
+  local line value sq="'\\''"; line=$(grep -E "^${1}=" "$ENV_FILE" | tail -n1) || return 1
+  value="${line#*=}"
+  if [[ "$value" == \'*\' ]]; then value="${value:1:${#value}-2}"; value="${value//"$sq"/\'}"
+  elif [[ "$value" == \"*\" ]]; then
+    value="${value:1:${#value}-2}"
+    [[ "$value" == *[\\\$\"]* ]] && return 1   # escapes, $ or ": can't decode safely; ask again
+  fi
+  printf '%s' "$value"
+}
+
+# ask KEY "Prompt" reads a value into $KEY. Offers the existing .env value as
+# a default on re-runs (Enter keeps it). Visible input (non-secret), edited
+# with Readline. Fails at EOF with no input.
+ask() {
+  local key="$1" prompt="$2" current input s=$'\001' e=$'\002' p rc=0
+  current=$(_existing "$key" || true)
+  # Readline needs the colour codes wrapped in \001..\002 to place the cursor.
+  p="  $s$BOLD$e$prompt$s$RESET$e "
+  [[ -n "$current" ]] && p+="$s$DIM$e[Enter keeps current]$s$RESET$e "
+  read -e -r -p "$p" input || rc=1
+  if (( rc )) && [[ -z "$input" ]]; then return 1; fi
+  [[ -z "$input" && -n "$current" ]] && input="$current"
+  printf -v "$key" '%s' "$input"
+}
+
+# ask_secret KEY "Prompt" is like ask, but input is hidden.
+ask_secret() {
+  local key="$1" prompt="$2" current input rc=0
+  current=$(_existing "$key" || true)
+  if [[ -n "$current" ]]; then
+    printf '  %s%s%s %s[Enter keeps current]%s ' "$BOLD" "$prompt" "$RESET" "$DIM" "$RESET"
+  else
+    printf '  %s%s%s ' "$BOLD" "$prompt" "$RESET"
+  fi
+  read -rs input || rc=1
+  printf '\n'
+  if (( rc )) && [[ -z "$input" ]]; then return 1; fi
+  [[ -z "$input" && -n "$current" ]] && input="$current"
+  printf -v "$key" '%s' "$input"
+}
+
+# write_env KEY VALUE upserts KEY='VALUE' into ENV_FILE (replaces any existing
+# line) and sets $KEY. Idempotent. Creates ENV_FILE at mode 0600; writes through
+# a symlink and keeps an existing file's mode.
+write_env() {
+  local key="$1" value="$2" tmp sq="'\\''"
+  [[ -e "$ENV_FILE" ]] || (umask 077 && : > "$ENV_FILE")
+  tmp=$(mktemp)
+  grep -vE "^${key}=" "$ENV_FILE" > "$tmp" || true
+  printf "%s='%s'\n" "$key" "${value//\'/$sq}" >> "$tmp"
+  cat "$tmp" > "$ENV_FILE"
+  rm -f "$tmp"
+  printf -v "$key" '%s' "$value"
+  WRITTEN_ENV+=("$key")
+  printf '  %s✓ wrote%s %s → %s\n' "$GREEN" "$RESET" "$key" "$ENV_FILE"
+}
+
+# set_secret NAME VALUE sets a GitHub Actions repo secret via gh. Falls back
+# to a warning (and records it) if gh is unavailable or unauthenticated.
+set_secret() {
+  local name="$1" value="$2"
+  if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
+    if printf '%s' "$value" | gh secret set "$name" >/dev/null 2>&1; then
+      WRITTEN_SECRET+=("$name")
+      printf '  %s✓ set%s GitHub secret %s\n' "$GREEN" "$RESET" "$name"
+      return
+    fi
+  fi
+  SKIPPED+=("GitHub secret $name (set it manually: gh secret set $name)")
+  warn "skipped GitHub secret $name: gh not ready; set it later"
+}
+
+# set_var NAME VALUE sets a GitHub Actions repo variable (non-secret).
+set_var() {
+  local name="$1" value="$2"
+  if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
+    if gh variable set "$name" --body "$value" >/dev/null 2>&1; then
+      printf '  %s✓ set%s GitHub variable %s\n' "$GREEN" "$RESET" "$name"
+      return
+    fi
+  fi
+  SKIPPED+=("GitHub variable $name")
+  warn "skipped GitHub variable $name, gh not ready; set it later"
+}
+
+# finish clears, then shows a closing summary of everything configured.
+finish() {
+  _clear
+  printf '\n%s%s  ✓ Setup complete%s\n' "$BOLD" "$GREEN" "$RESET"
+  (( ${#WRITTEN_ENV[@]} ))    && note "wrote ${#WRITTEN_ENV[@]} value(s) to $ENV_FILE: ${WRITTEN_ENV[*]}"
+  (( ${#WRITTEN_SECRET[@]} )) && note "set ${#WRITTEN_SECRET[@]} GitHub secret(s): ${WRITTEN_SECRET[*]}"
+  if (( ${#SKIPPED[@]} )); then
+    printf '\n'; warn "still to do by hand:"
+    for s in "${SKIPPED[@]}"; do note "  - $s"; done
+  fi
+  printf '\n'
+}
+
+# ──────────────────────────────────────────────────────────────────────────
+# STAGES: author this section. One stage() per step the human takes.
+# Replace the example below. Set TOTAL_STAGES to match the stages you write.
+# Keep every stage inside run_wizard and the last line as is: bash then parses
+# the whole file before the first prompt, so an edit mid-run can't break it.
+# ──────────────────────────────────────────────────────────────────────────
+
+run_wizard() {
+
+TOTAL_STAGES=5
+
+banner "Chrome Web Store deploy setup (airnookteam@gmail.com)"
+
+stage "Google Cloud: project and API"
+say "Sign in as airnookteam@gmail.com. Pick or create a project (e.g. cws-deploy)."
+open_url "https://console.cloud.google.com/projectcreate"
+step "Create the project, then open the Chrome Web Store API page and click Enable."
+open_url "https://console.cloud.google.com/apis/library/chromewebstore.googleapis.com"
+pause "API enabled? Press Enter."
+
+stage "Service account and JSON key"
+open_url "https://console.cloud.google.com/iam-admin/serviceaccounts"
+step "Create service account, name: cws-github-publisher. No IAM roles needed."
+step "Open it > Keys > Add key > Create new key > JSON. A file downloads."
+ask KEY_FILE "Path to the downloaded JSON key:"
+KEY_FILE="${KEY_FILE/#\~/$HOME}"
+[[ -f "$KEY_FILE" ]] || { warn "no such file: $KEY_FILE"; exit 1; }
+SERVICE_ACCOUNT_EMAIL=$(sed -n 's/.*"client_email" *: *"\([^"]*\)".*/\1/p' "$KEY_FILE")
+[[ -n "$SERVICE_ACCOUNT_EMAIL" ]] || { warn "client_email not found: not a service-account key"; exit 1; }
+say "Service account: $SERVICE_ACCOUNT_EMAIL"
+
+stage "Link the service account in the Web Store dashboard"
+open_url "https://chrome.google.com/webstore/devconsole/"
+step "Account > Service accounts: paste $SERVICE_ACCOUNT_EMAIL and save."
+note "Only one service account can be linked to a publisher at a time."
+pause "Linked? Press Enter."
+
+stage "Publisher ID and item ID"
+open_url "https://chrome.google.com/webstore/devconsole/"
+step "Account: copy the Publisher ID (32 characters)."
+ask CWS_PUBLISHER_ID "Publisher ID:"
+step "Open the item (it must already exist: first publish is manual, see docs/publishing.md)."
+step "The item ID is the 32-letter part of its dashboard URL."
+ask CWS_ITEM_ID "Item ID:"
+
+stage "GitHub secrets"
+say "Writes CWS_SERVICE_ACCOUNT_JSON, CWS_PUBLISHER_ID, CWS_ITEM_ID to this repo."
+if confirm "Set the three secrets now?"; then
+  set_secret CWS_SERVICE_ACCOUNT_JSON "$(cat "$KEY_FILE")"
+  set_secret CWS_PUBLISHER_ID "$CWS_PUBLISHER_ID"
+  set_secret CWS_ITEM_ID "$CWS_ITEM_ID"
+fi
+warn "Delete the downloaded key file when done: $KEY_FILE"
+
+finish
+}
+
+run_wizard "$@"; exit
