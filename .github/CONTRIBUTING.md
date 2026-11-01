@@ -1,6 +1,6 @@
 # Contributing
 
-**🇬🇧 English** | [🇷🇺 Русский](CONTRIBUTING.ru.md)
+**🇬🇧 English** | [🇷🇺 Русский](../docs/ru/CONTRIBUTING.md) | [🇪🇸 Español](../docs/es/CONTRIBUTING.md) | [🇧🇷 Português (Brasil)](../docs/pt-BR/CONTRIBUTING.md) | [🇫🇷 Français](../docs/fr/CONTRIBUTING.md) | [🇩🇪 Deutsch](../docs/de/CONTRIBUTING.md) | [🇨🇳 中文（简体）](../docs/zh-CN/CONTRIBUTING.md) | [🇯🇵 日本語](../docs/ja/CONTRIBUTING.md) | [🇮🇳 हिन्दी](../docs/hi/CONTRIBUTING.md) | [🇸🇦 العربية](../docs/ar/CONTRIBUTING.md)
 
 The extension is plain JavaScript (Manifest V3) without a build step: the browser loads the files from the repository
 root as they are. The pages (`panel.html`, `options.html`, `help.html`) load ES modules (`<script type="module">`) with

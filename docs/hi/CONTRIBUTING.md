@@ -1,0 +1,97 @@
+# योगदान
+
+[🇬🇧 English](../../.github/CONTRIBUTING.md) | [🇷🇺 Русский](../ru/CONTRIBUTING.md) | [🇪🇸 Español](../es/CONTRIBUTING.md) | [🇧🇷 Português (Brasil)](../pt-BR/CONTRIBUTING.md) | [🇫🇷 Français](../fr/CONTRIBUTING.md) | [🇩🇪 Deutsch](../de/CONTRIBUTING.md) | [🇨🇳 中文（简体）](../zh-CN/CONTRIBUTING.md) | [🇯🇵 日本語](../ja/CONTRIBUTING.md) | **🇮🇳 हिन्दी** | [🇸🇦 العربية](../ar/CONTRIBUTING.md)
+
+यह एक्सटेंशन बिना बिल्ड चरण के सादा JavaScript (Manifest V3) है: ब्राउज़र रिपॉज़िटरी के रूट की फ़ाइलें जैसी हैं वैसी ही लोड करता है।
+पेज (`panel.html`, `options.html`, `help.html`) स्पष्ट imports के साथ ES मॉड्यूल (`<script type="module">`) लोड करते हैं;
+जो कुछ वे साझा करते हैं वह `commands.js` में है। बैकग्राउंड स्क्रिप्ट `background.js` एक सामान्य service worker है, मॉड्यूल नहीं।
+पैनल का कोड `panel/` में मॉड्यूलों में बँटा है; स्टार्टअप और इवेंट सब्सक्रिप्शन का क्रम `panel/main.js` में है, साझा परिवर्तनीय स्थिति
+`panel/state.js` में। इंटरफ़ेस का टेक्स्ट `_locales/<भाषा>/messages.json` (मानक `chrome.i18n`) में रहता है और `i18n.js`
+(`t`, बहुवचन, पेज की दिशा) उसे दिखाता है। विकास के औज़ार (`package.json`, `eslint.config.js`, `test/`, `scripts/`) रिलीज़ का हिस्सा नहीं हैं।
+
+### पैनल मॉड्यूल
+
+`panel/` के मॉड्यूल एक-दूसरे को केवल ऊपर से नीचे की ओर import करते हैं, चक्र नहीं होते — `test/panel-imports.test.js` यह जाँचता है
+(और चक्र हो तो उसका पथ छापता है)। परतें, नीचे से ऊपर:
+
+1. पैनल पर निर्भरता नहीं: `util`, `dom`, `url`, `search`, `place` (हटाया गया आइटम कहाँ जाता है), फिर `state`, `nodes`,
+   `history` (पूर्ववत और फिर से करने के लिए संपादन इतिहास: पैनल से किया गया बुकमार्क का हर बदलाव उसके `begin()` से गुज़रता है);
+2. `ui` (पुष्टि संवाद, संदेश, फ़ोकस), `keymap` (कुंजी संकेत), `tree` (ट्री पढ़ना, नोड कैश);
+3. `search-index` (खोज इंडेक्स), `tabs`, `marks`;
+4. `render`, फिर `find` (खोज में आना और निकलना), `open`, `edit`, `palette` (सूची से चुनना);
+5. `move-to`, `link`, `search-input`;
+6. `actions` (हर कमांड क्या करता है);
+7. `keys`, `mouse`, `drag` (माउस से ड्रैग और ड्रॉप), फिर `main`।
+
+मॉड्यूल केवल अपने से निचली परतों से import करता है। जब किसी निचले मॉड्यूल को ऊपरी मॉड्यूल को बुलाना हो, तो वह उसे import नहीं करता,
+बल्कि बाहर से कॉल प्राप्त करता है: `tree` हर ट्री पढ़ने के बाद `onTreeApplied(callback)` बुलाता है (`main.js` रीड्रॉ सेट करता है),
+`openPalette(run)` चुने गए कमांड को उसे दिए गए `run` से चलाता है। जिस स्थिति की कई परतों को ज़रूरत है वह `state` में रहती है
+(उदाहरण के लिए `state.pending` — चल रहा कुंजी अनुक्रम: `keys` उसे चलाता है, और `palette` भी उसे रद्द करता है)।
+कोई इवेंट बस नहीं है: कॉलबैक स्टार्टअप पर एक ही जगह स्पष्ट रूप से सेट होता है। `main.js` इवेंट सब्सक्रिप्शन का क्रम तय करता है,
+और जहाँ कई हैंडलर एक ही इवेंट सुनते हैं वहाँ यह क्रम मायने रखता है।
+
+## विकास
+
+Node.js 20.19+, 22.13+ या 24+ चाहिए (ESLint 10 की आवश्यकता)।
+
+```sh
+npm ci            # install dependencies
+npm run lint      # ESLint
+npm test          # tests (node --test)
+npm run package   # build dist/airnook-bookmarks-<version>.zip and check the archive
+npm run test:browser  # smoke test in Chromium (needs npx playwright install chromium)
+```
+
+एक्सटेंशन चलाने के लिए: `chrome://extensions` → "डेवलपर मोड" → "अनपैक्ड लोड करें" → रिपॉज़िटरी का रूट।
+
+### लिंटर
+
+पेज ES मॉड्यूल हैं: कोई फ़ाइल दूसरी से जो कुछ लेती है (`commands.js` से `COMMANDS`, `chordOf` आदि) उसे वह स्पष्ट रूप से import करती है,
+नहीं तो लिंटर अज्ञात नाम की रिपोर्ट करता है। लिंटर खाली `catch {}` की अनुमति नहीं देता: उसके अंदर लिखें कि त्रुटि को अनदेखा क्यों किया जा सकता है।
+
+### टेस्ट
+
+टेस्ट बिना DOM वाले मॉड्यूल (`commands.js`, `panel/` में शुद्ध पैनल फ़ंक्शन) सीधे import करते हैं। `background.js` मॉड्यूल नहीं है,
+इसलिए टेस्ट उसे `chrome` स्टब के साथ `node:vm` से लोड करते हैं (देखें `test/load.js`); विकल्प पेज भी DOM स्टब के साथ `node:vm` से
+लोड होता है (देखें `test/options-page.js`)।
+
+`npm run test:browser` आर्काइव बनाता है, एक्सटेंशन को Playwright के Chromium में लोड करता है और पेजों तथा पैनल की मुख्य कुंजियों की जाँच करता है:
+`_locales/` की हर भाषा के लिए एक बार, साथ में बिना अनुवाद वाली हिब्रू और नकली दाएँ-से-बाएँ हिब्रू। केवल कुछ भाषाएँ:
+`SMOKE_LOCALES=ru,en npm run test:browser` (नाम `_locales` के फ़ोल्डर, `he`, `he-rtl` हैं)। यह `npm test` या CI का हिस्सा नहीं है:
+वहाँ ब्राउज़र न हो सकता है।
+
+### पैकेजिंग
+
+आर्काइव की सामग्री संदर्भों का समापन (closure) है: `manifest.json` → वह सब जिसका वह संदर्भ देता है (service worker, पेज, आइकन) →
+हर html पेज के लिए उसके `<script src>`, `<link href>` और `<img src>`, हर स्क्रिप्ट के लिए उसके स्थिर `import` और `export … from` → पुनरावर्ती रूप से।
+साथ में `_locales/` फ़ोल्डर, यदि हो, और `scripts/package.mjs` में `EXTRA_PAGES` के पेज: कोड उन्हें नाम से खोलता है (उदाहरण के लिए `help.html`),
+इसलिए संदर्भों से वे नहीं मिल सकते। इसके अलावा कुछ नहीं, रूट में कोई भी नई सहायक फ़ाइल सहित, आर्काइव में नहीं जाता।
+
+यदि एक्सटेंशन की `.js` में किसी ऐसे नए html पेज का संदर्भ आ जाए जो आर्काइव में नहीं है, तो बिल्ड उसे `EXTRA_PAGES` में जोड़ने के संकेत के साथ विफल होता है।
+बिल्ड के बाद एक अलग जाँच सुनिश्चित करती है कि आर्काइव में `package.json`, लिंटर कॉन्फ़िग, `test/`, `scripts/`, `.github/`, `README*.md`,
+`docs/` (README की छवियाँ), `LICENSE`, `TODO.md`, `CONTRIBUTING*.md` या छिपी फ़ाइलें न हों, और सभी संदर्भ अपनी जगह हों;
+त्रुटि होने पर कमांड गैर-शून्य कोड के साथ समाप्त होता है।
+
+CI (`.github/workflows/ci.yml`) `dev` और `main` में हर push और pull request पर यही करता है।
+
+## अनुवाद
+
+इंटरफ़ेस का अनुवाद `_locales/<भाषा>/messages.json` में रहता है। भाषा कैसे जोड़ें या अनुवाद कैसे सुधारें, और `npm test` क्या जाँचता है,
+यह [TRANSLATING.md](TRANSLATING.md) में है। `_locales/` में नया फ़ोल्डर अपने आप पहचान लिया जाता है; कोड में बदलाव की ज़रूरत नहीं।
+
+## रिलीज़
+
+1. `manifest.json` में `version` बढ़ाएँ और बदलाव को `main` में मर्ज करें।
+2. `main` पर टैग `vX.Y.Z` बनाएँ, जहाँ `X.Y.Z` ठीक वही संस्करण है जो `manifest.json` में है:
+
+   ```sh
+   git checkout main && git pull
+   git tag vX.Y.Z
+   git push origin vX.Y.Z
+   ```
+
+3. `release.yml` वर्कफ़्लो जाँचता है कि टैग संस्करण से मेल खाता है, lint और टेस्ट चलाता है, आर्काइव बनाता है और
+   `airnook-bookmarks-X.Y.Z.zip` के साथ GitHub Release प्रकाशित करता है।
+
+यदि टैग और संस्करण मेल नहीं खाते, तो वर्कफ़्लो बिल्ड से पहले विफल हो जाता है: टैग हटाएँ
+(`git push --delete origin vX.Y.Z`), संस्करण ठीक करें और फिर कोशिश करें।

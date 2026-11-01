@@ -1,6 +1,6 @@
 # Участие в разработке
 
-[🇬🇧 English](CONTRIBUTING.md) | **🇷🇺 Русский**
+[🇬🇧 English](../../.github/CONTRIBUTING.md) | **🇷🇺 Русский** | [🇪🇸 Español](../es/CONTRIBUTING.md) | [🇧🇷 Português (Brasil)](../pt-BR/CONTRIBUTING.md) | [🇫🇷 Français](../fr/CONTRIBUTING.md) | [🇩🇪 Deutsch](../de/CONTRIBUTING.md) | [🇨🇳 中文（简体）](../zh-CN/CONTRIBUTING.md) | [🇯🇵 日本語](../ja/CONTRIBUTING.md) | [🇮🇳 हिन्दी](../hi/CONTRIBUTING.md) | [🇸🇦 العربية](../ar/CONTRIBUTING.md)
 
 Расширение — чистый JavaScript (Manifest V3) без сборки: файлы из корня репозитория
 браузер загружает как есть. Страницы (`panel.html`, `options.html`, `help.html`) подключают
@@ -92,7 +92,7 @@ CI (`.github/workflows/ci.yml`) выполняет то же самое на к�
 ## Переводы
 
 Перевод интерфейса — в `_locales/<язык>/messages.json`. Как добавить язык или поправить
-перевод, и что проверяет `npm test`, — в [TRANSLATING.md](TRANSLATING.md) (на английском).
+перевод, и что проверяет `npm test`, — в [TRANSLATING.md](TRANSLATING.md).
 Новый каталог в `_locales/` подхватывается сам, менять код не нужно.
 
 ## Как выпустить релиз
