@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "新機能：設定でショートカットのセットを選べます。キーは変わっていません（「Arc legacy」セット）。"
+  },
   "create_folder_failed": {
     "message": "フォルダを作成できませんでした"
   },
@@ -1014,14 +1017,34 @@
   "options_keys": {
     "message": "パネルのキー"
   },
-  "options_preset_standard": {
-    "message": "標準"
+  "options_global_title": {
+    "message": "パネルを開く／閉じる"
   },
-  "options_preset_standard_title": {
-    "message": "すべてのショートカットを標準に置き換える"
+  "options_reserved": {
+    "message": "$KEY$ はブラウザーまたはシステムが使用するため、パネルには届きません。別のショートカットを選んでください",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "デフォルト"
+  },
+  "options_preset_default_title": {
+    "message": "ブラウザーやファイルマネージャーでおなじみのショートカット：コピー、貼り付け、元に戻す、F2 で名前を変更"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy に Arc ブラウザーのショートカットを追加：リンクをコピー、コマンドバー、設定、パネルを隠す"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "以前のバージョンのショートカット：1文字の n、r、d、c…"
   },
   "options_preset_vim_title": {
-    "message": "標準に Vim のキーを追加: j k h l、g g、d d、y y…"
+    "message": "Arc legacy に Vim キーを追加：j k h l、g g、d d、y y…"
   },
   "options_keys_hint": {
     "message": "「+」でショートカットを記録します。キー（修飾キー付きも可）、シーケンス（$SEQUENCE$）、2回連続押し（$DOUBLE$）が使えます — 2回目はすぐに押してください。キーを押したあと $ENTER$ で確定、$ESC$ で記録を中止、「×」で削除します。そのショートカットがすでに使われている場合は、引き継ぐかどうか確認されます。すべてのコマンドはパネルのコマンドパレットにもあります。",
@@ -1037,17 +1060,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "パネルの開閉: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },

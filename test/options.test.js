@@ -1,6 +1,8 @@
+import './locale-ru.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { loadOptions } from './options-page.js';
+import { PRESETS } from '../commands.js';
 
 const folder = (id, title, children = []) => ({ id, title, children });
 const makeTree = () => ({
@@ -10,9 +12,9 @@ const makeTree = () => ({
 const change = (newValue) => ({ oldValue: undefined, newValue });
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function start(saved) {
+async function start(saved, more) {
   const tree = makeTree();
-  const env = loadOptions({ tree, saved });
+  const env = loadOptions({ tree, saved, ...more });
   await sleep(10); // init() асинхронный
   return { ...env, tree };
 }
@@ -124,4 +126,47 @@ test('список папок: пока открыт выпадающий спи
   assert.equal(env.counters.getTree - before, 1);
   assert.ok(optionValues(env).includes('5'));
   assert.equal(env.el('root').value, '2');
+});
+
+const row = (env, id) => env.find('keymap', 'cmd').find(r => r.dataset.id === id);
+const click = (env, id, className) => row(env, id).children.flatMap(n => [n, ...(n.children ?? [])]).find(n => n.className === className).onclick();
+
+test('клавиши: новая установка (keymap нет) — правка ложится поверх набора default', async () => {
+  const env = await start({});
+  click(env, 'move.to', 'add');
+  env.keydown({ key: 'q', code: 'KeyQ' });
+  env.keydown({ key: 'Enter', code: 'Enter' });
+  await sleep(10);
+  assert.deepEqual(env.store.keymap, { ...PRESETS.default, 'move.to': ['q'] });
+});
+
+test('клавиши: «сбросить» возвращает клавиши выбранного набора', async () => {
+  const env = await start({ preset: 'default', keymap: { ...PRESETS.default, rename: ['F2', 'q'] } });
+  assert.equal(row(env, 'delete').children[1].children.some(n => n.className === 'reset'), false); // как в наборе — сбрасывать нечего
+  click(env, 'rename', 'reset');
+  await sleep(10);
+  assert.deepEqual(env.store.keymap, PRESETS.default);
+});
+
+test('клавиши: сочетание, которое забирает Chrome, не записывается — с объяснением', async () => {
+  const env = await start({ keymap: {} });
+  click(env, 'move.to', 'add');
+  env.keydown({ key: 't', code: 'KeyT', ctrlKey: true });
+  await sleep(10);
+  assert.match(env.el('status').textContent, /Ctrl\+T/);
+  assert.deepEqual(env.storageSets, []);
+  env.keydown({ key: 'q', code: 'KeyQ' }); // запись продолжается
+  env.keydown({ key: 'Enter', code: 'Enter' });
+  await sleep(10);
+  assert.deepEqual(env.store.keymap, { 'move.to': ['m', 'q'] });
+});
+
+test('клавиши: строка «открыть панель» — текущее сочетание и кнопка в настройки Chrome', async () => {
+  const env = await start({}, { commands: [{ name: 'open-bookmarks', shortcut: 'Alt+Shift+B' }] });
+  const global = env.find('keymap', 'cmd-global')[0];
+  assert.ok(global);
+  const all = (n) => [n, ...(n.children ?? []).flatMap(all)];
+  assert.ok(all(global).some(n => n.textContent === 'Alt+Shift+B'));
+  all(global).find(n => n.className === 'link').onclick();
+  assert.deepEqual(env.opened, ['chrome://extensions/shortcuts']);
 });

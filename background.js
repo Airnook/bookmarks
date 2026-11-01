@@ -7,10 +7,21 @@ chrome.runtime.onInstalled.addListener(({ reason, previousVersion }) => {
   const { version } = chrome.runtime.getManifest();
   if (reason === 'install') {
     chrome.tabs.create({ url: 'help.html' }).catch(() => {});
-    chrome.storage.local.set({ firstRun: true });
+    chrome.storage.local.set({ firstRun: true, preset: 'default' });
   }
   if (reason === 'update' && previousVersion !== version) chrome.storage.local.set({ whatsNew: version });
+  if (reason === 'update') pinLegacyKeys();
 });
+
+// Обновление с версии без наборов клавиш (preset ещё не записан): клавиши остаются прежними —
+// набор arc-legacy. Без keymap панель взяла бы набор default, поэтому пишем его явно.
+// Кто клавиши не менял, один раз увидит в панели подсказку о наборах.
+async function pinLegacyKeys() {
+  const { keymap, preset } = await chrome.storage.local.get(['keymap', 'preset']);
+  if (preset !== undefined) return;
+  const untouched = !keymap || !Object.keys(keymap).length;
+  await chrome.storage.local.set({ preset: 'arc-legacy', keymap: keymap ?? {}, ...(untouched && { keysNotice: true }) });
+}
 
 // Связи «вкладка → закладка» (режим закреплённых вкладок) живут, пока жива вкладка.
 // Браузер иногда подменяет вкладку новой (предзагрузка) — связь переходит к ней.

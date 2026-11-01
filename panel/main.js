@@ -1,5 +1,5 @@
 // Панель закладок: запуск.
-import { SETTINGS_DEFAULTS, keymapOf } from '../commands.js';
+import { SETTINGS_DEFAULTS, storedKeymap } from '../commands.js';
 import { localizePage, t } from '../i18n.js';
 import { list, palette } from './dom.js';
 import { ignore } from './util.js';
@@ -49,7 +49,7 @@ onTreeApplied(() => {
 chrome.storage.local.onChanged.addListener((c) => {
   for (const key in c) if (key in SETTINGS_DEFAULTS && key !== 'view') state.settings[key] = c[key].newValue ?? SETTINGS_DEFAULTS[key];
   if (c.keymap) { // подсказки и палитра — с новыми клавишами
-    state.keymap = keymapOf(c.keymap.newValue);
+    state.keymap = storedKeymap(c.keymap.newValue);
     buildKeymap();
     state.rows.length ? paintMarks() : render();
     if (palette.open) renderPicker({ keep: true });
@@ -64,11 +64,11 @@ listenTabs();
 listenHistory();
 listenClipboard();
 
-Promise.all([chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: {}, recentFolders: [] }), state.winReady])
+Promise.all([chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: null, recentFolders: [] }), state.winReady])
   .then(([s]) => {
     ({ keymap: state.keymap, recentFolders: state.recentFolders, ...state.settings } = s);
     if (!Array.isArray(state.recentFolders)) state.recentFolders = [];
-    state.keymap = keymapOf(state.keymap);
+    state.keymap = storedKeymap(state.keymap);
     buildKeymap();
     applyView();
     if (saved?.marked && saved.win === state.windowId && Date.now() - saved.at < MARKS_SURVIVE) state.marked = new Set(saved.marked);
@@ -79,15 +79,17 @@ Promise.all([chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: {}, recent
     list.querySelector('.cur')?.scrollIntoView({ block: 'nearest' });
     tell(document.hasFocus());
     // Один раз: после установки — подсказать, где меню и все команды; после обновления — что нового
-    const { whatsNew, firstRun } = await chrome.storage.local.get(['whatsNew', 'firstRun']);
+    const { whatsNew, firstRun, keysNotice } = await chrome.storage.local.get(['whatsNew', 'firstRun', 'keysNotice']);
     const help = keyText('help');
     if (firstRun) {
       chrome.storage.local.remove('firstRun').catch(ignore);
       const commands = keyText('palette');
       flash([t('first_run_menu'), commands && t('first_run_commands', commands)].filter(Boolean).join(' · '), 6000);
-    } else if (whatsNew) {
-      chrome.storage.local.remove('whatsNew').catch(ignore);
-      state.showNews = true;
-      flash(t('updated', whatsNew) + (help ? ' ' + t('whats_new_key', help) : ''), 6000);
+    } else if (whatsNew || keysNotice) {
+      // keysNotice — после обновления клавиши остались прежними (arc-legacy): один раз сказать про наборы
+      chrome.storage.local.remove(['whatsNew', 'keysNotice']).catch(ignore);
+      state.showNews = !!whatsNew;
+      const news = whatsNew ? t('updated', whatsNew) + (help ? ' ' + t('whats_new_key', help) : '') : '';
+      flash([news, keysNotice && t('keys_notice')].filter(Boolean).join(' '), keysNotice ? 9000 : 6000);
     }
   });

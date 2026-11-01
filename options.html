@@ -40,7 +40,7 @@
     /* клавиши */
     .head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
     .head .title { flex: 1; margin: 0; }
-    .presets { display: flex; gap: 6px; }
+    .presets { display: flex; flex-wrap: wrap; gap: 6px; }
     .btn {
       height: 28px; padding: 0 10px; border: 1px solid var(--line); border-radius: 7px;
       background: none; cursor: pointer;
@@ -140,12 +140,13 @@
       <span class="title" data-i18n="options_keys"></span>
       <span class="presets">
         <span id="preset-state" class="none"></span>
-        <button class="btn" data-preset="standard" data-i18n="options_preset_standard" data-i18n-title="options_preset_standard_title"></button>
+        <button class="btn" data-preset="default" data-i18n="options_preset_default" data-i18n-title="options_preset_default_title"></button>
+        <button class="btn" data-preset="arc" data-i18n-title="options_preset_arc_title">Arc</button>
+        <button class="btn" data-preset="arc-legacy" data-i18n="options_preset_arc_legacy" data-i18n-title="options_preset_arc_legacy_title"></button>
         <button class="btn" data-preset="vim" data-i18n-title="options_preset_vim_title">Vim</button>
       </span>
     </div>
     <p class="hint" data-i18n="options_keys_hint"><span><kbd>G</kbd> <kbd>G</kbd></span><span><kbd>Enter</kbd> <kbd>Enter</kbd></span><kbd>Enter</kbd><kbd>Esc</kbd></p>
-    <p class="hint" data-i18n="options_global"><span id="global-key">—</span><button class="link" id="shortcuts" data-i18n="options_global_change"></button></p>
     <div id="keymap"></div>
   </section>
 </main>

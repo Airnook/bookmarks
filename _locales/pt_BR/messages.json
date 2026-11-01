@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Novidade: conjuntos de atalhos nas configurações. Suas teclas não mudaram — é o conjunto “Arc legacy”."
+  },
   "create_folder_failed": {
     "message": "Não foi possível criar a pasta"
   },
@@ -1062,14 +1065,34 @@
   "options_keys": {
     "message": "Teclas do painel"
   },
-  "options_preset_standard": {
+  "options_global_title": {
+    "message": "Abrir e fechar o painel"
+  },
+  "options_reserved": {
+    "message": "$KEY$ é capturado pelo navegador ou pelo sistema e nunca chega ao painel — escolha outro atalho",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
     "message": "Padrão"
   },
-  "options_preset_standard_title": {
-    "message": "Substituir todos os atalhos pelos padrão"
+  "options_preset_default_title": {
+    "message": "Atalhos conhecidos do navegador e do gerenciador de arquivos: copiar, colar, desfazer, F2 para renomear"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy mais os atalhos do navegador Arc: copiar link, barra de comandos, configurações, ocultar o painel"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Atalhos das versões anteriores: letras isoladas n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Padrão mais teclas do Vim: j k h l, g g, d d, y y…"
+    "message": "Arc legacy mais teclas do Vim: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "“+” grava um atalho: uma tecla, com modificadores, uma sequência ($SEQUENCE$) ou um pressionamento duplo ($DOUBLE$) — pressione a segunda tecla logo em seguida. $ENTER$ depois de uma tecla — pronto, $ESC$ — cancelar a gravação, “×” — remover. Se o atalho estiver em uso, será perguntado se você quer assumi-lo. Todos os comandos também estão na paleta de comandos do painel.",
@@ -1085,17 +1108,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Abrir e fechar o painel: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },

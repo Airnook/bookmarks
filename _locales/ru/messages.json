@@ -584,6 +584,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Новое: наборы клавиш в настройках. Ваши клавиши не изменились — это набор «Arc legacy»."
+  },
   "create_folder_failed": {
     "message": "Не удалось создать папку"
   },
@@ -1088,14 +1091,34 @@
   "options_keys": {
     "message": "Клавиши в панели"
   },
-  "options_preset_standard": {
-    "message": "Стандартные"
+  "options_global_title": {
+    "message": "Открыть и закрыть панель"
   },
-  "options_preset_standard_title": {
-    "message": "Заменить все сочетания стандартными"
+  "options_reserved": {
+    "message": "$KEY$ забирает браузер или система — до панели оно не дойдёт. Выберите другое сочетание",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "По умолчанию"
+  },
+  "options_preset_default_title": {
+    "message": "Привычные клавиши браузера и файлового менеджера: копировать, вставить, отменить, F2 — переименовать"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy плюс клавиши браузера Arc: копировать ссылку, командная строка, настройки, скрыть панель"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Клавиши прежних версий: одиночные буквы n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Стандартные плюс клавиши Vim: j k h l, g g, d d, y y…"
+    "message": "Arc legacy плюс клавиши Vim: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "«+» — записать сочетание: клавишу, с модификаторами, последовательность ($SEQUENCE$) или двойное нажатие ($DOUBLE$) — вторую клавишу жмите сразу. $ENTER$ после клавиши — готово, $ESC$ — отменить запись, «×» — убрать. Если сочетание уже занято, спросим, забрать ли его. Все команды есть и в палитре команд панели.",
@@ -1111,17 +1134,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Открыть и закрыть панель: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
