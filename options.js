@@ -126,13 +126,16 @@ const shownColor = (m, k) => theme.colors[m][k] || (k === 'background' ? CANVAS[
 // внешний адрес в своём CSS: url(https://…), url(//…), @import
 const EXTERNAL = /url\(\s*['"]?\s*(https?:)?\/\/|@import/i;
 
+// поле, в котором сейчас печатают, не трогаем: сохранение по ходу ввода не сбивает набор
+const typedValue = (id, value) => { if (document.activeElement !== field(id)) field(id).value = value; };
+
 function showTheme() {
   field('mode').value = theme.mode;
   for (const [mode, key, input, reset] of colorFields) {
     input.value = shownColor(mode, key);
     reset.disabled = !theme.colors[mode][key];
   }
-  field('font').value = theme.font;
+  typedValue('font', theme.font);
   const browser = theme.fontSize === 'browser';
   field('size-browser').checked = browser;
   field('size').disabled = browser;
@@ -145,7 +148,7 @@ function showTheme() {
   field('counts').checked = theme.folderCounts;
   field('guides').checked = theme.indentGuides;
   field('css-on').checked = theme.customCssOn;
-  field('css').value = theme.customCss;
+  typedValue('css', theme.customCss);
   field('css-warning').hidden = !EXTERNAL.test(theme.customCss);
 }
 
@@ -162,7 +165,14 @@ for (const [mode, key, input, reset] of colorFields) {
   input.onchange = () => setTheme(() => { theme.colors[mode][key] = input.value; });
   reset.onclick = () => setTheme(() => { theme.colors[mode][key] = ''; });
 }
-field('font').onchange = () => setTheme(() => { theme.font = field('font').value; });
+// текст сохраняем по ходу ввода (с паузой): закрытая вкладка не теряет напечатанное
+const typed = (id, apply) => {
+  let timer;
+  const commit = () => { clearTimeout(timer); setTheme(apply); };
+  field(id).oninput = () => { clearTimeout(timer); timer = setTimeout(commit, 400); };
+  field(id).onchange = commit;
+};
+typed('font', () => { theme.font = field('font').value; });
 // пустое или не число — прежнее значение (cleanTheme)
 field('size').onchange = () => setTheme(() => { theme.fontSize = parseFloat(field('size').value); });
 field('size-browser').onchange = () => setTheme(() => { theme.fontSize = field('size-browser').checked ? 'browser' : NaN; });
@@ -172,8 +182,7 @@ field('favicons').onchange = () => setTheme(() => { theme.favicons = field('favi
 field('counts').onchange = () => setTheme(() => { theme.folderCounts = field('counts').checked; });
 field('guides').onchange = () => setTheme(() => { theme.indentGuides = field('guides').checked; });
 field('css-on').onchange = () => setTheme(() => { theme.customCssOn = field('css-on').checked; });
-field('css').onchange = () => setTheme(() => { theme.customCss = field('css').value; });
-field('css').oninput = () => { field('css-warning').hidden = !EXTERNAL.test(field('css').value); };
+typed('css', () => { theme.customCss = field('css').value; });
 field('reset').onclick = () => setTheme(() => { theme = cleanTheme(); });
 
 // ---------- список команд ----------

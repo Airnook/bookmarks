@@ -20,8 +20,8 @@ export const THEME_BASE = {
   dark: { background: 'Canvas', text: '#e8e9eb', accent: '#7ea6ff', muted: '#9aa0a9', surface: '#232428' },
 };
 const MODES = ['light', 'dark'];
-export const FONT_SIZE = { min: 10, max: 24 };
-export const RADIUS = { min: 0, max: 16 };
+const FONT_SIZE = { min: 10, max: 24 };
+const RADIUS = { min: 0, max: 16 };
 const SYSTEM_FONT = 'system-ui, -apple-system, "Segoe UI", sans-serif'; // как в base.css
 // число в границах; не число — умолчание
 const clamp = (v, { min, max }, fallback) => (Number.isFinite(v) ? Math.min(max, Math.max(min, Math.round(v))) : fallback);
@@ -34,13 +34,14 @@ const bool = (v, fallback) => (typeof v === 'boolean' ? v : fallback);
 
 // Тема из хранилища или файла → полная тема в допустимых значениях: чужое и негодное — умолчание,
 // числа — в границах, из названия шрифта убраны символы, которые вывели бы его за пределы значения
+// (в том числе кавычки и «/»: незакрытая строка или комментарий проглотили бы остальные свойства)
 export function cleanTheme(stored) {
   const t = stored && typeof stored === 'object' ? stored : {};
   const d = THEME_DEFAULTS;
   return {
     mode: ['system', ...MODES].includes(t.mode) ? t.mode : d.mode,
     colors: Object.fromEntries(MODES.map(m => [m, Object.fromEntries(COLORS.map(k => [k, hex(t.colors?.[m]?.[k])]))])),
-    font: typeof t.font === 'string' ? t.font.replace(/[;{}<>\\]/g, ' ').trim() : d.font,
+    font: typeof t.font === 'string' ? t.font.replace(/[;{}<>\\"'/]/g, ' ').trim() : d.font,
     fontSize: t.fontSize === 'browser' ? 'browser' : clamp(t.fontSize, FONT_SIZE, d.fontSize),
     radius: t.radius === 'full' ? 'full' : clamp(t.radius, RADIUS, d.radius),
     favicons: bool(t.favicons, d.favicons),

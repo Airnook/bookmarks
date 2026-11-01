@@ -89,6 +89,9 @@ test('cleanTheme: из хранилища (или файла) — полная �
     colors: { light: { background: '', text: '', accent: '' }, dark: { background: '', text: '', accent: '#00ff00' } },
     font: 'Georgia', fontSize: 24, radius: 'full', folderCounts: true, customCss: '', customCssOn: true,
   });
+  // незакрытая кавычка или комментарий проглотили бы остальные свойства темы
+  assert.equal(cleanTheme({ font: '"Fira Code' }).font, 'Fira Code');
+  assert.match(themeCss({ font: 'Arial /*', fontSize: 16 }), /--font-size: 16px/);
   assert.equal(cleanTheme({ fontSize: 'browser', radius: 2.4 }).fontSize, 'browser');
   assert.equal(cleanTheme({ radius: 2.4 }).radius, 2);
 });
