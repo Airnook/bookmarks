@@ -1089,6 +1089,26 @@
   "options_keys": {
     "message": "面板快捷键"
   },
+  "options_panel_side": {
+    "message": "面板位置"
+  },
+  "options_panel_side_hint": {
+    "message": "当前位置：$SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "在浏览器设置中更改"
+  },
+  "options_side_left": {
+    "message": "左侧"
+  },
+  "options_side_right": {
+    "message": "右侧"
+  },
   "options_global_title": {
     "message": "打开和关闭面板"
   },

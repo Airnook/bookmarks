@@ -1163,6 +1163,26 @@
   "options_keys": {
     "message": "Клавиши в панели"
   },
+  "options_panel_side": {
+    "message": "Положение панели"
+  },
+  "options_panel_side_hint": {
+    "message": "Сейчас панель: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "изменить в настройках браузера"
+  },
+  "options_side_left": {
+    "message": "слева"
+  },
+  "options_side_right": {
+    "message": "справа"
+  },
   "options_global_title": {
     "message": "Открыть и закрыть панель"
   },

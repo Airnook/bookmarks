@@ -3,6 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { loadOptions } from './options-page.js';
 import { PRESETS } from '../commands.js';
+import { getMessageFor } from './i18n-stub.js';
 
 const folder = (id, title, children = []) => ({ id, title, children });
 const makeTree = () => ({
@@ -169,6 +170,26 @@ test('клавиши: строка «открыть панель» — теку�
   assert.ok(all(global).some(n => n.textContent === 'Alt+Shift+B'));
   all(global).find(n => n.className === 'link').onclick();
   assert.deepEqual(env.opened, ['chrome://extensions/shortcuts']);
+});
+
+test('положение панели: текущая сторона из Chrome и кнопка в настройки внешнего вида', async () => {
+  const env = await start({}, { sidePanel: { getLayout: async () => ({ side: 'right' }) } });
+  assert.equal(env.el('panel-side').textContent, getMessageFor('ru')('options_side_right'));
+  assert.equal(env.el('panel-side-hint').hidden, undefined);
+  env.el('panel-side-change').onclick();
+  assert.deepEqual(env.opened, ['chrome://settings/appearance']);
+});
+
+test('положение панели: старый Chrome без sidePanel.getLayout — строку с стороной не показываем, кнопка есть', async () => {
+  const env = await start({});
+  assert.equal(env.el('panel-side-hint').hidden, true);
+  env.el('panel-side-change').onclick();
+  assert.deepEqual(env.opened, ['chrome://settings/appearance']);
+});
+
+test('положение панели: ошибка getLayout — строку с стороной не показываем, без исключения', async () => {
+  const env = await start({}, { sidePanel: { getLayout: async () => { throw new Error('no'); } } });
+  assert.equal(env.el('panel-side-hint').hidden, true);
 });
 
 // ---------- файл с клавишами ----------

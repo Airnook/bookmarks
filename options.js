@@ -100,6 +100,14 @@ async function init() {
   const toggle = (await chrome.commands.getAll()).find(c => c.name === 'open-bookmarks');
   globalKey = toggle?.shortcut || t('options_global_not_set');
   renderKeymap();
+  showPanelSide();
+}
+
+// Сторона панели — chrome.sidePanel.getLayout (Chrome 140+, только чтение); без неё строку прячем
+async function showPanelSide() {
+  const side = await chrome.sidePanel?.getLayout?.().then(l => l.side, () => null);
+  if (side === 'left' || side === 'right') document.getElementById('panel-side').textContent = t(`options_side_${side}`);
+  else document.getElementById('panel-side-hint').hidden = true;
 }
 
 select.onchange = () => {
@@ -110,6 +118,7 @@ select.onchange = () => {
 select.addEventListener('blur', flushRoots);
 viewSelect.onchange = () => save({ view: viewSelect.value });
 document.getElementById('help').onclick = () => chrome.tabs.create({ url: 'help.html' });
+document.getElementById('panel-side-change').onclick = () => chrome.tabs.create({ url: 'chrome://settings/appearance' });
 for (const s of switches) s.onchange = () => save({ [s.id]: s.checked });
 
 // ---------- оформление панели ----------

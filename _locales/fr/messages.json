@@ -1137,6 +1137,26 @@
   "options_keys": {
     "message": "Touches du panneau"
   },
+  "options_panel_side": {
+    "message": "Position du panneau"
+  },
+  "options_panel_side_hint": {
+    "message": "Côté actuel : $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "modifier dans les paramètres du navigateur"
+  },
+  "options_side_left": {
+    "message": "gauche"
+  },
+  "options_side_right": {
+    "message": "droite"
+  },
   "options_global_title": {
     "message": "Ouvrir et fermer le panneau"
   },
