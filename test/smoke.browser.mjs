@@ -618,6 +618,18 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.deepEqual(await order(), ['d1', 'd2', 'd3', 'Box']);
     });
 
+    await check('перетаскивание: список перерисовался под неподвижным указателем — линия переходит на строку под ним', async () => {
+      await drag('d1', 'd3', 0.9, false);
+      await panel.waitForSelector('#list li:has(> .drop-line)');
+      const zz = await setup.evaluate(async (id) => (await chrome.bookmarks.create({ parentId: id, index: 0, title: 'zz', url: 'https://zz.example/' })).id, dragFolder);
+      await hasRow('zz'); // чтение дерева по событию сдвинуло строки вниз
+      await panel.waitForFunction(() => document.querySelector('#list li:has(> .drop-line)')?.textContent === 'd2');
+      await panel.keyboard.press('Escape');
+      await panel.mouse.up();
+      await setup.evaluate((id) => chrome.bookmarks.remove(id), zz);
+      await panel.waitForFunction(() => ![...document.querySelectorAll('#list li')].some(li => li.textContent === 'zz'));
+    });
+
     await check('перетаскивание: в середину свёрнутой папки — в её конец, папка раскрыта', async () => {
       assert.equal(await row('Box').getAttribute('aria-expanded'), 'false');
       await drag('d2', 'Box', 0.5, false);
@@ -970,7 +982,12 @@ try {
 
   // сборка — в копии репозитория, чтобы не трогать dist/ рабочего каталога
   const src = path.join(tmp, 'src');
-  fs.cpSync(root, src, { recursive: true, filter: (f) => !/[\\/](node_modules|dist|\.git)$/.test(f) });
+  // сокеты (.codegraph/daemon.sock) cpSync не копирует: берём только файлы и каталоги
+  fs.cpSync(root, src, { recursive: true, filter: (f) => {
+    if (/[\\/](node_modules|dist|\.git)$/.test(f)) return false;
+    const st = fs.lstatSync(f);
+    return st.isFile() || st.isDirectory();
+  } });
   const built = spawnSync(process.execPath, [path.join(repo, 'scripts', 'package.mjs'), src], { encoding: 'utf8' });
   assert.equal(built.status, 0, built.stderr);
   const { version } = JSON.parse(fs.readFileSync(path.join(src, 'manifest.json'), 'utf8'));

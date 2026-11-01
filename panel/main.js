@@ -21,7 +21,7 @@ import { keyText } from './keymap.js';
 import { buildKeymap, listenKeys } from './keys.js';
 import { listenPalette, renderPicker } from './palette.js';
 import { listenMouse } from './mouse.js';
-import { listenDrag } from './drag.js';
+import { listenDrag, redrawDrag } from './drag.js';
 import { listenSearch } from './search-input.js';
 import { connectBackground, tell } from './link.js';
 
@@ -50,6 +50,7 @@ chrome.storage.local.get('theme').then(({ theme }) => applyTheme(theme), ignore)
 
 onTreeApplied(() => {
   build();
+  redrawDrag();
   refreshTabs();
   if (palette.open && state.picker?.live) renderPicker({ keep: true }); // в выборе папки — свежие названия
 });
