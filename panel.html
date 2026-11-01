@@ -9,6 +9,7 @@
       --sel: color-mix(in srgb, var(--accent) 17%, transparent);
       --sel-idle: light-dark(rgb(0 0 0 / .075), rgb(255 255 255 / .09));
       --mark: color-mix(in srgb, var(--accent) 8%, transparent);
+      --radius: 7px; /* скругление строк и полей; тема меняет (theme.js) */
       --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4.5 2.5 8 6l-3.5 3.5' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6 3 2.5 6.5 6 10M3 6.5h6.5a3.5 3.5 0 0 1 0 7H6' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       --cross: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 2l6 6M8 2 2 8' stroke='black' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
@@ -19,15 +20,15 @@
       :root { --check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 5.2 4 7.2 8 3' fill='none' stroke='%237ea6ff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
     }
     html { scroll-padding: 8px 0; scrollbar-width: thin; }
-    body { font-size: 13px; line-height: 1.3; }
+    body { font-size: var(--font-size, 13px); line-height: 1.3; }
 
     /* Шапка — две кнопки «Отменить» и «Повторить» (иконки зеркалятся справа налево). Строка поиска
        появляется под ней только во время поиска,
        полоса «Выбрано» внизу — только пока есть отметки. Счётчик найденного — справа в строке поиска
        (в RTL — слева), поле обрезает запрос перед ним */
-    #bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 2px; height: 28px; padding: 4px 6px 0; box-sizing: content-box; background: Canvas; }
+    #bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 2px; height: 28px; padding: 4px 6px 0; box-sizing: content-box; background: var(--bg); }
     #bar button {
-      display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 6px;
+      display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: max(0px, var(--radius) - 1px);
       color: var(--text); background: none; cursor: pointer;
     }
     #bar button::before { content: ""; width: 16px; height: 16px; background: currentColor; mask: var(--arrow) center / contain no-repeat; }
@@ -37,15 +38,15 @@
     #bar button:hover:not(:disabled) { background: var(--hover); }
     #bar button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
     #bar button:disabled { color: var(--muted); opacity: .45; cursor: default; }
-    #search-bar { position: sticky; top: 32px; z-index: 1; padding: 6px; background: Canvas; }
+    #search-bar { position: sticky; top: 32px; z-index: 1; padding: 6px; background: var(--bg); }
     #search-bar[hidden] { display: none; }
     html { scroll-padding-top: 32px; }
     html:has(#search-bar:not([hidden])) { scroll-padding-top: 78px; }
     #field {
       display: flex; height: 28px; box-sizing: border-box;
-      align-items: center; background: var(--sel-idle); border-radius: 6px;
+      align-items: center; background: var(--sel-idle); border-radius: max(0px, var(--radius) - 1px);
     }
-    #field:focus-within { background: Canvas; box-shadow: inset 0 0 0 1.5px var(--accent); }
+    #field:focus-within { background: var(--bg); box-shadow: inset 0 0 0 1.5px var(--accent); }
     #search {
       flex: 1; min-width: 0; height: 100%; box-sizing: border-box; padding: 0 8px;
       font: inherit; color: inherit; background: none; border: 0; outline: none;
@@ -59,7 +60,7 @@
 
     #marks {
       position: fixed; inset: auto 0 0; z-index: 2; height: 26px; margin: 0; padding: 0 14px; box-sizing: border-box;
-      font-size: 12px; font-weight: 600; line-height: 26px; color: var(--accent); background: Canvas;
+      font-size: 12px; font-weight: 600; line-height: 26px; color: var(--accent); background: var(--bg);
       border-top: 1px solid var(--line); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     #marks[hidden] { display: none; }
@@ -72,8 +73,8 @@
     #search-bar:not([hidden]) + #list { padding-top: 0; }
     li {
       display: flex; align-items: center; gap: 7px;
-      height: 30px; padding: 0 8px; padding-inline-start: calc(4px + var(--depth) * 14px);
-      border-radius: 7px; white-space: nowrap; cursor: default; user-select: none;
+      height: calc(17px + 1em); padding: 0 8px; padding-inline-start: calc(4px + var(--depth) * 14px);
+      border-radius: var(--radius); white-space: nowrap; cursor: default; user-select: none;
     }
     li::before { content: ""; flex: none; width: 12px; height: 12px; } /* колонка под стрелку */
     li.folder::before { background: var(--muted); mask: var(--chevron) center / contain no-repeat; }
@@ -104,20 +105,30 @@
     li.empty { justify-content: center; height: 80px; padding: 0 16px; white-space: normal; text-align: center; color: var(--muted); }
     li.empty::before, li.more::before { display: none; }
     li.more { justify-content: center; height: 32px; font-size: 12px; color: var(--muted); }
+    /* по выбору в теме (theme.js): число закладок у папки и линии уровней вложенности.
+       Число — из data-n, а не текстом: текст строки остаётся названием */
+    .count, .guides { display: none; }
+    li > .count { flex: none; margin-inline-start: auto; font-size: calc(1em - 2px); font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .count::before { content: attr(data-n); }
+    .guides {
+      position: absolute; inset-block: 0; inset-inline-start: 4px; width: calc(var(--depth) * 14px); pointer-events: none;
+      background: repeating-linear-gradient(to right, transparent 0 5.5px, var(--line) 5.5px 6.5px, transparent 6.5px 14px);
+    }
+    .guides:dir(rtl) { scale: -1 1; }
     /* раскрытая пустая папка */
     #list:not([data-view="detailed"]) li.folder.void[aria-expanded="true"]::after { content: attr(data-empty); margin-inline-start: auto; font-size: 11px; color: var(--muted); }
 
     /* две строки: результаты поиска и вид «с адресом» */
-    li.hit { height: 40px; padding-inline-start: 8px; }
+    li.hit { height: calc(14px + 2em); padding-inline-start: 8px; }
     li.hit::before { display: none; }
-    li.two { height: 40px; }
+    li.two { height: calc(14px + 2em); }
     .lines { flex: 1; min-width: 0; display: grid; gap: 1px; }
-    #list .sub { font-size: 11px; font-weight: 400; color: var(--muted); }
+    #list .sub { font-size: calc(1em - 2px); font-weight: 400; color: var(--muted); }
     #list li.cur .sub { color: light-dark(#5b6068, #a9afb8); }
     mark { color: var(--accent); background: none; font-weight: 600; }
 
     /* компактный вид */
-    #list[data-view="dense"] li[role="treeitem"]:not(.hit) { height: 24px; gap: 6px; font-size: 12px; border-radius: 5px; }
+    #list[data-view="dense"] li[role="treeitem"]:not(.hit) { height: calc(12px + 1em); gap: 6px; font-size: calc(1em - 1px); border-radius: max(0px, var(--radius) - 2px); }
     #list[data-view="dense"] li[role="treeitem"]:not(.hit) :is(img, i) { width: 14px; height: 14px; }
 
     /* закреплённые вкладки: точка — закладка открыта, цветная — это текущая вкладка;
@@ -132,7 +143,7 @@
     li.active > span, li.active .lines > span:first-child { font-weight: 600; }
     .close {
       display: none; place-items: center; flex: none; width: 20px; height: 20px; margin: 0 -3px; margin-inline-start: auto;
-      padding: 0; border: 0; border-radius: 5px; background: none; color: var(--muted); cursor: pointer;
+      padding: 0; border: 0; border-radius: max(0px, var(--radius) - 2px); background: none; color: var(--muted); cursor: pointer;
     }
     .close::before { content: ""; width: 10px; height: 10px; background: currentColor; mask: var(--cross) center / contain no-repeat; }
     .close:hover { background: var(--hover); color: var(--text); }
@@ -156,7 +167,7 @@
     .drop-line.after { top: auto; bottom: -1px; }
     .drop-line::before {
       content: ""; position: absolute; inset-inline-start: -6px; top: -3px; width: 4px; height: 4px;
-      border: 2px solid var(--accent); border-radius: 50%; background: Canvas;
+      border: 2px solid var(--accent); border-radius: 50%; background: var(--bg);
     }
     #drag-label {
       position: fixed; z-index: 3; max-width: 220px; translate: 14px 12px; padding: 3px 8px; border-radius: 6px;
@@ -168,8 +179,8 @@
     /* переименование */
     .rename {
       flex: 1; min-width: 0; height: 22px; margin-inline-start: -5px; padding: 0 4px;
-      font: inherit; color: inherit; background: Canvas;
-      border: 0; border-radius: 5px; outline: 2px solid var(--accent);
+      font: inherit; color: inherit; background: var(--bg);
+      border: 0; border-radius: max(0px, var(--radius) - 2px); outline: 2px solid var(--accent);
     }
 
     /* окна: подтверждение, название группы, палитра */
@@ -183,7 +194,7 @@
     dialog p { margin: 0 0 16px; color: var(--muted); overflow-wrap: anywhere; white-space: pre-line; }
     .buttons { display: flex; justify-content: flex-end; gap: 8px; }
     .buttons button {
-      height: 30px; padding: 0 14px; border: 0; border-radius: 7px; cursor: pointer;
+      height: 30px; padding: 0 14px; border: 0; border-radius: var(--radius); cursor: pointer;
       font: inherit; font-weight: 500; color: var(--text); background: var(--sel-idle);
     }
     .buttons .danger { color: #fff; background: var(--danger); }
@@ -191,8 +202,8 @@
     .buttons .danger:focus-visible { outline-color: var(--danger); }
     .field {
       display: block; width: 100%; height: 32px; box-sizing: border-box; margin: 6px 0 8px; padding: 0 9px;
-      font: inherit; color: inherit; background: Canvas; outline: none;
-      border: 1px solid var(--line); border-radius: 7px;
+      font: inherit; color: inherit; background: var(--bg); outline: none;
+      border: 1px solid var(--line); border-radius: var(--radius);
     }
     .field:focus { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
     .buttons button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -268,6 +279,7 @@
     #toast.show button { pointer-events: auto; }
     .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   </style>
+  <style id="theme"></style> <!-- тема: theme.js, panel/main.js -->
 </head>
 <body>
   <div id="bar" role="toolbar" data-i18n-aria-label="group_edit">

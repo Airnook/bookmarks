@@ -4,6 +4,7 @@ import {
 } from './commands.js';
 import { localizePage, t } from './i18n.js';
 import { envelope, readSettingsFile } from './settings-file.js';
+import { THEME_BASE, cleanTheme } from './theme.js';
 
 localizePage();
 
@@ -84,7 +85,7 @@ function scheduleRoots() {
 
 async function init() {
   const [tree] = await chrome.bookmarks.getTree();
-  const saved = await chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: null, preset });
+  const saved = await chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: null, preset, theme: null });
 
   rootId = saved.rootId;
   buildRoots(tree);
@@ -92,6 +93,8 @@ async function init() {
   for (const s of switches) s.checked = saved[s.id];
   viewSelect.value = saved.view;
   if (viewSelect.value !== saved.view) viewSelect.value = SETTINGS_DEFAULTS.view;
+  theme = cleanTheme(saved.theme);
+  showTheme();
   keymap = storedKeymap(saved.keymap);
   preset = saved.preset;
   const toggle = (await chrome.commands.getAll()).find(c => c.name === 'open-bookmarks');
@@ -108,6 +111,79 @@ select.addEventListener('blur', flushRoots);
 viewSelect.onchange = () => save({ view: viewSelect.value });
 document.getElementById('help').onclick = () => chrome.tabs.create({ url: 'help.html' });
 for (const s of switches) s.onchange = () => save({ [s.id]: s.checked });
+
+// ---------- оформление панели ----------
+// Источник — theme (как в хранилище); каждое изменение сразу сохраняется, открытая панель
+// подхватывает его из onChanged.
+
+let theme = cleanTheme();
+const field = (id) => document.getElementById(`theme-${id}`);
+// поля цвета: [тема, цвет, поле, «сбросить»]
+const colorFields = ['light', 'dark'].flatMap(m => ['background', 'text', 'accent'].map(k => [m, k, field(`${m}-${k}`), field(`${m}-${k}-reset`)]));
+// что показать в поле цвета, пока цвет не задан: Canvas Chrome в светлой и тёмной теме
+const CANVAS = { light: '#ffffff', dark: '#121212' };
+const shownColor = (m, k) => theme.colors[m][k] || (k === 'background' ? CANVAS[m] : THEME_BASE[m][k]);
+// внешний адрес в своём CSS: url(https://…), url(//…), @import
+const EXTERNAL = /url\(\s*['"]?\s*(https?:)?\/\/|@import/i;
+
+// поле, в котором сейчас печатают, не трогаем: сохранение по ходу ввода не сбивает набор
+const typedValue = (id, value) => { if (document.activeElement !== field(id)) field(id).value = value; };
+
+function showTheme() {
+  field('mode').value = theme.mode;
+  for (const [mode, key, input, reset] of colorFields) {
+    input.value = shownColor(mode, key);
+    reset.disabled = !theme.colors[mode][key];
+  }
+  typedValue('font', theme.font);
+  const browser = theme.fontSize === 'browser';
+  field('size-browser').checked = browser;
+  field('size').disabled = browser;
+  field('size').value = browser ? '' : theme.fontSize;
+  const full = theme.radius === 'full';
+  field('radius-full').checked = full;
+  field('radius').disabled = full;
+  field('radius').value = full ? '' : theme.radius;
+  field('favicons').checked = theme.favicons;
+  field('counts').checked = theme.folderCounts;
+  field('guides').checked = theme.indentGuides;
+  field('css-on').checked = theme.customCssOn;
+  typedValue('css', theme.customCss);
+  field('css-warning').hidden = !EXTERNAL.test(theme.customCss);
+}
+
+// Поменять тему (change меняет theme), сохранить и показать уже проверенное значение
+function setTheme(change) {
+  change();
+  theme = cleanTheme(theme);
+  showTheme();
+  save({ theme });
+}
+
+field('mode').onchange = () => setTheme(() => { theme.mode = field('mode').value; });
+for (const [mode, key, input, reset] of colorFields) {
+  input.onchange = () => setTheme(() => { theme.colors[mode][key] = input.value; });
+  reset.onclick = () => setTheme(() => { theme.colors[mode][key] = ''; });
+}
+// текст сохраняем по ходу ввода (с паузой): закрытая вкладка не теряет напечатанное
+const typed = (id, apply) => {
+  let timer;
+  const commit = () => { clearTimeout(timer); setTheme(apply); };
+  field(id).oninput = () => { clearTimeout(timer); timer = setTimeout(commit, 400); };
+  field(id).onchange = commit;
+};
+typed('font', () => { theme.font = field('font').value; });
+// пустое или не число — прежнее значение (cleanTheme)
+field('size').onchange = () => setTheme(() => { theme.fontSize = parseFloat(field('size').value); });
+field('size-browser').onchange = () => setTheme(() => { theme.fontSize = field('size-browser').checked ? 'browser' : NaN; });
+field('radius').onchange = () => setTheme(() => { theme.radius = parseFloat(field('radius').value); });
+field('radius-full').onchange = () => setTheme(() => { theme.radius = field('radius-full').checked ? 'full' : NaN; });
+field('favicons').onchange = () => setTheme(() => { theme.favicons = field('favicons').checked; });
+field('counts').onchange = () => setTheme(() => { theme.folderCounts = field('counts').checked; });
+field('guides').onchange = () => setTheme(() => { theme.indentGuides = field('guides').checked; });
+field('css-on').onchange = () => setTheme(() => { theme.customCssOn = field('css-on').checked; });
+typed('css', () => { theme.customCss = field('css').value; });
+field('reset').onclick = () => setTheme(() => { theme = cleanTheme(); });
 
 // ---------- список команд ----------
 
@@ -429,6 +505,7 @@ chrome.storage.local.onChanged.addListener((c) => {
   if (c.view) viewSelect.value = c.view.newValue ?? SETTINGS_DEFAULTS.view;
   if (c.rootId) { rootId = c.rootId.newValue ?? SETTINGS_DEFAULTS.rootId; showRoot(); }
   for (const s of switches) if (Object.hasOwn(c, s.id)) s.checked = c[s.id].newValue ?? SETTINGS_DEFAULTS[s.id];
+  if (c.theme) { theme = cleanTheme(c.theme.newValue); showTheme(); }
 });
 
 for (const ev of ['onCreated', 'onRemoved', 'onChanged', 'onMoved', 'onChildrenReordered']) {

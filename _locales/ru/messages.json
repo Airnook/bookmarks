@@ -1088,6 +1088,78 @@
   "options_auto_hide_hint": {
     "message": "Клик по странице или по интерфейсу браузера закрывает панель. При переключении в другое приложение она остаётся открытой."
   },
+  "options_appearance": {
+    "message": "Оформление панели"
+  },
+  "options_theme_mode": {
+    "message": "Тема"
+  },
+  "options_theme_system": {
+    "message": "Как в системе"
+  },
+  "options_theme_light": {
+    "message": "Светлая"
+  },
+  "options_theme_dark": {
+    "message": "Тёмная"
+  },
+  "options_colors_light": {
+    "message": "Цвета светлой темы"
+  },
+  "options_colors_dark": {
+    "message": "Цвета тёмной темы"
+  },
+  "options_color_background": {
+    "message": "Фон"
+  },
+  "options_color_text": {
+    "message": "Текст"
+  },
+  "options_color_accent": {
+    "message": "Акцент"
+  },
+  "options_color_reset": {
+    "message": "Сбросить"
+  },
+  "options_font": {
+    "message": "Шрифт"
+  },
+  "options_font_system": {
+    "message": "Системный"
+  },
+  "options_font_size": {
+    "message": "Размер шрифта, px"
+  },
+  "options_font_size_browser": {
+    "message": "Как в браузере"
+  },
+  "options_radius": {
+    "message": "Скругление углов, px"
+  },
+  "options_radius_full": {
+    "message": "Полное"
+  },
+  "options_favicons": {
+    "message": "Значки сайтов"
+  },
+  "options_folder_counts": {
+    "message": "Число закладок у папок"
+  },
+  "options_indent_guides": {
+    "message": "Линии уровней"
+  },
+  "options_custom_css": {
+    "message": "Свой CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "Действует только в боковой панели, поверх настроек выше. Страницу настроек и справку не меняет."
+  },
+  "options_custom_css_external": {
+    "message": "Внешние адреса в url() или @import загружают файлы из интернета при каждом открытии панели, и этот сайт это видит."
+  },
+  "options_theme_reset": {
+    "message": "Сбросить оформление"
+  },
   "options_keys": {
     "message": "Клавиши в панели"
   },

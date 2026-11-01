@@ -1038,6 +1038,78 @@
   "options_auto_hide_hint": {
     "message": "Ein Klick auf die Seite oder die Browseroberfläche schließt die Seitenleiste. Beim Wechsel zu einer anderen App bleibt sie geöffnet."
   },
+  "options_appearance": {
+    "message": "Aussehen des Panels"
+  },
+  "options_theme_mode": {
+    "message": "Design"
+  },
+  "options_theme_system": {
+    "message": "Wie im System"
+  },
+  "options_theme_light": {
+    "message": "Hell"
+  },
+  "options_theme_dark": {
+    "message": "Dunkel"
+  },
+  "options_colors_light": {
+    "message": "Farben des hellen Designs"
+  },
+  "options_colors_dark": {
+    "message": "Farben des dunklen Designs"
+  },
+  "options_color_background": {
+    "message": "Hintergrund"
+  },
+  "options_color_text": {
+    "message": "Text"
+  },
+  "options_color_accent": {
+    "message": "Akzent"
+  },
+  "options_color_reset": {
+    "message": "Zurücksetzen"
+  },
+  "options_font": {
+    "message": "Schrift"
+  },
+  "options_font_system": {
+    "message": "System"
+  },
+  "options_font_size": {
+    "message": "Schriftgröße, px"
+  },
+  "options_font_size_browser": {
+    "message": "Browser-Standard"
+  },
+  "options_radius": {
+    "message": "Eckenradius, px"
+  },
+  "options_radius_full": {
+    "message": "Vollständig rund"
+  },
+  "options_favicons": {
+    "message": "Website-Symbole"
+  },
+  "options_folder_counts": {
+    "message": "Anzahl der Lesezeichen neben Ordnern"
+  },
+  "options_indent_guides": {
+    "message": "Einrückungslinien"
+  },
+  "options_custom_css": {
+    "message": "Eigenes CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "Gilt nur für das Seitenpanel, zusätzlich zu den Einstellungen oben. Einstellungsseite und Hilfe bleiben unverändert."
+  },
+  "options_custom_css_external": {
+    "message": "Externe Adressen in url() oder @import laden bei jedem Öffnen des Panels Dateien aus dem Internet, und diese Website bemerkt das."
+  },
+  "options_theme_reset": {
+    "message": "Aussehen zurücksetzen"
+  },
   "options_keys": {
     "message": "Tasten der Seitenleiste"
   },

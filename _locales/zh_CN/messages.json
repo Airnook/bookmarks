@@ -1014,6 +1014,78 @@
   "options_auto_hide_hint": {
     "message": "点击网页或浏览器界面会关闭面板；切换到其他应用则不会。"
   },
+  "options_appearance": {
+    "message": "面板外观"
+  },
+  "options_theme_mode": {
+    "message": "主题"
+  },
+  "options_theme_system": {
+    "message": "跟随系统"
+  },
+  "options_theme_light": {
+    "message": "浅色"
+  },
+  "options_theme_dark": {
+    "message": "深色"
+  },
+  "options_colors_light": {
+    "message": "浅色主题颜色"
+  },
+  "options_colors_dark": {
+    "message": "深色主题颜色"
+  },
+  "options_color_background": {
+    "message": "背景"
+  },
+  "options_color_text": {
+    "message": "文字"
+  },
+  "options_color_accent": {
+    "message": "强调色"
+  },
+  "options_color_reset": {
+    "message": "重置"
+  },
+  "options_font": {
+    "message": "字体"
+  },
+  "options_font_system": {
+    "message": "系统"
+  },
+  "options_font_size": {
+    "message": "字号（px）"
+  },
+  "options_font_size_browser": {
+    "message": "浏览器默认"
+  },
+  "options_radius": {
+    "message": "圆角（px）"
+  },
+  "options_radius_full": {
+    "message": "完全圆角"
+  },
+  "options_favicons": {
+    "message": "网站图标"
+  },
+  "options_folder_counts": {
+    "message": "文件夹旁的书签数量"
+  },
+  "options_indent_guides": {
+    "message": "缩进参考线"
+  },
+  "options_custom_css": {
+    "message": "自定义 CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "仅作用于侧边栏，叠加在上述设置之上。不影响设置页面和帮助。"
+  },
+  "options_custom_css_external": {
+    "message": "url() 或 @import 中的外部地址会在每次打开面板时从互联网加载文件，该网站会知道这一点。"
+  },
+  "options_theme_reset": {
+    "message": "重置外观"
+  },
   "options_keys": {
     "message": "面板快捷键"
   },

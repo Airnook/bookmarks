@@ -1038,6 +1038,78 @@
   "options_auto_hide_hint": {
     "message": "पेज या ब्राउज़र इंटरफ़ेस पर क्लिक करने से पैनल बंद हो जाता है। दूसरे ऐप पर जाने से वह खुला रहता है।"
   },
+  "options_appearance": {
+    "message": "पैनल का रूप"
+  },
+  "options_theme_mode": {
+    "message": "थीम"
+  },
+  "options_theme_system": {
+    "message": "सिस्टम के अनुसार"
+  },
+  "options_theme_light": {
+    "message": "हल्की"
+  },
+  "options_theme_dark": {
+    "message": "गहरी"
+  },
+  "options_colors_light": {
+    "message": "हल्की थीम के रंग"
+  },
+  "options_colors_dark": {
+    "message": "गहरी थीम के रंग"
+  },
+  "options_color_background": {
+    "message": "पृष्ठभूमि"
+  },
+  "options_color_text": {
+    "message": "टेक्स्ट"
+  },
+  "options_color_accent": {
+    "message": "एक्सेंट"
+  },
+  "options_color_reset": {
+    "message": "रीसेट करें"
+  },
+  "options_font": {
+    "message": "फ़ॉन्ट"
+  },
+  "options_font_system": {
+    "message": "सिस्टम"
+  },
+  "options_font_size": {
+    "message": "फ़ॉन्ट आकार, px"
+  },
+  "options_font_size_browser": {
+    "message": "ब्राउज़र का डिफ़ॉल्ट"
+  },
+  "options_radius": {
+    "message": "कोनों की गोलाई, px"
+  },
+  "options_radius_full": {
+    "message": "पूरी गोल"
+  },
+  "options_favicons": {
+    "message": "साइट आइकन"
+  },
+  "options_folder_counts": {
+    "message": "फ़ोल्डरों के पास बुकमार्क की संख्या"
+  },
+  "options_indent_guides": {
+    "message": "इंडेंट रेखाएँ"
+  },
+  "options_custom_css": {
+    "message": "अपनी CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "सिर्फ़ साइड पैनल पर, ऊपर की सेटिंग के बाद लागू होती है। सेटिंग पेज और सहायता नहीं बदलते।"
+  },
+  "options_custom_css_external": {
+    "message": "url() या @import में बाहरी पते हर बार पैनल खुलने पर इंटरनेट से फ़ाइलें लोड करते हैं, और उस साइट को इसका पता चलता है।"
+  },
+  "options_theme_reset": {
+    "message": "रूप रीसेट करें"
+  },
   "options_keys": {
     "message": "पैनल की कुंजियाँ"
   },
