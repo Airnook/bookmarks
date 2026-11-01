@@ -937,7 +937,12 @@ try {
 
   // сборка — в копии репозитория, чтобы не трогать dist/ рабочего каталога
   const src = path.join(tmp, 'src');
-  fs.cpSync(root, src, { recursive: true, filter: (f) => !/[\\/](node_modules|dist|\.git)$/.test(f) });
+  // сокеты (.codegraph/daemon.sock) cpSync не копирует: берём только файлы и каталоги
+  fs.cpSync(root, src, { recursive: true, filter: (f) => {
+    if (/[\\/](node_modules|dist|\.git)$/.test(f)) return false;
+    const st = fs.lstatSync(f);
+    return st.isFile() || st.isDirectory();
+  } });
   const built = spawnSync(process.execPath, [path.join(repo, 'scripts', 'package.mjs'), src], { encoding: 'utf8' });
   assert.equal(built.status, 0, built.stderr);
   const { version } = JSON.parse(fs.readFileSync(path.join(src, 'manifest.json'), 'utf8'));
