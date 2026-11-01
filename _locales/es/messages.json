@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Novedad: conjuntos de atajos en la configuración. Tus teclas no cambiaron: es el conjunto «Arc legacy»."
+  },
   "create_folder_failed": {
     "message": "No se pudo crear la carpeta"
   },
@@ -1059,17 +1062,129 @@
   "options_auto_hide_hint": {
     "message": "Un clic en la página o en la interfaz del navegador cierra el panel. Cambiar a otra aplicación lo mantiene abierto."
   },
+  "options_appearance": {
+    "message": "Apariencia del panel"
+  },
+  "options_theme_mode": {
+    "message": "Tema"
+  },
+  "options_theme_system": {
+    "message": "Como el sistema"
+  },
+  "options_theme_light": {
+    "message": "Claro"
+  },
+  "options_theme_dark": {
+    "message": "Oscuro"
+  },
+  "options_colors_light": {
+    "message": "Colores del tema claro"
+  },
+  "options_colors_dark": {
+    "message": "Colores del tema oscuro"
+  },
+  "options_color_background": {
+    "message": "Fondo"
+  },
+  "options_color_text": {
+    "message": "Texto"
+  },
+  "options_color_accent": {
+    "message": "Acento"
+  },
+  "options_color_reset": {
+    "message": "Restablecer"
+  },
+  "options_font": {
+    "message": "Fuente"
+  },
+  "options_font_system": {
+    "message": "Del sistema"
+  },
+  "options_font_size": {
+    "message": "Tamaño de fuente, px"
+  },
+  "options_font_size_browser": {
+    "message": "Predeterminado del navegador"
+  },
+  "options_radius": {
+    "message": "Radio de las esquinas, px"
+  },
+  "options_radius_full": {
+    "message": "Totalmente redondeado"
+  },
+  "options_favicons": {
+    "message": "Iconos de sitios"
+  },
+  "options_folder_counts": {
+    "message": "Número de marcadores junto a las carpetas"
+  },
+  "options_indent_guides": {
+    "message": "Guías de sangría"
+  },
+  "options_custom_css": {
+    "message": "CSS propio"
+  },
+  "options_custom_css_hint": {
+    "message": "Solo se aplica al panel lateral, por encima de los ajustes anteriores. No afecta a la página de ajustes ni a la ayuda."
+  },
+  "options_custom_css_external": {
+    "message": "Las direcciones externas en url() o @import descargan archivos de internet cada vez que se abre el panel, y ese sitio lo ve."
+  },
+  "options_theme_reset": {
+    "message": "Restablecer apariencia"
+  },
   "options_keys": {
     "message": "Teclas del panel"
   },
-  "options_preset_standard": {
-    "message": "Estándar"
+  "options_panel_side": {
+    "message": "Posición del panel"
   },
-  "options_preset_standard_title": {
-    "message": "Reemplazar todos los atajos por los estándar"
+  "options_panel_side_hint": {
+    "message": "Lado actual: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "cambiar en la configuración del navegador"
+  },
+  "options_side_left": {
+    "message": "izquierda"
+  },
+  "options_side_right": {
+    "message": "derecha"
+  },
+  "options_global_title": {
+    "message": "Abrir y cerrar el panel"
+  },
+  "options_reserved": {
+    "message": "El navegador o el sistema se quedan con $KEY$ y nunca llega al panel; elige otro atajo",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "Predeterminado"
+  },
+  "options_preset_default_title": {
+    "message": "Atajos conocidos del navegador y del gestor de archivos: copiar, pegar, deshacer, F2 para renombrar"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy más los atajos del navegador Arc: copiar enlace, barra de comandos, configuración, ocultar el panel"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Atajos de versiones anteriores: letras sueltas n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Estándar más teclas de Vim: j k h l, g g, d d, y y…"
+    "message": "Arc legacy más teclas de Vim: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "«+» graba un atajo: una tecla, con modificadores, una secuencia ($SEQUENCE$) o una pulsación doble ($DOUBLE$); pulsa la segunda tecla enseguida. $ENTER$ tras una tecla: listo, $ESC$: cancelar la grabación, «×»: quitar. Si el atajo está ocupado, se te preguntará si quieres quedártelo. Todos los comandos también están en la paleta de comandos del panel.",
@@ -1085,17 +1200,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Abrir y cerrar el panel: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1193,6 +1297,32 @@
   },
   "options_replace_ok": {
     "message": "Reemplazar"
+  },
+  "options_export": {
+    "message": "Exportar"
+  },
+  "options_import": {
+    "message": "Importar"
+  },
+  "options_imported": {
+    "message": "Atajos importados"
+  },
+  "options_imported_skipped": {
+    "message": "Atajos importados; entradas no válidas omitidas: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "No es un archivo de ajustes de Bookmarks válido."
+  },
+  "options_import_wrong_type": {
+    "message": "Este archivo contiene otros ajustes, no atajos de teclado."
+  },
+  "options_import_newer": {
+    "message": "Este archivo es de una versión más reciente de la extensión. Actualiza la extensión para importarlo."
   },
   "options_preset_applied": {
     "message": "Se aplicó el conjunto «$PRESET$»",
@@ -2198,5 +2328,25 @@
   },
   "help_news_title": {
     "message": "Novedades"
+  },
+  "options_preview": {
+    "message": "Vista previa del panel con marcadores de ejemplo"
+  },
+  "options_replace_theme": {
+    "message": "¿Reemplazar la apariencia del panel por «$FILE$»?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Se perderán los ajustes de apariencia actuales."
+  },
+  "options_theme_imported": {
+    "message": "Apariencia importada"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Este archivo contiene otros ajustes, no la apariencia del panel."
   }
 }

@@ -103,6 +103,11 @@ function autoScroll() {
   scrollFrame = requestAnimationFrame(autoScroll);
 }
 
+// Список перерисован (дерево перечиталось) — строки могли сдвинуться под неподвижным указателем
+export function redrawDrag() {
+  if (press?.started) update();
+}
+
 function start(e) {
   const node = state.nodeById.get(press.id);
   const fromMarks = !!node && state.marked.has(node.id);

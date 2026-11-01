@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "नया: सेटिंग में शॉर्टकट सेट। आपकी कुंजियाँ नहीं बदलीं — यह “Arc legacy” सेट है।"
+  },
   "create_folder_failed": {
     "message": "फ़ोल्डर नहीं बनाया जा सका"
   },
@@ -1035,17 +1038,129 @@
   "options_auto_hide_hint": {
     "message": "पेज या ब्राउज़र इंटरफ़ेस पर क्लिक करने से पैनल बंद हो जाता है। दूसरे ऐप पर जाने से वह खुला रहता है।"
   },
+  "options_appearance": {
+    "message": "पैनल का रूप"
+  },
+  "options_theme_mode": {
+    "message": "थीम"
+  },
+  "options_theme_system": {
+    "message": "सिस्टम के अनुसार"
+  },
+  "options_theme_light": {
+    "message": "हल्की"
+  },
+  "options_theme_dark": {
+    "message": "गहरी"
+  },
+  "options_colors_light": {
+    "message": "हल्की थीम के रंग"
+  },
+  "options_colors_dark": {
+    "message": "गहरी थीम के रंग"
+  },
+  "options_color_background": {
+    "message": "पृष्ठभूमि"
+  },
+  "options_color_text": {
+    "message": "टेक्स्ट"
+  },
+  "options_color_accent": {
+    "message": "एक्सेंट"
+  },
+  "options_color_reset": {
+    "message": "रीसेट करें"
+  },
+  "options_font": {
+    "message": "फ़ॉन्ट"
+  },
+  "options_font_system": {
+    "message": "सिस्टम"
+  },
+  "options_font_size": {
+    "message": "फ़ॉन्ट आकार, px"
+  },
+  "options_font_size_browser": {
+    "message": "ब्राउज़र का डिफ़ॉल्ट"
+  },
+  "options_radius": {
+    "message": "कोनों की गोलाई, px"
+  },
+  "options_radius_full": {
+    "message": "पूरी गोल"
+  },
+  "options_favicons": {
+    "message": "साइट आइकन"
+  },
+  "options_folder_counts": {
+    "message": "फ़ोल्डरों के पास बुकमार्क की संख्या"
+  },
+  "options_indent_guides": {
+    "message": "इंडेंट रेखाएँ"
+  },
+  "options_custom_css": {
+    "message": "अपनी CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "सिर्फ़ साइड पैनल पर, ऊपर की सेटिंग के बाद लागू होती है। सेटिंग पेज और सहायता नहीं बदलते।"
+  },
+  "options_custom_css_external": {
+    "message": "url() या @import में बाहरी पते हर बार पैनल खुलने पर इंटरनेट से फ़ाइलें लोड करते हैं, और उस साइट को इसका पता चलता है।"
+  },
+  "options_theme_reset": {
+    "message": "रूप रीसेट करें"
+  },
   "options_keys": {
     "message": "पैनल की कुंजियाँ"
   },
-  "options_preset_standard": {
-    "message": "मानक"
+  "options_panel_side": {
+    "message": "पैनल की स्थिति"
   },
-  "options_preset_standard_title": {
-    "message": "सभी शॉर्टकट को मानक शॉर्टकट से बदलें"
+  "options_panel_side_hint": {
+    "message": "वर्तमान पक्ष: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "ब्राउज़र की सेटिंग में बदलें"
+  },
+  "options_side_left": {
+    "message": "बाएँ"
+  },
+  "options_side_right": {
+    "message": "दाएँ"
+  },
+  "options_global_title": {
+    "message": "पैनल खोलना और बंद करना"
+  },
+  "options_reserved": {
+    "message": "$KEY$ को ब्राउज़र या सिस्टम ले लेता है और यह पैनल तक कभी नहीं पहुँचता — कोई दूसरा शॉर्टकट चुनें",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "डिफ़ॉल्ट"
+  },
+  "options_preset_default_title": {
+    "message": "ब्राउज़र और फ़ाइल मैनेजर के जाने-पहचाने शॉर्टकट: कॉपी, पेस्ट, पूर्ववत करें, नाम बदलने के लिए F2"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy के साथ Arc ब्राउज़र के शॉर्टकट: लिंक कॉपी करें, कमांड बार, सेटिंग, पैनल छिपाएँ"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "पिछले संस्करणों के शॉर्टकट: अकेले अक्षर n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "मानक के साथ Vim कुंजियाँ: j k h l, g g, d d, y y…"
+    "message": "Arc legacy के साथ Vim कुंजियाँ: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "“+” से शॉर्टकट रिकॉर्ड होता है: एक कुंजी (मॉडिफ़ायर के साथ भी), अनुक्रम ($SEQUENCE$) या दो बार दबाना ($DOUBLE$) — दूसरी कुंजी तुरंत दबाएँ। कुंजी के बाद $ENTER$ — पूरा, $ESC$ — रिकॉर्डिंग रद्द, “×” — हटाएँ। यदि शॉर्टकट पहले से किसी और कमांड के पास है, तो पूछा जाएगा कि उसे अपने नाम करना है या नहीं। सभी कमांड पैनल के कमांड पैलेट में भी हैं।",
@@ -1061,17 +1176,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "पैनल खोलना और बंद करना: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1169,6 +1273,32 @@
   },
   "options_replace_ok": {
     "message": "बदलें"
+  },
+  "options_export": {
+    "message": "निर्यात"
+  },
+  "options_import": {
+    "message": "आयात"
+  },
+  "options_imported": {
+    "message": "शॉर्टकट आयात हो गए"
+  },
+  "options_imported_skipped": {
+    "message": "शॉर्टकट आयात हो गए; छोड़ी गई अमान्य प्रविष्टियाँ: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "यह Bookmarks की मान्य सेटिंग फ़ाइल नहीं है।"
+  },
+  "options_import_wrong_type": {
+    "message": "इस फ़ाइल में शॉर्टकट नहीं, दूसरी सेटिंग हैं।"
+  },
+  "options_import_newer": {
+    "message": "यह फ़ाइल एक्सटेंशन के नए संस्करण की है। इसे आयात करने के लिए एक्सटेंशन अपडेट करें।"
   },
   "options_preset_applied": {
     "message": "“$PRESET$” सेट लागू हो गया",
@@ -2099,5 +2229,25 @@
   },
   "help_news_title": {
     "message": "नया क्या है"
+  },
+  "options_preview": {
+    "message": "नमूना बुकमार्क पर पैनल का पूर्वावलोकन"
+  },
+  "options_replace_theme": {
+    "message": "पैनल का रूप “$FILE$” से बदलें?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "आपकी मौजूदा रूप-सेटिंग खो जाएँगी।"
+  },
+  "options_theme_imported": {
+    "message": "रूप आयात हो गया"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "इस फ़ाइल में पैनल का रूप नहीं, दूसरी सेटिंग हैं।"
   }
 }

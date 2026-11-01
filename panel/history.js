@@ -23,6 +23,9 @@ const KEY = 'history';
 // Последнее известное состояние (для меню и проверок без ожидания), обновляется
 // при каждой записи — своей и других окон
 let cache = { undo: [], redo: [] };
+const listeners = [];
+export const onHistoryChange = (fn) => void listeners.push(fn);
+const setCache = (h) => { cache = h; listeners.forEach((fn) => fn()); return h; };
 export const canUndo = () => cache.undo.length > 0;
 export const canRedo = () => cache.redo.length > 0;
 export const undoLabel = () => cache.undo.at(-1)?.label ?? null;
@@ -31,11 +34,11 @@ export const redoLabel = () => cache.redo.at(-1)?.label ?? null;
 const valid = (h) => (h && Array.isArray(h.undo) && Array.isArray(h.redo) ? h : { undo: [], redo: [] });
 async function load() {
   const { [KEY]: h } = await chrome.storage.session.get(KEY);
-  return (cache = valid(h));
+  return setCache(valid(h));
 }
 // Хранилище переполнено (огромная удалённая папка) — забываем самые старые шаги
 async function save(h) {
-  cache = h;
+  setCache(h);
   for (;;) {
     try {
       return await chrome.storage.session.set({ [KEY]: h });
@@ -257,6 +260,6 @@ export const undo = () => replay(true);
 export const redo = () => replay(false);
 
 export function listenHistory() {
-  chrome.storage.session.onChanged.addListener((c) => { if (c[KEY]) cache = valid(c[KEY].newValue); });
+  chrome.storage.session.onChanged.addListener((c) => { if (c[KEY]) setCache(valid(c[KEY].newValue)); });
   return load().catch(ignore);
 }

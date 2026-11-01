@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "新功能：可在设置中选择快捷键预设。您的按键没有变化——这是“Arc legacy”预设。"
+  },
   "create_folder_failed": {
     "message": "无法创建文件夹"
   },
@@ -1011,17 +1014,129 @@
   "options_auto_hide_hint": {
     "message": "点击网页或浏览器界面会关闭面板；切换到其他应用则不会。"
   },
+  "options_appearance": {
+    "message": "面板外观"
+  },
+  "options_theme_mode": {
+    "message": "主题"
+  },
+  "options_theme_system": {
+    "message": "跟随系统"
+  },
+  "options_theme_light": {
+    "message": "浅色"
+  },
+  "options_theme_dark": {
+    "message": "深色"
+  },
+  "options_colors_light": {
+    "message": "浅色主题颜色"
+  },
+  "options_colors_dark": {
+    "message": "深色主题颜色"
+  },
+  "options_color_background": {
+    "message": "背景"
+  },
+  "options_color_text": {
+    "message": "文字"
+  },
+  "options_color_accent": {
+    "message": "强调色"
+  },
+  "options_color_reset": {
+    "message": "重置"
+  },
+  "options_font": {
+    "message": "字体"
+  },
+  "options_font_system": {
+    "message": "系统"
+  },
+  "options_font_size": {
+    "message": "字号（px）"
+  },
+  "options_font_size_browser": {
+    "message": "浏览器默认"
+  },
+  "options_radius": {
+    "message": "圆角（px）"
+  },
+  "options_radius_full": {
+    "message": "完全圆角"
+  },
+  "options_favicons": {
+    "message": "网站图标"
+  },
+  "options_folder_counts": {
+    "message": "文件夹旁的书签数量"
+  },
+  "options_indent_guides": {
+    "message": "缩进参考线"
+  },
+  "options_custom_css": {
+    "message": "自定义 CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "仅作用于侧边栏，叠加在上述设置之上。不影响设置页面和帮助。"
+  },
+  "options_custom_css_external": {
+    "message": "url() 或 @import 中的外部地址会在每次打开面板时从互联网加载文件，该网站会知道这一点。"
+  },
+  "options_theme_reset": {
+    "message": "重置外观"
+  },
   "options_keys": {
     "message": "面板快捷键"
   },
-  "options_preset_standard": {
-    "message": "标准"
+  "options_panel_side": {
+    "message": "面板位置"
   },
-  "options_preset_standard_title": {
-    "message": "将所有快捷键替换为标准设置"
+  "options_panel_side_hint": {
+    "message": "当前位置：$SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "在浏览器设置中更改"
+  },
+  "options_side_left": {
+    "message": "左侧"
+  },
+  "options_side_right": {
+    "message": "右侧"
+  },
+  "options_global_title": {
+    "message": "打开和关闭面板"
+  },
+  "options_reserved": {
+    "message": "$KEY$ 会被浏览器或系统占用，无法到达面板——请选择其他快捷键",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "默认"
+  },
+  "options_preset_default_title": {
+    "message": "浏览器和文件管理器中熟悉的快捷键：复制、粘贴、撤销、F2 重命名"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy 加上 Arc 浏览器的快捷键：复制链接、命令栏、设置、隐藏面板"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "旧版本的快捷键：单个字母 n、r、d、c…"
   },
   "options_preset_vim_title": {
-    "message": "标准设置加上 Vim 按键：j k h l、g g、d d、y y…"
+    "message": "Arc legacy 加上 Vim 键：j k h l、g g、d d、y y…"
   },
   "options_keys_hint": {
     "message": "点击“+”录制快捷键：可以是单个按键（可带修饰键）、按键序列（$SEQUENCE$）或连按两次（$DOUBLE$）— 请立即按第二次。按键后按 $ENTER$ 完成，按 $ESC$ 取消录制，点击“×”删除。如果该快捷键已被占用，系统会询问是否改用它。所有命令也都可以在面板的命令面板中找到。",
@@ -1037,17 +1152,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "打开和关闭面板：$KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1145,6 +1249,32 @@
   },
   "options_replace_ok": {
     "message": "替换"
+  },
+  "options_export": {
+    "message": "导出"
+  },
+  "options_import": {
+    "message": "导入"
+  },
+  "options_imported": {
+    "message": "快捷键已导入"
+  },
+  "options_imported_skipped": {
+    "message": "快捷键已导入；已跳过无效条目：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "这不是有效的 Bookmarks 设置文件。"
+  },
+  "options_import_wrong_type": {
+    "message": "此文件包含的是其他设置，而不是快捷键。"
+  },
+  "options_import_newer": {
+    "message": "此文件来自更新版本的扩展。请更新扩展后再导入。"
   },
   "options_preset_applied": {
     "message": "已应用“$PRESET$”预设",
@@ -2000,5 +2130,25 @@
   },
   "help_news_title": {
     "message": "新功能"
+  },
+  "options_preview": {
+    "message": "使用示例书签预览面板"
+  },
+  "options_replace_theme": {
+    "message": "要用“$FILE$”替换面板外观吗？",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "当前的外观设置将会丢失。"
+  },
+  "options_theme_imported": {
+    "message": "外观已导入"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "此文件包含的是其他设置，而不是面板外观。"
   }
 }

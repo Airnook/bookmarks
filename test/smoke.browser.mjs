@@ -149,6 +149,13 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       const [before, after] = raw('options_intro', ['\0']).split('\0');
       assert.equal(await options.locator('.intro').textContent(), before + t('options_intro_help') + after);
       assert.equal(await options.locator('#keymap h3').first().textContent(), t('group_nav'));
+      // новая установка — набор default; открытие панели — своей строкой со ссылкой в настройки Chrome
+      assert.equal(await options.locator('[data-preset]').count(), 4);
+      assert.equal(await options.locator('[data-preset=default]').getAttribute('aria-pressed'), 'true');
+      assert.equal(await options.locator('#keymap .cmd-global .cmd-title').textContent(), t('options_global_title'));
+      assert.equal(await options.locator('#keymap .cmd-global .link').textContent(), t('options_global_change'));
+      // положение панели: кнопка ведёт в настройки внешнего вида; сторона — если Chrome её отдаёт
+      assert.equal(await options.locator('#panel-side-change').textContent(), t('options_panel_side_change'));
       await shot(options, 'options');
       await options.close();
     });
@@ -179,7 +186,44 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.equal(await options.locator('[data-preset=vim]').getAttribute('aria-pressed'), 'true');
       assert.equal(await options.locator('#preset-state').textContent(), '');
 
-      await setup.evaluate(() => chrome.storage.local.remove('keymap')); // обычные сочетания — для следующих проверок
+      // клавиши arc-legacy — для следующих проверок; как после обновления с 2.6.0 — с подсказкой о наборах
+      await setup.evaluate(async () => { await chrome.storage.local.remove('firstRun'); await chrome.storage.local.set({ keymap: {}, keysNotice: true }); });
+      await options.close();
+    });
+
+    await check('настройки: экспорт клавиш в файл, импорт с подтверждением, чужой тип отклоняется', async () => {
+      const mine = { 'view.cycle': ['x'] };
+      await setup.evaluate((keymap) => chrome.storage.local.set({ preset: 'vim', keymap }), mine);
+      const options = await open('options.html');
+      await options.waitForFunction(() => document.querySelectorAll('#root option').length > 1);
+
+      const [download] = await Promise.all([options.waitForEvent('download'), options.locator('#export').click()]);
+      assert.equal(download.suggestedFilename(), 'bookmarks-hotkeys.json');
+      const text = fs.readFileSync(await download.path(), 'utf8');
+      const file = JSON.parse(text);
+      assert.deepEqual({ ...file, extensionVersion: typeof file.extensionVersion }, {
+        app: 'airnook-bookmarks', type: 'hotkeys', format: 1, extensionVersion: 'string', data: { preset: 'custom', keymap: mine },
+      });
+
+      // другие клавиши в хранилище; импорт спрашивает и возвращает сохранённые
+      await setup.evaluate(() => chrome.storage.local.set({ preset: 'arc-legacy', keymap: {} }));
+      const input = options.locator('#import-file');
+      await input.setInputFiles({ name: 'bookmarks-hotkeys.json', mimeType: 'application/json', buffer: Buffer.from(text) });
+      await options.waitForSelector('#preset-dialog[open]');
+      assert.equal(await options.locator('#preset-title').textContent(), t('options_replace_preset', 'bookmarks-hotkeys.json'));
+      await options.keyboard.press('Enter');
+      await options.waitForFunction(() => !document.getElementById('preset-dialog').open);
+      await options.waitForFunction((msg) => document.getElementById('status').textContent === msg, t('options_imported'));
+      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'default', keymap: mine });
+
+      // файл темы отклоняется, окна нет, хранилище прежнее
+      const theme = { ...file, type: 'theme' };
+      await input.setInputFiles({ name: 'bookmarks-theme.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(theme)) });
+      await options.waitForFunction((msg) => document.getElementById('status').textContent === msg, t('options_import_wrong_type'));
+      assert.equal(await options.evaluate(() => document.getElementById('preset-dialog').open), false);
+      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'default', keymap: mine });
+
+      await setup.evaluate(() => chrome.storage.local.set({ keymap: {} })); // как после прошлой проверки
       await options.close();
     });
 
@@ -189,7 +233,7 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
     const toast = async (text) => panel.waitForFunction(
       (t) => document.getElementById('toast').textContent.includes(t), text);
 
-    await check('панель: дерево закладок, своей шапки нет — список сразу сверху', async () => {
+    await check('панель: дерево закладок, шапка с «Отменить»/«Повторить» (неактивны), список сразу под ней', async () => {
       await panel.waitForFunction(() => [...document.querySelectorAll('#list li')].some(li => li.textContent === 'Работа'));
       const rows = await rowTexts();
       for (const t of [bar, 'Работа', 'Новости']) assert.ok(rows.includes(t), `${t} в ${rows}`);
@@ -197,7 +241,20 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.equal(await panel.locator('#search').getAttribute('placeholder'), t('search_placeholder'));
       assert.equal(await panel.locator('header, #title, #find').count(), 0);
       assert.equal(await panel.locator('#search-bar').isVisible(), false);
-      assert.ok((await panel.locator('#list li').first().boundingBox()).y < 12);
+      const header = await panel.locator('#bar').boundingBox();
+      const first = await panel.locator('#list li').first().boundingBox();
+      assert.ok(header.y < 12 && first.y >= header.y + header.height && first.y < header.y + header.height + 12, `шапка ${JSON.stringify(header)}, список ${first.y}`);
+      for (const id of ['undo', 'redo']) {
+        const b = panel.locator(`#bar [data-cmd=${id}]`);
+        assert.equal(await b.isDisabled(), true, id);
+        assert.match(await b.getAttribute('title'), new RegExp(`^${literal(t('cmd_' + id))}`));
+        assert.equal(await b.getAttribute('aria-label'), await b.getAttribute('title'));
+      }
+    });
+
+    await check('панель: после обновления — один раз подсказка о наборах клавиш', async () => {
+      await toast(t('keys_notice'));
+      await panel.waitForFunction(async () => !('keysNotice' in await chrome.storage.local.get('keysNotice')));
     });
 
     // в RTL ← раскрывает папку, → сворачивает (стрелки зеркалятся)
@@ -442,6 +499,27 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await toast(t('undone', t('undo_renamed', 'Work 2')));
     });
 
+    await check('панель: кнопки в шапке — после правки «Отменить» активна, клик отменяет, затем активна «Повторить»', async () => {
+      const undo = panel.locator('#bar [data-cmd=undo]');
+      const redo = panel.locator('#bar [data-cmd=redo]');
+      await goTo('Работа');
+      await panel.keyboard.press('r');
+      await panel.locator('#list input.rename').fill('Work 4');
+      await panel.keyboard.press('Enter');
+      await hasRow('Work 4');
+      await panel.waitForFunction(() => !document.querySelector('#bar [data-cmd=undo]').disabled);
+      assert.equal(await redo.isDisabled(), true);
+      assert.match(await undo.getAttribute('title'), /\(.+\)$/);
+      await undo.click();
+      await hasRow('Работа');
+      await panel.waitForFunction(() => !document.querySelector('#bar [data-cmd=redo]').disabled);
+      assert.equal(await panel.evaluate(() => document.activeElement.id), 'list');
+      await redo.click();
+      await hasRow('Work 4');
+      await panel.keyboard.press('Control+z');
+      await hasRow('Работа');
+    });
+
     await check('панель: Alt+↓ → Ctrl+Z — порядок как был', async () => {
       const before = await shape();
       await goTo('Работа');
@@ -540,6 +618,18 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await panel.keyboard.press('Control+z');
       await toast(t('undone', t('undo_moved', 'd1')));
       assert.deepEqual(await order(), ['d1', 'd2', 'd3', 'Box']);
+    });
+
+    await check('перетаскивание: список перерисовался под неподвижным указателем — линия переходит на строку под ним', async () => {
+      await drag('d1', 'd3', 0.9, false);
+      await panel.waitForSelector('#list li:has(> .drop-line)');
+      const zz = await setup.evaluate(async (id) => (await chrome.bookmarks.create({ parentId: id, index: 0, title: 'zz', url: 'https://zz.example/' })).id, dragFolder);
+      await hasRow('zz'); // чтение дерева по событию сдвинуло строки вниз
+      await panel.waitForFunction(() => document.querySelector('#list li:has(> .drop-line)')?.textContent === 'd2');
+      await panel.keyboard.press('Escape');
+      await panel.mouse.up();
+      await setup.evaluate((id) => chrome.bookmarks.remove(id), zz);
+      await panel.waitForFunction(() => ![...document.querySelectorAll('#list li')].some(li => li.textContent === 'zz'));
     });
 
     await check('перетаскивание: в середину свёрнутой папки — в её конец, папка раскрыта', async () => {
@@ -842,6 +932,63 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await panel.keyboard.press(collapse);
     });
 
+    await check('оформление: настройки сразу меняют открытую панель, свой CSS — только в панели', async () => {
+      const style = (page, selector, prop) => page.evaluate(([s, p]) => getComputedStyle(document.querySelector(s))[p], [selector, prop]);
+      const until = (selector, prop, value) => panel.waitForFunction(([s, p, v]) => getComputedStyle(document.querySelector(s))[p] === v, [selector, prop, value]);
+      assert.equal(await panel.locator('#theme').textContent(), ''); // тема по умолчанию: вид 2.6.0
+      const options = await open('options.html');
+      await options.waitForFunction(() => document.getElementById('theme-light-accent').value === '#2563eb');
+      assert.equal(await options.locator('#appearance h2').textContent(), t('options_appearance'));
+      assert.equal(await options.locator('#theme-light-accent-reset').isVisible(), false);
+      // светлая тема со своим акцентом; затем тёмная — свой цвет у неё прежний
+      await options.locator('#theme-mode').selectOption('light');
+      await options.locator('#theme-light-accent').fill('#ff0000');
+      await until('#marks', 'color', 'rgb(255, 0, 0)');
+      assert.equal(await options.locator('#theme-light-accent-reset').isVisible(), true);
+      await options.locator('#theme-mode').selectOption('dark');
+      await until('#marks', 'color', 'rgb(126, 166, 255)');
+      // счётчик у папки: текст строки остаётся названием
+      await options.locator('#theme-counts').check();
+      await panel.waitForFunction(() => [...document.querySelectorAll('#list .count')].some(c => c.checkVisibility()));
+      assert.ok((await rowTexts()).includes('Работа'));
+      // свой CSS: действует только включённым и только в панели
+      await options.locator('#theme-css').fill('body { outline: 3px solid rgb(1, 2, 3); }');
+      await options.locator('#theme-css').blur();
+      await options.locator('#theme-css-on').check();
+      await until('body', 'outlineColor', 'rgb(1, 2, 3)');
+      assert.notEqual(await style(options, 'body', 'outlineColor'), 'rgb(1, 2, 3)');
+      await options.locator('#theme-css-on').uncheck();
+      await panel.waitForFunction(() => getComputedStyle(document.body).outlineStyle === 'none');
+      await options.locator('#theme-reset').click();
+      await panel.waitForFunction(() => document.getElementById('theme').textContent === '');
+      assert.equal(await options.locator('#theme-mode').inputValue(), 'system');
+      await options.close();
+    });
+
+    await check('превью оформления: панель на демо-закладках, тема видна сразу, настоящие закладки не затронуты', async () => {
+      const options = await open('options.html');
+      const frame = options.frameLocator('#theme-preview');
+      await frame.locator('#list li', { hasText: 'Project board' }).waitFor();
+      const rows = await frame.locator('#list li').allTextContents();
+      assert.ok(!rows.includes('Работа'), 'в превью нет настоящих закладок');
+      assert.equal(await frame.locator('#list li[aria-selected=true]').textContent(), 'Design notes'); // отмеченная демо-закладка
+      assert.ok(await frame.locator('#list li.open').count()); // закладка с открытой вкладкой
+      const before = await setup.evaluate(() => chrome.bookmarks.getTree().then(t => JSON.stringify(t)));
+      await options.locator('#theme-mode').selectOption('light');
+      await options.locator('#theme-light-accent').fill('#00aa00');
+      await options.locator('#theme-radius').fill('2');
+      await options.locator('#theme-radius').blur();
+      await options.waitForFunction(() => document.getElementById('theme-preview').contentDocument.getElementById('theme').textContent.includes('#00aa00'));
+      assert.match(await frame.locator('#theme').textContent(), /--radius: 2px/);
+      // правка в превью (удаление выделенной) не доходит до настоящих закладок
+      await frame.locator('#list').focus();
+      await options.keyboard.press('Delete');
+      await options.waitForTimeout(300);
+      assert.equal(await setup.evaluate(() => chrome.bookmarks.getTree().then(t => JSON.stringify(t))), before);
+      await options.locator('#theme-reset').click();
+      await options.close();
+    });
+
     await check('нет ошибок на страницах', async () => {
       await panel.waitForTimeout(300); // запоздалые ошибки обработчиков
       assert.deepEqual(errors, []);
@@ -861,7 +1008,12 @@ try {
 
   // сборка — в копии репозитория, чтобы не трогать dist/ рабочего каталога
   const src = path.join(tmp, 'src');
-  fs.cpSync(root, src, { recursive: true, filter: (f) => !/[\\/](node_modules|dist|\.git)$/.test(f) });
+  // сокеты (.codegraph/daemon.sock) cpSync не копирует: берём только файлы и каталоги
+  fs.cpSync(root, src, { recursive: true, filter: (f) => {
+    if (/[\\/](node_modules|dist|\.git)$/.test(f)) return false;
+    const st = fs.lstatSync(f);
+    return st.isFile() || st.isDirectory();
+  } });
   const built = spawnSync(process.execPath, [path.join(repo, 'scripts', 'package.mjs'), src], { encoding: 'utf8' });
   assert.equal(built.status, 0, built.stderr);
   const { version } = JSON.parse(fs.readFileSync(path.join(src, 'manifest.json'), 'utf8'));

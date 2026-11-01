@@ -658,6 +658,9 @@
     },
     "description": "Toast after the extension was updated, pointing to the what’s-new page in help. $KEY$ — the shortcut that opens help."
   },
+  "keys_notice": {
+    "message": "New: shortcut sets in settings. Your keys are unchanged — that’s the “Arc legacy” set."
+  },
   "create_folder_failed": {
     "message": "Couldn’t create the folder"
   },
@@ -1156,17 +1159,131 @@
   "options_auto_hide_hint": {
     "message": "A click on the page or on the browser interface closes the panel. Switching to another app keeps it open."
   },
+  "options_appearance": {
+    "message": "Panel appearance"
+  },
+  "options_theme_mode": {
+    "message": "Theme"
+  },
+  "options_theme_system": {
+    "message": "As in the system"
+  },
+  "options_theme_light": {
+    "message": "Light"
+  },
+  "options_theme_dark": {
+    "message": "Dark"
+  },
+  "options_colors_light": {
+    "message": "Light theme colors"
+  },
+  "options_colors_dark": {
+    "message": "Dark theme colors"
+  },
+  "options_color_background": {
+    "message": "Background"
+  },
+  "options_color_text": {
+    "message": "Text"
+  },
+  "options_color_accent": {
+    "message": "Accent"
+  },
+  "options_color_reset": {
+    "message": "Reset"
+  },
+  "options_font": {
+    "message": "Font"
+  },
+  "options_font_system": {
+    "message": "System"
+  },
+  "options_font_size": {
+    "message": "Font size, px"
+  },
+  "options_font_size_browser": {
+    "message": "Browser default"
+  },
+  "options_radius": {
+    "message": "Corner radius, px"
+  },
+  "options_radius_full": {
+    "message": "Fully rounded"
+  },
+  "options_favicons": {
+    "message": "Site icons"
+  },
+  "options_folder_counts": {
+    "message": "Bookmark count next to folders"
+  },
+  "options_indent_guides": {
+    "message": "Indent guides"
+  },
+  "options_custom_css": {
+    "message": "Custom CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "Applies to the side panel only, on top of the settings above. The settings page and help are not affected."
+  },
+  "options_custom_css_external": {
+    "message": "External addresses in url() or @import load files from the internet every time the panel opens, and that site sees it."
+  },
+  "options_theme_reset": {
+    "message": "Reset appearance"
+  },
   "options_keys": {
     "message": "Panel keys"
   },
-  "options_preset_standard": {
-    "message": "Standard"
+  "options_panel_side": {
+    "message": "Panel position"
   },
-  "options_preset_standard_title": {
-    "message": "Replace all shortcuts with the standard ones"
+  "options_panel_side_hint": {
+    "message": "Current side: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    },
+    "description": "Hint under the panel position row. $SIDE$ — the current side, left or right, as a label element."
+  },
+  "options_panel_side_change": {
+    "message": "change in browser settings"
+  },
+  "options_side_left": {
+    "message": "left"
+  },
+  "options_side_right": {
+    "message": "right"
+  },
+  "options_global_title": {
+    "message": "Open and close the panel"
+  },
+  "options_reserved": {
+    "message": "$KEY$ is taken by the browser or the system and never reaches the panel — choose another shortcut",
+    "description": "Shown when recording a shortcut that the browser or OS intercepts. $KEY$ — the shortcut, e.g. Ctrl+T",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "Default"
+  },
+  "options_preset_default_title": {
+    "message": "Shortcuts familiar from the browser and the file manager: copy, paste, undo, F2 to rename"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy plus Arc browser shortcuts: copy link, command bar, settings, hide the panel"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Shortcuts of earlier versions: single letters n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Standard plus Vim keys: j k h l, g g, d d, y y…"
+    "message": "Arc legacy plus Vim keys: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "“+” records a shortcut: a key, with modifiers, a sequence ($SEQUENCE$) or a double press ($DOUBLE$) — press the second key right away. $ENTER$ after a key — done, $ESC$ — cancel recording, “×” — remove. If the shortcut is taken, you’ll be asked whether to take it over. All commands are also in the panel’s command palette.",
@@ -1186,21 +1303,9 @@
     },
     "description": "Hint about recording a shortcut on the settings page. $SEQUENCE$ — an example key sequence (G G); $DOUBLE$ — an example double press (Enter Enter); $ENTER$ — the Enter key; $ESC$ — the Esc key. The placeholders are key elements, not text."
   },
-  "options_global": {
-    "message": "Open and close the panel: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
-      }
-    },
-    "description": "Settings page line with the shortcut that opens and closes the panel. $KEY$ — that shortcut (or a dash if none is set); $CHANGE$ — a button that changes it (the button has its own label)."
-  },
   "options_global_change": {
     "message": "change in browser settings",
-    "description": "Link text inside options_global"
+    "description": "Button in the “open and close the panel” row of the shortcut list"
   },
   "options_global_not_set": {
     "message": "not set"
@@ -1302,6 +1407,39 @@
   "options_replace_ok": {
     "message": "Replace",
     "description": "Confirm button of the dialog that replaces the shortcut set"
+  },
+  "options_export": {
+    "message": "Export",
+    "description": "Button in the shortcuts section: save the shortcuts to a file"
+  },
+  "options_import": {
+    "message": "Import",
+    "description": "Button in the shortcuts section: load shortcuts from a file"
+  },
+  "options_imported": {
+    "message": "Shortcuts imported",
+    "description": "Message after shortcuts were imported from a file"
+  },
+  "options_imported_skipped": {
+    "message": "Shortcuts imported; skipped invalid entries: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    },
+    "description": "Message after import. $COUNT$ — how many invalid entries of the file were skipped."
+  },
+  "options_import_broken": {
+    "message": "This is not a valid Bookmarks settings file.",
+    "description": "Error: the chosen file is not valid JSON or not a Bookmarks settings file"
+  },
+  "options_import_wrong_type": {
+    "message": "This file contains a different kind of settings, not shortcuts.",
+    "description": "Error: the chosen settings file is of another kind (for example theme)"
+  },
+  "options_import_newer": {
+    "message": "This file is from a newer version of the extension. Update the extension to import it.",
+    "description": "Error: the file was created by a newer extension version"
   },
   "options_preset_applied": {
     "message": "The “$PRESET$” set is applied",
@@ -2302,5 +2440,30 @@
   },
   "help_news_title": {
     "message": "What’s new"
+  },
+  "options_preview": {
+    "message": "Preview of the panel on sample bookmarks",
+    "description": "Title of the preview frame in the appearance settings: the panel shown on demo bookmarks"
+  },
+  "options_replace_theme": {
+    "message": "Replace your panel appearance with “$FILE$”?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    },
+    "description": "Title of the dialog that asks to replace the panel appearance with an imported file. $FILE$ — the file name."
+  },
+  "options_replace_theme_text": {
+    "message": "Your current appearance settings will be lost.",
+    "description": "Text under options_replace_theme in the dialog"
+  },
+  "options_theme_imported": {
+    "message": "Appearance imported",
+    "description": "Message after the panel appearance was imported from a file"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "This file contains a different kind of settings, not panel appearance.",
+    "description": "Error: the chosen settings file is of another kind (for example shortcuts)"
   }
 }

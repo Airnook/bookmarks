@@ -37,10 +37,33 @@
     .switch input:checked:dir(rtl)::after { translate: -14px; }
     .switch input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+    /* оформление панели */
+    .group { margin: 0 0 12px; font-size: 15px; font-weight: 600; }
+    .row + .row, .row + textarea { margin-top: 14px; }
+    .inline { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .inline .title { flex: 1; margin: 0; }
+    .text {
+      box-sizing: border-box; height: 32px; padding: 0 8px; font: inherit; color: inherit;
+      background: transparent; border: 1px solid var(--line); border-radius: 7px;
+    }
+    #theme-font { width: 100%; }
+    #theme-preview { display: block; width: 100%; max-width: 340px; height: 320px; margin: 8px 0; border: 1px solid light-dark(rgb(0 0 0 / .2), rgb(255 255 255 / .25)); border-radius: 8px; }
+    .inline .text { width: 72px; }
+    textarea.text { display: block; width: 100%; height: auto; padding: 6px 8px; font: 12px/1.4 ui-monospace, monospace; resize: vertical; }
+    .text:focus-visible, .check input:focus-visible, .color input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+    .check { display: inline-flex; align-items: center; gap: 6px; width: 12em; cursor: pointer; } /* одной ширины: поля чисел — друг под другом */
+    .colors { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .colors fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+    .color { display: flex; align-items: center; gap: 8px; min-height: 32px; }
+    .color label { flex: 1; }
+    .color input { width: 40px; height: 26px; padding: 0 2px; border: 1px solid var(--line); border-radius: 6px; background: none; cursor: pointer; }
+    .reset:disabled { visibility: hidden; }
+    .warn { color: var(--danger); }
+
     /* клавиши */
     .head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
     .head .title { flex: 1; margin: 0; }
-    .presets { display: flex; gap: 6px; }
+    .presets { display: flex; flex-wrap: wrap; gap: 6px; }
     .btn {
       height: 28px; padding: 0 10px; border: 1px solid var(--line); border-radius: 7px;
       background: none; cursor: pointer;
@@ -115,6 +138,11 @@
     <p class="hint" data-i18n="options_view_hint"><span id="view-key">V</span></p>
   </section>
   <section>
+    <span class="title" data-i18n="options_panel_side"></span>
+    <p class="hint" id="panel-side-hint" data-i18n="options_panel_side_hint"><span id="panel-side"></span></p>
+    <button class="link" id="panel-side-change" data-i18n="options_panel_side_change"></button>
+  </section>
+  <section>
     <label class="switch">
       <span class="title" data-i18n="options_new_tab"></span>
       <input type="checkbox" id="newTab">
@@ -135,17 +163,116 @@
     </label>
     <p class="hint" data-i18n="options_auto_hide_hint"></p>
   </section>
+  <section id="appearance">
+    <h2 class="group" data-i18n="options_appearance"></h2>
+    <iframe id="theme-preview" src="panel.html?demo" data-i18n-title="options_preview"></iframe>
+    <div class="row">
+      <label class="title" for="theme-mode" data-i18n="options_theme_mode"></label>
+      <select id="theme-mode">
+        <option value="system" data-i18n="options_theme_system"></option>
+        <option value="light" data-i18n="options_theme_light"></option>
+        <option value="dark" data-i18n="options_theme_dark"></option>
+      </select>
+    </div>
+    <div class="row colors">
+      <fieldset>
+        <legend id="theme-colors-light" class="title" data-i18n="options_colors_light"></legend>
+        <span class="color">
+          <label id="theme-light-background-label" for="theme-light-background" data-i18n="options_color_background"></label>
+          <input type="color" id="theme-light-background">
+          <button class="reset" id="theme-light-background-reset" aria-labelledby="theme-light-background-reset theme-colors-light theme-light-background-label" data-i18n="options_color_reset"></button>
+        </span>
+        <span class="color">
+          <label id="theme-light-text-label" for="theme-light-text" data-i18n="options_color_text"></label>
+          <input type="color" id="theme-light-text">
+          <button class="reset" id="theme-light-text-reset" aria-labelledby="theme-light-text-reset theme-colors-light theme-light-text-label" data-i18n="options_color_reset"></button>
+        </span>
+        <span class="color">
+          <label id="theme-light-accent-label" for="theme-light-accent" data-i18n="options_color_accent"></label>
+          <input type="color" id="theme-light-accent">
+          <button class="reset" id="theme-light-accent-reset" aria-labelledby="theme-light-accent-reset theme-colors-light theme-light-accent-label" data-i18n="options_color_reset"></button>
+        </span>
+      </fieldset>
+      <fieldset>
+        <legend id="theme-colors-dark" class="title" data-i18n="options_colors_dark"></legend>
+        <span class="color">
+          <label id="theme-dark-background-label" for="theme-dark-background" data-i18n="options_color_background"></label>
+          <input type="color" id="theme-dark-background">
+          <button class="reset" id="theme-dark-background-reset" aria-labelledby="theme-dark-background-reset theme-colors-dark theme-dark-background-label" data-i18n="options_color_reset"></button>
+        </span>
+        <span class="color">
+          <label id="theme-dark-text-label" for="theme-dark-text" data-i18n="options_color_text"></label>
+          <input type="color" id="theme-dark-text">
+          <button class="reset" id="theme-dark-text-reset" aria-labelledby="theme-dark-text-reset theme-colors-dark theme-dark-text-label" data-i18n="options_color_reset"></button>
+        </span>
+        <span class="color">
+          <label id="theme-dark-accent-label" for="theme-dark-accent" data-i18n="options_color_accent"></label>
+          <input type="color" id="theme-dark-accent">
+          <button class="reset" id="theme-dark-accent-reset" aria-labelledby="theme-dark-accent-reset theme-colors-dark theme-dark-accent-label" data-i18n="options_color_reset"></button>
+        </span>
+      </fieldset>
+    </div>
+    <div class="row">
+      <label class="title" for="theme-font" data-i18n="options_font"></label>
+      <input id="theme-font" class="text" list="theme-fonts" autocomplete="off" data-i18n-placeholder="options_font_system">
+      <datalist id="theme-fonts">
+        <option value="Arial"></option><option value="Helvetica"></option><option value="Segoe UI"></option>
+        <option value="Roboto"></option><option value="Verdana"></option><option value="Tahoma"></option>
+        <option value="Georgia"></option><option value="Times New Roman"></option><option value="Courier New"></option>
+        <option value="serif"></option><option value="sans-serif"></option><option value="monospace"></option>
+      </datalist>
+    </div>
+    <div class="row inline">
+      <label class="title" for="theme-size" data-i18n="options_font_size"></label>
+      <input type="number" id="theme-size" class="text" min="10" max="24" step="1">
+      <label class="check"><input type="checkbox" id="theme-size-browser"> <span data-i18n="options_font_size_browser"></span></label>
+    </div>
+    <div class="row inline">
+      <label class="title" for="theme-radius" data-i18n="options_radius"></label>
+      <input type="number" id="theme-radius" class="text" min="0" max="16" step="1">
+      <label class="check"><input type="checkbox" id="theme-radius-full"> <span data-i18n="options_radius_full"></span></label>
+    </div>
+    <label class="switch row">
+      <span class="title" data-i18n="options_favicons"></span>
+      <input type="checkbox" id="theme-favicons">
+    </label>
+    <label class="switch row">
+      <span class="title" data-i18n="options_folder_counts"></span>
+      <input type="checkbox" id="theme-counts">
+    </label>
+    <label class="switch row">
+      <span class="title" data-i18n="options_indent_guides"></span>
+      <input type="checkbox" id="theme-guides">
+    </label>
+    <label class="switch row">
+      <span class="title" data-i18n="options_custom_css"></span>
+      <input type="checkbox" id="theme-css-on">
+    </label>
+    <textarea id="theme-css" class="text" rows="6" spellcheck="false" dir="ltr" data-i18n-aria-label="options_custom_css"></textarea>
+    <p class="hint" data-i18n="options_custom_css_hint"></p>
+    <p class="hint warn" id="theme-css-warning" data-i18n="options_custom_css_external" hidden></p>
+    <p class="row">
+      <button class="btn" id="theme-reset" data-i18n="options_theme_reset"></button>
+      <button class="btn" id="theme-export" data-i18n="options_export"></button>
+      <button class="btn" id="theme-import" data-i18n="options_import"></button>
+      <input type="file" id="theme-import-file" accept=".json,application/json" hidden>
+    </p>
+  </section>
   <section>
     <div class="head">
       <span class="title" data-i18n="options_keys"></span>
       <span class="presets">
         <span id="preset-state" class="none"></span>
-        <button class="btn" data-preset="standard" data-i18n="options_preset_standard" data-i18n-title="options_preset_standard_title"></button>
+        <button class="btn" data-preset="default" data-i18n="options_preset_default" data-i18n-title="options_preset_default_title"></button>
+        <button class="btn" data-preset="arc" data-i18n-title="options_preset_arc_title">Arc</button>
+        <button class="btn" data-preset="arc-legacy" data-i18n="options_preset_arc_legacy" data-i18n-title="options_preset_arc_legacy_title"></button>
         <button class="btn" data-preset="vim" data-i18n-title="options_preset_vim_title">Vim</button>
+        <button class="btn" id="export" data-i18n="options_export"></button>
+        <button class="btn" id="import" data-i18n="options_import"></button>
+        <input type="file" id="import-file" accept=".json,application/json" hidden>
       </span>
     </div>
     <p class="hint" data-i18n="options_keys_hint"><span><kbd>G</kbd> <kbd>G</kbd></span><span><kbd>Enter</kbd> <kbd>Enter</kbd></span><kbd>Enter</kbd><kbd>Esc</kbd></p>
-    <p class="hint" data-i18n="options_global"><span id="global-key">—</span><button class="link" id="shortcuts" data-i18n="options_global_change"></button></p>
     <div id="keymap"></div>
   </section>
 </main>

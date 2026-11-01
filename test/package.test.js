@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import net from 'node:net';
 import { fileURLToPath } from 'node:url';
 import AdmZip from 'adm-zip';
 
@@ -11,9 +12,14 @@ const repo = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const script = path.join(repo, 'scripts', 'package.mjs');
 
 // Копия репозитория без служебного: сборка и правки идут только в ней
-function sandbox() {
+function sandbox(from = repo) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'pkg-'));
-  fs.cpSync(repo, dir, { recursive: true, filter: (src) => !/[\\/](node_modules|dist|\.git)$/.test(src) });
+  // сокеты (.codegraph/daemon.sock) cpSync не копирует: берём только файлы и каталоги
+  fs.cpSync(from, dir, { recursive: true, filter: (src) => {
+    if (/[\\/](node_modules|dist|\.git)$/.test(src)) return false;
+    const st = fs.lstatSync(src);
+    return st.isFile() || st.isDirectory();
+  } });
   return dir;
 }
 const build = (dir) => spawnSync(process.execPath, [script, dir], { encoding: 'utf8' });
@@ -40,6 +46,20 @@ test('сборка: в архиве только нужное браузеру',
   // переводы — весь каталог _locales
   for (const l of fs.readdirSync(path.join(dir, '_locales'))) assert.ok(entries.includes(`_locales/${l}/messages.json`), l);
   for (const e of entries) assert.ok(!/package|eslint|test\/|scripts\/|README|TRANSLATING|TODO|CONTRIBUTING|LICENSE|^docs\/|^\./.test(e), e);
+});
+
+test('сокет в .codegraph/ не ломает копирование и сборку', async (t) => {
+  const src = sandbox();
+  t.after(() => fs.rmSync(src, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(src, '.codegraph'), { recursive: true });
+  const server = net.createServer();
+  await new Promise(resolve => server.listen(path.join(src, '.codegraph', 'daemon.sock'), resolve));
+  t.after(() => new Promise(resolve => server.close(resolve)));
+  const dir = sandbox(src);
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+  const r = build(dir);
+  assert.equal(r.status, 0, r.stderr);
+  assert.ok(!fs.existsSync(path.join(dir, '.codegraph', 'daemon.sock')));
 });
 
 test('сборка падает, если ссылка из html ведёт на несуществующий файл', (t) => {

@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Nouveau : des jeux de raccourcis dans les paramètres. Vos touches n’ont pas changé — c’est le jeu « Arc legacy »."
+  },
   "create_folder_failed": {
     "message": "Impossible de créer le dossier"
   },
@@ -1059,17 +1062,129 @@
   "options_auto_hide_hint": {
     "message": "Un clic sur la page ou sur l’interface du navigateur ferme le panneau. Passer à une autre application le laisse ouvert."
   },
+  "options_appearance": {
+    "message": "Apparence du panneau"
+  },
+  "options_theme_mode": {
+    "message": "Thème"
+  },
+  "options_theme_system": {
+    "message": "Comme le système"
+  },
+  "options_theme_light": {
+    "message": "Clair"
+  },
+  "options_theme_dark": {
+    "message": "Sombre"
+  },
+  "options_colors_light": {
+    "message": "Couleurs du thème clair"
+  },
+  "options_colors_dark": {
+    "message": "Couleurs du thème sombre"
+  },
+  "options_color_background": {
+    "message": "Arrière-plan"
+  },
+  "options_color_text": {
+    "message": "Texte"
+  },
+  "options_color_accent": {
+    "message": "Accent"
+  },
+  "options_color_reset": {
+    "message": "Réinitialiser"
+  },
+  "options_font": {
+    "message": "Police"
+  },
+  "options_font_system": {
+    "message": "Système"
+  },
+  "options_font_size": {
+    "message": "Taille de police, px"
+  },
+  "options_font_size_browser": {
+    "message": "Par défaut du navigateur"
+  },
+  "options_radius": {
+    "message": "Arrondi des angles, px"
+  },
+  "options_radius_full": {
+    "message": "Arrondi complet"
+  },
+  "options_favicons": {
+    "message": "Icônes des sites"
+  },
+  "options_folder_counts": {
+    "message": "Nombre de favoris à côté des dossiers"
+  },
+  "options_indent_guides": {
+    "message": "Guides d’indentation"
+  },
+  "options_custom_css": {
+    "message": "CSS personnalisé"
+  },
+  "options_custom_css_hint": {
+    "message": "S’applique uniquement au panneau latéral, par-dessus les réglages ci-dessus. La page des paramètres et l’aide ne changent pas."
+  },
+  "options_custom_css_external": {
+    "message": "Les adresses externes dans url() ou @import téléchargent des fichiers depuis internet à chaque ouverture du panneau, et ce site le voit."
+  },
+  "options_theme_reset": {
+    "message": "Réinitialiser l’apparence"
+  },
   "options_keys": {
     "message": "Touches du panneau"
   },
-  "options_preset_standard": {
-    "message": "Standard"
+  "options_panel_side": {
+    "message": "Position du panneau"
   },
-  "options_preset_standard_title": {
-    "message": "Remplacer tous les raccourcis par ceux par défaut"
+  "options_panel_side_hint": {
+    "message": "Côté actuel : $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "modifier dans les paramètres du navigateur"
+  },
+  "options_side_left": {
+    "message": "gauche"
+  },
+  "options_side_right": {
+    "message": "droite"
+  },
+  "options_global_title": {
+    "message": "Ouvrir et fermer le panneau"
+  },
+  "options_reserved": {
+    "message": "$KEY$ est intercepté par le navigateur ou le système et n’atteint jamais le panneau — choisissez un autre raccourci",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "Par défaut"
+  },
+  "options_preset_default_title": {
+    "message": "Raccourcis familiers du navigateur et du gestionnaire de fichiers : copier, coller, annuler, F2 pour renommer"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy plus les raccourcis du navigateur Arc : copier le lien, barre de commandes, paramètres, masquer le panneau"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Raccourcis des versions précédentes : lettres seules n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Standard plus touches Vim : j k h l, g g, d d, y y…"
+    "message": "Arc legacy plus touches Vim : j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "« + » enregistre un raccourci : une touche, avec modificateurs, une séquence ($SEQUENCE$) ou un double appui ($DOUBLE$) — appuyez tout de suite sur la seconde touche. $ENTER$ après une touche — terminé, $ESC$ — annuler l’enregistrement, « × » — retirer. Si le raccourci est déjà pris, on vous demandera si vous voulez le reprendre. Toutes les commandes sont aussi dans la palette de commandes du panneau.",
@@ -1085,17 +1200,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Ouvrir et fermer le panneau : $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1193,6 +1297,32 @@
   },
   "options_replace_ok": {
     "message": "Remplacer"
+  },
+  "options_export": {
+    "message": "Exporter"
+  },
+  "options_import": {
+    "message": "Importer"
+  },
+  "options_imported": {
+    "message": "Raccourcis importés"
+  },
+  "options_imported_skipped": {
+    "message": "Raccourcis importés ; entrées non valides ignorées : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Ce n’est pas un fichier de réglages Bookmarks valide."
+  },
+  "options_import_wrong_type": {
+    "message": "Ce fichier contient d’autres réglages, pas des raccourcis."
+  },
+  "options_import_newer": {
+    "message": "Ce fichier provient d’une version plus récente de l’extension. Mettez-la à jour pour l’importer."
   },
   "options_preset_applied": {
     "message": "Le jeu « $PRESET$ » est appliqué",
@@ -2198,5 +2328,25 @@
   },
   "help_news_title": {
     "message": "Nouveautés"
+  },
+  "options_preview": {
+    "message": "Aperçu du panneau avec des favoris d’exemple"
+  },
+  "options_replace_theme": {
+    "message": "Remplacer l’apparence du panneau par « $FILE$ » ?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Vos réglages d’apparence actuels seront perdus."
+  },
+  "options_theme_imported": {
+    "message": "Apparence importée"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Ce fichier contient d’autres réglages, pas l’apparence du panneau."
   }
 }

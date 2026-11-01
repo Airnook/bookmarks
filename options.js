@@ -1,8 +1,10 @@
 import {
   COMMANDS, COMMAND, PRESETS, SETTINGS_DEFAULTS, DOUBLE_WAIT, SEQUENCE_WAIT,
-  groupTitle, keymapOf, resolveKeymap, chordOf, physicalChordOf, preferPhysical, shortcutText, bindingNodes,
+  groupTitle, cleanHotkeys, keymapOf, storedKeymap, bindingsOf, isReserved, resolveKeymap, chordOf, physicalChordOf, preferPhysical, shortcutText, bindingNodes,
 } from './commands.js';
 import { localizePage, t } from './i18n.js';
+import { envelope, readSettingsFile } from './settings-file.js';
+import { THEME_BASE, cleanTheme } from './theme.js';
 
 localizePage();
 
@@ -13,6 +15,8 @@ const keymapBox = document.getElementById('keymap');
 const status = document.getElementById('status');
 
 let keymap = {};      // изменённые сочетания: id команды → список
+let preset = 'default'; // последний выбранный набор: к его клавишам возвращает «сбросить»
+let globalKey = '';   // сочетание открытия панели — его задают в настройках Chrome
 let recording = null; // { id, parts, at, timer } — идёт запись сочетания
 
 function notify(text) {
@@ -81,7 +85,7 @@ function scheduleRoots() {
 
 async function init() {
   const [tree] = await chrome.bookmarks.getTree();
-  const saved = await chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: {} });
+  const saved = await chrome.storage.local.get({ ...SETTINGS_DEFAULTS, keymap: null, preset, theme: null });
 
   rootId = saved.rootId;
   buildRoots(tree);
@@ -89,11 +93,21 @@ async function init() {
   for (const s of switches) s.checked = saved[s.id];
   viewSelect.value = saved.view;
   if (viewSelect.value !== saved.view) viewSelect.value = SETTINGS_DEFAULTS.view;
-  keymap = keymapOf(saved.keymap);
-  renderKeymap();
-
+  theme = cleanTheme(saved.theme);
+  showTheme();
+  keymap = storedKeymap(saved.keymap);
+  preset = saved.preset;
   const toggle = (await chrome.commands.getAll()).find(c => c.name === 'open-bookmarks');
-  document.getElementById('global-key').textContent = toggle?.shortcut || t('options_global_not_set');
+  globalKey = toggle?.shortcut || t('options_global_not_set');
+  renderKeymap();
+  showPanelSide();
+}
+
+// Сторона панели — chrome.sidePanel.getLayout (Chrome 140+, только чтение); без неё строку прячем
+async function showPanelSide() {
+  const side = await chrome.sidePanel?.getLayout?.().then(l => l.side, () => null);
+  if (side === 'left' || side === 'right') document.getElementById('panel-side').textContent = t(`options_side_${side}`);
+  else document.getElementById('panel-side-hint').hidden = true;
 }
 
 select.onchange = () => {
@@ -104,8 +118,87 @@ select.onchange = () => {
 select.addEventListener('blur', flushRoots);
 viewSelect.onchange = () => save({ view: viewSelect.value });
 document.getElementById('help').onclick = () => chrome.tabs.create({ url: 'help.html' });
+document.getElementById('panel-side-change').onclick = () => chrome.tabs.create({ url: 'chrome://settings/appearance' });
 for (const s of switches) s.onchange = () => save({ [s.id]: s.checked });
-document.getElementById('shortcuts').onclick = () => chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
+
+// ---------- оформление панели ----------
+// Источник — theme (как в хранилище); каждое изменение сразу сохраняется, открытая панель
+// подхватывает его из onChanged.
+
+let theme = cleanTheme();
+const field = (id) => document.getElementById(`theme-${id}`);
+// поля цвета: [тема, цвет, поле, «сбросить»]
+const colorFields = ['light', 'dark'].flatMap(m => ['background', 'text', 'accent'].map(k => [m, k, field(`${m}-${k}`), field(`${m}-${k}-reset`)]));
+// что показать в поле цвета, пока цвет не задан: Canvas Chrome в светлой и тёмной теме
+const CANVAS = { light: '#ffffff', dark: '#121212' };
+const shownColor = (m, k) => theme.colors[m][k] || (k === 'background' ? CANVAS[m] : THEME_BASE[m][k]);
+// внешний адрес в своём CSS: url(https://…), url(//…), @import
+const EXTERNAL = /url\(\s*['"]?\s*(https?:)?\/\/|@import/i;
+
+// поле, в котором сейчас печатают, не трогаем: сохранение по ходу ввода не сбивает набор
+const typedValue = (id, value) => { if (document.activeElement !== field(id)) field(id).value = value; };
+
+function showTheme() {
+  field('mode').value = theme.mode;
+  for (const [mode, key, input, reset] of colorFields) {
+    input.value = shownColor(mode, key);
+    reset.disabled = !theme.colors[mode][key];
+  }
+  typedValue('font', theme.font);
+  const browser = theme.fontSize === 'browser';
+  field('size-browser').checked = browser;
+  field('size').disabled = browser;
+  field('size').value = browser ? '' : theme.fontSize;
+  const full = theme.radius === 'full';
+  field('radius-full').checked = full;
+  field('radius').disabled = full;
+  field('radius').value = full ? '' : theme.radius;
+  field('favicons').checked = theme.favicons;
+  field('counts').checked = theme.folderCounts;
+  field('guides').checked = theme.indentGuides;
+  field('css-on').checked = theme.customCssOn;
+  typedValue('css', theme.customCss);
+  field('css-warning').hidden = !EXTERNAL.test(theme.customCss);
+  previewTheme(theme);
+}
+
+// Превью — панель в iframe в демо-режиме (panel/demo.js); тему получает сообщением, а не из хранилища
+const preview = document.getElementById('theme-preview');
+const previewTheme = (value) => preview.contentWindow?.postMessage({ type: 'demo-theme', theme: value }, location.origin);
+preview.addEventListener('load', () => previewTheme(theme));
+
+// Поменять тему (change меняет theme), сохранить и показать уже проверенное значение
+function setTheme(change, message) {
+  change();
+  theme = cleanTheme(theme);
+  showTheme();
+  save({ theme }, message);
+}
+
+field('mode').onchange = () => setTheme(() => { theme.mode = field('mode').value; });
+for (const [mode, key, input, reset] of colorFields) {
+  input.onchange = () => setTheme(() => { theme.colors[mode][key] = input.value; });
+  reset.onclick = () => setTheme(() => { theme.colors[mode][key] = ''; });
+}
+// текст сохраняем по ходу ввода (с паузой): закрытая вкладка не теряет напечатанное
+const typed = (id, apply) => {
+  let timer;
+  const commit = () => { clearTimeout(timer); setTheme(apply); };
+  field(id).oninput = () => { clearTimeout(timer); timer = setTimeout(commit, 400); apply(); previewTheme(cleanTheme(theme)); }; // превью — сразу, сохранение — с паузой
+  field(id).onchange = commit;
+};
+typed('font', () => { theme.font = field('font').value; });
+// пустое или не число — прежнее значение (cleanTheme)
+field('size').onchange = () => setTheme(() => { theme.fontSize = parseFloat(field('size').value); });
+field('size-browser').onchange = () => setTheme(() => { theme.fontSize = field('size-browser').checked ? 'browser' : NaN; });
+field('radius').onchange = () => setTheme(() => { theme.radius = parseFloat(field('radius').value); });
+field('radius-full').onchange = () => setTheme(() => { theme.radius = field('radius-full').checked ? 'full' : NaN; });
+field('favicons').onchange = () => setTheme(() => { theme.favicons = field('favicons').checked; });
+field('counts').onchange = () => setTheme(() => { theme.folderCounts = field('counts').checked; });
+field('guides').onchange = () => setTheme(() => { theme.indentGuides = field('guides').checked; });
+field('css-on').onchange = () => setTheme(() => { theme.customCssOn = field('css-on').checked; });
+typed('css', () => { theme.customCss = field('css').value; });
+field('reset').onclick = () => setTheme(() => { theme = cleanTheme(); });
 
 // ---------- список команд ----------
 
@@ -146,7 +239,14 @@ function renderKeymap(focusId) {
   const viewKey = shown.get('view.cycle')[0];
   document.getElementById('view-key').textContent = viewKey ? shortcutText(viewKey) : t('options_from_palette');
   focusId ??= keymapBox.contains(document.activeElement) ? document.activeElement.closest('.cmd')?.dataset.id : undefined;
-  const out = [];
+  // открытие панели — команда Chrome: здесь только показываем и ведём в его настройки
+  const global = document.createElement('div');
+  global.className = 'cmd cmd-global';
+  const globalKeys = Object.assign(document.createElement('span'), { className: 'cmd-keys' });
+  globalKeys.append(Object.assign(document.createElement('span'), { className: 'chip', textContent: globalKey }),
+    button('link', t('options_global_change'), '', () => chrome.tabs.create({ url: 'chrome://extensions/shortcuts' })));
+  global.append(Object.assign(document.createElement('span'), { className: 'cmd-title', textContent: t('options_global_title') }), globalKeys);
+  const out = [global];
   let group = '';
   for (const c of COMMANDS) {
     if (c.group !== group) {
@@ -186,8 +286,8 @@ function renderKeymap(focusId) {
     } else {
       keys.append(button('add', '+', t('options_add_binding', c.title), () => startRecording(c.id)));
     }
-    if (Object.hasOwn(keymap, c.id)) {
-      keys.append(button('reset', t('options_reset'), t('options_reset_title', c.title), () => assign(c.id, () => c.keys)));
+    if (!sameSet(bindingsOf(c.id, keymap), presetKeys(c.id))) {
+      keys.append(button('reset', t('options_reset'), t('options_reset_title', c.title), () => assign(c.id, () => presetKeys(c.id))));
     }
 
     row.append(name, keys);
@@ -203,6 +303,7 @@ function renderKeymap(focusId) {
 const canonical = (km) => JSON.stringify(Object.entries(keymapOf(km))
   .map(([id, keys]) => [id, Array.isArray(keys) ? [...keys].sort() : keys])
   .sort(([a], [b]) => (a < b ? -1 : 1)));
+const matchedPreset = () => Object.keys(PRESETS).find(k => canonical(PRESETS[k]) === canonical(keymap)) ?? 'custom';
 function paintPresets() {
   const current = canonical(keymap);
   let match = null;
@@ -215,6 +316,8 @@ function paintPresets() {
   document.getElementById('preset-state').textContent = match ? '' : t('options_custom');
 }
 
+// Клавиши команды в последнем выбранном наборе
+const presetKeys = (id) => (PRESETS[preset] ?? PRESETS.default)[id] ?? COMMAND[id].keys;
 const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
 
 // Изменения выполняются по очереди, и каждое берёт свежие настройки: два быстрых
@@ -227,7 +330,7 @@ const serial = (job) => (queue = queue.then(job).catch(console.error));
 // как «не менялось». note(keymap) — дополнительная пометка к сообщению.
 function assign(id, change, note) {
   return serial(async () => {
-    keymap = keymapOf((await chrome.storage.local.get('keymap')).keymap);
+    keymap = storedKeymap((await chrome.storage.local.get({ keymap: null })).keymap);
     const current = resolveKeymap(keymap);
     const list = change(current.get(id));
     const notes = [];
@@ -272,6 +375,8 @@ document.addEventListener('keydown', (e) => {
   e.preventDefault();
   e.stopPropagation();
   if (e.repeat) return;
+  // такое сочетание до панели не дойдёт; запись продолжается
+  if (isReserved(chord)) return notify(t('options_reserved', shortcutText(chord)));
   const id = recording.id;
   if (recording.taken) { // ответ на «уже занято»
     if (chord === 'Enter') return commitRecording(true);
@@ -344,8 +449,9 @@ function commitRecording(confirmed = false) {
 // Окно замены набора (вместо confirm(): его кнопки на языке браузера). Enter — заменить,
 // Esc — отмена; фокус — обратно на кнопку набора
 const presetDialog = document.getElementById('preset-dialog');
-function askReplace(button) {
-  document.getElementById('preset-title').textContent = t('options_replace_preset', button.textContent);
+function askReplace(button, name = button.textContent, [title, text] = ['options_replace_preset', 'options_replace_text']) {
+  document.getElementById('preset-title').textContent = t(title, name);
+  document.getElementById('preset-text').textContent = t(text);
   presetDialog.returnValue = '';
   presetDialog.showModal();
   presetDialog.querySelector('[value=ok]').focus();
@@ -361,22 +467,85 @@ for (const b of document.querySelectorAll('[data-preset]')) {
   b.onclick = async () => {
     stopRecording();
     if (b.classList.contains('on')) return rerender(); // уже он
-    if (Object.keys(keymap).length && !(await askReplace(b))) return rerender();
+    // свои сочетания (не совпадают ни с одним набором) пропадут — спросить
+    const custom = Object.values(PRESETS).every(p => canonical(p) !== canonical(keymap));
+    if (custom && !(await askReplace(b))) return rerender();
     serial(async () => {
       keymap = structuredClone(PRESETS[b.dataset.preset]);
-      await save({ keymap }, t('options_preset_applied', b.textContent));
+      preset = b.dataset.preset;
+      await save({ keymap, preset }, t('options_preset_applied', b.textContent));
       rerender();
     });
   };
 }
 
+// ---------- файл с клавишами ----------
+
+const HOTKEYS_FORMAT = 1;
+const HOTKEYS_CHAIN = {}; // chain[n]: data формата n → n+1; формат 1 — текущий, шагов нет
+const HOTKEYS_FILE = 'bookmarks-hotkeys.json';
+const IMPORT_ERRORS = { broken: 'options_import_broken', wrong_type: 'options_import_wrong_type', newer: 'options_import_newer' };
+const importFile = document.getElementById('import-file');
+
+function download(name, file) {
+  const a = Object.assign(document.createElement('a'), {
+    href: URL.createObjectURL(new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' })),
+    download: name,
+  });
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+document.getElementById('export').onclick = () => download(HOTKEYS_FILE, envelope('hotkeys', HOTKEYS_FORMAT, { preset: matchedPreset(), keymap }, chrome.runtime.getManifest().version));
+
+document.getElementById('import').onclick = () => importFile.click();
+
+importFile.onchange = async () => {
+  const [file] = importFile.files;
+  importFile.value = ''; // тот же файл можно выбрать снова
+  if (!file) return;
+  stopRecording();
+  const read = readSettingsFile(await file.text(), 'hotkeys', HOTKEYS_FORMAT, HOTKEYS_CHAIN);
+  const clean = read.data && cleanHotkeys(read.data);
+  if (!clean) return notify(t(IMPORT_ERRORS[read.error ?? 'broken']));
+  if (!(await askReplace(document.getElementById('import'), file.name))) return rerender();
+  serial(async () => {
+    ({ keymap, preset } = clean);
+    await save({ keymap, preset }, clean.dropped ? t('options_imported_skipped', String(clean.dropped)) : t('options_imported'));
+    rerender();
+  });
+};
+
+// ---------- файл с темой ----------
+
+const THEME_FORMAT = 1;
+const THEME_CHAIN = {};
+const THEME_FILE = 'bookmarks-theme.json';
+const themeImportFile = document.getElementById('theme-import-file');
+
+document.getElementById('theme-export').onclick = () => download(THEME_FILE, envelope('theme', THEME_FORMAT, theme, chrome.runtime.getManifest().version));
+
+document.getElementById('theme-import').onclick = () => themeImportFile.click();
+
+themeImportFile.onchange = async () => {
+  const [file] = themeImportFile.files;
+  themeImportFile.value = '';
+  if (!file) return;
+  const read = readSettingsFile(await file.text(), 'theme', THEME_FORMAT, THEME_CHAIN);
+  if (!read.data) return notify(t(read.error === 'wrong_type' ? 'options_theme_import_wrong_type' : IMPORT_ERRORS[read.error ?? 'broken']));
+  if (!(await askReplace(document.getElementById('theme-import'), file.name, ['options_replace_theme', 'options_replace_theme_text']))) return;
+  setTheme(() => { theme = cleanTheme(read.data); }, t('options_theme_imported'));
+};
+
 // изменения из другой вкладки настроек или из панели (вид переключают клавишей)
 // Только отражаем: записи в хранилище здесь не делаем
 chrome.storage.local.onChanged.addListener((c) => {
-  if (c.keymap && !recording) { keymap = keymapOf(c.keymap.newValue); rerender(); }
+  if (c.preset) preset = c.preset.newValue ?? 'default';
+  if ((c.keymap || c.preset) && !recording) { if (c.keymap) keymap = storedKeymap(c.keymap.newValue); rerender(); }
   if (c.view) viewSelect.value = c.view.newValue ?? SETTINGS_DEFAULTS.view;
   if (c.rootId) { rootId = c.rootId.newValue ?? SETTINGS_DEFAULTS.rootId; showRoot(); }
   for (const s of switches) if (Object.hasOwn(c, s.id)) s.checked = c[s.id].newValue ?? SETTINGS_DEFAULTS[s.id];
+  if (c.theme) { theme = cleanTheme(c.theme.newValue); showTheme(); }
 });
 
 for (const ev of ['onCreated', 'onRemoved', 'onChanged', 'onMoved', 'onChildrenReordered']) {

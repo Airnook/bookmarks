@@ -8,6 +8,7 @@
   --hover: light-dark(rgb(0 0 0 / .045), rgb(255 255 255 / .06));
   --soft: light-dark(rgb(0 0 0 / .035), rgb(255 255 255 / .05));
   --tint: color-mix(in srgb, var(--accent) 9%, transparent);
+  --bg: Canvas; /* фон; тема панели меняет его (theme.js) */
   --surface: light-dark(#fff, #232428); /* окна поверх страницы — в тёмной теме чуть светлее фона */
   --danger: #dc2626;
 }
@@ -18,14 +19,14 @@ html:not([dir]) { visibility: hidden; }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font, system-ui, -apple-system, "Segoe UI", sans-serif);
   color: var(--text);
-  background: Canvas;
+  background: var(--bg);
 }
 
 kbd {
   display: inline-grid; place-items: center; min-width: 20px; height: 20px; box-sizing: border-box; padding: 0 5px;
   font: 500 11px system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text);
-  border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; background: Canvas;
+  border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; background: var(--bg);
 }
 .then { display: inline-block; width: 4px; }

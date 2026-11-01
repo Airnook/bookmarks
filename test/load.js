@@ -26,6 +26,7 @@ export function makeChrome() {
   const event = (name) => ({ addListener: (fn) => { (listeners[name] ??= []).push(fn); } });
   let nextTab = 100;
   const session = {};
+  const local = {};
   const chrome = {
     sidePanel: { setPanelBehavior: ok('setPanelBehavior'), open: ok('open'), close: ok('close'), setOptions: ok('setOptions') },
     runtime: {
@@ -33,7 +34,10 @@ export function makeChrome() {
       getManifest: () => ({ version: '1.0.0' }),
     },
     storage: {
-      local: { set: ok('local.set') },
+      local: {
+        set: async (obj) => { record('local.set', obj); Object.assign(local, structuredClone(obj)); },
+        get: async (keys) => Object.fromEntries(keys.filter(k => k in local).map(k => [k, structuredClone(local[k])])),
+      },
       session: {
         get: async (key) => (key in session ? { [key]: session[key] } : {}),
         set: async (obj) => { Object.assign(session, structuredClone(obj)); },
@@ -51,5 +55,5 @@ export function makeChrome() {
     windows: { onRemoved: event('windows.onRemoved') }, // имя отдельно от tabs.onRemoved
     commands: { onCommand: event('onCommand') },
   };
-  return { chrome, calls, listeners, session };
+  return { chrome, calls, listeners, session, local };
 }

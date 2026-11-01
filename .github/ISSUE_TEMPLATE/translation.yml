@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         The fastest way is a pull request into `dev` that changes `_locales/<code>/messages.json`.
-        The guide is in [TRANSLATING.md](https://github.com/Airnook/bookmarks/blob/dev/TRANSLATING.md).
+        The guide is in [TRANSLATING.md](https://github.com/Airnook/bookmarks/blob/dev/.github/TRANSLATING.md).
         Use this form to propose a translation or to report a problem with one.
   - type: input
     id: language

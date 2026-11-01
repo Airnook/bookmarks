@@ -110,8 +110,15 @@ function treeItem({ node, depth }, i) {
     if (!node.children.length) { li.classList.add('void'); li.dataset.empty = t('folder_empty'); }
   }
   const name = Object.assign(document.createElement('span'), { textContent: label(node) });
+  // линии уровней и число закладок папки — скрыты, пока их не включит тема (theme.js)
+  if (depth) li.prepend(Object.assign(document.createElement('b'), { className: 'guides' }));
   if (state.settings.view !== 'detailed') {
     li.append(name);
+    if (!node.url && node.children.length) {
+      const count = Object.assign(document.createElement('b'), { className: 'count' });
+      count.dataset.n = state.sizes.get(node.id) ?? 0;
+      li.append(count);
+    }
     return li;
   }
   // вид «с адресом»: под названием сайт, у папки — сколько в ней закладок

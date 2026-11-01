@@ -36,28 +36,34 @@ class FakeElement {
   get value() { return this._value; }
   set value(v) { this._value = this.children.some(o => o.value === v) ? v : ''; }
   replaceChildren(...nodes) { this.children = nodes; this._value = nodes[0]?.value ?? ''; }
-  append() {}
+  append(...nodes) { this.children.push(...nodes); }
   focus() {}
   addEventListener(type, fn) { (this.listeners[type] ??= []).push(fn); }
   contains() { return false; }
   querySelector() { return null; }
   querySelectorAll() { return []; }
   closest() { return null; }
+  click() {}
 }
 
 // Открывает страницу настроек. tree — дерево закладок (можно менять по ходу теста), saved — хранилище,
 // lang — язык браузера
-export function loadOptions({ tree, saved = {}, lang = 'ru' }) {
+export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [], sidePanel }) {
   const store = structuredClone(saved);
   const storageSets = [];        // что страница записала в хранилище
   const storageListeners = [];
   const bookmarkListeners = {};
   const counters = { getTree: 0 };
+  const docListeners = {};
+  const downloads = [];          // файлы, которые страница дала скачать: { name, text }
+  const opened = [];             // адреса вкладок, которые страница открыла
   const els = new Map();
   const byId = (id) => {
     if (!els.has(id)) els.set(id, new FakeElement(id));
     return els.get(id);
   };
+  const previews = [];           // темы, которые страница отправила в превью
+  byId('theme-preview').contentWindow = { postMessage: (msg, origin) => previews.push({ ...msg, origin }) };
   byId('view').replaceChildren(...['normal', 'detailed', 'dense'].map(v => new Option(v, v)));
 
   const bookmarkEvent = (name) => ({ addListener: (fn) => { (bookmarkListeners[name] ??= []).push(fn); } });
@@ -90,26 +96,35 @@ export function loadOptions({ tree, saved = {}, lang = 'ru' }) {
         onChanged: { addListener: (fn) => storageListeners.push(fn) },
       },
     },
-    commands: { getAll: async () => [] },
-    tabs: { create: async () => ({}) },
+    commands: { getAll: async () => commands },
+    ...(sidePanel && { sidePanel }), // Chrome 140+: без него — старый Chrome
+    runtime: { getManifest: () => ({ version: '2.6.0' }) },
+    tabs: { create: async ({ url }) => { opened.push(url); return {}; } },
     i18n: { getMessage: getMessageFor(lang) },
   };
   const document = {
     getElementById: byId,
-    createElement: (tag) => new FakeElement(tag),
+    createElement: (tag) => {
+      const el = new FakeElement(tag);
+      if (tag === 'a') el.click = () => downloads.push({ name: el.download, text: el.href.text });
+      return el;
+    },
     querySelectorAll: () => [],
     querySelector: () => null,
-    addEventListener() {},
+    addEventListener: (type, fn) => { (docListeners[type] ??= []).push(fn); },
     activeElement: null,
     documentElement: new FakeElement('html'),
   };
 
   const ctx = vm.createContext({
-    console, setTimeout, clearTimeout, Promise, Option, chrome, document,
+    console, setTimeout, clearTimeout, Promise, Option, chrome, document, structuredClone, performance,
     window: { addEventListener() {} },
+    Blob: class { constructor(parts) { this.text = parts.join(''); } },
+    URL: { createObjectURL: (blob) => blob, revokeObjectURL() {} },
+    location: { origin: 'chrome-extension://test' },
     navigator: { platform: 'Linux x86_64' },
   });
-  for (const file of ['i18n.js', 'commands.js', 'options.js']) {
+  for (const file of ['i18n.js', 'commands.js', 'settings-file.js', 'theme.js', 'options.js']) {
     vm.runInContext(asScript(fs.readFileSync(path.join(root, file), 'utf8')), ctx, { filename: file });
   }
 
@@ -119,6 +134,21 @@ export function loadOptions({ tree, saved = {}, lang = 'ru' }) {
     store,
     storageSets,
     counters,
+    opened,
+    downloads,
+    previews,
+    // нажатие клавиши на странице: { key, code, ctrlKey… }
+    keydown: (e) => docListeners.keydown?.forEach(fn => fn({
+      key: '', code: '', shiftKey: false, ctrlKey: false, altKey: false, metaKey: false, repeat: false,
+      preventDefault() {}, stopPropagation() {}, ...e,
+    })),
+    // элементы страницы, созданные кодом, по классу (обход вглубь от элемента с id)
+    find: (id, className) => {
+      const out = [];
+      const walk = (n) => { if (n?.className?.split?.(' ').includes(className)) out.push(n); n?.children?.forEach(walk); };
+      walk(byId(id));
+      return out;
+    },
     // изменение хранилища из другой вкладки или панели
     emitChanged: (changes) => storageListeners.forEach(fn => fn(changes)),
     emitBookmark: (name) => bookmarkListeners[name].forEach(fn => fn({})),

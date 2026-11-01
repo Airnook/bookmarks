@@ -233,3 +233,17 @@ test('созданную папку, в которую положили что-�
   assert.equal(r.status, 'failed');
   assert.equal(c.show(), 'Bar[F[x]]');
 });
+
+test('onHistoryChange: слушатель вызывается при правке, отмене, повторе и записи из другого окна', async () => {
+  const c = await fresh([['x', '1', 'https://x/']]);
+  const seen = [];
+  history.onHistoryChange(() => seen.push([history.canUndo(), history.canRedo()]));
+  const step = history.begin();
+  await step.update(c.ids.x, { title: 'y' });
+  await step.commit('renamed');
+  await history.undo();
+  await history.redo();
+  assert.ok(seen.some(([u, r]) => u && !r), 'после правки можно отменить');
+  assert.ok(seen.some(([u, r]) => !u && r), 'после отмены можно повторить');
+  assert.deepEqual(seen.at(-1), [true, false]);
+});
