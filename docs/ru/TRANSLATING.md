@@ -119,8 +119,8 @@ npm run package   # builds dist/*.zip; _locales/ is included
 
 ## Открыть pull request
 
-1. Создайте ветку от `dev`, закоммитьте `_locales/<code>/messages.json`.
+1. Создайте ветку от `main`, закоммитьте `_locales/<code>/messages.json`.
 2. Выполните проверки выше.
-3. Откройте pull request в `dev` (`gh pr create --base dev` или на GitHub).
+3. Откройте pull request в `main` (`gh pr create --base main` или на GitHub).
    В описании укажите, какой язык и новый ли он или это исправление.
    Вопросы и проблемы: откройте issue с формой **Translation**.

@@ -77,7 +77,7 @@ it to `EXTRA_PAGES`. After the build, a separate check makes sure the archive ha
 `test/`, `scripts/`, `.github/`, `README*.md`, `docs/` (README images), `LICENSE`, `TODO.md`, `CONTRIBUTING*.md` or
 hidden files, and that all references are in place; on error the command exits with a non-zero code.
 
-CI (`.github/workflows/ci.yml`) does the same on every push and pull request to `dev` and `main`.
+CI (`.github/workflows/ci.yml`) does the same on every push and pull request to `main`.
 
 ## Translations
 

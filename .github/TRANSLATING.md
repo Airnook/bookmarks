@@ -119,8 +119,8 @@ Add them, translate them, and run `npm test` again. Remove keys that are no long
 
 ## Open a pull request
 
-1. Create a branch from `dev`, commit `_locales/<code>/messages.json`.
+1. Create a branch from `main`, commit `_locales/<code>/messages.json`.
 2. Run the checks above.
-3. Open a pull request into `dev` (`gh pr create --base dev`, or on GitHub).
+3. Open a pull request into `main` (`gh pr create --base main`, or on GitHub).
    In the description, say which language and whether it is new or a fix.
    Questions and problems: open an issue with the **Translation** form.

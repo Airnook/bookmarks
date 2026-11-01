@@ -119,8 +119,8 @@ npm run package   # builds dist/*.zip; _locales/ is included
 
 ## فتح pull request
 
-1. أنشئ فرعًا من `dev` وأجرِ commit للملف `_locales/<code>/messages.json`.
+1. أنشئ فرعًا من `main` وأجرِ commit للملف `_locales/<code>/messages.json`.
 2. شغّل الفحوصات أعلاه.
-3. افتح pull request إلى `dev` (`gh pr create --base dev` أو من GitHub).
+3. افتح pull request إلى `main` (`gh pr create --base main` أو من GitHub).
    اذكر في الوصف أي لغة هي، وهل هي جديدة أم تصحيح.
    للأسئلة والمشكلات: افتح issue باستخدام نموذج **Translation**.

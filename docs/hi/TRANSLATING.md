@@ -119,8 +119,8 @@ npm run package   # builds dist/*.zip; _locales/ is included
 
 ## पुल रिक्वेस्ट खोलें
 
-1. `dev` से ब्रांच बनाएँ, `_locales/<code>/messages.json` कमिट करें।
+1. `main` से ब्रांच बनाएँ, `_locales/<code>/messages.json` कमिट करें।
 2. ऊपर की जाँचें चलाएँ।
-3. `dev` में पुल रिक्वेस्ट खोलें (`gh pr create --base dev`, या GitHub पर)।
+3. `main` में पुल रिक्वेस्ट खोलें (`gh pr create --base main`, या GitHub पर)।
    विवरण में बताएँ कि कौन-सी भाषा है और वह नई है या सुधार।
    प्रश्न और समस्याएँ: **Translation** फ़ॉर्म से issue खोलें।

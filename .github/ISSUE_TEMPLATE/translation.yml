@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        The fastest way is a pull request into `dev` that changes `_locales/<code>/messages.json`.
-        The guide is in [TRANSLATING.md](https://github.com/Airnook/bookmarks/blob/dev/.github/TRANSLATING.md).
+        The fastest way is a pull request into `main` that changes `_locales/<code>/messages.json`.
+        The guide is in [TRANSLATING.md](https://github.com/Airnook/bookmarks/blob/main/.github/TRANSLATING.md).
         Use this form to propose a translation or to report a problem with one.
   - type: input
     id: language
@@ -38,7 +38,7 @@ body:
     id: changes
     attributes:
       label: Pull request or changes
-      description: Link to the pull request into `dev`, or list the keys and the new text.
+      description: Link to the pull request into `main`, or list the keys and the new text.
     validations:
       required: true
   - type: checkboxes

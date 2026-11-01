@@ -119,8 +119,8 @@ npm run package   # builds dist/*.zip; _locales/ is included
 
 ## 提交 pull request
 
-1. 从 `dev` 创建分支，提交 `_locales/<code>/messages.json`。
+1. 从 `main` 创建分支，提交 `_locales/<code>/messages.json`。
 2. 运行上面的检查。
-3. 向 `dev` 提交 pull request（`gh pr create --base dev`，或在 GitHub 上）。
+3. 向 `main` 提交 pull request（`gh pr create --base main`，或在 GitHub 上）。
    在描述中说明是哪种语言，以及是新增还是修正。
    有疑问或问题：使用 **Translation** 表单提交 issue。

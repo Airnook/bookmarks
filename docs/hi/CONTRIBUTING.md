@@ -74,7 +74,7 @@ npm run test:browser  # smoke test in Chromium (needs npx playwright install chr
 `docs/` (README की छवियाँ), `LICENSE`, `TODO.md`, `CONTRIBUTING*.md` या छिपी फ़ाइलें न हों, और सभी संदर्भ अपनी जगह हों;
 त्रुटि होने पर कमांड गैर-शून्य कोड के साथ समाप्त होता है।
 
-CI (`.github/workflows/ci.yml`) `dev` और `main` में हर push और pull request पर यही करता है।
+CI (`.github/workflows/ci.yml`) `main` में हर push और pull request पर यही करता है।
 
 ## अनुवाद
 

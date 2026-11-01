@@ -89,7 +89,7 @@ npm run test:browser  # смоук-тест в Chromium (нужен npx playwrig
 на месте; при ошибке команда завершается с ненулевым кодом.
 
 CI (`.github/workflows/ci.yml`) выполняет то же самое на каждый push и pull request
-в `dev` и `main`.
+в `main`.
 
 ## Переводы
 

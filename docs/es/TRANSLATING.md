@@ -119,8 +119,8 @@ Añádalas, tradúzcalas y vuelva a ejecutar `npm test`. Elimine las claves que 
 
 ## Abrir un pull request
 
-1. Cree una rama desde `dev` y haga commit de `_locales/<code>/messages.json`.
+1. Cree una rama desde `main` y haga commit de `_locales/<code>/messages.json`.
 2. Ejecute las comprobaciones de arriba.
-3. Abra un pull request hacia `dev` (`gh pr create --base dev`, o en GitHub).
+3. Abra un pull request hacia `main` (`gh pr create --base main`, o en GitHub).
    En la descripción indique qué idioma es y si es nuevo o una corrección.
    Preguntas y problemas: abra un issue con el formulario **Translation**.

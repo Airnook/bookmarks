@@ -82,7 +82,7 @@ no tenga `package.json`, configuraciones del linter, `test/`, `scripts/`, `.gith
 del README), `LICENSE`, `TODO.md`, `CONTRIBUTING*.md` ni archivos ocultos, y que todas las referencias estén en su
 sitio; si hay un error, el comando termina con un código distinto de cero.
 
-CI (`.github/workflows/ci.yml`) hace lo mismo en cada push y pull request hacia `dev` y `main`.
+CI (`.github/workflows/ci.yml`) hace lo mismo en cada push y pull request hacia `main`.
 
 ## Traducciones
 

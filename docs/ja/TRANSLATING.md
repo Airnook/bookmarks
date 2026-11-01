@@ -119,8 +119,8 @@ npm run package   # builds dist/*.zip; _locales/ is included
 
 ## プルリクエストを開く
 
-1. `dev` からブランチを作成し、`_locales/<code>/messages.json` をコミットします。
+1. `main` からブランチを作成し、`_locales/<code>/messages.json` をコミットします。
 2. 上記のチェックを実行します。
-3. `dev` へのプルリクエストを開きます（`gh pr create --base dev`、または GitHub 上で）。
+3. `main` へのプルリクエストを開きます（`gh pr create --base main`、または GitHub 上で）。
    説明には、どの言語か、新規か修正かを書いてください。
    質問や問題: **Translation** フォームで issue を開いてください。

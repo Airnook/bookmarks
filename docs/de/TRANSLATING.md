@@ -119,8 +119,8 @@ Fügen Sie sie hinzu, übersetzen Sie sie und führen Sie `npm test` erneut aus.
 
 ## Einen Pull Request öffnen
 
-1. Erstellen Sie einen Branch von `dev` und committen Sie `_locales/<code>/messages.json`.
+1. Erstellen Sie einen Branch von `main` und committen Sie `_locales/<code>/messages.json`.
 2. Führen Sie die Prüfungen oben aus.
-3. Öffnen Sie einen Pull Request nach `dev` (`gh pr create --base dev` oder auf GitHub).
+3. Öffnen Sie einen Pull Request nach `main` (`gh pr create --base main` oder auf GitHub).
    Nennen Sie in der Beschreibung, um welche Sprache es geht und ob sie neu ist oder es eine Korrektur ist.
    Fragen und Probleme: Öffnen Sie ein Issue mit dem Formular **Translation**.
