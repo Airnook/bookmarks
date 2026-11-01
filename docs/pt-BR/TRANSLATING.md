@@ -119,8 +119,8 @@ Adicione-as, traduza-as e execute `npm test` de novo. Remova as chaves que não 
 
 ## Abrir um pull request
 
-1. Crie um branch a partir de `dev` e faça commit de `_locales/<code>/messages.json`.
+1. Crie um branch a partir de `main` e faça commit de `_locales/<code>/messages.json`.
 2. Execute as verificações acima.
-3. Abra um pull request para `dev` (`gh pr create --base dev`, ou no GitHub).
+3. Abra um pull request para `main` (`gh pr create --base main`, ou no GitHub).
    Na descrição, diga qual é o idioma e se é novo ou uma correção.
    Dúvidas e problemas: abra uma issue com o formulário **Translation**.

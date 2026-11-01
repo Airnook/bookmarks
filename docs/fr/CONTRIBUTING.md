@@ -83,7 +83,7 @@ ni `package.json`, ni configurations du linter, ni `test/`, `scripts/`, `.github
 README), `LICENSE`, `TODO.md`, `CONTRIBUTING*.md`, ni fichiers cachés, et que toutes les références sont en place ; en
 cas d'erreur, la commande se termine avec un code non nul.
 
-La CI (`.github/workflows/ci.yml`) fait la même chose à chaque push et pull request vers `dev` et `main`.
+La CI (`.github/workflows/ci.yml`) fait la même chose à chaque push et pull request vers `main`.
 
 ## Traductions
 

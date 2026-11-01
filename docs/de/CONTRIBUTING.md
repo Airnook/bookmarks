@@ -81,7 +81,7 @@ kein `package.json`, keine Linter-Konfigurationen, kein `test/`, `scripts/`, `.g
 (Bilder der README), `LICENSE`, `TODO.md`, `CONTRIBUTING*.md` und keine versteckten Dateien enthält und dass alle Verweise
 vorhanden sind; bei einem Fehler endet der Befehl mit einem Exit-Code ungleich null.
 
-CI (`.github/workflows/ci.yml`) macht dasselbe bei jedem Push und Pull Request nach `dev` und `main`.
+CI (`.github/workflows/ci.yml`) macht dasselbe bei jedem Push und Pull Request nach `main`.
 
 ## Übersetzungen
 

@@ -71,7 +71,7 @@ npm run test:browser  # smoke test in Chromium (needs npx playwright install chr
 另一项检查会确认压缩包中没有 `package.json`、linter 配置、`test/`、`scripts/`、`.github/`、`README*.md`、`docs/`（README
 的图片）、`LICENSE`、`TODO.md`、`CONTRIBUTING*.md` 或隐藏文件，并且所有引用都在；出错时命令以非零退出码结束。
 
-CI（`.github/workflows/ci.yml`）在每次推送以及向 `dev` 和 `main` 的 pull request 时执行同样的操作。
+CI（`.github/workflows/ci.yml`）在每次推送以及向 `main` 的 pull request 时执行同样的操作。
 
 ## 翻译
 

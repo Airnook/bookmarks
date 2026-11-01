@@ -88,3 +88,13 @@ On the next `v*` tag the job uploads the zip, waits until the upload is processe
 
 - **Unlisted to Public**: Dashboard > item > Store listing > Visibility > Public, then save. No new package is needed. Do it after the smoke test passes.
 - **Percentage rollout** (`deployPercentage` below 100) is available only to items with more than 10,000 seven-day active users ([update docs](https://developer.chrome.com/docs/webstore/update)); until then every release goes to 100% of existing users. It applies to existing users only and can only be raised. The deploy script publishes at 100%; extend it with `deployInfos` in the `:publish` request ([reference](https://developer.chrome.com/docs/webstore/api/reference/rest/v2/publishers.items/publish)) once the item qualifies.
+
+## 4. Retrying a failed store upload
+
+The GitHub release is created once. A re-run skips it when it already exists, so the store step runs again without deleting the release or its assets:
+
+```sh
+gh run rerun <run-id> --failed
+```
+
+Take the run ID from `gh run list`. A submission that is already in review blocks a new upload: wait for the review to end, or cancel it in the Developer Dashboard, then re-run.

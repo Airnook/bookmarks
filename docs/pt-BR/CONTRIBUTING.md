@@ -81,7 +81,7 @@ de adicioná-la a `EXTRA_PAGES`. Depois do build, uma verificação separada gar
 `LICENSE`, `TODO.md`, `CONTRIBUTING*.md` nem arquivos ocultos, e que todas as referências estejam no lugar; em caso de
 erro, o comando termina com código diferente de zero.
 
-O CI (`.github/workflows/ci.yml`) faz o mesmo em cada push e pull request para `dev` e `main`.
+O CI (`.github/workflows/ci.yml`) faz o mesmo em cada push e pull request para `main`.
 
 ## Traduções
 

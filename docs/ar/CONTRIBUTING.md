@@ -72,7 +72,7 @@ npm run test:browser  # smoke test in Chromium (needs npx playwright install chr
 بعد البناء يتأكد فحص منفصل من خلو الأرشيف من `package.json` وإعدادات المدقّق و`test/` و`scripts/` و`.github/` و`README*.md` و`docs/`
 (صور README) و`LICENSE` و`TODO.md` و`CONTRIBUTING*.md` والملفات المخفية، ومن وجود كل المراجع؛ وعند الخطأ ينتهي الأمر برمز غير صفري.
 
-ينفّذ CI (‏`.github/workflows/ci.yml`) الأمر نفسه عند كل push وpull request إلى `dev` و`main`.
+ينفّذ CI (‏`.github/workflows/ci.yml`) الأمر نفسه عند كل push وpull request إلى `main`.
 
 ## الترجمات
 

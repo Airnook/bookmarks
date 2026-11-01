@@ -77,7 +77,7 @@ import してください。そうしないとリンターが未知の名前を�
 `.github/`、`README*.md`、`docs/`（README の画像）、`LICENSE`、`TODO.md`、`CONTRIBUTING*.md`、隠しファイルがなく、
 すべての参照が揃っていることを確認します。エラーの場合、コマンドはゼロ以外の終了コードで終了します。
 
-CI（`.github/workflows/ci.yml`）は、`dev` と `main` への push と pull request のたびに同じことを行います。
+CI（`.github/workflows/ci.yml`）は、`main` への push と pull request のたびに同じことを行います。
 
 ## 翻訳
 
