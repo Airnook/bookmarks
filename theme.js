@@ -29,6 +29,12 @@ const hex = (v) => (/^#[0-9a-f]{6}$/i.test(v) ? v : '');
 // галочка отметки — картинка, цвет зашит в неё (как в panel.html)
 const check = (color) => `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 5.2 4 7.2 8 3' fill='none' stroke='%23${color.slice(1)}' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`;
 
+// Текст на цвете: белый или тёмный — у кого контраст по яркости (WCAG) выше
+const onColor = (c) => {
+  const [r, g, b] = [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16) / 255).map(v => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179 ? '#1d1f23' : '#fff';
+};
+
 const COLORS = ['background', 'text', 'accent'];
 const bool = (v, fallback) => (typeof v === 'boolean' ? v : fallback);
 
@@ -70,7 +76,17 @@ export function themeCss(stored) {
     pair('--text', m => color(m, 'text'));
     pair('--muted', m => (own[m].text ? `color-mix(in srgb, ${own[m].text} 62%, transparent)` : THEME_BASE[m].muted));
   }
-  if (changed('accent')) pair('--accent', m => color(m, 'accent'));
+  if (changed('accent')) {
+    pair('--accent', m => color(m, 'accent'));
+    pair('--primary', m => color(m, 'accent'));
+    pair('--on-primary', m => onColor(color(m, 'accent')));
+  }
+  // сообщение и подпись при перетаскивании — наоборот к странице; строка под курсором — чуть ярче приглушённого
+  if (changed('background') || changed('text')) {
+    pair('--tip-bg', m => own[m].text || THEME_BASE[m].text);
+    pair('--tip-fg', m => own[m].background || (m === 'light' ? '#fff' : '#1d1f23'));
+  }
+  if (changed('text')) vars.push('--muted-cur: color-mix(in srgb, var(--muted) 70%, var(--text))');
 
   if (theme.font) vars.push(`--font: ${theme.font}, ${SYSTEM_FONT}`);
   if (theme.fontSize !== THEME_DEFAULTS.fontSize) vars.push(`--font-size: ${theme.fontSize === 'browser' ? 'medium' : theme.fontSize + 'px'}`);
