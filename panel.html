@@ -53,7 +53,7 @@
     }
     #search::placeholder { color: var(--muted); }
     #found {
-      flex: none; padding-inline-end: 8px; font-size: 11px; color: var(--muted); white-space: nowrap;
+      flex: none; padding-inline-end: 8px; font-size: calc(11em / 13); color: var(--muted); white-space: nowrap;
       font-variant-numeric: tabular-nums;
     }
     #found:empty { display: none; }
@@ -124,7 +124,7 @@
     li.two { height: calc(14px + 2em); }
     .lines { flex: 1; min-width: 0; display: grid; gap: 1px; }
     #list .sub { font-size: calc(1em - 2px); font-weight: 400; color: var(--muted); }
-    #list li.cur .sub { color: light-dark(#5b6068, #a9afb8); }
+    #list li.cur .sub { color: var(--muted-cur, light-dark(#5b6068, #a9afb8)); }
     mark { color: var(--accent); background: none; font-weight: 600; }
 
     /* компактный вид */
@@ -171,7 +171,7 @@
     }
     #drag-label {
       position: fixed; z-index: 3; max-width: 220px; translate: 14px 12px; padding: 3px 8px; border-radius: 6px;
-      font-size: 12px; color: light-dark(#fff, #1d1f23); background: light-dark(#1d1f23, #e8e9eb);
+      font-size: calc(12em / 13); color: var(--tip-fg, light-dark(#fff, #1d1f23)); background: var(--tip-bg, light-dark(#1d1f23, #e8e9eb));
       box-shadow: 0 4px 12px rgb(0 0 0 / .18); pointer-events: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     #drag-label:dir(rtl) { translate: calc(-100% - 14px) 12px; }
@@ -198,7 +198,7 @@
       font: inherit; font-weight: 500; color: var(--text); background: var(--sel-idle);
     }
     .buttons .danger { color: #fff; background: var(--danger); }
-    .buttons .primary { color: #fff; background: #2563eb; }
+    .buttons .primary { color: var(--on-primary, #fff); background: var(--primary, #2563eb); }
     .buttons .danger:focus-visible { outline-color: var(--danger); }
     .field {
       display: block; width: 100%; height: 32px; box-sizing: border-box; margin: 6px 0 8px; padding: 0 9px;
@@ -211,7 +211,7 @@
     /* палитра команд и выбор папки */
     #palette { width: calc(100vw - 16px); max-width: 440px; margin: 44px auto auto; padding: 8px; }
     #palette .field { margin: 0 0 6px; }
-    #palette-heading { margin: 0 2px 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; font-weight: 600; color: var(--muted); }
+    #palette-heading { margin: 0 2px 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: calc(12em / 13); font-weight: 600; color: var(--muted); }
     /* тень у края, где есть что прокрутить: непрозрачные «покрытия» едут с содержимым, тени — по краям окна */
     #palette-list {
       list-style: none; margin: 0; padding: 0; max-height: min(60vh, 420px); overflow-y: auto;
@@ -226,16 +226,16 @@
     #palette-list li::before { display: none; }
     #palette-list li[aria-selected="true"] { background: var(--sel); }
     #palette-list li.none { color: var(--muted); cursor: default; }
-    #palette-list li.section { min-height: 0; padding: 8px 8px 2px; font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); cursor: default; }
+    #palette-list li.section { min-height: 0; padding: 8px 8px 2px; font-size: calc(11em / 13); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); cursor: default; }
     #palette-list li .plus { flex: none; display: grid; place-items: center; width: 16px; height: 16px; color: var(--accent); font: 600 16px/1 system-ui; }
     .pick-text { flex: 1; min-width: 0; display: grid; gap: 1px; }
     .pick-text span { overflow: hidden; text-overflow: ellipsis; }
-    .pick-sub { font-size: 11px; color: var(--muted); }
-    #palette-foot { margin: 6px 2px 0; font-size: 11px; color: var(--muted); }
+    .pick-sub { font-size: calc(11em / 13); color: var(--muted); }
+    #palette-foot { margin: 6px 2px 0; font-size: calc(11em / 13); color: var(--muted); }
     #palette-foot:empty { display: none; }
     .keys { display: flex; flex: none; gap: 8px; }
     .binding { display: flex; gap: 3px; direction: ltr; } /* сочетание — слева направо и в RTL */
-    .keys kbd { color: var(--muted); border-bottom-width: 1px; }
+    .keys kbd { font-size: calc(11em / 13); color: var(--muted); border-bottom-width: 1px; }
 
     /* окно «Изменить»: название и адрес */
     #edit { width: min(340px, calc(100vw - 24px)); }
@@ -264,7 +264,7 @@
     /* короткие сообщения («Адрес скопирован»): инвертированы относительно страницы — видны в обеих темах */
     #toast {
       position: fixed; left: 50%; bottom: 12px; translate: -50% 0; z-index: 2; max-width: calc(100vw - 32px); margin: 0;
-      padding: 6px 12px; border-radius: 8px; font-size: 12px; color: light-dark(#fff, #1d1f23); background: light-dark(#1d1f23, #e8e9eb);
+      padding: 6px 12px; border-radius: 8px; font-size: calc(12em / 13); color: var(--tip-fg, light-dark(#fff, #1d1f23)); background: var(--tip-bg, light-dark(#1d1f23, #e8e9eb));
       box-shadow: 0 4px 12px rgb(0 0 0 / .18);
       opacity: 0; transition: opacity .15s; pointer-events: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }

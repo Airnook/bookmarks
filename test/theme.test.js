@@ -95,3 +95,19 @@ test('cleanTheme: из хранилища (или файла) — полная �
   assert.equal(cleanTheme({ fontSize: 'browser', radius: 2.4 }).fontSize, 'browser');
   assert.equal(cleanTheme({ radius: 2.4 }).radius, 2);
 });
+
+test('главная кнопка окон — акцент темы, текст на ней читаем: светлый на тёмном, тёмный на светлом', () => {
+  const css = themeCss({ colors: { light: { accent: '#ffee00' }, dark: { accent: '#102030' } } });
+  assert.equal(prop(css, '--primary'), 'light-dark(#ffee00, #102030)');
+  assert.equal(prop(css, '--on-primary'), 'light-dark(#1d1f23, #fff)');
+  // незаданный акцент темы — прежний (#7ea6ff светлый → тёмный текст)
+  assert.equal(prop(themeCss({ colors: { light: { accent: '#000000' } } }), '--on-primary'), 'light-dark(#fff, #1d1f23)');
+});
+
+test('сообщения и подпись при перетаскивании — инверсия фона и текста; строка под курсором — от приглушённого', () => {
+  const css = themeCss({ colors: { light: { background: '#ffffff', text: '#111111' } } });
+  assert.equal(prop(css, '--tip-bg'), 'light-dark(#111111, #e8e9eb)');
+  assert.equal(prop(css, '--tip-fg'), 'light-dark(#ffffff, #1d1f23)');
+  assert.match(prop(css, '--muted-cur'), /var\(--muted\).*var\(--text\)/);
+  assert.equal(prop(themeCss({ colors: { light: { accent: '#ff0000' } } }), '--tip-bg'), undefined);
+});
