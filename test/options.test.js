@@ -336,3 +336,23 @@ test('превью: тема уходит в iframe сразу при каждо
   env.el('theme-reset').onclick();
   assert.equal(last().theme.mode, 'system');
 });
+
+test('экспорт: клавиши вне наборов уходят как custom и возвращаются без потерь', async () => {
+  const mine = { ...PRESETS.vim, open: ['x'] };
+  const env = await start({ preset: 'vim', keymap: mine });
+  env.el('export').onclick();
+  assert.equal(JSON.parse(env.downloads[0].text).data.preset, 'custom');
+  const other = await start({ preset: 'arc', keymap: PRESETS.arc });
+  stubDialog(other, 'ok');
+  await pick(other, env.downloads[0].text);
+  assert.deepEqual(other.store.keymap, mine);
+  assert.equal(other.el('status').textContent, 'Сочетания загружены'); // ничего не отброшено
+});
+
+test('превью: поздно загрузившийся iframe получает тему по событию load', async () => {
+  const env = await start({ theme: MY_THEME });
+  env.previews.length = 0;
+  for (const fn of env.el('theme-preview').listeners.load) fn();
+  assert.equal(env.previews.length, 1);
+  assert.deepEqual(JSON.parse(JSON.stringify(env.previews[0].theme)), MY_THEME);
+});

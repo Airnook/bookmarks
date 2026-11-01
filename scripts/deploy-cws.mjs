@@ -38,7 +38,9 @@ export async function accessToken(key, fetch, now = Math.floor(Date.now() / 1000
 export async function deploy({ env, zip, fetch = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)) }) {
   const { CWS_SERVICE_ACCOUNT_JSON: account, CWS_PUBLISHER_ID: publisher, CWS_ITEM_ID: item } = env;
   if (!account || !publisher || !item) return 'skipped';
-  const token = await accessToken(JSON.parse(account), fetch);
+  let key;
+  try { key = JSON.parse(account); } catch { throw new Error('CWS_SERVICE_ACCOUNT_JSON не разобрать как JSON'); } // текст секрета не показываем
+  const token = await accessToken(key, fetch);
   const headers = { Authorization: `Bearer ${token}` };
   const name = `publishers/${publisher}/items/${item}`;
 

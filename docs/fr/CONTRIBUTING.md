@@ -9,23 +9,25 @@ d'arrière-plan `background.js` est un service worker ordinaire, pas un module. 
 dans `panel/` ; le démarrage et l'ordre des abonnements aux événements sont dans `panel/main.js`, l'état mutable partagé
 dans `panel/state.js`. Le texte de l'interface se trouve dans `_locales/<langue>/messages.json` (`chrome.i18n` standard)
 et est affiché par `i18n.js` (`t`, pluriels, direction de la page). Les outils de développement (`package.json`,
-`eslint.config.js`, `test/`, `scripts/`) ne font pas partie de la version publiée.
+`eslint.config.js`, `test/`, `scripts/`) ne font pas partie de la version publiée. La racine contient aussi le thème (`theme.js`, partagé par le panneau et les paramètres) et le format des fichiers de paramètres (`settings-file.js` : enveloppe et chaîne de migrations par `format`, pour l'import et l'export des raccourcis et du thème).
 
 ### Modules du panneau
 
 Les modules de `panel/` ne s'importent les uns les autres que de haut en bas, sans cycles — `test/panel-imports.test.js`
 le vérifie (et affiche le chemin du cycle s'il y en a un). Les couches, de bas en haut :
 
-1. sans dépendance du panneau : `util`, `dom`, `url`, `search`, `place` (où atterrit un élément déplacé), puis `state`,
+1. sans dépendance du panneau : `demo`, `util`, `dom`, `url`, `search`, `place` (où atterrit un élément déplacé), puis `state`,
    `nodes`, `history` (historique des modifications pour annuler et rétablir : tout changement de favoris fait depuis le
    panneau passe par son `begin()`) ;
 2. `ui` (boîte de confirmation, messages, focus), `keymap` (aides de touches), `tree` (lecture de l'arbre, cache des
    nœuds) ;
-3. `search-index` (index de recherche), `tabs`, `marks` ;
+3. `search-index` (index de recherche), `tabs`, `marks`, `undo-buttons` (boutons Annuler et Rétablir de l'en-tête) ;
 4. `render`, puis `find` (entrer dans la recherche et en sortir), `open`, `edit`, `palette` (choix dans une liste) ;
 5. `move-to`, `link`, `search-input` ;
 6. `actions` (ce que fait chaque commande) ;
 7. `keys`, `mouse`, `drag` (glisser-déposer à la souris), puis `main`.
+
+`demo` ne dépend d'aucun autre module du panneau, mais doit être le premier import de `main.js` : en mode démo (`panel.html?demo`, l'aperçu du thème dans les paramètres), il remplace `chrome` par des données fixes en mémoire avant que tout autre module ne le lise.
 
 Un module n'importe que depuis les couches inférieures. Quand un module inférieur doit appeler un module supérieur, il ne
 l'importe pas mais reçoit l'appel de l'extérieur : `tree` appelle `onTreeApplied(callback)` après chaque lecture de

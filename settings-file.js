@@ -14,6 +14,9 @@ export function readSettingsFile(text, type, format, chain = {}) {
   if (file.type !== type) return { error: 'wrong_type' };
   if (from > format) return { error: 'newer' };
   let current = data;
-  for (let n = from; n < format; n++) current = chain[n](current);
+  for (let n = from; n < format; n++) {
+    if (typeof chain[n] !== 'function') return { error: 'broken' }; // дыра в цепочке — файл не прочитать, но и не падать
+    current = chain[n](current);
+  }
   return { data: current };
 }

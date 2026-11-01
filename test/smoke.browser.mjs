@@ -202,7 +202,7 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       const text = fs.readFileSync(await download.path(), 'utf8');
       const file = JSON.parse(text);
       assert.deepEqual({ ...file, extensionVersion: typeof file.extensionVersion }, {
-        app: 'airnook-bookmarks', type: 'hotkeys', format: 1, extensionVersion: 'string', data: { preset: 'vim', keymap: mine },
+        app: 'airnook-bookmarks', type: 'hotkeys', format: 1, extensionVersion: 'string', data: { preset: 'custom', keymap: mine },
       });
 
       // другие клавиши в хранилище; импорт спрашивает и возвращает сохранённые
@@ -214,14 +214,14 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await options.keyboard.press('Enter');
       await options.waitForFunction(() => !document.getElementById('preset-dialog').open);
       await options.waitForFunction((msg) => document.getElementById('status').textContent === msg, t('options_imported'));
-      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'vim', keymap: mine });
+      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'default', keymap: mine });
 
       // файл темы отклоняется, окна нет, хранилище прежнее
       const theme = { ...file, type: 'theme' };
       await input.setInputFiles({ name: 'bookmarks-theme.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(theme)) });
       await options.waitForFunction((msg) => document.getElementById('status').textContent === msg, t('options_import_wrong_type'));
       assert.equal(await options.evaluate(() => document.getElementById('preset-dialog').open), false);
-      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'vim', keymap: mine });
+      assert.deepEqual(await setup.evaluate(() => chrome.storage.local.get(['preset', 'keymap'])), { preset: 'default', keymap: mine });
 
       await setup.evaluate(() => chrome.storage.local.set({ keymap: {} })); // как после прошлой проверки
       await options.close();

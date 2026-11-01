@@ -8,21 +8,23 @@ explicit imports; what they share lives in `commands.js`. The background script 
 worker, not a module. The panel code is split into modules in `panel/`; startup and the order of event subscriptions
 are in `panel/main.js`, shared mutable state is in `panel/state.js`. Interface text lives in
 `_locales/<language>/messages.json` (standard `chrome.i18n`) and is shown by `i18n.js` (`t`, plurals, page direction).
-Development tools (`package.json`, `eslint.config.js`, `test/`, `scripts/`) are not part of the release.
+Development tools (`package.json`, `eslint.config.js`, `test/`, `scripts/`) are not part of the release. The theme (`theme.js`, shared by the panel and settings) and the settings-file format (`settings-file.js`: envelope plus a migration chain by `format`, used by hotkeys and theme import/export) also live in the root.
 
 ### Panel modules
 
 Modules in `panel/` import each other only top-down, with no cycles — `test/panel-imports.test.js` checks this (and
 prints the cycle path if there is one). Layers, from the bottom up:
 
-1. no panel dependencies: `util`, `dom`, `url`, `search`, `place` (where a moved item lands), then `state`, `nodes`,
+1. no panel dependencies: `demo`, `util`, `dom`, `url`, `search`, `place` (where a moved item lands), then `state`, `nodes`,
    `history` (edit history for undo and redo: every bookmark change made from the panel goes through its `begin()`);
 2. `ui` (confirmation dialog, messages, focus), `keymap` (key hints), `tree` (reading the tree, node cache);
-3. `search-index` (search index), `tabs`, `marks`;
+3. `search-index` (search index), `tabs`, `marks`, `undo-buttons` (Undo and Redo buttons in the header);
 4. `render`, then `find` (entering and leaving search), `open`, `edit`, `palette` (picking from a list);
 5. `move-to`, `link`, `search-input`;
 6. `actions` (what each command does);
 7. `keys`, `mouse`, `drag` (mouse drag and drop), then `main`.
+
+`demo` has no panel dependencies but must be the first import of `main.js`: in demo mode (`panel.html?demo`, the theme preview in settings) it replaces `chrome` with fixed in-memory data before any other module reads it.
 
 A module imports only from layers below it. When a lower module needs to call a higher one, it does not import it but
 receives the call from outside: `tree` calls `onTreeApplied(callback)` after every tree read (`main.js` sets the

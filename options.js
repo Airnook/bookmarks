@@ -303,6 +303,7 @@ function renderKeymap(focusId) {
 const canonical = (km) => JSON.stringify(Object.entries(keymapOf(km))
   .map(([id, keys]) => [id, Array.isArray(keys) ? [...keys].sort() : keys])
   .sort(([a], [b]) => (a < b ? -1 : 1)));
+const matchedPreset = () => Object.keys(PRESETS).find(k => canonical(PRESETS[k]) === canonical(keymap)) ?? 'custom';
 function paintPresets() {
   const current = canonical(keymap);
   let match = null;
@@ -481,6 +482,7 @@ for (const b of document.querySelectorAll('[data-preset]')) {
 // ---------- файл с клавишами ----------
 
 const HOTKEYS_FORMAT = 1;
+const HOTKEYS_CHAIN = {}; // chain[n]: data формата n → n+1; формат 1 — текущий, шагов нет
 const HOTKEYS_FILE = 'bookmarks-hotkeys.json';
 const IMPORT_ERRORS = { broken: 'options_import_broken', wrong_type: 'options_import_wrong_type', newer: 'options_import_newer' };
 const importFile = document.getElementById('import-file');
@@ -494,7 +496,7 @@ function download(name, file) {
   URL.revokeObjectURL(a.href);
 }
 
-document.getElementById('export').onclick = () => download(HOTKEYS_FILE, envelope('hotkeys', HOTKEYS_FORMAT, { preset, keymap }, chrome.runtime.getManifest().version));
+document.getElementById('export').onclick = () => download(HOTKEYS_FILE, envelope('hotkeys', HOTKEYS_FORMAT, { preset: matchedPreset(), keymap }, chrome.runtime.getManifest().version));
 
 document.getElementById('import').onclick = () => importFile.click();
 
@@ -503,7 +505,7 @@ importFile.onchange = async () => {
   importFile.value = ''; // тот же файл можно выбрать снова
   if (!file) return;
   stopRecording();
-  const read = readSettingsFile(await file.text(), 'hotkeys', HOTKEYS_FORMAT);
+  const read = readSettingsFile(await file.text(), 'hotkeys', HOTKEYS_FORMAT, HOTKEYS_CHAIN);
   const clean = read.data && cleanHotkeys(read.data);
   if (!clean) return notify(t(IMPORT_ERRORS[read.error ?? 'broken']));
   if (!(await askReplace(document.getElementById('import'), file.name))) return rerender();
@@ -517,6 +519,7 @@ importFile.onchange = async () => {
 // ---------- файл с темой ----------
 
 const THEME_FORMAT = 1;
+const THEME_CHAIN = {};
 const THEME_FILE = 'bookmarks-theme.json';
 const themeImportFile = document.getElementById('theme-import-file');
 
@@ -528,7 +531,7 @@ themeImportFile.onchange = async () => {
   const [file] = themeImportFile.files;
   themeImportFile.value = '';
   if (!file) return;
-  const read = readSettingsFile(await file.text(), 'theme', THEME_FORMAT);
+  const read = readSettingsFile(await file.text(), 'theme', THEME_FORMAT, THEME_CHAIN);
   if (!read.data) return notify(t(read.error === 'wrong_type' ? 'options_theme_import_wrong_type' : IMPORT_ERRORS[read.error ?? 'broken']));
   if (!(await askReplace(document.getElementById('theme-import'), file.name, ['options_replace_theme', 'options_replace_theme_text']))) return;
   setTheme(() => { theme = cleanTheme(read.data); }, t('options_theme_imported'));

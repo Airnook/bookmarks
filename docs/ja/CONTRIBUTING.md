@@ -8,21 +8,23 @@
 `background.js` は通常の service worker で、モジュールではありません。パネルのコードは `panel/` のモジュールに分かれて
 おり、起動とイベント購読の順序は `panel/main.js`、共有される可変の状態は `panel/state.js` にあります。インターフェースの
 テキストは `_locales/<言語>/messages.json`（標準の `chrome.i18n`）にあり、`i18n.js`（`t`、複数形、ページの方向）が表示
-します。開発ツール（`package.json`、`eslint.config.js`、`test/`、`scripts/`）はリリースに含まれません。
+します。開発ツール（`package.json`、`eslint.config.js`、`test/`、`scripts/`）はリリースに含まれません。 ルートには、テーマ（`theme.js`、パネルと設定で共有）と設定ファイルの形式（`settings-file.js`：エンベロープと `format` ごとの移行チェーン。キー割り当てとテーマのインポート・エクスポートで使用）もあります。
 
 ### パネルのモジュール
 
 `panel/` のモジュールは上から下へのみ互いを import し、循環はありません。これは `test/panel-imports.test.js` が確認します
 （循環があればそのパスを出力します）。層は下から順に次のとおりです。
 
-1. パネルへの依存なし: `util`、`dom`、`url`、`search`、`place`（移動した項目の行き先）、続いて `state`、`nodes`、
+1. パネルへの依存なし: `demo`、`util`、`dom`、`url`、`search`、`place`（移動した項目の行き先）、続いて `state`、`nodes`、
    `history`（元に戻す・やり直しのための編集履歴。パネルからのブックマークのあらゆる変更はその `begin()` を通る）
 2. `ui`（確認ダイアログ、メッセージ、フォーカス）、`keymap`（キーのヒント）、`tree`（ツリーの読み取り、ノードのキャッシュ）
-3. `search-index`（検索インデックス）、`tabs`、`marks`
+3. `search-index`（検索インデックス）、`tabs`、`marks`、`undo-buttons` （ヘッダーの「元に戻す」「やり直し」ボタン）
 4. `render`、続いて `find`（検索の開始と終了）、`open`、`edit`、`palette`（リストからの選択）
 5. `move-to`、`link`、`search-input`
 6. `actions`（各コマンドの動作）
 7. `keys`、`mouse`、`drag`（マウスによるドラッグ＆ドロップ）、続いて `main`
+
+`demo` はパネルの他のモジュールに依存しませんが、`main.js` の最初のインポートでなければなりません。デモモード（`panel.html?demo`、設定のテーマプレビュー）では、他のモジュールが `chrome` を読む前に、メモリ上の固定データに差し替えます。
 
 モジュールは自分より下の層からのみ import します。下の層のモジュールが上の層を呼ぶ必要があるときは、それを import せず、
 外部から呼び出しを受け取ります。`tree` はツリーを読み取るたびに `onTreeApplied(callback)` を呼び（再描画は `main.js` が

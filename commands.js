@@ -159,7 +159,8 @@ export function cleanHotkeys({ preset, keymap } = {}) {
     if (keys.length || !list.length) clean[id] = keys; // всё негодное — оставляем умолчание, а не «без клавиш»
   }
   const known = Object.hasOwn(PRESETS, preset);
-  return { preset: known ? preset : 'default', keymap: clean, dropped: dropped + (known ? 0 : 1) };
+  const custom = preset === 'custom'; // свои сочетания вне наборов: не ошибка, набор для «Сбросить» — умолчание
+  return { preset: known ? preset : 'default', keymap: clean, dropped: dropped + (known || custom ? 0 : 1) };
 }
 
 // Сочетания команды с учётом пользовательских изменений. Испорченная запись
