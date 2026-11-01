@@ -584,6 +584,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Новое: наборы клавиш в настройках. Ваши клавиши не изменились — это набор «Arc legacy»."
+  },
   "create_folder_failed": {
     "message": "Не удалось создать папку"
   },
@@ -1085,17 +1088,129 @@
   "options_auto_hide_hint": {
     "message": "Клик по странице или по интерфейсу браузера закрывает панель. При переключении в другое приложение она остаётся открытой."
   },
+  "options_appearance": {
+    "message": "Оформление панели"
+  },
+  "options_theme_mode": {
+    "message": "Тема"
+  },
+  "options_theme_system": {
+    "message": "Как в системе"
+  },
+  "options_theme_light": {
+    "message": "Светлая"
+  },
+  "options_theme_dark": {
+    "message": "Тёмная"
+  },
+  "options_colors_light": {
+    "message": "Цвета светлой темы"
+  },
+  "options_colors_dark": {
+    "message": "Цвета тёмной темы"
+  },
+  "options_color_background": {
+    "message": "Фон"
+  },
+  "options_color_text": {
+    "message": "Текст"
+  },
+  "options_color_accent": {
+    "message": "Акцент"
+  },
+  "options_color_reset": {
+    "message": "Сбросить"
+  },
+  "options_font": {
+    "message": "Шрифт"
+  },
+  "options_font_system": {
+    "message": "Системный"
+  },
+  "options_font_size": {
+    "message": "Размер шрифта, px"
+  },
+  "options_font_size_browser": {
+    "message": "Как в браузере"
+  },
+  "options_radius": {
+    "message": "Скругление углов, px"
+  },
+  "options_radius_full": {
+    "message": "Полное"
+  },
+  "options_favicons": {
+    "message": "Значки сайтов"
+  },
+  "options_folder_counts": {
+    "message": "Число закладок у папок"
+  },
+  "options_indent_guides": {
+    "message": "Линии уровней"
+  },
+  "options_custom_css": {
+    "message": "Свой CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "Действует только в боковой панели, поверх настроек выше. Страницу настроек и справку не меняет."
+  },
+  "options_custom_css_external": {
+    "message": "Внешние адреса в url() или @import загружают файлы из интернета при каждом открытии панели, и этот сайт это видит."
+  },
+  "options_theme_reset": {
+    "message": "Сбросить оформление"
+  },
   "options_keys": {
     "message": "Клавиши в панели"
   },
-  "options_preset_standard": {
-    "message": "Стандартные"
+  "options_panel_side": {
+    "message": "Положение панели"
   },
-  "options_preset_standard_title": {
-    "message": "Заменить все сочетания стандартными"
+  "options_panel_side_hint": {
+    "message": "Сейчас панель: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "изменить в настройках браузера"
+  },
+  "options_side_left": {
+    "message": "слева"
+  },
+  "options_side_right": {
+    "message": "справа"
+  },
+  "options_global_title": {
+    "message": "Открыть и закрыть панель"
+  },
+  "options_reserved": {
+    "message": "$KEY$ забирает браузер или система — до панели оно не дойдёт. Выберите другое сочетание",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "По умолчанию"
+  },
+  "options_preset_default_title": {
+    "message": "Привычные клавиши браузера и файлового менеджера: копировать, вставить, отменить, F2 — переименовать"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy плюс клавиши браузера Arc: копировать ссылку, командная строка, настройки, скрыть панель"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Клавиши прежних версий: одиночные буквы n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Стандартные плюс клавиши Vim: j k h l, g g, d d, y y…"
+    "message": "Arc legacy плюс клавиши Vim: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "«+» — записать сочетание: клавишу, с модификаторами, последовательность ($SEQUENCE$) или двойное нажатие ($DOUBLE$) — вторую клавишу жмите сразу. $ENTER$ после клавиши — готово, $ESC$ — отменить запись, «×» — убрать. Если сочетание уже занято, спросим, забрать ли его. Все команды есть и в палитре команд панели.",
@@ -1111,17 +1226,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Открыть и закрыть панель: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1221,6 +1325,32 @@
   "options_replace_ok": {
     "message": "Заменить",
     "description": "Confirm button of the dialog that replaces the shortcut set"
+  },
+  "options_export": {
+    "message": "Экспорт"
+  },
+  "options_import": {
+    "message": "Импорт"
+  },
+  "options_imported": {
+    "message": "Сочетания загружены"
+  },
+  "options_imported_skipped": {
+    "message": "Сочетания загружены; пропущено негодных записей: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Это не файл настроек Bookmarks или он повреждён."
+  },
+  "options_import_wrong_type": {
+    "message": "В этом файле другие настройки, а не сочетания клавиш."
+  },
+  "options_import_newer": {
+    "message": "Файл создан более новой версией расширения. Обновите расширение, чтобы его загрузить."
   },
   "options_preset_applied": {
     "message": "Набор «$PRESET$» применён",
@@ -2350,5 +2480,25 @@
   },
   "help_news_title": {
     "message": "Что нового"
+  },
+  "options_preview": {
+    "message": "Предпросмотр панели на примере закладок"
+  },
+  "options_replace_theme": {
+    "message": "Заменить оформление панели файлом «$FILE$»?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Текущие настройки оформления пропадут."
+  },
+  "options_theme_imported": {
+    "message": "Оформление загружено"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "В этом файле другие настройки, а не оформление панели."
   }
 }

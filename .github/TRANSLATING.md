@@ -1,5 +1,7 @@
 # Translating Bookmarks
 
+**🇬🇧 English** | [🇷🇺 Русский](../docs/ru/TRANSLATING.md) | [🇪🇸 Español](../docs/es/TRANSLATING.md) | [🇧🇷 Português (Brasil)](../docs/pt-BR/TRANSLATING.md) | [🇫🇷 Français](../docs/fr/TRANSLATING.md) | [🇩🇪 Deutsch](../docs/de/TRANSLATING.md) | [🇨🇳 中文（简体）](../docs/zh-CN/TRANSLATING.md) | [🇯🇵 日本語](../docs/ja/TRANSLATING.md) | [🇮🇳 हिन्दी](../docs/hi/TRANSLATING.md) | [🇸🇦 العربية](../docs/ar/TRANSLATING.md)
+
 The interface text lives in `_locales/<code>/messages.json` (Chrome's standard `chrome.i18n` format).
 This guide covers that file only. Chrome picks the folder that matches the browser's language;
 if there is none, the English text (`_locales/en`) is used.
@@ -82,7 +84,7 @@ Keys with empty values are allowed, but all of them must exist.
 
 ## Check locally
 
-Needs Node.js 22 or newer.
+Needs Node.js 20.19+, 22.13+ or 24+ (CI uses 22).
 
 ```sh
 npm ci            # install dependencies

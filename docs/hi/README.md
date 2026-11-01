@@ -1,13 +1,13 @@
 # Airnook Bookmarks
 
-[🇬🇧 English](README.md) | [🇷🇺 Русский](README.ru.md) | [🇪🇸 Español](README.es.md) | [🇧🇷 Português (Brasil)](README.pt-BR.md) | [🇫🇷 Français](README.fr.md) | [🇩🇪 Deutsch](README.de.md) | [🇨🇳 中文（简体）](README.zh-CN.md) | [🇯🇵 日本語](README.ja.md) | **🇮🇳 हिन्दी** | [🇸🇦 العربية](README.ar.md)
+[🇬🇧 English](../../.github/README.md) | [🇷🇺 Русский](../ru/README.md) | [🇪🇸 Español](../es/README.md) | [🇧🇷 Português (Brasil)](../pt-BR/README.md) | [🇫🇷 Français](../fr/README.md) | [🇩🇪 Deutsch](../de/README.md) | [🇨🇳 中文（简体）](../zh-CN/README.md) | [🇯🇵 日本語](../ja/README.md) | **🇮🇳 हिन्दी** | [🇸🇦 العربية](../ar/README.md)
 
 [![CI](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml/badge.svg)](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Airnook/bookmarks)](https://github.com/Airnook/bookmarks/releases/latest)
 [![Chromium 141+](https://img.shields.io/badge/Chromium-141%2B-4285F4?logo=googlechrome&logoColor=white)](https://www.chromium.org/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
 [![10 languages](https://img.shields.io/badge/languages-10-orange)](TRANSLATING.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](../../LICENSE)
 
 **बुकमार्क** Chromium ब्राउज़र (Chrome, Edge, Brave, Arc, Helium और अन्य) के लिए एक एक्सटेंशन है: आपके बुकमार्क साइड पैनल में,
 पेज के बगल में, सब कुछ कीबोर्ड से। खोजें, खोलें, फ़ोल्डर में छाँटें, बुकमार्क को पिन किए गए टैब की तरह रखें। Arc से Chromium
@@ -15,8 +15,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/panel-dark.png">
-    <img src="docs/panel-light.png" alt="बुकमार्क साइड पैनल: फ़ोल्डरों का ट्री, जिसमें दो बुकमार्क पर निशान लगा है" width="360">
+    <source media="(prefers-color-scheme: dark)" srcset="../panel-dark.png">
+    <img src="../panel-light.png" alt="बुकमार्क साइड पैनल: फ़ोल्डरों का ट्री, जिसमें दो बुकमार्क पर निशान लगा है" width="360">
   </picture>
 </p>
 
@@ -137,4 +137,4 @@ npm run package        # dist/airnook-bookmarks-<वर्ज़न>.zip
 
 ## लाइसेंस
 
-[MIT](LICENSE) © 2026 Airnook
+[MIT](../../LICENSE) © 2026 Airnook

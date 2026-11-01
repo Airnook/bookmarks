@@ -1,20 +1,20 @@
 # Airnook Bookmarks
 
-[🇬🇧 English](README.md) | [🇷🇺 Русский](README.ru.md) | [🇪🇸 Español](README.es.md) | [🇧🇷 Português (Brasil)](README.pt-BR.md) | [🇫🇷 Français](README.fr.md) | [🇩🇪 Deutsch](README.de.md) | **🇨🇳 中文（简体）** | [🇯🇵 日本語](README.ja.md) | [🇮🇳 हिन्दी](README.hi.md) | [🇸🇦 العربية](README.ar.md)
+[🇬🇧 English](../../.github/README.md) | [🇷🇺 Русский](../ru/README.md) | [🇪🇸 Español](../es/README.md) | [🇧🇷 Português (Brasil)](../pt-BR/README.md) | [🇫🇷 Français](../fr/README.md) | [🇩🇪 Deutsch](../de/README.md) | **🇨🇳 中文（简体）** | [🇯🇵 日本語](../ja/README.md) | [🇮🇳 हिन्दी](../hi/README.md) | [🇸🇦 العربية](../ar/README.md)
 
 [![CI](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml/badge.svg)](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Airnook/bookmarks)](https://github.com/Airnook/bookmarks/releases/latest)
 [![Chromium 141+](https://img.shields.io/badge/Chromium-141%2B-4285F4?logo=googlechrome&logoColor=white)](https://www.chromium.org/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
 [![10 languages](https://img.shields.io/badge/languages-10-orange)](TRANSLATING.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](../../LICENSE)
 
 **书签** 是一款适用于 Chromium 浏览器（Chrome、Edge、Brave、Arc、Helium 等）的扩展程序：书签就在侧边栏中、网页旁边，全程键盘操作。查找、打开、分类到文件夹、将书签保持为固定标签页。为从 Arc 迁移到 Chromium 浏览器而做：原来很怀念 Arc 的侧边栏。
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/panel-dark.png">
-    <img src="docs/panel-light.png" alt="书签侧边栏：文件夹树，其中两个书签已标记" width="360">
+    <source media="(prefers-color-scheme: dark)" srcset="../panel-dark.png">
+    <img src="../panel-light.png" alt="书签侧边栏：文件夹树，其中两个书签已标记" width="360">
   </picture>
 </p>
 
@@ -117,4 +117,4 @@ npm run package        # dist/airnook-bookmarks-<版本>.zip
 
 ## 许可证
 
-[MIT](LICENSE) © 2026 Airnook
+[MIT](../../LICENSE) © 2026 Airnook

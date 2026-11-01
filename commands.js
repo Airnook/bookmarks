@@ -78,9 +78,36 @@ export const groupTitle = (group) => t('group_' + group);
 
 export const COMMAND = Object.fromEntries(COMMANDS.map(c => [c.id, c]));
 
-// Наборы сочетаний: только отличия от стандартного
+// Наборы сочетаний: только отличия от клавиш DEFINITIONS (это arc-legacy — клавиши до 2.7).
+// Хранимые настройки клавиш — тоже отличия от DEFINITIONS, поэтому старые сохраняют смысл.
 export const PRESETS = {
-  standard: {},
+  // привычные Chrome и Finder; Mod+y нет: ⌘Y на Mac — история Chrome
+  default: {
+    'folder.new': ['Mod+Alt+n'],
+    'rename': ['F2'],
+    'edit': ['Mod+i'],
+    'move.to': [],
+    'url.update': [],
+    'delete': ['Mod+Backspace', 'Delete'],
+    'copy.url': ['Mod+Shift+c'],
+    'tab.close': [],
+    'redo': ['Mod+Shift+z'],
+    'palette': ['Mod+k'],
+    'view.cycle': [],
+    'help': ['F1', 'Mod+/'],
+    'settings': ['Mod+,'],
+  },
+  // arc-legacy плюс клавиши Arc, которые Chrome отдаёт странице (⌘T и ⌘W он забирает себе)
+  arc: {
+    'cursor.down': ['ArrowDown', 'Mod+Alt+ArrowDown'],
+    'cursor.up': ['ArrowUp', 'Mod+Alt+ArrowUp'],
+    'delete': ['d', 'Mod+Backspace'],
+    'copy.url': ['c', 'Mod+Shift+c'],
+    'palette': ['Mod+k', '?', 'Mod+l'],
+    'settings': [',', 'Mod+,'],
+    'panel.close': ['Mod+s'],
+  },
+  'arc-legacy': {},
   vim: {
     'cursor.down': ['ArrowDown', 'j'],
     'cursor.up': ['ArrowUp', 'k'],
@@ -101,8 +128,40 @@ export const PRESETS = {
   },
 };
 
+// Сочетания, которые Chrome или система забирают раньше страницы: панель их не услышит.
+// Их нельзя записать, и их нет ни в одном наборе.
+const RESERVED_ANY = ['Mod+t', 'Mod+w', 'Mod+n', 'Mod+Shift+n', 'Mod+Shift+t', 'Mod+Shift+w', 'Mod+Tab', 'Mod+Shift+Tab'];
+const RESERVED = {
+  mac: new Set([...RESERVED_ANY, 'Ctrl+Tab', 'Ctrl+Shift+Tab', 'Mod+h', 'Mod+Alt+h', 'Mod+m', 'Mod+q',
+    'Mod+Space', 'Mod+Alt+Space', 'Mod+Alt+Escape', 'Mod+Alt+ArrowLeft', 'Mod+Alt+ArrowRight',
+    'Ctrl+ArrowUp', 'Ctrl+ArrowDown', 'Ctrl+ArrowLeft', 'Ctrl+ArrowRight']),
+  pc: new Set([...RESERVED_ANY, 'Mod+PageUp', 'Mod+PageDown', 'Mod+F4', 'Alt+F4', 'F11']),
+};
+export const isReserved = (binding, mac = IS_MAC) => binding.split(' ').some(chord => RESERVED[mac ? 'mac' : 'pc'].has(chord));
+
 // Настройки клавиш из хранилища: если там не объект — считаем, что ничего не меняли
 export const keymapOf = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
+
+// keymap из хранилища: нет его — новая установка, набор default
+// (обновлённым со старых версий фон записывает keymap сам)
+export const storedKeymap = (value) => (value == null ? structuredClone(PRESETS.default) : keymapOf(value));
+
+// Клавиши из файла: оставляем известные команды и годные сочетания, считаем отброшенное.
+// Итог: { preset, keymap, dropped }; не объект keymap — null.
+export function cleanHotkeys({ preset, keymap } = {}) {
+  if (!keymap || typeof keymap !== 'object' || Array.isArray(keymap)) return null;
+  let dropped = 0;
+  const clean = {};
+  for (const [id, list] of Object.entries(keymap)) {
+    if (!Object.hasOwn(COMMAND, id) || !Array.isArray(list)) { dropped++; continue; }
+    const keys = bindingsOf(id, { [id]: list }).filter(b => !isReserved(b));
+    dropped += list.length - keys.length;
+    if (keys.length || !list.length) clean[id] = keys; // всё негодное — оставляем умолчание, а не «без клавиш»
+  }
+  const known = Object.hasOwn(PRESETS, preset);
+  const custom = preset === 'custom'; // свои сочетания вне наборов: не ошибка, набор для «Сбросить» — умолчание
+  return { preset: known ? preset : 'default', keymap: clean, dropped: dropped + (known || custom ? 0 : 1) };
+}
 
 // Сочетания команды с учётом пользовательских изменений. Испорченная запись
 // в настройках (не массив, не строки, лишние пробелы, повторы) не ломает панель.

@@ -2,7 +2,7 @@
 // и строит таблицу всех команд из того же реестра, что и панель.
 // Тексты справки — сообщения help_* (data-i18n в help.html); клавиши вставляются на места
 // вложенных элементов data-key / data-chord.
-import { COMMANDS, COMMAND, MOD_LABELS, groupTitle, keymapOf, resolveKeymap, bindingNodes } from './commands.js';
+import { COMMANDS, COMMAND, MOD_LABELS, groupTitle, storedKeymap, resolveKeymap, bindingNodes } from './commands.js';
 import { localizePage, t } from './i18n.js';
 
 localizePage();
@@ -65,7 +65,7 @@ function render(keymap) {
 async function init() {
   document.getElementById('version').textContent = chrome.runtime.getManifest().version;
   const { keymap } = await chrome.storage.local.get('keymap');
-  render(keymapOf(keymap));
+  render(storedKeymap(keymap));
   chrome.storage.local.remove('whatsNew'); // что нового — уже здесь
 
   const toggle = (await chrome.commands.getAll()).find(c => c.name === 'open-bookmarks');
@@ -87,6 +87,6 @@ document.getElementById('open-panel').onclick = () => {
   if (windowId !== null) chrome.sidePanel.open({ windowId }).catch(() => {});
 };
 document.getElementById('open-shortcuts').onclick = () => chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
-chrome.storage.local.onChanged.addListener((c) => { if (c.keymap) render(keymapOf(c.keymap.newValue)); });
+chrome.storage.local.onChanged.addListener((c) => { if (c.keymap) render(storedKeymap(c.keymap.newValue)); });
 
 init();

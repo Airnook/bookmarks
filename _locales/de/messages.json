@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Neu: Tastenkürzel-Vorlagen in den Einstellungen. Ihre Tasten bleiben gleich – das ist die Vorlage „Arc legacy“."
+  },
   "create_folder_failed": {
     "message": "Ordner konnte nicht erstellt werden"
   },
@@ -1035,17 +1038,129 @@
   "options_auto_hide_hint": {
     "message": "Ein Klick auf die Seite oder die Browseroberfläche schließt die Seitenleiste. Beim Wechsel zu einer anderen App bleibt sie geöffnet."
   },
+  "options_appearance": {
+    "message": "Aussehen des Panels"
+  },
+  "options_theme_mode": {
+    "message": "Design"
+  },
+  "options_theme_system": {
+    "message": "Wie im System"
+  },
+  "options_theme_light": {
+    "message": "Hell"
+  },
+  "options_theme_dark": {
+    "message": "Dunkel"
+  },
+  "options_colors_light": {
+    "message": "Farben des hellen Designs"
+  },
+  "options_colors_dark": {
+    "message": "Farben des dunklen Designs"
+  },
+  "options_color_background": {
+    "message": "Hintergrund"
+  },
+  "options_color_text": {
+    "message": "Text"
+  },
+  "options_color_accent": {
+    "message": "Akzent"
+  },
+  "options_color_reset": {
+    "message": "Zurücksetzen"
+  },
+  "options_font": {
+    "message": "Schrift"
+  },
+  "options_font_system": {
+    "message": "System"
+  },
+  "options_font_size": {
+    "message": "Schriftgröße, px"
+  },
+  "options_font_size_browser": {
+    "message": "Browser-Standard"
+  },
+  "options_radius": {
+    "message": "Eckenradius, px"
+  },
+  "options_radius_full": {
+    "message": "Vollständig rund"
+  },
+  "options_favicons": {
+    "message": "Website-Symbole"
+  },
+  "options_folder_counts": {
+    "message": "Anzahl der Lesezeichen neben Ordnern"
+  },
+  "options_indent_guides": {
+    "message": "Einrückungslinien"
+  },
+  "options_custom_css": {
+    "message": "Eigenes CSS"
+  },
+  "options_custom_css_hint": {
+    "message": "Gilt nur für das Seitenpanel, zusätzlich zu den Einstellungen oben. Einstellungsseite und Hilfe bleiben unverändert."
+  },
+  "options_custom_css_external": {
+    "message": "Externe Adressen in url() oder @import laden bei jedem Öffnen des Panels Dateien aus dem Internet, und diese Website bemerkt das."
+  },
+  "options_theme_reset": {
+    "message": "Aussehen zurücksetzen"
+  },
   "options_keys": {
     "message": "Tasten der Seitenleiste"
   },
-  "options_preset_standard": {
+  "options_panel_side": {
+    "message": "Position der Seitenleiste"
+  },
+  "options_panel_side_hint": {
+    "message": "Aktuelle Seite: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "in den Browsereinstellungen ändern"
+  },
+  "options_side_left": {
+    "message": "links"
+  },
+  "options_side_right": {
+    "message": "rechts"
+  },
+  "options_global_title": {
+    "message": "Seitenleiste öffnen und schließen"
+  },
+  "options_reserved": {
+    "message": "$KEY$ wird vom Browser oder System abgefangen und erreicht die Seitenleiste nie – wählen Sie ein anderes Tastenkürzel",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
     "message": "Standard"
   },
-  "options_preset_standard_title": {
-    "message": "Alle Tastenkürzel durch die Standardkürzel ersetzen"
+  "options_preset_default_title": {
+    "message": "Vertraute Tastenkürzel aus Browser und Dateimanager: Kopieren, Einfügen, Rückgängig, F2 zum Umbenennen"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy plus Tastenkürzel des Arc-Browsers: Link kopieren, Befehlsleiste, Einstellungen, Seitenleiste ausblenden"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Tastenkürzel früherer Versionen: einzelne Buchstaben n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Standard plus Vim-Tasten: j k h l, g g, d d, y y…"
+    "message": "Arc legacy plus Vim-Tasten: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "„+“ zeichnet ein Tastenkürzel auf: eine Taste, mit Zusatztasten, eine Tastenfolge ($SEQUENCE$) oder einen Doppeldruck ($DOUBLE$) – drücken Sie die zweite Taste sofort. $ENTER$ nach einer Taste – fertig, $ESC$ – Aufzeichnung abbrechen, „×“ – entfernen. Ist das Tastenkürzel schon vergeben, werden Sie gefragt, ob Sie es übernehmen möchten. Alle Befehle finden Sie auch in der Befehlspalette der Seitenleiste.",
@@ -1061,17 +1176,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Seitenleiste öffnen und schließen: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1169,6 +1273,32 @@
   },
   "options_replace_ok": {
     "message": "Ersetzen"
+  },
+  "options_export": {
+    "message": "Exportieren"
+  },
+  "options_import": {
+    "message": "Importieren"
+  },
+  "options_imported": {
+    "message": "Tastenkürzel importiert"
+  },
+  "options_imported_skipped": {
+    "message": "Tastenkürzel importiert; ungültige Einträge übersprungen: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Das ist keine gültige Bookmarks-Einstellungsdatei."
+  },
+  "options_import_wrong_type": {
+    "message": "Diese Datei enthält andere Einstellungen, keine Tastenkürzel."
+  },
+  "options_import_newer": {
+    "message": "Diese Datei stammt von einer neueren Version der Erweiterung. Aktualisieren Sie die Erweiterung, um sie zu importieren."
   },
   "options_preset_applied": {
     "message": "Die Vorlage „$PRESET$“ wurde angewendet",
@@ -2099,5 +2229,25 @@
   },
   "help_news_title": {
     "message": "Neuigkeiten"
+  },
+  "options_preview": {
+    "message": "Vorschau des Panels mit Beispiel-Lesezeichen"
+  },
+  "options_replace_theme": {
+    "message": "Das Aussehen des Panels durch „$FILE$“ ersetzen?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Ihre aktuellen Darstellungseinstellungen gehen verloren."
+  },
+  "options_theme_imported": {
+    "message": "Aussehen importiert"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Diese Datei enthält andere Einstellungen, nicht das Aussehen des Panels."
   }
 }

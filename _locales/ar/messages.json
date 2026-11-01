@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "جديد: مجموعات اختصارات في الإعدادات. لم تتغيّر مفاتيحك — إنها مجموعة “Arc legacy”."
+  },
   "create_folder_failed": {
     "message": "تعذّر إنشاء المجلد"
   },
@@ -1131,17 +1134,129 @@
   "options_auto_hide_hint": {
     "message": "النقر على الصفحة أو على واجهة المتصفّح يغلق اللوحة. أما التبديل إلى تطبيق آخر فيُبقيها مفتوحة."
   },
+  "options_appearance": {
+    "message": "مظهر اللوحة"
+  },
+  "options_theme_mode": {
+    "message": "السمة"
+  },
+  "options_theme_system": {
+    "message": "حسب النظام"
+  },
+  "options_theme_light": {
+    "message": "فاتحة"
+  },
+  "options_theme_dark": {
+    "message": "داكنة"
+  },
+  "options_colors_light": {
+    "message": "ألوان السمة الفاتحة"
+  },
+  "options_colors_dark": {
+    "message": "ألوان السمة الداكنة"
+  },
+  "options_color_background": {
+    "message": "الخلفية"
+  },
+  "options_color_text": {
+    "message": "النص"
+  },
+  "options_color_accent": {
+    "message": "لون التمييز"
+  },
+  "options_color_reset": {
+    "message": "إعادة تعيين"
+  },
+  "options_font": {
+    "message": "الخط"
+  },
+  "options_font_system": {
+    "message": "خط النظام"
+  },
+  "options_font_size": {
+    "message": "حجم الخط، px"
+  },
+  "options_font_size_browser": {
+    "message": "الافتراضي في المتصفح"
+  },
+  "options_radius": {
+    "message": "استدارة الزوايا، px"
+  },
+  "options_radius_full": {
+    "message": "مستديرة بالكامل"
+  },
+  "options_favicons": {
+    "message": "أيقونات المواقع"
+  },
+  "options_folder_counts": {
+    "message": "عدد الإشارات بجانب المجلدات"
+  },
+  "options_indent_guides": {
+    "message": "خطوط المستويات"
+  },
+  "options_custom_css": {
+    "message": "CSS مخصص"
+  },
+  "options_custom_css_hint": {
+    "message": "يُطبَّق على اللوحة الجانبية فقط، فوق الإعدادات أعلاه. لا يغيّر صفحة الإعدادات ولا المساعدة."
+  },
+  "options_custom_css_external": {
+    "message": "العناوين الخارجية في url() أو @import تحمّل ملفات من الإنترنت عند كل فتح للوحة، ويعرف ذلك الموقع بالأمر."
+  },
+  "options_theme_reset": {
+    "message": "إعادة تعيين المظهر"
+  },
   "options_keys": {
     "message": "مفاتيح اللوحة"
   },
-  "options_preset_standard": {
-    "message": "قياسي"
+  "options_panel_side": {
+    "message": "موضع اللوحة"
   },
-  "options_preset_standard_title": {
-    "message": "استبدال كل الاختصارات بالاختصارات القياسية"
+  "options_panel_side_hint": {
+    "message": "الجانب الحالي: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "التغيير في إعدادات المتصفّح"
+  },
+  "options_side_left": {
+    "message": "يسار"
+  },
+  "options_side_right": {
+    "message": "يمين"
+  },
+  "options_global_title": {
+    "message": "فتح اللوحة وإغلاقها"
+  },
+  "options_reserved": {
+    "message": "يستحوذ المتصفّح أو النظام على $KEY$ ولن يصل إلى اللوحة أبدًا — اختر اختصارًا آخر",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
+    "message": "الافتراضي"
+  },
+  "options_preset_default_title": {
+    "message": "اختصارات مألوفة من المتصفّح ومدير الملفات: النسخ واللصق والتراجع وF2 لإعادة التسمية"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy مع اختصارات متصفّح Arc: نسخ الرابط وشريط الأوامر والإعدادات وإخفاء اللوحة"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "اختصارات الإصدارات السابقة: حروف مفردة n وr وd وc…"
   },
   "options_preset_vim_title": {
-    "message": "القياسي مع مفاتيح Vim: j k h l وg g وd d وy y…"
+    "message": "Arc legacy مع مفاتيح Vim: j k h l وg g وd d وy y…"
   },
   "options_keys_hint": {
     "message": "يسجّل “+” اختصارًا: مفتاحًا (مع مفاتيح التعديل)، أو تسلسلًا ($SEQUENCE$)، أو ضغطة مزدوجة ($DOUBLE$) — اضغط المفتاح الثاني فورًا. $ENTER$ بعد المفتاح — تم، $ESC$ — إلغاء التسجيل، “×” — إزالة. إذا كان الاختصار مستخدمًا فستُسأل هل تريد الاستيلاء عليه. كل الأوامر موجودة أيضًا في لوحة أوامر اللوحة.",
@@ -1157,17 +1272,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "فتح اللوحة وإغلاقها: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1265,6 +1369,32 @@
   },
   "options_replace_ok": {
     "message": "استبدال"
+  },
+  "options_export": {
+    "message": "تصدير"
+  },
+  "options_import": {
+    "message": "استيراد"
+  },
+  "options_imported": {
+    "message": "تم استيراد الاختصارات"
+  },
+  "options_imported_skipped": {
+    "message": "تم استيراد الاختصارات؛ إدخالات غير صالحة تم تخطيها: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "هذا ليس ملف إعدادات صالحًا لـ Bookmarks."
+  },
+  "options_import_wrong_type": {
+    "message": "يحتوي هذا الملف على إعدادات أخرى وليس اختصارات."
+  },
+  "options_import_newer": {
+    "message": "هذا الملف من إصدار أحدث من الإضافة. حدّث الإضافة لاستيراده."
   },
   "options_preset_applied": {
     "message": "تم تطبيق مجموعة “$PRESET$”",
@@ -2495,5 +2625,25 @@
   },
   "help_news_title": {
     "message": "الجديد"
+  },
+  "options_preview": {
+    "message": "معاينة اللوحة بإشارات مرجعية تجريبية"
+  },
+  "options_replace_theme": {
+    "message": "هل تريد استبدال مظهر اللوحة بالملف “$FILE$”؟",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "ستُفقد إعدادات المظهر الحالية."
+  },
+  "options_theme_imported": {
+    "message": "تم استيراد المظهر"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "يحتوي هذا الملف على إعدادات أخرى وليس مظهر اللوحة."
   }
 }

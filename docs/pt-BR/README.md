@@ -1,13 +1,13 @@
 # Airnook Bookmarks
 
-[🇬🇧 English](README.md) | [🇷🇺 Русский](README.ru.md) | [🇪🇸 Español](README.es.md) | **🇧🇷 Português (Brasil)** | [🇫🇷 Français](README.fr.md) | [🇩🇪 Deutsch](README.de.md) | [🇨🇳 中文（简体）](README.zh-CN.md) | [🇯🇵 日本語](README.ja.md) | [🇮🇳 हिन्दी](README.hi.md) | [🇸🇦 العربية](README.ar.md)
+[🇬🇧 English](../../.github/README.md) | [🇷🇺 Русский](../ru/README.md) | [🇪🇸 Español](../es/README.md) | **🇧🇷 Português (Brasil)** | [🇫🇷 Français](../fr/README.md) | [🇩🇪 Deutsch](../de/README.md) | [🇨🇳 中文（简体）](../zh-CN/README.md) | [🇯🇵 日本語](../ja/README.md) | [🇮🇳 हिन्दी](../hi/README.md) | [🇸🇦 العربية](../ar/README.md)
 
 [![CI](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml/badge.svg)](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Airnook/bookmarks)](https://github.com/Airnook/bookmarks/releases/latest)
 [![Chromium 141+](https://img.shields.io/badge/Chromium-141%2B-4285F4?logo=googlechrome&logoColor=white)](https://www.chromium.org/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
 [![10 languages](https://img.shields.io/badge/languages-10-orange)](TRANSLATING.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](../../LICENSE)
 
 **Favoritos** é uma extensão para navegadores Chromium (Chrome, Edge, Brave, Arc, Helium e outros): seus favoritos no
 painel lateral, ao lado da página, tudo pelo teclado. Encontrar, abrir, organizar em pastas, manter os favoritos como
@@ -15,8 +15,8 @@ guias fixadas. Criado na mudança do Arc para um navegador Chromium: fazia falta
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/panel-dark.png">
-    <img src="docs/panel-light.png" alt="O painel lateral de Favoritos: uma árvore de pastas com dois favoritos marcados" width="360">
+    <source media="(prefers-color-scheme: dark)" srcset="../panel-dark.png">
+    <img src="../panel-light.png" alt="O painel lateral de Favoritos: uma árvore de pastas com dois favoritos marcados" width="360">
   </picture>
 </p>
 
@@ -140,4 +140,4 @@ A arquitetura, os testes e o processo de lançamento estão descritos em [CONTRI
 
 ## Licença
 
-[MIT](LICENSE) © 2026 Airnook
+[MIT](../../LICENSE) © 2026 Airnook

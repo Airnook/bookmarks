@@ -582,6 +582,9 @@
       }
     }
   },
+  "keys_notice": {
+    "message": "Novidade: conjuntos de atalhos nas configurações. Suas teclas não mudaram — é o conjunto “Arc legacy”."
+  },
   "create_folder_failed": {
     "message": "Não foi possível criar a pasta"
   },
@@ -1059,17 +1062,129 @@
   "options_auto_hide_hint": {
     "message": "Um clique na página ou na interface do navegador fecha o painel. Mudar para outro aplicativo o mantém aberto."
   },
+  "options_appearance": {
+    "message": "Aparência do painel"
+  },
+  "options_theme_mode": {
+    "message": "Tema"
+  },
+  "options_theme_system": {
+    "message": "Como no sistema"
+  },
+  "options_theme_light": {
+    "message": "Claro"
+  },
+  "options_theme_dark": {
+    "message": "Escuro"
+  },
+  "options_colors_light": {
+    "message": "Cores do tema claro"
+  },
+  "options_colors_dark": {
+    "message": "Cores do tema escuro"
+  },
+  "options_color_background": {
+    "message": "Fundo"
+  },
+  "options_color_text": {
+    "message": "Texto"
+  },
+  "options_color_accent": {
+    "message": "Destaque"
+  },
+  "options_color_reset": {
+    "message": "Redefinir"
+  },
+  "options_font": {
+    "message": "Fonte"
+  },
+  "options_font_system": {
+    "message": "Do sistema"
+  },
+  "options_font_size": {
+    "message": "Tamanho da fonte, px"
+  },
+  "options_font_size_browser": {
+    "message": "Padrão do navegador"
+  },
+  "options_radius": {
+    "message": "Arredondamento dos cantos, px"
+  },
+  "options_radius_full": {
+    "message": "Totalmente arredondado"
+  },
+  "options_favicons": {
+    "message": "Ícones dos sites"
+  },
+  "options_folder_counts": {
+    "message": "Número de favoritos ao lado das pastas"
+  },
+  "options_indent_guides": {
+    "message": "Guias de recuo"
+  },
+  "options_custom_css": {
+    "message": "CSS próprio"
+  },
+  "options_custom_css_hint": {
+    "message": "Vale apenas para o painel lateral, por cima das configurações acima. A página de configurações e a ajuda não mudam."
+  },
+  "options_custom_css_external": {
+    "message": "Endereços externos em url() ou @import baixam arquivos da internet sempre que o painel é aberto, e esse site fica sabendo."
+  },
+  "options_theme_reset": {
+    "message": "Redefinir aparência"
+  },
   "options_keys": {
     "message": "Teclas do painel"
   },
-  "options_preset_standard": {
+  "options_panel_side": {
+    "message": "Posição do painel"
+  },
+  "options_panel_side_hint": {
+    "message": "Lado atual: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "alterar nas configurações do navegador"
+  },
+  "options_side_left": {
+    "message": "esquerda"
+  },
+  "options_side_right": {
+    "message": "direita"
+  },
+  "options_global_title": {
+    "message": "Abrir e fechar o painel"
+  },
+  "options_reserved": {
+    "message": "$KEY$ é capturado pelo navegador ou pelo sistema e nunca chega ao painel — escolha outro atalho",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_preset_default": {
     "message": "Padrão"
   },
-  "options_preset_standard_title": {
-    "message": "Substituir todos os atalhos pelos padrão"
+  "options_preset_default_title": {
+    "message": "Atalhos conhecidos do navegador e do gerenciador de arquivos: copiar, colar, desfazer, F2 para renomear"
+  },
+  "options_preset_arc_title": {
+    "message": "Arc legacy mais os atalhos do navegador Arc: copiar link, barra de comandos, configurações, ocultar o painel"
+  },
+  "options_preset_arc_legacy": {
+    "message": "Arc legacy"
+  },
+  "options_preset_arc_legacy_title": {
+    "message": "Atalhos das versões anteriores: letras isoladas n, r, d, c…"
   },
   "options_preset_vim_title": {
-    "message": "Padrão mais teclas do Vim: j k h l, g g, d d, y y…"
+    "message": "Arc legacy mais teclas do Vim: j k h l, g g, d d, y y…"
   },
   "options_keys_hint": {
     "message": "“+” grava um atalho: uma tecla, com modificadores, uma sequência ($SEQUENCE$) ou um pressionamento duplo ($DOUBLE$) — pressione a segunda tecla logo em seguida. $ENTER$ depois de uma tecla — pronto, $ESC$ — cancelar a gravação, “×” — remover. Se o atalho estiver em uso, será perguntado se você quer assumi-lo. Todos os comandos também estão na paleta de comandos do painel.",
@@ -1085,17 +1200,6 @@
       },
       "esc": {
         "content": "$4"
-      }
-    }
-  },
-  "options_global": {
-    "message": "Abrir e fechar o painel: $KEY$ · $CHANGE$",
-    "placeholders": {
-      "key": {
-        "content": "$1"
-      },
-      "change": {
-        "content": "$2"
       }
     }
   },
@@ -1193,6 +1297,32 @@
   },
   "options_replace_ok": {
     "message": "Substituir"
+  },
+  "options_export": {
+    "message": "Exportar"
+  },
+  "options_import": {
+    "message": "Importar"
+  },
+  "options_imported": {
+    "message": "Atalhos importados"
+  },
+  "options_imported_skipped": {
+    "message": "Atalhos importados; entradas inválidas ignoradas: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Este não é um arquivo de configurações do Bookmarks válido."
+  },
+  "options_import_wrong_type": {
+    "message": "Este arquivo contém outras configurações, não atalhos."
+  },
+  "options_import_newer": {
+    "message": "Este arquivo é de uma versão mais nova da extensão. Atualize a extensão para importá-lo."
   },
   "options_preset_applied": {
     "message": "O conjunto “$PRESET$” foi aplicado",
@@ -2198,5 +2328,25 @@
   },
   "help_news_title": {
     "message": "Novidades"
+  },
+  "options_preview": {
+    "message": "Prévia do painel com favoritos de exemplo"
+  },
+  "options_replace_theme": {
+    "message": "Substituir a aparência do painel por “$FILE$”?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "As configurações de aparência atuais serão perdidas."
+  },
+  "options_theme_imported": {
+    "message": "Aparência importada"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Este arquivo contém outras configurações, não a aparência do painel."
   }
 }

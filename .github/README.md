@@ -1,13 +1,13 @@
 # Airnook Bookmarks
 
-**🇬🇧 English** | [🇷🇺 Русский](README.ru.md) | [🇪🇸 Español](README.es.md) | [🇧🇷 Português (Brasil)](README.pt-BR.md) | [🇫🇷 Français](README.fr.md) | [🇩🇪 Deutsch](README.de.md) | [🇨🇳 中文（简体）](README.zh-CN.md) | [🇯🇵 日本語](README.ja.md) | [🇮🇳 हिन्दी](README.hi.md) | [🇸🇦 العربية](README.ar.md)
+**🇬🇧 English** | [🇷🇺 Русский](../docs/ru/README.md) | [🇪🇸 Español](../docs/es/README.md) | [🇧🇷 Português (Brasil)](../docs/pt-BR/README.md) | [🇫🇷 Français](../docs/fr/README.md) | [🇩🇪 Deutsch](../docs/de/README.md) | [🇨🇳 中文（简体）](../docs/zh-CN/README.md) | [🇯🇵 日本語](../docs/ja/README.md) | [🇮🇳 हिन्दी](../docs/hi/README.md) | [🇸🇦 العربية](../docs/ar/README.md)
 
 [![CI](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml/badge.svg)](https://github.com/Airnook/bookmarks/actions/workflows/ci.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Airnook/bookmarks)](https://github.com/Airnook/bookmarks/releases/latest)
 [![Chromium 141+](https://img.shields.io/badge/Chromium-141%2B-4285F4?logo=googlechrome&logoColor=white)](https://www.chromium.org/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
 [![10 languages](https://img.shields.io/badge/languages-10-orange)](TRANSLATING.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](../LICENSE)
 
 **Bookmarks** is an extension for Chromium browsers (Chrome, Edge, Brave, Arc, Helium and others): your bookmarks in
 the side panel, next to the page, all from the keyboard. Find, open, sort into folders, keep bookmarks as pinned tabs.
@@ -15,8 +15,8 @@ Made when moving from Arc to a Chromium browser: its side panel was missed.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/panel-dark.png">
-    <img src="docs/panel-light.png" alt="The Bookmarks side panel: a folder tree with two marked bookmarks" width="360">
+    <source media="(prefers-color-scheme: dark)" srcset="../docs/panel-dark.png">
+    <img src="../docs/panel-light.png" alt="The Bookmarks side panel: a folder tree with two marked bookmarks" width="360">
   </picture>
 </p>
 
@@ -139,4 +139,4 @@ Architecture, tests and the release process are described in [CONTRIBUTING.md](C
 
 ## License
 
-[MIT](LICENSE) © 2026 Airnook
+[MIT](../LICENSE) © 2026 Airnook
