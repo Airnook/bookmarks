@@ -1234,6 +1234,27 @@
   "options_keys": {
     "message": "Panel keys"
   },
+  "options_panel_side": {
+    "message": "Panel position"
+  },
+  "options_panel_side_hint": {
+    "message": "Current side: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    },
+    "description": "Hint under the panel position row. $SIDE$ — the current side, left or right, as a label element."
+  },
+  "options_panel_side_change": {
+    "message": "change in browser settings"
+  },
+  "options_side_left": {
+    "message": "left"
+  },
+  "options_side_right": {
+    "message": "right"
+  },
   "options_global_title": {
     "message": "Open and close the panel"
   },

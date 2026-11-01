@@ -154,6 +154,8 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       assert.equal(await options.locator('[data-preset=default]').getAttribute('aria-pressed'), 'true');
       assert.equal(await options.locator('#keymap .cmd-global .cmd-title').textContent(), t('options_global_title'));
       assert.equal(await options.locator('#keymap .cmd-global .link').textContent(), t('options_global_change'));
+      // положение панели: кнопка ведёт в настройки внешнего вида; сторона — если Chrome её отдаёт
+      assert.equal(await options.locator('#panel-side-change').textContent(), t('options_panel_side_change'));
       await shot(options, 'options');
       await options.close();
     });

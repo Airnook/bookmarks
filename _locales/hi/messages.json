@@ -1113,6 +1113,26 @@
   "options_keys": {
     "message": "पैनल की कुंजियाँ"
   },
+  "options_panel_side": {
+    "message": "पैनल की स्थिति"
+  },
+  "options_panel_side_hint": {
+    "message": "वर्तमान पक्ष: $SIDE$",
+    "placeholders": {
+      "side": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_panel_side_change": {
+    "message": "ब्राउज़र की सेटिंग में बदलें"
+  },
+  "options_side_left": {
+    "message": "बाएँ"
+  },
+  "options_side_right": {
+    "message": "दाएँ"
+  },
   "options_global_title": {
     "message": "पैनल खोलना और बंद करना"
   },
