@@ -2110,5 +2110,25 @@
   },
   "help_news_title": {
     "message": "新機能"
+  },
+  "options_preview": {
+    "message": "サンプルのブックマークでのパネルのプレビュー"
+  },
+  "options_replace_theme": {
+    "message": "パネルの外観を「$FILE$」に置き換えますか？",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "現在の外観の設定は失われます。"
+  },
+  "options_theme_imported": {
+    "message": "外観をインポートしました"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "このファイルにはパネルの外観ではなく別の設定が入っています。"
   }
 }

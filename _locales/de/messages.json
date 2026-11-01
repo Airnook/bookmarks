@@ -2209,5 +2209,25 @@
   },
   "help_news_title": {
     "message": "Neuigkeiten"
+  },
+  "options_preview": {
+    "message": "Vorschau des Panels mit Beispiel-Lesezeichen"
+  },
+  "options_replace_theme": {
+    "message": "Das Aussehen des Panels durch „$FILE$“ ersetzen?",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "Ihre aktuellen Darstellungseinstellungen gehen verloren."
+  },
+  "options_theme_imported": {
+    "message": "Aussehen importiert"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "Diese Datei enthält andere Einstellungen, nicht das Aussehen des Panels."
   }
 }

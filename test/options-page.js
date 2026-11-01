@@ -62,6 +62,8 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
     if (!els.has(id)) els.set(id, new FakeElement(id));
     return els.get(id);
   };
+  const previews = [];           // темы, которые страница отправила в превью
+  byId('theme-preview').contentWindow = { postMessage: (msg, origin) => previews.push({ ...msg, origin }) };
   byId('view').replaceChildren(...['normal', 'detailed', 'dense'].map(v => new Option(v, v)));
 
   const bookmarkEvent = (name) => ({ addListener: (fn) => { (bookmarkListeners[name] ??= []).push(fn); } });
@@ -118,6 +120,7 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
     window: { addEventListener() {} },
     Blob: class { constructor(parts) { this.text = parts.join(''); } },
     URL: { createObjectURL: (blob) => blob, revokeObjectURL() {} },
+    location: { origin: 'chrome-extension://test' },
     navigator: { platform: 'Linux x86_64' },
   });
   for (const file of ['i18n.js', 'commands.js', 'settings-file.js', 'theme.js', 'options.js']) {
@@ -132,6 +135,7 @@ export function loadOptions({ tree, saved = {}, lang = 'ru', commands = [] }) {
     counters,
     opened,
     downloads,
+    previews,
     // нажатие клавиши на странице: { key, code, ctrlKey… }
     keydown: (e) => docListeners.keydown?.forEach(fn => fn({
       key: '', code: '', shiftKey: false, ctrlKey: false, altKey: false, metaKey: false, repeat: false,

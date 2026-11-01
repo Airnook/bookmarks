@@ -2110,5 +2110,25 @@
   },
   "help_news_title": {
     "message": "新功能"
+  },
+  "options_preview": {
+    "message": "使用示例书签预览面板"
+  },
+  "options_replace_theme": {
+    "message": "要用“$FILE$”替换面板外观吗？",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "当前的外观设置将会丢失。"
+  },
+  "options_theme_imported": {
+    "message": "外观已导入"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "此文件包含的是其他设置，而不是面板外观。"
   }
 }

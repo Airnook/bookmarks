@@ -2605,5 +2605,25 @@
   },
   "help_news_title": {
     "message": "الجديد"
+  },
+  "options_preview": {
+    "message": "معاينة اللوحة بإشارات مرجعية تجريبية"
+  },
+  "options_replace_theme": {
+    "message": "هل تريد استبدال مظهر اللوحة بالملف “$FILE$”؟",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_replace_theme_text": {
+    "message": "ستُفقد إعدادات المظهر الحالية."
+  },
+  "options_theme_imported": {
+    "message": "تم استيراد المظهر"
+  },
+  "options_theme_import_wrong_type": {
+    "message": "يحتوي هذا الملف على إعدادات أخرى وليس مظهر اللوحة."
   }
 }

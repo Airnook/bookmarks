@@ -963,6 +963,30 @@ async function run({ name, lang, folder, locale, dir, ext = extDir }) {
       await options.close();
     });
 
+    await check('превью оформления: панель на демо-закладках, тема видна сразу, настоящие закладки не затронуты', async () => {
+      const options = await open('options.html');
+      const frame = options.frameLocator('#theme-preview');
+      await frame.locator('#list li', { hasText: 'Project board' }).waitFor();
+      const rows = await frame.locator('#list li').allTextContents();
+      assert.ok(!rows.includes('Работа'), 'в превью нет настоящих закладок');
+      assert.equal(await frame.locator('#list li[aria-selected=true]').textContent(), 'Design notes'); // отмеченная демо-закладка
+      assert.ok(await frame.locator('#list li.open').count()); // закладка с открытой вкладкой
+      const before = await setup.evaluate(() => chrome.bookmarks.getTree().then(t => JSON.stringify(t)));
+      await options.locator('#theme-mode').selectOption('light');
+      await options.locator('#theme-light-accent').fill('#00aa00');
+      await options.locator('#theme-radius').fill('2');
+      await options.locator('#theme-radius').blur();
+      await options.waitForFunction(() => document.getElementById('theme-preview').contentDocument.getElementById('theme').textContent.includes('#00aa00'));
+      assert.match(await frame.locator('#theme').textContent(), /--radius: 2px/);
+      // правка в превью (удаление выделенной) не доходит до настоящих закладок
+      await frame.locator('#list').focus();
+      await options.keyboard.press('Delete');
+      await options.waitForTimeout(300);
+      assert.equal(await setup.evaluate(() => chrome.bookmarks.getTree().then(t => JSON.stringify(t))), before);
+      await options.locator('#theme-reset').click();
+      await options.close();
+    });
+
     await check('нет ошибок на страницах', async () => {
       await panel.waitForTimeout(300); // запоздалые ошибки обработчиков
       assert.deepEqual(errors, []);
