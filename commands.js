@@ -146,6 +146,22 @@ export const keymapOf = (value) => (value && typeof value === 'object' && !Array
 // (обновлённым со старых версий фон записывает keymap сам)
 export const storedKeymap = (value) => (value == null ? structuredClone(PRESETS.default) : keymapOf(value));
 
+// Клавиши из файла: оставляем известные команды и годные сочетания, считаем отброшенное.
+// Итог: { preset, keymap, dropped }; не объект keymap — null.
+export function cleanHotkeys({ preset, keymap } = {}) {
+  if (!keymap || typeof keymap !== 'object' || Array.isArray(keymap)) return null;
+  let dropped = 0;
+  const clean = {};
+  for (const [id, list] of Object.entries(keymap)) {
+    if (!Object.hasOwn(COMMAND, id) || !Array.isArray(list)) { dropped++; continue; }
+    const keys = bindingsOf(id, { [id]: list }).filter(b => !isReserved(b));
+    dropped += list.length - keys.length;
+    if (keys.length || !list.length) clean[id] = keys; // всё негодное — оставляем умолчание, а не «без клавиш»
+  }
+  const known = Object.hasOwn(PRESETS, preset);
+  return { preset: known ? preset : 'default', keymap: clean, dropped: dropped + (known ? 0 : 1) };
+}
+
 // Сочетания команды с учётом пользовательских изменений. Испорченная запись
 // в настройках (не массив, не строки, лишние пробелы, повторы) не ломает панель.
 export function bindingsOf(id, keymap) {

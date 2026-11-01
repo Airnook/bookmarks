@@ -1206,6 +1206,32 @@
   "options_replace_ok": {
     "message": "Substituir"
   },
+  "options_export": {
+    "message": "Exportar"
+  },
+  "options_import": {
+    "message": "Importar"
+  },
+  "options_imported": {
+    "message": "Atalhos importados"
+  },
+  "options_imported_skipped": {
+    "message": "Atalhos importados; entradas inválidas ignoradas: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Este não é um arquivo de configurações do Bookmarks válido."
+  },
+  "options_import_wrong_type": {
+    "message": "Este arquivo contém outras configurações, não atalhos."
+  },
+  "options_import_newer": {
+    "message": "Este arquivo é de uma versão mais nova da extensão. Atualize a extensão para importá-lo."
+  },
   "options_preset_applied": {
     "message": "O conjunto “$PRESET$” foi aplicado",
     "placeholders": {

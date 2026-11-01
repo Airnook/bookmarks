@@ -170,3 +170,74 @@ test('клавиши: строка «открыть панель» — теку�
   all(global).find(n => n.className === 'link').onclick();
   assert.deepEqual(env.opened, ['chrome://extensions/shortcuts']);
 });
+
+// ---------- файл с клавишами ----------
+
+// Окно замены набора: ответ даёт тест
+function stubDialog(env, answer) {
+  const dlg = env.el('preset-dialog');
+  dlg.querySelector = () => ({ focus() {} });
+  dlg.showModal = () => { dlg.shown = true; setTimeout(() => { dlg.returnValue = answer; dlg.onclose(); }); };
+  return dlg;
+}
+const pick = async (env, text) => {
+  env.el('import-file').files = [{ name: 'bookmarks-hotkeys.json', text: async () => text }];
+  await env.el('import-file').onchange();
+  await sleep(20);
+};
+
+test('экспорт: bookmarks-hotkeys.json с набором, сочетаниями, форматом и версией', async () => {
+  const env = await start({ preset: 'vim', keymap: PRESETS.vim });
+  env.el('export').onclick();
+  const [file] = env.downloads;
+  assert.equal(file.name, 'bookmarks-hotkeys.json');
+  assert.deepEqual(JSON.parse(file.text), {
+    app: 'airnook-bookmarks', type: 'hotkeys', format: 1, extensionVersion: '2.6.0',
+    data: { preset: 'vim', keymap: PRESETS.vim },
+  });
+});
+
+test('импорт: экспортированный файл возвращает те же клавиши (после подтверждения)', async () => {
+  const env = await start({ preset: 'vim', keymap: PRESETS.vim });
+  env.el('export').onclick();
+  const other = await start({ preset: 'arc', keymap: { open: ['x'] } });
+  const dlg = stubDialog(other, 'ok');
+  await pick(other, env.downloads[0].text);
+  assert.ok(dlg.shown);
+  assert.deepEqual(other.store.keymap, PRESETS.vim);
+  assert.equal(other.store.preset, 'vim');
+  assert.equal(other.el('status').textContent, 'Сочетания загружены');
+});
+
+test('импорт: отмена в окне ничего не меняет', async () => {
+  const env = await start({ preset: 'vim', keymap: PRESETS.vim });
+  env.el('export').onclick();
+  const other = await start({ preset: 'arc', keymap: { open: ['x'] } });
+  stubDialog(other, 'cancel');
+  await pick(other, env.downloads[0].text);
+  assert.deepEqual(other.store.keymap, { open: ['x'] });
+  assert.deepEqual(other.storageSets, []);
+});
+
+test('импорт: негодные записи отбрасываются, пользователю говорим сколько', async () => {
+  const env = await start({});
+  stubDialog(env, 'ok');
+  const file = { app: 'airnook-bookmarks', type: 'hotkeys', format: 1, data: { preset: 'vim', keymap: { open: ['o'], ghost: ['q'], delete: 5 } } };
+  await pick(env, JSON.stringify(file));
+  assert.deepEqual(env.store.keymap, { open: ['o'] });
+  assert.match(env.el('status').textContent, /2/);
+});
+
+test('импорт: битый файл, чужой тип и новый формат — сообщение, хранилище не тронуто', async () => {
+  const env = await start({ preset: 'arc', keymap: { open: ['x'] } });
+  const dlg = stubDialog(env, 'ok');
+  const base = { app: 'airnook-bookmarks', type: 'hotkeys', format: 1, data: { keymap: {} } };
+  const messages = new Set();
+  for (const text of ['{', JSON.stringify({ ...base, type: 'theme' }), JSON.stringify({ ...base, format: 2 })]) {
+    await pick(env, text);
+    messages.add(env.el('status').textContent);
+  }
+  assert.equal(messages.size, 3);
+  assert.ok(!dlg.shown);
+  assert.deepEqual(env.storageSets, []);
+});

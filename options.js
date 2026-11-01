@@ -1,8 +1,9 @@
 import {
   COMMANDS, COMMAND, PRESETS, SETTINGS_DEFAULTS, DOUBLE_WAIT, SEQUENCE_WAIT,
-  groupTitle, keymapOf, storedKeymap, bindingsOf, isReserved, resolveKeymap, chordOf, physicalChordOf, preferPhysical, shortcutText, bindingNodes,
+  groupTitle, cleanHotkeys, keymapOf, storedKeymap, bindingsOf, isReserved, resolveKeymap, chordOf, physicalChordOf, preferPhysical, shortcutText, bindingNodes,
 } from './commands.js';
 import { localizePage, t } from './i18n.js';
+import { envelope, readSettingsFile } from './settings-file.js';
 
 localizePage();
 
@@ -356,8 +357,8 @@ function commitRecording(confirmed = false) {
 // Окно замены набора (вместо confirm(): его кнопки на языке браузера). Enter — заменить,
 // Esc — отмена; фокус — обратно на кнопку набора
 const presetDialog = document.getElementById('preset-dialog');
-function askReplace(button) {
-  document.getElementById('preset-title').textContent = t('options_replace_preset', button.textContent);
+function askReplace(button, name = button.textContent) {
+  document.getElementById('preset-title').textContent = t('options_replace_preset', name);
   presetDialog.returnValue = '';
   presetDialog.showModal();
   presetDialog.querySelector('[value=ok]').focus();
@@ -384,6 +385,41 @@ for (const b of document.querySelectorAll('[data-preset]')) {
     });
   };
 }
+
+// ---------- файл с клавишами ----------
+
+const HOTKEYS_FORMAT = 1;
+const HOTKEYS_FILE = 'bookmarks-hotkeys.json';
+const IMPORT_ERRORS = { broken: 'options_import_broken', wrong_type: 'options_import_wrong_type', newer: 'options_import_newer' };
+const importFile = document.getElementById('import-file');
+
+document.getElementById('export').onclick = () => {
+  const file = envelope('hotkeys', HOTKEYS_FORMAT, { preset, keymap }, chrome.runtime.getManifest().version);
+  const a = Object.assign(document.createElement('a'), {
+    href: URL.createObjectURL(new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' })),
+    download: HOTKEYS_FILE,
+  });
+  a.click();
+  URL.revokeObjectURL(a.href);
+};
+
+document.getElementById('import').onclick = () => importFile.click();
+
+importFile.onchange = async () => {
+  const [file] = importFile.files;
+  importFile.value = ''; // тот же файл можно выбрать снова
+  if (!file) return;
+  stopRecording();
+  const read = readSettingsFile(await file.text(), 'hotkeys', HOTKEYS_FORMAT);
+  const clean = read.data && cleanHotkeys(read.data);
+  if (!clean) return notify(t(IMPORT_ERRORS[read.error ?? 'broken']));
+  if (!(await askReplace(document.getElementById('import'), file.name))) return rerender();
+  serial(async () => {
+    ({ keymap, preset } = clean);
+    await save({ keymap, preset }, clean.dropped ? t('options_imported_skipped', String(clean.dropped)) : t('options_imported'));
+    rerender();
+  });
+};
 
 // изменения из другой вкладки настроек или из панели (вид переключают клавишей)
 // Только отражаем: записи в хранилище здесь не делаем

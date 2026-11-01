@@ -1278,6 +1278,32 @@
   "options_replace_ok": {
     "message": "استبدال"
   },
+  "options_export": {
+    "message": "تصدير"
+  },
+  "options_import": {
+    "message": "استيراد"
+  },
+  "options_imported": {
+    "message": "تم استيراد الاختصارات"
+  },
+  "options_imported_skipped": {
+    "message": "تم استيراد الاختصارات؛ إدخالات غير صالحة تم تخطيها: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "هذا ليس ملف إعدادات صالحًا لـ Bookmarks."
+  },
+  "options_import_wrong_type": {
+    "message": "يحتوي هذا الملف على إعدادات أخرى وليس اختصارات."
+  },
+  "options_import_newer": {
+    "message": "هذا الملف من إصدار أحدث من الإضافة. حدّث الإضافة لاستيراده."
+  },
   "options_preset_applied": {
     "message": "تم تطبيق مجموعة “$PRESET$”",
     "placeholders": {

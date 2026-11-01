@@ -1206,6 +1206,32 @@
   "options_replace_ok": {
     "message": "Remplacer"
   },
+  "options_export": {
+    "message": "Exporter"
+  },
+  "options_import": {
+    "message": "Importer"
+  },
+  "options_imported": {
+    "message": "Raccourcis importés"
+  },
+  "options_imported_skipped": {
+    "message": "Raccourcis importés ; entrées non valides ignorées : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Ce n’est pas un fichier de réglages Bookmarks valide."
+  },
+  "options_import_wrong_type": {
+    "message": "Ce fichier contient d’autres réglages, pas des raccourcis."
+  },
+  "options_import_newer": {
+    "message": "Ce fichier provient d’une version plus récente de l’extension. Mettez-la à jour pour l’importer."
+  },
   "options_preset_applied": {
     "message": "Le jeu « $PRESET$ » est appliqué",
     "placeholders": {

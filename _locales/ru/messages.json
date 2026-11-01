@@ -1234,6 +1234,32 @@
     "message": "Заменить",
     "description": "Confirm button of the dialog that replaces the shortcut set"
   },
+  "options_export": {
+    "message": "Экспорт"
+  },
+  "options_import": {
+    "message": "Импорт"
+  },
+  "options_imported": {
+    "message": "Сочетания загружены"
+  },
+  "options_imported_skipped": {
+    "message": "Сочетания загружены; пропущено негодных записей: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Это не файл настроек Bookmarks или он повреждён."
+  },
+  "options_import_wrong_type": {
+    "message": "В этом файле другие настройки, а не сочетания клавиш."
+  },
+  "options_import_newer": {
+    "message": "Файл создан более новой версией расширения. Обновите расширение, чтобы его загрузить."
+  },
   "options_preset_applied": {
     "message": "Набор «$PRESET$» применён",
     "placeholders": {

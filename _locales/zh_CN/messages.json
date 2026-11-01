@@ -1158,6 +1158,32 @@
   "options_replace_ok": {
     "message": "替换"
   },
+  "options_export": {
+    "message": "导出"
+  },
+  "options_import": {
+    "message": "导入"
+  },
+  "options_imported": {
+    "message": "快捷键已导入"
+  },
+  "options_imported_skipped": {
+    "message": "快捷键已导入；已跳过无效条目：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "这不是有效的 Bookmarks 设置文件。"
+  },
+  "options_import_wrong_type": {
+    "message": "此文件包含的是其他设置，而不是快捷键。"
+  },
+  "options_import_newer": {
+    "message": "此文件来自更新版本的扩展。请更新扩展后再导入。"
+  },
   "options_preset_applied": {
     "message": "已应用“$PRESET$”预设",
     "placeholders": {

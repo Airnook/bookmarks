@@ -1182,6 +1182,32 @@
   "options_replace_ok": {
     "message": "Ersetzen"
   },
+  "options_export": {
+    "message": "Exportieren"
+  },
+  "options_import": {
+    "message": "Importieren"
+  },
+  "options_imported": {
+    "message": "Tastenkürzel importiert"
+  },
+  "options_imported_skipped": {
+    "message": "Tastenkürzel importiert; ungültige Einträge übersprungen: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "options_import_broken": {
+    "message": "Das ist keine gültige Bookmarks-Einstellungsdatei."
+  },
+  "options_import_wrong_type": {
+    "message": "Diese Datei enthält andere Einstellungen, keine Tastenkürzel."
+  },
+  "options_import_newer": {
+    "message": "Diese Datei stammt von einer neueren Version der Erweiterung. Aktualisieren Sie die Erweiterung, um sie zu importieren."
+  },
   "options_preset_applied": {
     "message": "Die Vorlage „$PRESET$“ wurde angewendet",
     "placeholders": {
